@@ -1,0 +1,10 @@
+GenericEntity : "{54986385A6AF77B2}Prefabs/Systems/Arsenal/ArsenalBoxes/ArsenalBox_Base.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  SignalsManagerComponent "{5C5B61F6F89E7B36}" {
+  }
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes 267134
+  }
+ }
+}

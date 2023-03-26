@@ -1,0 +1,65 @@
+GenericEntity {
+ ID "5C6B02FDA469FA11"
+ components {
+  Hierarchy "{5C6B02FC2EF0FD67}" {
+  }
+ }
+ coords 28.48 1.001 36.702
+ {
+  LightEntity {
+   ID "5C6B02FDA469ABF6"
+   components {
+    RplComponent "{5C6B02FC22D69657}" {
+    }
+   }
+   coords 0.1 10.811 0.053
+   ColorType Temperature
+   Color 1 0.419 0.014 0
+   Temperature 1840
+   LV 10.72
+   ClipEV 10
+   Radius 100
+   NearPlane 2
+   Visualization Disabled
+  }
+  $grp GenericEntity : "{1112756E8A13445B}Prefabs/Props/Industrial/Pallets/Pallet_01_Pile.et" {
+   {
+    ID "5C6B02FDA469ABF0"
+    components {
+     Hierarchy "{5C6B02FD8624EDE4}" {
+     }
+    }
+    coords 0.474 9.959 -0.05
+    angleY 0
+   }
+   {
+    ID "5C6B02FDA469ABF1"
+    components {
+     Hierarchy "{5C6B02FD9868DE5F}" {
+     }
+    }
+    coords -0.397 9.959 -0.05
+    angleY 0
+   }
+  }
+  GameEntity : "{83CBF3BB1EE36382}prefabs/Props/Civilian/Fireplace_tower.et" {
+   ID "5C6B02FDA469ABEC"
+   components {
+    SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+     m_aLightData {
+      SCR_BaseLightData "{58D0938270686D72}" {
+       m_eLightType PROBE
+       m_fRadius 500
+      }
+     }
+    }
+   }
+   coords -0.021 10.854 -0.075
+   scale 1.6
+  }
+  StaticModelEntity : "{A85222515D71BDDC}Prefabs/Structures/Industrial/Towers/LightTower_02/LightTower_02_base.et" {
+   ID "5C6B02FDA469FA27"
+   coords 0.038 0 -0.028
+  }
+ }
+}

@@ -1,0 +1,3059 @@
+$grp GenericEntity {
+ {
+  components {
+   MeshObject "{5C7542728EC81D7B}" {
+    Object "{B98BC8DC4C59B8DA}Assets/Props/Military/Camps/WeaponRackStand_01/WeaponRackStand_01.xob"
+   }
+   Hierarchy "{5C7555A13636B5D1}" {
+   }
+   RigidBody "{5C7555A14A541000}" {
+   }
+   RplComponent "{5C7555A14CF554B6}" {
+   }
+  }
+  coords 108.459 1.001 130.838
+ }
+ {
+  components {
+   MeshObject "{5C776434B63931CA}" {
+    Object "{D51C921AD48E3CDE}Assets/Props/Furniture/ChairOld_01/Dst/ChairOld_01_dst_04.xob"
+   }
+  }
+  coords 126.759 1.001 94.556
+ }
+ {
+  components {
+   MeshObject "{5C776434CAF82AE5}" {
+    Object "{79B123F0562FD96D}Assets/Props/Furniture/ChairOld_02/Dst/ChairOld_02_Dst_06.xob"
+   }
+  }
+  coords 127.117 1.031 94.766
+ }
+ {
+  components {
+   MeshObject "{5C776434CEED7F80}" {
+    Object "{8A366E939EE0AE7F}Assets/Props/Furniture/ChairRecreation_01/Dst/ChairRecreation_01_Dst_07.xob"
+   }
+  }
+  coords 127.163 1.001 94.403
+ }
+ {
+  components {
+   MeshObject "{5C789066BCEB0606}" {
+    Object "{4DCD0D6B383DA63C}Assets/Structures/Walls/Wooden/WoodenFence_01_Pole.xob"
+   }
+  }
+  coords 164.282 1.001 118.657
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C789067A4C72B4A}" {
+   }
+   MeshObject "{5C789065CA78ECDB}" {
+    Object "{9F4C321E6A52E8B7}Assets/Items/Equipment/Backpacks/Backpack_M70_Swiss/Backpack_M70_Swiss.xob"
+   }
+   Hierarchy "{5C78906726DA5EF7}" {
+   }
+   RigidBody "{5C789067A091994B}" {
+    ModelGeometry 1
+    Static 1
+   }
+   SCR_UniversalInventoryStorageComponent "{5C789066287F1AC0}" {
+    Attributes SCR_ItemAttributeCollection "{5C78906652DD37E3}" {
+     ItemDisplayName UIInfo "{5C789066541F8143}" {
+      Name "FIA memorial"
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C789066695CB8F3}" {
+       FOV 60
+       PreviewPrefab "{045739BB2108B549}prefabs/Stashes/Graves/Grave_Stash_FIA.et"
+      }
+     }
+     m_Size SLOT_3x3
+     m_SlotType SLOT_BACKPACK
+    }
+    UseCapacityCoefficient 0
+    m_fMaxWeight 10
+   }
+   ActionsManagerComponent "{5C789067BE86CF45}" {
+    ActionContexts {
+     UserActionContext "{5C789067BF9F31AD}" {
+      ContextName "default"
+      Position PointInfo "{5C789067B148BD94}" {
+       PivotID "Head"
+       Offset 0.0083 -0.1124 -0.066
+      }
+      Radius 1
+     }
+    }
+    additionalActions {
+     SCR_OpenStorageAction "{5C789067DAD3DED2}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C789067D235F381}" {
+       Name "FIA memorial"
+      }
+     }
+    }
+   }
+   RplComponent "{5C789066CA09ECFB}" {
+   }
+  }
+  coords 163.589 0.388 116.433
+  angleZ 8.33
+  {
+   GenericEntity {
+    components {
+     MeshObject "{5C789065FDAC360A}" {
+      Object "{3C4F053A42BDB84D}Assets/Structures/Cultural/Cemeteries/Tombstones/CrossSmall_E_01/Dst/CrossSmall_E_01_Dst_05.xob"
+      Materials {
+       MaterialAssignClass "{5C78906548FCEAC8}" {
+        SourceMaterial "CrossSmall_E_01"
+        AssignedMaterial "{CC4A6D49E9F96486}Assets/Structures/Walls/Wooden/Data/WoodenFence_01.emat"
+       }
+      }
+     }
+    }
+    coords 0.293 -0.765 -0.068
+    angleZ -8.33
+   }
+   $grp SCR_DestructibleEntity {
+    {
+     components {
+      MeshObject "{5C78906619F240B7}" {
+       Object "{4DCD0D6B383DA63C}Assets/Structures/Walls/Wooden/WoodenFence_01_Pole.xob"
+       LODFactors {
+        70 50 30 10 2 1 1
+       }
+      }
+      Hierarchy "{5C7890672F5CC2C7}" {
+      }
+      RigidBody "{5C78906619F241D6}" {
+       ResponseIndex "TinyDestructible"
+       ModelGeometry 1
+       Static 1
+      }
+      RplComponent "{5C78906619F242B1}" {
+      }
+     }
+     coords 0.045 0.626 -0.038
+     angleZ -8.33
+     Flags 524291
+     placement slopelandcontact
+     MaxHealth 800
+     "Explosive multiplier" 100
+     DamageThreshold 50
+     FirstDestructionPhase SCR_BaseDestructionPhase "{5C78906619F242A1}" {
+      m_sPhaseModel "{A4048C2AA75EF832}Common/Models/Default.xob"
+     }
+     LastDestructionPhase SCR_BaseDestructionPhase "{5C78906619F242A6}" {
+      Threshold 0
+     }
+     m_eMaterialSoundType BREAK_WOOD_SOLID
+    }
+    {
+     components {
+      MeshObject "{5C7890661C956F65}" {
+       Object "{4DCD0D6B383DA63C}Assets/Structures/Walls/Wooden/WoodenFence_01_Pole.xob"
+       LODFactors {
+        70 50 30 10 2 1 1
+       }
+      }
+      NavmeshCustomLinkComponent "{5C7890661C956FE0}" {
+       Enabled 0
+       LinkType NavmeshJumpLink "{5C7890661C956FEE}" {
+        BeginPoint 1 0 1.5
+        EndPoint 1 0 -1.5
+        Radius 0.2
+        QueueDelay 5
+        QueueTimeout 0
+        ProjectPresets {
+         NavmeshCustomLinkPreset "{5C7890661C956FDD}" {
+          ProjectName "Soldiers"
+          AreaType "Fence"
+         }
+        }
+        GrabPoint 1 1.2 0
+       }
+      }
+      RigidBody "{5C7890661C956051}" {
+       ResponseIndex "TinyDestructible"
+       ModelGeometry 1
+       Static 1
+      }
+      SCR_DestructionFractalComponent "{5C7890661C956091}" {
+       Enabled 0
+       "Additional hit zones" {
+        ScriptedHitZone Default {
+         HZDefault 1
+        }
+       }
+       m_fBaseHealth 500
+       m_fForceToDamageScale 500
+       m_fDamageThresholdMinimum 30
+       m_fDamageThresholdMaximum 20000
+       m_DebrisDestroyFragment SCR_FragmentDebris "{5C7890661C956014}" {
+        m_fDamageToImpulse 0.04
+       }
+       m_fFragmentHealth 500
+       m_bDestroyFragmentOnFracture 1
+       m_FractalVariants {
+        SCR_FractalVariation "{5C7890661C9560C6}" {
+         m_ModelNormal "{A88E483C5D3A3F15}Assets/Structures/Walls/Wooden/WoodenFence_01_2m.xob"
+         m_aModelFragments {
+          "{56BAE94AFE7AFBAB}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_01_dst.xob" "{58A4AD02C38DF471}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_02_dst.xob" "{5D516EC528DF0EC7}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_03_dst.xob" "{44982592B863EBC5}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_04_dst.xob" "{416DE65553311173}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_05_dst.xob"
+         }
+         m_aModelAnchorFragments {
+          "{534F2A8D1528011D}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_00_dst.xob"
+         }
+         m_Hierarchy SCR_FragmentHierarchy "{5C7890661C9560C4}" {
+          m_aLinks {
+           SCR_FragmentLinkage "{5C7890661C956023}" {
+            m_bIsAnchor 0
+            m_iIndex 0
+            m_aOtherIndexes {
+             1 5
+            }
+           }
+           SCR_FragmentLinkage "{5C7890661C9560D9}" {
+            m_bIsAnchor 0
+            m_iIndex 1
+            m_aOtherIndexes {
+             0 2
+            }
+           }
+           SCR_FragmentLinkage "{5C7890661C9560DE}" {
+            m_bIsAnchor 0
+            m_iIndex 2
+            m_aOtherIndexes {
+             1 3
+            }
+           }
+           SCR_FragmentLinkage "{5C7890661C9560D7}" {
+            m_bIsAnchor 0
+            m_iIndex 3
+            m_aOtherIndexes {
+             2 4
+            }
+           }
+           SCR_FragmentLinkage "{5C7890661C9560CF}" {
+            m_bIsAnchor 0
+            m_iIndex 4
+            m_aOtherIndexes {
+             3
+            }
+           }
+           SCR_FragmentLinkage "{5C7890661C9560C5}" {
+            m_bIsAnchor 1
+            m_iIndex 5
+            m_aOtherIndexes {
+             0
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      SCR_DestructionMultiPhaseComponent "{5C7890661C956116}" {
+       Enabled 0
+       "Additional hit zones" {
+        ScriptedHitZone Default {
+         HZDefault 1
+         DamageThreshold 50
+         "Explosive multiplier" 100
+        }
+       }
+       m_fBaseHealth 800
+       m_fForceToDamageScale 200
+       m_fDamageThresholdMaximum 30000
+       m_DestroySpawnObjects {
+        SCR_ParticleSpawnable "{5C7890661C95615F}" {
+         m_Particle "{F47FD7A4B5220843}Particles/Props/Dest_WoodenFence.ptc"
+         m_bDirectional 0
+        }
+        SCR_DebrisSpawnable "{5C7890661C95614F}" {
+         m_ModelPrefabs {
+          "{13CB35D18B2629EB}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_Pole_00_dst.xob"
+         }
+         m_fDamageToImpulse 0.02
+         m_eMaterialSoundType WOOD_PLANK_SMALL
+        }
+       }
+       m_eMaterialSoundType BREAK_WOOD_SOLID
+      }
+      RplComponent "{5C7890661C956139}" {
+       Enabled 0
+      }
+     }
+     coords -0.459 1.471 -0.093
+     angleZ 87.239
+     Flags 524291
+     placement slopelandcontact
+     MaxHealth 800
+     "Explosive multiplier" 100
+     DamageThreshold 50
+     FirstDestructionPhase SCR_BaseDestructionPhase "{5C7890661C956128}" {
+      m_sPhaseModel "{A4048C2AA75EF832}Common/Models/Default.xob"
+     }
+     LastDestructionPhase SCR_BaseDestructionPhase "{5C7890661C95612E}" {
+      Threshold 0
+     }
+     m_eMaterialSoundType BREAK_WOOD_SOLID
+    }
+   }
+  }
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C789067A4C72B4A}" {
+   }
+   MeshObject "{5C789065CA78ECDB}" {
+    Object "{9F4C321E6A52E8B7}Assets/Items/Equipment/Backpacks/Backpack_M70_Swiss/Backpack_M70_Swiss.xob"
+   }
+   Hierarchy "{5C78906726DA5EF7}" {
+   }
+   RigidBody "{5C789067A091994B}" {
+    ModelGeometry 1
+    Static 1
+   }
+   SCR_UniversalInventoryStorageComponent "{5C789066287F1AC0}" {
+    Attributes SCR_ItemAttributeCollection "{5C78906652DD37E3}" {
+     ItemDisplayName UIInfo "{5C789066541F8143}" {
+      Name "FIA memorial"
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C789066695CB8F3}" {
+       CameraOrbitAngles 0 45 0
+       CameraDistanceToItem 2
+       FOV 45
+       PreviewPrefab "{0B75849DEA80E4C9}prefabs/Stashes/Graves/Grave_Cross.et"
+      }
+     }
+     m_Size SLOT_3x3
+     m_SlotType SLOT_BACKPACK
+    }
+    UseCapacityCoefficient 0
+    m_fMaxWeight 10
+   }
+   SlotManagerComponent "{5C789079C30BB6D6}" {
+    Slots {
+     RegisteringComponentSlotInfo Cross {
+      Offset 0.0009 0.635 -0.0294
+      Angles 0 0 -6.6282
+      Prefab "{0B75849DEA80E4C9}prefabs/Stashes/Graves/Grave_Cross.et"
+     }
+    }
+   }
+   ActionsManagerComponent "{5C789067BE86CF45}" {
+    ActionContexts {
+     UserActionContext "{5C789067BF9F31AD}" {
+      ContextName "default"
+      Position PointInfo "{5C789067B148BD94}" {
+       PivotID "Head"
+       Offset 0.0083 -0.1124 -0.066
+      }
+      Radius 1
+     }
+    }
+    additionalActions {
+     SCR_OpenStorageAction "{5C789067DAD3DED2}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C789067D235F381}" {
+       Name "FIA memorial"
+      }
+     }
+    }
+   }
+   RplComponent "{5C789066CA09ECFB}" {
+   }
+  }
+  coords 157.784 0.643 116.214
+ }
+ {
+  components {
+   MeshObject "{5C789072FDED126F}" {
+    Object "{AD43BB12137D68D9}Assets/Props/Commercial/Posters/PostersGround_01_Single.xob"
+    Materials {
+     MaterialAssignClass "{5C7890721B1627B1}" {
+      SourceMaterial "PosterSet_01"
+      AssignedMaterial "{77C8114043ECEC5B}Assets/Structures/Signs/Traffic/SignBusStop_01/Data/SignBusStop_01_Paper.emat"
+     }
+    }
+   }
+   SCR_BaseInventoryItemComponent "{5C789072283FDD46}" {
+    Attributes SCR_ItemAttributeCollection "{5C7890722ADB5961}" {
+     ItemDisplayName UIInfo "{5C7890722DFC0AE1}" {
+      Name "Note"
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C78907226ABE357}" {
+       CameraPreset Top
+      }
+     }
+     m_Size SLOT_1x1
+     m_bDraggable 0
+    }
+   }
+  }
+  coords 153.346 1.001 108.061
+ }
+ {
+  components {
+   MeshObject "{5C789073A9817C38}" {
+    Object "{B010A17E255B2624}Assets/Structures/Signs/Traffic/SignBusStop_01/SignBusStop_01.xob"
+   }
+  }
+  coords 154.736 1.001 108.028
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C78C4208E3557FF}" {
+   }
+   SoundComponent "{5C78C420838D5B12}" {
+    Filenames {
+     "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+    }
+    DistanceManagement 0
+   }
+   MeshObject "{5C78C4209238F8E2}" {
+    Object "{C93586479590F3C6}Assets/Items/Equipment/Accessories/Pouch_Medical_Soviet/Pouch_Medical_Soviet_item.xob"
+    Materials {
+     MaterialAssignClass "{5C78C4202A5A743C}" {
+      SourceMaterial "Pouch_Medical_Soviet"
+      AssignedMaterial "{40C1E017102522B1}Assets/Items/Equipment/Accessories/Pouch_Medical_Soviet/Data/Wallet.emat"
+     }
+    }
+   }
+   RigidBody "{5C78C420ACDFD499}" {
+    ModelGeometry 1
+    Static 1
+   }
+   ProcAnimComponent "{5C78C420A37E0F23}" {
+    Parameters {
+     ProcAnimParams "{5C78C420B8475539}" {
+      ResourceName "{6D6D2FEA1F89DC9F}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.pap"
+      SimulationDistance 20
+     }
+    }
+   }
+   SCR_UniversalInventoryStorageComponent "{5C78C420C941A2CE}" {
+    Attributes SCR_ItemAttributeCollection "{5C78C420CF805068}" {
+     ItemDisplayName UIInfo "{5C78C420C0A81F43}" {
+      Name "Wallet"
+      Description "Storage for watches found"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C78C420D0A60800}" {
+      Weight 0.1
+      SizeSetupStrategy Manual
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C78C420EDBCD609}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 25 0
+       FOV 45
+      }
+     }
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+    UseCapacityCoefficient 0
+    MaxItemSize 2 2 2
+    m_fMaxWeight 5
+   }
+   ActionsManagerComponent "{5C78C420266E91FD}" {
+    ActionContexts {
+     UserActionContext "{5C78C42039F7B7B2}" {
+      ContextName "default"
+      Position PointInfo "{5C78C4203E3096EC}" {
+       Offset 0 0.0732 0
+      }
+     }
+    }
+    additionalActions {
+     PickupAction "{5C78C420355864CA}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C78C42041C066F6}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_OpenStorageAction "{5C78C4204C9DE7DC}" {
+     }
+    }
+   }
+  }
+  coords 81.96 1.001 115.963
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C78C4208E3557FF}" {
+   }
+   SoundComponent "{5C78C420838D5B12}" {
+    Filenames {
+     "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+    }
+    DistanceManagement 0
+   }
+   MeshObject "{5C78C4209238F8E2}" {
+    Object "{C93586479590F3C6}Assets/Items/Equipment/Accessories/Pouch_Medical_Soviet/Pouch_Medical_Soviet_item.xob"
+    Materials {
+     MaterialAssignClass "{5C78C4202A5A743C}" {
+      SourceMaterial "Pouch_Medical_Soviet"
+      AssignedMaterial "{40C1E017102522B1}Assets/Items/Equipment/Accessories/Pouch_Medical_Soviet/Data/Wallet.emat"
+     }
+    }
+   }
+   Hierarchy "{5C78C4207AF7ADA6}" {
+   }
+   RigidBody "{5C78C420ACDFD499}" {
+    ModelGeometry 1
+    Static 1
+   }
+   ProcAnimComponent "{5C78C420A37E0F23}" {
+    Parameters {
+     ProcAnimParams "{5C78C420B8475539}" {
+      ResourceName "{6D6D2FEA1F89DC9F}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.pap"
+      SimulationDistance 20
+     }
+    }
+   }
+   SCR_UniversalInventoryStorageComponent "{5C78C420C941A2CE}" {
+    Attributes SCR_ItemAttributeCollection "{5C78C420CF805068}" {
+     ItemDisplayName UIInfo "{5C78C420C0A81F43}" {
+      Name "Wallet"
+      Description "Storage for watches found"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C78C420D0A60800}" {
+      Weight 0.1
+      SizeSetupStrategy Manual
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C78C420EDBCD609}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 25 0
+       FOV 45
+      }
+     }
+     CommonItemType "NONE"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+    UseCapacityCoefficient 0
+    MaxItemSize 2 2 2
+    m_fMaxWeight 5
+   }
+   ActionsManagerComponent "{5C78C420266E91FD}" {
+    ActionContexts {
+     UserActionContext "{5C78C42039F7B7B2}" {
+      ContextName "default"
+      Position PointInfo "{5C78C4203E3096EC}" {
+       Offset 0 0.0732 0
+      }
+     }
+    }
+    additionalActions {
+     PickupAction "{5C78C420355864CA}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C78C42041C066F6}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_OpenStorageAction "{5C78C4204C9DE7DC}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C78C42061764E32}" {
+       Name "#AR-Inventory_OpenStorage"
+      }
+     }
+    }
+   }
+   RplComponent "{5C78C420677B69DC}" {
+   }
+  }
+  coords 81.96 1.001 115.963
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C78C42204C939E3}" {
+   }
+   SoundComponent "{5C78C42204C9398F}" {
+    Filenames {
+     "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+    }
+    DistanceManagement 0
+   }
+   MeshObject "{5C78C42204C939A4}" {
+    Object "{C93586479590F3C6}Assets/Items/Equipment/Accessories/Pouch_Medical_Soviet/Pouch_Medical_Soviet_item.xob"
+    Materials {
+     MaterialAssignClass "{5C78C42204C939A2}" {
+      SourceMaterial "Pouch_Medical_Soviet"
+      AssignedMaterial "{40C1E017102522B1}Assets/Items/Equipment/Accessories/Pouch_Medical_Soviet/Data/Wallet.emat"
+     }
+    }
+   }
+   RigidBody "{5C78C42204C93A50}" {
+    ModelGeometry 1
+    Static 1
+   }
+   SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
+    Attributes SCR_ItemAttributeCollection "{5C78C42204C93A04}" {
+     ItemDisplayName UIInfo "{5C78C42204C93A1A}" {
+      Name "Wallet"
+      Description "Storage for watches found"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C78C42204C93A14}" {
+      Weight 0.1
+      SizeSetupStrategy Manual
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C78C42204C93A02}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 25 0
+       FOV 45
+      }
+     }
+     CommonItemType "NONE"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+    Priority 8
+    UseCapacityCoefficient 0
+    MaxItemSize 2 2 2
+    m_fMaxWeight 5
+   }
+   ActionsManagerComponent "{5C78C42204C93AEF}" {
+    ActionContexts {
+     UserActionContext "{5C78C42204C93ADE}" {
+      ContextName "default"
+      Position PointInfo "{5C78C42204C93ADD}" {
+       Offset 0 0.0732 0
+      }
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{5C78C42204C93AFC}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C78C42204C93AFB}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_OpenStorageAction "{5C78C42204C93AEA}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C78C42204C93AE8}" {
+       Name "#AR-Inventory_OpenStorage"
+      }
+     }
+    }
+   }
+   RplComponent "{5C78C42204C93AE2}" {
+   }
+  }
+  coords 81.731 1.001 116.013
+ }
+ {
+  coords 123.918 1.001 125.993
+ }
+ {
+  coords 82.068 1.001 116.479
+ }
+ {
+  coords 81.891 1.001 116.479
+ }
+ {
+  coords 76.545 1.001 111.842
+ }
+ {
+  components {
+   MeshObject "{5C79207BC4FBD635}" {
+    Object "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+   }
+  }
+  coords 162.773 1.406 119.953
+  scale 1.69
+ }
+ {
+  components {
+   MeshObject "{5C7920797BF82D55}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 160.98 1.001 119.654
+ }
+ {
+  components {
+   MeshObject "{5C7920789B977C76}" {
+    Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+   }
+  }
+  coords 160.98 1.001 119.654
+ }
+ {
+  components {
+   MeshObject "{5C7920789B6799A8}" {
+    Object "{787C8218FC491004}Assets/Characters/Basebody/Basebody_Male_Head_01.xob"
+   }
+  }
+  coords 160.98 1.001 119.654
+ }
+ {
+  components {
+   MeshObject "{5C79207ECBB125BD}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 124.87 1.001 122.418
+ }
+ {
+  components {
+   MeshObject "{5C79207ECD57F89C}" {
+    Object "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+   }
+  }
+  coords 124.643 1.001 122.586
+ }
+ {
+  components {
+   MeshObject "{5C79207D1881AA30}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 124.76 1.001 120.343
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A7178DCDDC}" {
+    Object "{558B6EC82FED813A}Assets/Characters/Heads/Head_Asian_02/Head_Asian_02.xob"
+   }
+  }
+  coords 123.12 1.001 117.405
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A72831768A}" {
+    Object "{BAD4D6537FF34B5F}Assets/Characters/Heads/Head_Black_02/Head_Black_02.xob"
+   }
+  }
+  coords 122.126 1.001 117.444
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A72B0FD856}" {
+    Object "{52F50A5F061314A8}Assets/Characters/Heads/Head_White_02/Head_White_02.xob"
+   }
+  }
+  coords 124.027 1.001 117.315
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A72EA5825E}" {
+    Object "{9FD17F0FF3C91E1B}Assets/Characters/Heads/Head_White_03/Head_White_03.xob"
+   }
+  }
+  coords 121.533 1.001 117.477
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A72FE2AB39}" {
+    Object "{79CDF66A691B4624}Assets/Characters/Heads/Head_White_04/Head_White_04.xob"
+   }
+  }
+  coords 124.324 1.001 117.29
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A720D3E4BC}" {
+    Object "{B4E9833A9CC14C97}Assets/Characters/Heads/Head_White_05/Head_White_05.xob"
+   }
+  }
+  coords 122.438 1.001 117.477
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A721F1B453}" {
+    Object "{A175FD202B4565D1}Assets/Characters/Heads/Head_White_06/Head_White_06.xob"
+   }
+  }
+  coords 123.728 1.001 117.328
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A7224480BB}" {
+    Object "{2FBC0E00B70BE33C}Assets/Characters/Heads/Head_White_08/Head_White_08.xob"
+   }
+  }
+  coords 121.826 1.001 117.472
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A7234A452D}" {
+    Object "{59675885AAC9D5C0}Assets/Characters/Heads/Head_White_09/Head_White_09.xob"
+   }
+  }
+  coords 123.436 1.001 117.353
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A72597F918}" {
+    Object "{1B62FD11B234D24D}Assets/Characters/Heads/Head_White_10/Head_White_10.xob"
+   }
+  }
+  coords 122.81 1.001 117.437
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 121.533 1.001 117.477
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 121.826 1.001 117.472
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 122.126 1.001 117.444
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 122.438 1.001 117.477
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+    Materials {
+     MaterialAssignClass "{5C7AA8AC5FF47B4A}" {
+      SourceMaterial "M_DogTags"
+      AssignedMaterial "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
+     }
+    }
+   }
+  }
+  coords 122.81 1.001 117.437
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 123.12 1.001 117.405
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 123.436 1.001 117.353
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+    Materials {
+     MaterialAssignClass "{5C7AA8AFA52EDC87}" {
+      SourceMaterial "M_DogTags"
+      AssignedMaterial "{EBB48300A79B45E3}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_USSR.emat"
+     }
+    }
+   }
+  }
+  coords 123.728 1.001 117.328
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 124.027 1.001 117.315
+ }
+ {
+  components {
+   MeshObject "{5C7AA8A74E3B899B}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+  }
+  coords 124.324 1.001 117.29
+ }
+ {
+  components {
+   MeshObject "{5C7AD7A97C455E12}" {
+    Object "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+    Materials {
+     MaterialAssignClass "{5C7AD7A883783B07}" {
+      SourceMaterial "M_DogTags"
+      AssignedMaterial "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
+     }
+    }
+   }
+  }
+  coords 128.512 1.001 132.709
+ }
+ {
+  components {
+   MeshObject "{5C7AD7AF5F8B9AE7}" {
+    Object "{B4FC2438044736CB}Assets/Items/Equipment/Accessories/DogTag/DogTag_clutter_Item.xob"
+    Materials {
+     MaterialAssignClass "{5C7AD7AF54C1DEF5}" {
+      SourceMaterial "M_DogTags"
+      AssignedMaterial "{81988054586F4360}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag.emat"
+     }
+    }
+   }
+  }
+  coords 128.909 1.378 131.252
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C7D11CAD4E6F2AE}" {
+   }
+   SoundComponent "{5C7D11CAD4E6F368}" {
+    Filenames {
+     "{D7CE99AA2FB40C31}Sounds/Items/_SharedData/PickUp/Items_PickUp_Canteen.acp" "{C9A9B77442AA824A}Sounds/Items/_SharedData/Drop/Items_Drop_Canteen.acp"
+    }
+    DistanceManagement 0
+   }
+   InventoryItemComponent "{5C7D11CAD4E6F3EE}" {
+    Attributes SCR_ItemAttributeCollection "{5C7D11CAD4E6F3EB}" {
+     ItemDisplayName UIInfo "{5C7D11CAD4E6F332}" {
+      Name "Photo of loved one"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C7D11CAD4E6F3DD}" {
+      Weight 0.4
+      SizeSetupStrategy Manual
+      ItemDimensions 15 15 15
+      ItemVolume 1000
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C7D11CAD4E6F3CB}" {
+       CameraPreset Front
+       CameraOrbitAngles -25 25 0
+       CameraDistanceToItem 1.5
+       FOV 10
+      }
+     }
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOADOUT_STORAGE
+    }
+   }
+   MeshObject "{5C7D11CAD4E6F39C}" {
+    Object "{3A1BADCAE99125E4}Assets/Items/Misc/Photo/Loved_Photo.xob"
+   }
+   RigidBody "{5C7D11CAD4E6F38F}" {
+    Mass 3
+    LinearDamping 0.5
+    AngularDamping 0.5
+    AngularSleepingThreashold 1
+    SimState None
+    ModelGeometry 1
+   }
+   ActionsManagerComponent "{5C7D11CAD4E6F427}" {
+    ActionContexts {
+     UserActionContext "{5C7D11CAD4E6F47C}" {
+      ContextName "default"
+      Position PointInfo "{5C7D11CAD4E6F443}" {
+       Offset 0 0.1 0
+      }
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{5C7D11CAD4E6F460}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7D11CAD4E6F46E}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_WearClothUserAction "{5C7D11CAD4E6F420}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7D11CAD4E6F41E}" {
+       Name "#AR-Inventory_Wear"
+      }
+     }
+    }
+   }
+   RplComponent "{5C7D11CAD4E6F4DC}" {
+   }
+  }
+  coords 118.641 1.404 150.891
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C7D11CAD4E6F2AE}" {
+   }
+   SoundComponent "{5C7D11CAD4E6F368}" {
+    Filenames {
+     "{D7CE99AA2FB40C31}Sounds/Items/_SharedData/PickUp/Items_PickUp_Canteen.acp" "{C9A9B77442AA824A}Sounds/Items/_SharedData/Drop/Items_Drop_Canteen.acp"
+    }
+    DistanceManagement 0
+   }
+   InventoryItemComponent "{5C7D11CAD4E6F3EE}" {
+    Attributes SCR_ItemAttributeCollection "{5C7D11CAD4E6F3EB}" {
+     ItemDisplayName UIInfo "{5C7D11CAD4E6F332}" {
+      Name "Photo of loved one"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C7D11CAD4E6F3DD}" {
+      Weight 0.4
+      SizeSetupStrategy Manual
+      ItemDimensions 15 15 15
+      ItemVolume 1000
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C7D11CAD4E6F3CB}" {
+       CameraPreset Front
+       CameraOrbitAngles -25 25 0
+       CameraDistanceToItem 1.5
+       FOV 10
+      }
+     }
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOADOUT_STORAGE
+    }
+   }
+   MeshObject "{5C7D11CAD4E6F39C}" {
+    Object "{3A1BADCAE99125E4}Assets/Items/Misc/Photo/Loved_Photo.xob"
+   }
+   RigidBody "{5C7D11CAD4E6F38F}" {
+    Mass 3
+    LinearDamping 0.5
+    AngularDamping 0.5
+    AngularSleepingThreashold 1
+    SimState None
+    ModelGeometry 1
+   }
+   ActionsManagerComponent "{5C7D11CAD4E6F427}" {
+    ActionContexts {
+     UserActionContext "{5C7D11CAD4E6F47C}" {
+      ContextName "default"
+      Position PointInfo "{5C7D11CAD4E6F443}" {
+       Offset 0 0.1 0
+      }
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{5C7D11CAD4E6F460}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7D11CAD4E6F46E}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_WearClothUserAction "{5C7D11CAD4E6F420}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7D11CAD4E6F41E}" {
+       Name "#AR-Inventory_Wear"
+      }
+     }
+    }
+   }
+   RplComponent "{5C7D11CAD4E6F4DC}" {
+   }
+  }
+  coords 118.536 1.404 151.1
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C7D11CAD4E6F2AE}" {
+   }
+   SoundComponent "{5C7D11CAD4E6F368}" {
+    Filenames {
+     "{D7CE99AA2FB40C31}Sounds/Items/_SharedData/PickUp/Items_PickUp_Canteen.acp" "{C9A9B77442AA824A}Sounds/Items/_SharedData/Drop/Items_Drop_Canteen.acp"
+    }
+    DistanceManagement 0
+   }
+   InventoryItemComponent "{5C7D11CAD4E6F3EE}" {
+    Attributes SCR_ItemAttributeCollection "{5C7D11CAD4E6F3EB}" {
+     ItemDisplayName UIInfo "{5C7D11CAD4E6F332}" {
+      Name "Photo of loved one"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C7D11CAD4E6F3DD}" {
+      Weight 0.4
+      SizeSetupStrategy Manual
+      ItemDimensions 15 15 15
+      ItemVolume 1000
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C7D11CAD4E6F3CB}" {
+       CameraPreset Front
+       CameraOrbitAngles 0 25 0
+       CameraDistanceToItem 1.5
+       FOV 10
+      }
+     }
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOADOUT_STORAGE
+    }
+   }
+   MeshObject "{5C7D11CAD4E6F39C}" {
+    Object "{3A1BADCAE99125E4}Assets/Items/Misc/Photo/Loved_Photo.xob"
+   }
+   RigidBody "{5C7D11CAD4E6F38F}" {
+    Mass 3
+    LinearDamping 0.5
+    AngularDamping 0.5
+    AngularSleepingThreashold 1
+    SimState None
+    ModelGeometry 1
+   }
+   ActionsManagerComponent "{5C7D11CAD4E6F427}" {
+    ActionContexts {
+     UserActionContext "{5C7D11CAD4E6F47C}" {
+      ContextName "default"
+      Position PointInfo "{5C7D11CAD4E6F443}" {
+       Offset 0 0.1 0
+      }
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{5C7D11CAD4E6F460}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7D11CAD4E6F46E}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_WearClothUserAction "{5C7D11CAD4E6F420}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7D11CAD4E6F41E}" {
+       Name "#AR-Inventory_Wear"
+      }
+     }
+    }
+   }
+   RplComponent "{5C7D11CAD4E6F4DC}" {
+   }
+  }
+  coords 118.242 1.404 150.867
+ }
+ {
+  coords 111.534 1.001 111.2
+ }
+ {
+  coords 129.836 1.001 125.104
+ }
+ {
+  coords 156.973 1.001 80.797
+ }
+ {
+  components {
+   MeshObject "{5C7D358DC062773B}" {
+    Object "{E443663E5241622A}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_folded.xob"
+   }
+  }
+  coords 123.64 1.001 125.204
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C7EF4D23770CABB}" {
+   }
+   WeaponSoundComponent "{5C7EF4D23770CAA4}" {
+    Filenames {
+     "{44CBBB2C398E653B}Sounds/Weapons/Handguns/PM/Weapons_Handguns_PM_Handling.acp" "{0EDF037F2DC3E098}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_UGL_Generic.acp" "{27E5FEBCE92BE40B}Sounds/Weapons/_SharedData/Melee/Weapons_Melee.acp" "{E93E101E7ACA2172}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Grenade.acp"
+    }
+   }
+   MeshObject "{5C7EF4D23770CB4D}" {
+    Object "{F2E1926C50C222E1}Assets/Weapons/Attachments/Bayonets/Bayonet_6Kh4/Bayonet_6Kh4.xob"
+    LODFactors {
+     1 1 1 1
+    }
+   }
+   Hierarchy "{5C7EF4D23770CB43}" {
+   }
+   RigidBody "{5C7EF4D23770CB7A}" {
+    ModelGeometry 1
+   }
+   SCR_BaseInventoryItemComponent "{5C7EF4D38A17EC1A}" {
+    Enabled 0
+    Attributes SCR_ItemAttributeCollection "{5C7EF4D38C89BBCB}" {
+     ItemDisplayName UIInfo "{5C7EF4D384F28DDD}" {
+      Name "Knife"
+      Description "knife"
+     }
+     ItemAnimationAttributes ItemAnimationAttributes "{5C7EF4D3877551BF}" {
+      IkSettings {
+       ItemIKSettings "{5C7EF76E99D5B610}" {
+       }
+      }
+      AnimationInstance "{9D1FA29C8172197B}Assets/Weapons/Handguns/workspaces/PM_weapon.asi"
+      OverrideDefaultIkBonesBlend 1
+      AnimationAttachments {
+       AnimationAttachmentInfo "{5C7EF76EA3F0FED3}" {
+        AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+        AnimInstance "{664133AD19737D97}Assets/Weapons/Handguns/workspaces/PM_player.asi"
+       }
+      }
+     }
+    }
+   }
+   SCR_MeleeWeaponProperties "{5C7EF4D23770CB72}" {
+    m_fDamage 500
+    m_fRange 2
+    m_fExecutionTime 0.5
+   }
+   SCR_WeaponAttachmentsStorageComponent "{5C7EF4D23770CC6E}" {
+    Attributes SCR_ItemAttributeCollection "{5C7EF4D23770CC47}" {
+     ItemDisplayName WeaponUIInfo "{5C7EF4D23770CB02}" {
+      Name "Knife"
+      Description "Usefull for close combat encounters, can also be used to tear down clothing to bandages (Still WIP knife gets consumed on craft)"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C7EF4D23770CB35}" {
+      Weight 0.7
+      SizeSetupStrategy Manual
+      ItemVolume 200
+      RestingUP Left
+      RestingAdditiveRotationLS 0 0 0
+      RestingAdditiveOffsetLS 0 0 0
+     }
+     ItemAnimationAttributes ItemAnimationAttributes "{5C7EF4D23770CBB6}" {
+      IkSettings {
+       ItemIKSettings "{5C7EF4D23770CBC9}" {
+        MovementSpeedRange 0 0.01
+        IkSettingsStand 7
+        IkSettingsCrouch 7
+        IkSettingsProne 7
+       }
+       ItemIKSettings "{5C7EF4D23770CBCC}" {
+        MovementSpeedRange 0.01 2.2
+        IkSettingsStand 7
+        IkSettingsCrouch 7
+        IkSettingsProne 4
+       }
+       ItemIKSettings "{5C7EF4D23770CBC2}" {
+        MovementSpeedRange 2.2 3
+        IkSettingsStand 4
+        IkSettingsCrouch 4
+        IkSettingsProne 4
+       }
+       ItemIKSettings "{5C7EF4D23770CBC6}" {
+        Jumping 1
+        IkSettingsStand 4
+       }
+       ItemIKSettings "{5C7EF4D23770CBFF}" {
+        Lowered 1
+        InAds 0
+        OutAds 0
+       }
+       ItemIKSettings "{5C7EF4D23770CBF2}" {
+        ProneTurn 1
+        IkSettingsStand 4
+       }
+      }
+      AnimationInstance "{9D1FA29C8172197B}Assets/Weapons/Handguns/workspaces/PM_weapon.asi"
+      AnimationIKPose ""
+      IncludeBonesInIkBlend {
+      }
+      AnimationAttachments {
+       AnimationAttachmentInfo "{5C7EF7E2C46B3154}" {
+        AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+        AnimInstance "{9D1FA29C8172197B}Assets/Weapons/Handguns/workspaces/PM_weapon.asi"
+        StartNode "IdleFireSTM"
+        BindingName "Weapon"
+       }
+      }
+      HandAdditiveRotation 90 0 0
+      HandAdditiveTranslation 10 0 0
+      AllowInspection 1
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C7EF4D23770CC58}" {
+       CameraOrbitAngles 45 -70 150
+       CameraDistanceToItem 0.3
+       FOV 45
+       AnimationInstance "{B2310BF09F78B065}anims/workspaces/player/player_inventory_pistol.asi"
+      }
+     }
+     m_SlotType SLOT_WEAPONS_STORAGE
+    }
+    StoragePurpose 32
+   }
+   WeaponComponent "{5C7EF4D23770CD19}" {
+    components {
+     WeaponAnimationComponent "{5C7EF4D23770CCCC}" {
+      Enabled 0
+      AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+      AnimInstance "{9D1FA29C8172197B}Assets/Weapons/Handguns/workspaces/PM_weapon.asi"
+      StartNode "IdleFireSTM"
+      AlwaysActive 1
+      BindWithInjection 1
+      AnimVariablesToBind {
+       "State"
+      }
+     }
+     AttachmentSlotComponent "{5C7EF4D23770CCE8}" {
+      AttachmentSlot InventoryStorageSlot Knife {
+       Angles -90 180 -180
+       ChildPivotID "snap_weapon"
+       Enabled 0
+      }
+     }
+    }
+    SignalsSourceAccess SignalsSourceAccessClass "{5C7EF4D23770CCE5}" {
+    }
+    useAimingType None
+    WeaponType Handgun
+    AllowedRaise "Only lowered"
+    obstructionTestCharacterOffset 0 0 0
+    obstructionTestAddedLength 0.35
+    obstructionTestBreakingThreshold 0.35
+    ObstructionAlphaThreshold 1
+    obstructionTestBBScale 1 0.75 0.05
+    sightsCameraRollScaler -1
+    SoundInt 1010100
+    UIInfo WeaponUIInfo "{5C7EF4D23770CC94}" {
+     Name "Knife"
+     Description "Usefull for close combat encounters, can also be used to tear down clothing to bandages (Still WIP knife gets consumed on craft)"
+     Icon "{9DE83EF9996D2EC8}UI/Textures/WeaponIcons/weapon_Bayonet6Kh4.edds"
+    }
+    WeaponSlotType "secondary"
+    WeaponOffset 0 0 0
+   }
+   ActionsManagerComponent "{5C7EF4D23770CDF2}" {
+    ActionContexts {
+     UserActionContext "{5C7EF4D23770CD04}" {
+      ContextName "default"
+      Position PointInfo "{5C7EF4D23770CD02}" {
+       Offset 0 0.02 0
+      }
+      Radius 1
+     }
+    }
+    additionalActions {
+     SCR_EquipWeaponAction "{5C7EF4D23770CD2C}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7EF4D23770CD2B}" {
+       Name "#AR-Inventory_Equip"
+      }
+     }
+     SCR_EquipWeaponHolsterAction "{5C7EF4D23770CDD0}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7EF4D23770CDD1}" {
+       Name "#AR-Inventory_EquipHolster"
+      }
+      "Sort Priority" 1
+     }
+     SCR_PickUpItemAction "{5C7EF4D23770CDC0}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7EF4D23770CDCE}" {
+       Name "#AR-Inventory_PickUp"
+      }
+      "Sort Priority" 2
+     }
+     SCR_WeaponAction "{5C7EF4D23770CDF0}" {
+      ParentContextList {
+       "bipod"
+      }
+      UIInfo UIInfo "{5C7EF4D23770CDFE}" {
+       Name "Bipod"
+      }
+      m_WeaponActionType Bipod
+     }
+    }
+   }
+   RplComponent "{5C7EF4D23770CDED}" {
+   }
+  }
+  coords 76.492 2.019 129.123
+  Flags 4194307
+ }
+ {
+  components {
+   MeshObject "{5C7F06EEF37F0201}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+    Materials {
+     MaterialAssignClass "{5C7F06EE27774F2F}" {
+      SourceMaterial "M_DogTags"
+      AssignedMaterial "{6F021F071CEA1545}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_Rusted.emat"
+     }
+    }
+   }
+  }
+  coords 126.266 0.974 135.517
+ }
+ {
+  components {
+   MeshObject "{5C7F06E335C06841}" {
+    Object "{AC0DFF43D2EB7723}Assets/Items/Equipment/Accessories/DogTag/DogTag_hanged.xob"
+   }
+  }
+  coords 124.958 2.089 134.392
+ }
+ {
+  components {
+   MeshObject "{5C7F06E0A7FBD443}" {
+    Object "{AC0DFF43D2EB7723}Assets/Items/Equipment/Accessories/DogTag/DogTag_hanged.xob"
+   }
+   SlotManagerComponent "{5C7F06E0BF289DB5}" {
+    Slots {
+     EntitySlotInfo tag {
+      Angles -90 0 0
+      Prefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+     }
+    }
+   }
+  }
+  coords 136.084 1.049 99.991
+ }
+ {
+  components {
+   MeshObject "{5C7F06E0A7FBD443}" {
+    Object "{AC0DFF43D2EB7723}Assets/Items/Equipment/Accessories/DogTag/DogTag_hanged.xob"
+    Materials {
+     MaterialAssignClass "{5C7F06E1901DB8E4}" {
+      SourceMaterial "M_DogTag"
+      AssignedMaterial "{6F021F071CEA1545}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_Rusted.emat"
+     }
+    }
+   }
+   SlotManagerComponent "{5C7F06E0BF289DB5}" {
+    Slots {
+     EntitySlotInfo tag {
+      Offset -0.0045 -0.0031 -0.0031
+      Angles -80.1097 -90 90
+      Prefab "{3A85B25FB0660C27}prefabs/Items/Equipment/Accessories/Dogtags/Rusted_Tag_Item.et"
+     }
+    }
+   }
+  }
+  coords 135.99 1.049 99.991
+ }
+ {
+  components {
+   SignalsManagerComponent "{5C7F06E0E023F2D0}" {
+   }
+   SoundComponent "{5C7F06E0E023F2FA}" {
+    Filenames {
+     "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+    }
+    DistanceManagement 0
+   }
+   InventoryItemComponent "{5C7F06E0E023F371}" {
+    Attributes SCR_ItemAttributeCollection "{5C7F06E0E023F37F}" {
+     ItemDisplayName UIInfo "{5C7F06E0E023F281}" {
+      Name "Rusted Tag"
+      Description "Tag rusted, the text on it has been lost in time. It might still hold some value to some people"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C7F06E0E023F2BF}" {
+      Weight 0.05
+      SizeSetupStrategy Manual
+      ItemDimensions 2 2 2
+      ItemVolume 10
+      RestingAdditiveOffsetLS 0 0 0
+     }
+     ItemAnimationAttributes ItemAnimationAttributes "{5C7F06E0E023F35E}" {
+      AnimationAttachments {
+       AnimationAttachmentInfo "{5C7F06E0E023F35D}" {
+        AnimGraph "{95F36C067E914E76}Assets/Items/Equipment/workspaces/Watch_Vostok.agr"
+        AnimInstance "{03F05A84D48612B4}Assets/Items/Equipment/workspaces/Watch_Vostok_player.asi"
+        BindingName "Gadget"
+       }
+      }
+     }
+     CustomAttributes {
+      CharacterModifierAttributes "{5C7F06E0E023F341}" {
+       Supress1hShooting 0
+      }
+      PreviewRenderAttributes "{5C7F06E0E023F37D}" {
+       CameraPreset Top
+       CameraDistanceToItem 0.07
+       ItemRenderRotation -25 25 25
+       FOV 45
+      }
+     }
+     CommonItemType "NONE"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+   }
+   MeshObject "{5C7F06E0E023F36D}" {
+    Object "{99FE84401AD397C8}Assets/Items/Equipment/Accessories/DogTag/DogTag_single_Item.xob"
+    Materials {
+     MaterialAssignClass "{5C7F06E04A9692E9}" {
+      SourceMaterial "M_DogTag"
+      AssignedMaterial "{6F021F071CEA1545}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_Rusted.emat"
+     }
+    }
+    LODFactors {
+     1
+    }
+   }
+   RigidBody "{5C7F06E0E023F319}" {
+    ModelGeometry 1
+   }
+   ProcAnimComponent "{5C7F06E0E023F305}" {
+    Parameters {
+     ProcAnimParams "{5C7F06E0E023F303}" {
+      ResourceName "{6D6D2FEA1F89DC9F}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.pap"
+      BoneNames {
+       "i_hours_Vostok" "i_minutes_Vostok" "i_seconds_Vostok" "i_date_Vostok"
+      }
+      SimulationDistance 20
+     }
+    }
+   }
+   ActionsManagerComponent "{5C7F06E0E023F3D4}" {
+    ActionContexts {
+     UserActionContext "{5C7F06E0E023F322}" {
+      ContextName "default"
+      Position PointInfo "{5C7F06E0E023F320}" {
+      }
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{5C7F06E0E023F3D3}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5C7F06E0E023F3D1}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+    }
+   }
+   RplComponent "{5C7F06E0E023F3CA}" {
+   }
+  }
+  coords 135.828 1.001 99.996
+ }
+}
+$grp SCR_DestructibleEntity {
+ {
+  components {
+   MeshObject "{5C78906619F240B7}" {
+    Object "{4DCD0D6B383DA63C}Assets/Structures/Walls/Wooden/WoodenFence_01_Pole.xob"
+    LODFactors {
+     70 50 30 10 2 1 1
+    }
+   }
+   NavmeshCustomLinkComponent "{5C78906619F2413A}" {
+    Enabled 0
+    LinkType NavmeshJumpLink "{5C78906619F24139}" {
+     BeginPoint 1 0 1.5
+     EndPoint 1 0 -1.5
+     Radius 0.2
+     QueueDelay 5
+     QueueTimeout 0
+     ProjectPresets {
+      NavmeshCustomLinkPreset "{5C78906619F2416B}" {
+       ProjectName "Soldiers"
+       AreaType "Fence"
+      }
+     }
+     GrabPoint 1 1.2 0
+    }
+   }
+   RigidBody "{5C78906619F241D6}" {
+    ResponseIndex "TinyDestructible"
+    ModelGeometry 1
+    Static 1
+   }
+   SCR_DestructionFractalComponent "{5C78906619F2421C}" {
+    Enabled 0
+    "Additional hit zones" {
+     ScriptedHitZone Default {
+      HZDefault 1
+     }
+    }
+    m_fBaseHealth 500
+    m_fForceToDamageScale 500
+    m_fDamageThresholdMinimum 30
+    m_fDamageThresholdMaximum 20000
+    m_DebrisDestroyFragment SCR_FragmentDebris "{5C78906619F24191}" {
+     m_fDamageToImpulse 0.04
+    }
+    m_fFragmentHealth 500
+    m_bDestroyFragmentOnFracture 1
+    m_FractalVariants {
+     SCR_FractalVariation "{5C78906619F2427B}" {
+      m_ModelNormal "{A88E483C5D3A3F15}Assets/Structures/Walls/Wooden/WoodenFence_01_2m.xob"
+      m_aModelFragments {
+       "{56BAE94AFE7AFBAB}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_01_dst.xob" "{58A4AD02C38DF471}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_02_dst.xob" "{5D516EC528DF0EC7}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_03_dst.xob" "{44982592B863EBC5}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_04_dst.xob" "{416DE65553311173}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_05_dst.xob"
+      }
+      m_aModelAnchorFragments {
+       "{534F2A8D1528011D}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_00_dst.xob"
+      }
+      m_Hierarchy SCR_FragmentHierarchy "{5C78906619F24278}" {
+       m_aLinks {
+        SCR_FragmentLinkage "{5C78906619F241A4}" {
+         m_bIsAnchor 0
+         m_iIndex 0
+         m_aOtherIndexes {
+          1 5
+         }
+        }
+        SCR_FragmentLinkage "{5C78906619F2425A}" {
+         m_bIsAnchor 0
+         m_iIndex 1
+         m_aOtherIndexes {
+          0 2
+         }
+        }
+        SCR_FragmentLinkage "{5C78906619F24250}" {
+         m_bIsAnchor 0
+         m_iIndex 2
+         m_aOtherIndexes {
+          1 3
+         }
+        }
+        SCR_FragmentLinkage "{5C78906619F24249}" {
+         m_bIsAnchor 0
+         m_iIndex 3
+         m_aOtherIndexes {
+          2 4
+         }
+        }
+        SCR_FragmentLinkage "{5C78906619F2424E}" {
+         m_bIsAnchor 0
+         m_iIndex 4
+         m_aOtherIndexes {
+          3
+         }
+        }
+        SCR_FragmentLinkage "{5C78906619F24247}" {
+         m_bIsAnchor 1
+         m_iIndex 5
+         m_aOtherIndexes {
+          0
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+   SCR_DestructionMultiPhaseComponent "{5C78906619F2428D}" {
+    Enabled 0
+    "Additional hit zones" {
+     ScriptedHitZone Default {
+      HZDefault 1
+      DamageThreshold 50
+      "Explosive multiplier" 100
+     }
+    }
+    m_fBaseHealth 800
+    m_fForceToDamageScale 200
+    m_fDamageThresholdMaximum 30000
+    m_DestroySpawnObjects {
+     SCR_ParticleSpawnable "{5C78906619F242DC}" {
+      m_Particle "{F47FD7A4B5220843}Particles/Props/Dest_WoodenFence.ptc"
+      m_bDirectional 0
+     }
+     SCR_DebrisSpawnable "{5C78906619F242CD}" {
+      m_ModelPrefabs {
+       "{13CB35D18B2629EB}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_Pole_00_dst.xob"
+      }
+      m_fDamageToImpulse 0.02
+      m_eMaterialSoundType WOOD_PLANK_SMALL
+     }
+    }
+    m_eMaterialSoundType BREAK_WOOD_SOLID
+   }
+   RplComponent "{5C78906619F242B1}" {
+    Enabled 0
+   }
+  }
+  coords 165.22 0.109 118.803
+  Flags 524291
+  placement slopelandcontact
+  MaxHealth 800
+  "Explosive multiplier" 100
+  DamageThreshold 50
+  FirstDestructionPhase SCR_BaseDestructionPhase "{5C78906619F242A1}" {
+   m_sPhaseModel "{A4048C2AA75EF832}Common/Models/Default.xob"
+  }
+  LastDestructionPhase SCR_BaseDestructionPhase "{5C78906619F242A6}" {
+   Threshold 0
+  }
+  m_eMaterialSoundType BREAK_WOOD_SOLID
+  {
+   $grp GenericEntity {
+    {
+     components {
+      MeshObject "{5C789065CA78ECDB}" {
+       Object "{9F4C321E6A52E8B7}Assets/Items/Equipment/Backpacks/Backpack_M70_Swiss/Backpack_M70_Swiss.xob"
+      }
+      SCR_UniversalInventoryStorageComponent "{5C789066287F1AC0}" {
+      }
+      RplComponent "{5C789066CA09ECFB}" {
+      }
+     }
+     coords -0.135 -0.613 0.038
+     angleZ 8.33
+    }
+    {
+     components {
+      MeshObject "{5C789065FDAC360A}" {
+       Object "{3C4F053A42BDB84D}Assets/Structures/Cultural/Cemeteries/Tombstones/CrossSmall_E_01/Dst/CrossSmall_E_01_Dst_05.xob"
+       Materials {
+        MaterialAssignClass "{5C78906548FCEAC8}" {
+         SourceMaterial "CrossSmall_E_01"
+         AssignedMaterial "{CC4A6D49E9F96486}Assets/Structures/Walls/Wooden/Data/WoodenFence_01.emat"
+        }
+       }
+      }
+     }
+     coords 0.044 -1.412 -0.03
+    }
+   }
+   SCR_DestructibleEntity {
+    components {
+     MeshObject "{5C7890661C956F65}" {
+      Object "{4DCD0D6B383DA63C}Assets/Structures/Walls/Wooden/WoodenFence_01_Pole.xob"
+      LODFactors {
+       70 50 30 10 2 1 1
+      }
+     }
+     NavmeshCustomLinkComponent "{5C7890661C956FE0}" {
+      Enabled 0
+      LinkType NavmeshJumpLink "{5C7890661C956FEE}" {
+       BeginPoint 1 0 1.5
+       EndPoint 1 0 -1.5
+       Radius 0.2
+       QueueDelay 5
+       QueueTimeout 0
+       ProjectPresets {
+        NavmeshCustomLinkPreset "{5C7890661C956FDD}" {
+         ProjectName "Soldiers"
+         AreaType "Fence"
+        }
+       }
+       GrabPoint 1 1.2 0
+      }
+     }
+     RigidBody "{5C7890661C956051}" {
+      ResponseIndex "TinyDestructible"
+      ModelGeometry 1
+      Static 1
+     }
+     SCR_DestructionFractalComponent "{5C7890661C956091}" {
+      Enabled 0
+      "Additional hit zones" {
+       ScriptedHitZone Default {
+        HZDefault 1
+       }
+      }
+      m_fBaseHealth 500
+      m_fForceToDamageScale 500
+      m_fDamageThresholdMinimum 30
+      m_fDamageThresholdMaximum 20000
+      m_DebrisDestroyFragment SCR_FragmentDebris "{5C7890661C956014}" {
+       m_fDamageToImpulse 0.04
+      }
+      m_fFragmentHealth 500
+      m_bDestroyFragmentOnFracture 1
+      m_FractalVariants {
+       SCR_FractalVariation "{5C7890661C9560C6}" {
+        m_ModelNormal "{A88E483C5D3A3F15}Assets/Structures/Walls/Wooden/WoodenFence_01_2m.xob"
+        m_aModelFragments {
+         "{56BAE94AFE7AFBAB}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_01_dst.xob" "{58A4AD02C38DF471}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_02_dst.xob" "{5D516EC528DF0EC7}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_03_dst.xob" "{44982592B863EBC5}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_04_dst.xob" "{416DE65553311173}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_05_dst.xob"
+        }
+        m_aModelAnchorFragments {
+         "{534F2A8D1528011D}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_2m_00_dst.xob"
+        }
+        m_Hierarchy SCR_FragmentHierarchy "{5C7890661C9560C4}" {
+         m_aLinks {
+          SCR_FragmentLinkage "{5C7890661C956023}" {
+           m_bIsAnchor 0
+           m_iIndex 0
+           m_aOtherIndexes {
+            1 5
+           }
+          }
+          SCR_FragmentLinkage "{5C7890661C9560D9}" {
+           m_bIsAnchor 0
+           m_iIndex 1
+           m_aOtherIndexes {
+            0 2
+           }
+          }
+          SCR_FragmentLinkage "{5C7890661C9560DE}" {
+           m_bIsAnchor 0
+           m_iIndex 2
+           m_aOtherIndexes {
+            1 3
+           }
+          }
+          SCR_FragmentLinkage "{5C7890661C9560D7}" {
+           m_bIsAnchor 0
+           m_iIndex 3
+           m_aOtherIndexes {
+            2 4
+           }
+          }
+          SCR_FragmentLinkage "{5C7890661C9560CF}" {
+           m_bIsAnchor 0
+           m_iIndex 4
+           m_aOtherIndexes {
+            3
+           }
+          }
+          SCR_FragmentLinkage "{5C7890661C9560C5}" {
+           m_bIsAnchor 1
+           m_iIndex 5
+           m_aOtherIndexes {
+            0
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+     SCR_DestructionMultiPhaseComponent "{5C7890661C956116}" {
+      Enabled 0
+      "Additional hit zones" {
+       ScriptedHitZone Default {
+        HZDefault 1
+        DamageThreshold 50
+        "Explosive multiplier" 100
+       }
+      }
+      m_fBaseHealth 800
+      m_fForceToDamageScale 200
+      m_fDamageThresholdMaximum 30000
+      m_DestroySpawnObjects {
+       SCR_ParticleSpawnable "{5C7890661C95615F}" {
+        m_Particle "{F47FD7A4B5220843}Particles/Props/Dest_WoodenFence.ptc"
+        m_bDirectional 0
+       }
+       SCR_DebrisSpawnable "{5C7890661C95614F}" {
+        m_ModelPrefabs {
+         "{13CB35D18B2629EB}Assets/Structures/Walls/Wooden/Dst/WoodenFence_01/WoodenFence_01_Pole_00_dst.xob"
+        }
+        m_fDamageToImpulse 0.02
+        m_eMaterialSoundType WOOD_PLANK_SMALL
+       }
+      }
+      m_eMaterialSoundType BREAK_WOOD_SOLID
+     }
+     RplComponent "{5C7890661C956139}" {
+      Enabled 0
+     }
+    }
+    coords -0.376 0.909 -0.055
+    angleZ 95.569
+    Flags 524291
+    placement slopelandcontact
+    MaxHealth 800
+    "Explosive multiplier" 100
+    DamageThreshold 50
+    FirstDestructionPhase SCR_BaseDestructionPhase "{5C7890661C956128}" {
+     m_sPhaseModel "{A4048C2AA75EF832}Common/Models/Default.xob"
+    }
+    LastDestructionPhase SCR_BaseDestructionPhase "{5C7890661C95612E}" {
+     Threshold 0
+    }
+    m_eMaterialSoundType BREAK_WOOD_SOLID
+   }
+  }
+ }
+ {
+  components {
+   MeshObject "{5C78906619F240B7}" {
+    Object "{4DCD0D6B383DA63C}Assets/Structures/Walls/Wooden/WoodenFence_01_Pole.xob"
+    LODFactors {
+     70 50 30 10 2 1 1
+    }
+   }
+   RigidBody "{5C78906619F241D6}" {
+    ResponseIndex "TinyDestructible"
+    ModelGeometry 1
+    Static 1
+   }
+   SlotManagerComponent "{5C78907A9B170312}" {
+    Slots {
+     EntitySlotInfo cross {
+      Offset 0.4921 0.7408 -0.0514
+      Angles 0 0 -84.1237
+      Prefab "{FBDCA11BD8FB4220}Prefabs/Structures/Walls/Wooden/WoodenFence_01/WoodenFence_01_Pole.et"
+     }
+     EntitySlotInfo wood_Jesus {
+      Offset 0.0264 -1.4041 0
+      Prefab "{1ED57E409EBFA11B}prefabs/Stashes/Graves/Wood_Jesus.et"
+     }
+    }
+   }
+  }
+  coords 161.362 0 118.604
+  angleZ -8.33
+  Flags 524291
+  placement slopelandcontact
+  MaxHealth 800
+  "Explosive multiplier" 100
+  DamageThreshold 50
+  FirstDestructionPhase SCR_BaseDestructionPhase "{5C78906619F242A1}" {
+   m_sPhaseModel "{A4048C2AA75EF832}Common/Models/Default.xob"
+  }
+  LastDestructionPhase SCR_BaseDestructionPhase "{5C78906619F242A6}" {
+   Threshold 0
+  }
+  m_eMaterialSoundType BREAK_WOOD_SOLID
+ }
+}
+SCR_VehicleSpawn {
+ components {
+  MeshObject "{5C756437E4D17C54}" {
+   Object "{B98BC8DC4C59B8DA}Assets/Props/Military/Camps/WeaponRackStand_01/WeaponRackStand_01.xob"
+  }
+  Hierarchy "{5C7564306AE3DBF8}" {
+  }
+  RigidBody "{5C75643054E10954}" {
+  }
+  RplComponent "{5C7564306CC18556}" {
+  }
+ }
+ coords 110.197 1.001 132.108
+}
+$grp GenericEntity : "{008D2A32F92F80D6}prefabs/Items/Misc/Photo/LovedOne_Photo.et" {
+ {
+  coords 107.32 1.001 148.559
+ }
+ {
+  coords 106.976 1.001 149.1
+ }
+ {
+  coords 107.885 1.001 149.064
+ }
+ {
+  coords 122.998 1.001 124.149
+ }
+}
+$grp GenericEntity : "{045739BB2108B549}prefabs/Stashes/Graves/Grave_Stash_FIA.et" {
+ {
+  coords 162.081 0.652 115.571
+ }
+ {
+  coords 161.16 0.257 116.446
+ }
+ {
+  coords 155.21 1.001 110.583
+ }
+ {
+  coords 157.51 1.001 108.494
+ }
+ {
+  coords 150.564 0.73 93.119
+ }
+ {
+  components {
+   MeshObject "{5C789065CA78ECDB}" {
+    Object "{B27FC58F5E1377DF}Assets/Items/Equipment/Backpacks/Backpack_Veshmeshok/Backpack_Veshmeshok.xob"
+   }
+   SCR_UniversalInventoryStorageComponent "{5C789066287F1AC0}" {
+    Attributes SCR_ItemAttributeCollection "{5C78906652DD37E3}" {
+     ItemDisplayName UIInfo "{5C789066541F8143}" {
+      Name "Soviet memorial"
+     }
+    }
+    InitialStorageSlots {
+     InventoryStorageSlot Compass {
+     }
+     InventoryStorageSlot tag {
+      Prefab "{9D8E818461216F56}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_USSR.et"
+     }
+    }
+   }
+  }
+  coords 149.762 1.001 92.896
+ }
+ {
+  coords 149.385 0.701 80.388
+ }
+}
+$grp SCR_DestructibleEntity : "{0B75849DEA80E4C9}prefabs/Stashes/Graves/Grave_Cross.et" {
+ {
+  coords 153.976 0.001 110.272
+  angleZ 0
+ }
+ {
+  coords 151.855 0.307 97.214
+  angleZ 0
+ }
+ {
+  coords 150.426 0.001 81.035
+  angleZ 0
+ }
+}
+GenericEntity : "{0E57659542679147}prefabs/Currency/Wallet_Base_US.et" {
+ components {
+  SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C7CF032ECFB9ADD}" {
+     SlotTemplate InventoryStorageSlot watches {
+      Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     }
+     NumSlots 10
+    }
+   }
+  }
+ }
+ coords 126.537 1.001 110.659
+}
+GenericEntity : "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et" {
+ coords 162.61 1.001 119.968
+ angleY 0
+}
+$grp GenericEntity : "{11E008123A4BA98A}prefabs/Stashes/Graves/Memorial_Note_Base.et" {
+ {
+  coords 153.747 1.001 107.504
+ }
+ {
+  coords 152.906 1.001 107.356
+ }
+ {
+  coords 150.707 1.001 96.468
+ }
+}
+GenericEntity : "{12ABDF09B92D9545}Prefabs/Items/Equipment/Accessories/Holster_M12/Holster_M12_magpouch_base.et" {
+ coords 133.994 1.126 118.688
+}
+SCR_ChimeraCharacter : "{12C834E36F2E3002}prefabs/Characters/Factions/OPFOR/USSR_Army/Kill_target_Test.et" {
+ coords 128.878 1.001 84.682
+}
+GenericEntity : "{12C8933903D18885}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_sharpshooter.et" {
+ coords 131.726 1.001 115.244
+}
+GenericEntity : "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" {
+ coords 123.334 1.001 124.359
+}
+GenericEntity : "{1A767E3B6061F337}prefabs/Areas/Perelle_FIA_Area.et" {
+ components {
+  SCR_SlotCompositionComponent "{5C775D61C6BDF466}" {
+   m_bOrientChildrenToTerrain 0
+   m_bEditableChildren 0
+  }
+  RplComponent "{5C7574032C7E22F3}" {
+   Streamable Disabled
+  }
+ }
+ coords 109.057 1.001 86.125
+}
+$grp SCR_DestructibleEntity : "{1ED57E409EBFA11B}prefabs/Stashes/Graves/Wood_Jesus.et" {
+ {
+  coords 163.39 0.001 118.671
+ }
+ {
+  components {
+   SlotManagerComponent "{5C78907D73AB9DB8}" {
+    Slots {
+     EntitySlotInfo cross {
+     }
+    }
+   }
+  }
+  coords 152.765 0.001 110.164
+ }
+ {
+  coords 152.981 0.001 109.415
+ }
+}
+$grp GameEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et" {
+ {
+  components {
+   MeshObject "{5104869D194C6262}" {
+    Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   }
+   RigidBody "{5104869D194C6267}" {
+    Static 1
+   }
+   SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
+    Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
+     ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
+      Name "Soldier tags"
+      Description "Tags carried by all soldiers, used for identification"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C792EB03DCCEFE0}" {
+      Weight 0.05
+      SizeSetupStrategy Manual
+      ItemDimensions 2 2 2
+      ItemVolume 8
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C792EB0490D988A}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 25 0
+       CameraDistanceToItem 0.125
+       CameraOffset -0.005 0 0
+       FOV 45
+       IsDynamicObject 1
+       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+      }
+     }
+     m_Size SLOT_1x1
+    }
+   }
+   SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+    Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+     m_Size SLOT_1x1
+     m_SlotType SLOT_VEST
+    }
+   }
+   BaseLoadoutClothComponent "{5104869D194C627A}" {
+    AreaType LoadoutJacketArea "{5C79207D3EE0ABF5}" {
+    }
+    WornModel "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+    ItemModel "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+   }
+  }
+  coords 121.963 1.001 123.004
+ }
+ {
+  components {
+   RigidBody "{5104869D194C6267}" {
+    Static 1
+   }
+   SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
+    Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
+     ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
+      Name "US soldier tags"
+      Description "Tags carried by all soldiers, used for identification"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5C792EB03DCCEFE0}" {
+      Weight 0.05
+      SizeSetupStrategy Manual
+      ItemDimensions 2 2 2
+      ItemVolume 8
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C792EB0490D988A}" {
+       CameraOrbitAngles -90 0 0
+       CameraDistanceToItem 0.07
+       CameraOffset -0.005 -0.018 0
+       ItemRenderRotation 0 0 -10
+       FOV 45
+       IsDynamicObject 1
+       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+      }
+     }
+     m_Size SLOT_1x1
+    }
+   }
+   SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+    Enabled 0
+    Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+     ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+      Name "Soldier tags"
+      Description "Tags carried by all soldiers, used for identification"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+      Weight 0.05
+      SizeSetupStrategy Manual
+      ItemDimensions 1 1 1
+      ItemVolume 1
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{555292467DA11B7C}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 15 0
+       CameraDistanceToItem 0.5
+       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+      }
+     }
+     CommonItemType "WATCH"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+   }
+   BaseLoadoutClothComponent "{5104869D194C627A}" {
+    WornMaterialsOverride {
+     "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
+    }
+    ItemMaterialsOverride {
+     "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
+    }
+   }
+  }
+  coords 124.211 1.001 122.827
+ }
+ {
+  coords 93.606 1.001 124.335
+ }
+ {
+  coords 95.307 1.001 110.115
+ }
+ {
+  components {
+   RigidBody "{5104869D194C6267}" {
+    Static 1
+   }
+   SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
+    Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+   }
+   SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+    Enabled 0
+    Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+     ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+      Name "Soldier tags"
+      Description "Tags carried by all soldiers, used for identification"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+      Weight 0.05
+      SizeSetupStrategy Manual
+      ItemDimensions 1 1 1
+      ItemVolume 1
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{555292467DA11B7C}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 15 0
+       CameraDistanceToItem 0.5
+       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+      }
+     }
+     CommonItemType "WATCH"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+   }
+   BaseLoadoutClothComponent "{5104869D194C627A}" {
+    WearAction SCR_WearClothUserAction "{5104869D194C627E}" {
+     "Sort Priority" 9
+    }
+   }
+  }
+  coords 126.638 1.001 108.784
+ }
+ {
+  coords 127.237 1.001 108.76
+ }
+ {
+  coords 123.756 1.001 123.31
+ }
+ {
+  components {
+   RigidBody "{5104869D194C6267}" {
+    Static 1
+   }
+   SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
+    Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
+     ItemDisplayName SCR_InventoryUIInfo "{5C792EB02EA6B240}" {
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5C792EB0490D988A}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 25 0
+       CameraDistanceToItem 0.125
+       CameraOffset -0.005 0 0
+       FOV 45
+       IsDynamicObject 1
+       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+      }
+     }
+    }
+   }
+   SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+    Enabled 0
+    Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+     ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+      Name "Soldier tags"
+      Description "Tags carried by all soldiers, used for identification"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+      Weight 0.05
+      SizeSetupStrategy Manual
+      ItemDimensions 1 1 1
+      ItemVolume 1
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{555292467DA11B7C}" {
+       CameraPreset Top
+       CameraOrbitAngles 0 15 0
+       CameraDistanceToItem 0.5
+       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+      }
+     }
+     CommonItemType "WATCH"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+   }
+   BaseLoadoutClothComponent "{5104869D194C627A}" {
+    AreaType LoadoutWatchArea "{5C792EB61C73847A}" {
+    }
+    WornModel "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+    ItemModel "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+   }
+  }
+  coords 128.46 1.001 119.587
+ }
+ {
+  components {
+   SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
+    Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
+     ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
+      Name "USSR soldier tags"
+     }
+    }
+   }
+   BaseLoadoutClothComponent "{5104869D194C627A}" {
+    WornMaterialsOverride {
+     "{EBB48300A79B45E3}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_USSR.emat"
+    }
+    ItemMaterialsOverride {
+     "{EBB48300A79B45E3}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_USSR.emat"
+    }
+   }
+  }
+  coords 128.586 1.001 120.234
+ }
+ {
+  coords 135.88 1.001 99.963
+ }
+}
+GameEntity : "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et" {
+ coords 126.833 1.001 119.471
+}
+GenericEntity : "{27F6A0815E6FF6EE}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_USSR_01.et" {
+ coords 209.47 1.001 155.935
+}
+$grp GenericEntity : "{2A45083FE809587F}prefabs/Trading_Items/Weapon_Trading_items/Base_Weapon_Trading_Iteam.et" {
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{FA5C25BF66A53DCF}prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      m_MaxUses 1
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 110.96 1.429 132.277
+  angleX 75
+  angleY 180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+    }
+   }
+   MeshObject "{58C4C15098F109F6}" {
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy M21for 8 watches"
+      }
+      m_WantedAmount 8
+      m_MaxUses 1
+      m_CraftedObject "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 110.793 1.439 132.278
+  angleX 75
+  angleY 180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy M14 for 5 watches"
+      }
+      m_WantedAmount 5
+      m_MaxUses 1
+      m_CraftedObject "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 110.6 1.448 132.227
+  angleX 83.108
+  angleY 180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy SVD with PSO for 8 watches"
+      }
+      m_WantedAmount 8
+      m_MaxUses 1
+      m_CraftedObject "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 110.431 1.429 132.277
+  angleX 75
+  angleY -180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy SVD for 6 watches"
+      }
+      m_MaxUses 1
+      m_CraftedObject "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 110.269 1.429 132.277
+  angleX 75
+  angleY -180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy VZ 52 for 6 watches"
+      }
+      m_MaxUses 1
+      m_CraftedObject "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 110.109 1.429 132.277
+  angleX 75
+  angleY -180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy VZ 58 for 5 watches"
+      }
+      m_WantedAmount 5
+      m_MaxUses 1
+      m_CraftedObject "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 109.939 1.456 132.255
+  angleX 75
+  angleY -180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy RPG for 6 watches"
+      }
+      m_MaxUses 1
+      m_CraftedObject "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 109.772 1.594 132.267
+  angleX 76.551
+  angleY 180
+  angleZ 0
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy M72A3 launcher for 4 watches"
+      }
+      m_WantedAmount 4
+      m_MaxUses 1
+      m_CraftedObject "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 109.586 1.361 132.143
+  angleX 75
+  angleY 180
+  angleZ -34.516
+ }
+ {
+  components {
+   BaseSlotComponent "{5C7555A4642DAF88}" {
+    AttachType LoadoutSlotInfo weapon {
+     Prefab "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+    }
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    additionalActions {
+     KLM_CraftAction "{5C754272C3D91FE5}" {
+      UIInfo UIInfo "{5C754272C7081451}" {
+       Name "Buy RPK for 7 watches"
+      }
+      m_WantedAmount 7
+      m_MaxUses 1
+      m_CraftedObject "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+      m_bShouldRemoveParent 1
+     }
+    }
+   }
+  }
+  coords 109.435 1.429 132.277
+  angleX 75
+  angleY -180
+  angleZ 0
+ }
+}
+$grp GenericEntity : "{2F5A0196CA2DB912}prefabs/Items/Food/Canteen_Filled_US.et" {
+ {
+  components {
+   MagazineComponent "{5C69441421AB61D6}" {
+    AmmoMapping {
+    }
+   }
+  }
+  coords 128.409 1.001 104.517
+ }
+ {
+  coords 128.252 1.001 104.983
+ }
+}
+SCR_DestructibleEntity : "{319D59733E1FF01D}Prefabs/Structures/Walls/Pole/PoleFence_01/PoleFence_01_Pole.et" {
+ coords 167.265 0.001 119.943
+}
+$grp GenericEntity : "{31ED868A348F7350}prefabs/Trading_Items/Weapon_Trading_items/Base_Weapon_TradingRack.et" {
+ {
+  coords 121.189 1.001 131.13
+ }
+ {
+  coords 119.15 1.001 131.069
+ }
+}
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ coords 126.068 1.001 121.805
+}
+GenericEntity : "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" {
+ coords 129.715 1.001 114.599
+}
+GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
+ coords 161.22 1.001 96.884
+}
+Projectile : "{4192E08B6D652459}Prefabs/Weapons/Ammo/Ammo_Flare_26x45_Yellow.et" {
+ coords 149.552 1.001 81.533
+}
+$grp GenericEntity : "{460A1DF2F21FFBBC}prefabs/Props/Furniture/ChairRecreation_01/Dst/Cross_Supporting_Piece.et" {
+ {
+  coords 152.158 1.001 96.78
+  angleY 0
+ }
+ {
+  coords 154.945 1.001 110.194
+  angleY 0
+ }
+}
+SCR_ChimeraCharacter : "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et" {
+ coords 128.488 1.001 85.971
+}
+GenericEntity : "{51F3E7BE7584AAEE}Prefabs/Structures/Signs/Forest/WoodenSnowPole_01/WoodenSnowPole_01.et" {
+ coords 166.491 1.001 119.349
+}
+SCR_ChimeraCharacter : "{51F5214E43167A62}prefabs/Characters/DefaultCharacter_Arland.et" {
+ coords 135.564 1.001 119.138
+}
+GenericEntity : "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et" {
+ components {
+  MagazineComponent "{5C69441421AB61D6}" {
+   AmmoMapping {
+   }
+  }
+  MeshObject "{5C69441421AB6260}" {
+   Object "{96CDF4C0166F696E}Assets/Items/Equipment/Canteens/Canteen_US/Canteen_US_01.xob"
+  }
+ }
+ coords 128.74 1.001 104.399
+}
+SCR_ChimeraCharacter : "{5436629450D8387A}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_SL.et" {
+ coords 138.11 1.001 84.728
+}
+$grp GenericEntity : "{5453D4D55D416AE4}prefabs/Stashes/Graves/Grave_Stash_US.et" {
+ {
+  coords 148.718 1 91.812
+ }
+ {
+  coords 151.193 0.701 80.388
+ }
+}
+Projectile : "{59A8527D511FFE81}Prefabs/Weapons/Ammo/Ammo_Flare_26x45_Green.et" {
+ coords 149.77 1.001 81.779
+}
+StaticModelEntity : "{5C290F8B9942A54E}Prefabs/Structures/Infrastructure/Culverts/DrainageChannelWood_01/DrainageChannelWood_01.et" {
+ coords 165.808 0.001 120.431
+}
+GenericEntity : "{5C5C6EE05EE2FF1A}prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
+ components {
+  SCR_UniversalInventoryStorageComponent "{5222CB03A40528FA}" {
+   StoragePurpose 9
+   MaxCumulativeVolume 13000
+   m_fMaxWeight 60
+  }
+  BaseLoadoutClothComponent "{511E9C6ADE70F7BB}" {
+   Slots {
+    LoadoutSlotInfo extra_backpack {
+     Prefab "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
+     AreaType LoadoutBackpackArea "{5C7D1D63A4336AD6}" {
+     }
+    }
+   }
+  }
+ }
+ coords 128.684 1.001 125.924
+}
+SCR_ChimeraCharacter : "{631158F6898738A4}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AAT.et" {
+ coords 131.138 1.001 87.661
+}
+SCR_DestructibleEntity : "{6860CC03268FC98B}Prefabs/Structures/Walls/Concrete/SilageWall_02/SilageWall_02_fence_pole.et" {
+ coords 165.852 0.001 119.221
+}
+GenericEntity : "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" {
+ coords 82.478 1.001 116.177
+}
+GenericEntity : "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et" {
+ coords 123.2 1.001 124.095
+}
+GenericEntity : "{73B77CC20CA40E53}prefabs/Uniforms/VestB_Uniform.et" {
+ coords 110.912 1.001 133.708
+}
+GenericEntity : "{746CDD62C52CD87D}Prefabs/Props/Civilian/BenchStreet/StreetBench_01/Dst/BenchStreet_01_dst_04_red.et" {
+ coords 155.957 1.001 109.791
+}
+$grp GameEntity : "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et" {
+ {
+  coords 131.879 1.001 119.901
+ }
+ {
+  coords 131.644 1.001 115.049
+ }
+}
+SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
+ coords 129.706 1.001 119.302
+}
+$grp GenericEntity : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et" {
+ {
+  coords 82.573 1.001 115.203
+ }
+ {
+  coords 129.341 1.022 125.798
+ }
+}
+$grp GenericEntity : "{7B6802E9AD265A57}prefabs/Currency/Wallet_Base.et" {
+ {
+  coords 82.453 1.001 117.458
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
+    MultiSlots {
+     MultiSlotConfiguration "{5C78C422683BB2D9}" {
+      SlotTemplate InventoryStorageSlot watches {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 5
+     }
+    }
+   }
+  }
+  coords 82.28 1.001 117.458
+ }
+ {
+  coords 81.883 1.001 117.458
+ }
+ {
+  coords 127.45 1.001 120.017
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
+    MultiSlots {
+     MultiSlotConfiguration "{5C7CF031EC521118}" {
+      SlotTemplate InventoryStorageSlot watches {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 10
+     }
+    }
+   }
+  }
+  coords 125.403 1.001 83.537
+ }
+ {
+  components {
+   MeshObject "{5C78C42204C939A4}" {
+    Object "{2637BE3512AF25A5}Assets/Items/Equipment/Accessories/Pouch_ALICE_20rnd_M14/Pouch_ALICE_20rnd_M14_item.xob"
+   }
+  }
+  coords 126.943 1.001 108.577
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
+    InitialStorageSlots {
+     InventoryStorageSlot photo {
+      Prefab "{008D2A32F92F80D6}prefabs/Items/Misc/Photo/LovedOne_Photo.et"
+     }
+    }
+    MultiSlots {
+     MultiSlotConfiguration "{5C7D11CB9B2C6A4E}" {
+      SlotTemplate InventoryStorageSlot watches {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 5
+     }
+    }
+   }
+  }
+  coords 108.513 1.001 148.428
+ }
+}
+$grp GenericEntity : "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et" {
+ {
+  coords 129.055 1.001 105.487
+ }
+ {
+  components {
+   InventoryMagazineComponent "{5C69441421AB61A9}" {
+    Attributes SCR_ItemAttributeCollection "{5C69441421AB61A7}" {
+     ItemDisplayName UIInfo "{5C69441421AB6164}" {
+      Name "Empty US Canteen"
+     }
+    }
+   }
+   MeshObject "{5C69441421AB6260}" {
+    Object "{96CDF4C0166F696E}Assets/Items/Equipment/Canteens/Canteen_US/Canteen_US_01.xob"
+   }
+  }
+  coords 128.143 1.001 104.71
+ }
+}
+$grp GenericEntity : "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et" {
+ {
+  coords 109.923 1.001 124.559
+ }
+ {
+  coords 110.693 1.001 123.344
+ }
+}
+SCR_DestructibleEntity : "{7C338EE3C27A0F71}Prefabs/Structures/Walls/Wooden/WoodenFenceOld_01/WoodenFenceOld_01_pole.et" {
+ coords 166.791 0.001 119.108
+}
+GenericEntity : "{81FA7402825DB0A8}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_clutter_alot.et" {
+ coords 127.675 1.001 131.487
+}
+SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
+ coords 125.834 1.001 112.6
+}
+GenericEntity : "{8B55F8686833B12B}prefabs/Weapons/Core/FragGrenade_Base.et" {
+ coords 76.519 1.354 128.957
+}
+Projectile : "{97A0A70B9BEE99E2}Prefabs/Weapons/Ammo/Ammo_Flare_26x45_White.et" {
+ coords 149.127 1.001 81.659
+}
+GameEntity : "{9D8E818461216F56}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_USSR.et" {
+ coords 131.731 1.001 114.78
+}
+GenericEntity : "{A5088C056E06D479}Prefabs/Weapons/Handguns/SP81/Handgun_SP81.et" {
+ coords 150.033 1.001 81.708
+}
+GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" {
+ coords 122.678 1.001 124.181
+}
+$grp StaticModelEntity : "{AD5D1A7FF5FB5FA2}Prefabs/Structures/Military/Fortifications/Trenches/TrenchOld_01/TrenchOld_01_pole_metal.et" {
+ {
+  coords 166.249 0.001 120.032
+ }
+ {
+  coords 165.736 0.951 120.032
+  angleZ 90
+ }
+}
+GenericEntity : "{B6EEF03975F21E4E}Prefabs/Items/Equipment/Accessories/Pouch_Soviet_45rnd_RPK74/Pouch_Soviet_45rnd_RPK74.et" {
+ coords 134.177 1.001 118.784
+}
+Projectile : "{B6F3D516919BA506}Prefabs/Weapons/Ammo/Ammo_Flare_26x45_White_Illumination.et" {
+ coords 148.781 1.001 81.508
+}
+GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
+ components {
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornModel "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   ItemModel "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+  }
+ }
+ coords 123.967 1.001 122.743
+}
+GenericEntity : "{BBF4240677F97764}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_Clutter_Base.et" {
+ components {
+  MeshObject "{5C7AD7A97C455E12}" {
+   Object "{B4FC2438044736CB}Assets/Items/Equipment/Accessories/DogTag/DogTag_clutter_Item.xob"
+  }
+ }
+ coords 128.188 1.001 132.388
+}
+GenericEntity : "{C63227C0E70EA62E}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_base.et" {
+ coords 160.917 1.001 97.035
+}
+SCR_ChimeraCharacter : "{C6DF098AEC5AE52E}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Whistleblower.et" {
+ coords 130.329 1.001 84.585
+}
+GameEntity : "{C7861F11D5334C0E}prefabs/Characters/Uniforms/Jacket_US_BDU.et" {
+ coords 81.549 1.001 116.668
+}
+GenericEntity : "{C9A4A8A1B5C0742D}Prefabs/Items/Equipment/Accessories/Holster_M12/Holster_M12_base.et" {
+ coords 134.421 1.161 118.526
+}
+GenericEntity : "{CB716A41903571AD}prefabs/Weapons/Melee/Knife_US.et" {
+ coords 130.197 1.001 114.098
+}
+Projectile : "{CBA27E396EDD814A}Prefabs/Weapons/Ammo/Ammo_Flare_26x45_Red.et" {
+ coords 149.41 1.001 81.601
+}
+SCR_ChimeraCharacter : "{D112B6601F671D6F}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_RTO.et" {
+ coords 127.371 1.001 121.914
+}
+GenericEntity : "{D3BA44530C896C38}prefabs/Items/Food/Canteen_Empty_US.et" {
+ coords 128.79 1.001 104.768
+}
+GenericEntity : "{D3C36A56E140D8AB}Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM_magpouch.et" {
+ coords 134.536 1.074 118.1
+}
+GenericEntity : "{DC1F9FB9AB8D1E24}prefabs/Items/Equipment/Accessories/Pouch_Soviet_10rnd_SVD/Pouch_Soviet_10rnd_SVD_Stash.et" {
+ coords 161.196 1.001 122.749
+}
+$grp GenericEntity : "{DD6A82A83E93E866}prefabs/Stashes/PaintCan_Variants/Stash_PC_10_Watches.et" {
+ {
+  coords 160.426 1.001 121.86
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5AE76D1DD6296CB8}" {
+    MultiSlots {
+     MultiSlotConfiguration "{5B248C11BD15574B}" {
+      SlotTemplate InventoryStorageSlot Currency {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 5
+     }
+    }
+   }
+  }
+  coords 82.618 1.001 116.375
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5AE76D1DD6296CB8}" {
+    MultiSlots {
+     MultiSlotConfiguration "{5B248C11BD15574B}" {
+      SlotTemplate InventoryStorageSlot Currency {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 5
+     }
+    }
+   }
+  }
+  coords 83.349 1.001 116.363
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5AE76D1DD6296CB8}" {
+    MultiSlots {
+     MultiSlotConfiguration "{5B248C11BD15574B}" {
+      SlotTemplate InventoryStorageSlot Currency {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 5
+     }
+    }
+   }
+  }
+  coords 83.307 1.001 117.108
+ }
+}
+$grp GenericEntity : "{DFB51542180457FD}prefabs/Stashes/Graves/Grave_Stash_USSR.et" {
+ {
+  coords 149.258 1.001 90.965
+ }
+ {
+  coords 150.303 0.698 80.388
+ }
+}
+GenericEntity : "{E02DEF2EF3719769}prefabs/Trading_Items/Tag_TradingStation.et" {
+ coords 122.426 1.001 131.762
+}
+GenericEntity : "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" {
+ components {
+  RadioBroadcastSoundComponent "{5C775D63223DF6D7}" {
+   Filenames {
+    "{0373401D5C6607B1}Sounds/RadioBroadcast/RadioBroadcast.acp"
+   }
+   IncludeInactive 1
+  }
+  RadioBroadcastComponent "{5C775D63244F957C}" {
+   TurnOnAction SCR_TurnOnAction "{5C775D633C5484FA}" {
+    ParentContextList {
+     "knob_channel"
+    }
+   }
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   ActionContexts {
+   }
+   additionalActions {
+   }
+  }
+ }
+ coords 124.879 1.893 92.463
+}
+SCR_ChimeraCharacter : "{E9AEEF2D9E41321B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AMG.et" {
+ coords 133.697 1.001 88.017
+}
+$grp GenericEntity : "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et" {
+ {
+  coords 127.752 1.001 119.392
+ }
+ {
+  coords 125.105 1.001 123.767
+ }
+ {
+  coords 123.737 1.001 122.364
+ }
+}
+SCR_DestructibleEntity : "{F260C6128FD34953}Prefabs/Structures/Walls/Pole/PoleFence_02/PoleFence_02_Pole.et" {
+ coords 166.744 0.001 120.144
+}
+GenericEntity : "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et" {
+ coords 82.044 1.001 117.458
+}
+GenericEntity : "{FB1A7F5BC7D935E2}prefabs/Weapons/Attachments/Handguards/Handguard_M16A2/Handguard_M16.et" {
+ coords 161.874 1.001 97.05
+}
+$grp SCR_DestructibleEntity : "{FBDCA11BD8FB4220}Prefabs/Structures/Walls/Wooden/WoodenFence_01/WoodenFence_01_Pole.et" {
+ {
+  coords 163.28 0.001 118.059
+ }
+ {
+  components {
+   MeshObject "{56DE7C8DCD0F4E0A}" {
+    Object "{3C4F053A42BDB84D}Assets/Structures/Cultural/Cemeteries/Tombstones/CrossSmall_E_01/Dst/CrossSmall_E_01_Dst_05.xob"
+    Materials {
+     MaterialAssignClass "{5C78907AF1A9F0FF}" {
+      SourceMaterial "CrossSmall_E_01"
+      AssignedMaterial "{CC4A6D49E9F96486}Assets/Structures/Walls/Wooden/Data/WoodenFence_01.emat"
+     }
+    }
+   }
+  }
+  coords 162.259 0.001 118.573
+ }
+}

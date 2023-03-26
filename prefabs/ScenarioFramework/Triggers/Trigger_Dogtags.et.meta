@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{7E007139476379D7}prefabs/ScenarioFramework/Triggers/Trigger_Dogtags.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

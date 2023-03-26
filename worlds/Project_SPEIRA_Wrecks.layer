@@ -1,0 +1,9696 @@
+$grp GenericEntity : "{1A1CE09F7BCA6650}Prefabs/Props/Wrecks/S105_wreck_static.et" {
+ {
+  coords 11458.646 10.879 2198.814
+  angleX -15.298
+ }
+ {
+  coords 11964.092 16.665 1942.912
+  angleX -7.829
+  angleY 25.033
+  angleZ -3.64
+ }
+ {
+  coords 9836.634 2.622 4577.625
+  angleX -11.33
+  angleY -59.945
+  angleZ -179.718
+ }
+ {
+  coords 9728.309 245.599 3050.46
+  angleX 18.803
+  angleY -19.006
+ }
+ {
+  coords 9577.685 248.109 3354.346
+  angleX 33.278
+  angleY -46.998
+ }
+ {
+  coords 9959.499 121.987 3440.01
+  angleX -6.823
+  angleY 122.868
+  angleZ 15.479
+ }
+ {
+  coords 9850.492 0.998 4569
+  angleX -12.983
+  angleY -0.962
+  angleZ -8.039
+ }
+ {
+  coords 9853.393 0.984 4568.861
+  angleX 0.778
+  angleY 23.523
+  angleZ -17.495
+ }
+ {
+  coords 9817.951 3.916 4582.8
+  angleX 5.796
+  angleY -50.759
+  angleZ 5.557
+ }
+ {
+  coords 9822.755 3.563 4586.721
+  angleX -22.758
+  angleY -53.65
+  angleZ -174.003
+ }
+ {
+  coords 9840.048 1.011 4556.438
+  angleX -0.968
+  angleY 89.506
+  angleZ -0.859
+ }
+ {
+  coords 9838.241 1.245 4594.928
+  angleX -4.688
+  angleY -80.021
+  angleZ 11.118
+ }
+ {
+  coords 9850.938 0.814 4601.566
+  angleX -12.386
+  angleY 10.881
+  angleZ 0.626
+ }
+ {
+  coords 9851.653 0.716 4605.589
+  angleX 4.76
+  angleY -98.564
+  angleZ 6.808
+ }
+ {
+  coords 9806.085 4.673 4580.375
+  angleX 7.165
+  angleY 175.747
+  angleZ -4.202
+ }
+ {
+  coords 9798.555 11.025 4315.187
+  angleX -14.887
+  angleZ 3.559
+ }
+ {
+  coords 9831.914 3.03 4628.542
+  angleX 17.868
+  angleY -88.575
+  angleZ -5.762
+ }
+ {
+  coords 9828.448 3.22 4614.666
+  angleX -18.409
+  angleY 122.328
+  angleZ 2.389
+ }
+ {
+  coords 9834.012 4.579 4671.545
+  angleX -18.745
+  angleY 110.146
+  angleZ 155.066
+ }
+ {
+  coords 9856.326 1.14 4622.695
+  angleX 8.697
+  angleY 91.845
+  angleZ 6.884
+ }
+ {
+  coords 9830.858 3.587 4632.73
+  angleX -2.092
+  angleY -126.394
+  angleZ -7.581
+ }
+ {
+  coords 9820.127 3.927 4580.502
+  angleX 27.565
+  angleY -28.007
+  angleZ 3.213
+ }
+ {
+  coords 9847.271 1.931 4633.873
+  angleX 6.006
+  angleY -65.348
+  angleZ -4.223
+ }
+ {
+  coords 9850.719 1.409 4640.025
+  angleX -9.518
+  angleY 112.97
+  angleZ 3.828
+ }
+ {
+  coords 9854.241 0.757 4591.251
+  angleX -4.357
+  angleY 10.945
+  angleZ 0.785
+ }
+ {
+  coords 9834.218 4.302 4658.467
+  angleX -4.834
+  angleY 34.341
+  angleZ -147.445
+ }
+ {
+  coords 9845.914 2.337 4686.501
+  angleX 6.942
+  angleY -92.687
+  angleZ 2.095
+ }
+ {
+  coords 9846.666 1.86 4745.456
+  angleX -13.546
+  angleY 130.533
+  angleZ 3.361
+ }
+ {
+  coords 9851.373 1.603 4664.776
+  angleX 3.088
+  angleY 97.424
+  angleZ 7.942
+ }
+ {
+  coords 9849.266 1.296 4637.987
+  angleX 5.172
+  angleY 110.517
+  angleZ -9.455
+ }
+ {
+  coords 9851.913 1.392 4647.949
+  angleX -3.888
+  angleY 82.786
+  angleZ -0.517
+ }
+ {
+  coords 9840.058 2.43 4577.119
+  angleX -4.257
+  angleY -126.711
+  angleZ -169.486
+ }
+ {
+  coords 9869.475 0.966 4592.511
+  angleX 0.921
+  angleY -80.815
+  angleZ 4.331
+ }
+ {
+  coords 9857.991 0.99 4570.129
+  angleX -1.941
+  angleY -54.029
+  angleZ -0.362
+ }
+ {
+  coords 9865.686 1.022 4568.997
+  angleX -0.483
+  angleY 104.914
+  angleZ -4.401
+ }
+ {
+  coords 9869.077 1.019 4589.019
+  angleX -0.571
+  angleY -0.937
+  angleZ -8.246
+ }
+ {
+  coords 9861.003 1.879 4555.747
+  angleX -2.899
+  angleY -0.939
+  angleZ -8.208
+ }
+ {
+  coords 9854.156 1.919 4729.699
+  angleY 81.102
+  angleZ -1.417
+ }
+ {
+  coords 9812.102 8.514 4643.687
+  angleY 95.717
+  angleZ 8.857
+ }
+ {
+  coords 9779.471 8.363 4724.136
+  angleX 2.675
+  angleY 40.034
+  angleZ 2.246
+ }
+ {
+  coords 9801.5 2.806 4514.825
+  angleY 99.695
+ }
+ {
+  coords 9810.447 2.764 4518.81
+  angleY -120.263
+ }
+ {
+  coords 9812.155 3.044 4489.875
+ }
+ {
+  coords 9840.815 0.999 4518.679
+  angleX 3.71
+  angleY -83.337
+  angleZ 5.509
+ }
+ {
+  coords 9841.033 1.119 4515.629
+  angleX -1.579
+  angleY 86.424
+  angleZ -6.405
+ }
+ {
+  coords 9811.364 3.597 4416.916
+  angleX -1.651
+  angleY -87.543
+  angleZ 0.593
+ }
+ {
+  coords 9807.034 3.385 4416.349
+  angleX 0.91
+  angleY 53.465
+  angleZ -1.499
+ }
+ {
+  coords 9870.398 2.06 4522.396
+  angleX 3.405
+  angleY 78.677
+  angleZ -1.628
+ }
+ {
+  coords 9875.646 2.343 4522.317
+  angleX 2.206
+  angleY -91.741
+  angleZ 1.044
+ }
+ {
+  coords 9855.724 0.94 4463.81
+  angleX 2.585
+  angleY -81.791
+  angleZ 7.89
+ }
+ {
+  coords 9854.374 1.362 4541.629
+  angleX -0.483
+  angleY 104.914
+  angleZ -4.401
+ }
+ {
+  coords 9854.703 1.439 4552.145
+  angleX -6.849
+  angleY -33.32
+  angleZ -5.38
+ }
+ {
+  coords 9814.112 2.978 4504.206
+  angleY -24.311
+ }
+ {
+  coords 9876.856 1.398 4384.314
+  angleY -125.415
+ }
+ {
+  coords 9858.075 1.49 4417.273
+  angleX -5.092
+  angleY 78.235
+ }
+ {
+  coords 9839.086 2.08 4371.901
+ }
+ {
+  coords 9842.006 2.244 4362.232
+  angleY 62.147
+ }
+ {
+  coords 9887.656 0.85 4418.949
+  angleY -50.092
+ }
+ {
+  coords 9899.96 0.892 4361.81
+  angleX -0.946
+  angleY 60.469
+  angleZ 0.536
+ }
+ {
+  coords 9899.992 1.179 4358.47
+  angleX 1.733
+  angleY -94.944
+  angleZ -1.081
+ }
+ {
+  coords 9910.309 2.163 4312.05
+  angleX -7.469
+  angleY 103.335
+ }
+ {
+  coords 9884.217 2.658 4326.649
+  angleY 79.511
+ }
+ {
+  coords 9909.052 2.266 4309.807
+  angleX 0.293
+  angleY -67.797
+ }
+ {
+  coords 9909.124 2.473 4301.522
+  angleY 82.131
+ }
+ {
+  coords 9872.243 1.462 4858.208
+ }
+ {
+  coords 9859.42 1.84 4881.56
+ }
+ {
+  coords 9862.054 1.669 4887.375
+  angleY 65.196
+ }
+ {
+  coords 9845.925 2.323 4883.262
+  angleY 56.771
+ }
+ {
+  coords 9834.692 1.736 4915.871
+  angleY -133.808
+ }
+ {
+  coords 9807.224 6.407 4894.085
+  angleX -8.958
+  angleY -1.485
+  angleZ 9.454
+ }
+ {
+  coords 9734.586 1.883 4964.186
+  angleY -152.771
+ }
+ {
+  coords 9713.946 1.363 4982.128
+  angleX -1.391
+  angleY -126.985
+  angleZ 7.6
+ }
+ {
+  coords 9711.533 1.407 4983.73
+  angleY 47.496
+  angleZ -11.492
+ }
+ {
+  coords 9782.164 1.378 4951.036
+  angleX 1.951
+  angleY -141.253
+ }
+ {
+  coords 9804.611 1.215 4954.085
+  angleX -10.518
+  angleY 40.474
+ }
+ {
+  coords 9794.156 1.156 4963.093
+  angleY 48.926
+ }
+ {
+  coords 9842.949 0.571 4925.022
+  angleY -97.062
+ }
+ {
+  coords 9827.668 0.434 4950.186
+  angleY 51.747
+ }
+ {
+  coords 9798.241 0.398 4985.043
+  angleY 19.938
+ }
+ {
+  coords 9830.346 2.39 4363.672
+ }
+ {
+  coords 9816.937 3.306 4331.908
+  angleX -14.526
+  angleY 33.258
+  angleZ 4.85
+ }
+ {
+  coords 9791.294 10.595 4634.016
+ }
+ {
+  coords 9802.633 9.357 4858.189
+  angleY 94.283
+ }
+ {
+  coords 9791.308 8.106 4888.269
+  angleY -100.861
+ }
+ {
+  coords 9787.94 7.949 4893.629
+  angleX -1.459
+  angleY 61.083
+  angleZ 0.806
+ }
+ {
+  coords 9778.488 7.877 4904.103
+  angleX 9.838
+  angleY -117.344
+  angleZ -5.049
+ }
+ {
+  coords 9740.451 4.967 5127.814
+  angleX 3.31
+  angleZ 3.317
+ }
+ {
+  coords 9729.26 1.767 5034.697
+ }
+ {
+  coords 9825.396 1.454 5290.302
+ }
+ {
+  coords 9726.355 1.82 5045.88
+ }
+ {
+  coords 9825.659 1.326 5275.195
+ }
+ {
+  coords 9812.741 1.422 5213.164
+ }
+ {
+  coords 9812.865 1.447 5215.375
+ }
+ {
+  coords 9763.214 3.859 5178.278
+  angleX 7.716
+  angleY -48.886
+ }
+ {
+  coords 9767.998 2.867 5176.084
+  angleX -11.558
+  angleY 146.378
+ }
+ {
+  coords 9774.144 4.267 5185.665
+  angleX -2.148
+  angleY 131.02
+ }
+ {
+  coords 9783.962 4.184 5210.433
+  angleX -14.332
+  angleY 91.377
+ }
+ {
+  coords 9700.299 1.442 5043.651
+ }
+ {
+  coords 9699.008 2.465 5070.86
+ }
+ {
+  coords 9789.503 1.133 5409.52
+  angleY 82.356
+  angleZ -9.115
+ }
+ {
+  coords 9709.514 5.84 5113.089
+  angleX -7.544
+  angleY 133.015
+  angleZ -6.269
+ }
+ {
+  coords 9723.533 6.419 5125.78
+  angleX -8.375
+  angleY 72.133
+  angleZ 15.044
+ }
+ {
+  coords 9725.36 6.44 5128.481
+  angleX 4.539
+  angleY -83.934
+ }
+ {
+  coords 9758.968 2.884 5416.917
+ }
+ {
+  coords 9789.229 6.034 5337.737
+  angleX 5.107
+  angleY -119.978
+ }
+ {
+  coords 9794.698 5.834 5321.854
+ }
+ {
+  coords 9706.533 10.45 5154.756
+ }
+ {
+  coords 9707.197 10.325 5157.748
+ }
+ {
+  coords 9740.698 6.114 4933.699
+ }
+ {
+  coords 9756.153 6.011 4920.947
+ }
+ {
+  coords 9674.657 5.272 5075.417
+  angleX 7.722
+  angleY -46.501
+  angleZ 4.88
+ }
+ {
+  coords 9776.698 5.405 5232.386
+  angleY -88.555
+ }
+ {
+  coords 9807.521 4.275 5306.895
+  angleZ 7.422
+ }
+ {
+  coords 9798.892 4.901 5352.728
+ }
+ {
+  coords 9661.241 5.894 5069.206
+ }
+ {
+  coords 9716.824 8.84 4927.965
+ }
+ {
+  coords 9691.157 7.206 4947.75
+ }
+ {
+  coords 9680.315 6.603 4957.828
+ }
+ {
+  coords 9664.762 7.427 4982.917
+ }
+ {
+  coords 9649.194 7.527 5093.639
+  angleX 5.784
+  angleY -28.588
+ }
+ {
+  coords 9655.7 6.538 5002.732
+ }
+ {
+  coords 9657.587 6.447 5056.875
+ }
+ {
+  coords 9741.901 6.598 4907.925
+ }
+ {
+  coords 9739.438 1.662 5067.104
+ }
+ {
+  coords 9749.938 1.46 5090.05
+  angleY -78.954
+ }
+ {
+  coords 9857.685 1.47 4501.321
+  angleX -1.308
+  angleY 70.442
+  angleZ 14.009
+ }
+ {
+  coords 9870.644 2.212 4485.799
+  angleX -0.565
+  angleY 78.79
+  angleZ -1.625
+ }
+ {
+  coords 9787.156 3.455 4944.417
+  angleX -1.931
+  angleY -12.917
+  angleZ -2.084
+ }
+ {
+  coords 9868.856 2.178 4499.586
+  angleX 0.966
+  angleY -116.206
+  angleZ 1.423
+ }
+ {
+  coords 9854.365 0.995 4518.583
+  angleX 0.907
+  angleY -113.858
+  angleZ 1.462
+ }
+}
+$grp GenericEntity : "{25B265F3E7CBDFC8}Prefabs/Props/Wrecks/BMP1_wreck.et" {
+ {
+  coords 11610.914 0.694 2375.793
+  angleX -1.138
+  angleY 17.823
+  angleZ -1.961
+ }
+ {
+  coords 9813.908 4.382 4587.268
+  angleX -0.944
+  angleY 36.52
+  angleZ 10.563
+ }
+ {
+  coords 9842.786 0.739 4548.841
+  angleX 7.4
+  angleY -92.247
+  angleZ 0.749
+ }
+ {
+  coords 9847.334 2.514 4708.303
+  angleX -1.801
+  angleY -19.648
+  angleZ 1.337
+ }
+ {
+  coords 9851.604 1.687 4658.894
+  angleX 3.151
+  angleY -27.726
+  angleZ 8.61
+ }
+ {
+  coords 9826.639 5.074 4647.889
+  angleX 1.754
+  angleY -176.832
+  angleZ 2.119
+ }
+ {
+  coords 9847.5 1.613 4740.335
+  angleX 6.694
+ }
+ {
+  coords 9854.084 1.184 4614.437
+  angleY -75.058
+ }
+ {
+  coords 9875.657 1.477 4736.99
+  angleY 176.166
+  angleZ 1.867
+ }
+ {
+  coords 9826.989 3.296 4883.065
+  angleX 0.574
+  angleY 154.209
+  angleZ 1.187
+ }
+ {
+  coords 9814.535 8.625 4791.06
+  angleY 158.276
+ }
+ {
+  coords 9805.724 7.481 4609.768
+  angleX -3.937
+  angleY 156.789
+  angleZ -0.19
+ }
+ {
+  coords 9806.046 4.434 4573.005
+  angleX -2.576
+  angleY 176.804
+ }
+ {
+  coords 9770.775 8.263 4718.065
+  angleX -3.245
+  angleY 29.778
+  angleZ 5.806
+ }
+ {
+  coords 9815.061 3.118 4475.115
+  angleY -53.299
+ }
+ {
+  coords 9822.674 2.651 4454.377
+  angleX -4.586
+  angleY 131.449
+  angleZ -3.893
+ }
+ {
+  coords 9858.786 1.432 4420.41
+  angleY -86.428
+ }
+ {
+  coords 9857.408 1.637 4407.54
+  angleY 94.895
+ }
+ {
+  coords 9858.872 1.702 4403.9
+  angleY -79.795
+ }
+ {
+  coords 9861.184 2.417 4350.293
+  angleY 59.986
+ }
+ {
+  coords 9886.919 1.498 4455.276
+  angleY -95.604
+ }
+ {
+  coords 9862.507 2.188 4323.825
+  angleY -69.502
+ }
+ {
+  coords 9878.034 1.129 4813.429
+  angleY -78.7
+ }
+ {
+  coords 9765.086 0.757 4966.626
+  angleY -118.057
+ }
+ {
+  coords 9823.333 0.722 4935.034
+  angleY -128.091
+ }
+ {
+  coords 9822.933 0.633 4957.586
+  angleY 140.486
+  angleZ 6.223
+ }
+ {
+  coords 9806.764 0.706 4974.417
+  angleY 39.859
+ }
+ {
+  coords 9823.533 1.927 4347.626
+ }
+ {
+  coords 9822.859 1.838 4340.367
+  angleY 109.382
+ }
+ {
+  coords 9793.056 10.601 4635.351
+ }
+ {
+  coords 9804.991 1.417 5201.767
+ }
+ {
+  coords 9796.033 1.591 5185.226
+ }
+ {
+  coords 9799.613 5.095 5236.93
+ }
+ {
+  coords 9785.408 1.011 5419.476
+  angleY 139.61
+ }
+ {
+  coords 9777.367 0.25 5428.438
+  angleY 101.52
+ }
+ {
+  coords 9700.114 1.382 5041.446
+ }
+ {
+  coords 9813.896 1.832 5374.917
+ }
+ {
+  coords 9745.026 6.722 5179.438
+ }
+ {
+  coords 9754.435 6.648 5192.083
+ }
+ {
+  coords 9755.874 6.562 5193.669
+ }
+ {
+  coords 9761.187 5.396 5219.648
+ }
+ {
+  coords 9780.448 5.922 5316.454
+ }
+ {
+  coords 9790.511 6.85 5289.094
+ }
+ {
+  coords 9788.237 5.725 5351.896
+ }
+ {
+  coords 9770.108 6.419 5351.45
+ }
+ {
+  coords 9775.656 5.902 5362.161
+  angleY 160.065
+ }
+ {
+  coords 9791.146 4.802 5368.768
+  angleX 8.219
+  angleY -104.505
+ }
+ {
+  coords 9782.784 4.9 5381.351
+  angleY 150.138
+ }
+ {
+  coords 9790.657 4.874 5390.262
+ }
+ {
+  coords 9723.543 4.68 4946.823
+ }
+ {
+  coords 9713.788 3.998 4954.784
+ }
+ {
+  coords 9701.01 2.991 4967.35
+ }
+ {
+  coords 9682.591 3.805 4984.115
+  angleY 148.994
+ }
+ {
+  coords 9681.614 6.774 4955.861
+ }
+ {
+  coords 9679.437 6.563 4959.868
+ }
+ {
+  coords 9667.856 6.276 4977.136
+ }
+ {
+  coords 9657.246 7.455 4998.441
+ }
+ {
+  coords 9658.937 5.886 5071.841
+ }
+}
+$grp GenericEntity : "{2B07A2B8170DF481}Prefabs/Props/Agriculture/CultivatorWreck_01_Damaged.et" {
+ {
+  coords 9826.061 2.015 4528.759
+  angleX -38.995
+  angleY -49.206
+  angleZ 12.63
+ }
+ {
+  coords 9822.75 1.829 4550.629
+  angleX 2.672
+  angleY 1.018
+  angleZ 5.354
+ }
+ {
+  coords 9843.503 2.102 4626.916
+  angleX -13.189
+  angleY -170.761
+  angleZ 11.923
+ }
+ {
+  coords 9869.285 1.41 4568.285
+  angleX 2.672
+  angleY -21.966
+  angleZ 5.354
+ }
+ {
+  coords 9835.907 3.227 4853.914
+  angleY 0
+ }
+ {
+  coords 9816.284 8.389 4792.874
+  angleX -35.283
+  angleY 0
+  angleZ 40.005
+ }
+ {
+  coords 9817.533 7.299 4738.937
+  angleY 0
+ }
+ {
+  coords 9818.205 7.888 4746.763
+  angleX -75.204
+  angleY 0
+  angleZ -144.033
+ }
+ {
+  coords 9816.198 7.083 4719.216
+  angleY 0
+ }
+ {
+  coords 9815.092 8.867 4704.296
+  angleX 3.828
+  angleY -51.552
+  angleZ -31.504
+ }
+ {
+  coords 9801.724 6.394 4593.485
+  angleX -13.272
+  angleY 0
+  angleZ 17.707
+ }
+ {
+  coords 9809.956 3.904 4561.217
+  angleX 58.953
+  angleY 0
+ }
+ {
+  coords 9809.558 3.453 4559.184
+  angleX -59.109
+  angleY -141.133
+  angleZ -9.332
+ }
+ {
+  coords 9817.224 9.103 4688.999
+  angleX -36.359
+  angleY -44.506
+  angleZ 27.095
+ }
+ {
+  coords 9800.633 10.498 4792.376
+  angleX -35.391
+  angleY 67.606
+  angleZ 80.496
+ }
+ {
+  coords 9791.092 9.558 4740.681
+  angleY 0
+ }
+ {
+  coords 9811.703 3.168 4512.563
+  angleY 0
+ }
+ {
+  coords 9817.777 3.523 4371.873
+  angleX -66.482
+  angleY 42.468
+  angleZ 135.051
+ }
+ {
+  coords 9820.724 2.891 4514.855
+  angleX -67.732
+  angleY -2.758
+  angleZ -44.086
+ }
+ {
+  coords 9876.951 1.475 4391.103
+  angleX -36.48
+  angleY 15.053
+  angleZ 11.877
+ }
+ {
+  coords 9885.908 2.117 4343.916
+  angleX 46.772
+  angleY -5.09
+  angleZ -54.109
+ }
+ {
+  coords 9862.784 1.767 4371.565
+  angleY 0
+ }
+ {
+  coords 9886.133 2.193 4488.371
+  angleX -64.212
+  angleY 0
+ }
+ {
+  coords 9857.185 1.697 4900.751
+  angleX -32.112
+  angleY 24.283
+  angleZ -40.323
+ }
+ {
+  coords 9840.024 2.679 4900.185
+  angleX -50.926
+  angleY 0
+  angleZ -53.869
+ }
+ {
+  coords 9791.915 4.089 4916.043
+  angleX -36.618
+  angleY -29.933
+  angleZ -46.011
+ }
+ {
+  coords 9752.317 3.675 4946.667
+  angleY 0
+ }
+ {
+  coords 9726.328 1.74 4978.456
+  angleY 0
+ }
+ {
+  coords 9701.784 1.836 4996.786
+  angleX -35.731
+  angleY 58.765
+  angleZ -43.918
+ }
+ {
+  coords 9714.824 1.286 5014.897
+  angleY 0
+  angleZ -22.098
+ }
+ {
+  coords 9832.499 0.933 4944.043
+  angleX -53.209
+  angleY 42.658
+  angleZ -36.423
+ }
+ {
+  coords 9803.951 0.717 4980.347
+  angleY 0
+  angleZ -8.165
+ }
+ {
+  coords 9786.501 0.669 4999.043
+  angleX -30.118
+  angleY 26.982
+  angleZ -14.331
+ }
+ {
+  coords 9757.776 1.092 5030.801
+  angleY 0
+ }
+ {
+  coords 9756.151 1.181 5031.102
+  angleY 0
+ }
+ {
+  coords 9746.865 1.308 5031.512
+  angleY 0
+ }
+ {
+  coords 9787.715 1.647 5171.273
+  angleY 0
+ }
+ {
+  coords 9779.407 1.57 5158.022
+  angleY 0
+ }
+ {
+  coords 9767.574 3.529 5179.512
+  angleY 0
+  angleZ 62.768
+ }
+ {
+  coords 9782.568 4.47 5202.365
+  angleY 0
+ }
+ {
+  coords 9785.309 4.215 5207.897
+  angleY 0
+ }
+ {
+  coords 9784.198 4.287 5206.063
+  angleY 0
+ }
+ {
+  coords 9700.915 1.985 5055.92
+  angleX -31.146
+  angleY 4.753
+  angleZ -20.098
+ }
+ {
+  coords 9808.397 1.912 5384.97
+  angleY 0
+ }
+ {
+  coords 9799.906 1.762 5398.864
+  angleY 0
+ }
+ {
+  coords 9765.001 5.826 5210.565
+  angleY 0
+ }
+ {
+  coords 9757.652 2.579 5418.815
+  angleY 0
+ }
+ {
+  coords 9784.584 6.321 5349.167
+  angleX -43.343
+  angleY -68.802
+  angleZ 60.531
+ }
+ {
+  coords 9787.084 6.796 5296.968
+  angleX -33.072
+  angleY -39.284
+  angleZ 24.055
+ }
+ {
+  coords 9786.625 5.752 5248.784
+  angleY 0
+ }
+ {
+  coords 9771.492 6.523 5280.151
+  angleY 0
+ }
+ {
+  coords 9709.008 9.843 5167.784
+  angleY 0
+ }
+ {
+  coords 9769.645 5.632 5376.901
+  angleY 0
+ }
+ {
+  coords 9806.791 3.959 5325.494
+  angleX -50.565
+  angleY -5.007
+  angleZ -30.696
+ }
+ {
+  coords 9728.636 5.255 4942.022
+  angleY 0
+ }
+ {
+  coords 9683.914 3.66 4989.466
+  angleY 0
+ }
+ {
+  coords 9646.051 7.225 5038.497
+  angleY 0
+ }
+ {
+  coords 9656.521 7.121 5000.743
+  angleY 0
+ }
+ {
+  coords 9665.687 5.812 5030.67
+  angleY 0
+ }
+ {
+  coords 9663.756 6.883 5039.815
+  angleY 0
+ }
+}
+$grp GenericEntity : "{2B24356C351A2538}Prefabs/Props/Wrecks/M113_wreck.et" {
+ {
+  coords 11665.954 2.706 2051.02
+  angleX 23.289
+  angleY -56.829
+  angleZ -159.246
+ }
+ {
+  coords 9823.533 3.409 4546.326
+  angleX -12.964
+  angleY -0.889
+  angleZ -146.446
+ }
+ {
+  coords 9850.398 0.973 4592.366
+  angleX 4.919
+  angleY 97.773
+  angleZ -6.122
+ }
+ {
+  coords 9841.499 1.13 4613.748
+  angleX -4.783
+  angleY 98.372
+  angleZ -5.737
+ }
+ {
+  coords 9838.7 2.1 4728.896
+  angleX -1.965
+  angleY -26.752
+  angleZ 1.485
+ }
+ {
+  coords 9833.156 3.684 4691.375
+  angleX 10.082
+  angleY -87.369
+  angleZ 5.248
+ }
+ {
+  coords 9862.617 2.333 4596.53
+  angleX -12.964
+  angleY -0.889
+  angleZ -146.446
+ }
+ {
+  coords 9864.533 1.124 4647.574
+  angleX -4.783
+  angleY -173.182
+  angleZ -5.737
+ }
+ {
+  coords 9844.979 2.639 4691.96
+ }
+ {
+  coords 9874.614 1.039 4681.396
+  angleY 61.223
+  angleZ 8.485
+ }
+ {
+  coords 9874.815 1.32 4690.521
+  angleY 83.565
+ }
+ {
+  coords 9807.086 8.501 4625.147
+  angleX 9.89
+  angleY -31.833
+  angleZ 12.262
+ }
+ {
+  coords 9808.995 1.558 4538.987
+  angleY 70.265
+  angleZ -2.045
+ }
+ {
+  coords 9816.311 7.124 4669.5
+  angleX -19.137
+  angleY 108.474
+  angleZ -11.531
+ }
+ {
+  coords 9787.124 7.601 4595.11
+  angleX 2.118
+  angleY 91.519
+ }
+ {
+  coords 9787.828 10.144 4623.57
+  angleY -133.183
+  angleZ -8.378
+ }
+ {
+  coords 9774.804 9.026 4732.966
+  angleY 124.416
+ }
+ {
+  coords 9802.063 2.283 4508.477
+  angleY 111.25
+  angleZ 13.724
+ }
+ {
+  coords 9802.79 2.183 4468.726
+  angleX -15.899
+ }
+ {
+  coords 9836.995 1.911 4466.491
+  angleY 105.771
+  angleZ 3.967
+ }
+ {
+  coords 9866.595 3.273 4526.576
+  angleX -12.964
+  angleY -0.889
+  angleZ -146.446
+ }
+ {
+  coords 9853.31 1.354 4534.857
+  angleY 64.197
+ }
+ {
+  coords 9870.809 1.417 4446.126
+  angleY -76.936
+ }
+ {
+  coords 9862.821 2.541 4342.205
+  angleY -78.288
+ }
+ {
+  coords 9842.241 1.846 4431.387
+  angleY -90.542
+ }
+ {
+  coords 9838.6 2.29 4336.539
+  angleY -64.177
+ }
+ {
+  coords 9885.999 1.909 4462.835
+  angleY -94.308
+ }
+ {
+  coords 9886.908 1.495 4451.502
+  angleY 101.524
+ }
+ {
+  coords 9889.816 1.093 4420.699
+  angleY 117.08
+ }
+ {
+  coords 9892.824 0.927 4393.407
+  angleY 55
+ }
+ {
+  coords 9879.28 2.416 4316.797
+  angleY 75.739
+ }
+ {
+  coords 9887.021 2.126 4480.705
+  angleX 3.426
+  angleY -77.296
+ }
+ {
+  coords 9886.07 2.063 4492.093
+  angleX 5.614
+  angleY -70.14
+ }
+ {
+  coords 9878.98 0.638 4840.07
+  angleX 0.949
+  angleY -92.106
+  angleZ 24.242
+ }
+ {
+  coords 9846.826 2.373 4889.534
+  angleY 79.493
+  angleZ 19.71
+ }
+ {
+  coords 9818.153 7.989 4830.46
+  angleX 12.089
+  angleY 104.294
+  angleZ 23.116
+ }
+ {
+  coords 9810.033 7.687 4878.417
+  angleX 6.853
+  angleY -77.228
+  angleZ 11.307
+ }
+ {
+  coords 9775.802 4.268 4929.287
+ }
+ {
+  coords 9751.131 3.526 4948.511
+ }
+ {
+  coords 9710.135 1.553 4986.351
+  angleY 36.57
+  angleZ -7.73
+ }
+ {
+  coords 9778.319 1.188 4956.786
+  angleX 0.983
+  angleY -148.918
+  angleZ 11.712
+ }
+ {
+  coords 9795.274 0.139 4988.031
+  angleX -10.801
+  angleY 28.237
+  angleZ 20.558
+ }
+ {
+  coords 9738.633 3.511 5106.005
+  angleY -58.804
+ }
+ {
+  coords 9825.734 1.416 5284.199
+ }
+ {
+  coords 9730.143 1.919 5077.541
+  angleY -69.925
+ }
+ {
+  coords 9730.2 1.765 5032.686
+ }
+ {
+  coords 9770.954 2.596 5140.773
+ }
+ {
+  coords 9785.056 1.65 5166.761
+ }
+ {
+  coords 9764.245 3.162 5127.237
+ }
+ {
+  coords 9768.406 3.104 5135.075
+ }
+ {
+  coords 9799.83 1.472 5191.295
+ }
+ {
+  coords 9763.795 4.079 5181.758
+  angleX -20.261
+  angleY 128.895
+  angleZ -2.663
+ }
+ {
+  coords 9791.009 4.783 5229.482
+ }
+ {
+  coords 9800.035 5.21 5238.947
+ }
+ {
+  coords 9804.919 5.048 5256.586
+ }
+ {
+  coords 9781.492 0.757 5421.488
+  angleX 8.261
+  angleY -155.079
+ }
+ {
+  coords 9824.315 1.339 5322.456
+ }
+ {
+  coords 9809.084 1.932 5382.933
+ }
+ {
+  coords 9741.096 1.107 5071.777
+  angleY 110.274
+ }
+ {
+  coords 9731.371 6.778 5142.874
+  angleY -100.872
+  angleZ -8.363
+ }
+ {
+  coords 9742.94 6.858 5175.933
+ }
+ {
+  coords 9765.365 3.803 5409.162
+ }
+ {
+  coords 9760.624 3.083 5415.646
+ }
+ {
+  coords 9788.511 6.207 5345.526
+ }
+ {
+  coords 9788.534 6.641 5303.789
+ }
+ {
+  coords 9703.357 10.089 5151.267
+ }
+ {
+  coords 9780.165 6.066 5358.371
+  angleY 24.52
+ }
+ {
+  coords 9764.98 5.469 5385.804
+ }
+ {
+  coords 9759.365 5.389 5400.29
+ }
+ {
+  coords 9748.793 4.792 5407.107
+ }
+ {
+  coords 9675.992 3.657 5032.593
+  angleX 11.595
+  angleY -50.581
+ }
+ {
+  coords 9806.946 3.868 5336.697
+ }
+ {
+  coords 9771.507 4.535 5399.407
+ }
+ {
+  coords 9773.259 4.608 5397.917
+ }
+ {
+  coords 9770.233 4.386 5401.782
+ }
+ {
+  coords 9666.365 5.21 5028.764
+ }
+ {
+  coords 9651.276 4.918 5012.88
+ }
+ {
+  coords 9671.657 5.509 4970.521
+ }
+ {
+  coords 9656.012 6.113 5063.357
+ }
+ {
+  coords 9663.817 6.35 5073.773
+  angleY -71.377
+ }
+}
+$grp GenericEntity : "{3386EAA823BE462E}Prefabs/Props/Wrecks/UAZ469_wreck_static.et" {
+ {
+  coords 11931.126 19.223 1914.268
+ }
+ {
+  coords 11629.818 0.266 2213.583
+  angleX -27.248
+  angleY -9.577
+  angleZ -6.26
+ }
+ {
+  coords 9826.229 1.873 4574.789
+  angleX 8.952
+  angleY -95.874
+  angleZ -2.303
+ }
+ {
+  coords 9826.547 2.127 4586.086
+  angleX 13.458
+  angleY -96.466
+  angleZ -3.506
+ }
+ {
+  coords 11483.257 13.547 2173.361
+  angleX 6.507
+ }
+ {
+  coords 11598.156 26.718 2066.995
+  angleX -47.548
+  angleY 87.236
+  angleZ 9.637
+ }
+ {
+  coords 9821.891 2.539 4573.337
+  angleX -0.872
+  angleY 27.513
+  angleZ 0.166
+ }
+ {
+  coords 9836.533 0.944 4565.916
+  angleX -4.144
+  angleY 1.866
+  angleZ -7.098
+ }
+ {
+  coords 9839.517 1.019 4565.993
+  angleX -6.977
+  angleY -164.537
+  angleZ 7.976
+ }
+ {
+  coords 9825.807 1.511 4565.242
+  angleX -5.202
+  angleY 87.799
+  angleZ 2.957
+ }
+ {
+  coords 9826.127 1.325 4562.732
+  angleX -5.943
+  angleY 110.889
+  angleZ 0.684
+ }
+ {
+  coords 9664.776 7.601 4923.563
+  angleX -16.781
+  angleY 0.438
+  angleZ 6.197
+ }
+ {
+  coords 9844.828 1.53 4630.043
+  angleX 5.938
+  angleY -69.519
+  angleZ -0.726
+ }
+ {
+  coords 9848.328 1.605 4635.981
+  angleX -10.498
+  angleY 111.754
+  angleZ 0.597
+ }
+ {
+  coords 9862.698 0.773 4600.85
+  angleX 0.236
+  angleY 42.471
+  angleZ 1.071
+ }
+ {
+  coords 9859.058 0.964 4635.251
+  angleX -7.466
+  angleY 101.565
+  angleZ 1.816
+ }
+ {
+  coords 9865.668 1.029 4653.997
+  angleX -0.064
+  angleY -90.257
+  angleZ 0.68
+ }
+ {
+  coords 9836.284 3.873 4760.063
+  angleX -13.599
+  angleY 73.647
+  angleZ 10.589
+ }
+ {
+  coords 9835.115 4.926 4790.914
+  angleX -9.607
+  angleY 49.188
+  angleZ 5.85
+ }
+ {
+  coords 9856.224 1.334 4768.607
+  angleX 2.313
+  angleY -61.036
+  angleZ 2.996
+ }
+ {
+  coords 9863.172 1.197 4611.827
+ }
+ {
+  coords 9860.48 1.054 4612.433
+  angleY -17.794
+ }
+ {
+  coords 9860.357 1.122 4682.115
+  angleY -114.084
+ }
+ {
+  coords 9858.07 1.954 4708.522
+  angleY -95.168
+ }
+ {
+  coords 9856.238 1.735 4720.953
+  angleY -119.315
+ }
+ {
+  coords 9835.104 2.981 4845.981
+  angleX -6.723
+  angleY 62.079
+  angleZ 3.55
+ }
+ {
+  coords 9825.224 3.121 4887.788
+  angleX -10.657
+  angleY 87.272
+ }
+ {
+  coords 9821.543 4.19 4888.095
+  angleX 9.778
+  angleY -47.604
+  angleZ 10.983
+ }
+ {
+  coords 9871.233 0.862 4602.297
+  angleY -132.162
+ }
+ {
+  coords 9806.147 9.374 4654.322
+  angleX -1.022
+  angleY 172.121
+  angleZ -7.734
+ }
+ {
+  coords 9807.761 9.691 4758.502
+ }
+ {
+  coords 9793.435 5.08 4577.169
+  angleX -4.279
+  angleY 83.727
+  angleZ 5.089
+ }
+ {
+  coords 9788.31 9.377 4619.636
+  angleY 87.262
+ }
+ {
+  coords 9781.756 8.743 4717.147
+  angleY 34.056
+ }
+ {
+  coords 9770.027 8.752 4724.08
+  angleX 12.477
+  angleY -45.223
+  angleZ 8.155
+ }
+ {
+  coords 9818.076 3.095 4454.095
+  angleX -6.947
+  angleY 45.032
+  angleZ -11.115
+ }
+ {
+  coords 9826.373 2.727 4396.157
+  angleY 154.933
+ }
+ {
+  coords 9827.701 2.991 4419.782
+  angleX 2.859
+  angleY 0.515
+  angleZ 10.218
+ }
+ {
+  coords 9818.688 2.959 4396.606
+  angleY -164.176
+ }
+ {
+  coords 9849.266 1.487 4766.934
+  angleX -0.856
+  angleY 97.183
+  angleZ -0.437
+ }
+ {
+  coords 9847.365 0.712 4523.063
+  angleX -8.344
+  angleY 119.34
+  angleZ -2.928
+ }
+ {
+  coords 9857.445 0.788 4461.289
+  angleX 3.614
+  angleY 45.636
+  angleZ 3.268
+ }
+ {
+  coords 9819.854 5.243 4430.034
+  angleX -5.917
+  angleY 146.608
+  angleZ 2.96
+ }
+ {
+  coords 9887.077 1.309 4445.286
+  angleY 80.942
+ }
+ {
+  coords 9886.741 1.38 4442.703
+  angleY -72.802
+ }
+ {
+  coords 9893.688 0.636 4390.968
+  angleY 54.909
+ }
+ {
+  coords 9898.106 0.71 4393.667
+ }
+ {
+  coords 9905.731 1.058 4330.456
+  angleY 68.615
+ }
+ {
+  coords 9840.565 1.147 4320.911
+  angleX 2.283
+ }
+ {
+  coords 9876.393 0.767 4793.364
+  angleY 70.363
+ }
+ {
+  coords 9876.509 1.008 4824.822
+  angleX -2.036
+  angleY 99.018
+ }
+ {
+  coords 9873.361 1.295 4850.377
+ }
+ {
+  coords 9851.127 1.69 4795.413
+ }
+ {
+  coords 9856.256 1.357 4802.136
+  angleY 86.027
+ }
+ {
+  coords 9852.858 1.736 4827.002
+  angleY -59.115
+ }
+ {
+  coords 9853.52 1.775 4850.748
+  angleY -77.302
+ }
+ {
+  coords 9812.634 7.819 4871.199
+  angleX 3.667
+  angleY -102.274
+  angleZ -0.797
+ }
+ {
+  coords 9798.396 6.576 4895.417
+  angleY -57.651
+  angleZ 22.929
+ }
+ {
+  coords 9780.844 3.889 4928.661
+  angleX 13.005
+  angleY -141.281
+  angleZ 4.172
+ }
+ {
+  coords 9778.234 4.091 4929.81
+  angleX -15.662
+ }
+ {
+  coords 9772.238 3.782 4934.851
+  angleX -11.507
+  angleY 19.974
+  angleZ -7.109
+ }
+ {
+  coords 9794.25 1.84 4941.607
+  angleY -13.763
+ }
+ {
+  coords 9716.088 0.883 5012.755
+  angleY 69.546
+ }
+ {
+  coords 9823.701 0.902 4931.063
+  angleY -98.822
+ }
+ {
+  coords 9778.668 1.842 4977.697
+  angleY -131.751
+ }
+ {
+  coords 9751.033 0.981 5014.834
+  angleY -75.911
+ }
+ {
+  coords 9830.533 0.123 4945.636
+  angleY 42.887
+ }
+ {
+  coords 9781.615 0.344 5003.345
+  angleY -155.202
+ }
+ {
+  coords 9748.045 0.908 5046.011
+  angleY 51.153
+ }
+ {
+  coords 9795.192 9.301 4868.083
+  angleX -4.866
+  angleY -27.793
+  angleZ 1.053
+ }
+ {
+  coords 9716.165 2.262 5083.865
+ }
+ {
+  coords 9740.907 4.109 5112.302
+ }
+ {
+  coords 9799.235 1.491 5189.094
+ }
+ {
+  coords 9814.792 1.489 5220.227
+ }
+ {
+  coords 9758.766 3.672 5169.776
+  angleX 3.941
+  angleZ 10.181
+ }
+ {
+  coords 9761.004 3.297 5172.611
+  angleX 8.737
+  angleY -54.912
+ }
+ {
+  coords 9770.889 4.53 5187.75
+  angleX 9.387
+  angleZ 6.676
+ }
+ {
+  coords 9778.955 0.587 5424.192
+  angleY 59.244
+ }
+ {
+  coords 9768.574 0.337 5436.434
+  angleY 9.832
+ }
+ {
+  coords 9707.877 0.692 5029.666
+  angleY 132.256
+ }
+ {
+  coords 9703.418 2.175 5077.297
+  angleY 80.37
+ }
+ {
+  coords 9824.603 1.394 5326.532
+ }
+ {
+  coords 9820.365 1.799 5354.106
+ }
+ {
+  coords 9818.192 1.794 5362.479
+ }
+ {
+  coords 9710.977 5.092 5106.176
+  angleX 1.784
+  angleY 25.588
+ }
+ {
+  coords 9713.574 7.005 5123.96
+  angleX 18.38
+  angleZ 11.8
+ }
+ {
+  coords 9731.951 7.131 5150.824
+  angleX 22.611
+  angleY -85.51
+  angleZ 8.845
+ }
+ {
+  coords 9787.884 5.792 5270.267
+  angleX 2.572
+  angleY 55.367
+  angleZ 9.578
+ }
+ {
+  coords 9792.614 5.369 5314.644
+  angleY 137.679
+ }
+ {
+  coords 9793.125 6.248 5302.876
+  angleX 9.532
+  angleY -98.245
+ }
+ {
+  coords 9790.046 6.84 5287.022
+ }
+ {
+  coords 9781.404 6.063 5354.825
+  angleY -106.5
+ }
+ {
+  coords 9684.696 6.067 5104.063
+  angleX 13.086
+  angleY -77.937
+  angleZ -1.246
+ }
+ {
+  coords 9721.754 4.655 4947.991
+ }
+ {
+  coords 9752.151 6.069 4924.438
+ }
+ {
+  coords 9679.266 3.647 5073.246
+  angleX -9.46
+  angleY 150.498
+  angleZ -5.113
+ }
+ {
+  coords 9802.808 4.189 5320.885
+  angleZ 5.772
+ }
+ {
+  coords 9799.5 4.967 5350.675
+ }
+ {
+  coords 9785.284 4.847 5367.522
+ }
+ {
+  coords 9726.073 5.306 4942.707
+ }
+ {
+  coords 9707.885 3.275 4961.606
+ }
+ {
+  coords 9649.67 4.91 5014.334
+ }
+ {
+  coords 9646.998 6.4 5025.476
+ }
+ {
+  coords 9646.735 7.41 5040.447
+ }
+ {
+  coords 9646.078 6.295 5053.085
+ }
+ {
+  coords 9649.315 6.506 5082.267
+  angleY 73.39
+ }
+ {
+  coords 9693.771 7.521 4944.232
+ }
+ {
+  coords 9654.388 5.533 5004.522
+ }
+ {
+  coords 9663.203 5.732 5062.991
+ }
+ {
+  coords 9753.304 1.182 5094.489
+  angleY -76.049
+ }
+ {
+  coords 9856.521 1.111 4513.259
+  angleX -3.531
+  angleY -93.534
+  angleZ 4.265
+ }
+}
+$grp GenericEntity : "{388B774519BD6294}Prefabs/Props/Wrecks/T62_wreck.et" {
+ {
+  coords 11559.499 -0.287 2392.104
+  angleX 14.095
+  angleY -84.296
+  angleZ -19.785
+ }
+ {
+  coords 10011.374 53.99 3689.608
+  angleX 28.169
+  angleY -133.027
+  angleZ 10.186
+ }
+ {
+  coords 9821.198 3.886 4594.96
+  angleX 1.594
+  angleY 134.984
+  angleZ 3.674
+ }
+ {
+  coords 9842.533 1.03 4544.522
+  angleX -2.799
+  angleY 88.637
+  angleZ -1.973
+ }
+ {
+  coords 9851.729 0.531 4564.299
+  angleX 12.462
+  angleY 84.107
+  angleZ -10.615
+ }
+ {
+  coords 9751.434 11.253 4612.735
+  angleX 9.046
+  angleY 36.626
+  angleZ 7.707
+ }
+ {
+  coords 9758.802 10.478 4587.267
+  angleY 90.468
+ }
+ {
+  coords 9756.852 9.405 4565.26
+  angleX 8.131
+  angleY 124.363
+  angleZ 27.124
+ }
+ {
+  coords 9776.428 14.526 4423.519
+  angleX -18.215
+  angleY 78.514
+  angleZ -4.746
+ }
+ {
+  coords 9827.865 4.739 4733.71
+  angleX 15.896
+  angleY -109.673
+  angleZ -1.739
+ }
+ {
+  coords 9868.646 1.258 4635.428
+  angleX 2.134
+  angleY -90.974
+  angleZ 3.037
+ }
+ {
+  coords 9874.69 1.278 4665.109
+ }
+ {
+  coords 9831.02 4.983 4815.129
+  angleY 86.021
+ }
+ {
+  coords 9802.602 6.635 4600.896
+  angleX 9.508
+ }
+ {
+  coords 9805.677 9.531 4805.355
+  angleX 0.633
+  angleY 29.716
+ }
+ {
+  coords 9792.339 3.025 4538.437
+  angleX -1.799
+  angleY -101.582
+  angleZ -3.566
+ }
+ {
+  coords 9792.992 3.526 4547.729
+  angleX 2.021
+  angleY 82.534
+  angleZ -0.134
+ }
+ {
+  coords 9796.627 10.148 4661.73
+  angleY 103.989
+ }
+ {
+  coords 9789.241 9.47 4734.054
+  angleX 4.851
+  angleY 121.321
+  angleZ -10.38
+ }
+ {
+  coords 9802.356 4.167 4434.639
+  angleX -7.101
+  angleY -52.052
+  angleZ -18.709
+ }
+ {
+  coords 9810.604 2.144 4362.822
+  angleX 8.531
+  angleY 61.638
+ }
+ {
+  coords 9819.326 3.043 4461.146
+ }
+ {
+  coords 9873.335 1.039 4436.039
+  angleX 4.509
+  angleY 92.537
+  angleZ 1.275
+ }
+ {
+  coords 9884.787 2.078 4337.206
+  angleY -71.431
+ }
+ {
+  coords 9862.518 1.68 4374.128
+  angleY -89.986
+ }
+ {
+  coords 9841.273 1.811 4418.147
+  angleX -2.493
+  angleY 93.171
+  angleZ 0.492
+ }
+ {
+  coords 9842.824 1.642 4408.584
+  angleY 90.452
+ }
+ {
+  coords 9841.467 1.945 4396.054
+  angleX 7.888
+  angleY -94.997
+  angleZ -0.688
+ }
+ {
+  coords 9888.094 1.218 4430.56
+  angleY 85.278
+  angleZ 5.339
+ }
+ {
+  coords 9894.332 0.973 4378.086
+  angleX 3.272
+  angleY -10.028
+  angleZ -0.578
+ }
+ {
+  coords 9886.961 2.059 4305.282
+  angleX 6.165
+  angleY 88.964
+  angleZ -5.802
+ }
+ {
+  coords 9864.664 2.566 4336.126
+  angleY -80.787
+ }
+ {
+  coords 9863.735 1.905 4329.481
+  angleX -2.144
+  angleY -76.827
+  angleZ -0.502
+ }
+ {
+  coords 9870.561 1.209 4871.186
+  angleX 9.001
+  angleY -131.51
+  angleZ -2.53
+ }
+ {
+  coords 9857.421 1.585 4894.764
+  angleX 16.263
+  angleY -127.272
+  angleZ -0.364
+ }
+ {
+  coords 9856.824 1.79 4809.762
+  angleY 95.36
+ }
+ {
+  coords 9854.026 1.881 4831.493
+  angleX 4.681
+ }
+ {
+  coords 9851.98 2.083 4859.543
+  angleY 51.417
+ }
+ {
+  coords 9820.07 7.96 4816.81
+  angleX -12.88
+  angleY 110.66
+  angleZ 5.641
+ }
+ {
+  coords 9806.617 7.297 4885.585
+  angleX -6.9
+  angleY 49.223
+  angleZ 5.915
+ }
+ {
+  coords 9754.307 3.427 4946.049
+  angleX -4.03
+  angleY 44.21
+ }
+ {
+  coords 9718.343 0.968 5010.201
+  angleY -125.206
+ }
+ {
+  coords 9789.157 1.268 4968.946
+  angleX 3.856
+  angleY -130.299
+  angleZ -2.791
+ }
+ {
+  coords 9776.738 -0.026 5007.38
+  angleX 11.012
+  angleY -138.446
+  angleZ 14.824
+ }
+ {
+  coords 9759.73 0.269 5025.989
+  angleY 60.554
+ }
+ {
+  coords 9744.285 1.182 5054.226
+  angleY 75.334
+  angleZ -13.084
+ }
+ {
+  coords 9792.519 4.12 4565.177
+  angleX 7.598
+  angleY 59.781
+  angleZ 7.468
+ }
+ {
+  coords 9800.325 9.212 4870.5
+  angleX 8.035
+  angleY -65.351
+  angleZ 3.67
+ }
+ {
+  coords 9743.172 4.514 5122.889
+  angleY -75.65
+ }
+ {
+  coords 9731.957 1.975 5081.11
+  angleY -70.491
+ }
+ {
+  coords 9730.152 2.264 5072.766
+  angleY 108.372
+ }
+ {
+  coords 9719.621 1.564 5051.987
+  angleX -3.585
+  angleY -112.014
+  angleZ -3.475
+ }
+ {
+  coords 9823.218 1.366 5266.031
+ }
+ {
+  coords 9826.385 1.355 5279.803
+ }
+ {
+  coords 9823.989 1.373 5261.54
+ }
+ {
+  coords 9782.724 1.62 5162.551
+ }
+ {
+  coords 9786.407 1.641 5169.05
+ }
+ {
+  coords 9773.273 1.606 5147.465
+ }
+ {
+  coords 9767.035 1.195 5121.896
+  angleX -10.519
+  angleY 118.763
+ }
+ {
+  coords 9803.784 5.269 5250.334
+ }
+ {
+  coords 9806.392 4.494 5272.958
+  angleX -13.408
+  angleY 86.831
+  angleZ 7.893
+ }
+ {
+  coords 9702.98 0.675 5034.833
+  angleX 11.824
+  angleY -105.226
+ }
+ {
+  coords 9824.598 1.36 5301.626
+ }
+ {
+  coords 9824.398 1.267 5310.655
+ }
+ {
+  coords 9824.784 1.357 5324.52
+ }
+ {
+  coords 9821.951 1.75 5345.949
+ }
+ {
+  coords 9807.565 1.891 5387.299
+ }
+ {
+  coords 9802.729 1.823 5395.007
+ }
+ {
+  coords 9744.381 1.426 5067.729
+  angleX 2.535
+  angleY -87.22
+ }
+ {
+  coords 9766.357 5.682 5212.085
+ }
+ {
+  coords 9763.865 5.422 5227.83
+ }
+ {
+  coords 9784.517 6.96 5293.221
+  angleY -29.728
+ }
+ {
+  coords 9676.045 5.289 5084.861
+  angleY 118.704
+ }
+ {
+  coords 9679.36 5.771 5097.542
+  angleX -9.237
+  angleY 122.455
+  angleZ 5.987
+ }
+ {
+  coords 9683.038 7.125 5111.756
+  angleY 73.381
+  angleZ 4.798
+ }
+ {
+  coords 9742.637 6.093 4932.933
+ }
+ {
+  coords 9751.124 4.739 5401.202
+ }
+ {
+  coords 9803.801 4.387 5342.556
+ }
+ {
+  coords 9779.621 5.464 5240.656
+  angleX 2.332
+  angleY 57.604
+  angleZ 4.287
+ }
+ {
+  coords 9780.056 4.769 5388.273
+  angleY -130.427
+ }
+ {
+  coords 9720.514 4.452 4949.652
+ }
+ {
+  coords 9687.905 2.92 4988.591
+ }
+ {
+  coords 9674.446 5.239 5005.789
+ }
+ {
+  coords 9666.657 4.591 5021.149
+  angleX -4.928
+  angleY 46.724
+  angleZ 7.214
+ }
+ {
+  coords 9649.033 6.748 5086.242
+  angleX 2.654
+  angleY -91.499
+  angleZ 0.434
+ }
+ {
+  coords 9713.111 8.388 4930.522
+ }
+ {
+  coords 9692.534 7.309 4945.909
+ }
+ {
+  coords 9699.128 7.729 4940.257
+ }
+ {
+  coords 9674.456 5.935 4967.148
+ }
+ {
+  coords 9669.311 7.293 5103.624
+  angleX 4.038
+  angleY -64.37
+ }
+ {
+  coords 9735.233 6.9 4916.46
+ }
+ {
+  coords 9759.748 1.989 5114.739
+  angleX 16.545
+  angleY -70.628
+ }
+}
+$grp GenericEntity : "{457D57779F9F3B54}prefabs/Props/Wrecks/BTR_wreck_New.et" {
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16D67B64E05}" {
+      SourceMaterial "BTR_70_base_Wheels"
+      AssignedMaterial "{BA5783DD237A91FD}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_Wheels.emat"
+     }
+     MaterialAssignClass "{5B3CA16D67B64E34}" {
+      SourceMaterial "BTR_70_base_exterior_Body"
+      AssignedMaterial "{FA46AC26E3795A85}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_exterior_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16D67B64E2F}" {
+      SourceMaterial "BTR_70_base_interior"
+      AssignedMaterial "{F842C45EFDD980F6}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_interior.emat"
+     }
+    }
+   }
+  }
+  coords 9847.999 0.475 4575.063
+  angleX 4.699
+  angleY -12.815
+  angleZ 5.943
+ }
+ {
+  coords 9825.754 1.266 4553.242
+  angleX 3.697
+  angleY -86.571
+  angleZ -1.197
+ }
+ {
+  coords 9852.188 0.634 4557.926
+  angleY -61.07
+  angleZ -10.994
+ }
+ {
+  coords 9839.6 1.592 4460.834
+  angleX 12.103
+  angleY -104.2
+  angleZ 0.739
+ }
+ {
+  coords 9807.288 3.401 4563.563
+  angleX 6.573
+  angleY -86.962
+  angleZ -4.629
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16D67B64E05}" {
+      SourceMaterial "BTR_70_base_Wheels"
+      AssignedMaterial "{BA5783DD237A91FD}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_Wheels.emat"
+     }
+     MaterialAssignClass "{5B3CA16D67B64E34}" {
+      SourceMaterial "BTR_70_base_exterior_Body"
+      AssignedMaterial "{FA46AC26E3795A85}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_exterior_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16D67B64E2F}" {
+      SourceMaterial "BTR_70_base_interior"
+      AssignedMaterial "{F842C45EFDD980F6}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_interior.emat"
+     }
+    }
+   }
+  }
+  coords 9870.715 0.83 4598.52
+  angleX 2.114
+  angleY -70.434
+  angleZ -0.769
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16D67B64E05}" {
+      SourceMaterial "BTR_70_base_Wheels"
+      AssignedMaterial "{BA5783DD237A91FD}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_Wheels.emat"
+     }
+     MaterialAssignClass "{5B3CA16D67B64E34}" {
+      SourceMaterial "BTR_70_base_exterior_Body"
+      AssignedMaterial "{FA46AC26E3795A85}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_exterior_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16D67B64E2F}" {
+      SourceMaterial "BTR_70_base_interior"
+      AssignedMaterial "{F842C45EFDD980F6}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_interior.emat"
+     }
+    }
+   }
+  }
+  coords 9860.604 0.596 4589.563
+  angleX -1.987
+  angleY 157.561
+  angleZ -8.142
+ }
+ {
+  coords 9853.276 1.548 4764.181
+  angleY 89.63
+ }
+ {
+  coords 9861.775 0.686 4604.115
+  angleX 4.86
+  angleY 79.96
+ }
+ {
+  coords 9858.36 1.167 4697.31
+  angleY 57.937
+ }
+ {
+  coords 9836.155 2.702 4858.453
+  angleX -6.871
+  angleY 55.105
+  angleZ 4.77
+ }
+ {
+  coords 9824.473 5.308 4736.896
+  angleX -12.208
+  angleY 30.565
+  angleZ 12.701
+ }
+ {
+  coords 9811.077 8.496 4662.44
+  angleX 12.668
+  angleY -90.222
+  angleZ -7.962
+ }
+ {
+  coords 9810.788 8.253 4646.369
+  angleX -9.001
+  angleY 59.201
+  angleZ -11.071
+ }
+ {
+  coords 9873.832 0.976 4610.235
+ }
+ {
+  coords 9807.733 3.786 4567.106
+  angleX -2.154
+  angleY 80.021
+  angleZ 4.741
+ }
+ {
+  coords 9818.999 7.364 4680.699
+  angleX 14.048
+  angleY -34.476
+  angleZ 9.796
+ }
+ {
+  coords 9807.28 9.953 4706.582
+  angleX -7.634
+  angleY 20.672
+  angleZ 3.373
+ }
+ {
+  coords 9808.088 10.631 4764.169
+ }
+ {
+  coords 9792.715 3.621 4557.896
+  angleX 2.63
+  angleY 90.687
+  angleZ -0.062
+ }
+ {
+  coords 9796.365 10.583 4691.042
+  angleX 2.517
+  angleY 86.068
+  angleZ -5.324
+ }
+ {
+  coords 9798.473 10.117 4795.73
+  angleX 6.643
+  angleY 134.169
+  angleZ 6.412
+ }
+ {
+  coords 9789.586 9.058 4726.782
+  angleX 5.744
+  angleY 125.354
+  angleZ -4.837
+ }
+ {
+  coords 9779.951 8.301 4711.61
+  angleX -1.615
+  angleY -40.792
+  angleZ -1.871
+ }
+ {
+  coords 9825.349 4.131 4424.989
+  angleX 14.423
+  angleY -108.16
+  angleZ -7.606
+ }
+ {
+  coords 9845.09 1.194 4373.881
+  angleX -1.727
+  angleY 178.436
+  angleZ 5.995
+ }
+ {
+  coords 9809.087 2.627 4512.289
+ }
+ {
+  coords 9813.074 2.655 4483.151
+  angleX 7.369
+  angleY -13.767
+  angleZ -1.8
+ }
+ {
+  coords 9819.62 2.33 4363.426
+  angleY -89.982
+ }
+ {
+  coords 9820.164 2.49 4478.123
+  angleX 0.476
+  angleY 83.013
+  angleZ -6.38
+ }
+ {
+  coords 9835.785 1.797 4476.563
+  angleX 4.237
+  angleY -93.117
+  angleZ -10.275
+ }
+ {
+  coords 9837.024 1.742 4470.249
+  angleX -0.86
+  angleY 76.575
+  angleZ -3.526
+ }
+ {
+  coords 9885.278 1.046 4495.96
+  angleX -6.612
+  angleY 110.1
+  angleZ -5.381
+ }
+ {
+  coords 9819.81 2.397 4500.928
+  angleX -3.023
+  angleY 95.475
+ }
+ {
+  coords 9875.854 0.604 4423.351
+  angleY 3.368
+ }
+ {
+  coords 9872.99 0.367 4411.328
+  angleY -94.011
+  angleZ 6.925
+ }
+ {
+  coords 9871.724 0.479 4401.501
+  angleY -40.685
+ }
+ {
+  coords 9862.491 1.655 4361.147
+  angleX 6.249
+  angleY -94.536
+  angleZ 0.339
+ }
+ {
+  coords 9840.255 1.479 4457.875
+  angleY -99.46
+ }
+ {
+  coords 9842.834 1.546 4428.434
+  angleX 3.539
+  angleY -78.301
+ }
+ {
+  coords 9842.838 2.416 4399.015
+  angleX 0.269
+  angleY 90.944
+  angleZ -15.899
+ }
+ {
+  coords 9841.724 1.622 4383.499
+  angleY -99.563
+ }
+ {
+  coords 9842.983 1.965 4357.614
+  angleY 86.625
+ }
+ {
+  coords 9842.535 2.045 4353.082
+  angleY -83.226
+ }
+ {
+  coords 9890.476 0.395 4408.031
+  angleY -101.737
+ }
+ {
+  coords 9891.231 0.548 4400.813
+  angleX -2.612
+  angleY -89.382
+  angleZ -0.028
+ }
+ {
+  coords 9894.893 0.622 4388.493
+  angleY -95.563
+ }
+ {
+  coords 9895.379 0.696 4384.936
+  angleY 71.79
+ }
+ {
+  coords 9897.698 0.753 4373.456
+  angleX -3.358
+  angleY -106.5
+  angleZ 0.994
+ }
+ {
+  coords 9899.433 0.673 4365.083
+  angleX 1.32
+  angleY -101.509
+  angleZ -0.269
+ }
+ {
+  coords 9901.284 0.879 4352.343
+  angleX 1.937
+  angleY -99.488
+  angleZ -4.134
+ }
+ {
+  coords 9889.892 2.046 4314.916
+ }
+ {
+  coords 9846.621 0.969 4316.647
+ }
+ {
+  coords 9887.186 1.656 4476.987
+  angleX 5.147
+  angleY -85.791
+ }
+ {
+  coords 9875.254 0.733 4783.757
+  angleY -102.799
+ }
+ {
+  coords 9875.588 0.763 4834.35
+  angleY 81.893
+ }
+ {
+  coords 9874.024 1.286 4847.536
+  angleY -72.506
+ }
+ {
+  coords 9862.824 1.239 4879.089
+  angleX 2.959
+  angleY -137.664
+  angleZ -3.243
+ }
+ {
+  coords 9858.353 1.64 4831.169
+  angleY 166.236
+ }
+ {
+  coords 9848.895 1.974 4877.353
+  angleY -78.487
+ }
+ {
+  coords 9803.213 1.69 4927.085
+  angleX -8.047
+  angleY 64.635
+  angleZ -8.637
+ }
+ {
+  coords 9787.438 1.724 4945.337
+  angleX -1.96
+  angleY -0.538
+ }
+ {
+  coords 9722.856 0.684 5004.929
+  angleY 36.752
+ }
+ {
+  coords 9713.557 1.021 5016.649
+  angleY -123.132
+ }
+ {
+  coords 9803.517 0.631 4956.777
+  angleY 49.924
+ }
+ {
+  coords 9797.586 0.727 4961.926
+  angleX 2.776
+  angleY -136.322
+  angleZ 1.28
+ }
+ {
+  coords 9771.909 1.929 4984.732
+  angleY 44.629
+ }
+ {
+  coords 9755.75 1.18 5005.031
+  angleY -155.215
+ }
+ {
+  coords 9844.656 0.724 4921.374
+  angleY 34.913
+ }
+ {
+  coords 9765.945 -0.127 5019.086
+  angleX 4.484
+  angleY -142.185
+  angleZ 18.749
+ }
+ {
+  coords 9825.054 1.885 4357.429
+  angleX -9.756
+  angleY -77.206
+ }
+ {
+  coords 9805.229 9.389 4824.837
+  angleX -3.39
+  angleY 118.919
+  angleZ -1.871
+ }
+ {
+  coords 9797.493 9.33 4864.813
+  angleX -3.581
+  angleY 30.17
+  angleZ 1.775
+ }
+ {
+  coords 9794.479 8.443 4878.267
+  angleX -3.385
+  angleY 24.204
+  angleZ 3.528
+ }
+ {
+  coords 9826.324 1.425 5288.377
+ }
+ {
+  coords 9723.781 1.789 5042.612
+ }
+ {
+  coords 9825.168 1.336 5273.002
+ }
+ {
+  coords 9803.218 1.416 5197.542
+ }
+ {
+  coords 9769.315 2.961 5136.938
+ }
+ {
+  coords 9776.979 1.529 5154.487
+ }
+ {
+  coords 9813.795 1.471 5218.074
+  angleY -53.282
+ }
+ {
+  coords 9800.431 5.285 5240.969
+ }
+ {
+  coords 9779.744 4.149 5208.368
+  angleY -174.197
+ }
+ {
+  coords 9793.128 4.104 5219.782
+  angleY 125.685
+ }
+ {
+  coords 9805.331 3.886 5268.228
+  angleX -8.217
+  angleY 114.542
+ }
+ {
+  coords 9707.033 0.408 5023.851
+  angleY 55.813
+ }
+ {
+  coords 9698.784 0.919 5031.663
+  angleY -23.846
+ }
+ {
+  coords 9820.317 1.786 5356.61
+ }
+ {
+  coords 9811.065 1.924 5378.471
+ }
+ {
+  coords 9759.088 6.393 5199.815
+ }
+ {
+  coords 9762.056 3.431 5412.894
+ }
+ {
+  coords 9774.907 5.433 5251.676
+ }
+ {
+  coords 9749.447 6.086 4928.002
+ }
+ {
+  coords 9735.662 5.736 4937.761
+ }
+ {
+  coords 9757.704 5.252 5391.19
+  angleY 64.033
+ }
+ {
+  coords 9679.703 2.75 5067.042
+  angleX -6.923
+  angleY 170.917
+  angleZ -9.149
+ }
+ {
+  coords 9803.951 4.474 5308.153
+  angleZ 12.593
+ }
+ {
+  coords 9647.192 6.771 5027.794
+ }
+ {
+  coords 9718.646 8.769 4926.864
+ }
+ {
+  coords 9687.771 6.943 4950.179
+ }
+ {
+  coords 9656.374 6.103 5061.253
+ }
+ {
+  coords 9737.241 6.752 4912.768
+ }
+}
+$grp GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ {
+  coords 9250.968 0.836 392.844
+  angleX -13.89
+  angleY -50.766
+  angleZ -32.667
+ }
+ {
+  coords 11316.241 0.667 2732.07
+  angleX -1.446
+  angleY 95.818
+  angleZ 32.5
+ }
+ {
+  coords 9841.114 1.15 4564.96
+  angleX -3.549
+  angleY 0.435
+  angleZ 21.264
+ }
+ {
+  coords 9816.367 5.387 4593.711
+  angleX -0.706
+  angleY 44.67
+  angleZ 118.967
+ }
+ {
+  coords 9834.533 3.377 4676.928
+  angleX -3.549
+  angleY 0.435
+  angleZ 34.87
+ }
+}
+$grp GenericEntity : "{4A570ECD0F8C3BEE}prefabs/Trading_Items/Ural_Wreck_New.et" {
+ {
+  coords 9679.438 2.54 5054.536
+  angleX -11.882
+  angleY 79.071
+ }
+ {
+  coords 9874.735 0.576 4675.488
+  angleY -36.27
+  angleZ -7.577
+ }
+ {
+  coords 9837.592 2.647 4752.585
+  angleX -14.885
+  angleY 76.412
+  angleZ -7.685
+ }
+ {
+  coords 9848.299 1.461 4748.549
+  angleX -7.914
+ }
+ {
+  coords 9853.409 1.414 4772.025
+  angleX -3.438
+  angleY 100.682
+  angleZ 0.233
+ }
+ {
+  coords 9858.009 0.989 4630.365
+  angleY 53.39
+  angleZ 2.646
+ }
+ {
+  coords 9866.607 1.111 4625.294
+  angleX -2.112
+  angleY -80.402
+  angleZ 12.293
+ }
+ {
+  coords 9876.374 1.095 4729.009
+  angleX -0.809
+  angleY -48.195
+  angleZ 6.559
+ }
+ {
+  coords 9876.824 1.304 4760.249
+  angleX -5.516
+  angleY 120.847
+  angleZ -4.907
+ }
+ {
+  coords 9833.533 3.066 4866.846
+  angleX -5.508
+  angleY 139.78
+  angleZ -6.206
+ }
+ {
+  coords 9823.318 7.189 4791.917
+  angleX -8.349
+  angleY 150.041
+  angleZ -3.802
+ }
+ {
+  coords 9810.074 7.919 4628.987
+  angleX -12.152
+  angleY 119.18
+  angleZ -2.207
+ }
+ {
+  coords 9804.315 8.604 4730.273
+  angleX -7.973
+  angleY 99.943
+ }
+ {
+  coords 9788.858 6.596 4589.093
+  angleY -93.364
+  angleZ -6.963
+ }
+ {
+  coords 9800.743 8.993 4758.054
+  angleX 8.799
+  angleY -42.02
+  angleZ 3.822
+ }
+ {
+  coords 9780.853 8.784 4731.427
+  angleX 0.974
+  angleY 0.079
+  angleZ 4.669
+ }
+ {
+  coords 9829.372 1.997 4445.628
+  angleX 7.997
+  angleY -84.665
+ }
+ {
+  coords 9827.065 4.079 4430.709
+  angleX -14.881
+  angleY 132.971
+  angleZ -4.464
+ }
+ {
+  coords 9819.657 2.272 4482.106
+  angleX -9.547
+  angleY 92.165
+  angleZ 11.336
+ }
+ {
+  coords 9853.052 0.584 4526.543
+  angleX -6.995
+  angleY -104.601
+  angleZ 1.018
+ }
+ {
+  coords 9853.027 0.64 4530.896
+  angleX -6.846
+  angleY -81.834
+  angleZ -1.761
+ }
+ {
+  coords 9873.204 0.71 4431.52
+  angleX -4.515
+  angleY -106.581
+ }
+ {
+  coords 9861.992 1.462 4366.049
+  angleX -2.104
+  angleY 106.677
+ }
+ {
+  coords 9841.162 1.534 4442.24
+  angleY -74.229
+ }
+ {
+  coords 9846.013 1.408 4418.104
+  angleX -3.213
+ }
+ {
+  coords 9841.15 2.039 4379.083
+  angleY -96.787
+ }
+ {
+  coords 9901.809 0.985 4347.445
+  angleX -3.263
+  angleY 39.352
+  angleZ 3.97
+ }
+ {
+  coords 9884.824 2.705 4295.488
+  angleX -7.51
+  angleY 83.172
+  angleZ -8.696
+ }
+ {
+  coords 9875.915 1.142 4780.607
+  angleY 82.362
+ }
+ {
+  coords 9856.563 1.338 4791.874
+  angleX -6.392
+  angleY 95.104
+ }
+ {
+  coords 9856.558 1.176 4797.481
+  angleY 95.758
+  angleZ 1.629
+ }
+ {
+  coords 9850.126 2.104 4863.211
+  angleY -96.746
+ }
+ {
+  coords 9820.284 7.572 4811.981
+  angleX 6.249
+  angleY -56.669
+  angleZ 2.292
+ }
+ {
+  coords 9803.51 6.326 4893.628
+  angleX -8.059
+ }
+ {
+  coords 9782.825 3.76 4926.086
+  angleX -15.033
+  angleY 42.252
+ }
+ {
+  coords 9760.033 3.877 4940.011
+  angleX -14.359
+  angleY 25.333
+  angleZ -6.696
+ }
+ {
+  coords 9704.979 0.882 4991.716
+  angleX -2.604
+  angleY 38.9
+  angleZ 7.881
+ }
+ {
+  coords 9702.208 1.175 4994.26
+  angleX -0.218
+  angleY -135.609
+  angleZ -20.063
+ }
+ {
+  coords 9710.745 0.693 5021.788
+  angleY 53.148
+ }
+ {
+  coords 9817.602 0.634 4941.246
+  angleX 1.83
+  angleY -121.655
+  angleZ 0.157
+ }
+ {
+  coords 9819.6 0.465 4958.91
+  angleY 12.49
+ }
+ {
+  coords 9812.861 1.583 4356.188
+  angleX -5.788
+  angleY 180
+ }
+ {
+  coords 9793.114 10.703 4638.465
+ }
+ {
+  coords 9728.032 1.802 5041.366
+ }
+ {
+  coords 9822.798 1.392 5249.988
+ }
+ {
+  coords 9824.625 1.336 5270.905
+ }
+ {
+  coords 9800.913 1.438 5193.446
+ }
+ {
+  coords 9773.17 1.806 5144.97
+ }
+ {
+  coords 9763.042 3.269 5174.953
+  angleX -14.875
+  angleY 115.466
+ }
+ {
+  coords 9804.094 4.229 5261.227
+  angleX -8.207
+  angleY 97.892
+ }
+ {
+  coords 9804.475 4.104 5264.293
+  angleX -14.119
+  angleY 86.319
+ }
+ {
+  coords 9769.744 -0.024 5433.624
+  angleX -2.31
+  angleY 72.772
+ }
+ {
+  coords 9694.764 2.198 5088.357
+  angleY -34.794
+ }
+ {
+  coords 9698.662 3.21 5093.645
+  angleY 70.905
+  angleZ 12.154
+ }
+ {
+  coords 9807.218 5.271 5288.495
+  angleX 5.774
+  angleY -91.134
+ }
+ {
+  coords 9823.428 1.363 5303.799
+ }
+ {
+  coords 9824.488 1.3 5320.296
+ }
+ {
+  coords 9824.192 1.439 5328.61
+ }
+ {
+  coords 9793.365 0.973 5405.96
+  angleX 2.364
+  angleY -111.303
+  angleZ 1.423
+ }
+ {
+  coords 9711.914 6.575 5121.199
+  angleX -14.52
+  angleY 144.13
+ }
+ {
+  coords 9721.292 7.269 5130.328
+  angleX 12.667
+  angleY -14.793
+  angleZ 13.202
+ }
+ {
+  coords 9783.287 5.999 5352.186
+  angleX 0.905
+  angleY -141.717
+ }
+ {
+  coords 9790.907 5.404 5330.308
+  angleX 3.013
+  angleY -67.628
+ }
+ {
+  coords 9790.807 5.52 5318.371
+  angleX -4.594
+  angleY 104.651
+  angleZ -2.523
+ }
+ {
+  coords 9791.896 6.195 5298.563
+  angleY -72.34
+ }
+ {
+  coords 9784.45 6.762 5300.896
+ }
+ {
+  coords 9678.315 5.6 5094.083
+  angleX 12.95
+  angleY -94.338
+  angleZ 9.107
+ }
+ {
+  coords 9706.662 10.621 5152.551
+ }
+ {
+  coords 9680.656 5.971 5103.268
+  angleX -9.751
+  angleY -178.242
+  angleZ -3.568
+ }
+ {
+  coords 9765.865 5.075 5381.702
+  angleX -5.048
+  angleY 86.011
+ }
+ {
+  coords 9752.269 4.408 5399.259
+  angleX -3.664
+  angleY 67.038
+ }
+ {
+  coords 9675.251 4.185 5044.106
+  angleX -17.343
+  angleY 49.608
+  angleZ 10.46
+ }
+ {
+  coords 9769.233 4.248 5403.603
+ }
+ {
+  coords 9683.437 4.237 4976.865
+  angleX 6.896
+  angleY -106.801
+  angleZ 7.288
+ }
+ {
+  coords 9677.099 4.824 5001.232
+  angleX 14.738
+  angleY -105.848
+  angleZ 7.076
+ }
+ {
+  coords 9666.197 5.119 5009.368
+  angleX -4.365
+  angleY 84.758
+  angleZ -12.381
+ }
+ {
+  coords 9643.587 6.253 5071.589
+  angleY -65.624
+ }
+ {
+  coords 9650.052 6.732 5090.042
+  angleX -3.969
+  angleY 97.712
+ }
+ {
+  coords 9730.269 7.645 4920.036
+ }
+ {
+  coords 9725.739 8.156 4921.821
+ }
+ {
+  coords 9666.565 7.323 4981.416
+ }
+ {
+  coords 9660.49 6.989 5047.552
+ }
+ {
+  coords 9662.971 5.346 5065.545
+  angleX -4.221
+  angleY 101.865
+  angleZ 7.034
+ }
+ {
+  coords 9665.014 6.149 5076.889
+  angleX -8.924
+  angleY 112.444
+ }
+ {
+  coords 9744.271 1.315 5079.007
+  angleX -3.397
+  angleY 98.235
+ }
+ {
+  coords 9760.392 3.215 5118.436
+ }
+ {
+  coords 9744.844 1.254 5085.605
+  angleX -4.275
+  angleY 106.102
+ }
+ {
+  coords 9856.588 1.075 4509.337
+  angleX 0.863
+  angleY 68.387
+  angleZ -1.873
+ }
+}
+$grp GenericEntity : "{551AF45C50871ED4}prefabs/Props/Wrecks/UAZ_Wreck_New.et" {
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CC6247B4A}" {
+      SourceMaterial "UAZ469_Body"
+      AssignedMaterial "{D1652E88E8B8C9C5}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9826.333 2.309 4588.651
+  angleX -11.13
+  angleY 99.667
+  angleZ 1.835
+ }
+ {
+  coords 9837.663 1.301 4562.607
+  angleX -2.311
+  angleY -88.355
+  angleZ -173.176
+ }
+ {
+  coords 9702.646 9.883 5178.232
+  angleX 13.019
+  angleY -38.032
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CC6247B4A}" {
+      SourceMaterial "UAZ469_Body"
+      AssignedMaterial "{D1652E88E8B8C9C5}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9842.012 1.044 4602.789
+  angleX 0.255
+  angleY 100.043
+  angleZ 1.714
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CC6247B4A}" {
+      SourceMaterial "UAZ469_Body"
+      AssignedMaterial "{D1652E88E8B8C9C5}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9843.703 1.529 4620.666
+  angleX -4.604
+  angleY 100.904
+  angleZ -24.357
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CC6247B4A}" {
+      SourceMaterial "UAZ469_Body"
+      AssignedMaterial "{D1652E88E8B8C9C5}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9846.393 1.597 4631.848
+  angleX 2.844
+  angleY -66.15
+  angleZ -1.928
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CC6247B4A}" {
+      SourceMaterial "UAZ469_Body"
+      AssignedMaterial "{D1652E88E8B8C9C5}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9857.288 0.848 4625.351
+  angleX 5.917
+  angleY -49.818
+  angleZ 1.36
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CC6247B4A}" {
+      SourceMaterial "UAZ469_Body"
+      AssignedMaterial "{D1652E88E8B8C9C5}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9858.992 0.646 4576.639
+  angleX 1.45
+  angleY 6.491
+  angleZ -0.757
+ }
+ {
+  coords 9836.446 4.359 4764.427
+  angleX -24.5
+  angleY 87.296
+  angleZ 8.175
+ }
+ {
+  coords 9862.608 1.143 4618.035
+  angleY 91.102
+ }
+ {
+  coords 9862.075 1.141 4615.73
+  angleY -80.469
+ }
+ {
+  coords 9871.614 0.837 4643.115
+  angleX -10.133
+  angleY 123.745
+  angleZ 11.745
+ }
+ {
+  coords 9857.28 1.938 4713.669
+ }
+ {
+  coords 9874.194 0.85 4686.829
+  angleY 108.908
+ }
+ {
+  coords 9876.454 0.994 4724.803
+  angleX 3.871
+  angleY -96.631
+  angleZ 1.604
+ }
+ {
+  coords 9833.315 4.792 4810.38
+  angleX 2.76
+  angleY -18.822
+  angleZ 15.24
+ }
+ {
+  coords 9824.174 3.111 4890.815
+  angleX -3.111
+  angleY -0.698
+  angleZ 12.644
+ }
+ {
+  coords 9818.991 8.775 4781.496
+  angleX -3.87
+ }
+ {
+  coords 9816.3 7.157 4731.247
+ }
+ {
+  coords 9806.294 9.358 4657.801
+  angleX 5.06
+  angleY -71.374
+  angleZ 3.364
+ }
+ {
+  coords 9806.361 9.947 4710.563
+ }
+ {
+  coords 9800.087 10.484 4671.377
+ }
+ {
+  coords 9800.073 9.281 4717.931
+  angleX -8.839
+  angleY 42.529
+ }
+ {
+  coords 9770.784 9.252 4726.789
+  angleX -21.118
+  angleY 130.653
+  angleZ -4.218
+ }
+ {
+  coords 9793.543 2.141 4528.501
+  angleX -5.692
+  angleY -114.089
+  angleZ 5.152
+ }
+ {
+  coords 9815.607 2.788 4459.855
+  angleX -2.08
+  angleY 146.204
+  angleZ -3.104
+ }
+ {
+  coords 9818.871 2.142 4492.672
+  angleX -6.791
+  angleY 95.871
+ }
+ {
+  coords 9872.244 1.238 4439.794
+  angleX -1.41
+  angleY -63.321
+ }
+ {
+  coords 9872.112 0.409 4424.268
+  angleY -119.634
+ }
+ {
+  coords 9875.095 0.406 4417.184
+  angleY -79.291
+ }
+ {
+  coords 9875.908 1.001 4387.388
+  angleY -61.914
+ }
+ {
+  coords 9878.038 1.125 4381.431
+  angleY 62.512
+ }
+ {
+  coords 9851.006 0.799 4442.289
+  angleY -11.401
+ }
+ {
+  coords 9860.256 1.371 4385.396
+  angleY -100.048
+ }
+ {
+  coords 9841.67 1.568 4455.05
+  angleX -4.973
+  angleY 55.54
+ }
+ {
+  coords 9848.301 1.618 4433.83
+  angleZ 20.721
+ }
+ {
+  coords 9840.351 1.975 4389.501
+  angleX 3.305
+  angleY -121.179
+  angleZ -1.998
+ }
+ {
+  coords 9908.871 -0.309 4410.227
+  angleX 7.997
+  angleY -23.079
+  angleZ -15.896
+ }
+ {
+  coords 9897.907 0.703 4378.83
+  angleX 3.849
+  angleY -52.123
+  angleZ 2.989
+ }
+ {
+  coords 9903.813 0.916 4341.81
+  angleY -94.197
+ }
+ {
+  coords 9909.615 2.001 4307.022
+  angleY -105.569
+ }
+ {
+  coords 9878.7 0.764 4819.981
+  angleX 4.261
+  angleY -122.005
+ }
+ {
+  coords 9859.059 1.724 4891.628
+  angleY 70.457
+ }
+ {
+  coords 9854.743 1.718 4848.065
+  angleY 58.6
+ }
+ {
+  coords 9849.701 1.852 4873.244
+  angleY 69.717
+ }
+ {
+  coords 9841.206 2.121 4902.414
+  angleY -86.822
+ }
+ {
+  coords 9817.303 8.148 4841.699
+  angleX -4.182
+  angleY 104.579
+  angleZ -1.087
+ }
+ {
+  coords 9747.575 2.776 4951.629
+  angleX 4.421
+  angleY -125.934
+  angleZ 1.784
+ }
+ {
+  coords 9741.038 2.276 4958.122
+  angleX -2.544
+  angleY 68.68
+ }
+ {
+  coords 9790.999 1.507 4948.85
+  angleY -49.337
+ }
+ {
+  coords 9734.933 0.465 4990.185
+  angleY -126.862
+ }
+ {
+  coords 9810.104 0.802 4953.491
+  angleY 151.246
+  angleZ -5.702
+ }
+ {
+  coords 9807.603 1.214 4954.491
+ }
+ {
+  coords 9791.595 0.934 4964.938
+ }
+ {
+  coords 9781.592 1.718 4978.499
+ }
+ {
+  coords 9821.451 0.497 4954.002
+  angleY 119.979
+ }
+ {
+  coords 9813.613 0.482 4969.505
+  angleY 83.032
+ }
+ {
+  coords 9811.396 0.522 4971.438
+  angleY -137.202
+ }
+ {
+  coords 9772.856 0.13 5012.511
+  angleY 18.318
+ }
+ {
+  coords 9744.5 1.271 5046.066
+  angleY -23.941
+ }
+ {
+  coords 9742.741 1.168 5050.083
+  angleX 1.991
+  angleY -88.12
+ }
+ {
+  coords 9793.247 10.724 4642.193
+ }
+ {
+  coords 9808.546 9.149 4817.635
+  angleY -13.387
+ }
+ {
+  coords 9802.527 9.622 4839.145
+  angleX 3.281
+  angleY -41.714
+  angleZ 3.674
+ }
+ {
+  coords 9802.594 9.264 4865.201
+  angleY -38.067
+ }
+ {
+  coords 9744.398 4.875 5137.262
+  angleX 3.675
+  angleY -104.68
+  angleZ 3.136
+ }
+ {
+  coords 9730.692 1.667 5068.132
+  angleZ 4.345
+ }
+ {
+  coords 9823.558 1.387 5259.405
+ }
+ {
+  coords 9809.878 1.39 5206.968
+ }
+ {
+  coords 9823.201 1.385 5263.643
+ }
+ {
+  coords 9765.929 3.208 5131.251
+ }
+ {
+  coords 9772.114 2.214 5143.083
+ }
+ {
+  coords 9775.454 1.484 5151.273
+ }
+ {
+  coords 9796.459 5.033 5227.289
+ }
+ {
+  coords 9799.288 4.963 5234.374
+ }
+ {
+  coords 9704.971 0.845 5027.186
+ }
+ {
+  coords 9700.434 1.308 5039.142
+ }
+ {
+  coords 9700.448 2.717 5083.58
+ }
+ {
+  coords 9708.275 5.284 5107.575
+  angleX 3.352
+ }
+ {
+  coords 9823.646 1.529 5332.907
+ }
+ {
+  coords 9814.741 1.815 5372.769
+ }
+ {
+  coords 9782.356 1.198 5416.355
+  angleX -3.628
+  angleY 0.448
+  angleZ 9.344
+ }
+ {
+  coords 9737.461 6.34 5154.417
+  angleX 8.754
+  angleY -96.44
+  angleZ -5.232
+ }
+ {
+  coords 9743.033 6.667 5173.33
+ }
+ {
+  coords 9757.074 6.515 5195.751
+ }
+ {
+  coords 9789.139 5.743 5341.239
+  angleX 1.856
+  angleY -72.586
+  angleZ 5.743
+ }
+ {
+  coords 9788.56 5.71 5315.224
+  angleY -19.541
+  angleZ 8.062
+ }
+ {
+  coords 9780.662 5.346 5256.828
+  angleX -0.767
+  angleY 114.785
+  angleZ 5.355
+ }
+ {
+  coords 9791.851 6.005 5306.481
+  angleX 0.537
+  angleY -61.564
+  angleZ 4.028
+ }
+ {
+  coords 9777.613 5.417 5243.685
+  angleX 5.458
+  angleY -82.359
+  angleZ 5.505
+ }
+ {
+  coords 9678.806 5.534 5091.006
+  angleX -17.699
+  angleY 121.999
+  angleZ -9.186
+ }
+ {
+  coords 9687.218 6.134 5106.669
+  angleX 8.53
+  angleY -7.62
+  angleZ 6.589
+ }
+ {
+  coords 9681.356 7.151 5115.042
+  angleX -1.089
+  angleY -134.133
+ }
+ {
+  coords 9754.364 5.99 4922.896
+ }
+ {
+  coords 9784.96 5.674 5357.294
+  angleX -7.092
+  angleZ 3.561
+ }
+ {
+  coords 9749.968 4.764 5403.287
+ }
+ {
+  coords 9672.851 4.112 5062.804
+  angleX 8.414
+  angleY -30.434
+  angleZ 13.986
+ }
+ {
+  coords 9803.359 4.251 5316.841
+  angleX 6.101
+  angleY -64.32
+  angleZ 9.71
+ }
+ {
+  coords 9803.269 3.981 5326.403
+  angleY -102.672
+ }
+ {
+  coords 9774.547 4.671 5388.468
+ }
+ {
+  coords 9776.017 4.607 5392.656
+  angleX -4.007
+  angleY 42.726
+ }
+ {
+  coords 9696.524 3.037 4972.111
+ }
+ {
+  coords 9692.448 3.045 4974.076
+  angleX -10.065
+  angleZ 6.252
+ }
+ {
+  coords 9670.799 5.193 5006.38
+  angleX -6.321
+  angleY -20.899
+  angleZ 12.149
+ }
+ {
+  coords 9672.153 7.718 5114.607
+  angleY -82.289
+ }
+ {
+  coords 9733.531 7.131 4917.686
+ }
+ {
+  coords 9757.731 1.829 5108.044
+  angleX -13.215
+  angleY 100.572
+  angleZ 3.265
+ }
+}
+$grp GenericEntity : "{654B33C808C4D93E}Prefabs/Props/Wrecks/M151A2_wreck_static.et" {
+ {
+  coords 10194.278 7.056 3379.201
+  angleX -2.713
+  angleY 128.841
+ }
+ {
+  coords 10134.809 23.233 3230.868
+  angleX -17.73
+  angleY 66.058
+  angleZ -21.533
+ }
+ {
+  coords 9841.255 1.058 4600.501
+  angleX 3.262
+  angleY -75.866
+  angleZ 0.084
+ }
+ {
+  coords 9837.185 1.569 4601.175
+  angleX -4.525
+  angleY -109.129
+  angleZ 12.107
+ }
+ {
+  coords 9825.736 1.469 4559.79
+  angleX 3.137
+  angleY -81.891
+  angleZ -1.171
+ }
+ {
+  coords 9661.465 8.49 5118.938
+  angleX -7.163
+  angleY 138.787
+  angleZ 3.43
+ }
+ {
+  coords 9841.904 1.281 4609.866
+  angleX 5.043
+  angleY -39.981
+  angleZ 2.686
+ }
+ {
+  coords 9860.449 1.025 4637.646
+  angleX 4.366
+  angleY -46.771
+  angleZ 3.687
+ }
+ {
+  coords 9831.758 3.567 4666.865
+  angleX 14.809
+  angleY -68.376
+  angleZ 6.544
+ }
+ {
+  coords 9876.097 0.882 4660.123
+  angleY -78.017
+ }
+ {
+  coords 9860.1 1.31 4690.646
+  angleX -2.06
+  angleY 99.89
+ }
+ {
+  coords 9875.275 0.999 4702.396
+  angleX 2.916
+  angleY -89.688
+  angleZ 2.635
+ }
+ {
+  coords 9805.971 10.015 4662.96
+ }
+ {
+  coords 9806.615 9.42 4648.232
+  angleX -5.356
+  angleY 117.115
+ }
+ {
+  coords 9807.565 10.403 4771.934
+  angleY -84.454
+ }
+ {
+  coords 9795.245 4.067 4562.011
+  angleY -18.557
+ }
+ {
+  coords 9791.865 9.658 4625.136
+  angleX -0.845
+  angleY -159.991
+  angleZ -3.305
+ }
+ {
+  coords 9800.033 10.488 4668.501
+ }
+ {
+  coords 9800.3 10.601 4689.01
+  angleX -1.295
+  angleY 78.478
+ }
+ {
+  coords 9799.65 9.783 4766.031
+  angleX 9.595
+  angleY 100.364
+  angleZ 12.194
+ }
+ {
+  coords 9798.851 10.332 4776.917
+  angleY 61.493
+ }
+ {
+  coords 9776.406 8.151 4717.167
+  angleX -2.03
+  angleY -84.623
+  angleZ -0.191
+ }
+ {
+  coords 9828.461 2.75 4397.309
+  angleY -38.38
+ }
+ {
+  coords 9855.591 1.379 4390.563
+ }
+ {
+  coords 9826.311 1.565 4535.167
+  angleY -15.002
+ }
+ {
+  coords 9818.928 2.087 4489.522
+  angleX 1.683
+  angleY -48.709
+  angleZ 1.876
+ }
+ {
+  coords 9870.024 1.843 4461.735
+  angleY 68.551
+ }
+ {
+  coords 9843.162 0.862 4538.565
+  angleX 3.137
+  angleY -81.891
+  angleZ -1.171
+ }
+ {
+  coords 9880.065 1.304 4371.69
+  angleY 112.443
+ }
+ {
+  coords 9881.315 1.287 4354.917
+  angleY -80.038
+ }
+ {
+  coords 9861.747 1.186 4411.234
+  angleX -2.552
+  angleY 50.983
+  angleZ 1.415
+ }
+ {
+  coords 9861.848 1.791 4380.732
+  angleY 58.838
+ }
+ {
+  coords 9846.033 1.401 4412.54
+  angleX -5.668
+  angleY 133.407
+ }
+ {
+  coords 9903.075 1.083 4344.26
+  angleY -103.908
+ }
+ {
+  coords 9903.74 1.15 4339.499
+  angleY 77.088
+ }
+ {
+  coords 9887.347 2.342 4300.478
+ }
+ {
+  coords 9885.892 1.783 4486.645
+  angleY -71.07
+ }
+ {
+  coords 9870.492 1.972 4469.723
+  angleY -140.143
+ }
+ {
+  coords 9872.392 1.4 4855.241
+ }
+ {
+  coords 9870.688 1.686 4863.034
+ }
+ {
+  coords 9856.8 1.761 4825.773
+  angleY 64.621
+ }
+ {
+  coords 9849.808 2.573 4883.586
+  angleY -3.523
+ }
+ {
+  coords 9820.501 7.898 4820.927
+  angleX -7.666
+  angleY 75.016
+  angleZ 2.045
+ }
+ {
+  coords 9820.019 7.84 4823.684
+  angleY -69.622
+ }
+ {
+  coords 9814.309 8.15 4859.94
+  angleX -8.544
+  angleY 111.85
+  angleZ -3.409
+ }
+ {
+  coords 9795.701 4.508 4910.006
+  angleX 5.439
+  angleY -130.731
+ }
+ {
+  coords 9789.276 4.199 4916.986
+  angleX -15.724
+  angleY -0.603
+  angleZ 6.83
+ }
+ {
+  coords 9772.809 4.718 4930.89
+  angleX 9.779
+  angleY -142.016
+  angleZ 9.356
+ }
+ {
+  coords 9766.257 3.731 4937.835
+  angleX 13.53
+  angleY -139.762
+  angleZ 6.763
+ }
+ {
+  coords 9736.533 2.007 4962.115
+  angleX -1.962
+  angleY 41.403
+  angleZ -5.408
+ }
+ {
+  coords 9701.374 1.464 4999.647
+  angleY -144.627
+ }
+ {
+  coords 9774.388 1.245 4956.48
+  angleX -5.652
+  angleY -20.038
+  angleZ -15.112
+ }
+ {
+  coords 9733.817 0.644 4992.509
+  angleY 70.355
+ }
+ {
+  coords 9825.451 0.799 4928.981
+  angleY -125.206
+ }
+ {
+  coords 9820.241 0.497 4940.369
+  angleY 50.3
+ }
+ {
+  coords 9793.809 0.941 4966.813
+ }
+ {
+  coords 9783.824 1.425 4972.407
+  angleY 47.635
+ }
+ {
+  coords 9833.213 0.23 4942.727
+  angleY 65.107
+ }
+ {
+  coords 9809.576 0.489 4972.985
+  angleY 44.013
+ }
+ {
+  coords 9792.033 8.085 4885.61
+  angleY 32.351
+ }
+ {
+  coords 9744.178 1.405 5075.926
+  angleY -81.484
+ }
+ {
+  coords 9770.716 2.633 5138.69
+ }
+ {
+  coords 9816.688 1.519 5224.563
+ }
+ {
+  coords 9770.38 3.199 5180.619
+  angleX 9.026
+  angleY -44.36
+  angleZ 9.599
+ }
+ {
+  coords 9783.238 4.363 5204.299
+ }
+ {
+  coords 9805.65 4.802 5258.61
+ }
+ {
+  coords 9770.06 0.429 5430.784
+  angleX -4.79
+  angleY -48.8
+  angleZ 3.517
+ }
+ {
+  coords 9819.324 1.799 5358.732
+ }
+ {
+  coords 9812.67 1.857 5376.987
+ }
+ {
+  coords 9725.946 7.688 5135.876
+ }
+ {
+  coords 9744.115 6.768 5177.628
+ }
+ {
+  coords 9787.757 6.563 5280.573
+  angleX 0.353
+  angleY 0.061
+  angleZ 9.814
+ }
+ {
+  coords 9784.313 6.13 5271.565
+  angleY -57.617
+ }
+ {
+  coords 9697.003 8.4 5129.355
+  angleY 86.264
+  angleZ 8.911
+ }
+ {
+  coords 9710.991 9.503 5171.686
+ }
+ {
+  coords 9776.398 5.778 5366.217
+  angleY 102.313
+ }
+ {
+  coords 9682.764 2.192 5021.841
+  angleX 6.921
+  angleY -120.639
+  angleZ 0.298
+ }
+ {
+  coords 9679.521 2.717 5022.92
+  angleY 46.323
+  angleZ 5.918
+ }
+ {
+  coords 9681.647 2.119 5025.289
+  angleY -17.176
+ }
+ {
+  coords 9731.685 5.629 4939.227
+ }
+ {
+  coords 9699.479 2.996 4968.659
+ }
+ {
+  coords 9670.896 3.772 5018.73
+  angleX -8.681
+  angleY 118.809
+  angleZ -6.157
+ }
+ {
+  coords 9647.855 5.647 5021.126
+ }
+ {
+  coords 9646.706 6.811 5029.907
+ }
+ {
+  coords 9646.517 7.424 5042.448
+ }
+ {
+  coords 9646.859 7.305 5046.78
+ }
+ {
+  coords 9645.847 6.188 5060.063
+ }
+ {
+  coords 9648.056 6.778 5077.981
+ }
+ {
+  coords 9664.284 6.804 5037.251
+ }
+ {
+  coords 9664.856 6.951 5092.829
+  angleY -71.567
+ }
+ {
+  coords 9669.185 7.27 5106.974
+  angleX 2.545
+  angleY -70.07
+ }
+}
+$grp GenericEntity : "{6BE5C753730DBFED}Prefabs/Props/Wrecks/M923A1_wreck_static.et" {
+ {
+  coords 11577.754 2.26 2207.569
+  angleY -98.541
+ }
+ {
+  coords 11608.385 2.932 1969.168
+  angleX 2.675
+  angleY -92.522
+  angleZ -136.49
+ }
+ {
+  coords 9838.638 1.025 4573.661
+  angleX -4.633
+  angleY 89.137
+  angleZ -6.067
+ }
+ {
+  coords 9838.217 1.23 4580.644
+  angleX 3.605
+  angleY -81.692
+  angleZ 6.726
+ }
+ {
+  coords 9838.733 1.011 4585.309
+  angleX 3.661
+  angleY -82.166
+  angleZ 6.697
+ }
+ {
+  coords 10255.656 -0.046 3247.908
+  angleY -171.208
+  angleZ 8.515
+ }
+ {
+  coords 9824.835 1.501 4541.647
+  angleX 2.168
+  angleY -87.464
+  angleZ 3.797
+ }
+ {
+  coords 9826.009 2.593 4598.905
+  angleX -10.322
+  angleY 83.03
+  angleZ -1.174
+ }
+ {
+  coords 9844.104 2.151 4716.49
+  angleY -31.68
+ }
+ {
+  coords 9839.724 1.294 4606.031
+  angleX 0.517
+  angleY -88.621
+  angleZ -5.354
+ }
+ {
+  coords 9845.968 1.281 4627.201
+  angleX -4.869
+  angleY 103.623
+  angleZ 1.959
+ }
+ {
+  coords 9841.52 1.341 4618.237
+  angleX -1.344
+  angleY 100.307
+  angleZ 23.56
+ }
+ {
+  coords 9835.878 3.148 4748.563
+  angleX -15.406
+  angleY 80.192
+  angleZ 3.72
+ }
+ {
+  coords 9858.331 1.321 4804.973
+  angleY -94.667
+ }
+ {
+  coords 9832.185 3.674 4684.946
+  angleX 17.008
+  angleY -89.826
+  angleZ -4.676
+ }
+ {
+  coords 9852.907 1.698 4775.414
+  angleX -0.815
+  angleY 106.263
+  angleZ -0.175
+ }
+ {
+  coords 9841.586 2.08 4723.4
+  angleY 121.491
+ }
+ {
+  coords 9863.835 1.087 4662.715
+  angleX 0.005
+  angleY -119.41
+ }
+ {
+  coords 9853.471 1.799 4755.552
+  angleX 1.751
+  angleY -89.956
+  angleZ 3.515
+ }
+ {
+  coords 9851.477 2.015 4743.219
+ }
+ {
+  coords 9877.533 1.098 4770.325
+  angleX -2.661
+  angleY 78.199
+ }
+ {
+  coords 9834.736 3.839 4829.866
+  angleX -4.817
+  angleY 26.945
+  angleZ 15.866
+ }
+ {
+  coords 9819.786 7.803 4797.349
+  angleX -11.851
+  angleY 106.025
+ }
+ {
+  coords 9816.284 7.111 4723.306
+ }
+ {
+  coords 9816.197 7.651 4713.522
+  angleX 12.984
+  angleY -92.779
+  angleZ 3.881
+ }
+ {
+  coords 9819.734 7.921 4691.519
+  angleX 8.233
+  angleY -33.533
+  angleZ 17.49
+ }
+ {
+  coords 9818.204 8.132 4686.549
+  angleX 15.681
+  angleY -83.098
+  angleZ -6.504
+ }
+ {
+  coords 9809.045 6.461 4600.807
+ }
+ {
+  coords 9805.859 8.696 4737.651
+  angleX -4.436
+  angleY 59.641
+ }
+ {
+  coords 9806.034 9.548 4796.396
+  angleX -5.115
+  angleY 130.738
+  angleZ -4.525
+ }
+ {
+  coords 9791.98 4.998 4574.489
+  angleX -0.631
+  angleY 95.137
+  angleZ -11.012
+ }
+ {
+  coords 9786.515 8.63 4603.457
+  angleX -3.566
+  angleY 91.56
+  angleZ 2.434
+ }
+ {
+  coords 9787.157 10.16 4627.324
+  angleX -1.774
+  angleY -107.396
+  angleZ -5.764
+ }
+ {
+  coords 9799.216 10.684 4697.456
+  angleX -0.662
+  angleY -12.314
+  angleZ -4.071
+ }
+ {
+  coords 9775.015 8.266 4726.894
+  angleX 6.18
+  angleY -15.95
+  angleZ 3.448
+ }
+ {
+  coords 9795 2.397 4525.183
+  angleX 5.97
+  angleY 98.478
+  angleZ -5.368
+ }
+ {
+  coords 9852.162 1.687 4385.094
+  angleY -61.41
+ }
+ {
+  coords 9811.233 2.466 4527.022
+ }
+ {
+  coords 9825.688 2.931 4448.289
+  angleX -21.014
+  angleY 52.35
+  angleZ -6.452
+ }
+ {
+  coords 9822.077 4.312 4420.748
+  angleX -9.036
+  angleY 100.965
+  angleZ 12.572
+ }
+ {
+  coords 9824.976 3.229 4392.881
+  angleX 1.737
+  angleY -50.593
+  angleZ -1.231
+ }
+ {
+  coords 9818.498 2.032 4525.396
+  angleX -1.196
+ }
+ {
+  coords 9819.325 2.423 4497.026
+  angleX 3.444
+  angleY -66.402
+  angleZ -2.92
+ }
+ {
+  coords 9877.306 1.671 4534.569
+  angleX 5.893
+  angleY -86.185
+  angleZ -2.089
+ }
+ {
+  coords 9868.72 2.124 4535.102
+  angleX 1.291
+  angleY 94.076
+  angleZ -2.639
+ }
+ {
+  coords 9857.218 1.131 4479.815
+  angleX 2.259
+  angleY 83.629
+  angleZ -0.083
+ }
+ {
+  coords 9857.264 1.283 4466.602
+  angleX 1.907
+  angleY 118.215
+  angleZ 1.214
+ }
+ {
+  coords 9854.087 1.489 4547.957
+  angleX -2.76
+  angleY -88.314
+  angleZ -5.36
+ }
+ {
+  coords 9866.104 1.379 4622.387
+  angleX 2.346
+  angleY 90.803
+  angleZ 1.632
+ }
+ {
+  coords 9866.932 1.329 4618.81
+  angleX -3.768
+  angleY 132.883
+  angleZ -6.819
+ }
+ {
+  coords 9873.659 1.598 4448.823
+  angleY 101.855
+ }
+ {
+  coords 9856.284 0.811 4456.604
+  angleX -3.758
+  angleY -74.295
+ }
+ {
+  coords 9856.653 0.919 4451.224
+  angleY -90.238
+ }
+ {
+  coords 9856.852 0.699 4448.315
+  angleX -2.847
+  angleY -98.941
+  angleZ -8.431
+ }
+ {
+  coords 9857.133 0.999 4444.306
+  angleY 100.367
+ }
+ {
+  coords 9856.274 1.177 4438.496
+  angleY 104.129
+ }
+ {
+  coords 9856.908 1.174 4429.043
+  angleY 60.006
+ }
+ {
+  coords 9859.908 1.659 4394.497
+  angleX -1.744
+  angleY -93.305
+  angleZ -6.31
+ }
+ {
+  coords 9863.092 2.206 4345.926
+  angleY -102.109
+ }
+ {
+  coords 9842.386 1.786 4434.656
+  angleX -2.633
+  angleY -76.347
+ }
+ {
+  coords 9840.386 1.747 4413.313
+  angleY -69.109
+ }
+ {
+  coords 9841.715 2.01 4367.781
+  angleY 66.029
+ }
+ {
+  coords 9871.233 1.771 4353.857
+  angleY -151.546
+ }
+ {
+  coords 9886.495 1.531 4466.039
+  angleX -2.213
+  angleY 78.619
+  angleZ 0.445
+ }
+ {
+  coords 9891.504 0.925 4404.848
+  angleX 0.649
+  angleY 73.644
+  angleZ -0.191
+ }
+ {
+  coords 9904.703 1.145 4336.646
+  angleY -96.533
+ }
+ {
+  coords 9842.292 1.854 4328.334
+  angleY -115.66
+ }
+ {
+  coords 9847.32 1.853 4324.563
+  angleX -2.812
+  angleY 145.275
+  angleZ 0.658
+ }
+ {
+  coords 9886.784 1.772 4473.465
+  angleY 99.819
+  angleZ -4.01
+ }
+ {
+  coords 9876.236 0.836 4790.667
+  angleY -97.812
+ }
+ {
+  coords 9876.114 1.2 4827.46
+  angleY -84.158
+ }
+ {
+  coords 9872.716 1.324 4852.317
+ }
+ {
+  coords 9869.192 0.673 4879.563
+  angleX -2.788
+ }
+ {
+  coords 9859.892 1.683 4884.773
+  angleY -59.75
+ }
+ {
+  coords 9854.793 1.851 4898.928
+  angleX -2.797
+  angleY 96.443
+  angleZ -0.316
+ }
+ {
+  coords 9853.421 1.923 4902.73
+  angleX 2.033
+  angleY -104.955
+  angleZ -0.543
+ }
+ {
+  coords 9860.937 1.364 4825.489
+  angleX -3.605
+  angleY -168.737
+  angleZ 8.697
+ }
+ {
+  coords 9852.788 2.024 4853.448
+  angleY -90.058
+ }
+ {
+  coords 9849.172 2.15 4866.426
+  angleX -1.194
+  angleY -86.998
+  angleZ -2.626
+ }
+ {
+  coords 9846.968 2.318 4873.022
+  angleY -9.691
+  angleZ -5.986
+ }
+ {
+  coords 9829.334 1.147 4923.645
+  angleY -93.976
+ }
+ {
+  coords 9814.408 8.073 4862.667
+  angleX 6.814
+  angleY -91.619
+  angleZ -0.192
+ }
+ {
+  coords 9792.865 4.508 4911.169
+  angleX 10.523
+  angleY -145.489
+ }
+ {
+  coords 9785.533 3.806 4922.896
+  angleX 11.403
+  angleY -107.519
+ }
+ {
+  coords 9757.068 3.715 4943.212
+  angleX 6.33
+  angleY -120.762
+ }
+ {
+  coords 9749.498 3.066 4949.777
+  angleX -4.226
+  angleY 41.824
+ }
+ {
+  coords 9731.634 1.83 4965.706
+  angleX -4.029
+  angleY 50.696
+ }
+ {
+  coords 9696.818 1.659 4999.91
+  angleX 2.347
+  angleY -135.65
+  angleZ -3.748
+ }
+ {
+  coords 9794.45 1.942 4938.109
+  angleX -2.225
+  angleY 78.428
+  angleZ -3.693
+ }
+ {
+  coords 9768.033 0.805 4963.781
+  angleX -2.421
+  angleY 38.281
+ }
+ {
+  coords 9744.451 1.051 4980.624
+  angleY -135.911
+ }
+ {
+  coords 9727.587 0.708 4999.325
+  angleY 55.053
+ }
+ {
+  coords 9820.271 0.756 4937.224
+  angleX 2.865
+  angleY -115.464
+  angleZ 0.437
+ }
+ {
+  coords 9810.224 1.028 4948.689
+  angleX -1.912
+  angleY 60.77
+ }
+ {
+  coords 9839.315 1.998 4907.606
+  angleX -1.084
+  angleY -112.689
+ }
+ {
+  coords 9841.36 1.616 4904.511
+  angleY 80.992
+  angleZ 10.014
+ }
+ {
+  coords 9769.809 2.04 4987.563
+  angleY -129.86
+ }
+ {
+  coords 9760.884 1.574 4999.502
+  angleX 0.452
+  angleY -126.311
+  angleZ -2.238
+ }
+ {
+  coords 9758.44 1.513 5002.016
+  angleY -139.66
+  angleZ -3.163
+ }
+ {
+  coords 9751.096 1.264 5011.282
+  angleY 61.74
+ }
+ {
+  coords 9842.7 0.763 4928.022
+  angleX -2.159
+  angleY 74.528
+ }
+ {
+  coords 9783.676 0.654 5001.191
+  angleX -2.209
+  angleY 41.221
+ }
+ {
+  coords 9762.988 0.688 5021.96
+  angleY -150.38
+ }
+ {
+  coords 9748.492 1.131 5042.636
+  angleY -116.714
+ }
+ {
+  coords 9822.776 1.876 4345.647
+ }
+ {
+  coords 9820.108 2.099 4334.476
+  angleX -9.224
+  angleY 7.365
+  angleZ -1.187
+ }
+ {
+  coords 9803.221 9.757 4820.833
+  angleX 5.289
+  angleY -38.97
+  angleZ 6.502
+ }
+ {
+  coords 9802.418 9.879 4842.739
+  angleX 5.331
+  angleY -69.419
+  angleZ 1.998
+ }
+ {
+  coords 9730.726 2.058 5085.171
+  angleX 2.623
+  angleY -60.69
+ }
+ {
+  coords 9752.913 4.748 5151.629
+  angleX 3.202
+  angleY -35.534
+  angleZ 8.388
+ }
+ {
+  coords 9744.052 4.24 5119.268
+  angleX -2.465
+  angleY 108.285
+ }
+ {
+  coords 9739.824 3.948 5110.315
+ }
+ {
+  coords 9728.307 1.889 5065.313
+  angleY 119.912
+ }
+ {
+  coords 9724.908 1.973 5063.588
+  angleY -62.676
+ }
+ {
+  coords 9723.986 1.945 5060.541
+  angleY 105.477
+ }
+ {
+  coords 9725.328 2.132 5071.26
+  angleX 1.763
+  angleY -30.965
+ }
+ {
+  coords 9734.186 2.239 5098.377
+  angleX -2.056
+  angleY 86.306
+ }
+ {
+  coords 9751.308 4.75 5147.016
+  angleX -2.494
+  angleY 117.651
+ }
+ {
+  coords 9825.784 1.432 5292.667
+ }
+ {
+  coords 9819.521 1.443 5233.595
+ }
+ {
+  coords 9826.318 1.325 5277.562
+ }
+ {
+  coords 9761.474 3.23 5120.996
+ }
+ {
+  coords 9784.2 1.629 5164.595
+ }
+ {
+  coords 9788.597 1.663 5173.167
+ }
+ {
+  coords 9791.31 1.676 5176.948
+ }
+ {
+  coords 9797.698 1.539 5186.96
+ }
+ {
+  coords 9770.438 4.072 5184.354
+  angleX -7.094
+  angleY 110.093
+  angleZ -1.572
+ }
+ {
+  coords 9788.608 4.162 5215.372
+  angleX -1.744
+  angleY 120.658
+ }
+ {
+  coords 9787.451 4.159 5211.397
+  angleX -1.325
+  angleY 147.196
+  angleZ -5.192
+ }
+ {
+  coords 9804.598 5.192 5252.37
+ }
+ {
+  coords 9772.776 0.512 5427.43
+  angleX -4.166
+ }
+ {
+  coords 9706.867 2.25 5072.44
+ }
+ {
+  coords 9727.3 7.766 5140.175
+  angleX 14.155
+  angleY -67.523
+  angleZ 8.718
+ }
+ {
+  coords 9699.873 2.55 5075.46
+ }
+ {
+  coords 9696.239 2.556 5080.031
+ }
+ {
+  coords 9824.134 1.275 5312.747
+ }
+ {
+  coords 9822.112 1.68 5339.175
+ }
+ {
+  coords 9815.947 1.805 5368.508
+ }
+ {
+  coords 9806.5 1.885 5389.075
+ }
+ {
+  coords 9724.724 7.291 5133.008
+  angleX -16.308
+  angleY 130.039
+  angleZ -1.564
+ }
+ {
+  coords 9722.96 8.869 5149.196
+ }
+ {
+  coords 9735.408 6.498 5149.417
+  angleY 25.347
+  angleZ 3.078
+ }
+ {
+  coords 9746.56 6.694 5181.324
+ }
+ {
+  coords 9750.304 6.724 5186.755
+ }
+ {
+  coords 9783.328 6.726 5343.709
+  angleX 4.051
+  angleY -65.276
+  angleZ 5.999
+ }
+ {
+  coords 9784.656 5.598 5263.086
+  angleX 1.623
+  angleY 113.027
+  angleZ 7.552
+ }
+ {
+  coords 9783.074 5.644 5259.046
+  angleY -43.915
+ }
+ {
+  coords 9790.492 5.618 5326.337
+  angleX -2.021
+  angleY 94.761
+  angleZ 0.592
+ }
+ {
+  coords 9789.026 5.818 5322.917
+  angleX 2.534
+  angleY -99.834
+  angleZ -4.605
+ }
+ {
+  coords 9789.615 6.557 5283.08
+  angleX -2.463
+  angleY 121.212
+  angleZ -4.951
+ }
+ {
+  coords 9676.692 5.854 5088.703
+  angleX 11.268
+  angleY -64.724
+  angleZ -1.432
+ }
+ {
+  coords 9760.539 5.305 5386.71
+ }
+ {
+  coords 9759.558 4.852 5404.49
+ }
+ {
+  coords 9685.194 3.503 5004.162
+  angleX 0.428
+  angleY 66.674
+ }
+ {
+  coords 9675.006 4.315 5039.471
+  angleX 19.191
+  angleY -95.055
+ }
+ {
+  coords 9778.331 5.311 5235.229
+  angleY 119.332
+ }
+ {
+  coords 9805.427 4.907 5302.495
+  angleX 6.466
+  angleY -97.31
+ }
+ {
+  coords 9806.353 3.848 5314.336
+  angleX -12.847
+  angleY 81.199
+  angleZ -3.342
+ }
+ {
+  coords 9807.064 3.532 5322.375
+  angleX -7.993
+  angleY 119.737
+  angleZ -6.793
+ }
+ {
+  coords 9787.198 4.951 5372.751
+  angleX 6.854
+  angleY -136.583
+ }
+ {
+  coords 9800.846 4.817 5349.184
+ }
+ {
+  coords 9702.275 3.041 4965.737
+ }
+ {
+  coords 9679.084 5.152 4990.288
+  angleX -21.863
+  angleY 88.628
+  angleZ 0.563
+ }
+ {
+  coords 9680.177 4.702 4994.211
+  angleX 15.769
+  angleY -92.642
+ }
+ {
+  coords 9676.06 4.005 5010.346
+  angleY -49.002
+  angleZ 6.067
+ }
+ {
+  coords 9671.127 4.184 5014.262
+  angleX 7.982
+  angleY -111.67
+  angleZ 4.808
+ }
+ {
+  coords 9646.198 7.002 5034.149
+ }
+ {
+  coords 9646.106 6.534 5074.02
+  angleY -76.98
+ }
+ {
+  coords 9701.139 7.882 4939.269
+ }
+ {
+  coords 9689.42 7.096 4948.967
+ }
+ {
+  coords 9685.784 6.728 4950.896
+ }
+ {
+  coords 9665.32 6.476 5080.367
+  angleX -7.64
+  angleY 98.24
+ }
+ {
+  coords 9671.756 7.513 5109.67
+  angleX -5.175
+  angleY 147.899
+  angleZ -3.132
+ }
+ {
+  coords 9741.88 1.539 5082.135
+  angleY -107.193
+  angleZ -0.239
+ }
+ {
+  coords 9857.254 1.225 4497.979
+  angleX -2.204
+  angleY -81.36
+  angleZ -0.505
+ }
+}
+$grp GenericEntity : "{75475231A95640BD}prefabs/Props/Wrecks/M923A1_wreck_static_new.et" {
+ {
+  coords 9831.992 3.47 4638.224
+  angleY -25.4
+  angleZ 17.646
+ }
+ {
+  coords 9850.491 1.461 4668.703
+  angleX 2.223
+  angleY -123.293
+  angleZ -16.53
+ }
+ {
+  coords 9835.565 4.978 4778.25
+  angleX 10.879
+  angleY -43.09
+  angleZ 11.47
+ }
+ {
+  coords 9851.902 1.755 4768.726
+  angleX 0.844
+  angleY -56.147
+  angleZ 0.651
+ }
+ {
+  coords 9873.131 1.15 4646.97
+  angleX 1.773
+  angleY -83.568
+ }
+ {
+  coords 9811.033 2.601 4911.353
+  angleX 8.485
+  angleY -136.306
+  angleZ -7.203
+ }
+ {
+  coords 9819.938 9.39 4777.726
+  angleX -8.399
+  angleY 113.685
+  angleZ -9.277
+ }
+ {
+  coords 9811.115 8.938 4659.207
+  angleX 11.864
+  angleY -94.416
+  angleZ -5.624
+ }
+ {
+  coords 9807.271 10.488 4686.991
+  angleX -5.856
+  angleY 138.112
+  angleZ -5.412
+ }
+ {
+  coords 9795.99 10.187 4657.685
+  angleY -59.325
+ }
+ {
+  coords 9793.245 9.241 4754.062
+  angleX 0.38
+  angleY -27.068
+  angleZ -5.331
+ }
+ {
+  coords 9811.721 3.03 4500.016
+  angleY 95.473
+ }
+ {
+  coords 9819.468 2.315 4486.207
+  angleX 0.506
+  angleY -55.407
+  angleZ -4.325
+ }
+ {
+  coords 9862.266 1.769 4378.151
+  angleY 69.971
+ }
+ {
+  coords 9842.636 1.46 4422.502
+  angleX 4.252
+  angleY -87.157
+  angleZ 0.211
+ }
+ {
+  coords 9886.357 1.535 4459.07
+  angleX -2.386
+  angleY 69.418
+  angleZ 0.896
+ }
+ {
+  coords 9888.878 0.933 4426.802
+  angleY 76.529
+ }
+ {
+  coords 9889.673 0.876 4415.739
+  angleY -95.973
+ }
+ {
+  coords 9890.392 0.835 4412.055
+  angleY 61.044
+ }
+ {
+  coords 9865.139 2.558 4339.259
+  angleY 84.437
+ }
+ {
+  coords 9842.157 1.351 4312.531
+  angleY -65.752
+ }
+ {
+  coords 9911.15 2.327 4298.89
+  angleX -2.687
+  angleY -93.628
+ }
+ {
+  coords 9876.857 0.891 4804.606
+  angleY -66.888
+ }
+ {
+  coords 9875.024 1.246 4837.769
+  angleX 2.515
+  angleY -83.539
+ }
+ {
+  coords 9857.766 1.709 4839.25
+  angleY 100.269
+ }
+ {
+  coords 9847.653 2.098 4879.938
+  angleY 87.889
+ }
+ {
+  coords 9835.65 1.778 4912.226
+  angleY -118.768
+ }
+ {
+  coords 9811.334 7.798 4874.104
+  angleX -9.194
+  angleY 95.978
+  angleZ -13.492
+ }
+ {
+  coords 9805.707 6.919 4888.981
+  angleY -112.819
+ }
+ {
+  coords 9801.146 5.927 4899.809
+  angleX 5.298
+  angleY -96.258
+  angleZ 7.235
+ }
+ {
+  coords 9796.656 5.167 4907.021
+  angleX -14.765
+  angleY 77.784
+  angleZ -10.249
+ }
+ {
+  coords 9724.739 1.332 4973.393
+  angleX -7.243
+  angleY 29.936
+ }
+ {
+  coords 9772.004 0.643 4961.647
+  angleX -3.067
+  angleY -0.128
+  angleZ 2.397
+ }
+ {
+  coords 9786.735 1.251 4971.993
+  angleY 33.657
+ }
+ {
+  coords 9779.33 0.175 5005.426
+  angleY -140.348
+  angleZ -13.933
+ }
+ {
+  coords 9820.784 3.043 4328.516
+  angleX 13.84
+  angleY -78.26
+  angleZ 11.514
+ }
+ {
+  coords 9805.896 9.657 4814.102
+  angleX -6.666
+  angleY 107.08
+  angleZ -2.043
+ }
+ {
+  coords 9804.724 9.537 4831.582
+  angleX -0.019
+  angleY -46.965
+  angleZ -0.018
+ }
+ {
+  coords 9801.716 9.64 4852.161
+  angleX -6.453
+  angleY 75.632
+  angleZ 1.649
+ }
+ {
+  coords 9743.101 4.171 5116.002
+  angleY 110.993
+ }
+ {
+  coords 9725.597 2.072 5055.617
+  angleY -61.848
+ }
+ {
+  coords 9759.017 3.761 5165.872
+  angleX -12.157
+  angleY 129.636
+ }
+ {
+  coords 9794.157 4.746 5223.504
+  angleX 3.425
+  angleY -67.544
+  angleZ -3.922
+ }
+ {
+  coords 9797.276 4.98 5229.49
+ }
+ {
+  coords 9823.918 1.481 5330.677
+ }
+ {
+  coords 9805.298 1.492 5390.889
+  angleX -3.136
+  angleY 55.822
+  angleZ -1.541
+ }
+ {
+  coords 9761.906 6.163 5204.417
+ }
+ {
+  coords 9770.017 5.423 5223.025
+  angleX -3.814
+  angleY 80.002
+ }
+ {
+  coords 9788.204 5.869 5347.789
+  angleX -3.793
+  angleY 63.786
+  angleZ -8.851
+ }
+ {
+  coords 9686.477 8.761 5134.279
+ }
+ {
+  coords 9707.398 10.266 5160.479
+ }
+ {
+  coords 9684.192 2.382 5015.128
+  angleX 10.291
+  angleY -117.332
+ }
+ {
+  coords 9677.198 3.44 5036.086
+  angleX -14.3
+  angleY 103.854
+ }
+ {
+  coords 9678.586 3.244 5061.864
+  angleX 9.002
+  angleY -61.775
+ }
+ {
+  coords 9801.104 4.805 5346.926
+ }
+ {
+  coords 9798.108 4.751 5354.833
+ }
+ {
+  coords 9792.604 4.803 5360.45
+  angleX 7.993
+  angleY -100.59
+ }
+ {
+  coords 9791.865 4.623 5364.887
+  angleX -8.163
+  angleY 54.847
+ }
+ {
+  coords 9692.604 2.797 4978.145
+  angleX -6.587
+  angleY 88.301
+  angleZ -11.137
+ }
+ {
+  coords 9684.716 3.193 4989.47
+ }
+ {
+  coords 9646.719 7.062 5048.951
+ }
+ {
+  coords 9721.992 8.304 4924.189
+ }
+ {
+  coords 9702.907 7.9 4937.665
+ }
+ {
+  coords 9665.298 6.496 5035.073
+ }
+ {
+  coords 9665.447 6.687 5087.207
+  angleX 3.555
+  angleY -70.958
+  angleZ -4.977
+ }
+ {
+  coords 9666.799 6.817 5095.565
+  angleY 127.6
+ }
+ {
+  coords 9674.524 7.652 5116.522
+  angleX 0.524
+  angleY -66.581
+ }
+ {
+  coords 9743.046 1.253 5063.926
+  angleY 80.643
+ }
+}
+$grp GenericEntity : "{839F6D3AC9373AFD}prefabs/Props/Wrecks/Ural_Wreck_New.et" {
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16D3D227DD6}" {
+      SourceMaterial "Ural_4320_Body_wreck"
+      AssignedMaterial "{8E82E837E5CF5723}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16D3D227DFD}" {
+      SourceMaterial "Ural_4320_Interior_wreck"
+      AssignedMaterial "{8B37891242375C9C}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Interior.emat"
+     }
+     MaterialAssignClass "{5B3CA16D3D227DF6}" {
+      SourceMaterial "Ural_4320_Wheels_wreck"
+      AssignedMaterial "{995B1559E994273F}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Wheels.emat"
+     }
+    }
+   }
+  }
+  coords 9825.324 2.053 4577.782
+  angleX 8.906
+  angleY -84.522
+  angleZ -2.978
+ }
+ {
+  coords 9824.565 2.111 4570.407
+  angleX -9.788
+  angleY 85.177
+  angleZ 3.203
+ }
+ {
+  coords 9841.446 0.756 4552.296
+  angleX -0.948
+  angleY 90.096
+  angleZ -2.036
+ }
+ {
+  coords 9852.185 0.327 4575.416
+  angleX -4.971
+  angleY 15.114
+  angleZ -13.112
+ }
+ {
+  coords 9846.921 2.133 4697.286
+  angleX -1.937
+  angleY -144.819
+  angleZ 0.396
+ }
+ {
+  coords 9870.024 0.754 4594.9
+  angleX -0.804
+  angleY 104.734
+  angleZ -3.182
+ }
+ {
+  coords 9858.511 1.394 4553.426
+  angleX 1.753
+  angleY -169.045
+  angleZ 0.87
+ }
+ {
+  coords 9824.865 2.599 4407.091
+  angleX -0.881
+  angleY -179.871
+  angleZ 3.167
+ }
+}
+$grp GenericEntity : "{90299A76FC1AE10F}Prefabs/Props/Wrecks/T62_wreck_turret.et" {
+ {
+  coords 11541.978 2.07 2212.895
+  angleX 22.1
+ }
+ {
+  coords 9843.766 0.742 4525.42
+  angleX 34.183
+  angleY 72.647
+  angleZ 5.372
+ }
+ {
+  coords 10002.205 57.071 3684.693
+  angleX 8.476
+  angleY 27.706
+  angleZ -2.061
+ }
+ {
+  coords 8725.617 5.492 5463.317
+  angleX 13.747
+  angleY 5.038
+  angleZ 13.995
+ }
+ {
+  coords 9912.156 2.142 4294.742
+  angleX 21.611
+  angleY 178.73
+  angleZ 0.182
+ }
+ {
+  coords 9822.208 5.102 4441.308
+  angleX 43.215
+  angleY -94.42
+  angleZ 7.226
+ }
+ {
+  coords 9840.776 2.232 4647.804
+  angleX 24.778
+  angleY 71.677
+  angleZ 4.893
+ }
+ {
+  coords 9845.785 1.688 4649.268
+  angleX 52.011
+  angleY -125.245
+  angleZ -17.296
+ }
+ {
+  coords 9834.155 4.9 4794.532
+  angleX 17.752
+  angleY 70.894
+  angleZ 23.555
+ }
+ {
+  coords 9867.731 1.177 4627.571
+  angleX 38.627
+  angleY -98.122
+  angleZ 4.732
+ }
+ {
+  coords 9830.968 3.113 4875.05
+  angleX 27.051
+  angleY 14.544
+ }
+ {
+  coords 9816.407 7.116 4726.373
+ }
+ {
+  coords 9802.703 6.639 4595.866
+  angleX 9.702
+  angleY 163.687
+ }
+ {
+  coords 9798.449 9.317 4745.865
+ }
+ {
+  coords 9800.568 10.3 4773.365
+  angleX 14.991
+  angleY -20.51
+  angleZ -27.442
+ }
+ {
+  coords 9808.357 2.774 4460.282
+  angleX 10.961
+  angleY 84.822
+ }
+ {
+  coords 9848.836 1.162 4375.4
+  angleX 14.863
+  angleY -41.57
+  angleZ -19.698
+ }
+ {
+  coords 9809.045 2.25 4534.022
+  angleX 22.325
+ }
+ {
+  coords 9813.853 2.602 4372.489
+  angleX 39.174
+  angleY 36.906
+  angleZ 11.446
+ }
+ {
+  coords 9821.995 2.126 4487.947
+  angleX 4.251
+ }
+ {
+  coords 9837.397 1.575 4448.499
+  angleX 27.722
+  angleY -61.961
+  angleZ -20.34
+ }
+ {
+  coords 9815.033 8.496 4430.24
+  angleX 18.53
+  angleY 122.1
+  angleZ 0.286
+ }
+ {
+  coords 9874.907 1.956 4460.08
+  angleX 19.064
+  angleY -125.394
+  angleZ -0.666
+ }
+ {
+  coords 9853.993 1.029 4471.951
+  angleX 28.453
+  angleY 44.024
+  angleZ 7.138
+ }
+ {
+  coords 9870.508 0.545 4421.029
+  angleX 6.57
+  angleY -103.074
+ }
+ {
+  coords 9877.017 1.58 4370.143
+  angleX 13.063
+  angleY 50.942
+  angleZ -5.872
+ }
+ {
+  coords 9863.415 2.539 4348.496
+ }
+ {
+  coords 9841.176 2.017 4376.752
+  angleX 23.849
+  angleZ 16.253
+ }
+ {
+  coords 9842.035 2.114 4370.751
+  angleX 4.997
+  angleY 99.474
+ }
+ {
+  coords 9886.346 1.643 4440.512
+  angleX 24.564
+  angleY -6.208
+  angleZ -2.589
+ }
+ {
+  coords 9907.359 1.2 4325.192
+  angleX 26.195
+  angleY -158.496
+  angleZ 8.948
+ }
+ {
+  coords 9885.014 2.533 4298.968
+  angleX 28.235
+  angleY 135.45
+  angleZ -27.881
+ }
+ {
+  coords 9876.907 1.132 4801.607
+  angleX 12.068
+ }
+ {
+  coords 9875.503 1.601 4820.145
+  angleX 8.75
+  angleY 19.262
+  angleZ 3.322
+ }
+ {
+  coords 9836.57 2.269 4910.322
+  angleX 11.172
+ }
+ {
+  coords 9819.324 8.152 4836.917
+  angleX 24.892
+  angleY -102.295
+  angleZ -9.572
+ }
+ {
+  coords 9816.317 7.786 4850.583
+  angleX 43.137
+  angleY -63.194
+ }
+ {
+  coords 9810.326 8.231 4869.554
+  angleX 31.74
+  angleY 10.777
+  angleZ -23.872
+ }
+ {
+  coords 9711.74 1.299 4993.122
+  angleX 3.677
+  angleY 46.527
+ }
+ {
+  coords 9800.784 1.709 4930.532
+  angleX 27.241
+  angleY 132.518
+ }
+ {
+  coords 9799.048 1.97 4928.411
+  angleX 5.851
+  angleY 21.288
+ }
+ {
+  coords 9775.925 1.077 4958.847
+  angleX 22.87
+  angleY -147.395
+  angleZ -2.262
+ }
+ {
+  coords 9825.815 1.139 4932.501
+  angleX 23.68
+  angleY -62.614
+  angleZ 6.555
+ }
+ {
+  coords 9754.513 1.781 4991.809
+ }
+ {
+  coords 9747.815 1.488 5012.987
+  angleX 12.646
+  angleY 123.876
+  angleZ -2.399
+ }
+ {
+  coords 9840.839 0.754 4930.699
+  angleX -4.014
+  angleY 31.312
+  angleZ -2.609
+ }
+ {
+  coords 9833.696 -0.489 4940.746
+  angleX 59.59
+  angleY 38.883
+  angleZ 60.268
+ }
+ {
+  coords 9800.3 0.379 4982.914
+  angleX 0.197
+  angleY -155.246
+ }
+ {
+  coords 9791.205 0.842 4992.777
+  angleX -50.356
+  angleY 180
+  angleZ -180
+ }
+ {
+  coords 9795.688 4.542 4570.829
+  angleX 1.365
+  angleY 98.942
+  angleZ 1.633
+ }
+ {
+  coords 9789.558 10.553 4631.045
+ }
+ {
+  coords 9797.784 8.646 4878.706
+  angleX 9.576
+  angleY -144.976
+  angleZ 6.65
+ }
+ {
+  coords 9748.554 4.711 5136.073
+  angleX 19.632
+  angleY -79.995
+  angleZ -14.823
+ }
+ {
+  coords 9733.863 3.257 5106.011
+  angleX 30.904
+  angleY 63.728
+  angleZ 6.273
+ }
+ {
+  coords 9806.554 1.396 5203.629
+ }
+ {
+  coords 9789.562 1.68 5175.197
+ }
+ {
+  coords 9757.224 3.804 5157.841
+  angleX 38.558
+  angleY -62.935
+  angleZ -18.451
+ }
+ {
+  coords 9697.792 2.176 5059.121
+ }
+ {
+  coords 9704.775 4.059 5098.355
+  angleX 36.38
+  angleY -14.062
+  angleZ 31.693
+ }
+ {
+  coords 9803.959 1.853 5393.129
+ }
+ {
+  coords 9766.009 3.975 5407.244
+ }
+ {
+  coords 9788.851 6.382 5276.727
+  angleX -0.363
+  angleY 79.902
+  angleZ 3.926
+ }
+ {
+  coords 9681.864 7.994 5124.82
+  angleX 0.919
+  angleY 109.302
+ }
+ {
+  coords 9772.949 5.753 5370.015
+ }
+ {
+  coords 9688.901 1.656 5010.177
+  angleX 2.274
+  angleY 137.401
+  angleZ 1.28
+ }
+ {
+  coords 9681.594 4.66 5026.605
+  angleX -30.321
+  angleY -108.26
+ }
+ {
+  coords 9673.708 4.308 5054.551
+ }
+ {
+  coords 9795.294 4.617 5355.782
+  angleX 12.562
+  angleY -126.779
+ }
+ {
+  coords 9794.192 4.565 5358.275
+  angleX 19.863
+ }
+ {
+  coords 9777.156 4.784 5390.124
+  angleY 26.784
+ }
+ {
+  coords 9692.771 2.438 4981.546
+  angleX 4.964
+  angleY -24.648
+  angleZ 1.384
+ }
+ {
+  coords 9646.877 6.779 5051.04
+ }
+ {
+  coords 9658.385 7.647 4996.762
+ }
+ {
+  coords 9653.274 5.015 5006.46
+ }
+ {
+  coords 9667.859 5.788 5072.665
+  angleX 7.424
+  angleY -110.634
+  angleZ -8.602
+ }
+ {
+  coords 9740.665 6.49 4910.066
+ }
+ {
+  coords 9738.98 6.615 4911.179
+ }
+ {
+  coords 9762.656 3.233 5125.197
+ }
+ {
+  coords 9757.314 1.965 5105.573
+  angleX 11.361
+  angleY -137.551
+  angleZ -7.947
+ }
+}
+$grp GenericEntity : "{A98BA618430E9BAA}Prefabs/Props/Agriculture/PlowWreck_01.et" {
+ {
+  coords 9828.854 1.709 4551.645
+  angleX 12.694
+  angleY -144.188
+  angleZ 167.621
+ }
+ {
+  coords 9816.673 7.405 4736.529
+  angleY 0
+ }
+ {
+  coords 9808.775 9.477 4632.656
+  angleX -16.216
+  angleY -8.854
+  angleZ 10.406
+ }
+ {
+  coords 9802.262 7.671 4608.762
+  angleX -21.126
+  angleY -58.506
+  angleZ 17.968
+ }
+ {
+  coords 9809.873 10.538 4692.989
+  angleX -46.496
+  angleY -155.786
+  angleZ 58.201
+ }
+ {
+  coords 9805.391 8.937 4749.031
+  angleY 0
+ }
+ {
+  coords 9807.185 8.689 4745.052
+  angleY 0
+ }
+ {
+  coords 9797.266 10.416 4649.706
+  angleX -86.925
+  angleY 39.447
+  angleZ -180
+ }
+ {
+  coords 9795.945 10.469 4648.873
+  angleX -38.504
+  angleY 2.625
+  angleZ -60.18
+ }
+ {
+  coords 9797.659 10.455 4663.539
+  angleY 105.761
+  angleZ -53.027
+ }
+ {
+  coords 9799.102 9.42 4751.388
+  angleY 0
+ }
+ {
+  coords 9793.656 10.136 4762.056
+  angleY 0
+ }
+ {
+  coords 9823.815 2.667 4366.801
+  angleY 0
+ }
+ {
+  coords 9841.918 1.896 4452.255
+  angleX -21.469
+  angleY 0
+  angleZ -54.005
+ }
+ {
+  coords 9836.76 2.37 4343.726
+  angleY 0
+ }
+ {
+  coords 9884.19 2.761 4458.266
+  angleY 0
+  angleZ -77.297
+ }
+ {
+  coords 9898.776 1.4 4346.667
+  angleY 0
+ }
+ {
+  coords 9905.688 1.564 4325.407
+  angleX -51.809
+  angleY 7.942
+  angleZ -85.656
+ }
+ {
+  coords 9877.002 1.117 4810.989
+  angleX -26.562
+  angleY 10.197
+  angleZ -21.913
+ }
+ {
+  coords 9859.521 2.247 4888.994
+  angleY 0
+ }
+ {
+  coords 9857.409 1.961 4833.516
+  angleY 0
+ }
+ {
+  coords 9844.556 2.324 4902.876
+  angleX -31.548
+  angleY -33.789
+  angleZ -38.021
+ }
+ {
+  coords 9820.512 8.432 4825.166
+  angleX -43.856
+  angleY -77.135
+  angleZ 118.635
+ }
+ {
+  coords 9728.72 1.743 4976.575
+  angleY 0
+ }
+ {
+  coords 9807.74 2.336 4918.354
+  angleY 0
+ }
+ {
+  coords 9805.718 2.188 4924.531
+  angleX -34.418
+  angleY 2.768
+  angleZ -94.889
+ }
+ {
+  coords 9777.959 1.704 4947.854
+  angleY 0
+ }
+ {
+  coords 9732.051 0.968 4993.854
+  angleY 0
+ }
+ {
+  coords 9727.457 1.02 4996.974
+  angleX -13.138
+  angleY 8.719
+  angleZ -34.009
+ }
+ {
+  coords 9786.897 0.895 4996.821
+  angleY 0
+ }
+ {
+  coords 9754.87 1.219 5033.015
+  angleY 0
+ }
+ {
+  coords 9792.615 3.903 4562.23
+  angleX -51.139
+  angleY 36.886
+  angleZ 136.058
+ }
+ {
+  coords 9816.779 1.533 5227.042
+  angleY 0
+ }
+ {
+  coords 9818.461 1.487 5231.795
+  angleY 0
+ }
+ {
+  coords 9825.999 1.373 5281.945
+  angleY 0
+ }
+ {
+  coords 9801.459 1.437 5195.542
+  angleY 0
+ }
+ {
+  coords 9765.058 3.173 5129.321
+  angleY 0
+ }
+ {
+  coords 9815.407 1.513 5222.341
+  angleY 0
+ }
+ {
+  coords 9793.746 1.631 5181.074
+  angleY 0
+ }
+ {
+  coords 9802.724 5.349 5248.086
+  angleY 0
+ }
+ {
+  coords 9801.285 4.999 5277.302
+  angleY 0
+ }
+ {
+  coords 9789.673 1.342 5416.686
+  angleY 0
+ }
+ {
+  coords 9786.051 1.207 5423.809
+  angleY 0
+ }
+ {
+  coords 9774.946 0.822 5434.063
+  angleY 0
+ }
+ {
+  coords 9823.951 1.31 5306.148
+  angleY 0
+ }
+ {
+  coords 9797.493 1.65 5402.457
+  angleY 0
+ }
+ {
+  coords 9777.766 5.445 5227.677
+  angleY 0
+ }
+ {
+  coords 9791.792 6.792 5293.227
+  angleY 0
+ }
+ {
+  coords 9708.051 10.151 5162.69
+  angleY 0
+ }
+ {
+  coords 9709.908 9.685 5169.622
+  angleY 0
+ }
+ {
+  coords 9743.961 6.168 4931.299
+  angleY 0
+ }
+ {
+  coords 9800.035 5.541 5311.224
+  angleY 0
+ }
+ {
+  coords 9805.095 4.222 5340.808
+  angleY 0
+ }
+ {
+  coords 9780.793 4.768 5396.574
+  angleY 0
+ }
+ {
+  coords 9711.741 3.922 4955.907
+  angleY 0
+ }
+ {
+  coords 9695.907 2.914 4974.042
+  angleY 0
+ }
+ {
+  coords 9653.328 4.971 5009.014
+  angleY 0
+ }
+ {
+  coords 9709.074 8.061 4932.46
+  angleY 0
+ }
+ {
+  coords 9675.575 6.202 4965.436
+  angleY 0
+ }
+ {
+  coords 9663.907 7.651 4985.002
+  angleY 0
+ }
+}
+$grp GenericEntity : "{AE300E34EA8FF40C}prefabs/Props/Wrecks/Ural4320_wreck_static.et" {
+ {
+  coords 9811.959 216.932 3439.052
+ }
+ {
+  coords 9825.328 1.079 4556.813
+  angleX -1.275
+  angleY 95.092
+  angleZ 1.01
+ }
+ {
+  coords 9851.559 0.679 4587.773
+  angleX -4.699
+  angleY -81.514
+  angleZ 7.346
+ }
+ {
+  coords 9762.824 7.153 4902.681
+  angleX -2.016
+  angleY 0.114
+  angleZ -3.236
+ }
+ {
+  coords 9836.254 1.383 4497.767
+  angleX 0.611
+  angleY -79.147
+  angleZ -8.829
+ }
+ {
+  coords 9833.431 3.052 4712.438
+  angleX -11.715
+  angleY 94.905
+  angleZ 1.031
+ }
+ {
+  coords 9857.708 0.416 4573.354
+  angleX -2.028
+  angleY -82.827
+  angleZ 6.916
+ }
+ {
+  coords 9866.908 0.767 4571.729
+  angleX -1.275
+  angleY -61.348
+  angleZ 1.01
+ }
+ {
+  coords 9836.318 4.537 4770.251
+  angleX -20.732
+  angleY 70.075
+  angleZ 5.712
+ }
+ {
+  coords 9856.104 1.409 4717.787
+  angleX -2.968
+  angleY 85.785
+ }
+ {
+  coords 9854.741 1.711 4725.821
+  angleX -4.657
+  angleY 42.534
+  angleZ 3.522
+ }
+ {
+  coords 9852.527 1.998 4736.57
+ }
+ {
+  coords 9876.48 0.887 4718.47
+  angleX -0.387
+  angleY -56.776
+  angleZ 0.17
+ }
+ {
+  coords 9876.492 1.257 4744.586
+  angleY -85.983
+ }
+ {
+  coords 9876.533 1.293 4753.552
+  angleX -5.65
+  angleY 39.349
+ }
+ {
+  coords 9876.851 0.888 4777.986
+  angleY -91.299
+ }
+ {
+  coords 9820.608 7.919 4789.25
+ }
+ {
+  coords 9821.87 7.112 4806.516
+  angleX -11.363
+  angleY 66.024
+  angleZ -2.635
+ }
+ {
+  coords 9822.035 7.892 4782.913
+  angleX -15.883
+  angleY 20.523
+  angleZ 3.959
+ }
+ {
+  coords 9820.578 6.913 4750.789
+  angleX 5.248
+  angleY 1.112
+  angleZ 11.984
+ }
+ {
+  coords 9821.086 7.618 4696.615
+  angleX -19.667
+  angleY 97.938
+  angleZ -2.687
+ }
+ {
+  coords 9811.507 8.245 4655.997
+  angleX -13.964
+  angleY 72.132
+  angleZ 5.86
+ }
+ {
+  coords 9811.637 8.556 4652.938
+  angleX -10.587
+  angleY 93.515
+  angleZ 0.572
+ }
+ {
+  coords 9821.393 3.844 4601.9
+  angleX -5.632
+  angleY 31.87
+  angleZ 14.026
+ }
+ {
+  coords 9871.111 0.948 4605.156
+  angleX -1.467
+  angleY -93.319
+ }
+ {
+  coords 9810.815 8.713 4666.47
+  angleX -18.417
+  angleY 64.673
+  angleZ 14.562
+ }
+ {
+  coords 9809.96 8.292 4639.848
+  angleX -15.44
+  angleY 67.787
+  angleZ 4.169
+ }
+ {
+  coords 9787.125 9.378 4617.308
+  angleX -4.762
+  angleY 94.612
+ }
+ {
+  coords 9795.818 10.145 4651.542
+  angleX -5.782
+  angleY 68.847
+  angleZ 9.563
+ }
+ {
+  coords 9801.377 10.479 4677.676
+ }
+ {
+  coords 9801.895 9.193 4714.565
+  angleX -6.351
+  angleY 93.805
+  angleZ -8.327
+ }
+ {
+  coords 9801.192 9.981 4787.046
+  angleY -175.763
+ }
+ {
+  coords 9763.741 9.662 4713.371
+  angleX -15.4
+  angleY 77.413
+  angleZ 5.383
+ }
+ {
+  coords 9801.568 3.006 4498.167
+  angleY -101.294
+ }
+ {
+  coords 9801.992 3.746 4490.69
+  angleX -8.85
+  angleY 53.557
+  angleZ -0.608
+ }
+ {
+  coords 9801.904 3.612 4494.45
+  angleX 5.416
+  angleY -104.514
+  angleZ 6.93
+ }
+ {
+  coords 9821.468 2.883 4390.877
+  angleX -1.796
+  angleY 117.691
+  angleZ 1.283
+ }
+ {
+  coords 9805.974 1.651 4365.303
+  angleY 39.372
+  angleZ -5.853
+ }
+ {
+  coords 9819.587 2.324 4516.948
+  angleX -2.565
+  angleY 48.071
+ }
+ {
+  coords 9853.601 0.949 4522.719
+  angleX -1.896
+  angleY 62.14
+  angleZ 1.792
+ }
+ {
+  coords 9839.729 0.904 4529.973
+  angleX -4.744
+  angleY 132.385
+  angleZ -4.639
+ }
+ {
+  coords 9840.509 0.992 4522.043
+  angleX -6.454
+  angleY 101.279
+  angleZ -1.527
+ }
+ {
+  coords 9857.324 1.056 4471.11
+  angleX -2.149
+  angleY 81.173
+  angleZ 7.94
+ }
+ {
+  coords 9872.524 0.332 4414.525
+  angleX -3.901
+  angleY 91.34
+ }
+ {
+  coords 9873.729 0.58 4405.445
+  angleX -1.769
+ }
+ {
+  coords 9879.67 1.115 4374.355
+  angleY -83.496
+ }
+ {
+  coords 9879.392 1.11 4367.505
+  angleX -3.003
+  angleY 80.028
+ }
+ {
+  coords 9880.251 1.056 4363.611
+  angleX -0.61
+  angleY -73.689
+ }
+ {
+  coords 9881.468 1.26 4351.676
+  angleX -1.564
+  angleY 76.727
+ }
+ {
+  coords 9881.492 1.439 4346.875
+  angleY -65.304
+  angleZ 4.027
+ }
+ {
+  coords 9856.848 0.997 4435.126
+  angleY -76.213
+  angleZ 7.982
+ }
+ {
+  coords 9860.203 1.466 4390.991
+  angleX -5.473
+  angleY 100.497
+  angleZ -1.99
+ }
+ {
+  coords 9860.599 1.287 4387.926
+  angleX -4.285
+  angleY -81.129
+  angleZ 5.355
+ }
+ {
+  coords 9862.104 1.89 4354.085
+  angleX -3.437
+  angleY 85.937
+  angleZ -1.801
+ }
+ {
+  coords 9841.973 1.598 4438.928
+  angleX -3.842
+  angleY -108.039
+  angleZ -2.465
+ }
+ {
+  coords 9843.547 1.417 4425.273
+  angleX -6.526
+  angleY 96.764
+  angleZ -0.772
+ }
+ {
+  coords 9841.654 1.649 4392.588
+  angleX -9.94
+  angleY 106.139
+  angleZ -2.86
+ }
+ {
+  coords 9842.279 2.05 4343.747
+  angleX -1.708
+  angleY 99.882
+  angleZ -0.298
+ }
+ {
+  coords 9842.357 1.975 4339.476
+  angleY 75.732
+ }
+ {
+  coords 9886.758 1.201 4437.542
+  angleX -1.485
+  angleY 69.474
+ }
+ {
+  coords 9905.407 1.007 4333.21
+  angleY -105.552
+ }
+ {
+  coords 9908.683 1.814 4316.135
+  angleY -74.161
+  angleZ 14.219
+ }
+ {
+  coords 9883.96 2.268 4323.925
+  angleY -93.037
+ }
+ {
+  coords 9884.692 2.04 4319.01
+  angleY -91.438
+ }
+ {
+  coords 9881.017 2.127 4305.996
+  angleX -2.279
+  angleY -11.671
+  angleZ 0.471
+ }
+ {
+  coords 9882.593 2.378 4301.431
+  angleY -130.84
+ }
+ {
+  coords 9841.075 1.646 4332.471
+  angleY 91.392
+ }
+ {
+  coords 9904.834 1.698 4293.289
+  angleX -5.385
+  angleY 13.518
+ }
+ {
+  coords 9908.266 1.882 4288.413
+  angleX -0.098
+  angleY -88.943
+  angleZ 5.306
+ }
+ {
+  coords 9886.06 1.85 4470.197
+  angleY -67.345
+ }
+ {
+  coords 9872.471 1.79 4466.726
+  angleY -122.293
+ }
+ {
+  coords 9876.431 0.935 4816.845
+  angleX -5.545
+  angleY 91.078
+ }
+ {
+  coords 9874.491 0.637 4842.25
+  angleX -5.724
+  angleY 62.409
+  angleZ 0.965
+ }
+ {
+  coords 9865.324 1.036 4844.031
+  angleX -4.253
+  angleY 139.758
+  angleZ -5.008
+ }
+ {
+  coords 9871.826 1.569 4861.02
+ }
+ {
+  coords 9865.587 1.173 4873.85
+  angleY -78.78
+ }
+ {
+  coords 9851.898 1.372 4906.042
+  angleX -11.4
+  angleY 52.153
+  angleZ 8.731
+ }
+ {
+  coords 9854.744 1.219 4783.115
+  angleY 81.518
+ }
+ {
+  coords 9855.15 1.402 4786.342
+  angleX -0.691
+  angleY 93.742
+ }
+ {
+  coords 9855.8 1.285 4789.022
+  angleX -0.978
+  angleY -77.565
+ }
+ {
+  coords 9856.817 1.143 4821.85
+  angleY -65.998
+  angleZ 13.035
+ }
+ {
+  coords 9856.356 1.32 4836.543
+  angleY -73.277
+ }
+ {
+  coords 9855.611 1.924 4864.46
+ }
+ {
+  coords 9819.515 7.865 4826.807
+  angleX 5.637
+  angleY -111.132
+  angleZ 0.739
+ }
+ {
+  coords 9815.192 8.013 4853.542
+  angleX -8.7
+  angleY 101.615
+  angleZ -1.781
+ }
+ {
+  coords 9815.852 7.967 4856.749
+  angleY -66.02
+ }
+ {
+  coords 9768.972 3.784 4936.465
+  angleX 8.869
+  angleY -124.813
+  angleZ 9.206
+ }
+ {
+  coords 9743.788 2.39 4955.896
+  angleY -126.372
+ }
+ {
+  coords 9729.778 1.137 4968.227
+  angleX -1.233
+  angleY -127.28
+ }
+ {
+  coords 9728.003 1.233 4970.842
+  angleY -119.815
+ }
+ {
+  coords 9759.533 0.621 4970.825
+  angleX -5.257
+  angleY 31.664
+  angleZ 2.539
+ }
+ {
+  coords 9741.23 0.624 4983.144
+  angleX -6.735
+  angleY 67.761
+  angleZ -5.445
+ }
+ {
+  coords 9724.963 0.72 5001.45
+  angleY -136.293
+ }
+ {
+  coords 9815.356 0.618 4943.502
+  angleY 40.569
+ }
+ {
+  coords 9800.864 0.621 4959.793
+  angleX 1
+  angleY -157.826
+  angleZ 2.159
+ }
+ {
+  coords 9782.492 1.347 4975.565
+  angleX -2.369
+  angleY 66.272
+ }
+ {
+  coords 9763.32 1.567 4995.509
+  angleY 21.596
+ }
+ {
+  coords 9744.244 1.167 5020.51
+  angleX -4.629
+  angleY 75.956
+ }
+ {
+  coords 9742.175 1.096 5024.184
+  angleY -111.931
+ }
+ {
+  coords 9849.266 2.02 4913.607
+ }
+ {
+  coords 9829.356 0.258 4948.083
+  angleY -119.733
+ }
+ {
+  coords 9789.32 0.248 4995.576
+  angleX -0.601
+  angleY -132.851
+ }
+ {
+  coords 9752.824 0.846 5036.093
+  angleX -2.108
+  angleY -119.985
+  angleZ 9.308
+ }
+ {
+  coords 9750.686 0.848 5039.583
+  angleX -4.205
+  angleY 44.036
+ }
+ {
+  coords 9824.238 2.547 4370.11
+  angleY -54.061
+ }
+ {
+  coords 9820.855 2.496 4360.47
+  angleY 108.286
+ }
+ {
+  coords 9822.432 1.771 4343.022
+ }
+ {
+  coords 9814.815 2.621 4336.877
+  angleX -12.585
+  angleY 109.42
+  angleZ -18.506
+ }
+ {
+  coords 9821.604 3.379 4325.285
+  angleX -23.335
+  angleY 84.862
+  angleZ -18.485
+ }
+ {
+  coords 9792.754 10.724 4643.33
+ }
+ {
+  coords 9799.392 9.387 4860.531
+  angleX -6.114
+  angleY 29.827
+  angleZ 4.428
+ }
+ {
+  coords 9796.947 8.6 4873.823
+  angleX -4.187
+  angleY 40.151
+  angleZ -3.524
+ }
+ {
+  coords 9784.694 7.733 4896.681
+  angleX -6.217
+  angleY 74.842
+  angleZ 1.681
+ }
+ {
+  coords 9745.762 4.181 5126.121
+  angleX -5.438
+  angleY 85.685
+  angleZ 6.9
+ }
+ {
+  coords 9748.349 4.526 5140.571
+  angleX -5.746
+  angleY 137.197
+ }
+ {
+  coords 9728.492 1.777 5036.897
+ }
+ {
+  coords 9716.604 1.277 5054.998
+  angleY 43.408
+ }
+ {
+  coords 9825.278 1.427 5294.968
+ }
+ {
+  coords 9722.897 1.251 5048.002
+  angleX -6.715
+  angleY -121.476
+ }
+ {
+  coords 9822.198 1.398 5247.914
+ }
+ {
+  coords 9817.824 1.504 5229.58
+ }
+ {
+  coords 9808.397 1.396 5205.438
+ }
+ {
+  coords 9804.396 1.423 5199.843
+ }
+ {
+  coords 9766.98 3.197 5133.145
+ }
+ {
+  coords 9778.533 1.555 5156.186
+ }
+ {
+  coords 9781.065 1.599 5160.449
+ }
+ {
+  coords 9743.582 0.978 5060.746
+  angleY -113.019
+ }
+ {
+  coords 9755.651 3.918 5155.555
+  angleX 9.022
+  angleY -75.263
+  angleZ 4.635
+ }
+ {
+  coords 9790.893 4.043 5217.486
+  angleY -56.139
+ }
+ {
+  coords 9805.043 5.138 5254.389
+ }
+ {
+  coords 9824.276 1.271 5317.981
+ }
+ {
+  coords 9821.428 1.775 5347.938
+ }
+ {
+  coords 9821.909 1.709 5341.24
+ }
+ {
+  coords 9816.471 1.812 5366.516
+ }
+ {
+  coords 9817.915 1.772 5364.735
+ }
+ {
+  coords 9702.901 5.428 5109.03
+  angleX 3.557
+  angleY -74.142
+ }
+ {
+  coords 9705.229 5.81 5113.686
+  angleX -7.78
+  angleY 151.078
+  angleZ -1.409
+ }
+ {
+  coords 9726.998 7.876 5146.546
+  angleZ 14.835
+ }
+ {
+  coords 9753.206 6.652 5189.96
+ }
+ {
+  coords 9762.86 6.056 5206.257
+ }
+ {
+  coords 9768.043 4.14 5405.226
+ }
+ {
+  coords 9756.854 2.238 5420.667
+ }
+ {
+  coords 9789.773 5.703 5334.748
+  angleX -7.276
+  angleY 66.836
+  angleZ 7.899
+ }
+ {
+  coords 9780.533 5.787 5250.565
+  angleY 101.608
+ }
+ {
+  coords 9780.01 5.276 5246.333
+  angleY -56.886
+ }
+ {
+  coords 9790.907 6.158 5295.113
+  angleX -5.944
+  angleY 75.127
+ }
+ {
+  coords 9787.343 6.075 5274.242
+  angleY -72.646
+ }
+ {
+  coords 9678.396 3.869 5077.096
+  angleX -18.955
+  angleY 107.107
+  angleZ 6.303
+ }
+ {
+  coords 9676.065 5.439 5080.304
+  angleX 10.626
+  angleY -46.421
+  angleZ 9.136
+ }
+ {
+  coords 9681.451 6.413 5108.176
+  angleX -10.304
+  angleY 88.421
+  angleZ 4.923
+ }
+ {
+  coords 9684.52 8.047 5126.333
+  angleX -5.415
+  angleY 122.506
+ }
+ {
+  coords 9688.856 7.975 5127.042
+  angleX 3.922
+  angleY -23.856
+ }
+ {
+  coords 9698.719 9.451 5137.875
+  angleX -4.453
+  angleY 144.964
+  angleZ -1.183
+ }
+ {
+  coords 9767.533 5.246 5378.225
+  angleX 1.745
+  angleY -107.946
+  angleZ 3.665
+ }
+ {
+  coords 9678.433 2.816 5028.313
+  angleX -8.927
+  angleY 40.041
+  angleZ 13.375
+ }
+ {
+  coords 9677.803 2.846 5058.001
+  angleX 15.163
+  angleY -85.49
+ }
+ {
+  coords 9670.219 4.338 5057.333
+  angleX -12.724
+  angleY 33.646
+  angleZ 9.581
+ }
+ {
+  coords 9806.398 5.047 5291.691
+  angleX -6.731
+  angleY 104.766
+  angleZ -2.087
+ }
+ {
+  coords 9806.226 5.191 5295.014
+  angleX -10.476
+  angleY 78.025
+ }
+ {
+  coords 9805.46 3.501 5329.213
+  angleX 7.136
+  angleY -92.24
+ }
+ {
+  coords 9806.454 4.002 5338.913
+ }
+ {
+  coords 9775.615 4.608 5395.249
+  angleX -6.571
+  angleY 67.472
+ }
+ {
+  coords 9725.299 4.972 4944.566
+ }
+ {
+  coords 9704.574 3.081 4964.309
+ }
+ {
+  coords 9688.824 2.93 4981.744
+  angleX -9.971
+  angleY 32.182
+ }
+ {
+  coords 9666.951 4.285 5025.436
+  angleX 0.914
+  angleY -100.682
+  angleZ -3.196
+ }
+ {
+  coords 9652.492 4.931 5010.925
+ }
+ {
+  coords 9649.074 5.135 5016.334
+ }
+ {
+  coords 9647.777 6.004 5023.128
+ }
+ {
+  coords 9646.274 7.092 5036.391
+ }
+ {
+  coords 9646.947 7.492 5044.729
+ }
+ {
+  coords 9646.188 6.107 5055.167
+ }
+ {
+  coords 9646.021 6.072 5057.327
+ }
+ {
+  coords 9644.867 5.867 5067.627
+  angleY 86.076
+ }
+ {
+  coords 9724.274 8.235 4923.535
+ }
+ {
+  coords 9707.692 8.065 4934.169
+ }
+ {
+  coords 9706.746 7.994 4936.073
+ }
+ {
+  coords 9697.594 7.617 4941.627
+ }
+ {
+  coords 9695.771 7.597 4942.783
+ }
+ {
+  coords 9673.353 5.678 4969.297
+ }
+ {
+  coords 9662.92 7.846 4986.87
+ }
+ {
+  coords 9660.688 7.718 4990.667
+ }
+ {
+  coords 9662.607 7.019 5041.688
+ }
+ {
+  coords 9661.032 7.059 5045.44
+ }
+ {
+  coords 9661.656 6.103 5058.896
+ }
+ {
+  coords 9667.361 6.604 5099.807
+  angleX -6.54
+  angleY 88.305
+ }
+ {
+  coords 9754.468 1.227 5097.758
+  angleY -41.925
+ }
+ {
+  coords 9759.065 1.818 5110.79
+  angleX 10.503
+  angleY -57.508
+ }
+ {
+  coords 9743.548 0.901 5057.638
+  angleX -2.284
+  angleY 68.54
+ }
+ {
+  coords 9856.884 0.944 4504.991
+  angleX -0.645
+  angleY 101.124
+  angleZ -1.517
+ }
+ {
+  coords 9855.577 0.777 4515.896
+  angleX -7.502
+  angleY -103.331
+  angleZ 4.808
+ }
+ {
+  coords 9856.954 0.954 4491.083
+  angleX 0.664
+  angleY 97.15
+  angleZ -1.91
+ }
+}
+$grp GenericEntity : "{B90E5414AB7C325B}Prefabs/Props/Wrecks/BTR70_wreck_static.et" {
+ {
+  coords 9838.737 1.272 4592.026
+  angleX -2.726
+  angleY 97.176
+  angleZ -3.605
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B36E2C5F264DD01}" {
+      SourceMaterial "BTR_70_base_exterior_Body"
+      AssignedMaterial "{817E99324E869C35}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_wreck_static_Body2.emat"
+     }
+    }
+   }
+  }
+  coords 9838.907 1.209 4597.648
+  angleX 2.051
+  angleY -73.383
+  angleZ -1.127
+ }
+ {
+  coords 11632.825 6.143 2174.461
+  angleX -3.466
+ }
+ {
+  coords 11647.205 6.086 2109.618
+  angleX -17.014
+  angleY 96.176
+  angleZ -2.875
+ }
+ {
+  coords 9731.274 245.724 3057.666
+  angleX 8.588
+  angleY 35.834
+  angleZ -13.388
+ }
+ {
+  coords 9852.954 0.916 4645.396
+  angleX -5.143
+  angleY -91.38
+ }
+ {
+  coords 9864.65 0.695 4658.327
+  angleX 11.106
+  angleY 86.505
+  angleZ -1.212
+ }
+ {
+  coords 9827.174 3.506 4730.83
+  angleX 11.15
+  angleY 96.365
+  angleZ 0.696
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B36E2C5F264DD01}" {
+      SourceMaterial "BTR_70_base_exterior_Body"
+      AssignedMaterial "{817E99324E869C35}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_wreck_static_Body2.emat"
+     }
+    }
+   }
+  }
+  coords 9832.063 3.431 4676.925
+  angleX -1.904
+  angleY 170.977
+  angleZ -21.681
+ }
+ {
+  coords 9835.17 3.453 4755.958
+  angleX -11.647
+  angleY 51.27
+  angleZ 14.848
+ }
+ {
+  coords 9862.408 0.317 4670.549
+  angleY 56.343
+ }
+ {
+  coords 9861.607 0.891 4608.124
+  angleY 95.169
+  angleZ 8.774
+ }
+ {
+  coords 9854.218 1.739 4749.611
+  angleX 3.704
+  angleY 88.522
+  angleZ -9.976
+ }
+ {
+  coords 9815.836 2.528 4905.222
+  angleX -10.847
+  angleY 54.188
+ }
+ {
+  coords 9817.301 7.45 4751.242
+  angleX 7.315
+  angleY 2.109
+  angleZ 9.583
+ }
+ {
+  coords 9803.67 5.554 4591.499
+  angleX 3.148
+  angleY -99.937
+  angleZ -9.024
+ }
+ {
+  coords 9806.574 8.603 4720.086
+ }
+ {
+  coords 9807.051 10.065 4778.282
+  angleY 67.175
+ }
+ {
+  coords 9806.692 9.493 4788.296
+  angleX -6.004
+  angleY 30.611
+ }
+ {
+  coords 9793.25 3.011 4543.075
+  angleX -1.099
+  angleY -98.134
+  angleZ -3.141
+ }
+ {
+  coords 9789.001 6.205 4585.855
+  angleY 71.849
+ }
+ {
+  coords 9786.276 8.802 4610.953
+  angleX 7.009
+  angleY -92.307
+ }
+ {
+  coords 9800.811 9.907 4709.853
+  angleX -2.565
+  angleY 32.801
+ }
+ {
+  coords 9785.773 8.993 4718.215
+  angleX -0.17
+  angleY -8.474
+  angleZ -9.672
+ }
+ {
+  coords 9802.307 3.657 4440.728
+  angleX -22.53
+  angleY -67.769
+  angleZ -1.487
+ }
+ {
+  coords 9824.348 2.683 4399.542
+  angleX -4.217
+  angleY 53.566
+  angleZ -1.613
+ }
+ {
+  coords 9830.131 2.779 4391.57
+  angleX -0.81
+  angleY -25.092
+  angleZ -1.784
+ }
+ {
+  coords 9821.013 1.427 4531.563
+  angleY -18.821
+ }
+ {
+  coords 9871.824 1.949 4482.369
+  angleX -1.287
+  angleY -91.38
+ }
+ {
+  coords 9872.007 1.949 4474.986
+  angleX -1.287
+  angleY -91.38
+ }
+ {
+  coords 9871.865 1.345 4457.506
+  angleX -2.306
+  angleY 109.898
+  angleZ 3.642
+ }
+ {
+  coords 9872.017 1.657 4478.749
+  angleX -1.758
+  angleY -95.359
+  angleZ -6.696
+ }
+ {
+  coords 9871.359 1.321 4452.76
+  angleY -99.071
+ }
+ {
+  coords 9872.784 1.205 4442.851
+  angleX -0.393
+  angleY 101.914
+  angleZ 8.952
+ }
+ {
+  coords 9873.867 0.623 4395.949
+  angleY 78.145
+ }
+ {
+  coords 9878.771 0.969 4378.861
+  angleY -91.121
+ }
+ {
+  coords 9856.826 0.769 4441.151
+  angleY 104.449
+ }
+ {
+  coords 9857.033 0.892 4424.469
+  angleY 77.873
+ }
+ {
+  coords 9859.22 1.29 4398.09
+  angleX 2.038
+  angleY -84.379
+ }
+ {
+  coords 9841.631 1.431 4446.146
+  angleY -93.175
+ }
+ {
+  coords 9842.65 1.534 4404.539
+  angleX -2.466
+  angleY 97.98
+  angleZ -5.924
+ }
+ {
+  coords 9886.949 1.297 4434.569
+  angleY -113.553
+  angleZ -7.372
+ }
+ {
+  coords 9892.284 0.701 4396.988
+  angleY 65.398
+ }
+ {
+  coords 9908.356 1.551 4320.46
+  angleX -6.434
+  angleY 65.086
+ }
+ {
+  coords 9884.44 1.991 4310.626
+  angleY -57.387
+ }
+ {
+  coords 9840.991 1.01 4316.54
+  angleX 1.539
+  angleY 106.731
+  angleZ -5.105
+ }
+ {
+  coords 9865.871 1.248 4868.647
+  angleY -12.813
+ }
+ {
+  coords 9854.977 1.519 4779.87
+  angleY 101.244
+  angleZ -3.202
+ }
+ {
+  coords 9856.165 1.668 4842.371
+  angleY -81.959
+ }
+ {
+  coords 9851.951 2.038 4870.343
+  angleY -89.248
+ }
+ {
+  coords 9844.951 1.859 4892.766
+  angleY 52.325
+ }
+ {
+  coords 9827.106 0.254 4926.661
+  angleY 61.441
+  angleZ 10.157
+ }
+ {
+  coords 9815.704 8.173 4847.586
+  angleX 3.272
+  angleY -60.25
+  angleZ 1.869
+ }
+ {
+  coords 9809.856 7.393 4881.491
+  angleX -1.533
+  angleY 86.095
+  angleZ -21.4
+ }
+ {
+  coords 9798.192 5.526 4903.773
+  angleX 5.13
+  angleY -102.935
+  angleZ 14.913
+ }
+ {
+  coords 9788.114 3.489 4920.02
+  angleX -5.971
+  angleY 56.494
+  angleZ -5.681
+ }
+ {
+  coords 9808.565 2.099 4916.54
+  angleX -5.211
+  angleY 74.839
+ }
+ {
+  coords 9779.908 1.052 4953.281
+  angleY -127.642
+ }
+ {
+  coords 9811.024 0.908 4945.743
+  angleX 4.677
+  angleY -108.24
+ }
+ {
+  coords 9777.344 1.853 4980.022
+  angleY 55.988
+ }
+ {
+  coords 9767.6 1.807 4990.563
+  angleY 50.005
+ }
+ {
+  coords 9753.463 1.104 5008.251
+  angleY 45.866
+ }
+ {
+  coords 9746.396 0.983 5016.386
+  angleY -148.671
+ }
+ {
+  coords 9847.908 1.935 4915.521
+ }
+ {
+  coords 9839.479 0.2 4933.874
+  angleX -6.605
+  angleY 41.441
+ }
+ {
+  coords 9818.038 0.631 4963.522
+  angleY 41.339
+ }
+ {
+  coords 9814.872 0.348 4966.11
+  angleY -125.304
+ }
+ {
+  coords 9825.86 2.667 4365.615
+  angleY 112.35
+ }
+ {
+  coords 9828.063 1.889 4361.327
+  angleX -8.76
+  angleY 115.559
+ }
+ {
+  coords 9802.891 9.347 4846.697
+  angleY 105.115
+ }
+ {
+  coords 9746.981 4.303 5132.64
+  angleX -2.111
+  angleY 106.282
+  angleZ -3.345
+ }
+ {
+  coords 9737.976 2.358 5101.312
+  angleX 2.013
+  angleY -74.595
+  angleZ -3.166
+ }
+ {
+  coords 9735.343 1.834 5031.486
+ }
+ {
+  coords 9797.907 4.96 5231.502
+ }
+ {
+  coords 9697.718 1.462 5055.317
+  angleX -1.888
+  angleY -48.727
+  angleZ -18.756
+ }
+ {
+  coords 9703.574 2.381 5071.273
+  angleY -26.26
+ }
+ {
+  coords 9699.584 2.639 5089.371
+  angleX -3.672
+  angleY 111.023
+  angleZ 0.638
+ }
+ {
+  coords 9806.7 5.004 5285.416
+  angleX 3.23
+  angleY -101.653
+ }
+ {
+  coords 9718.739 6.737 5125.011
+  angleX -11.032
+  angleY 147.242
+ }
+ {
+  coords 9717.217 8.047 5133.014
+  angleX 10.691
+  angleY -28.963
+  angleZ -8.142
+ }
+ {
+  coords 9775.476 5.489 5229.516
+  angleY 89.757
+  angleZ -7.492
+ }
+ {
+  coords 9769.624 5.188 5218.31
+  angleX 5.093
+  angleY -46.746
+ }
+ {
+  coords 9763.886 3.608 5411.161
+ }
+ {
+  coords 9784.365 5.555 5266.936
+  angleX 3.021
+  angleY -87.641
+  angleZ -5.043
+ }
+ {
+  coords 9781.821 5.393 5253.549
+  angleY 101.054
+  angleZ -3.199
+ }
+ {
+  coords 9691.675 8.178 5129.363
+  angleY 140.052
+ }
+ {
+  coords 9693.451 8.699 5135.126
+  angleX 3.484
+ }
+ {
+  coords 9745.451 6.198 4929.712
+ }
+ {
+  coords 9753.373 4.724 5396.905
+  angleX 2.47
+  angleY -111.359
+ }
+ {
+  coords 9673.713 3.977 5068.345
+  angleX -3.028
+  angleY 59.908
+  angleZ 16.094
+ }
+ {
+  coords 9806.665 4.791 5298.996
+  angleX -4.453
+  angleY 96.782
+ }
+ {
+  coords 9709.201 3.45 4959.938
+ }
+ {
+  coords 9707.535 1.044 4989.226
+  angleX 4.712
+  angleY -121.265
+  angleZ 1.15
+ }
+ {
+  coords 9648.865 5.364 5018.656
+ }
+ {
+  coords 9662.275 6.96 5043.825
+ }
+ {
+  coords 9660.125 6.803 5049.917
+ }
+ {
+  coords 9658.592 6.914 5051.491
+ }
+ {
+  coords 9658.324 6.666 5053.82
+ }
+ {
+  coords 9710.98 8.135 4931.575
+ }
+ {
+  coords 9857.574 1.013 4494.529
+  angleX -5.409
+  angleY -91.38
+  angleZ -4.419
+ }
+ {
+  coords 9857.548 1.061 4485.49
+  angleX 0.515
+  angleY -139.318
+  angleZ 1.049
+ }
+}
+GenericEntity : "{CD7AE675C0059D3B}PrefabLibrary/Props/Military/BMP1_wreck.et" {
+ coords 9612.898 8.526 5042.628
+ angleX -13.497
+ angleY 128.271
+ angleZ -23.725
+}
+$grp GenericEntity : "{D99955DFCF7D3962}Prefabs/Props/Wrecks/CannonWreck_01.et" {
+ {
+  coords 10010.358 58.344 3677.709
+  angleX -8.209
+  angleY 35.603
+  angleZ 15.46
+ }
+ {
+  coords 9850.117 0.996 4581.821
+  angleX 22.802
+  angleY -85.623
+  angleZ -1.166
+ }
+ {
+  coords 9848.815 1.037 4583.263
+  angleX 0.951
+  angleY -132.493
+  angleZ 4.573
+ }
+ {
+  coords 9816.517 4.198 4580.864
+  angleX 0.47
+  angleY 38.339
+  angleZ 9.343
+ }
+ {
+  coords 9825.604 1.852 4538.289
+  angleX -1.718
+  angleY 100.46
+  angleZ 1.824
+ }
+ {
+  coords 9828.233 3.711 4618.749
+  angleX 4.652
+  angleY 113.734
+  angleZ 4.759
+ }
+ {
+  coords 9828.36 2.61 4619.727
+  angleX 38.322
+  angleY 81.23
+  angleZ -17.347
+ }
+ {
+  coords 9838.146 2.365 4736.476
+  angleX 6.491
+  angleY 136.465
+  angleZ -1.644
+ }
+ {
+  coords 9859.815 1.02 4580.759
+  angleX 2.119
+  angleY 66.639
+  angleZ 2.215
+ }
+ {
+  coords 9846.32 2.28 4669.909
+ }
+ {
+  coords 9833.856 3.028 4849.782
+  angleX -3.82
+  angleY -88.126
+  angleZ 3.745
+ }
+ {
+  coords 9810.174 8.274 4625.941
+  angleX 8.106
+  angleY -55.293
+  angleZ 7.136
+ }
+ {
+  coords 9802.773 7.03 4606.887
+  angleX -34.407
+  angleY -42.989
+  angleZ -1.923
+ }
+ {
+  coords 9806.49 3.514 4560.889
+  angleX 2.215
+  angleY -55.644
+  angleZ 1.221
+ }
+ {
+  coords 9807.865 8.708 4748.639
+ }
+ {
+  coords 9799.951 9.285 4729.768
+  angleX -0.864
+  angleY 31.008
+  angleZ 5.409
+ }
+ {
+  coords 9798.608 9.199 4740.669
+  angleX 4.541
+  angleY -87.388
+  angleZ -2.566
+ }
+ {
+  coords 9792.788 9.6 4747.622
+ }
+ {
+  coords 9788.979 9.668 4723.345
+  angleX 3.118
+  angleY 42.251
+  angleZ 1.58
+ }
+ {
+  coords 9785.895 9.596 4723.146
+  angleX 3.964
+  angleY -158.178
+  angleZ 8.355
+ }
+ {
+  coords 9810.86 3.279 4506.536
+ }
+ {
+  coords 9862.302 1.453 4524.141
+  angleX 0.007
+  angleY 122.021
+  angleZ 2.988
+ }
+ {
+  coords 9880.836 1.905 4524.096
+  angleX 9.7
+  angleY -100.936
+  angleZ -2.877
+ }
+ {
+  coords 9880.364 1.933 4522.052
+  angleX -7.766
+  angleY 92.897
+  angleZ 0.674
+ }
+ {
+  coords 9855.587 1.613 4544.119
+  angleX 0.829
+  angleY 94.675
+  angleZ 2.951
+ }
+ {
+  coords 9874.392 0.983 4428.782
+  angleY 62.583
+  angleZ 4.225
+ }
+ {
+  coords 9871.762 0.775 4418.767
+  angleX -1.395
+  angleY 38.975
+  angleZ -0.095
+ }
+ {
+  coords 9870.945 1.155 4397.619
+  angleX -4.603
+  angleY 90.026
+ }
+ {
+  coords 9857.224 1.559 4401.813
+  angleX 0.868
+  angleY -72.94
+  angleZ 2.395
+ }
+ {
+  coords 9862.662 1.81 4383.909
+  angleY 65.254
+ }
+ {
+  coords 9862.587 1.89 4364.07
+  angleX -0.033
+  angleY 85.379
+  angleZ 3.741
+ }
+ {
+  coords 9842.122 2.322 4401.775
+  angleY -89.264
+ }
+ {
+  coords 9840.716 2.311 4359.626
+  angleY -72.927
+ }
+ {
+  coords 9845.396 2.428 4350.868
+  angleX 6.63
+  angleY -4.354
+  angleZ 8.026
+ }
+ {
+  coords 9884.744 1.771 4449.542
+  angleX 1.214
+  angleY -71.863
+  angleZ 2.582
+ }
+ {
+  coords 9888.185 1.282 4423.851
+  angleY -90.042
+ }
+ {
+  coords 9885.186 0.884 4412.946
+ }
+ {
+  coords 9901.255 1.186 4355.728
+  angleX -1.294
+  angleY 84.268
+  angleZ 0.13
+ }
+ {
+  coords 9864.033 2.057 4326.481
+  angleX 2.459
+  angleY 111.829
+  angleZ 0.985
+ }
+ {
+  coords 9861.021 2.005 4320.334
+  angleX 1.179
+  angleY 31.387
+  angleZ -0.444
+ }
+ {
+  coords 9836.398 1.317 4320.894
+  angleY 126.802
+ }
+ {
+  coords 9844.769 1.597 4322.684
+  angleY 11.011
+ }
+ {
+  coords 9856.826 1.954 4819.985
+ }
+ {
+  coords 9831.907 1.556 4921.99
+  angleY 70.821
+ }
+ {
+  coords 9809.343 8.74 4872.5
+  angleX -5.033
+  angleY 21.22
+  angleZ 12.731
+ }
+ {
+  coords 9791.017 6.158 4907.227
+  angleX -15.069
+  angleY -2.465
+  angleZ 9.401
+ }
+ {
+  coords 9718.979 1.833 4978.417
+  angleX 0.296
+  angleY 2.523
+  angleZ 3.507
+ }
+ {
+  coords 9790.526 1.964 4945.387
+  angleY -91.683
+ }
+ {
+  coords 9763.824 1.156 4969.212
+  angleY 75.5
+ }
+ {
+  coords 9737.331 0.886 4989.144
+  angleX -2.977
+  angleY 8.526
+ }
+ {
+  coords 9730.744 0.986 4995.611
+ }
+ {
+  coords 9712.741 1.257 5019.604
+  angleY 48.52
+ }
+ {
+  coords 9739.372 1.88 5027.877
+  angleY -66.549
+ }
+ {
+  coords 9824.479 0.282 4964.947
+  angleX -6.162
+  angleY -1.626
+  angleZ 7.922
+ }
+ {
+  coords 9793.457 0.664 4991.979
+  angleX -2.491
+  angleY 28.87
+  angleZ 1.891
+ }
+ {
+  coords 9767.127 0.861 5016.217
+  angleY -4.61
+  angleZ 5.214
+ }
+ {
+  coords 9792.666 10.704 4645.396
+ }
+ {
+  coords 9810.147 9.399 4828.696
+  angleX -3.579
+  angleY 45.705
+  angleZ 3.743
+ }
+ {
+  coords 9800.741 9.871 4827.268
+ }
+ {
+  coords 9791.188 8.88 4879.089
+  angleX 3.511
+  angleY 124.242
+  angleZ -5.513
+ }
+ {
+  coords 9780.802 8.073 4901.917
+  angleX -0.004
+  angleY 27.35
+  angleZ 5.868
+ }
+ {
+  coords 9733.413 2.159 5087.152
+  angleX -3.909
+  angleY 126.325
+  angleZ 2.107
+ }
+ {
+  coords 9822.513 1.396 5252.022
+ }
+ {
+  coords 9820.565 1.395 5239.999
+ }
+ {
+  coords 9774.343 1.456 5149.417
+ }
+ {
+  coords 9795.293 1.589 5183.125
+ }
+ {
+  coords 9762.261 3.413 5167.865
+  angleX -1.869
+  angleY 166.885
+  angleZ -8.359
+ }
+ {
+  coords 9800.738 5.37 5243.155
+ }
+ {
+  coords 9701.628 1.234 5037.417
+ }
+ {
+  coords 9700.047 1.522 5045.83
+ }
+ {
+  coords 9798.414 1.751 5400.417
+ }
+ {
+  coords 9729.719 8.041 5149.188
+  angleX 6.918
+  angleY -9.599
+  angleZ 14.934
+ }
+ {
+  coords 9752.007 6.67 5188.341
+ }
+ {
+  coords 9802.94 4.477 5345.014
+ }
+ {
+  coords 9790.979 6.201 5312.167
+  angleX 0.216
+  angleY -45.768
+  angleZ 7.953
+ }
+ {
+  coords 9790.96 6.335 5309.453
+  angleX -3.4
+  angleY 72.197
+  angleZ 4.36
+ }
+ {
+  coords 9697.317 9.287 5134.534
+  angleX 0.277
+  angleY -49.538
+  angleZ -4.531
+ }
+ {
+  coords 9689.152 2.237 5008.124
+ }
+ {
+  coords 9807.437 3.387 5318.149
+  angleX -17.849
+  angleY 111.556
+ }
+ {
+  coords 9784.978 5.012 5375.719
+  angleX -5.789
+  angleY 37.318
+  angleZ 1.949
+ }
+ {
+  coords 9733.498 5.783 4937.98
+ }
+ {
+  coords 9716.908 4.371 4951.834
+ }
+ {
+  coords 9678.432 5.421 4998.391
+  angleX -16.459
+  angleY 69.61
+ }
+ {
+  coords 9671.479 6.304 5001.728
+  angleX -16.312
+  angleY 70.869
+  angleZ -9.692
+ }
+ {
+  coords 9645.664 6.292 5062.269
+ }
+ {
+  coords 9728.017 7.927 4920.917
+ }
+ {
+  coords 9721.162 8.598 4926.186
+ }
+ {
+  coords 9676.576 6.338 4963.305
+ }
+ {
+  coords 9668.901 5.731 4975.034
+ }
+ {
+  coords 9667.217 6.824 4979.179
+ }
+ {
+  coords 9662.007 7.84 4989.042
+ }
+ {
+  coords 9663.533 7.165 5084.808
+  angleX 6.059
+  angleY -69.016
+  angleZ -1.586
+ }
+ {
+  coords 9863.185 1.452 4841.917
+  angleX -4.626
+  angleY 113.704
+  angleZ 4.713
+ }
+}
+$grp GenericEntity : "{DE59CB05202006E8}Prefabs/Props/Agriculture/CultivatorWreck_01.et" {
+ {
+  coords 9866.19 1.352 4660.686
+  angleX -47.433
+  angleY 22.644
+  angleZ -17.079
+ }
+ {
+  coords 9834.387 5.116 4802.35
+  angleY 0
+ }
+ {
+  coords 9873.774 1.318 4669.501
+  angleY 0
+ }
+ {
+  coords 9875.074 1.339 4707.787
+  angleX -58.348
+  angleY 0
+  angleZ -28.947
+ }
+ {
+  coords 9815.318 10.182 4784.642
+  angleX -62.634
+  angleY -166.394
+  angleZ 112.114
+ }
+ {
+  coords 9818.114 9.276 4762.887
+  angleY 0
+ }
+ {
+  coords 9815.874 9.338 4698.094
+  angleX -3.989
+  angleY 180
+  angleZ 130.034
+ }
+ {
+  coords 9808.886 6.798 4604.409
+  angleY 0
+ }
+ {
+  coords 9868.157 1.456 4607.172
+  angleX -83.897
+  angleY 180
+  angleZ -141.523
+ }
+ {
+  coords 9807.197 9.947 4666.685
+  angleX -51.018
+  angleY -11.469
+  angleZ -20.945
+ }
+ {
+  coords 9804.365 9.172 4628.457
+  angleY 0
+ }
+ {
+  coords 9800.844 7.059 4597.677
+  angleX -53.091
+  angleY -89.872
+  angleZ 16.116
+ }
+ {
+  coords 9800.217 10.52 4675.031
+  angleY 0
+ }
+ {
+  coords 9798.831 10.676 4811.875
+  angleY 0
+ }
+ {
+  coords 9788.425 9.803 4714.437
+  angleY 0
+ }
+ {
+  coords 9805.224 4.419 4450.874
+  angleX 11.676
+  angleY -177.178
+  angleZ -166.31
+ }
+ {
+  coords 9816.502 2.996 4483.767
+  angleX -85.092
+  angleY 180
+  angleZ 117.511
+ }
+ {
+  coords 9838.356 2.876 4462.951
+  angleX -34.853
+  angleY 180
+  angleZ 166.81
+ }
+ {
+  coords 9835.819 2.259 4464.093
+  angleX 21.826
+  angleY 30.405
+  angleZ -2.188
+ }
+ {
+  coords 9873.074 1.752 4432.871
+  angleX -45.576
+  angleY 113.271
+  angleZ -121.056
+ }
+ {
+  coords 9873.698 1.366 4393.011
+  angleX -52.784
+  angleY 0
+  angleZ -26.746
+ }
+ {
+  coords 9881.637 1.586 4360.728
+  angleY 0
+ }
+ {
+  coords 9881.309 2.222 4343.81
+  angleX -70.679
+  angleY 0
+  angleZ -27.342
+ }
+ {
+  coords 9858.321 2.588 4411.707
+  angleX -66.579
+  angleY 180
+  angleZ -180
+ }
+ {
+  coords 9838.384 2.151 4390.743
+  angleY 0
+ }
+ {
+  coords 9884.434 2.602 4328.908
+  angleY 0
+ }
+ {
+  coords 9884.155 2.559 4321.552
+  angleY 0
+ }
+ {
+  coords 9864.024 2.135 4320
+  angleX -36.596
+  angleY 0
+ }
+ {
+  coords 9876.824 1.347 4795.106
+  angleX -60.745
+  angleY 0
+ }
+ {
+  coords 9877.476 1.332 4799.216
+  angleX -62.881
+  angleY 0
+  angleZ -15.376
+ }
+ {
+  coords 9860.824 1.854 4890.393
+  angleX 38.837
+  angleY -32.564
+  angleZ -45.522
+ }
+ {
+  coords 9855.604 1.943 4797.002
+  angleX 16.758
+  angleY 0
+ }
+ {
+  coords 9809.261 6.096 4893.269
+  angleX 51.143
+  angleY -39.006
+  angleZ -15.806
+ }
+ {
+  coords 9744.371 2.74 4962.334
+  angleY 0
+ }
+ {
+  coords 9804.043 2.402 4924.205
+  angleX -63.6
+  angleY 0
+  angleZ -60.861
+ }
+ {
+  coords 9769.591 1.117 4960.031
+  angleX -47.599
+  angleY -51.766
+  angleZ 35.676
+ }
+ {
+  coords 9752.185 1.117 4974.988
+  angleX 36.665
+  angleY -41.825
+  angleZ -28.119
+ }
+ {
+  coords 9744.794 1.255 4977.109
+  angleX -51.067
+  angleY -142.513
+  angleZ -20.11
+ }
+ {
+  coords 9720.508 1.209 5007.909
+  angleX 20.663
+  angleY -38.787
+  angleZ -34.614
+ }
+ {
+  coords 9804.543 9.954 4834.36
+  angleX -57.116
+  angleY 99.111
+  angleZ -62.567
+ }
+ {
+  coords 9756.412 4.007 5163.583
+  angleX -57.597
+  angleY 0
+ }
+ {
+  coords 9729.612 2.113 5088.443
+  angleX -39.28
+  angleY 24.45
+  angleZ -16.059
+ }
+ {
+  coords 9826.255 1.424 5286.176
+  angleY 0
+ }
+ {
+  coords 9819.865 1.406 5237.96
+  angleY 0
+ }
+ {
+  coords 9821.809 1.376 5245.833
+  angleY 0
+ }
+ {
+  coords 9810.956 1.389 5209.148
+  angleY 0
+ }
+ {
+  coords 9811.502 1.398 5211.086
+  angleY 0
+ }
+ {
+  coords 9755.174 4.834 5157.91
+  angleX -32.06
+  angleY -68.679
+  angleZ 53.673
+ }
+ {
+  coords 9767.057 3.984 5181.885
+  angleX -5.023
+  angleY -81.485
+  angleZ 59.912
+ }
+ {
+  coords 9782.173 4.566 5200.313
+  angleY 0
+ }
+ {
+  coords 9699.398 2.599 5079.091
+  angleY 0
+ }
+ {
+  coords 9698.657 3.303 5086.305
+  angleX -40.664
+  angleY 79.279
+  angleZ -73.799
+ }
+ {
+  coords 9823.98 1.28 5308.469
+  angleY 0
+ }
+ {
+  coords 9822.058 1.663 5336.742
+  angleY 0
+ }
+ {
+  coords 9748.198 6.686 5182.748
+  angleY 0
+ }
+ {
+  coords 9749.07 6.709 5184.644
+  angleY 0
+ }
+ {
+  coords 9757.904 6.477 5197.991
+  angleY 0
+ }
+ {
+  coords 9778.859 5.436 5226.765
+  angleY 0
+ }
+ {
+  coords 9784.7 6.167 5341.53
+  angleY 0
+ }
+ {
+  coords 9751.001 6.06 4926.502
+  angleY 0
+ }
+ {
+  coords 9737.771 5.808 4936.848
+  angleY 0
+ }
+ {
+  coords 9687.075 2.697 5011.894
+  angleX -53.549
+  angleY 15.745
+  angleZ -85.364
+ }
+ {
+  coords 9683.354 2.735 5017.192
+  angleY 0
+ }
+ {
+  coords 9681.511 2.911 5019.002
+  angleY 0
+ }
+ {
+  coords 9684.146 3.741 5028.896
+  angleY 0
+ }
+ {
+  coords 9790.434 5.012 5378.042
+  angleY 0
+ }
+ {
+  coords 9697.526 3.143 4970.021
+  angleY 0
+ }
+ {
+  coords 9671.162 5.133 5010.743
+  angleX -55.554
+  angleY 41.587
+  angleZ -36.198
+ }
+ {
+  coords 9659.284 7.786 4994.623
+  angleY 0
+ }
+ {
+  coords 9732.077 7.349 4919.119
+  angleY 0
+ }
+ {
+  coords 9747.146 1.718 5080.345
+  angleX -38.61
+  angleY -58.634
+  angleZ 33.354
+ }
+}
+$grp GenericEntity : "{E1EA68033A54EF1B}prefabs/Props/Wrecks/M151_Wreck_New.et" {
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CBB638A5D}" {
+      SourceMaterial "M151A2_Body_Wreck"
+      AssignedMaterial "{6CAEE3CAFE10C7DE}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9818.741 3.786 4576.151
+  angleX 13.276
+  angleY -122.811
+  angleZ -5.277
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CBB638A5D}" {
+      SourceMaterial "M151A2_Body_Wreck"
+      AssignedMaterial "{6CAEE3CAFE10C7DE}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Body_Wreck.emat"
+     }
+    }
+   }
+  }
+  coords 9851.074 1.106 4597.833
+  angleX -8.768
+  angleY -88.535
+  angleZ -8.565
+ }
+ {
+  coords 9775.284 3.791 4933.833
+  angleX -1.456
+  angleY 104.113
+  angleZ -17.179
+ }
+ {
+  coords 9873.636 1.034 4654.795
+  angleX -2.259
+  angleY 63.282
+  angleZ 5.217
+ }
+ {
+  coords 9874.608 0.979 4710.576
+  angleX 1.118
+  angleY -115.26
+ }
+ {
+  coords 9877.697 1.23 4763.753
+  angleX 3.588
+  angleY -119.069
+ }
+ {
+  coords 9814.192 8.483 4795.436
+  angleX -8.674
+  angleY 46.034
+  angleZ 8.276
+ }
+ {
+  coords 9802.561 8.27 4611.249
+  angleZ 16.785
+ }
+ {
+  coords 9807.596 2.189 4544.981
+  angleX -5.896
+  angleY 116.55
+  angleZ -0.209
+ }
+ {
+  coords 9806.501 10.512 4701.063
+  angleX 15.041
+  angleY -105.807
+  angleZ 1.388
+ }
+ {
+  coords 9807.851 8.864 4753.201
+ }
+ {
+  coords 9810.674 9.028 4755.861
+ }
+ {
+  coords 9800.865 10.406 4685.743
+  angleY 125.643
+ }
+ {
+  coords 9800.604 10.73 4705.093
+ }
+ {
+  coords 9784.219 9.09 4727.034
+ }
+ {
+  coords 9822.284 1.673 4537.099
+  angleX 4.302
+ }
+ {
+  coords 9824.651 1.613 4531.749
+  angleY 48.176
+ }
+ {
+  coords 9824.151 1.67 4525.73
+  angleY -43.657
+ }
+ {
+  coords 9813.175 3.03 4508.706
+  angleX -3.373
+  angleY 73.957
+  angleZ 2.874
+ }
+ {
+  coords 9875.696 0.856 4393.425
+  angleX -2.855
+  angleY 57.701
+ }
+ {
+  coords 9881.339 1.603 4358.589
+ }
+ {
+  coords 9841.913 2.048 4364.667
+  angleY -99.316
+ }
+ {
+  coords 9841.073 2.144 4347.507
+  angleY -39.746
+ }
+ {
+  coords 9905.75 1.702 4322.851
+  angleY -61.293
+ }
+ {
+  coords 9908.938 2.418 4295.669
+ }
+ {
+  coords 9886.301 2.37 4485.46
+  angleY 77.12
+ }
+ {
+  coords 9886.146 1.718 4483.782
+  angleX -1.998
+  angleY 74.87
+ }
+ {
+  coords 9873.769 2.114 4471.199
+ }
+ {
+  coords 9876.301 0.852 4797.52
+  angleY -73.769
+ }
+ {
+  coords 9876.867 0.82 4808.525
+  angleX 2.973
+  angleY -90.903
+ }
+ {
+  coords 9876.438 1.069 4822.225
+  angleY -57.464
+ }
+ {
+  coords 9869.898 1.754 4866.054
+ }
+ {
+  coords 9838.476 2.442 4877.866
+ }
+ {
+  coords 9815.315 8.462 4843.707
+  angleX 3.931
+  angleY -119.159
+  angleZ -2.19
+ }
+ {
+  coords 9805.656 1.922 4922.469
+  angleX 0.915
+  angleY -90.206
+  angleZ 11.224
+ }
+ {
+  coords 9821.256 1.086 4926.726
+ }
+ {
+  coords 9776.266 2.028 4983.866
+ }
+ {
+  coords 9772.933 2.044 4981.456
+  angleY -113.394
+ }
+ {
+  coords 9766.969 1.658 4994.893
+  angleY -9.275
+ }
+ {
+  coords 9837.773 0.546 4936.51
+  angleY 57.66
+ }
+ {
+  coords 9804.535 0.497 4977.215
+  angleY -98.006
+ }
+ {
+  coords 9801.992 0.414 4981.104
+  angleY 28.15
+ }
+ {
+  coords 9770.134 0.282 5012.186
+  angleY -158.083
+ }
+ {
+  coords 9790.315 4.751 4568.721
+  angleY -57.608
+ }
+ {
+  coords 9807.606 9.43 4821.195
+  angleY -109.233
+ }
+ {
+  coords 9782.656 7.849 4899.202
+  angleY -130.081
+ }
+ {
+  coords 9744.128 1.397 5073.664
+  angleY 98.318
+ }
+ {
+  coords 9748.281 4.574 5129.311
+  angleY 120.33
+ }
+ {
+  coords 9728.061 1.781 5039.347
+ }
+ {
+  coords 9732.989 1.825 5031.965
+ }
+ {
+  coords 9822.558 1.396 5254.426
+ }
+ {
+  coords 9819.694 1.416 5235.835
+ }
+ {
+  coords 9801.971 5.362 5245.563
+ }
+ {
+  coords 9801.09 5.259 5267.813
+ }
+ {
+  coords 9790.965 0.804 5413.277
+  angleX 1.818
+  angleY -145.596
+  angleZ 4.786
+ }
+ {
+  coords 9777.198 1.351 5419.639
+  angleY -78.523
+  angleZ 13.888
+ }
+ {
+  coords 9701.097 1.383 5051.19
+  angleY 16.917
+ }
+ {
+  coords 9703.229 3.949 5096.264
+  angleX 11.109
+  angleY -37.941
+  angleZ -4.838
+ }
+ {
+  coords 9824.448 1.265 5315.506
+ }
+ {
+  coords 9822.586 1.608 5334.785
+ }
+ {
+  coords 9822.49 1.715 5343.355
+ }
+ {
+  coords 9814.815 1.835 5370.183
+ }
+ {
+  coords 9800.865 1.48 5404.55
+ }
+ {
+  coords 9716.106 5.905 5118.485
+  angleY 12.255
+ }
+ {
+  coords 9770.741 5.481 5236.124
+ }
+ {
+  coords 9785.535 6.206 5338.976
+  angleX -3.09
+  angleY -0.597
+  angleZ 10.939
+ }
+ {
+  coords 9683.301 5.663 5100.166
+  angleX 8.549
+  angleY 4.55
+  angleZ 7.116
+ }
+ {
+  coords 9708.672 10.007 5165.366
+ }
+ {
+  coords 9749.801 4.722 5405.281
+ }
+ {
+  coords 9801.078 6.029 5297.982
+ }
+ {
+  coords 9800.861 4.776 5314.095
+ }
+ {
+  coords 9781.771 4.831 5376.896
+  angleX -4.592
+  angleY -0.377
+  angleZ 4.705
+ }
+ {
+  coords 9714.907 8.648 4929.299
+ }
+ {
+  coords 9682.806 6.767 4954.107
+ }
+ {
+  coords 9670.385 5.496 4973.25
+ }
+ {
+  coords 9661.491 6.296 5056.748
+ }
+ {
+  coords 9666.833 6.745 5090.308
+  angleX -4.241
+  angleY 71.47
+  angleZ 4.462
+ }
+}
+$grp GenericEntity : "{E92690D40F78C013}prefabs/Props/Wrecks/M998_Wreck_New.et" {
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CE1A10C2B}" {
+      SourceMaterial "Wreck_Base"
+      AssignedMaterial "{E49AEF5C74BD17ED}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16CE1A10CDE}" {
+      SourceMaterial "Wreck_Wheels"
+      AssignedMaterial "{B486A0DBEA8D7482}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Wheels.emat"
+     }
+    }
+   }
+  }
+  coords 9838.156 0.825 4569.583
+  angleX 12.894
+  angleY -86.46
+  angleZ 1.471
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CE1A10C2B}" {
+      SourceMaterial "Wreck_Base"
+      AssignedMaterial "{E49AEF5C74BD17ED}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16CE1A10CDE}" {
+      SourceMaterial "Wreck_Wheels"
+      AssignedMaterial "{B486A0DBEA8D7482}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Wheels.emat"
+     }
+    }
+   }
+  }
+  coords 9851.824 1.226 4642.225
+  angleY -77.539
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CE1A10C2B}" {
+      SourceMaterial "Wreck_Base"
+      AssignedMaterial "{E49AEF5C74BD17ED}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16CE1A10CDE}" {
+      SourceMaterial "Wreck_Wheels"
+      AssignedMaterial "{B486A0DBEA8D7482}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Wheels.emat"
+     }
+    }
+   }
+  }
+  coords 9831.153 4.097 4698.559
+  angleX -17.048
+  angleY 96.114
+  angleZ -16.899
+ }
+ {
+  components {
+   MeshObject "{5872F0EB7FA40561}" {
+    Materials {
+     MaterialAssignClass "{5B3CA16CE1A10C2B}" {
+      SourceMaterial "Wreck_Base"
+      AssignedMaterial "{E49AEF5C74BD17ED}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Wreck.emat"
+     }
+     MaterialAssignClass "{5B3CA16CE1A10CDE}" {
+      SourceMaterial "Wreck_Wheels"
+      AssignedMaterial "{B486A0DBEA8D7482}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Wheels.emat"
+     }
+    }
+   }
+  }
+  coords 9865.407 0.781 4651.667
+  angleX -17.048
+  angleY -83.765
+  angleZ -16.899
+ }
+ {
+  coords 9860.491 1.226 4678.917
+  angleX -0.512
+  angleY 84.9
+  angleZ -8.688
+ }
+ {
+  coords 9869.817 1.19 4640.107
+  angleX -1.861
+  angleY -65.339
+  angleZ -0.983
+ }
+ {
+  coords 9857.597 1.447 4692.999
+  angleY -95.756
+ }
+ {
+  coords 9874.698 1.094 4696.106
+  angleX -3.01
+  angleY 120.273
+  angleZ -1.913
+ }
+ {
+  coords 9820.741 9.101 4770.669
+  angleX -19.506
+  angleY 78.895
+  angleZ 1.913
+ }
+ {
+  coords 9819.398 8.047 4757.566
+  angleX 17.65
+  angleY -63.363
+ }
+ {
+  coords 9822.098 5.895 4739.228
+  angleY -151.92
+  angleZ -16.459
+ }
+ {
+  coords 9816.048 8.321 4706.748
+  angleX 5.516
+  angleY -45.43
+  angleZ 10.925
+ }
+ {
+  coords 9810.624 8.541 4635.833
+  angleX 4.872
+  angleY -85.332
+  angleZ -1.663
+ }
+ {
+  coords 9805.773 9.114 4634.05
+  angleX 2.868
+  angleZ 12.891
+ }
+ {
+  coords 9811.255 10.109 4761.167
+  angleX -5.238
+  angleY 175.09
+ }
+ {
+  coords 9818.407 7.83 4808.784
+  angleX -5.366
+  angleY 176.386
+  angleZ -4.719
+ }
+ {
+  coords 9799.506 10.147 4804.628
+  angleX -3.965
+  angleY -38.88
+  angleZ -15.903
+ }
+ {
+  coords 9785.075 9.035 4710.103
+  angleX 1.508
+  angleY 20.899
+  angleZ -11.026
+ }
+ {
+  coords 9774.557 8.139 4712.847
+  angleY 121.924
+ }
+ {
+  coords 9814.75 2.862 4494.396
+ }
+ {
+  coords 9836.456 2.013 4473.19
+  angleX -4.957
+  angleY 88.985
+ }
+ {
+  coords 9856.556 0.96 4474.145
+  angleX -0.193
+  angleY -73.964
+  angleZ -2.528
+ }
+ {
+  coords 9870.668 0.736 4407.325
+  angleY 3.624
+ }
+ {
+  coords 9883.011 1.809 4341.848
+  angleY 53.088
+  angleZ -7.151
+ }
+ {
+  coords 9856.271 1.115 4454.571
+  angleY -87.494
+ }
+ {
+  coords 9855.665 0.965 4431.729
+  angleY -122.141
+  angleZ -10.87
+ }
+ {
+  coords 9872.963 1.017 4390.746
+  angleY -79.465
+ }
+ {
+  coords 9862.761 1.767 4369.481
+  angleY 83.063
+ }
+ {
+  coords 9865.284 2.173 4332.215
+  angleY -77.996
+ }
+ {
+  coords 9909.76 2.144 4304.049
+  angleY 97.84
+ }
+ {
+  coords 9904.402 2.368 4298.224
+  angleY -111.042
+ }
+ {
+  coords 9913.387 2.362 4291.297
+  angleY 75.662
+ }
+ {
+  coords 9875.23 2.033 4463.542
+  angleY 37.038
+ }
+ {
+  coords 9876.992 0.976 4830.723
+  angleY 69.839
+ }
+ {
+  coords 9854.604 0.282 4912.127
+  angleX 40.399
+ }
+ {
+  coords 9857.075 1.251 4794.669
+  angleY 91.406
+ }
+ {
+  coords 9855.468 1.39 4799.777
+  angleX -5.877
+  angleY -90.863
+  angleZ 1.297
+ }
+ {
+  coords 9856.032 1.565 4813.628
+  angleY -71.863
+  angleZ -9.405
+ }
+ {
+  coords 9860.472 1.476 4814.511
+  angleY -7.837
+ }
+ {
+  coords 9843.279 2.128 4896.656
+  angleY -81.188
+ }
+ {
+  coords 9832.274 1.398 4918.777
+  angleY -62.191
+ }
+ {
+  coords 9818.476 8.124 4833.645
+  angleX -5.611
+  angleY 144.46
+  angleZ -7.793
+ }
+ {
+  coords 9816.432 8.454 4839.083
+  angleY -53.243
+ }
+ {
+  coords 9812.2 8.14 4866.458
+  angleX 9.216
+  angleY -130.906
+  angleZ -4.778
+ }
+ {
+  coords 9811.565 6.517 4886.454
+  angleX -7.412
+ }
+ {
+  coords 9799.607 7.238 4890.585
+  angleX -8.786
+  angleY -27.857
+  angleZ -10.239
+ }
+ {
+  coords 9746.365 2.764 4954.021
+  angleX -2.463
+  angleY 36.478
+  angleZ -15.754
+ }
+ {
+  coords 9738.235 2.154 4959.355
+  angleY -138.769
+ }
+ {
+  coords 9699.017 1.432 4996.625
+  angleX -5.228
+  angleY 11.824
+ }
+ {
+  coords 9784.808 1.524 4949.438
+  angleY 32.639
+ }
+ {
+  coords 9747.973 0.938 4979.345
+  angleY 41.15
+ }
+ {
+  coords 9806.893 0.998 4950.306
+  angleY -122.319
+ }
+ {
+  coords 9835.321 0.4 4939.21
+  angleY -79.999
+ }
+ {
+  coords 9774.843 0.234 5010.052
+  angleY -123.434
+ }
+ {
+  coords 9769.521 0.182 5017.317
+  angleY -19.915
+ }
+ {
+  coords 9824.125 2.116 4350.202
+ }
+ {
+  coords 9800.615 9.54 4855.663
+  angleX 1.925
+  angleY -71.226
+  angleZ 0.654
+ }
+ {
+  coords 9793.013 8.149 4882.629
+  angleY -115.285
+ }
+ {
+  coords 9732.08 1.913 5092.241
+  angleY -74.743
+ }
+ {
+  coords 9729.319 1.716 5058.91
+ }
+ {
+  coords 9739.353 3.728 5108.106
+ }
+ {
+  coords 9751.9 4.228 5112.883
+ }
+ {
+  coords 9733.074 1.902 5094.743
+  angleX -4.323
+  angleY 104.567
+  angleZ -6.507
+ }
+ {
+  coords 9722.695 1.977 5069.093
+ }
+ {
+  coords 9746.799 1.103 5071.343
+  angleY 78.927
+ }
+ {
+  coords 9823.456 1.359 5268.574
+ }
+ {
+  coords 9726.21 1.65 5051.697
+  angleY 117.316
+ }
+ {
+  coords 9821.175 1.386 5243.277
+ }
+ {
+  coords 9792.17 1.671 5179.375
+ }
+ {
+  coords 9756.848 4.025 5161.762
+  angleX 11.777
+  angleY -90.664
+  angleZ -3.426
+ }
+ {
+  coords 9777.006 4.238 5187.054
+  angleX -9.191
+  angleY 133.545
+ }
+ {
+  coords 9797.494 5.481 5270.577
+ }
+ {
+  coords 9805.192 5.321 5278.745
+ }
+ {
+  coords 9786.888 1.148 5412.706
+  angleX -4.783
+  angleY 70.296
+  angleZ -5.979
+ }
+ {
+  coords 9704.438 1.025 5031.282
+  angleY 50.453
+ }
+ {
+  coords 9706.309 5.236 5104.229
+  angleX 0.581
+  angleY -60.709
+  angleZ -6.707
+ }
+ {
+  coords 9810.239 1.925 5380.864
+ }
+ {
+  coords 9793.995 0.794 5411.676
+  angleX -5.424
+  angleY -1.317
+  angleZ 1.967
+ }
+ {
+  coords 9710.776 6.142 5117.32
+  angleX 8.611
+  angleY -33.564
+ }
+ {
+  coords 9741.697 6.678 5171.008
+ }
+ {
+  coords 9760.46 6.291 5202.508
+ }
+ {
+  coords 9764.294 5.908 5208.02
+ }
+ {
+  coords 9785.594 6.131 5330.145
+  angleX 2.432
+  angleY 0.239
+  angleZ 5.614
+ }
+ {
+  coords 9711.491 9.442 5173.677
+ }
+ {
+  coords 9771.201 5.769 5373.363
+ }
+ {
+  coords 9756.014 5.511 5385.643
+  angleX -7.136
+  angleY 114.37
+  angleZ -12.554
+ }
+ {
+  coords 9754.688 4.842 5393.624
+  angleX 4.501
+  angleY -97.462
+  angleZ 1.935
+ }
+ {
+  coords 9674.156 4.666 5047.886
+  angleX 13.972
+  angleY -120.649
+  angleZ -17.499
+ }
+ {
+  coords 9677.01 3.527 5051.534
+  angleX 9.377
+  angleY -78.183
+ }
+ {
+  coords 9675.175 4.677 5072.313
+  angleX 9.531
+  angleY -86.648
+  angleZ -10.477
+ }
+ {
+  coords 9799.142 5.758 5304.578
+ }
+ {
+  coords 9730.097 5.477 4940.487
+ }
+ {
+  coords 9710.754 3.669 4957.751
+ }
+ {
+  coords 9718.533 4.536 4950.273
+ }
+ {
+  coords 9706.731 3.104 4963.386
+ }
+ {
+  coords 9681.893 3.902 4998.542
+  angleZ 15.225
+ }
+ {
+  coords 9646.396 6.896 5032.073
+ }
+ {
+  coords 9684.48 6.739 4952.563
+ }
+ {
+  coords 9660.277 7.769 4992.81
+ }
+ {
+  coords 9656.578 6.219 5059.121
+ }
+ {
+  coords 9662.086 5.911 5061.075
+ }
+ {
+  coords 9665.198 5.882 5069.126
+  angleY -130.914
+  angleZ -12.07
+ }
+ {
+  coords 9756.185 0.938 4973.46
+  angleY -144.086
+  angleZ 7.045
+ }
+}
+$grp GenericEntity : "{F9B96527E16549AB}Prefabs/Props/Wrecks/M998_wreck_static.et" {
+ {
+  coords 11702.98 1.896 2066.139
+  angleX 16.584
+  angleY 16.836
+  angleZ 31.735
+ }
+ {
+  coords 9840.499 1.137 4558.817
+  angleX -0.435
+  angleY 88.163
+  angleZ -1.115
+ }
+ {
+  coords 9826.606 2.825 4606.586
+  angleX -14.17
+  angleY 104.396
+  angleZ -8.862
+ }
+ {
+  coords 9830.928 3.156 4623.782
+  angleX 20.263
+  angleY -90
+  angleZ 2.881
+ }
+ {
+  coords 9830.526 2.625 4619.119
+  angleX -5.716
+  angleY 4.881
+  angleZ 37.722
+ }
+ {
+  coords 9834.965 2.506 4734.522
+  angleX -13.894
+  angleY 48.089
+  angleZ 5.124
+ }
+ {
+  coords 9831.947 3.585 4653.429
+  angleX -14.742
+  angleY 91.768
+  angleZ -3.508
+ }
+ {
+  coords 9863.021 2.999 4559.52
+  angleX 1.277
+  angleY 91.39
+  angleZ 149.623
+ }
+ {
+  coords 9863.348 1.022 4666.438
+  angleY -97.373
+ }
+ {
+  coords 9854.854 1.17 4618.743
+  angleY 42.995
+  angleZ -4.711
+ }
+ {
+  coords 9873.874 1.199 4657.981
+  angleX -3.175
+  angleY 118.871
+  angleZ -7.04
+ }
+ {
+  coords 9859.867 1.308 4687.829
+  angleY -99.79
+ }
+ {
+  coords 9834.817 3.295 4841.941
+  angleX -12.196
+  angleY 124.941
+  angleZ -8.29
+ }
+ {
+  coords 9821.324 9.002 4773.726
+  angleX -14.221
+  angleY 105.098
+  angleZ -7.759
+ }
+ {
+  coords 9817.46 8.874 4784.692
+  angleX -13.937
+  angleY 43.732
+  angleZ -2.3
+ }
+ {
+  coords 9810.058 8.957 4650.184
+  angleX -1.885
+  angleY -91.67
+  angleZ -7.124
+ }
+ {
+  coords 9810.279 8.194 4632.313
+  angleX -12.055
+  angleY 93.845
+  angleZ -4.686
+ }
+ {
+  coords 9791.815 5.715 4579.32
+  angleX -3.275
+  angleY 75.53
+  angleZ 9.488
+ }
+ {
+  coords 9799.635 9.099 4720.917
+  angleX 1.197
+  angleY -126.485
+  angleZ -2.569
+ }
+ {
+  coords 9799.231 8.965 4734.999
+  angleX -2.283
+  angleY 84.143
+  angleZ 3.852
+ }
+ {
+  coords 9829.418 2.371 4369.206
+  angleX 0.464
+  angleY 24.274
+  angleZ -1.014
+ }
+ {
+  coords 9803.015 3.106 4449.946
+  angleX -12.927
+  angleY -31.147
+  angleZ -1.022
+ }
+ {
+  coords 9824.2 1.995 4515.763
+  angleY -99.793
+ }
+ {
+  coords 9819.951 1.819 4347.967
+  angleX 1.028
+  angleY -123.89
+  angleZ -0.963
+ }
+ {
+  coords 9863.951 1.959 4542.36
+  angleX -4.821
+  angleY -113.541
+  angleZ 3.109
+ }
+ {
+  coords 9819.755 2.325 4512.093
+  angleX -5.377
+  angleY 90.631
+  angleZ -8.248
+ }
+ {
+  coords 9858.607 1.547 4414.397
+  angleY 100.844
+ }
+ {
+  coords 9841.44 1.797 4449.351
+  angleY -76.406
+ }
+ {
+  coords 9840.992 2.001 4386.815
+  angleX -5.386
+  angleY 56.533
+  angleZ 3.551
+ }
+ {
+  coords 9841.202 2.035 4381.417
+ }
+ {
+  coords 9846.098 2.211 4345.917
+  angleY -71.46
+ }
+ {
+  coords 9899.371 0.903 4369.166
+  angleX -1.51
+  angleY 61.138
+  angleZ 0.832
+ }
+ {
+  coords 9848.106 1.924 4331.591
+ }
+ {
+  coords 9875.407 0.908 4787.08
+  angleX 0.646
+  angleY -100.66
+  angleZ 4.265
+ }
+ {
+  coords 9854.433 1.735 4845.091
+  angleY -104.852
+ }
+ {
+  coords 9853.557 2.141 4856.428
+  angleY -95.326
+ }
+ {
+  coords 9846.824 2.44 4886.393
+  angleY -92.028
+ }
+ {
+  coords 9842.932 2.303 4899.61
+  angleY -103.812
+ }
+ {
+  coords 9839.992 1.741 4911.802
+  angleY -114.629
+ }
+ {
+  coords 9763.492 3.981 4938.33
+  angleX -12.408
+  angleY 48.829
+  angleZ -14.825
+ }
+ {
+  coords 9721.578 1.367 4976.585
+  angleY -109.877
+ }
+ {
+  coords 9716.867 1.292 4980.365
+  angleX -2.487
+  angleY 29.918
+ }
+ {
+  coords 9790.518 1.938 4941.377
+  angleY -163.949
+ }
+ {
+  coords 9739.156 0.729 4986.124
+  angleY -123.442
+ }
+ {
+  coords 9811.741 1.009 4938.438
+ }
+ {
+  coords 9825.828 0.337 4952.102
+  angleY 69.896
+ }
+ {
+  coords 9746.597 1.185 5049.901
+ }
+ {
+  coords 9800.051 10.026 4836.393
+  angleX 5.367
+  angleY -79.673
+  angleZ 0.976
+ }
+ {
+  coords 9749.533 4.566 5144
+  angleX 1.794
+  angleY -80.295
+  angleZ -5.686
+ }
+ {
+  coords 9732.219 2.756 5102.846
+ }
+ {
+  coords 9823.309 1.384 5256.917
+ }
+ {
+  coords 9772.858 4.696 5190.57
+  angleY -58.883
+ }
+ {
+  coords 9801.037 5.068 5224.567
+ }
+ {
+  coords 9801.055 4.546 5272.407
+ }
+ {
+  coords 9775.533 0.835 5423.999
+  angleX -12.169
+  angleZ 2.041
+ }
+ {
+  coords 9700.617 1.172 5026.085
+  angleY -144.52
+  angleZ -3.589
+ }
+ {
+  coords 9699.517 2.508 5073.141
+ }
+ {
+  coords 9820.8 1.804 5351.92
+ }
+ {
+  coords 9820.675 1.81 5349.866
+ }
+ {
+  coords 9819.315 1.768 5360.753
+ }
+ {
+  coords 9801.059 1.821 5396.773
+ }
+ {
+  coords 9767.724 5.551 5213.829
+ }
+ {
+  coords 9684.995 7.294 5117.156
+  angleX 5.924
+ }
+ {
+  coords 9747.687 6.123 4928.989
+ }
+ {
+  coords 9739.217 5.988 4935.366
+ }
+ {
+  coords 9683.592 2.663 5010.607
+  angleX -2.771
+  angleY -0.523
+  angleZ 10.691
+ }
+ {
+  coords 9678.185 3.262 5042.56
+  angleX -13.695
+  angleY 84.074
+  angleZ 4.609
+ }
+ {
+  coords 9808.05 3.495 5311.215
+  angleX -14.77
+  angleY 74.456
+ }
+ {
+  coords 9781.398 4.69 5385.315
+  angleX 6.6
+  angleY -129.74
+  angleZ -7.855
+ }
+ {
+  coords 9715.333 4.171 4953.388
+ }
+ {
+  coords 9665.646 4.334 5016.051
+  angleX 3.054
+  angleY -84.705
+  angleZ 4.324
+ }
+ {
+  coords 9646.662 6.344 5064.414
+ }
+ {
+  coords 9704.979 7.919 4937.242
+ }
+ {
+  coords 9677.972 6.548 4961.773
+ }
+ {
+  coords 9665.766 6.187 5033.009
+ }
+ {
+  coords 9736.584 6.792 4914.87
+ }
+ {
+  coords 9764.991 1.538 5117.631
+  angleX -6.6
+  angleY 48.239
+  angleZ 19.412
+ }
+ {
+  coords 9755.768 1.35 5102.055
+  angleX -8.03
+  angleY 94.386
+  angleZ 3.637
+ }
+ {
+  coords 9749.094 1.522 5087.283
+  angleY -69.033
+ }
+ {
+  coords 9751.439 1.29 5092.311
+  angleY 112.613
+ }
+ {
+  coords 9870.033 1.121 4844.394
+  angleX 9.471
+  angleY -72.368
+  angleZ 4.341
+ }
+}

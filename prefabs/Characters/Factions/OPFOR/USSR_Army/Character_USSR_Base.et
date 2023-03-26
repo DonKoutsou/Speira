@@ -1,0 +1,38 @@
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ ID "520EC961A090BE1E"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
+   }
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    Offset 0.1864 -0.0514 -0.0184
+    Angles -81.3391 101.0966 90.522
+   }
+   WeaponTemplate "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
+   HolsteredHidden 0
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Watch {
+     Prefab "{9D8E818461216F56}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_USSR.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC173771408E}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
+     PrefabsToSpawn + {
+      "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et" "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24CC173897B74F}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
+    }
+   }
+  }
+ }
+}

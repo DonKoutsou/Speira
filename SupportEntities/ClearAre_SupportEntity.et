@@ -1,0 +1,5 @@
+SCR_CP_TaskClearAreaSupportEntity {
+ ID "5AF8FA1C3D10F134"
+ coords -6 0 -6
+ m_sTaskPrefab "{A5E8E68E46D3E064}Prefabs/ScenarioFramework/Tasks/TaskClearArea.et"
+}

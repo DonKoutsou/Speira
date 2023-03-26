@@ -1,0 +1,3658 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ coords 118.439 1.001 129.744
+}
+SCR_PlayerController DefaultPlayerController1 : "{6E2BB64764E3BE9B}Prefabs/Characters/Core/DefaultPlayerController.et" {
+ coords 131.236 1.001 124.035
+}
+$grp GenericEntity {
+ {
+  coords 126.447 1.001 126.612
+ }
+ {
+  coords 129.829 1.001 139.599
+ }
+ {
+  coords 132.761 1.001 139.823
+ }
+ {
+  coords 128.758 1.001 139.776
+ }
+ {
+  coords 133.881 1.001 139.648
+ }
+ {
+  coords 127.053 1.001 139.501
+ }
+ {
+  coords 135.002 1.001 139.597
+ }
+ {
+  coords 132.121 1.001 139.762
+ }
+ {
+  coords 134.46 1.001 139.634
+ }
+ {
+  coords 133.358 1.001 139.711
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5AE76D1DD6296CB8}" {
+    MultiSlots {
+     MultiSlotConfiguration "{5B248C11BD15574B}" {
+      SlotTemplate InventoryStorageSlot Currency {
+       Prefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+      NumSlots 5
+     }
+    }
+   }
+  }
+  coords 130.769 1.001 139.787
+ }
+ {
+  coords 131.465 1.001 139.75
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5AE76D1CA459D42D}" {
+    Attributes SCR_ItemAttributeCollection "{5AE76D1CA459D420}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{5B290A870D2F03E7}" {
+      Weight 1.6
+      SizeSetupStrategy Manual
+      ItemDimensions 15 15 15
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5B290A8711237D3F}" {
+      }
+     }
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+    Priority 1
+    InitialStorageSlots {
+     InventoryStorageSlot ff {
+      Prefab ""
+     }
+    }
+   }
+   ActionsManagerComponent "{5AE76D1CA459D438}" {
+    additionalActions {
+     SCR_PickUpItemAction "{5B290A876C476F52}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5B290A876F09FCB1}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+    }
+   }
+  }
+  coords 127.062 1.001 126.384
+ }
+}
+GenericEntity : "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et" {
+ components {
+  MeshObject "{5AB0B9C3C3E4A143}" {
+   Materials {
+    MaterialAssignClass "{5C430DA6C775A2CD}" {
+     SourceMaterial "IntelligenceFolder_E_01"
+     AssignedMaterial "{C6122B0A5B2C16E8}Assets/Items/Misc/IntelligenceFolder_E_01/Data/IntelligenceFolder_E_02.emat"
+    }
+   }
+  }
+ }
+ coords 126.511 1.001 130.035
+}
+$grp GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ {
+  coords 131.346 1.001 131.465
+  angleY 0
+ }
+ {
+  coords 131.424 1.001 132.619
+  angleY 0
+ }
+ {
+  components {
+   MeshObject "{58C4C15098F109F6}" {
+    Object "{863E8EE7F48A5D94}Assets/Props/Wrecks/BoatWreck_01/BoatWreck_01.xob"
+   }
+   ActionsManagerComponent "{5B1111371149AC02}" {
+    ActionContexts {
+     UserActionContext "{5B26F587FA865674}" {
+      ContextName "default"
+      Position PointInfo "{5B26F587F1D09BC4}" {
+       Offset 0 0.4663 0
+      }
+      Radius 3
+     }
+    }
+   }
+  }
+  coords 135.272 1.001 123.234
+  angleY 0
+ }
+}
+GenericEntity : "{0BB4B21E4F560431}prefabs/Props/Furniture/Chest_01.et" {
+ coords 126.617 1.001 123.952
+}
+$grp GenericEntity : "{0D39750E5695B9D8}prefabs/Items/Equipment/Backpacks/Backpack_RPG_Gunner.et" {
+ {
+  coords 129.877 1.001 126.793
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5222CB03A40528FA}" {
+    Attributes SCR_ItemAttributeCollection "{5222CB039E9715D1}" {
+     m_SlotType SLOT_LOOT_STORAGE
+    }
+   }
+  }
+  coords 129.319 1.001 126.813
+ }
+}
+SCR_ChimeraCharacter : "{0F6689B491641155}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et" {
+ coords 130.085 1.001 108.322
+}
+GenericEntity : "{0FCC713927526A75}prefabs/Props/Civilian/RadioSmall_01_Enabled.et" {
+ coords 124.703 2.188 131.181
+ angleY 0
+}
+SCR_ChimeraCharacter : "{1623EA3AEFACA0E4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_MG.et" {
+ coords 137.088 1.001 108.282
+}
+$grp StaticModelEntity : "{172DD50ACF177B9E}Prefabs/Props/Military/Furniture/ChairMilitary_USSR_01.et" {
+ {
+  coords 177.796 1.001 151.049
+  angleY -38.086
+ }
+ {
+  coords 178.971 1.001 149.769
+  angleY 48.414
+ }
+ {
+  coords 167.728 1.001 151.131
+  angleY 51.342
+ }
+ {
+  coords 169.09 1.001 149.637
+  angleY 18.253
+ }
+ {
+  components {
+  }
+  coords 172.082 1.001 52.262
+  angleY 0
+ }
+ {
+  components {
+  }
+  coords 174.94 1.001 50.056
+  angleY 0
+ }
+ {
+  components {
+  }
+  coords 173.891 1.001 48.029
+  angleY 0
+ }
+ {
+  components {
+  }
+  coords 171.172 1.001 50.133
+  angleY 0
+ }
+ {
+  components {
+  }
+  coords 171.674 1.001 54.503
+  angleY 0
+ }
+ {
+  components {
+  }
+  coords 174.211 1.001 52.714
+  angleY 0
+ }
+}
+StaticModelEntity : "{1A1020205E2B1710}Prefabs/Props/Military/Furniture/TableMilitary_USSR_01.et" {
+ coords 167.66 1.001 149.812
+ angleY 0
+}
+SCR_ChimeraCharacter : "{1CA3D30464EE4674}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Spotter.et" {
+ coords 128.35 1.001 108.32
+}
+Vehicle UAZ3 : "{259EE7B78C51B624}prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ coords 172.648 1.001 111.359
+}
+SCR_ChimeraCharacter : "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" {
+ coords 135.171 1.001 108.22
+}
+SCR_ChimeraCharacter : "{27BF1FF235DD6036}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_LAT.et" {
+ coords 139.847 1.001 109.248
+}
+GenericEntity : "{27F6A0815E6FF6EE}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_USSR_01.et" {
+ coords 171.407 1.001 135.551
+ {
+  GenericEntity {
+   ID "59A2EDE0201D626D"
+  }
+ }
+}
+GenericEntity : "{2A27606856B8A913}prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_USSR_01.et" {
+ coords 154.204 1.001 135.698
+}
+$grp SCR_ChimeraCharacter : "{2F912ED6E399FF47}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et" {
+ {
+  coords 121.349 1.001 106.613
+ }
+ {
+  coords 131.741 1.001 113.078
+ }
+ {
+  components {
+   ControllersManagerComponent "{520EA1D2F659CE92}" {
+   }
+   EventHandlerManagerComponent "{530284308E2527DD}" {
+    EventHandlers {
+     BaseEventHandler "{5302843088003484}" {
+      EventName "OnWeaponChanged"
+     }
+     BaseEventHandler "{5302CB86A280126D}" {
+      EventName "OnMuzzleChanged"
+     }
+     BaseEventHandler "{5302CB8699CE0C5C}" {
+      EventName "OnMagazineChanged"
+     }
+     BaseEventHandler "{53047B986210A519}" {
+      EventName "OnAmmoCountChanged"
+     }
+     BaseEventHandler "{5304890B382436DF}" {
+      EventName "OnMagazineCountChanged"
+     }
+     BaseEventHandler "{5304890B3113520D}" {
+      EventName "OnFiremodeChanged"
+     }
+     BaseEventHandler "{5304890B22C5A3DC}" {
+      EventName "OnZeroingChanged"
+     }
+     BaseEventHandler "{5304890B1D193A86}" {
+      EventName "OnADSChanged"
+     }
+     BaseEventHandler "{59388895E3B0CD26}" {
+      EventName "OnWeaponAttachementChanged"
+     }
+     BaseEventHandler "{5952C82EDD8E43E4}" {
+      EventName "OnTurretReload"
+     }
+     BaseEventHandler "{5A5A94D957DB58B7}" {
+      EventName "OnConsciousnessChanged"
+     }
+    }
+   }
+   SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
+    LeftHandPosition EntitySlotInfo "{520EA1D2F659CEAB}" {
+     PivotID "lefthandprop"
+     ChildPivotID "snap_weapon"
+    }
+    RightHandPosition InventoryStorageSlot RightHand {
+     PivotID "RightHandProp"
+     Enabled 0
+     Prefab ""
+    }
+    WaterMovementLimits +{
+    }
+    LeanSpeed 5
+    HoldInputForRoll 1
+   }
+   SignalsManagerComponent "{520EA1D2F659C85A}" {
+   }
+   CharacterSoundComponent "{520EA1D2F659CF84}" {
+    Filenames +{
+    }
+    FoliageCollisionLayer "Foliage"
+   }
+   SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+    Filenames +{
+    }
+    StaminaThresholdMinimum 0.05
+   }
+   SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+    components {
+     SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+      InitialStorageSlots {
+       SCR_EquipmentStorageSlot BinocularSlot {
+        Prefab ""
+       }
+       SCR_EquipmentStorageSlot WristwatchSlot {
+        Prefab "{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et"
+       }
+      }
+     }
+     SCR_TourniquetStorageComponent "{5A68C9C9DF306618}" {
+      StoragePurpose 0
+      InitialStorageSlots {
+       SCR_TourniquetStorageSlot TourniquetSlotLA {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup LEFTARM
+       }
+       SCR_TourniquetStorageSlot TourniquetSlotRA {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup RIGHTARM
+       }
+       SCR_TourniquetStorageSlot TourniquetSlotLL {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup LEFTLEG
+       }
+       SCR_TourniquetStorageSlot TourniquetSlotRL {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup RIGHTLEG
+       }
+      }
+     }
+    }
+    Attributes ItemAttributeCollection "{52BAC70D641B89B1}" {
+    }
+   }
+   AIControlComponent "{520EA1D2DB109F34}" {
+    components {
+     AICharacterAimingComponent "{520EA1D2DB109F0C}" {
+      AimingPID 0.3 0 0
+      UsePID 1
+     }
+     AICharacterHeadAimingComponent "{520EA1D2DB109F04}" {
+     }
+     AICharacterMovementComponent "{520EA1D2DB109F01}" {
+     }
+     AIPathfindingComponent "{56349A6F9C02E7A1}" {
+      NavmeshProject "Soldiers"
+     }
+     PerceptionComponent "{54A2CBC75F06064B}" {
+      PositionInfo PointInfo "{520EA1D2DB109AB7}" {
+       PivotID "eyerightpupil"
+       Angles 90 0 0
+      }
+      SensorsList {
+       EyesSensor "{520EA1D2DB109AAD}" {
+        MaxRange 330
+       }
+       EarsSensor "{520EA1D2DB109AA9}" {
+       }
+      }
+      VehicleThreatMinSpeed 0.5
+      VehicleThreatCollisionTime 2.8
+     }
+     SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     }
+    }
+    Agenttemplate "{B4C861A6DA2F5E05}AI/AIAgents/SCR_ChimeraAIAgentFull.et"
+    OverrideAIBehaviorData "{990D4960E5206005}AI/BehaviorTrees/Chimera/Soldier/Soldier.bt"
+    EnableAI 0
+    PhysicsLayerPreset "CharacterAI"
+   }
+   ActionsPerformerComponent "{520EA1D2F659CE3F}" {
+   }
+   BaseFlattenGrassComponent "{520EA1D2F659CE26}" {
+    ParametersCollection {
+     FlattenGrassParametersObject "{520EA1D2F659CE2C}" {
+      SideX 0.6
+      ShapeOfGrassFlattening "Ellipse"
+     }
+     FlattenGrassParametersObject "{520EA1D2F659CE28}" {
+      SideX 0.9
+      SideZ 0.7
+      CenterLerp 0.5
+      TimeDown 0.75
+      MaxHeight 1
+      ShapeOfGrassFlattening "Ellipse"
+     }
+     FlattenGrassParametersObject "{520EA1D2F659CE27}" {
+      SideX 2
+      SideZ 0.8
+      Offset 0
+      CenterLerp 0.5
+      TimeDown 0.75
+      MaxHeight 1
+      ShapeOfGrassFlattening "Ellipse"
+     }
+    }
+   }
+   BaseWeaponManagerComponent "{520EA1D2F659CE5D}" {
+    SlingPosition PointInfo "{548A2344DE7AA0F2}" {
+     PivotID "stomach3"
+     Angles 0 140 -90
+    }
+   }
+   CharacterAimingComponent "{520EA1D2F659CE42}" {
+    SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CE4B}" {
+     signalsSuffix "Weapon"
+    }
+    LimitsHoriz -80 80
+    LimitsVert -80 80
+    AimingMaxSpeed 0.7 4
+    AimingSpeedControls 1.5 0.75
+    ProneLimitsVertical -40 20
+    AimModifiers {
+     OneHandAimModifier "{588EB4BA84534585}" {
+     }
+    }
+    Shoulder PointInfo "{5A3EED5F66F7AF9A}" {
+     PivotID "RightShoulder"
+    }
+   }
+   CharacterHeadAimingComponent "{520EA1D2F659CF99}" {
+    SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CF9E}" {
+     signalsSuffix "Head"
+    }
+    ProvideAimingType Head
+    LimitsHoriz -360 360
+    LimitsVert -360 360
+    AimingMaxSpeed 10 5
+    AimingSpeedControls 1.5 0.75
+    AimPivot PointInfo "{5990A4DF23E27E7E}" {
+     PivotID "Neck1"
+    }
+    PitchReduction +{
+    }
+   }
+   CharacterPerceivableComponent "{566CCE2397E28600}" {
+    "Additional aim points" {
+     AimPoint "{54D0A72DBE3FF822}" {
+      AimPointPosition PointInfo "{520EA1D2F659C809}" {
+       PivotID "Spine5"
+       Offset 0 0.2 0
+      }
+      AimpointChecked 1
+      VsibilityChecked 1
+      Dimension 0.5
+     }
+     AimPoint "{54D0A72DBE3FF84A}" {
+      AimPointPosition PointInfo "{520EA1D2F659C809}" {
+       PivotID "Head"
+      }
+      AimpointChecked 1
+      VsibilityChecked 1
+      Dimension 0.25
+      AimPointType Weak
+     }
+     AimPoint "{5A1EF5F9AB26B70A}" {
+      AimPointPosition PointInfo "{5A1EF5F9A71AA60E}" {
+       PivotID "Hips"
+      }
+      AimpointChecked 1
+      VsibilityChecked 1
+      Dimension 0.4
+      AimPointType Incapacitate
+     }
+    }
+    UnitType Infantry
+   }
+   ClimbingDataComponent "{5304A49E934A0758}" {
+    CanClimbOver 0
+   }
+   ColliderHistoryComponent "{566C7EDBB7BCC719}" {
+   }
+   EquipedWeaponStorageComponent "{520EA1D2DB118C70}" {
+    StoragePurpose 2
+   }
+   FactionAffiliationComponent "{520EC961FB0A2E90}" {
+    "faction affiliation" "US"
+   }
+   MeshObject "{520EA1D2F659C81F}" {
+    Materials {
+     MaterialAssignClass "{56E6C7BBC3F938E8}" {
+      SourceMaterial "Basebody_01_Male_Arms"
+      AssignedMaterial "{73729450190803B0}Assets/Characters/Basebody/Data/Arms_African_01.emat"
+     }
+     MaterialAssignClass "{56E6C7BBC3F93807}" {
+      SourceMaterial "Basebody_01_Male_Arms_wound"
+      AssignedMaterial "{C624B1A866D83317}Assets/Characters/Basebody/Data/Basebody_01_Male_Arms_African_wound.emat"
+     }
+     MaterialAssignClass "{56E6C7BBC3F9380C}" {
+      SourceMaterial "Basebody_01_Male_Body"
+      AssignedMaterial "{D82597AFCF8B7E6B}Assets/Characters/Basebody/Data/Body_African_01.emat"
+     }
+     MaterialAssignClass "{56E6C7BBC3F93835}" {
+      SourceMaterial "Basebody_01_Male_Body_wound"
+      AssignedMaterial "{15944F28620EDC94}Assets/Characters/Basebody/Data/Basebody_01_Male_Body_African_wound.emat"
+     }
+    }
+   }
+   Hierarchy "{520EA1D2F659C818}" {
+   }
+   SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+    InfoDisplays {
+     SCR_WeaponInfo "{520EA1D2DB11811A}" {
+      m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
+      m_sContentWidget "m_WeaponInfoPanel"
+      m_bAdaptiveOpacity 1
+     }
+     SCR_WeaponSwitchingBaseUI "{55F6C495E5D679A0}" {
+      VisibleAtParent 1
+      m_LayoutPath "{2A1E1E023967C5A8}UI/layouts/HUD/QuickSelectBar.layout"
+      m_eLayer OVERLAY
+     }
+    }
+   }
+   SCR_CallsignCharacterComponent "{55BADB0EB09CC77E}" {
+   }
+   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" : "{73C708A20F8B22E6}Prefabs/Characters/Core/DamageManager_Character_Base.ct" {
+   }
+   SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+   }
+   SCR_CharacterRegistrationComponent "{5216D6E4AC68563B}" {
+   }
+   SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+    StaminaDrainRun -0.008
+    StaminaDrainSprint -0.016
+    EncumbranceDrainMax -0.1
+    BreathNormalFrequency 0.45
+    BreathExhaustedFrequency 1.1
+    m_fStaminaDrainThreshold 100
+    m_EventParams MetabolismEventParams "{520EA1D2F659C825}" {
+     m_fCaloriesDrain 2
+     m_fHydrationDrain 2
+     m_fEnergyDrain 4
+    }
+   }
+   SCR_CharacterVicinityComponent "{529A70D96D401B33}" {
+    DiscoveryRadius 3
+   }
+   SCR_CompartmentAccessComponent "{52249C842F1EF1F4}" {
+    CompartmentLayerPreset "CharNoCollide"
+   }
+   SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+     Name "#AR-Role_Unarmed"
+     Icon "{9164E45B9A237FE9}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Unarmed.edds"
+     IconSetName "Character_Unarmed"
+     m_Image "{047ABB4F19374DB4}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Unarmed.edds"
+     m_sFaction "US"
+     m_aAuthoredLabels +{
+     }
+     m_aAutoLabels +{
+     }
+    }
+   }
+   SCR_FuelNozzleHolderComponent "{52368400919641C0}" {
+   }
+   SCR_GadgetManagerComponent "{520EA1D2DB118DF3}" {
+   }
+   SCR_MeleeComponent "{520EA1D2F659C85E}" {
+   }
+   SCR_PreviewEntityComponent "{55EE4A2A78856F12}" {
+    m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
+   }
+   SCR_VoNComponent "{520EA1D2F659C856}" {
+    "Speaking Range" 50
+    Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
+   }
+   TagComponent "{5864D980062191CA}" {
+    "Tag categories" 1
+   }
+   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+    isThrowable 1
+    WeaponType None
+    AttachType InventoryStorageSlot "{416B67397BB4F7EE}" {
+     PivotID "LeftArmVolume"
+     Enabled 0
+    }
+    WeaponSlotType "grenade"
+    WeaponSlotIndex 3
+   }
+   CharacterGrenadeSlotComponent "{5A6CDA0CCF43068E}" {
+    isThrowable 1
+    WeaponType None
+    AttachType InventoryStorageSlot throwable {
+     PivotID "LeftArmVolume"
+     Enabled 0
+    }
+    WeaponSlotType "throwable"
+    WeaponSlotIndex 4
+   }
+   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+    WeaponSlotIndex 0
+   }
+   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+    WeaponSlotIndex 1
+   }
+   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+    WeaponType None
+    AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+     PivotID "leftshoulderblade"
+     Offset 0.1 -0.2 -0.1
+     Angles 90 -90 90
+     Enabled 0
+    }
+    WeaponSlotType "secondary"
+    WeaponSlotIndex 2
+    HolsteredHidden 1
+   }
+   SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+    Identity Identity "{5584CBC6363C648B}" {
+     VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+      Head "{04F4D8CBA36A534B}Prefabs/Characters/Heads/Head_Black_02.et"
+      Body "{6253161EEAB88EAB}Prefabs/Characters/Basebody/CharacterBasebody_Black_02.et"
+     }
+    }
+   }
+   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+    Slots {
+     LoadoutSlotInfo Watch {
+      AreaType LoadoutWatchArea "{5A888AB252263206}" {
+      }
+     }
+     LoadoutSlotInfo Binoculars {
+      AreaType LoadoutBinocularsArea "{5A888AB25B5772C2}" {
+      }
+     }
+     LoadoutSlotInfo Jacket {
+      Prefab "{C7861F11D5334C0E}prefabs/Characters/Uniforms/Jacket_US_BDU.et"
+     }
+     LoadoutSlotInfo Pants {
+      Prefab "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+     }
+     LoadoutSlotInfo Boots {
+      Prefab "{DAAFD15478BDE1C3}prefabs/Characters/Footwear/CombatBoots_US_01.et"
+     }
+     LoadoutSlotInfo Back {
+      Prefab ""
+     }
+     LoadoutSlotInfo Hat {
+      Prefab ""
+     }
+     LoadoutSlotInfo Vest {
+      Prefab "{4B57C11AA5161760}prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et"
+     }
+    }
+   }
+   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+    InitialInventoryItems {
+     ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+      TargetStorage "Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+      PrefabsToSpawn +{
+      }
+     }
+     ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+      TargetStorage "Prefabs/Characters/Uniforms/Jacket_US_BDU.et"
+      TargetPurpose 64
+      PrefabsToSpawn +{
+      }
+     }
+     ItemsInitConfigurationItem "{5B32CCF6378E4E11}" {
+      TargetStorage "Prefabs/Characters/Uniforms/Jacket_US_BDU.et"
+      PrefabsToSpawn {
+       "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+      }
+     }
+    }
+   }
+   ActionsManagerComponent "{520EA1D2F659CE02}" {
+    ActionContexts {
+     UserActionContext "{520EA1D2F659CE17}" {
+      ContextName "default"
+      Position PointInfo "{520EA1D2F659CE14}" {
+       PivotID "spine3"
+      }
+      Radius 0.5
+     }
+     UserActionContext "{5A26F8E7B44B5FB6}" {
+      ContextName "Head"
+      Position PointInfo "{5A26F8E7C6902D3E}" {
+       PivotID "Head"
+      }
+     }
+     UserActionContext "{5A26F8E7D24ECC4F}" {
+      ContextName "Chest"
+      Position PointInfo "{5A26F8E7EF55078D}" {
+       PivotID "Spine5"
+       Offset 0 0.2 0
+      }
+     }
+     UserActionContext "{5A26F8E3CB279E0C}" {
+      ContextName "LeftLeg"
+      Position PointInfo "{5A26F8E3D249D2D4}" {
+       PivotID "LeftKnee"
+      }
+     }
+     UserActionContext "{5A26F8E3C4CFD585}" {
+      ContextName "RightLeg"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "RightKnee"
+      }
+     }
+     UserActionContext "{5A26F8E368562032}" {
+      ContextName "LowerTorso"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "Spine4"
+      }
+     }
+     UserActionContext "{5A26F8E352327705}" {
+      ContextName "LeftArm"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "LeftForeArm"
+      }
+     }
+     UserActionContext "{5A26F8E3537DEC6C}" {
+      ContextName "RightArm"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "RightForeArm"
+      }
+     }
+    }
+    additionalActions {
+     SCR_BandageUserAction "{520EA1D2F659CE03}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{520EA1D2F659CE00}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup HEAD
+     }
+     SCR_BandageUserAction "{5A26F8E67741AC1E}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup UPPERTORSO
+     }
+     SCR_BandageUserAction "{5A26F8E460F2D5F7}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup LEFTLEG
+     }
+     SCR_BandageUserAction "{5A26F8E47D6EE240}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup RIGHTLEG
+     }
+     SCR_LootDeadBodyAction "{529A9D939CD27B4C}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{529A9D9399F23C21}" {
+       Name "#AR-UserAction_Loot"
+      }
+      CanAggregate 1
+     }
+     SCR_BandageUserAction "{5A26F8E203EF1E0C}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup LEFTARM
+     }
+     SCR_BandageUserAction "{5A26F8E21E230D0D}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup RIGHTARM
+     }
+     SCR_BandageUserAction "{5A26F8E218841208}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup LOWERTORSO
+     }
+    }
+   }
+   CharacterAnimationComponent "{520EA1D2F659C994}" {
+    components {
+     SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
+      "Static Layer" 2
+      "Vehicles Layers" 64
+      "Ladders Layers" 65536
+      LadderDetectMaxDist 1.7
+      "Body Offset Reference Point" PointInfo "{520EA1D2F659C86E}" {
+       PivotID "RightShoulder"
+       Offset 0 -0.144 -0.04
+      }
+      ObstructionLayers 32
+      MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
+       MovementFilterMaxChange 16
+       MaxSprintAngle 0.8
+       OnTurnSpeedReducFactor 0.2
+       OnTurnNoReducAngle 1.57
+       BankingAngleCurve +{
+       }
+       AdjustedStanceChangeTime 0.025
+       AdjustedStanceChangeMaxSpeed 4
+       AdjustedStanceTraceLength 1
+       AdjustedStanceUpperThreshold 1.4
+       AdjustedStanceLowerThreshold 0.7
+       DetectLadders 0
+       MaxEnterLadderAngle 55
+       MaxLadderTangentAngle 110
+       m_fSpeed_Crouch_Fast_Forward 4
+       m_fSpeed_Crouch_Fast_Strafe 3.5
+       m_fSpeed_Prone_Normal_Forward 0.9
+       m_fSpeed_Prone_Normal_Strafe 0.9
+       m_fSpeed_Prone_Fast_Forward 1.1
+       m_fSpeed_Prone_Fast_Strafe 1
+       InnertiaCurve +{
+       }
+       HeadingAdjustmentSpeedReduction +{
+       }
+      }
+     }
+    }
+    AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+    AnimInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+    StartNode "MasterControl"
+    "Collision bone" "collision"
+    "Server LOD" 1
+    "LOD camera distances" +{
+    }
+    DefaultShapeLayer 524288
+    FreshwaterLayer 4194304
+    LayerPreset "Character"
+    IkPoseBonesBlend +{
+    }
+    UnarmedIkPose "{A1A073C1B48F9AEC}anims/anm/player/death/unarmed/p_hands_death.anm"
+    ColliderStand PhysAgentCollisionShapeItem "{5570AA65EEDB5E11}" {
+     Shape Capsule
+     Size 0.75 1.8 0
+     Offset 0.05 0 0.05
+     StepHeight 0.55
+    }
+    ColliderCrouch PhysAgentCollisionShapeItem "{5570AA654A3EFCC7}" {
+     Shape Capsule
+     Size 0.75 1.4 0
+     Offset 0.175 0 0.175
+     DynamicOffset 0 0 0.25
+     StepHeight 0.4
+    }
+    ColliderProne PhysAgentCollisionShapeItem "{5570AA6572F30FD1}" {
+     Size 0.6 0.4 1.8
+     StepHeight 0.25
+    }
+    ColliderJump PhysAgentCollisionShapeItem "{5584FB07EE429335}" {
+     Shape Capsule
+     Size 0.9 1.8 0
+     Offset 0.05 0 0.15
+     DynamicOffset 0 0 0.35
+     StepHeight 0.65
+    }
+    ColliderSwim PhysAgentCollisionShapeItem "{5570AA64C9BCF4F0}" {
+     Size 1 1.35 2
+     StepHeight 1
+    }
+    ColliderLadder PhysAgentCollisionShapeItem "{5570AA64E5170D06}" {
+     Shape Capsule
+     Size 0.4 2 0.4
+     StepHeight 1
+    }
+    ColliderVehicle PhysAgentCollisionShapeItem "{5570AA64926A7260}" {
+     Size 0.4 0.85 0.4
+     StepHeight 0.25
+    }
+    RagdollLayer 1024
+    Definition "{CE761502CE2E1990}Prefabs/Characters/character.ragdoll"
+   }
+   SCR_CharacterCameraHandlerComponent "{520EA1D2F659C98D}" {
+    "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
+    "CameraSet name" "CharacterCameraSet"
+   }
+   RplComponent "{5238B6A9F3442EE7}" {
+   }
+  }
+  coords 130.116 1.001 113.426
+ }
+}
+GenericEntity : "{3386EAA823BE462E}Prefabs/Props/Wrecks/UAZ469_wreck_static.et" {
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{5B3CA16CC6247B4A}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{4DCA5160040E0F0D}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body.emat"
+    }
+   }
+  }
+ }
+ coords 169.853 1.001 110.824
+}
+GenericEntity : "{344ABEB98BB96721}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4_covered.et" {
+ coords 180.47 1.001 150.376
+ angleY 90
+}
+SCR_ChimeraCharacter : "{3726077BE60962FF}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_RTO.et" {
+ coords 134.01 1.001 108.872
+}
+GenericEntity : "{37303CD6D6B5B42D}Prefabs/Compositions/Misc/SubCompositions/VehicleGarbageTireStack_01.et" {
+ coords 153.288 1.001 128.893
+}
+GenericEntity : "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" {
+ coords 124.618 2.019 128.45
+}
+GenericEntity : "{39568880CC1F9CED}prefabs/Systems/Arsenal/ArsenalBoxes/FIA/ArsenalBox_FIA.et" {
+ coords 131.729 1.001 137.645
+}
+GenericEntity : "{443CEFF17E040B11}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58V.et" {
+ coords 128.845 1.001 133.699
+}
+GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ coords 125.984 1.001 116.649
+}
+GenericEntity : "{49ADEF17D3D91B4F}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_A_Soviet.et" {
+ coords 152.967 1.001 123.17
+ {
+  $grp GenericEntity {
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.543 0.095 0.155
+   }
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.354 0.095 0.248
+   }
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.48 0.095 0.255
+   }
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.42 0.095 0.15
+   }
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.346 0.095 0.065
+   }
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.495 0.095 0.012
+   }
+   {
+    components {
+     MeshObject "{5B22A231824DEE3B}" {
+      Object "{93805DF1EFA4F212}Assets/Props/Civilian/BeerBottle_01/BeerBottle_01_Empty.xob"
+     }
+    }
+    coords 2.56 0.124 -0.036
+    angleY 15.267
+    angleZ 90
+   }
+   {
+    components {
+     Hierarchy "{5B248C394F98BF78}" {
+     }
+     ActionsManagerComponent "{5B248C39E8D76353}" {
+      ActionContexts {
+       UserActionContext "{5B248C39EC5DE202}" {
+        ContextName "default"
+        Position PointInfo "{5B248C39907CB86A}" {
+        }
+        Radius 1.087
+       }
+      }
+     }
+     RplComponent "{5B248C394AE0F125}" {
+     }
+    }
+    coords 0.817 1.013 1.355
+   }
+   {
+    coords 1.653 0.837 1.391
+    angleY -37.417
+   }
+   {
+    coords 1.614 0.837 1.507
+    angleY -45.818
+   }
+   {
+    coords 1.833 0.837 1.472
+    angleY -9.676
+   }
+  }
+  GenericEntity : "{0133284E3BDEAEC4}Prefabs/Props/Civilian/Ashtray_01_Full_yellow.et" {
+   coords 0.578 0.995 1.468
+   angleY 0
+  }
+  GenericEntity : "{03B44EA7652D0D17}Prefabs/Props/Military/Radios/RadioStation_R123M_01.et" {
+   coords 1.383 0.995 1.591
+   angleY -165.115
+  }
+  GenericEntity : "{04EEB10214E177B3}Prefabs/Props/Civilian/Notebook_01_Single_MarbleBlack.et" {
+   coords 1.381 0.855 1.446
+   angleY 10.079
+  }
+  GenericEntity : "{0692BB439764BB1E}Prefabs/Props/Civilian/Notebook_01_base.et" {
+   coords 1.788 1.032 1.493
+   angleY 20.707
+  }
+  GenericEntity : "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et" {
+   coords -0.548 0.084 -1.357
+   angleY -180
+  }
+  GenericEntity : "{13891AA1F5833C4A}Prefabs/Props/Civilian/Notebook_01_Double.et" {
+   coords 1.835 0.995 1.467
+   angleY -34.853
+  }
+  GenericEntity : "{160E4E4110803F26}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_FIA.et" {
+   coords -3.554 -0.001 -1.588
+  }
+  $grp GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
+   {
+    coords -2.841 -0.001 -4.782
+    angleY 79.436
+   }
+   {
+    coords -1.408 -0.001 -3.266
+    angleY -179.926
+   }
+  }
+  GenericEntity : "{2F2BBFDA3A2C73D4}prefabs/Props/Civilian/RadioSmall_01_black.et" {
+   coords 2.276 0.424 0.652
+   angleY -124.557
+  }
+  GenericEntity : "{3800AA04761AE0EC}Prefabs/Props/Civilian/Notebook_01_Single_Blue.et" {
+   coords 1.409 0.837 1.411
+   angleY -11.543
+  }
+  GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+   components {
+    SCR_BaseInteractiveLightComponent "{5876E7CF88610C12}" {
+    }
+   }
+   coords 1.051 0.995 1.62
+  }
+  $grp GenericEntity : "{894A1AFDCB71CD0D}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_02.et" {
+   {
+    coords -2.063 0 -3.014
+   }
+   {
+    coords 1.753 0 -3.145
+   }
+  }
+  $grp GenericEntity : "{8E431002132E51BD}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Footprints_01.et" {
+   {
+    coords 1.395 0 -4.021
+    angleY 25.592
+   }
+   {
+    coords -2.406 0 -3.501
+    angleY -122.015
+   }
+  }
+  GenericEntity : "{96C0A7DFEAFAF534}prefabs/Beds/Fia_BedSpawn.et" {
+   coords -2.101 -0.139 -0.587
+   angleY -179.403
+  }
+  $grp GenericEntity : "{97CB57E67481F871}Prefabs/Props/Civilian/Notebook_01_Single_Orange.et" {
+   {
+    coords 1.103 0.855 1.456
+    angleY -20.065
+   }
+   {
+    coords 1.101 0.837 1.461
+    angleY 32.13
+   }
+  }
+  GenericEntity : "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et" {
+   coords 1.234 0.095 1.455
+  }
+  $grp StaticModelEntity : "{B03F9691E961C4CA}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v3.et" {
+   {
+    coords -1.739 -0.465 -1.655
+    angleY 180
+   }
+   {
+    coords 1.102 -0.557 0.233
+    angleX -45
+    angleY 90
+   }
+   {
+    coords 2.849 -0.782 0.233
+    angleX -45
+    angleY 90
+   }
+   {
+    coords 1.778 -0.465 -1.608
+    angleY 180
+   }
+   {
+    coords -1.283 -0.465 1.939
+   }
+   {
+    coords -3.211 -0.465 0.242
+    angleY -90
+   }
+   {
+    coords -1.14 -0.588 0.233
+    angleX 45
+    angleY -90
+   }
+   {
+    coords 3.445 -0.465 0.494
+    angleY 90
+   }
+   {
+    coords 1.861 -0.475 1.854
+    angleY -178.994
+   }
+  }
+  GenericEntity : "{B3C782D689A52412}Prefabs/Props/Civilian/FileOffice_01_Open.et" {
+   components {
+    MeshObject "{5872F0EB7FA40561}" {
+     Object "{60ADAC7826430AC5}Assets/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.xob"
+    }
+   }
+   coords 0.844 0.995 1.368
+   angleY 33.371
+  }
+  GenericEntity : "{B5F4EDE258B8D946}Prefabs/Props/Civilian/FileOffice_01_Single.et" {
+   coords 0.881 0.859 1.404
+   angleY 19.779
+   angleZ -90
+  }
+  $grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_01.et" {
+   {
+    coords 1.528 0 0.094
+    angleY 2.26
+   }
+   {
+    coords -1.291 0 0.094
+    angleY -1.725
+   }
+   {
+    coords 0.105 0 0.094
+    angleY -2.052
+   }
+   {
+    coords -2.638 0 0.094
+    angleY 2.673
+   }
+   {
+    coords 2.931 0 0.094
+    angleY -1.304
+   }
+  }
+  GenericEntity : "{D1D258E682DFC5E2}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/FIA/EquipmentBoxStack_FIA_01_V2_covered.et" {
+   coords 2.564 0.096 0.614
+   angleY 90
+  }
+  GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+   coords -1.453 -0.002 -4.478
+  }
+  GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
+   coords -0.516 0 0.527
+   angleY -90
+  }
+  GenericEntity : "{E56F1B739B9792C4}Prefabs/Props/Civilian/Ashtray_01_Full_green.et" {
+   coords 1.029 0.096 -1.503
+   angleY 0
+  }
+  $grp GenericEntity : "{F0DCB55B7FDB746B}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Footprints_02.et" {
+   {
+    coords 2.177 0 -4.309
+    angleY -50.938
+   }
+   {
+    coords 0.705 0 -2.884
+    angleY 33.621
+   }
+   {
+    coords 2.459 0 -2.838
+    angleY -172.777
+   }
+   {
+    coords -0.827 0 -2.957
+    angleY 97.438
+   }
+  }
+  GenericEntity : "{FCBEDECB2A39B6BC}Prefabs/Props/Military/Generators/GeneratorPortable_USSR_01.et" {
+   coords 1.454 0.086 1.501
+   angleY -90
+  }
+ }
+}
+SCR_ChimeraCharacter : "{4A06C6BB4EFEDB8C}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Medic.et" {
+ coords 142.339 1.001 146.805
+}
+GenericEntity : "{4A0AC6DFF4F6B6D9}prefabs/Trading_Items/Weapon_TradingStation.et" {
+ coords 132.374 1.001 130.32
+}
+GenericEntity : "{5152F05C17652ADB}prefabs/Props/Civilian/PaintCan_01.et" {
+ coords 129.931 1.001 124.285
+}
+SCR_ChimeraCharacter : "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et" {
+ coords 137.585 1.001 119.287
+}
+GenericEntity : "{51F1FAB79D996AC3}prefabs/Trading_Items/Equipment_TradingStation.et" {
+ coords 129.466 1.001 130.244
+}
+SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
+ components {
+  ControllersManagerComponent "{520EA1D2F659CE92}" {
+  }
+  EventHandlerManagerComponent "{530284308E2527DD}" {
+   EventHandlers {
+    BaseEventHandler "{5302843088003484}" {
+     EventName "OnWeaponChanged"
+    }
+    BaseEventHandler "{5302CB86A280126D}" {
+     EventName "OnMuzzleChanged"
+    }
+    BaseEventHandler "{5302CB8699CE0C5C}" {
+     EventName "OnMagazineChanged"
+    }
+    BaseEventHandler "{53047B986210A519}" {
+     EventName "OnAmmoCountChanged"
+    }
+    BaseEventHandler "{5304890B382436DF}" {
+     EventName "OnMagazineCountChanged"
+    }
+    BaseEventHandler "{5304890B3113520D}" {
+     EventName "OnFiremodeChanged"
+    }
+    BaseEventHandler "{5304890B22C5A3DC}" {
+     EventName "OnZeroingChanged"
+    }
+    BaseEventHandler "{5304890B1D193A86}" {
+     EventName "OnADSChanged"
+    }
+    BaseEventHandler "{59388895E3B0CD26}" {
+     EventName "OnWeaponAttachementChanged"
+    }
+    BaseEventHandler "{5952C82EDD8E43E4}" {
+     EventName "OnTurretReload"
+    }
+    BaseEventHandler "{5A5A94D957DB58B7}" {
+     EventName "OnConsciousnessChanged"
+    }
+   }
+  }
+  SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
+   LeftHandPosition EntitySlotInfo "{520EA1D2F659CEAB}" {
+    PivotID "lefthandprop"
+    ChildPivotID "snap_weapon"
+   }
+   RightHandPosition InventoryStorageSlot RightHand {
+    PivotID "RightHandProp"
+    Enabled 0
+    Prefab ""
+   }
+   WaterMovementLimits +{
+   }
+   LeanSpeed 5
+   HoldInputForRoll 1
+  }
+  SignalsManagerComponent "{520EA1D2F659C85A}" {
+  }
+  CharacterSoundComponent "{520EA1D2F659CF84}" {
+   Filenames +{
+   }
+   FoliageCollisionLayer "Foliage"
+  }
+  SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+   Filenames +{
+   }
+  }
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab ""
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+      }
+     }
+    }
+    SCR_TourniquetStorageComponent "{5A68C9C9DF306618}" {
+     StoragePurpose 0
+     InitialStorageSlots {
+      SCR_TourniquetStorageSlot TourniquetSlotLA {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup LEFTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRA {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup RIGHTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotLL {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup LEFTLEG
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRL {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup RIGHTLEG
+      }
+     }
+    }
+   }
+   Attributes ItemAttributeCollection "{52BAC70D641B89B1}" {
+   }
+  }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    AICharacterAimingComponent "{520EA1D2DB109F0C}" {
+     AimingPID 0.3 0 0
+     UsePID 1
+    }
+    AICharacterHeadAimingComponent "{520EA1D2DB109F04}" {
+    }
+    AICharacterMovementComponent "{520EA1D2DB109F01}" {
+    }
+    AIPathfindingComponent "{56349A6F9C02E7A1}" {
+     NavmeshProject "Soldiers"
+    }
+    PerceptionComponent "{54A2CBC75F06064B}" {
+     PositionInfo PointInfo "{520EA1D2DB109AB7}" {
+      PivotID "eyerightpupil"
+      Angles 90 0 0
+     }
+     SensorsList {
+      EyesSensor "{520EA1D2DB109AAD}" {
+       MaxRange 330
+      }
+      EarsSensor "{520EA1D2DB109AA9}" {
+      }
+     }
+     VehicleThreatMinSpeed 0.5
+     VehicleThreatCollisionTime 2.8
+    }
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+    }
+   }
+   Agenttemplate "{B4C861A6DA2F5E05}AI/AIAgents/SCR_ChimeraAIAgentFull.et"
+   OverrideAIBehaviorData "{990D4960E5206005}AI/BehaviorTrees/Chimera/Soldier/Soldier.bt"
+   EnableAI 0
+   PhysicsLayerPreset "CharacterAI"
+  }
+  ActionsPerformerComponent "{520EA1D2F659CE3F}" {
+  }
+  BaseFlattenGrassComponent "{520EA1D2F659CE26}" {
+   ParametersCollection {
+    FlattenGrassParametersObject "{520EA1D2F659CE2C}" {
+     SideX 0.6
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{520EA1D2F659CE28}" {
+     SideX 0.9
+     SideZ 0.7
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{520EA1D2F659CE27}" {
+     SideX 2
+     SideZ 0.8
+     Offset 0
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+   }
+  }
+  BaseWeaponManagerComponent "{520EA1D2F659CE5D}" {
+   SlingPosition PointInfo "{548A2344DE7AA0F2}" {
+    PivotID "stomach3"
+    Angles 0 140 -90
+   }
+  }
+  CharacterAimingComponent "{520EA1D2F659CE42}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CE4B}" {
+    signalsSuffix "Weapon"
+   }
+   LimitsHoriz -80 80
+   LimitsVert -80 80
+   AimingMaxSpeed 0.7 4
+   AimingSpeedControls 1.5 0.75
+   ProneLimitsVertical -40 20
+   AimModifiers {
+    OneHandAimModifier "{588EB4BA84534585}" {
+    }
+   }
+   Shoulder PointInfo "{5A3EED5F66F7AF9A}" {
+    PivotID "RightShoulder"
+   }
+  }
+  CharacterHeadAimingComponent "{520EA1D2F659CF99}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CF9E}" {
+    signalsSuffix "Head"
+   }
+   ProvideAimingType Head
+   LimitsHoriz -360 360
+   LimitsVert -360 360
+   AimingMaxSpeed 10 5
+   AimingSpeedControls 1.5 0.75
+   AimPivot PointInfo "{5990A4DF23E27E7E}" {
+    PivotID "Neck1"
+   }
+   PitchReduction +{
+   }
+  }
+  CharacterPerceivableComponent "{566CCE2397E28600}" {
+   "Additional aim points" {
+    AimPoint "{54D0A72DBE3FF822}" {
+     AimPointPosition PointInfo "{520EA1D2F659C809}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.5
+    }
+    AimPoint "{54D0A72DBE3FF84A}" {
+     AimPointPosition PointInfo "{520EA1D2F659C809}" {
+      PivotID "Head"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.25
+     AimPointType Weak
+    }
+    AimPoint "{5A1EF5F9AB26B70A}" {
+     AimPointPosition PointInfo "{5A1EF5F9A71AA60E}" {
+      PivotID "Hips"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.4
+     AimPointType Incapacitate
+    }
+   }
+   UnitType Infantry
+  }
+  ClimbingDataComponent "{5304A49E934A0758}" {
+   CanClimbOver 0
+  }
+  ColliderHistoryComponent "{566C7EDBB7BCC719}" {
+  }
+  EquipedWeaponStorageComponent "{520EA1D2DB118C70}" {
+   StoragePurpose 2
+  }
+  FactionAffiliationComponent "{520EC9618276DF23}" {
+   "faction affiliation" "USSR"
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+  }
+  Hierarchy "{520EA1D2F659C818}" {
+  }
+  SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+   InfoDisplays {
+    SCR_WeaponInfo "{520EA1D2DB11811A}" {
+     m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
+     m_sContentWidget "m_WeaponInfoPanel"
+     m_bAdaptiveOpacity 1
+    }
+    SCR_WeaponSwitchingBaseUI "{55F6C495E5D679A0}" {
+     VisibleAtParent 1
+     m_LayoutPath "{2A1E1E023967C5A8}UI/layouts/HUD/QuickSelectBar.layout"
+     m_eLayer OVERLAY
+    }
+   }
+  }
+  SCR_CallsignCharacterComponent "{55BADB0EB09CC77E}" {
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" : "{73C708A20F8B22E6}Prefabs/Characters/Core/DamageManager_Character_Base.ct" {
+  }
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+  }
+  SCR_CharacterRegistrationComponent "{5216D6E4AC68563B}" {
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   StaminaDrainRun -0.008
+   StaminaDrainSprint -0.016
+   EncumbranceDrainMax -0.1
+   BreathNormalFrequency 0.45
+   BreathExhaustedFrequency 1.1
+   m_fStaminaDrainThreshold 100
+   m_EventParams MetabolismEventParams "{520EA1D2F659C825}" {
+    m_fCaloriesDrain 2
+    m_fHydrationDrain 2
+    m_fEnergyDrain 4
+   }
+  }
+  SCR_CharacterVicinityComponent "{529A70D96D401B33}" {
+   DiscoveryRadius 3
+  }
+  SCR_CompartmentAccessComponent "{52249C842F1EF1F4}" {
+   CompartmentLayerPreset "CharNoCollide"
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_Rifleman"
+    m_Image "{F001167B51DF1FEA}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Base.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels +{
+    }
+    m_aAutoLabels {
+    }
+   }
+  }
+  SCR_FuelNozzleHolderComponent "{52368400919641C0}" {
+  }
+  SCR_GadgetManagerComponent "{520EA1D2DB118DF3}" {
+  }
+  SCR_MeleeComponent "{520EA1D2F659C85E}" {
+  }
+  SCR_PreviewEntityComponent "{55EE4A2A78856F12}" {
+   m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
+  }
+  SCR_VoNComponent "{520EA1D2F659C856}" {
+   "Speaking Range" 50
+   Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
+  }
+  TagComponent "{5864D980062191CA}" {
+   "Tag categories" 1
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   isThrowable 1
+   WeaponType None
+   AttachType InventoryStorageSlot "{416B67397BB4F7EE}" {
+    PivotID "LeftArmVolume"
+    Enabled 0
+   }
+   WeaponSlotType "grenade"
+   WeaponSlotIndex 3
+  }
+  CharacterGrenadeSlotComponent "{5A6CDA0CCF43068E}" {
+   isThrowable 1
+   WeaponType None
+   AttachType InventoryStorageSlot throwable {
+    PivotID "LeftArmVolume"
+    Enabled 0
+   }
+   WeaponSlotType "throwable"
+   WeaponSlotIndex 4
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponSlotIndex 0
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponSlotIndex 1
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponType None
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "leftshoulderblade"
+    Offset 0.1 -0.2 -0.1
+    Angles 90 -90 90
+    Enabled 0
+   }
+   WeaponSlotType "secondary"
+   WeaponSlotIndex 2
+   HolsteredHidden 1
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+     Head "{2F3375E395C46AB3}Prefabs/Characters/Heads/Head_BaseBody_01.et"
+     Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+    }
+    SoundIdentity SoundIdentity "{56E6D945D8F79290}" {
+     VoiceID 100
+    }
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Back {
+     PivotID "scene_root"
+     Name "Backpack"
+     AreaType LoadoutBackpackArea "{5A68E3332875E6B7}" {
+     }
+    }
+    LoadoutSlotInfo Watch {
+     AreaType LoadoutWatchArea "{5A888AB252263206}" {
+     }
+    }
+    LoadoutSlotInfo Binoculars {
+     AreaType LoadoutBinocularsArea "{5A888AB25B5772C2}" {
+     }
+    }
+    LoadoutSlotInfo Vest {
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{C7923961D7235D70}prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{9F546CCA2582D16F}prefabs/Characters/Uniforms/Jacket_M88.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{DCF980831E880F6A}prefabs/Characters/Uniforms/Pants_M88.et"
+    }
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC173771408E}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
+    }
+    ItemsInitConfigurationItem "{5A24CC173897B74F}" {
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M88.et"
+     PrefabsToSpawn + {
+      "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   ActionContexts {
+    UserActionContext "{520EA1D2F659CE17}" {
+     ContextName "default"
+     Position PointInfo "{520EA1D2F659CE14}" {
+      PivotID "spine3"
+     }
+     Radius 0.5
+    }
+    UserActionContext "{5A26F8E7B44B5FB6}" {
+     ContextName "Head"
+     Position PointInfo "{5A26F8E7C6902D3E}" {
+      PivotID "Head"
+     }
+    }
+    UserActionContext "{5A26F8E7D24ECC4F}" {
+     ContextName "Chest"
+     Position PointInfo "{5A26F8E7EF55078D}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+    }
+    UserActionContext "{5A26F8E3CB279E0C}" {
+     ContextName "LeftLeg"
+     Position PointInfo "{5A26F8E3D249D2D4}" {
+      PivotID "LeftKnee"
+     }
+    }
+    UserActionContext "{5A26F8E3C4CFD585}" {
+     ContextName "RightLeg"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "RightKnee"
+     }
+    }
+    UserActionContext "{5A26F8E368562032}" {
+     ContextName "LowerTorso"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "Spine4"
+     }
+    }
+    UserActionContext "{5A26F8E352327705}" {
+     ContextName "LeftArm"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "LeftForeArm"
+     }
+    }
+    UserActionContext "{5A26F8E3537DEC6C}" {
+     ContextName "RightArm"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "RightForeArm"
+     }
+    }
+   }
+   additionalActions {
+    SCR_BandageUserAction "{520EA1D2F659CE03}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{520EA1D2F659CE00}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup HEAD
+    }
+    SCR_BandageUserAction "{5A26F8E67741AC1E}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup UPPERTORSO
+    }
+    SCR_BandageUserAction "{5A26F8E460F2D5F7}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTLEG
+    }
+    SCR_BandageUserAction "{5A26F8E47D6EE240}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTLEG
+    }
+    SCR_LootDeadBodyAction "{529A9D939CD27B4C}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{529A9D9399F23C21}" {
+      Name "#AR-UserAction_Loot"
+     }
+     CanAggregate 1
+    }
+    SCR_BandageUserAction "{5A26F8E203EF1E0C}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTARM
+    }
+    SCR_BandageUserAction "{5A26F8E21E230D0D}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTARM
+    }
+    SCR_BandageUserAction "{5A26F8E218841208}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LOWERTORSO
+    }
+   }
+  }
+  CharacterAnimationComponent "{520EA1D2F659C994}" {
+   components {
+    SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
+     "Static Layer" 2
+     "Vehicles Layers" 64
+     "Ladders Layers" 65536
+     LadderDetectMaxDist 1.7
+     "Body Offset Reference Point" PointInfo "{520EA1D2F659C86E}" {
+      PivotID "RightShoulder"
+      Offset 0 -0.144 -0.04
+     }
+     ObstructionLayers 32
+     MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
+      MovementFilterMaxChange 16
+      MaxSprintAngle 0.8
+      OnTurnSpeedReducFactor 0.2
+      OnTurnNoReducAngle 1.57
+      BankingAngleCurve +{
+      }
+      AdjustedStanceChangeTime 0.025
+      AdjustedStanceChangeMaxSpeed 4
+      AdjustedStanceTraceLength 1
+      AdjustedStanceUpperThreshold 1.4
+      AdjustedStanceLowerThreshold 0.7
+      DetectLadders 0
+      MaxEnterLadderAngle 55
+      MaxLadderTangentAngle 110
+      m_fSpeed_Crouch_Fast_Forward 4
+      m_fSpeed_Crouch_Fast_Strafe 3.5
+      m_fSpeed_Prone_Normal_Forward 0.9
+      m_fSpeed_Prone_Normal_Strafe 0.9
+      m_fSpeed_Prone_Fast_Forward 1.1
+      m_fSpeed_Prone_Fast_Strafe 1
+      InnertiaCurve +{
+      }
+      HeadingAdjustmentSpeedReduction +{
+      }
+     }
+    }
+   }
+   AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+   AnimInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+   StartNode "MasterControl"
+   "Collision bone" "collision"
+   "Server LOD" 1
+   "LOD camera distances" +{
+   }
+   DefaultShapeLayer 524288
+   FreshwaterLayer 4194304
+   LayerPreset "Character"
+   IkPoseBonesBlend +{
+   }
+   UnarmedIkPose "{A1A073C1B48F9AEC}anims/anm/player/death/unarmed/p_hands_death.anm"
+   ColliderStand PhysAgentCollisionShapeItem "{5570AA65EEDB5E11}" {
+    Shape Capsule
+    Size 0.75 1.8 0
+    Offset 0.05 0 0.05
+    StepHeight 0.55
+   }
+   ColliderCrouch PhysAgentCollisionShapeItem "{5570AA654A3EFCC7}" {
+    Shape Capsule
+    Size 0.75 1.4 0
+    Offset 0.175 0 0.175
+    DynamicOffset 0 0 0.25
+    StepHeight 0.4
+   }
+   ColliderProne PhysAgentCollisionShapeItem "{5570AA6572F30FD1}" {
+    Size 0.6 0.4 1.8
+    StepHeight 0.25
+   }
+   ColliderJump PhysAgentCollisionShapeItem "{5584FB07EE429335}" {
+    Shape Capsule
+    Size 0.9 1.8 0
+    Offset 0.05 0 0.15
+    DynamicOffset 0 0 0.35
+    StepHeight 0.65
+   }
+   ColliderSwim PhysAgentCollisionShapeItem "{5570AA64C9BCF4F0}" {
+    Size 1 1.35 2
+    StepHeight 1
+   }
+   ColliderLadder PhysAgentCollisionShapeItem "{5570AA64E5170D06}" {
+    Shape Capsule
+    Size 0.4 2 0.4
+    StepHeight 1
+   }
+   ColliderVehicle PhysAgentCollisionShapeItem "{5570AA64926A7260}" {
+    Size 0.4 0.85 0.4
+    StepHeight 0.25
+   }
+   RagdollLayer 1024
+   Definition "{CE761502CE2E1990}Prefabs/Characters/character.ragdoll"
+  }
+  SCR_CharacterCameraHandlerComponent "{520EA1D2F659C98D}" {
+   "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
+   "CameraSet name" "CharacterCameraSet"
+  }
+  RplComponent "{5238B6A9F3442EE7}" {
+  }
+ }
+ coords 132.979 1.001 117.281
+}
+GenericEntity : "{54A1C6EBC68CF49E}prefabs/Trading_Items/Wood_TradingStation.et" {
+ coords 128.135 1.001 130.131
+}
+StaticModelEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+ coords 173.973 0.001 153.507
+}
+Vehicle M3 : "{5674FAEB9AB7BDD0}Prefabs/Vehicles/Wheeled/M998/M998.et" {
+ coords 162.677 1.001 105.232
+}
+SCR_ChimeraCharacter : "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et" {
+ coords 143.709 1.001 109.361
+}
+SCR_DestructibleEntity : "{5E99DD1E8377D27F}prefabs/Props/Bins/TrashBin_02.et" {
+ coords 130.718 1.001 124.338
+}
+SCR_ChimeraCharacter : "{6058AB54781A0C52}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et" {
+ coords 145.278 1.001 109.167
+}
+GenericEntity : "{654B33C808C4D93E}Prefabs/Props/Wrecks/M151A2_wreck_static.et" {
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{5B3CA16CBB638A5D}" {
+     SourceMaterial "M151A2_Body_Wreck"
+     AssignedMaterial "{51965F0CF2FEE72E}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Body.emat"
+    }
+   }
+  }
+ }
+ coords 166.262 1.001 110.879
+}
+$grp GenericEntity : "{6CD34D6526429EEC}Prefabs/Props/Furniture/BarTable_01.et" {
+ {
+  coords 124.797 1.001 128.709
+  angleY -90
+ }
+ {
+  coords 124.797 1.001 131.29
+  angleY -90
+ }
+ {
+  coords 124.797 1.001 134.079
+  angleY -90
+ }
+}
+GenericEntity : "{6D1606775A2FBC48}prefabs/Items/Other/WoodPieces.et" {
+ coords 124.803 2.016 133.366
+}
+$grp GenericEntity : "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et" {
+ {
+  coords 41.183 1.001 161.157
+ }
+ {
+  coords 126.989 1.001 129.529
+ }
+ {
+  coords 124.754 2.019 128.964
+ }
+ {
+  coords 156.413 2.073 157.511
+ }
+}
+$grp GenericEntity : "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" {
+ {
+  coords 124.924 2.019 128.749
+ }
+ {
+  coords 120.552 1.001 133.306
+ }
+}
+GenericEntity : "{6FC9E85153AE41B1}Prefabs/Props/Civilian/WoodKindling_Crate_01.et" {
+ coords 127.633 1.001 124.155
+ angleY 0
+}
+GenericEntity : "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et" {
+ components {
+  EquipedLoadoutStorageComponent "{5B290A816264DC4C}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{5B290A817A5E029A}" {
+    ItemDisplayName UIInfo "{5B290A8E88EB4A9A}" {
+     Name "wallet"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5B290A8E8AE0B193}" {
+     Weight 0.1
+     SizeSetupStrategy Manual
+     ItemDimensions 2 2 2
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5B290A8E91E88F38}" {
+     }
+    }
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+   UseCapacityCoefficient 0
+   MaxItemSize 2 2 2
+  }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Enabled 0
+  }
+  MeshObject "{509AD57A3450CC4D}" {
+   Object "{98CD0A123E772237}Assets/Props/Furniture/Chest_01/Chest_01.xob"
+   LODFactors {
+    1 1 1 1
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5B290A84843CF338}" {
+   Attributes SCR_ItemAttributeCollection "{5B290A84875FE744}" {
+    ItemDisplayName UIInfo "{5B290A849955F603}" {
+     Name "Wallet"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5B290A84905A3E90}" {
+     Weight 0.1
+     SizeSetupStrategy Manual
+     ItemDimensions 100 100 100
+     ItemVolume 100
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5B290A84B06ECFB0}" {
+      IsPerspectiveCamera 0
+      IsDynamicObject 1
+      PreviewWornModel 1
+     }
+    }
+    CommonItemType "NONE"
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+   Priority 8
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 10000
+   m_fMaxWeight 100
+  }
+  SCR_WristwatchComponent "{55869E76C5599628}" {
+   Enabled 0
+  }
+ }
+ coords 126.515 1.001 125.975
+ scale 0.11
+}
+GenericEntity : "{709787683A87DAC5}prefabs/Trading_Items/Ammunition_TradingStation.et" {
+ coords 130.148 1.001 131.211
+}
+StaticModelEntity : "{732A335C72D8ADE2}Prefabs/Props/Military/Sandbags/Sandbag_01_bunker_burlap_foundation.et" {
+ coords 173.867 1.001 151.775
+}
+Projectile : "{76E5D0B654F1D05D}prefabs/Weapons/Explosives/UGL_Smoke.et" {
+ coords 124.632 2.019 127.84
+}
+GenericEntity : "{7C42934FDC952EDF}Prefabs/Compositions/Misc/SubCompositions/VehicleGarbagePile_03.et" {
+ coords 151.375 1.001 131.154
+}
+GenericEntity : "{7F95D831CA586F06}prefabs/Compositions/Misc/SubCompositions/CableReelWooden_Cluttered_USSR_01.et" {
+ coords 177.722 1.001 149.652
+ angleY 64.652
+}
+SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
+ coords 142.241 1.001 109.031
+}
+SCR_ChimeraCharacter : "{84029128FA6F6BB9}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_GL.et" {
+ coords 141.131 1.001 109.082
+}
+SCR_DestructibleEntity : "{8A4C9D5B12F83209}Prefabs/Compositions/Misc/SubCompositions/BarbedCoil_Cluttered_USSR_01.et" {
+ coords 169.927 0.001 150.956
+ angleY 53.63
+}
+GenericEntity : "{8BB5855208F77724}prefabs/Props/Furniture/BenchWooden_01.et" {
+ coords 11.155 0.666 11.661
+}
+GenericEntity : "{8F05D427252644F8}prefabs/Props/Civilian/Suitcase_01.et" {
+ coords 128.55 1.001 124.131
+ angleY 0
+}
+$grp GenericEntity : "{9751583B234C4202}Prefabs/Compositions/Misc/SubCompositions/Sandbag_MG_USSR_02_PKM.et" {
+ {
+  coords 167.519 1.001 153.393
+ }
+ {
+  coords 180.356 1.001 153.393
+ }
+}
+Vehicle UAZ469_base1 : "{99F1610551D54D17}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_base.et" {
+ coords 137.003 1.001 130.284
+}
+GenericEntity : "{AA8102F7B249EBCE}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R01_bottom.et" {
+ coords 133.055 1.001 131.449
+}
+SCR_ChimeraCharacter : "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et" {
+ coords 136.524 1.001 116.374
+}
+$grp StaticModelEntity : "{AE28D47CF26E91EA}Prefabs/Props/Military/Fortification/CzechHedgehog_01_rusty.et" {
+ {
+  coords 166.216 0.001 155.154
+ }
+ {
+  coords 170.834 0.001 155.154
+  angleY 58.068
+ }
+ {
+  coords 176.58 0.001 155.295
+  angleY -154.516
+ }
+ {
+  coords 183.131 0.001 154.993
+  angleY 122.881
+ }
+}
+$grp GenericEntity : "{B31A14BC1A0E7776}Prefabs/Props/Military/Sandbags/Sandbag_01_round_burlap.et" {
+ {
+  coords 182.807 1.001 153.166
+  angleY 35.155
+ }
+ {
+  coords 165.264 1.001 153.072
+  angleY -39.845
+ }
+}
+$grp GenericEntity : "{B53350B377FE1864}Prefabs/Structures/Military/Camps/Canvas_Covers/CanvasCover_Small_A_Base.et" {
+ {
+  coords 168.715 1.001 150.418
+  angleY 90.211
+ }
+ {
+  coords 179.083 1.001 150.38
+  angleY 90.211
+ }
+}
+GenericEntity : "{B6B2AD00E71AD0B5}Prefabs/Props/Industrial/BarrelMetal_01_Base.et" {
+ coords 129.475 1.001 134.37
+}
+$grp GenericEntity : "{BBAD313E424466CF}Prefabs/Props/Forest/WoodPile/WoodLog_01_C.et" {
+ {
+  coords 175.894 1.769 155.18
+  angleX -16.218
+  angleY -86.27
+  angleZ -1.043
+ }
+ {
+  coords 171.056 1.801 154.849
+  angleX 17.227
+  angleY -83.113
+  angleZ 0.064
+ }
+ {
+  coords 173.559 1.933 155.201
+  angleX 1.285
+  angleY -93.623
+  angleZ -0.461
+ }
+ {
+  coords 181.488 1.757 155.38
+  angleX 16.011
+  angleY 74.829
+  angleZ -2.96
+ }
+ {
+  coords 181.614 1.734 154.988
+  angleX 9.524
+  angleY 88.814
+  angleZ 0.95
+ }
+ {
+  coords 179.039 2.124 155.265
+  angleX -9.094
+  angleY 91.241
+  angleZ -0.341
+ }
+}
+GenericEntity : "{BD5EA6D53662AE0D}prefabs/Trading_Items/Medical_Bag_tradingBase.et" {
+ coords 131.041 1.001 131.398
+}
+$grp GenericEntity : "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et" {
+ {
+  coords 177.701 1.001 153.507
+ }
+ {
+  coords 170.061 1.001 153.507
+ }
+}
+$grp GenericEntity : "{BE99D77D1155B127}prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et" {
+ {
+  coords 142.318 1.001 128.636
+ }
+ {
+  components {
+   SCR_FactionAffiliationComponent "{5A50E7655452A21D}" {
+    "faction affiliation" ""
+   }
+   SCR_SlotCompositionComponent "{56F2C6D1431AD9A6}" {
+   }
+  }
+  coords 142.529 1.001 125.61
+ }
+}
+GenericEntity : "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_FIA_01.et" {
+ coords 33.848 1.001 166.749
+}
+GenericEntity : "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et" {
+ coords 124.981 2.016 128.085
+}
+$grp GenericEntity : "{C1977A326F2AA011}Prefabs/Structures/Signs/Military/SignCheckpoint_01_stop.et" {
+ {
+  coords 176.18 1 156.586
+ }
+ {
+  coords 170.969 1 156.586
+  angleY 10.017
+ }
+ {
+  coords 165.895 1 156.518
+  angleY -23.849
+ }
+ {
+  coords 183.728 1 156.421
+  angleY 47.779
+ }
+}
+$grp SCR_DestructibleEntity : "{C289F5D866F0E46E}Prefabs/Structures/Walls/BarbedWire/BarbedTape_01/BarbedTape_01_base.et" {
+ {
+  coords 172.111 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 174.143 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 175.927 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 177.627 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 179.17 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 181.082 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 182.942 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 170.183 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 168.267 0.001 155.785
+  angleY 90
+ }
+ {
+  coords 166.351 0.001 155.785
+  angleY 90
+ }
+}
+GenericEntity : "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" {
+ components {
+  SCR_ConsumableItemComponent "{5943631460899505}" {
+   m_ConsumableEffect SCR_ConsumableEffectHealthItems "{594363147CC4C6BE}" {
+   }
+  }
+ }
+ coords 139.916 1.001 78.687
+}
+SCR_ChimeraCharacter : "{C470A532057E57D3}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Rifleman.et" {
+ components {
+  ControllersManagerComponent "{520EA1D2F659CE92}" {
+  }
+  EventHandlerManagerComponent "{530284308E2527DD}" {
+   EventHandlers {
+    BaseEventHandler "{5302843088003484}" {
+     EventName "OnWeaponChanged"
+    }
+    BaseEventHandler "{5302CB86A280126D}" {
+     EventName "OnMuzzleChanged"
+    }
+    BaseEventHandler "{5302CB8699CE0C5C}" {
+     EventName "OnMagazineChanged"
+    }
+    BaseEventHandler "{53047B986210A519}" {
+     EventName "OnAmmoCountChanged"
+    }
+    BaseEventHandler "{5304890B382436DF}" {
+     EventName "OnMagazineCountChanged"
+    }
+    BaseEventHandler "{5304890B3113520D}" {
+     EventName "OnFiremodeChanged"
+    }
+    BaseEventHandler "{5304890B22C5A3DC}" {
+     EventName "OnZeroingChanged"
+    }
+    BaseEventHandler "{5304890B1D193A86}" {
+     EventName "OnADSChanged"
+    }
+    BaseEventHandler "{59388895E3B0CD26}" {
+     EventName "OnWeaponAttachementChanged"
+    }
+    BaseEventHandler "{5952C82EDD8E43E4}" {
+     EventName "OnTurretReload"
+    }
+    BaseEventHandler "{5A5A94D957DB58B7}" {
+     EventName "OnConsciousnessChanged"
+    }
+   }
+  }
+  SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
+   LeftHandPosition EntitySlotInfo "{520EA1D2F659CEAB}" {
+    PivotID "lefthandprop"
+    ChildPivotID "snap_weapon"
+   }
+   RightHandPosition InventoryStorageSlot RightHand {
+    PivotID "RightHandProp"
+    Enabled 0
+    Prefab ""
+   }
+   WaterMovementLimits +{
+   }
+   LeanSpeed 5
+   HoldInputForRoll 1
+  }
+  SignalsManagerComponent "{520EA1D2F659C85A}" {
+  }
+  CharacterSoundComponent "{520EA1D2F659CF84}" {
+   Filenames +{
+   }
+   FoliageCollisionLayer "Foliage"
+  }
+  SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+   Filenames +{
+   }
+   StaminaThresholdMinimum 0.05
+  }
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab ""
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+      }
+     }
+    }
+    SCR_TourniquetStorageComponent "{5A68C9C9DF306618}" {
+     StoragePurpose 0
+     InitialStorageSlots {
+      SCR_TourniquetStorageSlot TourniquetSlotLA {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup LEFTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRA {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup RIGHTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotLL {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup LEFTLEG
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRL {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup RIGHTLEG
+      }
+     }
+    }
+   }
+  }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    AICharacterAimingComponent "{520EA1D2DB109F0C}" {
+     AimingPID 0.3 0 0
+     UsePID 1
+    }
+    AICharacterHeadAimingComponent "{520EA1D2DB109F04}" {
+    }
+    AICharacterMovementComponent "{520EA1D2DB109F01}" {
+    }
+    AIPathfindingComponent "{56349A6F9C02E7A1}" {
+     NavmeshProject "Soldiers"
+    }
+    PerceptionComponent "{54A2CBC75F06064B}" {
+     PositionInfo PointInfo "{520EA1D2DB109AB7}" {
+      PivotID "eyerightpupil"
+      Angles 90 0 0
+     }
+     SensorsList {
+      EyesSensor "{520EA1D2DB109AAD}" {
+       MaxRange 330
+      }
+      EarsSensor "{520EA1D2DB109AA9}" {
+      }
+     }
+     VehicleThreatMinSpeed 0.5
+     VehicleThreatCollisionTime 2.8
+    }
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+    }
+   }
+   Agenttemplate "{B4C861A6DA2F5E05}AI/AIAgents/SCR_ChimeraAIAgentFull.et"
+   OverrideAIBehaviorData "{990D4960E5206005}AI/BehaviorTrees/Chimera/Soldier/Soldier.bt"
+   EnableAI 0
+   PhysicsLayerPreset "CharacterAI"
+  }
+  ActionsPerformerComponent "{520EA1D2F659CE3F}" {
+  }
+  BaseFlattenGrassComponent "{520EA1D2F659CE26}" {
+   ParametersCollection {
+    FlattenGrassParametersObject "{520EA1D2F659CE2C}" {
+     SideX 0.6
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{520EA1D2F659CE28}" {
+     SideX 0.9
+     SideZ 0.7
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{520EA1D2F659CE27}" {
+     SideX 2
+     SideZ 0.8
+     Offset 0
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+   }
+  }
+  BaseWeaponManagerComponent "{520EA1D2F659CE5D}" {
+   DefaultWeaponIndex 0
+  }
+  CharacterAimingComponent "{520EA1D2F659CE42}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CE4B}" {
+    signalsSuffix "Weapon"
+   }
+   LimitsHoriz -80 80
+   LimitsVert -80 80
+   AimingMaxSpeed 0.7 4
+   AimingSpeedControls 1.5 0.75
+   ProneLimitsVertical -40 20
+   AimModifiers {
+    OneHandAimModifier "{588EB4BA84534585}" {
+    }
+   }
+   Shoulder PointInfo "{5A3EED5F66F7AF9A}" {
+    PivotID "RightShoulder"
+   }
+  }
+  CharacterHeadAimingComponent "{520EA1D2F659CF99}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CF9E}" {
+    signalsSuffix "Head"
+   }
+   ProvideAimingType Head
+   LimitsHoriz -360 360
+   LimitsVert -360 360
+   AimingMaxSpeed 10 5
+   AimingSpeedControls 1.5 0.75
+   AimPivot PointInfo "{5990A4DF23E27E7E}" {
+    PivotID "Neck1"
+   }
+   PitchReduction +{
+   }
+  }
+  CharacterPerceivableComponent "{566CCE2397E28600}" {
+   "Additional aim points" {
+    AimPoint "{54D0A72DBE3FF822}" {
+     AimPointPosition PointInfo "{520EA1D2F659C809}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.5
+    }
+    AimPoint "{54D0A72DBE3FF84A}" {
+     AimPointPosition PointInfo "{520EA1D2F659C809}" {
+      PivotID "Head"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.25
+     AimPointType Weak
+    }
+    AimPoint "{5A1EF5F9AB26B70A}" {
+     AimPointPosition PointInfo "{5A1EF5F9A71AA60E}" {
+      PivotID "Hips"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.4
+     AimPointType Incapacitate
+    }
+   }
+   UnitType Infantry
+  }
+  ClimbingDataComponent "{5304A49E934A0758}" {
+   CanClimbOver 0
+  }
+  ColliderHistoryComponent "{566C7EDBB7BCC719}" {
+  }
+  EquipedWeaponStorageComponent "{520EA1D2DB118C70}" {
+   StoragePurpose 2
+  }
+  FactionAffiliationComponent "{555C98D1CD949F3E}" {
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+  }
+  Hierarchy "{520EA1D2F659C818}" {
+  }
+  SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+   InfoDisplays {
+    SCR_WeaponInfo "{520EA1D2DB11811A}" {
+     m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
+     m_sContentWidget "m_WeaponInfoPanel"
+     m_bAdaptiveOpacity 1
+    }
+    SCR_WeaponSwitchingBaseUI "{55F6C495E5D679A0}" {
+     VisibleAtParent 1
+     m_LayoutPath "{2A1E1E023967C5A8}UI/layouts/HUD/QuickSelectBar.layout"
+     m_eLayer OVERLAY
+    }
+   }
+  }
+  SCR_CallsignCharacterComponent "{55BADB0EB09CC77E}" {
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" : "{73C708A20F8B22E6}Prefabs/Characters/Core/DamageManager_Character_Base.ct" {
+  }
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+  }
+  SCR_CharacterRegistrationComponent "{5216D6E4AC68563B}" {
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   StaminaDrainRun -0.008
+   StaminaDrainSprint -0.016
+   EncumbranceDrainMax -0.1
+   BreathNormalFrequency 0.45
+   BreathExhaustedFrequency 1.1
+   m_fStaminaDrainThreshold 100
+   m_EventParams MetabolismEventParams "{520EA1D2F659C825}" {
+    m_fCaloriesDrain 2
+    m_fHydrationDrain 2
+    m_fEnergyDrain 4
+   }
+  }
+  SCR_CharacterVicinityComponent "{529A70D96D401B33}" {
+   DiscoveryRadius 3
+  }
+  SCR_CompartmentAccessComponent "{52249C842F1EF1F4}" {
+   CompartmentLayerPreset "CharNoCollide"
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_Rifleman"
+    Icon "{AE53796BC5D21A08}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Rifleman.edds"
+    IconSetName ""
+    m_Image "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
+    m_sFaction "FIA"
+    m_aAutoLabels +{
+    }
+   }
+  }
+  SCR_FuelNozzleHolderComponent "{52368400919641C0}" {
+  }
+  SCR_GadgetManagerComponent "{520EA1D2DB118DF3}" {
+  }
+  SCR_MeleeComponent "{520EA1D2F659C85E}" {
+  }
+  SCR_PreviewEntityComponent "{55EE4A2A78856F12}" {
+   m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
+  }
+  SCR_RadialMenuComponent "{555C98D1CD949F58}" {
+   m_RadialMenuVisuals SCR_RadialMenuVisualsWeapons "{555C98D1CD949F5E}" {
+    m_rMissingIconPrimary "{E6BDE9DF9368C48C}UI/Textures/WeaponIcons/weapon_AK74.edds"
+    m_rMissingIconSecondary "{A299AF13A9949AE0}UI/Textures/WeaponIcons/weapon_PM.edds"
+    m_rMissingIconGrenade "{29FA998781E23B91}UI/Textures/WeaponIcons/grenade_RGD-5.edds"
+   }
+  }
+  SCR_VoNComponent "{520EA1D2F659C856}" {
+   "Speaking Range" 50
+   Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
+  }
+  TagComponent "{5864D980062191CA}" {
+   "Tag categories" 1
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
+  }
+  CharacterGrenadeSlotComponent "{5A6CDA0CCF43068E}" {
+   isThrowable 1
+   WeaponType None
+   AttachType InventoryStorageSlot throwable {
+    PivotID "LeftArmVolume"
+    Enabled 0
+   }
+   WeaponSlotType "throwable"
+   WeaponSlotIndex 4
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponSlotIndex 1
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponType None
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "leftshoulderblade"
+    Offset 0.1 -0.2 -0.1
+    Angles 90 -90 90
+    Enabled 0
+   }
+   WeaponSlotType "secondary"
+   WeaponSlotIndex 2
+   HolsteredHidden 1
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+     Head "{EAF055495BA85CA1}Prefabs/Characters/Heads/Head_White_02.et"
+    }
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Back {
+     PivotID "scene_root"
+     Name "Backpack"
+     AreaType LoadoutBackpackArea "{5A68E3332875E6B7}" {
+     }
+    }
+    LoadoutSlotInfo Watch {
+     AreaType LoadoutWatchArea "{5A888AB252263206}" {
+     }
+    }
+    LoadoutSlotInfo Binoculars {
+     AreaType LoadoutBinocularsArea "{5A888AB25B5772C2}" {
+     }
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{C7923961D7235D70}prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{BE19A15F1073E7BD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_black.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{557090130BCD36B7}" {
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{5A24CC1119C7787F}" {
+    }
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{5984BDEE297E2A27}" {
+     PrefabsToSpawn +{
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    SCR_BandageUserAction "{520EA1D2F659CE03}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{520EA1D2F659CE00}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup HEAD
+    }
+    SCR_BandageUserAction "{5A26F8E67741AC1E}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup UPPERTORSO
+    }
+    SCR_BandageUserAction "{5A26F8E460F2D5F7}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTLEG
+    }
+    SCR_BandageUserAction "{5A26F8E47D6EE240}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTLEG
+    }
+    SCR_LootDeadBodyAction "{529A9D939CD27B4C}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{529A9D9399F23C21}" {
+      Name "#AR-UserAction_Loot"
+     }
+     CanAggregate 1
+    }
+    SCR_BandageUserAction "{5A26F8E203EF1E0C}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTARM
+    }
+    SCR_BandageUserAction "{5A26F8E21E230D0D}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTARM
+    }
+    SCR_BandageUserAction "{5A26F8E218841208}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LOWERTORSO
+    }
+   }
+  }
+  CharacterAnimationComponent "{520EA1D2F659C994}" {
+   components {
+    SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
+     "Static Layer" 2
+     "Vehicles Layers" 64
+     "Ladders Layers" 65536
+     LadderDetectMaxDist 1.7
+     "Body Offset Reference Point" PointInfo "{520EA1D2F659C86E}" {
+      PivotID "RightShoulder"
+      Offset 0 -0.144 -0.04
+     }
+     ObstructionLayers 32
+     MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
+      MovementFilterMaxChange 16
+      MaxSprintAngle 0.8
+      OnTurnSpeedReducFactor 0.2
+      OnTurnNoReducAngle 1.57
+      BankingAngleCurve +{
+      }
+      AdjustedStanceChangeTime 0.025
+      AdjustedStanceChangeMaxSpeed 4
+      AdjustedStanceTraceLength 1
+      AdjustedStanceUpperThreshold 1.4
+      AdjustedStanceLowerThreshold 0.7
+      DetectLadders 0
+      MaxEnterLadderAngle 55
+      MaxLadderTangentAngle 110
+      m_fSpeed_Crouch_Fast_Forward 4
+      m_fSpeed_Crouch_Fast_Strafe 3.5
+      m_fSpeed_Prone_Normal_Forward 0.9
+      m_fSpeed_Prone_Normal_Strafe 0.9
+      m_fSpeed_Prone_Fast_Forward 1.1
+      m_fSpeed_Prone_Fast_Strafe 1
+      InnertiaCurve +{
+      }
+      HeadingAdjustmentSpeedReduction +{
+      }
+     }
+    }
+   }
+   AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+   AnimInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+   StartNode "MasterControl"
+   "Collision bone" "collision"
+   "Server LOD" 1
+   "LOD camera distances" +{
+   }
+   DefaultShapeLayer 524288
+   FreshwaterLayer 4194304
+   LayerPreset "Character"
+   IkPoseBonesBlend +{
+   }
+   UnarmedIkPose "{A1A073C1B48F9AEC}anims/anm/player/death/unarmed/p_hands_death.anm"
+   ColliderStand PhysAgentCollisionShapeItem "{5570AA65EEDB5E11}" {
+    Shape Capsule
+    Size 0.75 1.8 0
+    Offset 0.05 0 0.05
+    StepHeight 0.55
+   }
+   ColliderCrouch PhysAgentCollisionShapeItem "{5570AA654A3EFCC7}" {
+    Shape Capsule
+    Size 0.75 1.4 0
+    Offset 0.175 0 0.175
+    DynamicOffset 0 0 0.25
+    StepHeight 0.4
+   }
+   ColliderProne PhysAgentCollisionShapeItem "{5570AA6572F30FD1}" {
+    Size 0.6 0.4 1.8
+    StepHeight 0.25
+   }
+   ColliderJump PhysAgentCollisionShapeItem "{5584FB07EE429335}" {
+    Shape Capsule
+    Size 0.9 1.8 0
+    Offset 0.05 0 0.15
+    DynamicOffset 0 0 0.35
+    StepHeight 0.65
+   }
+   ColliderSwim PhysAgentCollisionShapeItem "{5570AA64C9BCF4F0}" {
+    Size 1 1.35 2
+    StepHeight 1
+   }
+   ColliderLadder PhysAgentCollisionShapeItem "{5570AA64E5170D06}" {
+    Shape Capsule
+    Size 0.4 2 0.4
+    StepHeight 1
+   }
+   ColliderVehicle PhysAgentCollisionShapeItem "{5570AA64926A7260}" {
+    Size 0.4 0.85 0.4
+    StepHeight 0.25
+   }
+   RagdollLayer 1024
+   Definition "{CE761502CE2E1990}Prefabs/Characters/character.ragdoll"
+  }
+  SCR_CharacterCameraHandlerComponent "{520EA1D2F659C98D}" {
+   "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
+   "CameraSet name" "CharacterCameraSet"
+  }
+  RplComponent "{5238B6A9F3442EE7}" {
+  }
+ }
+ coords 136.448 1.001 146.552
+ angleY -180
+}
+GameEntity : "{C7861F11D5334C0E}prefabs/Characters/Uniforms/Jacket_US_BDU.et" {
+ coords 137.726 1.001 107.656
+}
+GenericEntity : "{C98FCC6CA6C56069}Prefabs/Items/Medicine/AspirinBottle.et" {
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Icon "{6A1ADF70FD642D6F}UI/Textures/InventoryIcons/Medical/bleeding_UI.edds"
+     m_bShowIconInInventory 1
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{5B3E8E346EC05760}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{5B3E8E3470F5D328}" {
+       AnimGraph "{883777E45A6C4DA1}Assets/Items/Medicine/Workspaces/Gauze_01.agr"
+       AnimInstance "{79BD98038DD60F88}Assets/Items/Medicine/Workspaces/Gauze_01_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     SCR_ItemOfInterestAttribute "{5B3E8E34FDA88FF9}" {
+      m_InterestType MORPHINE
+     }
+     ItemActionAnimAttributes "{5B3E8E34F6F16F53}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+     }
+     CharacterModifierAttributes "{5B3E8E341804200A}" {
+     }
+    }
+    CommonItemType "MORPHINE"
+   }
+  }
+  Hierarchy "{5B3E8E344EC0255F}" {
+  }
+  SCR_ConsumableItemComponent "{5B3E8E34AD691FEE}" {
+   m_eAnimVariable ADRIANOV
+   m_ConsumableEffect SCR_ConsumableMorphine "{5B3E8E34A3518D5D}" {
+   }
+  }
+ }
+ coords 141.709 1.001 78.758
+}
+SCR_ChimeraCharacter : "{C9E4FEAF5AAC8D8C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et" {
+ coords 138.617 1.001 109.461
+}
+GenericEntity : "{CDFF252E10AF86EE}prefabs/Props/TraderBoxTest.et" {
+ components {
+  ActionsManagerComponent "{5AFB7B1E8A945DDE}" : "{BB025BCE205403CF}prefabs/Characters/TraderActionManager.ct" {
+   ActionContexts {
+    UserActionContext "{5AFB7B1E9BC6B613}" {
+     ContextName "default"
+     Position PointInfo "{5AFB7B1E911E0F76}" {
+      Offset 0 0.5672 0
+     }
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+  }
+ }
+ coords 127.656 1.001 136.765
+}
+SCR_ChimeraCharacter : "{D112B6601F671D6F}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_RTO.et" {
+ coords 134.52 1.001 146.231
+ angleY -180
+}
+$grp GenericEntity : "{D16F58EC1C0027D7}Prefabs/Vegetation/Cuttings/Salix_cinerea_medium_01.et" {
+ {
+  coords 172.235 1.9 153.259
+  angleX 47.07
+  angleY 85.56
+  angleZ -35.461
+ }
+ {
+  coords 175.774 2.063 153.284
+  angleX 33.189
+  angleY -99.357
+  angleZ 17.722
+ }
+}
+GenericEntity : "{D66B3DBE163EB279}prefabs/Trading_Items/Medical_TradingStation.et" {
+ coords 131.097 1.001 130.364
+}
+$grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ {
+  coords 177.824 1.001 146.765
+ }
+ {
+  coords 165.103 1.001 150.012
+ }
+}
+SCR_ChimeraCharacter : "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" {
+ components {
+  ControllersManagerComponent "{520EA1D2F659CE92}" {
+  }
+  EventHandlerManagerComponent "{530284308E2527DD}" {
+   EventHandlers {
+    BaseEventHandler "{5302843088003484}" {
+     EventName "OnWeaponChanged"
+    }
+    BaseEventHandler "{5302CB86A280126D}" {
+     EventName "OnMuzzleChanged"
+    }
+    BaseEventHandler "{5302CB8699CE0C5C}" {
+     EventName "OnMagazineChanged"
+    }
+    BaseEventHandler "{53047B986210A519}" {
+     EventName "OnAmmoCountChanged"
+    }
+    BaseEventHandler "{5304890B382436DF}" {
+     EventName "OnMagazineCountChanged"
+    }
+    BaseEventHandler "{5304890B3113520D}" {
+     EventName "OnFiremodeChanged"
+    }
+    BaseEventHandler "{5304890B22C5A3DC}" {
+     EventName "OnZeroingChanged"
+    }
+    BaseEventHandler "{5304890B1D193A86}" {
+     EventName "OnADSChanged"
+    }
+    BaseEventHandler "{59388895E3B0CD26}" {
+     EventName "OnWeaponAttachementChanged"
+    }
+    BaseEventHandler "{5952C82EDD8E43E4}" {
+     EventName "OnTurretReload"
+    }
+    BaseEventHandler "{5A5A94D957DB58B7}" {
+     EventName "OnConsciousnessChanged"
+    }
+   }
+  }
+  SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
+   LeftHandPosition EntitySlotInfo "{520EA1D2F659CEAB}" {
+    PivotID "lefthandprop"
+    ChildPivotID "snap_weapon"
+   }
+   RightHandPosition InventoryStorageSlot RightHand {
+    PivotID "RightHandProp"
+    Enabled 0
+    Prefab ""
+   }
+   WaterMovementLimits +{
+   }
+   LeanSpeed 5
+   HoldInputForRoll 1
+  }
+  SignalsManagerComponent "{520EA1D2F659C85A}" {
+  }
+  CharacterSoundComponent "{520EA1D2F659CF84}" {
+   Filenames +{
+   }
+   FoliageCollisionLayer "Foliage"
+  }
+  SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+   Filenames +{
+   }
+  }
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab ""
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+      }
+     }
+    }
+    SCR_TourniquetStorageComponent "{5A68C9C9DF306618}" {
+     StoragePurpose 0
+     InitialStorageSlots {
+      SCR_TourniquetStorageSlot TourniquetSlotLA {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup LEFTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRA {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup RIGHTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotLL {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup LEFTLEG
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRL {
+       AllowedItemTypes +{
+       }
+       m_eHitZoneGroup RIGHTLEG
+      }
+     }
+    }
+   }
+   Attributes ItemAttributeCollection "{52BAC70D641B89B1}" {
+   }
+  }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    AICharacterAimingComponent "{520EA1D2DB109F0C}" {
+     AimingPID 0.3 0 0
+     UsePID 1
+    }
+    AICharacterHeadAimingComponent "{520EA1D2DB109F04}" {
+    }
+    AICharacterMovementComponent "{520EA1D2DB109F01}" {
+    }
+    AIPathfindingComponent "{56349A6F9C02E7A1}" {
+     NavmeshProject "Soldiers"
+    }
+    PerceptionComponent "{54A2CBC75F06064B}" {
+     PositionInfo PointInfo "{520EA1D2DB109AB7}" {
+      PivotID "eyerightpupil"
+      Angles 90 0 0
+     }
+     SensorsList {
+      EyesSensor "{520EA1D2DB109AAD}" {
+       MaxRange 330
+      }
+      EarsSensor "{520EA1D2DB109AA9}" {
+      }
+     }
+     VehicleThreatMinSpeed 0.5
+     VehicleThreatCollisionTime 2.8
+    }
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+    }
+   }
+   Agenttemplate "{B4C861A6DA2F5E05}AI/AIAgents/SCR_ChimeraAIAgentFull.et"
+   OverrideAIBehaviorData "{990D4960E5206005}AI/BehaviorTrees/Chimera/Soldier/Soldier.bt"
+   EnableAI 0
+   PhysicsLayerPreset "CharacterAI"
+  }
+  ActionsPerformerComponent "{520EA1D2F659CE3F}" {
+  }
+  BaseFlattenGrassComponent "{520EA1D2F659CE26}" {
+   ParametersCollection {
+    FlattenGrassParametersObject "{520EA1D2F659CE2C}" {
+     SideX 0.6
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{520EA1D2F659CE28}" {
+     SideX 0.9
+     SideZ 0.7
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{520EA1D2F659CE27}" {
+     SideX 2
+     SideZ 0.8
+     Offset 0
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+   }
+  }
+  BaseWeaponManagerComponent "{520EA1D2F659CE5D}" {
+   DefaultWeaponIndex 0
+  }
+  CharacterAimingComponent "{520EA1D2F659CE42}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CE4B}" {
+    signalsSuffix "Weapon"
+   }
+   LimitsHoriz -80 80
+   LimitsVert -80 80
+   AimingMaxSpeed 0.7 4
+   AimingSpeedControls 1.5 0.75
+   ProneLimitsVertical -40 20
+   AimModifiers {
+    OneHandAimModifier "{588EB4BA84534585}" {
+    }
+   }
+   Shoulder PointInfo "{5A3EED5F66F7AF9A}" {
+    PivotID "RightShoulder"
+   }
+  }
+  CharacterHeadAimingComponent "{520EA1D2F659CF99}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CF9E}" {
+    signalsSuffix "Head"
+   }
+   ProvideAimingType Head
+   LimitsHoriz -360 360
+   LimitsVert -360 360
+   AimingMaxSpeed 10 5
+   AimingSpeedControls 1.5 0.75
+   AimPivot PointInfo "{5990A4DF23E27E7E}" {
+    PivotID "Neck1"
+   }
+   PitchReduction +{
+   }
+  }
+  CharacterPerceivableComponent "{566CCE2397E28600}" {
+   "Additional aim points" {
+    AimPoint "{54D0A72DBE3FF822}" {
+     AimPointPosition PointInfo "{520EA1D2F659C809}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.5
+    }
+    AimPoint "{54D0A72DBE3FF84A}" {
+     AimPointPosition PointInfo "{520EA1D2F659C809}" {
+      PivotID "Head"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.25
+     AimPointType Weak
+    }
+    AimPoint "{5A1EF5F9AB26B70A}" {
+     AimPointPosition PointInfo "{5A1EF5F9A71AA60E}" {
+      PivotID "Hips"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.4
+     AimPointType Incapacitate
+    }
+   }
+   UnitType Infantry
+  }
+  ClimbingDataComponent "{5304A49E934A0758}" {
+   CanClimbOver 0
+  }
+  ColliderHistoryComponent "{566C7EDBB7BCC719}" {
+  }
+  EquipedWeaponStorageComponent "{520EA1D2DB118C70}" {
+   StoragePurpose 2
+  }
+  FactionAffiliationComponent "{520EC9618276DF23}" {
+   "faction affiliation" "USSR"
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+  }
+  Hierarchy "{520EA1D2F659C818}" {
+  }
+  SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+   InfoDisplays {
+    SCR_WeaponInfo "{520EA1D2DB11811A}" {
+     m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
+     m_sContentWidget "m_WeaponInfoPanel"
+     m_bAdaptiveOpacity 1
+    }
+    SCR_WeaponSwitchingBaseUI "{55F6C495E5D679A0}" {
+     VisibleAtParent 1
+     m_LayoutPath "{2A1E1E023967C5A8}UI/layouts/HUD/QuickSelectBar.layout"
+     m_eLayer OVERLAY
+    }
+   }
+  }
+  SCR_CallsignCharacterComponent "{55BADB0EB09CC77E}" {
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" : "{73C708A20F8B22E6}Prefabs/Characters/Core/DamageManager_Character_Base.ct" {
+  }
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+  }
+  SCR_CharacterRegistrationComponent "{5216D6E4AC68563B}" {
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   StaminaDrainRun -0.008
+   StaminaDrainSprint -0.016
+   EncumbranceDrainMax -0.1
+   BreathNormalFrequency 0.45
+   BreathExhaustedFrequency 1.1
+   m_fStaminaDrainThreshold 100
+   m_EventParams MetabolismEventParams "{520EA1D2F659C825}" {
+    m_fCaloriesDrain 2
+    m_fHydrationDrain 2
+    m_fEnergyDrain 4
+   }
+  }
+  SCR_CharacterVicinityComponent "{529A70D96D401B33}" {
+   DiscoveryRadius 3
+  }
+  SCR_CompartmentAccessComponent "{52249C842F1EF1F4}" {
+   CompartmentLayerPreset "CharNoCollide"
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_Rifleman"
+    Icon "{AE53796BC5D21A08}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Rifleman.edds"
+    IconSetName ""
+    m_Image "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels +{
+    }
+    m_aAutoLabels +{
+    }
+   }
+  }
+  SCR_FuelNozzleHolderComponent "{52368400919641C0}" {
+  }
+  SCR_GadgetManagerComponent "{520EA1D2DB118DF3}" {
+  }
+  SCR_MeleeComponent "{520EA1D2F659C85E}" {
+  }
+  SCR_PreviewEntityComponent "{55EE4A2A78856F12}" {
+   m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
+  }
+  SCR_VoNComponent "{520EA1D2F659C856}" {
+   "Speaking Range" 50
+   Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
+  }
+  TagComponent "{5864D980062191CA}" {
+   "Tag categories" 1
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
+  }
+  CharacterGrenadeSlotComponent "{5A6CDA0CCF43068E}" {
+   isThrowable 1
+   WeaponType None
+   AttachType InventoryStorageSlot throwable {
+    PivotID "LeftArmVolume"
+    Enabled 0
+   }
+   WeaponSlotType "throwable"
+   WeaponSlotIndex 4
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{6CCE446711874464}prefabs/Weapons/Rifles/AK74/Rifle_AK_74_NoOptic.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponSlotIndex 1
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+     Head "{2F3375E395C46AB3}Prefabs/Characters/Heads/Head_BaseBody_01.et"
+     Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+    }
+    SoundIdentity SoundIdentity "{56E6D945D8F79290}" {
+     VoiceID 100
+    }
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Watch {
+     AreaType LoadoutWatchArea "{5A888AB252263206}" {
+     }
+    }
+    LoadoutSlotInfo Binoculars {
+     AreaType LoadoutBinocularsArea "{5A888AB25B5772C2}" {
+     }
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{C7923961D7235D70}prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{DCF980831E880F6A}prefabs/Characters/Uniforms/Pants_M88.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{3DE0155EC9767B98}prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab ""
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{CF15283AEC4EE934}Prefabs/Characters/HeadGear/Hat_Panama_Soviet/Hat_Panama_Soviet_01_base.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{D262D2102B9931C6}prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{54A68D64D7F9124F}" {
+     TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok.et"
+     PrefabsToSpawn {
+      "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{0A84AA5A3884176F}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Last_5Tracer.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24CC173771408E}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+    ItemsInitConfigurationItem "{5A24CC173897B74F}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   ActionContexts {
+    UserActionContext "{520EA1D2F659CE17}" {
+     ContextName "default"
+     Position PointInfo "{520EA1D2F659CE14}" {
+      PivotID "spine3"
+     }
+     Radius 0.5
+    }
+    UserActionContext "{5A26F8E7B44B5FB6}" {
+     ContextName "Head"
+     Position PointInfo "{5A26F8E7C6902D3E}" {
+      PivotID "Head"
+     }
+    }
+    UserActionContext "{5A26F8E7D24ECC4F}" {
+     ContextName "Chest"
+     Position PointInfo "{5A26F8E7EF55078D}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+    }
+    UserActionContext "{5A26F8E3CB279E0C}" {
+     ContextName "LeftLeg"
+     Position PointInfo "{5A26F8E3D249D2D4}" {
+      PivotID "LeftKnee"
+     }
+    }
+    UserActionContext "{5A26F8E3C4CFD585}" {
+     ContextName "RightLeg"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "RightKnee"
+     }
+    }
+    UserActionContext "{5A26F8E368562032}" {
+     ContextName "LowerTorso"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "Spine4"
+     }
+    }
+    UserActionContext "{5A26F8E352327705}" {
+     ContextName "LeftArm"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "LeftForeArm"
+     }
+    }
+    UserActionContext "{5A26F8E3537DEC6C}" {
+     ContextName "RightArm"
+     Position PointInfo "{5A26F8E3EBC6A345}" {
+      PivotID "RightForeArm"
+     }
+    }
+   }
+   additionalActions {
+    SCR_BandageUserAction "{520EA1D2F659CE03}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{520EA1D2F659CE00}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup HEAD
+    }
+    SCR_BandageUserAction "{5A26F8E67741AC1E}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup UPPERTORSO
+    }
+    SCR_BandageUserAction "{5A26F8E460F2D5F7}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTLEG
+    }
+    SCR_BandageUserAction "{5A26F8E47D6EE240}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTLEG
+    }
+    SCR_LootDeadBodyAction "{529A9D939CD27B4C}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{529A9D9399F23C21}" {
+      Name "#AR-UserAction_Loot"
+     }
+     CanAggregate 1
+    }
+    SCR_BandageUserAction "{5A26F8E203EF1E0C}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTARM
+    }
+    SCR_BandageUserAction "{5A26F8E21E230D0D}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTARM
+    }
+    SCR_BandageUserAction "{5A26F8E218841208}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LOWERTORSO
+    }
+   }
+  }
+  CharacterAnimationComponent "{520EA1D2F659C994}" {
+   components {
+    SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
+     "Static Layer" 2
+     "Vehicles Layers" 64
+     "Ladders Layers" 65536
+     LadderDetectMaxDist 1.7
+     "Body Offset Reference Point" PointInfo "{520EA1D2F659C86E}" {
+      PivotID "RightShoulder"
+      Offset 0 -0.144 -0.04
+     }
+     ObstructionLayers 32
+     MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
+      MovementFilterMaxChange 16
+      MaxSprintAngle 0.8
+      OnTurnSpeedReducFactor 0.2
+      OnTurnNoReducAngle 1.57
+      BankingAngleCurve +{
+      }
+      AdjustedStanceChangeTime 0.025
+      AdjustedStanceChangeMaxSpeed 4
+      AdjustedStanceTraceLength 1
+      AdjustedStanceUpperThreshold 1.4
+      AdjustedStanceLowerThreshold 0.7
+      DetectLadders 0
+      MaxEnterLadderAngle 55
+      MaxLadderTangentAngle 110
+      m_fSpeed_Crouch_Fast_Forward 4
+      m_fSpeed_Crouch_Fast_Strafe 3.5
+      m_fSpeed_Prone_Normal_Forward 0.9
+      m_fSpeed_Prone_Normal_Strafe 0.9
+      m_fSpeed_Prone_Fast_Forward 1.1
+      m_fSpeed_Prone_Fast_Strafe 1
+      InnertiaCurve +{
+      }
+      HeadingAdjustmentSpeedReduction +{
+      }
+     }
+    }
+   }
+   AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+   AnimInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+   StartNode "MasterControl"
+   "Collision bone" "collision"
+   "Server LOD" 1
+   "LOD camera distances" +{
+   }
+   DefaultShapeLayer 524288
+   FreshwaterLayer 4194304
+   LayerPreset "Character"
+   IkPoseBonesBlend +{
+   }
+   UnarmedIkPose "{A1A073C1B48F9AEC}anims/anm/player/death/unarmed/p_hands_death.anm"
+   ColliderStand PhysAgentCollisionShapeItem "{5570AA65EEDB5E11}" {
+    Shape Capsule
+    Size 0.75 1.8 0
+    Offset 0.05 0 0.05
+    StepHeight 0.55
+   }
+   ColliderCrouch PhysAgentCollisionShapeItem "{5570AA654A3EFCC7}" {
+    Shape Capsule
+    Size 0.75 1.4 0
+    Offset 0.175 0 0.175
+    DynamicOffset 0 0 0.25
+    StepHeight 0.4
+   }
+   ColliderProne PhysAgentCollisionShapeItem "{5570AA6572F30FD1}" {
+    Size 0.6 0.4 1.8
+    StepHeight 0.25
+   }
+   ColliderJump PhysAgentCollisionShapeItem "{5584FB07EE429335}" {
+    Shape Capsule
+    Size 0.9 1.8 0
+    Offset 0.05 0 0.15
+    DynamicOffset 0 0 0.35
+    StepHeight 0.65
+   }
+   ColliderSwim PhysAgentCollisionShapeItem "{5570AA64C9BCF4F0}" {
+    Size 1 1.35 2
+    StepHeight 1
+   }
+   ColliderLadder PhysAgentCollisionShapeItem "{5570AA64E5170D06}" {
+    Shape Capsule
+    Size 0.4 2 0.4
+    StepHeight 1
+   }
+   ColliderVehicle PhysAgentCollisionShapeItem "{5570AA64926A7260}" {
+    Size 0.4 0.85 0.4
+    StepHeight 0.25
+   }
+   RagdollLayer 1024
+   Definition "{CE761502CE2E1990}Prefabs/Characters/character.ragdoll"
+  }
+  SCR_CharacterCameraHandlerComponent "{520EA1D2F659C98D}" {
+   "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
+   "CameraSet name" "CharacterCameraSet"
+  }
+  RplComponent "{5238B6A9F3442EE7}" {
+  }
+ }
+ coords 134.066 1.001 115.709
+}
+GenericEntity : "{DD07AE4E1B3E5EE2}prefabs/Props/Furniture/FirstAidBox_01.et" {
+ coords 129.34 1.001 124.336
+}
+SCR_ChimeraCharacter : "{E398E44759DA1A43}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_TL.et" {
+ coords 125.106 1.001 107.676
+}
+SCR_ChimeraCharacter : "{E45F1E163F5CA080}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_SL.et" {
+ coords 132.603 1.001 108.955
+}
+GenericEntity : "{E521AEA6D14589B1}Prefabs/Props/Military/AmmoBoxes/AmmoBox_545x39_2160rnd.et" {
+ components {
+  AttachmentSlotComponent "{5B3AC9B75A7EF132}" {
+  }
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   additionalActions {
+    SCR_AttachItemFromInventoryAction "{5B3AC9B715CBC983}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B3AC9B722F43239}" {
+     }
+    }
+   }
+  }
+ }
+ coords 131.945 1.001 132.463
+}
+GenericEntity : "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et" {
+ coords 127.672 1.001 132.823
+}
+GenericEntity : "{F18EA8C513B04EB8}prefabs/Props/Industrial/BarrelMetal_01_yellow.et" {
+ coords 130.301 1.001 132.777
+}
+Vehicle M151A1 : "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et" {
+ coords 163.096 1.001 110.716
+}
+GenericEntity : "{F8208539AD3E19EC}prefabs/Weapons/Rifles/VZ58/Civilian_Rifle_VZ58V.et" {
+ components {
+  WeaponComponent "{5B10F8A099B8DE20}" {
+   components {
+    MuzzleComponent "{5B10F8A099B7F503}" {
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5B10F8A099B7F456}" {
+       LinearData RecoilData "{5B10F8A099B7F37F}" {
+        "Curve Maxs" 0.003 0.02 -0.022
+        "Base Recoil Scale" 6
+       }
+       AngularData RecoilData "{5B10F8A099B7F3EE}" {
+        "Base Recoil Scale" 6
+       }
+       TurnOffsetData RecoilData "{5B10F8A099B7F452}" {
+        "Base Recoil Scale" 6
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 128.413 1.001 133.694
+}
+GenericEntity : "{F9B96527E16549AB}Prefabs/Props/Wrecks/M998_wreck_static.et" {
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{5B3CA16CE1A10C2B}" {
+     SourceMaterial "Wreck_Base"
+     AssignedMaterial "{1CE21568C5E2AC66}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body.emat"
+    }
+    MaterialAssignClass "{5B3CA16CE1A10CDE}" {
+     SourceMaterial "Wreck_Wheels"
+     AssignedMaterial "{B486A0DBEA8D7482}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Wheels.emat"
+    }
+   }
+  }
+ }
+ coords 165.873 1.001 105.405
+}
+GenericEntity : "{FC93228F03826518}prefabs/Weapons/Rifles/AK74/Rifle_AK74_Dovetail.et" {
+ coords 132.813 1.001 126.738
+}

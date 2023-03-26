@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{460A1DF2F21FFBBC}prefabs/Props/Furniture/ChairRecreation_01/Dst/Cross_Supporting_Piece.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

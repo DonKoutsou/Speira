@@ -1,0 +1,10 @@
+SCR_VehicleCameraDataComponent {
+ m_fHeight 1.75
+ m_fBobScale 0
+ m_fShakeScale 0
+ m_fDist_Max 6.4
+ m_fDist_Min 4.8
+ m_fDist_Desired 5.6
+ m_pCameraAlignData SCR_VehicleCameraAlignment "{5B3D0526D17683E5}" {
+ }
+}

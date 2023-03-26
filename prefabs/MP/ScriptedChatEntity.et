@@ -1,0 +1,8 @@
+ScriptedChatEntity {
+ ID "50D6E52DAA9A19F8"
+ Channels {
+  LocalChatChannel "{5CE4CAF897C68C5F}" {
+   "Channel name" "Context"
+  }
+ }
+}

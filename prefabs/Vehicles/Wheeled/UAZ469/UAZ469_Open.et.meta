@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{9CBD4F3B47D0D722}prefabs/Vehicles/Wheeled/UAZ469/UAZ469_Open.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

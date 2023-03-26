@@ -1,0 +1,65 @@
+SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
+ ID "522AAC667BF61423"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+      }
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
+      }
+     }
+    }
+   }
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Binoculars {
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{2B29B7E1C6BD1048}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v1.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC173897B74F}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
+    }
+    ItemsInitConfigurationItem "{54A68D6519318E4B}" {
+     TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et"
+    }
+    ItemsInitConfigurationItem "{5A24CC173771408E}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
+     PrefabsToSpawn {
+      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{554AE55DB4147348}" {
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M88.et"
+     PrefabsToSpawn + {
+      "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{54A68D65194F633A}" {
+     PrefabsToSpawn + {
+      "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et" "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+     }
+    }
+   }
+  }
+ }
+}

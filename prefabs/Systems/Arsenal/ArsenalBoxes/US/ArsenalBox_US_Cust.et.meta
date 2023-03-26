@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{90AFAD2722FA52C6}prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

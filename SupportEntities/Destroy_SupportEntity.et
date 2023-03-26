@@ -1,0 +1,5 @@
+SCR_CP_TaskDestroySupportEntity {
+ ID "5AF9198ACB1FE729"
+ coords -4 0 -4
+ m_sTaskPrefab "{2BA67286E2C06835}Prefabs/ScenarioFramework/Tasks/TaskDestroy.et"
+}

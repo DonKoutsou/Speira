@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{229D3C08949B42F0}Prefabs/MP/Campaign/Assets/CampaignRadioTruckWest.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

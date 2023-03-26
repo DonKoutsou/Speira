@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{0249B836FB1FDCF0}prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow_SPEIRA.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

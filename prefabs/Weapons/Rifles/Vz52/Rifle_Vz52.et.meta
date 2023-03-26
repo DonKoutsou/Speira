@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{96A2309CE280198F}Prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

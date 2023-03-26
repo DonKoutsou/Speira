@@ -1,0 +1,27 @@
+GenericEntity : "{8D43830F02C3F114}prefabs/ScenarioFramework/Components/SlotAI.et" {
+ ID "5A26E3FA239786D5"
+ components {
+  CP_SlotAI "{5A26B3E02AC77BA0}" {
+   m_rObjectToSpawn "{4EB70597C2A87011}prefabs/Characters/Trader_Base.et"
+   m_sFaction "FIA"
+  }
+  Hierarchy "{5A26B3E02E941739}" {
+  }
+  SCR_EditableCommentComponent "{5B0697D6386F3B8F}" {
+   m_UIInfo SCR_EditableCommentUIInfo "{5B0697D66852BE63}" {
+    Name "SlotAITrader"
+    Icon "{A489F552FB7489C3}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Custom.edds"
+   }
+  }
+  SCR_EditableCommentComponent "{5B06B6826F5268EB}" {
+   m_UIInfo SCR_EditableCommentUIInfo "{5B06B6827A2F4C57}" {
+    Name "Trader item pos"
+   }
+   m_vIconPos 0.205 0.906 1.62
+  }
+  RplComponent "{5B0D4E5EA5F2141B}" {
+  }
+ }
+ coords 0 0 0
+ angleY 99.578
+}

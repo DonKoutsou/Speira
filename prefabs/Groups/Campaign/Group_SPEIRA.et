@@ -1,0 +1,9 @@
+SCR_AIGroup : "{000CD338713F2B5A}Prefabs/AI/Groups/Group_Base.et" {
+ ID "0000000000000001"
+ coords 9941.756 8.074 1250.474
+ m_faction "SPEIRA"
+ m_aUnitPrefabSlots {
+  "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et"
+ }
+ m_bSpawnImmediately 0
+}

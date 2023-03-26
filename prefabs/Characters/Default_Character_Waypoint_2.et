@@ -1,0 +1,10 @@
+SCR_ChimeraCharacter : "{B3A3CE37DA9529C4}prefabs/Characters/DefaultCharacter_WaypointTest.et" {
+ ID "520EC961A090BBD5"
+ coords 0 0 0
+ {
+  GenericEntity Player_WaypointsGroup : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+   ID "5B0EF0FFD1A5E31D"
+   coords 0 0 0
+  }
+ }
+}

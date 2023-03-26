@@ -1,0 +1,52 @@
+SCR_ChimeraCharacter : "{874405177C5CCEE4}prefabs/Characters/DefaultCharacer_Navigator.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   "Additional hit zones" {
+    SCR_CharacterBloodHitZone Blood {
+     MaxHealth 10000
+    }
+   }
+   "Fall damage max height" 8
+   m_fTourniquetStrengthMultiplier 0.05
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
+   }
+   WeaponTemplate "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
+    Prefab ""
+   }
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Watch {
+     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     PrefabsToSpawn {
+      "{7BDDD54F4025CBAD}Wallet_Player.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     PrefabsToSpawn + {
+      "{4B0D5960ECE64D82}Prefabs/Weapons/Magazines/Vz52/Magazine_762x39_Vz52_10rnd.et" "{4B0D5960ECE64D82}Prefabs/Weapons/Magazines/Vz52/Magazine_762x39_Vz52_10rnd.et"
+     }
+    }
+   }
+  }
+ }
+ coords 855.59 0.183 3087.281
+}

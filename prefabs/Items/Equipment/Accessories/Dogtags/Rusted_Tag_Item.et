@@ -1,0 +1,101 @@
+GenericEntity {
+ ID "5C7F06E1988DD16D"
+ components {
+  SignalsManagerComponent "{5C7F06E0E023F2D0}" {
+  }
+  SoundComponent "{5C7F06E0E023F2FA}" {
+   Filenames {
+    "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+   }
+   DistanceManagement 0
+  }
+  InventoryItemComponent "{5C7F06E0E023F371}" {
+   Attributes SCR_ItemAttributeCollection "{5C7F06E0E023F37F}" {
+    ItemDisplayName UIInfo "{5C7F06E0E023F281}" {
+     Name "Rusted Tag"
+     Description "Tag rusted, the text on it has been lost in time. It might still hold some value to some people"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5C7F06E0E023F2BF}" {
+     Weight 0.05
+     SizeSetupStrategy Manual
+     ItemDimensions 2 2 2
+     ItemVolume 10
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{5C7F06E0E023F35E}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{5C7F06E0E023F35D}" {
+       AnimGraph "{95F36C067E914E76}Assets/Items/Equipment/workspaces/Watch_Vostok.agr"
+       AnimInstance "{03F05A84D48612B4}Assets/Items/Equipment/workspaces/Watch_Vostok_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     CharacterModifierAttributes "{5C7F06E0E023F341}" {
+      Supress1hShooting 0
+     }
+     PreviewRenderAttributes "{5C7F06E0E023F37D}" {
+      CameraPreset Top
+      CameraDistanceToItem 0.07
+      ItemRenderRotation -25 25 25
+      FOV 45
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+  }
+  MeshObject "{5C7F06E0E023F36D}" {
+   Object "{99FE84401AD397C8}Assets/Items/Equipment/Accessories/DogTag/DogTag_single_Item.xob"
+   Materials {
+    MaterialAssignClass "{5C7F06E04A9692E9}" {
+     SourceMaterial "M_DogTag"
+     AssignedMaterial "{6F021F071CEA1545}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_Rusted.emat"
+    }
+   }
+   LODFactors {
+    1
+   }
+  }
+  Hierarchy "{5C8AC23072633D8E}" {
+  }
+  RigidBody "{5C7F06E0E023F319}" {
+   ModelGeometry 1
+  }
+  ProcAnimComponent "{5C7F06E0E023F305}" {
+   Parameters {
+    ProcAnimParams "{5C7F06E0E023F303}" {
+     ResourceName "{6D6D2FEA1F89DC9F}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.pap"
+     BoneNames {
+      "i_hours_Vostok" "i_minutes_Vostok" "i_seconds_Vostok" "i_date_Vostok"
+     }
+     SimulationDistance 20
+    }
+   }
+  }
+  ActionsManagerComponent "{5C7F06E0E023F3D4}" {
+   ActionContexts {
+    UserActionContext "{5C7F06E0E023F322}" {
+     ContextName "default"
+     Position PointInfo "{5C7F06E0E023F320}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{5C7F06E0E023F3D3}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C7F06E0E023F3D1}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  RplComponent "{5C7F06E0E023F3CA}" {
+  }
+ }
+ coords 135.828 1.001 99.996
+}

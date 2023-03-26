@@ -1,0 +1,40 @@
+GenericEntity : "{FC93228F03826518}prefabs/Weapons/Rifles/AK74/Rifle_AK74_Dovetail.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{55349E9229B55E3D}" {
+     Weight 3.2
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{597F50EEBB01DC89}" {
+     AttachmentSlot EquipmentStorageSlot Dovetail {
+      PivotID "barrel_chamber"
+      Offset 0 -0.0123 -0.1498
+      ChildPivotID "snap_weapon"
+      Prefab "{261D92ACAF50B60A}Prefabs/Weapons/Attachments/Rail/AK74_Dovetail.et"
+     }
+     AttachmentType AttachmentHandGuard "{597F52D0DF96A45E}" {
+     }
+    }
+    AttachmentSlotComponent "{597F6339466237D3}" {
+     AttachmentSlot InventoryStorageSlot Optic {
+      Prefab ""
+     }
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 131.906 1.001 126.785
+}

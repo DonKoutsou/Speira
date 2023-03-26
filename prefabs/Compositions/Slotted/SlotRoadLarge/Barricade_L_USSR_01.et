@@ -1,0 +1,44 @@
+GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.et" {
+ ID "5282DCB5DFC8538F"
+ components {
+  SCR_AISmartActionSentinelComponent "{5B1EF58C821252CD}" {
+   AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+   Tags {
+    "CoverPost"
+   }
+   ActionOffset -4.478 0 -1.014
+   m_vLookPosition -2.422 1 22.711
+   m_bUseBinoculars 1
+  }
+  SCR_AISmartActionSentinelComponent "{5B1EF58D7A085D71}" {
+   AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+   Tags {
+    "CoverPost"
+   }
+   ActionOffset 3.001 0 -0.08
+   m_vLookPosition 4.037 1 -9.544
+  }
+ }
+ {
+  GenericEntity {
+   ID "59B69060CC907583"
+   components {
+    SoundComponent "{59DE92110F45B81E}" {
+     Enabled 0
+    }
+    SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+     Enabled 0
+    }
+    SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+     Enabled 0
+    }
+    SCR_ArsenalInventoryStorageManagerComponent "{58A0B19B1E191CC1}" {
+     Enabled 0
+    }
+    ActionsManagerComponent "{5476B36C403D4CC0}" {
+     Enabled 0
+    }
+   }
+  }
+ }
+}

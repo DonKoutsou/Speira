@@ -1,0 +1,7 @@
+SCR_CharacterTriggerEntity : "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et" {
+ ID "5A56B37C7C2DA0E7"
+ coords 1961.388 1.887 794.736
+ TriggerActivationType "Every query"
+ m_EActivationPresence SPECIFIC_PREFAB_NAME
+ m_sSpecificPrefabName "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+}

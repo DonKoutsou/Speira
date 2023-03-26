@@ -1,0 +1,13 @@
+GenericEntity : "{1CB144959C90C6F3}prefabs/Uniforms/Vest_Type56_Uniform.et" {
+ ID "5C6D2479DC6187F1"
+ components {
+  SlotManagerComponent "{5C6D2479B050F361}" {
+   Slots {
+    LoadoutSlotInfo vest {
+     Prefab "{33DBB399C9CFC483}prefabs/Uniforms/Backpack_Alice_Uniform.et"
+    }
+   }
+  }
+ }
+ coords 113.654 1.001 136.115
+}

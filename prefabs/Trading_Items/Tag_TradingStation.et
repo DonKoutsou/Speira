@@ -1,0 +1,50 @@
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{9F3EBDC04E344A36}Assets/Props/Military/AmmoBox/AmmoBox_556x45_1680rnd/AmmoBox_556x45_1680rnd.xob"
+  }
+  SlotManagerComponent "{5C7AD7A96EBE6739}" {
+   Slots {
+    EntitySlotInfo tags {
+     Offset 0.0091 0.1909 0.003
+     Angles 0 63.9488 0
+     Prefab "{81FA7402825DB0A8}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_clutter_alot.et"
+    }
+    EntitySlotInfo tag2 {
+     Offset 0.0852 0.1909 -0.1275
+     Angles 0 91.8812 0
+     Prefab "{BBF4240677F97764}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_Clutter_Base.et"
+    }
+    EntitySlotInfo tag3 {
+     Offset -0.1072 0.1909 -0.1085
+     Prefab "{7FAF3360C879304D}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_Clutter_FIA.et"
+    }
+    EntitySlotInfo tag4 {
+     Offset -0.0303 0.1909 0.0361
+     Angles 0 -29.712 0
+     Prefab "{028AAB08D4747EE8}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_Clutter_USSR.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C534083C83245CD}" {
+     ContextName "default"
+     Position PointInfo "{5C534083CD8A9C2A}" {
+      Offset 0 0.1946 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C7AD7ACD846A171}" {
+     m_WantedPay "{9D8E818461216F56}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_USSR.et"
+     m_WantedAmount 4
+    }
+   }
+  }
+ }
+ coords 127.397 1.001 131.371
+ angleY 0
+}

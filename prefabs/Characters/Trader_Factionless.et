@@ -1,0 +1,60 @@
+SCR_ChimeraCharacter : "{0329EE29F102920D}prefabs/Characters/DefaultCharacter.et" {
+ ID "520EC961A090BBD5"
+ components {
+  FactionAffiliationComponent "{520EC961FB0A2E90}" {
+   "faction affiliation" ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Vest {
+     Prefab "{9945D5435F12C370}prefabs/Characters/Vests/Vest_M79GrenadeCarrier/Vest_M79GrenadeCarrier.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{D262D2102B9931C6}prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{4EF74D1922997E84}Prefabs/Characters/Uniforms/Pants_M88_base.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_M88_base.et"
+     PrefabsToSpawn {
+     }
+    }
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+    ItemsInitConfigurationItem "{5AFCE5703DF36A0B}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    SP_HireAction "{5C89145FA74FFE20}" {
+     ParentContextList {
+     }
+    }
+    KLM_ConverseAction "{5C5340893B8F4D10}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C5340893F1BA531}" {
+      Name "Sell USSR operation intel for 40 watches"
+     }
+     Duration 1
+     m_WantedPay "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
+     m_SellingAmount 40
+    }
+   }
+  }
+ }
+ coords 125.203 1.001 126.174
+}

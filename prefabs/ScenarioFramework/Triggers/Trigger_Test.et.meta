@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B2F2EB818796DE25}prefabs/ScenarioFramework/Triggers/Trigger_Test.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

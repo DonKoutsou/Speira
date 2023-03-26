@@ -1,0 +1,19 @@
+ActionsManagerComponent {
+ ActionContexts {
+  UserActionContext "{5B3D0526BF6DF308}" {
+   ContextName "passenger_l02"
+   Position PointInfo "{5B3D0526BF6DF302}" {
+    PivotID "passenger_l02_idle"
+    Offset 0 0.4742 0
+   }
+  }
+  UserActionContext "{5B3D0526BF6DF338}" {
+   ContextName "door_rear_int"
+   Position PointInfo "{5B3D0526BF6DF33A}" {
+    Offset 0 0.829 0.7362
+   }
+   Radius 0.5
+  }
+ }
+ AllowCrossHierarchy 1
+}

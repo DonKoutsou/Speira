@@ -1,0 +1,26 @@
+SCR_DestructibleBuildingEntity : "{9F49B2CCBC2FF396}Prefabs/Structures/Infrastructure/Landlines/PhoneBooth_E/PhoneBooth_E_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  GenericEntity {
+   ID "5878F67FCA8D0B1C"
+   {
+    GenericEntity {
+     ID "5878F67FDF260104"
+     components {
+      MeshObject "{51C4DA208DB0E200}" {
+       Object "{4236AF6A1C1F3E04}Assets/Structures/BuildingsParts/Windows/Glass_Door_Greenhouse_01_77x57/Glass_Door_Greenhouse_01_77x57.xob"
+      }
+     }
+    }
+    GenericEntity {
+     ID "5878F67FDF2601ED"
+     components {
+      MeshObject "{51C4DA208DB0E200}" {
+       Object "{4236AF6A1C1F3E04}Assets/Structures/BuildingsParts/Windows/Glass_Door_Greenhouse_01_77x57/Glass_Door_Greenhouse_01_77x57.xob"
+      }
+     }
+    }
+   }
+  }
+ }
+}

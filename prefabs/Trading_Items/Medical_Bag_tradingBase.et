@@ -1,0 +1,30 @@
+GenericEntity : "{D66B3DBE163EB279}prefabs/Trading_Items/Medical_TradingStation.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{7CD182E8C72FD7AD}Assets/Items/Equipment/Backpacks/Backpack_Medical_Soviet/Backpack_Medical_Soviet_item.xob"
+  }
+  RigidBody "{5B11113AE9F696A6}" {
+   Static 0
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5B111134DDBA8EDC}" {
+     Position PointInfo "{5B11113450B30DD6}" {
+      Offset -0.0245 0.1107 0.2475
+     }
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5B11113715A23157}" {
+     m_SpawnOffset -0.024 0.111 0.248
+    }
+    KLM_ConverseAction "{5B111135A237C319}" {
+     "Sort Priority" 1
+     m_SpawnOffset -0.024 0.111 0.248
+    }
+   }
+  }
+ }
+ coords 131.041 1.001 131.398
+}

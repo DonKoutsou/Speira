@@ -1,0 +1,74 @@
+SCR_ChimeraCharacter : "{0329EE29F102920D}prefabs/Characters/DefaultCharacter.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_CampaignBuildingComponent "{5B3C8BABE7C52A08}" {
+   m_BuildingEntityPrefab "{15BEE7092B88B67D}Prefabs/MP/Campaign/BuildEntity.et"
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Navigator"
+    Icon "{9A61AD7EADB131FD}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Spotter.edds"
+    m_Image "{0F62C575785D87CD}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Unarmed.edds"
+    m_sFaction "FIA"
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Watch {
+     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{9945D5435F12C370}prefabs/Characters/Vests/Vest_M79GrenadeCarrier/Vest_M79GrenadeCarrier.et"
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{DC76B5A3E6290D5A}prefabs/Characters/HeadGear/Hat_M70_01/Hat_M70_02.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+    LoadoutSlotInfo Binoculars {
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5AFCE5703DF36A0B}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     TargetStorage "prefabs/Characters/Vests/Vest_M79GrenadeCarrier/Vest_M79GrenadeCarrier.et"
+     PrefabsToSpawn + {
+      "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"
+     PrefabsToSpawn {
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+   }
+  }
+ }
+ coords 131.699 1.001 123.049
+}

@@ -1,0 +1,14 @@
+GameEntity : "{8A5424D1A2AA6595}Prefabs/Characters/Uniforms/Jacket_US_BDU_base.et" {
+ ID "521AC0404EA16568"
+ components {
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+     }
+    }
+   }
+  }
+ }
+}

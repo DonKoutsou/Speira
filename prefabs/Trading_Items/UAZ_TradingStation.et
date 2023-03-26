@@ -1,0 +1,79 @@
+Vehicle : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ ID "44EC665ABD2FF04B"
+ components {
+  BaseLightManagerComponent "{51E210F17D2534F7}" {
+   LightSlots {
+    BaseLightSlot "{51E21B909C65FFD4}" {
+     LightState 1
+     LightPhaseTime 0.5
+    }
+   }
+  }
+  FuelManagerComponent "{5622A70CD78A9E2C}" {
+   FuelNodes {
+    SCR_FuelNode "{5622A70CD4036C5A}" {
+     m_fInitialFuelTankState 0
+    }
+    SCR_FuelNode "{5AD4F813E67ECBD3}" {
+     m_fInitialFuelTankState 0
+    }
+   }
+  }
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 8582.14
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo WheelSpare {
+     Prefab ""
+    }
+    RegisteringComponentSlotInfo Frame {
+     Prefab "{CB57B46FCFE1A189}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_roof_frame.et"
+    }
+    RegisteringComponentSlotInfo Door_L01 {
+     Prefab "{AB2E315D4519F8DE}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_L01_bottom.et"
+    }
+    RegisteringComponentSlotInfo Door_R01 {
+     Prefab "{AA8102F7B249EBCE}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R01_bottom.et"
+    }
+    RegisteringComponentSlotInfo TradingStationMed {
+     Offset -0.6928 1.6958 -1.4796
+     Angles -90 -90 -143.04199
+     Prefab "{BD5EA6D53662AE0D}prefabs/Trading_Items/Medical_Bag_tradingBase.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo Tradingstation_ammo {
+     Offset 0.8347 1.4824 -1.2683
+     Angles -90 135 -45
+     Prefab "{709787683A87DAC5}prefabs/Trading_Items/Ammunition_TradingStation.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo tradingstation_Weapons {
+     Offset -0.0864 0.9322 -1.3953
+     Angles 0 180 0
+     Prefab "{4A0AC6DFF4F6B6D9}prefabs/Trading_Items/Weapon_TradingStation.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo tradingstation_equipment {
+     Offset 0.1581 0.7246 -2.0049
+     Angles 0 -180 0
+     Prefab "{51F1FAB79D996AC3}prefabs/Trading_Items/Equipment_TradingStation.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo Lantern {
+     Offset 0.3765 1.3075 -1.2143
+     Angles 0 72.22589 0
+     Prefab "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo flag {
+     Offset -0.6829 2.4573 -1.751
+     Angles 27.6831 0 0
+     Prefab "{B85D81962A3F85BA}Prefabs/Props/Fabric/Flags/Flag_1_2_Everon_01.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+ coords 105.67 1.001 121.979
+}

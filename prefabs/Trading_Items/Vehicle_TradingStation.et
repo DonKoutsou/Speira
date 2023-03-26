@@ -1,0 +1,241 @@
+GenericEntity {
+ ID "5B36ADF159B52EC5"
+ components {
+  Hierarchy "{5B36ADF5679DE319}" {
+  }
+  RigidBody "{5B36ADF57A18CC6B}" {
+  }
+  ActionsManagerComponent "{5B36B9A4D773C5B1}" {
+   ActionContexts {
+    UserActionContext "{5B36B9A4E80FF30C}" {
+     ContextName "default"
+     Position PointInfo "{5B36B9A4EC3C7401}" {
+     }
+     Radius 2
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5B36B9A4E04DCB97}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B36B9A4E58222EB}" {
+      Name "Buy UAZ for 10 watches"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_PrefabToSell "{9CBD4F3B47D0D722}prefabs/Vehicles/Wheeled/UAZ469/UAZ469_Open.et"
+     m_SpawnOffset -6 0 0
+    }
+    KLM_ConverseAction "{5B36B9A40E2CC49D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B36B9A402A63460}" {
+      Name "Buy transport Ural for 10 watches"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_PrefabToSell "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et"
+     m_SpawnOffset -6 0 0
+    }
+   }
+  }
+  RplComponent "{5B36ADF5642E7359}" {
+  }
+ }
+ coords 81.522 2.195 166.212
+ {
+  DecalEntity : "{28DBB1C4928B9FB6}Prefabs/Decals/Dirt/Decal_Dirt_Tracks_03.et" {
+   ID "5B36ADF159B55183"
+   components {
+    Hierarchy "{56E0B29FDE2E295F}" {
+    }
+   }
+   coords 0.205 -0.907 2.431
+   angleX -90
+   angleZ -4.304
+   scale 5
+   FarPlane 1.5
+   Stretch 2
+  }
+  $grp GenericEntity : "{809272F7F0B65FCB}Prefabs/Props/VehicleParts/Tires/Tire_Ural4320.et" {
+   {
+    ID "5B36ADF159B52EBC"
+    components {
+     Hierarchy "{5A5905140A8DA4C4}" {
+     }
+    }
+    coords -1.807 -0.669 0.219
+    angleX -0.03
+    angleY 0.033
+    angleZ -0.085
+   }
+   {
+    ID "5B36ADF159B52EBF"
+    components {
+     Hierarchy "{5A5905140A8DA4C4}" {
+     }
+    }
+    coords -1.848 -1.01 0.172
+    angleX -0.03
+    angleY 0.033
+    angleZ -0.085
+   }
+   {
+    ID "5B36ADF159B55186"
+    components {
+     Hierarchy "{5A5905140A8DA4C4}" {
+     }
+    }
+    coords -1.85 -0.314 0.172
+    angleX -0.03
+    angleY 0.033
+    angleZ -0.085
+   }
+   {
+    ID "5B36ADF159B55187"
+    components {
+     Hierarchy "{5A5905140A8DA4C4}" {
+     }
+    }
+    coords -1.925 0.059 0.111
+    angleX -0.03
+    angleY 0.033
+    angleZ -0.085
+   }
+  }
+  GenericEntity : "{95D947E744336F78}Prefabs/Props/Industrial/Workbench_01.et" {
+   ID "5B36ADF159B6E9A7"
+   components {
+    Hierarchy "{5704FEB7AC766DC5}" {
+     Enabled 1
+    }
+    RigidBody "{5872F0EB7DFB5A9D}" {
+     ResponseIndex "HugeDestructible"
+    }
+    SCR_SlotCompositionComponent "{5704FEB7AC766DD3}" {
+     m_bOrientChildrenToTerrain 0
+    }
+   }
+   coords 0.149 -1.007 -0.119
+   angleY 0.185
+   {
+    GenericEntity : "{0133284E3BDEAEC4}Prefabs/Props/Civilian/Ashtray_01_Full_yellow.et" {
+     ID "5B36ADF159B6E9BB"
+     components {
+      Hierarchy "{5704FEB7AC766D2A}" {
+       Enabled 1
+      }
+     }
+     coords 0.501 1.02 0.3
+     angleY 107.134
+    }
+    GenericEntity : "{13891AA1F5833C4A}Prefabs/Props/Civilian/Notebook_01_Double.et" {
+     ID "5B36ADF159B6E9BE"
+     components {
+      Hierarchy "{5706F8D06AE5632C}" {
+      }
+     }
+     coords 0.298 1.023 0.217
+     angleY 150
+    }
+    GenericEntity : "{2B0BD0720F8FB3A7}Prefabs/Props/Industrial/Workbench_Vice_01.et" {
+     ID "5B36ADF159B6E9B0"
+     components {
+      Hierarchy "{5704FEB7AC766D3A}" {
+       Enabled 1
+      }
+     }
+     coords -0.864 1.027 0.479
+     angleY 0
+    }
+    GameEntity : "{2CB0AA2A87842C18}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_military_USSR.et" {
+     ID "5B36ADF159B6E9B4"
+     components {
+      Hierarchy "{5706F8D06AE3DB4D}" {
+      }
+     }
+     coords -0.769 1.006 -0.297
+     angleY 23.259
+    }
+    GenericEntity : "{342E852E9A1847EA}Prefabs/Props/Industrial/Repair/VehicleGarbage_01_pile_medium.et" {
+     ID "5B36ADF159B6E989"
+     components {
+      Hierarchy "{5706F8D06AE0EF21}" {
+      }
+     }
+     coords 0.878 1.006 -0.101
+     angleY 66.056
+     scale 0.4
+    }
+    GenericEntity : "{6095B175AA9804DC}Prefabs/Props/VehicleParts/Tires/Tire_UAZ469.et" {
+     ID "5B36ADF159B6E98B"
+     components {
+      Hierarchy "{5706F8D06A9EF1FB}" {
+      }
+     }
+     coords 0.916 1.006 -0.015
+    }
+    GenericEntity : "{642101F827FFA52D}Prefabs/Props/Military/Manuals/Manual_Soviet_01.et" {
+     ID "5B36ADF159B6E98D"
+     components {
+      Hierarchy "{5706F8D06A9FEBF7}" {
+      }
+     }
+     coords -0.588 1.022 0.309
+     angleY 29.157
+    }
+    GenericEntity : "{B898D2A1F45058F6}Prefabs/Props/Garbage/Military/Food/GarbageFoodMilitaryUSSR_01.et" {
+     ID "5B36ADF159B6E98E"
+     components {
+      Hierarchy "{5706F8D06A9CD8F0}" {
+      }
+     }
+     coords 0.44 1.018 -0.277
+     angleY -130.492
+    }
+   }
+  }
+  $grp DecalEntity : "{B38FBA56FA69E392}Prefabs/Decals/Fluids/Decal_OilStain_01_large.et" {
+   {
+    ID "5B36ADF159B5518D"
+    components {
+     Hierarchy "{56E0B29FF61BB435}" {
+     }
+    }
+    coords -0.023 -0.907 1.254
+    angleX -90
+    angleY 180
+    angleZ -180
+    FarPlane 1.5
+   }
+   {
+    ID "5B36ADF159B5518E"
+    components {
+     Hierarchy "{56E0B29FF61BB435}" {
+     }
+    }
+    coords -2.377 -0.907 2.51
+    angleX -90
+    angleY 180
+    angleZ -180
+    FarPlane 1.5
+   }
+   {
+    ID "5B36ADF159B6E9A3"
+    components {
+     Hierarchy "{56E0B29FF61BB435}" {
+     }
+    }
+    coords 2.673 -0.907 3.861
+    angleX -90
+    angleY 180
+    angleZ -180
+    FarPlane 1.5
+   }
+  }
+ }
+}

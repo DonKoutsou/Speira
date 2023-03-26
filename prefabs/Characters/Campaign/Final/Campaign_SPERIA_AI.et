@@ -1,0 +1,70 @@
+SCR_ChimeraCharacter : "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" {
+ ID "52092032B0E62200"
+ components {
+  SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+   Filenames + {
+    "{91D53896F5AD5DB4}Sounds/RadioProtocol/RadioProtocol_CombatPatrol_US.acp"
+   }
+  }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    PerceptionComponent "{54A2CBC75F06064B}" {
+     Enabled 1
+    }
+   }
+   EnableAI 1
+  }
+  FactionAffiliationComponent "{520EC961FB0A2E90}" {
+   "faction affiliation" "SPEIRA"
+  }
+  SCR_GadgetManagerComponent "{520EA1D2DB118DF3}" {
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{F8208539AD3E19EC}prefabs/Weapons/Rifles/VZ58/Civilian_Rifle_VZ58V.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{C7923961D7235D70}Prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{9713FE6DDCC9510D}Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik.et"
+     PrefabsToSpawn {
+      "{E1A5D4B878AA8980}Prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     PrefabsToSpawn {
+      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{54A49B42D138207E}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+   }
+  }
+  CharacterAnimationComponent "{520EA1D2F659C994}" {
+  }
+ }
+ coords 536.698 0.985 843.726
+}

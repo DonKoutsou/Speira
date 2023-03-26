@@ -1,0 +1,103 @@
+AnimSetInstanceSource {
+ Template "{18F60A9C02AA456B}Assets/Weapons/Handguns/workspaces/PM.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Reload.Erc.Fire" {
+   Resource "{DC5454A08DEA97E4}Assets/Weapons/Handguns/PM/anims/anm/w_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Fire" {
+   Resource "{DC5454A08DEA97E4}Assets/Weapons/Handguns/PM/anims/anm/w_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.FireLast" {
+   Resource "{607FA1AE79C594AA}Assets/Weapons/Handguns/PM/anims/anm/w_PM_fire_last.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.FireLast" {
+   Resource "{607FA1AE79C594AA}Assets/Weapons/Handguns/PM/anims/anm/w_PM_fire_last.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle" {
+   Resource "{959A2143E4C4CB10}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle" {
+   Resource "{959A2143E4C4CB10}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertMag" {
+   Resource "{43E71B2343AD9079}Assets/Weapons/Handguns/PM/anims/anm/w_pst_erc_PM_insert_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_InsertMag" {
+   Resource "{E40CA8ADA04781FE}Assets/Weapons/Handguns/PM/anims/anm/w_pst_pne_PM_insert_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMag" {
+   Resource "{888364D785DBA213}Assets/Weapons/Handguns/PM/anims/anm/w_pst_erc_PM_remove_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMag" {
+   Resource "{2F68D7596631B394}Assets/Weapons/Handguns/PM/anims/anm/w_pst_pne_PM_remove_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.ReloadActionBolt" {
+   Resource "{6C8B9AD2D72B854D}Assets/Weapons/Handguns/PM/anims/anm/w_pst_erc_PM_reloadAction_Closed_uncocked.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.ReloadActionBolt" {
+   Resource "{6C8B9AD2D72B854D}Assets/Weapons/Handguns/PM/anims/anm/w_pst_erc_PM_reloadAction_Closed_uncocked.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.ReloadActionSlideRelease" {
+   Resource "{E7FAD5976713570A}Assets/Weapons/Handguns/PM/anims/anm/w_pst_erc_PM_reloadAction_Open.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.ReloadActionSlideRelease" {
+   Resource "{E7FAD5976713570A}Assets/Weapons/Handguns/PM/anims/anm/w_pst_erc_PM_reloadAction_Open.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
+   Resource "{BEC5E75586E9471B}Assets/Weapons/Handguns/PM/anims/anm/w_PM_trigger.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
+   Resource "{BEC5E75586E9471B}Assets/Weapons/Handguns/PM/anims/anm/w_PM_trigger.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_in" {
+   Resource "{C5053EEDE0A4FAE0}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_in.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Finger_trigger_in" {
+   Resource "{C5053EEDE0A4FAE0}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_in.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_out" {
+   Resource "{A652E5C1EA556F71}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_out.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Finger_trigger_out" {
+   Resource "{A652E5C1EA556F71}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_out.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle_finger" {
+   Resource "{959A2143E4C4CB10}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle_finger" {
+   Resource "{959A2143E4C4CB10}Assets/Weapons/Handguns/PM/anims/anm/w_pst_PM_finger_trigger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Safety" {
+   Resource "{9921EB627DAE8891}Assets/Weapons/Handguns/PM/anims/anm/w_PM_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Safety" {
+   Resource "{9921EB627DAE8891}Assets/Weapons/Handguns/PM/anims/anm/w_PM_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Cocked" {
+   Resource "{0216D4D702A28B6A}Assets/Weapons/Handguns/PM/anims/anm/w_PM_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Cocked" {
+   Resource "{0216D4D702A28B6A}Assets/Weapons/Handguns/PM/anims/anm/w_PM_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
+   Resource "{83634DC0AA78EF85}Assets/Weapons/Handguns/PM/anims/anm/w_PM_erc_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Off" {
+   Resource "{83634DC0AA78EF85}Assets/Weapons/Handguns/PM/anims/anm/w_PM_erc_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_On" {
+   Resource "{83634DC0AA78EF85}Assets/Weapons/Handguns/PM/anims/anm/w_PM_erc_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_On" {
+   Resource "{83634DC0AA78EF85}Assets/Weapons/Handguns/PM/anims/anm/w_PM_erc_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.SlidePose" {
+   Resource "{BB26BCC1B1DACF65}Assets/Weapons/Handguns/PM/anims/anm/w_PM_slide_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.SlidePose" {
+   Resource "{BB26BCC1B1DACF65}Assets/Weapons/Handguns/PM/anims/anm/w_PM_slide_pose.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{59EAF1483300C4F3}" {
+ }
+}

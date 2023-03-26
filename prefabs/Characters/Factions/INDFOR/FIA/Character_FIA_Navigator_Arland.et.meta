@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{30922D5D0AE892D4}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator_Arland.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

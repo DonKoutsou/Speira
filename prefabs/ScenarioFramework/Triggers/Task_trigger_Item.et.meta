@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B9F22AA622FB7FCC}prefabs/ScenarioFramework/Triggers/Task_trigger_Item.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

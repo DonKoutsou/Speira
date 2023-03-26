@@ -1,0 +1,48 @@
+GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Ammunition_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C4F2B670C06D71D}" {
+     SlotTemplate InventoryStorageSlot M16Ammo {
+      Prefab "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+     }
+     NumSlots 15
+    }
+    MultiSlotConfiguration "{5C4F2B6711ACE3B8}" {
+     SlotTemplate InventoryStorageSlot M9Ammo {
+      Prefab "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et"
+     }
+     NumSlots 15
+    }
+    MultiSlotConfiguration "{5C4F2B67271EAE95}" {
+     SlotTemplate InventoryStorageSlot M14Ammo {
+      Prefab "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+     }
+     NumSlots 15
+    }
+    MultiSlotConfiguration "{5C4F2D8E1792ED86}" {
+     SlotTemplate InventoryStorageSlot M249Ammo {
+      Prefab "{06D722FC2666EB83}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_4Ball_1Tracer.et"
+     }
+     NumSlots 4
+    }
+    MultiSlotConfiguration "{5C4F2D8E3A48498A}" {
+     SlotTemplate InventoryStorageSlot M60_Ammo {
+      Prefab "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et"
+     }
+     NumSlots 4
+    }
+    MultiSlotConfiguration "{5C4F2D8E4BFEBCBF}" {
+     SlotTemplate InventoryStorageSlot M9AP {
+      Prefab "{75632A0CA07D3817}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_AP.et"
+     }
+     NumSlots 2
+    }
+   }
+  }
+ }
+}

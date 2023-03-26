@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{6CCE446711874464}prefabs/Weapons/Rifles/AK74/Rifle_AK_74_NoOptic.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

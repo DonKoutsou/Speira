@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

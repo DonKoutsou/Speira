@@ -1,0 +1,27 @@
+SubScene {
+ Parent "worlds/Eden/Eden.ent"
+}
+Layer USSR_Areas {
+ Index 0
+}
+Layer System {
+ Index 1
+}
+Layer Random_Stashes {
+ Index 7
+}
+Layer FIA_Areas {
+ Index 3
+}
+Layer Placed_Assets {
+ Index 4
+}
+Layer US_Areas {
+ Index 6
+}
+Layer Intel {
+ Index 5
+}
+Layer Wrecks {
+ Index 8
+}

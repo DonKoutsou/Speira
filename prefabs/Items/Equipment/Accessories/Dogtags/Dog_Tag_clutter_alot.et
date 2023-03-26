@@ -1,0 +1,9 @@
+GenericEntity : "{BBF4240677F97764}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_Clutter_Base.et" {
+ ID "5C7AD7A976ABD350"
+ components {
+  MeshObject "{5C7AD7A97C455E12}" {
+   Object "{B4FC2438044736CB}Assets/Items/Equipment/Accessories/DogTag/DogTag_clutter_Item.xob"
+  }
+ }
+ coords 128.188 1.001 132.388
+}

@@ -1,0 +1,15 @@
+GenericEntity : "{CAF2399EB088777F}prefabs/Uniforms/M70_Uniform.et" {
+ ID "5C6D2479C09ECFFB"
+ components {
+  SlotManagerComponent "{5C6D2479B050F361}" {
+   Slots {
+    LoadoutSlotInfo vest {
+     AutoTransform 0
+     Enabled 0
+     Prefab "{1CB144959C90C6F3}prefabs/Uniforms/Vest_Type56_Uniform.et"
+    }
+   }
+  }
+ }
+ coords 122.605 1.001 126.365
+}

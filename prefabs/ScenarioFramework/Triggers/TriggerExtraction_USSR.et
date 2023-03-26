@@ -1,0 +1,18 @@
+SCR_PlayersPresentTriggerEntity {
+ ID "5C831744B7F08D1A"
+ components {
+  RplComponent "{5C831744B7F08D10}" {
+  }
+ }
+ coords 42.206 1.001 218.41
+ TriggerShapeType Sphere
+ SphereRadius 10
+ DrawShape 0
+ ShapeColor 0.085 0.956 0.079 0.259
+ TriggerActivationType "All changes"
+ PeriodicQueries 1
+ UpdatePeriod 10
+ ClassFilter "ChimeraCharacter"
+ m_sOwnerFactionKey "USSR"
+ m_EActivationPresence ANY_CHARACTER
+}

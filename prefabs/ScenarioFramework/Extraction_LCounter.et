@@ -1,0 +1,25 @@
+CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+ ID "5AA32561BE4BCA5C"
+ coords 0 0 0
+ m_aInputs {
+  CP_LogicInput "{5ABEDBE15C8A8071}" {
+   m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5ABEDBE15995E5C0}" {
+   }
+  }
+  CP_LogicInput "{5AE484990873BC21}" {
+   m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5AE484990466366A}" {
+    m_eEventName PROGRESSED
+   }
+  }
+ }
+ m_aActions {
+  CP_ActionSpawnClosestObjectFromList "{5ABEDBE123949586}" {
+   m_pGetter CP_GetLastFinishedTaskEnity "{5ABEDBE12E41452C}" {
+   }
+   m_sListOfObjects {
+    "TaskExtraction_A" "TaskExtraction_B" "TaskExtraction_C"
+   }
+  }
+ }
+ m_iCountTo 2
+}

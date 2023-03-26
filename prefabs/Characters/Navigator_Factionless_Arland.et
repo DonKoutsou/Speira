@@ -1,0 +1,51 @@
+SCR_ChimeraCharacter : "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et" {
+ ID "520EC961A090BBD5"
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KLM_ConverseAction "{5C5340893B8F4D10}" {
+     ParentContextList {
+      ""
+     }
+    }
+    KLM_TeleportAction "{5C8B3D72359589E4}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C8B3D72488638A0}" {
+      Name "Hire navigator to guide you to US base for 10 watches"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 3740.453 3.122 2691.394
+    }
+    KLM_TeleportAction "{5C8B3D7277EF4ECE}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C8B3D738AC34D9A}" {
+      Name "Hire navigator to guide you to soviet base for 10 watches"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 1092.341 38.681 2860.801
+    }
+    KLM_TeleportAction "{5C8B3D73A13F3DC5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C8B3D73A4E8F4D6}" {
+      Name "Hire navigator to guide you to FIA base for 10 watches"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 1295.779 2.999 1142.037
+    }
+   }
+  }
+ }
+ coords 2529.207 143.831 2258.836
+}

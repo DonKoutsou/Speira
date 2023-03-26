@@ -1,0 +1,9 @@
+SCR_CharacterTriggerEntity : "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et" {
+ ID "5A56B37C7C2DA0E7"
+ coords 1961.388 1.887 794.736
+ TriggerActivationType "Every query"
+ ClassFilter ""
+ m_EActivationPresence SPECIFIC_PREFAB_NAME
+ m_sSpecificPrefabName "{B9F22AA622FB7FCC}prefabs/ScenarioFramework/Triggers/Task_trigger_Item.et"
+ m_bOnce 0
+}

@@ -1,0 +1,98 @@
+SCR_ChimeraCharacter : "{2F912ED6E399FF47}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et" {
+ ID "520EC961A090BBD5"
+ components {
+  FactionAffiliationComponent "{520EC961FB0A2E90}" {
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   "Additional hit zones" {
+    SCR_CharacterHeadHitZone Head {
+     BaseDamageMultiplier 0.2
+    }
+    SCR_CharacterHitZone Chest {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone Abdomen {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone Hips {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RArm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LArm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RForearm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LForearm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RHand {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LHand {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RThigh {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LThigh {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RCalf {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LCalf {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RFoot {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LFoot {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone Neck {
+     BaseDamageMultiplier 0.75
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+   }
+   WeaponTemplate "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Vest {
+    }
+    LoadoutSlotInfo Back {
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{BE19A15F1073E7BD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_black.et"
+    }
+    LoadoutSlotInfo Jacket {
+    }
+    LoadoutSlotInfo Pants {
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     TargetPurpose 1
+     PrefabsToSpawn {
+      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     PrefabsToSpawn {
+      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+     }
+    }
+   }
+  }
+ }
+ coords 2047.227 44.506 2063.631
+}

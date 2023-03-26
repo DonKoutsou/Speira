@@ -1,0 +1,115 @@
+SCR_ChimeraCharacter : "{2F912ED6E399FF47}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et" {
+ ID "520EC961A090BBD5"
+ components {
+  AIControlComponent "{520EA1D2DB109F34}" {
+   ParentAIGroupName "Player_Group"
+  }
+  FactionAffiliationComponent "{520EC961FB0A2E90}" {
+   "faction affiliation" "FIA"
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   "Additional hit zones" {
+    SCR_CharacterHeadHitZone Head {
+     BaseDamageMultiplier 0.2
+    }
+    SCR_CharacterHitZone Chest {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone Abdomen {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone Hips {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RArm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LArm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RForearm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LForearm {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RHand {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LHand {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RThigh {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LThigh {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RCalf {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LCalf {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone RFoot {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone LFoot {
+     BaseDamageMultiplier 0.75
+    }
+    SCR_CharacterHitZone Neck {
+     BaseDamageMultiplier 0.75
+    }
+   }
+  }
+  SCR_EditableWaypointComponent "{5B06B691C8F344F8}" {
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Watch {
+     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+    }
+    LoadoutSlotInfo Back {
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{BE19A15F1073E7BD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_black.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M70.et"
+     TargetPurpose 1
+     PrefabsToSpawn {
+      "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M70.et"
+     PrefabsToSpawn {
+      "" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5AFCE5703DF36A0B}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M70.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
+    }
+   }
+  }
+ }
+ coords 123.095 1.001 120.72
+}

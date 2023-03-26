@@ -1,0 +1,69 @@
+SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
+ ID "520EC961A090BE1E"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+      }
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
+      }
+     }
+    }
+   }
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{D262D2102B9931C6}prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+    LoadoutSlotInfo Binoculars {
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{DA1912123AECBD97}Prefabs/Characters/HeadGear/Helmet_CVC_01/Helmet_CVC_01_olive.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{6726C63F4F56F12F}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_medic.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC173897B74F}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+    }
+    ItemsInitConfigurationItem "{5A24CC173771408E}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+     PrefabsToSpawn {
+      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et"
+     }
+    }
+    ItemsInitConfigurationItem "{568AD286A60FCA13}" {
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M88.et"
+     PrefabsToSpawn + {
+      "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
+     }
+    }
+    ItemsInitConfigurationItem "{54A68D633C316499}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_medic.et"
+     PrefabsToSpawn {
+      "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+     }
+    }
+   }
+  }
+ }
+}

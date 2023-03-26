@@ -1,0 +1,23 @@
+GenericEntity : "{D66B3DBE163EB279}prefabs/Trading_Items/Medical_TradingStation.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   additionalActions {
+    KLM_ConverseAction "{5B11113715A23157}" {
+     UIInfo UIInfo "{5B111137260AC220}" {
+      Name "Buy bandage for 2 watches"
+     }
+     m_PrefabToSell "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+    }
+    KLM_ConverseAction "{5B111135A237C319}" {
+     UIInfo UIInfo "{5B111135A75E0540}" {
+      Name "Sell bandage for 1 watch"
+     }
+     m_WantedPay "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+    }
+   }
+  }
+ }
+ coords 1217.845 38.189 2586.962
+ angleY 78.122
+}

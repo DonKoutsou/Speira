@@ -1,0 +1,5 @@
+SCR_CP_TaskKillSupportEntity {
+ ID "5C58FC0A6083E194"
+ coords -1.442 0 -1.163
+ m_sTaskPrefab "{CD66837DD5606573}Prefabs/ScenarioFramework/Tasks/TaskKill.et"
+}

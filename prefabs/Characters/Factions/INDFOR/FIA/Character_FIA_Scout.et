@@ -1,0 +1,39 @@
+SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     PrefabsToSpawn {
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{E1A5D4B878AA8980}Prefabs/Items/Equipment/Radios/Radio_R148.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{557090118458BF2F}" {
+     PrefabsToSpawn {
+      "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5984BDEFE1673DD0}" {
+     PrefabsToSpawn {
+      "" ""
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KLM_ConverseAction "{5AF6864D1451F41A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5AF6864D66BA3D66}" {
+      Name "Give 1 VZ58 magazine for 1 Broken Watch"
+     }
+     Duration 1
+     m_WantedPay "{A827B610B7CD4158}Prefabs/Weapons/Magazines/Vz58/Magazine_762x39_Vz58_30rnd_Last_5Tracer.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+    }
+   }
+  }
+ }
+}

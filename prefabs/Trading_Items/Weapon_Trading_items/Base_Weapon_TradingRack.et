@@ -1,0 +1,473 @@
+GenericEntity {
+ ID "5C7555A68B04774F"
+ components {
+  MeshObject "{5C7542728EC81D7B}" {
+   Object "{B98BC8DC4C59B8DA}Assets/Props/Military/Camps/WeaponRackStand_01/WeaponRackStand_01.xob"
+  }
+  Hierarchy "{5C7555A13636B5D1}" {
+  }
+  RigidBody "{5C7555A14A541000}" {
+  }
+  RplComponent "{5C7555A14CF554B6}" {
+  }
+ }
+ coords 109.847 1.001 131.549
+ {
+  $grp GenericEntity : "{2A45083FE809587F}prefabs/Trading_Items/Weapon_Trading_items/Base_Weapon_Trading_Iteam.et" {
+   {
+    ID "5C7555A68B047731"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy AK74M for 3 USSR tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy AK74M for 3 FIA tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy AK74M for 3 US tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords 0.763 0.428 0.169
+    angleX 75
+    angleY 180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B047736"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+      }
+     }
+     MeshObject "{58C4C15098F109F6}" {
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy M21 for 5 USSR tags"
+        }
+        m_WantedAmount 5
+        m_MaxUses 1
+        m_CraftedObject "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy M21 for 5 FIA tags"
+        }
+        m_WantedAmount 5
+        m_MaxUses 1
+        m_CraftedObject "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy M21 for 5 US tags"
+        }
+        m_WantedAmount 5
+        m_MaxUses 1
+        m_CraftedObject "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords 0.596 0.438 0.17
+    angleX 75
+    angleY 180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B047737"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy M14 for 3 USSR tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy M14 for 3 FIA tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy M14 for 3 US tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords 0.403 0.447 0.119
+    angleX 83.108
+    angleY 180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B050106"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy VZ 58 for 2 USSR tags"
+        }
+        m_WantedAmount 2
+        m_MaxUses 1
+        m_CraftedObject "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy VZ 58 for 2 FIA tags"
+        }
+        m_WantedAmount 2
+        m_MaxUses 1
+        m_CraftedObject "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy VZ 58 for 2 US tags"
+        }
+        m_WantedAmount 2
+        m_MaxUses 1
+        m_CraftedObject "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords -0.258 0.455 0.147
+    angleX 75
+    angleY -180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B050107"
+    components {
+     SignalsManagerComponent "{5C8AC23016359850}" {
+     }
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy VZ 52 for 3 USSR tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy VZ 52 for 3 FIA tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy VZ 52 for 3 US tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords -0.088 0.428 0.169
+    angleX 75
+    angleY -180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B05DAB2"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy SVD with PSO for 5 USSR tags"
+        }
+        m_WantedAmount 5
+        m_MaxUses 1
+        m_CraftedObject "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy SVD with PSO for 5 FIA tags"
+        }
+        m_WantedAmount 5
+        m_MaxUses 1
+        m_CraftedObject "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy SVD with PSO for 4 US tags"
+        }
+        m_WantedAmount 5
+        m_MaxUses 1
+        m_CraftedObject "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords 0.234 0.428 0.169
+    angleX 75
+    angleY -180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B05DABF"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy SVD for 3 USSR tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy SVD for 3 FIA tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy SVD for 3 US tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords 0.072 0.428 0.169
+    angleX 75
+    angleY -180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B069AD0"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy RPG for 3 USSR tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy RPG for 3 FIA tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy RPG for 3 US tags"
+        }
+        m_WantedAmount 3
+        m_MaxUses 1
+        m_CraftedObject "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords -0.425 0.593 0.159
+    angleX 76.551
+    angleY 180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B06F348"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy RPK for 4 USSR tags"
+        }
+        m_WantedAmount 4
+        m_MaxUses 1
+        m_CraftedObject "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy RPK for 4 FIA tags"
+        }
+        m_WantedAmount 4
+        m_MaxUses 1
+        m_CraftedObject "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy RPK for 4 US tags"
+        }
+        m_WantedAmount 4
+        m_MaxUses 1
+        m_CraftedObject "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords -0.762 0.428 0.169
+    angleX 75
+    angleY -180
+    angleZ 0
+   }
+   {
+    ID "5C7555A68B06F34B"
+    components {
+     BaseSlotComponent "{5C7555A4642DAF88}" {
+      AttachType LoadoutSlotInfo weapon {
+       Prefab "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+      }
+     }
+     ActionsManagerComponent "{5B1111371149AC02}" {
+      additionalActions {
+       KLM_CraftAction "{5C754272C3D91FE5}" {
+        UIInfo UIInfo "{5C754272C7081451}" {
+         Name "Buy M72A3 launcher for 2 USSR tags"
+        }
+        m_WantedAmount 2
+        m_MaxUses 1
+        m_CraftedObject "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC24F16F05B}" {
+        UIInfo UIInfo "{5C8ACAC2596B3178}" {
+         Name "Buy M72A3 launcher for 2 FIA tags"
+        }
+        m_WantedAmount 2
+        m_MaxUses 1
+        m_CraftedObject "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+        m_bShouldRemoveParent 1
+       }
+       KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+        UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+         Name "Buy M72A3 launcher for 2 US tags"
+        }
+        m_WantedAmount 2
+        m_MaxUses 1
+        m_CraftedObject "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+        m_bShouldRemoveParent 1
+       }
+      }
+     }
+    }
+    coords -0.611 0.36 0.035
+    angleX 75
+    angleY 180
+    angleZ -34.516
+   }
+  }
+ }
+}

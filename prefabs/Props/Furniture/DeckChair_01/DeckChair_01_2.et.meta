@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{5E0B825C55F31E9A}prefabs/Props/Furniture/DeckChair_01/DeckChair_01_2.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

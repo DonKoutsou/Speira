@@ -1,0 +1,62 @@
+SCR_ChimeraCharacter : "{18B5DC5C4088B7BD}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator.et" {
+ ID "520EC961A090B1EE"
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KLM_ConverseAction "{5B089B35DBC1543D}" {
+     ParentContextList {
+     }
+     Duration 0
+     m_WantedPay ""
+     m_PrefabToSell ""
+    }
+    KLM_TeleportAction "{5C65182980A35D78}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182999E4BA5F}" {
+      Name "Navigate to FIA base south of Arleville"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 3215.972 1.232 1179.196
+    }
+    KLM_TeleportAction "{5C651829E8043B38}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C651829ECBAD887}" {
+      Name "Navigate to lighthouse East of Beauregard"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 3550.215 45.175 2642.441
+    }
+    KLM_TeleportAction "{5C6518293CCF7BFC}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C6518293FD40955}" {
+      Name "Navigate to FIA hideout on Gull Island"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 910.488 1.023 1567.017
+    }
+    BaseUserAction "{5C65182AE207853B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182AE783454D}" {
+      Name "Hire navigator for 10 watches"
+     }
+     "Sort Priority" -1
+    }
+   }
+  }
+ }
+ coords 1875.021 38.158 1278.084
+}

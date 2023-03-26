@@ -1,0 +1,40 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "6093E737E14BFABB"
+ components {
+  Hierarchy "{5C694412EC7D2F74}" {
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Layers 2
+   LayerPreset "Interaction"
+  }
+  ActionsManagerComponent "{5C69441373FFB48E}" {
+   ActionContexts {
+    UserActionContext "{5C69441374A5EDA1}" {
+     ContextName "default"
+     Position PointInfo "{5C69441377B8FC1D}" {
+      Offset 0 0 0.1111
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C69441298703709}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C694412B1B884EE}" {
+      Name "Fill canteen"
+     }
+     Duration 3
+     m_WantedPay "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et"
+     m_PrefabToSell "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+     m_SpawnOffset 0 0.5 0
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+}

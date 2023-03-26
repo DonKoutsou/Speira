@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F3D7117E37BFB8B5}prefabs/MP/Spawning/SpawnPoint_FIA_SPEIRA.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,29 @@
+GenericEntity : "{D19D5E8950BC4DD1}Prefabs/Props/Furniture/ChairOffice_01.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ControllersManagerComponent "{5C44F26A86EF4207}" {
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+  }
+  SCR_AISmartActionSentinelComponent "{5C44F26A86EF4231}" {
+   AIBehaviorTree "{733B72C3C0264BF0}AI/BehaviorTrees/Chimera/Soldier/GetInVehicle.bt"
+   Tags {
+    "GetIn"
+   }
+   ActionOffset 0 0.538 0
+   m_fLookDirectionRange 360
+  }
+  SCR_BaseCompartmentManagerComponent "{5B3D0527DE01B07B}" : "{430455409450B2F0}prefabs/Chair_Test/SCR_BaseCompartmentManagerComponent_Chair.ct" {
+  }
+  SCR_VehicleCameraDataComponent "{5B3D0527DFFC508B}" : "{9D9C5ECD8B281408}prefabs/Chair_Test/SCR_VehicleCameraDataComponent_Chair.ct" {
+  }
+  ActionsManagerComponent "{5B3D0527D06363A6}" : "{512B1B7AA9366957}prefabs/Chair_Test/ActionManagerComponent_Chair.ct" {
+  }
+  VehicleAnimationComponent "{5B3D0527D0B29A33}" : "{2841AFB9C1C623F8}prefabs/Chair_Test/VehicleAnimationComponent_Chair.ct" {
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ Flags 1091
+}

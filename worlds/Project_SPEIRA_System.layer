@@ -1,0 +1,807 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5AF8FAD1423DCBD1}" {
+     NavmeshFile "{0A96A89FEFD0532B}worlds/navmesh/SPERIA_Navmesh.nmn"
+    }
+   }
+  }
+ }
+ coords 7124.884 114.496 6158.467
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 7127.389 114.154 6158.965
+ AIDetectionAtTimeCurve {
+  0 0.2 0.05 0.88 0.45 0.88 0.499 0.198 0.51 0.043 0.549 0.056 0.6 0.199 1 0.202
+ }
+}
+SCR_BaseGameMode GameMode_Plain1 : "{1B76F75A3175E85C}prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+ components {
+  SignalsManagerComponent "{5AF8FAD55AD28D3B}" {
+  }
+  SCR_CommunicationSoundComponent "{5AF8FAD551BC97D0}" {
+   Filenames {
+    "{91D53896F5AD5DB4}Sounds/RadioProtocol/RadioProtocol_CombatPatrol_US.acp"
+   }
+  }
+  SCR_ArsenalManagerComponent "{5C4EC78443D2A6D1}" {
+   Enabled 0
+  }
+  SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
+   m_iForcedFaction 1
+   m_iForcedLoadout 0
+  }
+  SCR_CommandingManagerComponent "{5AF8FAD57A572330}" {
+   m_sCommandsConfigPath "{54764D4E706F348C}Configs/Commanding/Commands.conf"
+  }
+  SCR_GameModeCombatOpsManager "{5AF8FAD571C17736}" {
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.7
+   m_fRegenScale 5
+   m_fRegenerationDelay 5
+  }
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+    m_aGameOverScreens {
+     SCR_FactionGameOverScreenInfo "{56D6AA9BE2D70B6E}" {
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{568E79DBB3E97D11}" {
+       m_sTitle "VICTORY"
+       m_sSubtitle "Scenario Finished"
+       m_sDebriefing "Please share any feedback you have on my discord Koutsou#6160"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+      m_bGetWinningFactionImage 0
+      m_bGetWinningSubtitleParam 0
+     }
+    }
+   }
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   Enabled 0
+  }
+  SCR_HintManagerComponent "{5702B54C6CBC9D7F}" {
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iReceiveKillFeedType SAME_FACTION_ONLY
+  }
+  SCR_PlayerSpawnPointManagerComponent "{5B16B4384F102F31}" {
+   m_SpawnPointPrefab "{6FC8BA123C919DB3}Prefabs/MP/PlayerRadioSpawnPointCampaign.et"
+  }
+  SCR_RespawnBriefingComponent "{5AF8FAD4EC9C3E87}" {
+   m_Info SCR_UIInfo "{5AF8FAD4E4CE7D6A}" {
+   }
+   m_SimpleBriefingBackground "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
+   m_aGameModeHints {
+    SCR_HintUIInfo "{5AF8FAD403381CEE}" {
+     Name "Scenario: SPEIRA"
+     Description "Strange events have been taking place in Everon. The local FIA has lost power of the Island and now foreign powers use the wonders found there to their own benefits. "\
+     "Some of our members are already on the island but their radio operator was lost on the infiltration . We cannot gather any info from them on the situation there. You will be given their location and they will guide you towards making contact with the local FIA."\
+     "Help them reclaim and save Everon from those who seek to exploit it."
+     Icon "{D50713FC8C09DD95}Elpida_HintBanner_1_UI.edds"
+     m_iShowLimit 0
+    }
+   }
+  }
+  SCR_RespawnMenuHandlerComponent "{5AF8FAD4424B0111}" {
+   m_bAllowFactionChange 0
+   m_bAllowQuickDeploy 0
+   m_sRespawnUnavailable ""
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+  }
+  SCR_RespawnTimerComponent "{5AF8FADE22305220}" {
+   m_fRespawnTime 1
+  }
+  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
+  }
+  SCR_TimeAndWeatherHandlerComponent "{5AF8FAD453AEEA9E}" {
+   m_iStartingHours 5
+   m_iStartingMinutes 45
+   m_bRandomStartingWeather 1
+  }
+  SerializerInventoryStorageManagerComponent "{5C53622BB02835DA}" {
+   Enabled 0
+  }
+  RplComponent "{56B2B4793BF2E1B4}" {
+  }
+ }
+ coords 6582.135 157.881 6513.728
+}
+RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 7127.628 114.189 6158.012
+}
+TagManager : "{EE3B9FAB37A06E90}prefabs/Systems/tagmanager.et" {
+ components {
+  RplComponent "{5B34D2EB72B9E9D8}" {
+  }
+ }
+ coords 8593.803 160.792 3588.602
+}
+SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/MP/Campaign/CampaignFactionManager.et" {
+ coords 6578.341 158.099 6515.096
+ Factions {
+  SCR_CampaignFaction "{50B30C3AF4BFD934}" {
+   m_bIsPlayable 0
+  }
+  SCR_CampaignFaction "{50B30C3ADB052C80}" {
+   m_bIsPlayable 0
+  }
+  SCR_CampaignFaction "{56F0C3A6336375DC}" {
+   UIInfo SCR_FactionUIInfo "{5570936866E0AD08}" {
+   }
+   "Identity of soldiers" FactionIdentity "{570EEB96B808B7E1}" {
+    SocialIdentity SocialIdentity "{570EDB84CC3FD4BD}" {
+     NamesConfig {
+      "Alexandros" "Antonios" "Dimitris" "Giannis" "Giorgos" "Konstantinos" "Ilias" "Iosif" "Achileas" "Anastasis" "Pantelis" "Markos" "Vasilis" "Michalis" "Apostolis" "Angelos" "Orestis" "Pavlos" "Petros" "Herakles" "Stratos" "Thomas" "Vagelis"
+     }
+     SurnamesConfig {
+      "Rakitzis" "Rigas" "Komitopoulos" "Petrakis" "Tahiridis" "Diakos" "Gekas" "Papadopoulos" "Dimitriadis" "Kouklatsis" "Hatzis" "Floros" "Koutsouradis" "Kolokotronis" "Samaras" "Trakas" "Nouvakis" "Lolouakis" "Kanaris" "Paparas" "Zografos" "Raptis" "Karalis" "Lithadiotis"
+     }
+    }
+   }
+   m_bIsPlayable 1
+   m_sFactionRadioEncryptionKey "Tsak"
+   m_iFactionRadioFrequency 5200
+  }
+  SCR_CampaignFaction "{5B1CF78FF8CD628F}" {
+   FactionKey "SPEIRA"
+   FactionColor 0.475 0.259 0.686 1
+   UIInfo SCR_FactionUIInfo "{5B1CF78F0953BAF2}" {
+    Name "SPEIRA"
+    Icon "{CEAC8771342689C5}Assets/Data/Faction_SPEIRA.edds"
+    m_sNameUpper "SPEIRA"
+   }
+   "Identity of soldiers" FactionIdentity "{5B1CF78EC4B20F34}" {
+    VisualIdentityArray {
+     VisualIdentity "{5B1D08DBEC08C88E}" {
+      Head "{143245D81F2BAB94}Prefabs/Characters/Heads/Head_White_10.et"
+      Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+      BodyMeshesConfig MeshConfig "{5B1D08DBE458E5A8}" {
+       SubmeshesOfBody {
+        IdentityBodyMesh "{5B1D08DBE7B3A245}" {
+         PartType "Arm_L"
+         HealthyVersion "Basebody_Arm_L"
+         WoundVersion "Basebody_Arm_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE7AAAAC2}" {
+         PartType "Arm_R"
+         HealthyVersion "Basebody_Arm_R"
+         WoundVersion "Basebody_Arm_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE7C3B0E7}" {
+         PartType "ArmUpper_L"
+         HealthyVersion "Basebody_ArmUpper_L"
+         WoundVersion "Basebody_ArmUpper_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE7FCCB9F}" {
+         PartType "ArmUpper_R"
+         HealthyVersion "Basebody_ArmUpper_R"
+         WoundVersion "Basebody_ArmUpper_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE7163331}" {
+         PartType "Calf_L"
+         HealthyVersion "Basebody_Calf_L"
+         WoundVersion "Basebody_Calf_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE7016F0D}" {
+         PartType "Calf_R"
+         HealthyVersion "Basebody_Calf_R"
+         WoundVersion "Basebody_Calf_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE73A90DF}" {
+         PartType "Foot_L"
+         HealthyVersion "Basebody_Foot_L"
+         WoundVersion "Basebody_Foot_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE75753B2}" {
+         PartType "Foot_R"
+         HealthyVersion "Basebody_Foot_R"
+         WoundVersion "Basebody_Foot_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE7426771}" {
+         PartType "Groin"
+         HealthyVersion "Basebody_Groin"
+         WoundVersion "Basebody_Groin_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBE77CCE13}" {
+         PartType "Hand_L"
+         HealthyVersion "Basebody_Hand_L"
+         WoundVersion "Basebody_Hand_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF89499F4}" {
+         PartType "Hand_R"
+         HealthyVersion "Basebody_Hand_R"
+         WoundVersion "Basebody_Hand_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF8812D95}" {
+         PartType "Leg_L"
+         HealthyVersion "Basebody_Leg_L"
+         WoundVersion "Basebody_Leg_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF8BC3C82}" {
+         PartType "Leg_R"
+         HealthyVersion "Basebody_Leg_R"
+         WoundVersion "Basebody_Leg_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF8D60B5D}" {
+         PartType "Torso"
+         HealthyVersion "Basebody_Torso"
+         WoundVersion "Basebody_Torso_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF8CF2F4E}" {
+         PartType "Head"
+         HealthyVersion "Head"
+         WoundVersion "Head_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF81E7369}" {
+         PartType "CalfLower_L"
+         HealthyVersion "Basebody_CalfLower_L"
+         WoundVersion "Basebody_CalfLower_L_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF8578DCC}" {
+         PartType "CalfLower_R"
+         HealthyVersion "Basebody_CalfLower_R"
+         WoundVersion "Basebody_CalfLower_R_wound"
+        }
+        IdentityBodyMesh "{5B1D08DBF86C229B}" {
+         PartType "Head_neck"
+         HealthyVersion "Head_neck"
+         WoundVersion "Head_wound_neck"
+        }
+       }
+      }
+     }
+    }
+    SoundIdentityArray {
+     SoundIdentity "{5B1D08DBCF4A8E5F}" {
+     }
+    }
+    SocialIdentity SocialIdentity "{5B1D08DBC12729BE}" {
+     NamesConfig {
+      "Antonis" "Giorgos" "Mitsos"
+     }
+     SurnamesConfig {
+      "Koutsouradis" "Dimitriadis" "Papadopoulos"
+     }
+    }
+   }
+   m_iOrder 3000
+   m_OutlineFactionColor 0.251 0 0.502 1
+   m_bIsPlayable 0
+   m_sFactionFlag "{CEAC8771342689C5}Assets/Data/Faction_SPEIRA.edds"
+   m_FactionLabel FACTION_FIA
+   m_CallsignInfo SCR_FactionCallsignInfo "{5B1CF78CE6E96EB1}" {
+   }
+   m_sFactionRadioEncryptionKey "Tsakas"
+   m_iFactionRadioFrequency 69
+  }
+ }
+}
+ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 7125.065 114.586 6157.262
+}
+$grp GenericEntity {
+ {
+  components {
+   Hierarchy "{5C8B3B2C31FD8DB9}" {
+   }
+   RplComponent "{5C8B3B2C336FA126}" {
+   }
+  }
+  coords 9591.201 10.876 5205.72
+  angleY 8.037
+  {
+   GenericEntity : "{0E43D5546330841F}Prefabs/Structures/BuildingParts/Industrial/ToolRack_01_tool_01.et" {
+    coords -3.314 1.049 0.875
+    angleY -1.81
+   }
+   GenericEntity : "{10C5A45290A9EEED}Prefabs/Props/Industrial/GasTank_01_blue.et" {
+    coords -5.337 0 -2.664
+    angleY 95.557
+   }
+   GenericEntity : "{344ABEB98BB96721}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4_covered.et" {
+    coords -2.732 0 -1.021
+    angleY 81.64
+    {
+     GenericEntity {
+      ID "56E09476DAAACB36"
+      coords 0.001 0 0
+     }
+    }
+   }
+   GenericEntity : "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et" {
+    coords -2.686 0 0.394
+    angleY 87.795
+   }
+   GenericEntity : "{47E258BBC8968F11}Prefabs/Props/Industrial/GasTank_01_rusty.et" {
+    coords -5.692 0 -2.483
+    angleY 45.238
+   }
+   GenericEntity : "{64A37FE9287F1A77}Prefabs/Props/Industrial/Workbench_02.et" {
+    coords -4.542 0.089 0.618
+    angleY 179.221
+   }
+   GenericEntity : "{75D125481E2E0663}Prefabs/Compositions/Misc/SubCompositions/Barrel_ToolRack_01.et" {
+    coords -4.338 0 -1.608
+    angleY -88.595
+    {
+     GenericEntity {
+      ID "5A5AB048B2511906"
+      coords -0.095 0.032 0.753
+      {
+       GenericEntity {
+        ID "5704FEB43BFECAC1"
+        coords -0.003 0.608 -0.05
+       }
+       GenericEntity {
+        ID "5704FEB43BFECACD"
+        coords -0.018 0.608 0.01
+       }
+       GenericEntity {
+        ID "5704FEB43BFECACF"
+        coords -0.002 0.608 0.045
+       }
+       GenericEntity {
+        ID "5704FEB43BFECAC2"
+        coords 0.002 0.632 -0.002
+       }
+      }
+     }
+     GenericEntity {
+      ID "5A5AB048B251190A"
+      coords -0.083 0.032 -0.174
+     }
+     GenericEntity {
+      ID "5A5AB048B2511938"
+      coords -0.021 0.032 0.111
+     }
+     GenericEntity {
+      ID "5A5AB048B251193A"
+      coords -0.145 0.319 -0.039
+     }
+     GenericEntity {
+      ID "5A5AB048B251190B"
+      coords -0.363 1.617 0.035
+      {
+       GenericEntity {
+        ID "59DA9337D0AF5942"
+        coords 1.235 0.397 0.027
+       }
+      }
+     }
+     GenericEntity {
+      ID "5A5AB048B251190E"
+      coords -0.002 0.032 -0.716
+     }
+    }
+   }
+   $grp GenericEntity : "{792A2C359A0728C8}Prefabs/Compositions/Misc/SubCompositions/CrateWooden_Stacked_01.et" {
+    {
+     coords -5.988 -0.022 -3.437
+     angleY 91.814
+     {
+      GenericEntity {
+       ID "5702D339EBF3C680"
+       coords -0.048 0.807 -0.011
+      }
+     }
+    }
+    {
+     coords -7.629 -0.022 -3.604
+     angleY 91.777
+     {
+      GenericEntity {
+       ID "5702D339EBF3C680"
+       coords -0.05 0.807 -0.007
+      }
+     }
+    }
+   }
+   GenericEntity : "{7E5A4578657283E6}Prefabs/Props/Industrial/GasTank_02_red.et" {
+    coords -5.699 0 -2.834
+    angleY -8.037
+   }
+   $grp GenericEntity : "{7F59A8D992FBF5CA}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/CrateStack_01_base.et" {
+    {
+     coords -4.503 0.002 -2.578
+     angleY -1.283
+    }
+    {
+     coords -3.229 0.002 -2.551
+     angleY -174.521
+    }
+   }
+   $grp SCR_DestructibleBuildingEntity : "{8597237EA3C59701}Prefabs/Structures/Houses/Shed/Shed_03/Shed_03.et" {
+    {
+     coords 3.677 0.777 1.825
+     angleY 171.963
+    }
+    {
+     coords 4.206 0.777 -1.942
+     angleY -8.037
+    }
+   }
+   GenericEntity : "{9F49087B42507C90}Prefabs/Compositions/Misc/SubCompositions/EquipmentBoxStacked_Combined_USSR_01.et" {
+    coords -1.699 -0.021 -2.207
+    angleY 93.596
+    {
+     GenericEntity {
+      ID "5704FEB0BA56A42B"
+      coords -0.727 0 0.176
+     }
+     GenericEntity {
+      ID "5704FEB0BA56A42D"
+      coords 0.44 0 -0.065
+     }
+     GenericEntity {
+      ID "56B6871A5FA89BE4"
+      coords 0 0 0
+     }
+    }
+   }
+   GenericEntity : "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et" {
+    coords -2.949 0 1.864
+    angleY 88.323
+   }
+   GenericEntity : "{BC2FDA7C84AB753B}Prefabs/Compositions/Misc/SubCompositions/Workbench_Cluttered_US_01.et" {
+    coords 1.645 0.08 -0.502
+    angleY 81.963
+    {
+     GameEntity {
+      ID "5704FEB564619B6D"
+      coords 0.485 1.017 -0.273
+     }
+     GenericEntity {
+      ID "552C7391D9C75091"
+      coords 0.251 1.02 -0.229
+     }
+     GenericEntity {
+      ID "552C7391D9C750E9"
+      coords -0.242 1.02 0.296
+     }
+     GenericEntity {
+      ID "552C7391D9C7509C"
+      coords -0.898 1.027 0.478
+     }
+     GenericEntity {
+      ID "55B877F99ED03AFF"
+      coords -0.306 1.014 -0.256
+     }
+     GenericEntity {
+      ID "552C7391D9C75092"
+      coords 0.932 1.006 0.077
+     }
+     GenericEntity {
+      ID "552C7391D9C75090"
+      coords 0.141 1.014 0.262
+     }
+     GenericEntity {
+      ID "552C7391D9C7509E"
+      coords -0.954 1.037 -0.118
+     }
+     GenericEntity {
+      ID "552C7391D9C75093"
+      coords -0.791 1.023 -0.117
+      {
+       GenericEntity {
+        ID "552C739232DD995D"
+        coords 0.06 0.014 0.037
+       }
+      }
+     }
+    }
+   }
+   GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_01.et" {
+    coords -5.125 -0.001 0.421
+    angleY 86.824
+   }
+   GenericEntity : "{D023942ECEA592ED}Prefabs/Props/Furniture/Stool_02.et" {
+    coords -4.098 0 -0.539
+    angleY -8.037
+   }
+   GenericEntity : "{FCCB91AC2A242FE5}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Large_Soviet.et" {
+    coords -4.149 0 -0.523
+    angleY -94.398
+   }
+  }
+ }
+ {
+  components {
+   Hierarchy "{5C8B3B2DA17A773A}" {
+   }
+   RplComponent "{5C8B3B2DA7E3BEC7}" {
+   }
+  }
+  coords 9569.924 10.931 5207.061
+  {
+   $grp GenericEntity : "{13B4C532861B9DE2}Prefabs/Props/Commercial/BeerKegMetal_01_big.et" {
+    {
+     coords 0.889 0.837 -2.085
+    }
+    {
+     coords 1.666 0.024 -2.088
+    }
+   }
+   GenericEntity : "{1C571A35EF9F2217}Prefabs/Props/Furniture/BarTap_01.et" {
+    coords 2.063 0.043 0.785
+   }
+   GameEntity : "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et" {
+    coords 1.015 1.06 1.083
+   }
+   GenericEntity : "{1D2BBC06E656974F}Prefabs/Structures/BuildingParts/Misc/TvAntenna_01.et" {
+    coords 2.097 3.809 0.26
+    angleY -160.952
+   }
+   GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
+    coords 3.857 0.023 2.089
+    angleY -34.858
+   }
+   GenericEntity : "{29BA0E995E24468D}Prefabs/Props/Furniture/PlantRoom_03.et" {
+    coords 1.882 0.638 -2.508
+   }
+   GenericEntity : "{313CC1F195E06A6E}Prefabs/Props/Furniture/TVSet_01.et" {
+    coords -0.288 1.663 -2.15
+    angleY 9.408
+   }
+   GenericEntity : "{344ABEB98BB96721}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4_covered.et" {
+    coords -0.32 0.018 -2.205
+    angleY 89.677
+   }
+   $grp GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.et" {
+    {
+     coords -1.11 0.949 2.555
+     angleY 0
+    }
+    {
+     coords -3.373 0.949 2.681
+     angleY 0
+    }
+   }
+   GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+    coords -1.243 0.949 0.404
+   }
+   GenericEntity : "{6CD34D6526429EEC}Prefabs/Props/Furniture/BarTable_01.et" {
+    coords 1.983 0.04 0.769
+   }
+   GenericEntity : "{7F59A8D992FBF5CA}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/CrateStack_01_base.et" {
+    coords -1.577 -0.01 -2.124
+    angleY 6.754
+   }
+   $grp GenericEntity : "{88FAE04EF7115814}Prefabs/Props/Civilian/BeerBottle_01_green.et" {
+    {
+     coords 3.079 0.638 -1.931
+    }
+    {
+     coords 3.155 0.638 -2.003
+    }
+    {
+     coords 2.992 0.638 -1.989
+    }
+   }
+   GenericEntity : "{8FE6D62204173656}Prefabs/Props/Civilian/BeerBottle_01_group.et" {
+    coords 2.341 0.049 -2.269
+   }
+   GenericEntity : "{9A0A7B399D8AEEA0}Prefabs/Props/Civilian/Freezer_01.et" {
+    coords 3.383 0.009 -1.445
+    angleY -84.131
+   }
+   GenericEntity : "{9F49087B42507C90}Prefabs/Compositions/Misc/SubCompositions/EquipmentBoxStacked_Combined_USSR_01.et" {
+    coords 2.714 0.087 -3.157
+    angleY 3.159
+   }
+   GenericEntity : "{AA3D2C0BB0D2B56B}Prefabs/Props/Crates/Crate_01_green.et" {
+    coords 3.015 0.647 -2.377
+   }
+   $grp GenericEntity : "{B3283803059E2750}Prefabs/Props/Crates/CrateWooden_01_plain.et" {
+    {
+     components {
+      Hierarchy "{56A6E94EFAF7B101}" {
+      }
+     }
+     coords 1.056 0.031 -0.512
+     angleY -173.456
+    }
+    {
+     components {
+      Hierarchy "{56A6E94EFAF7B101}" {
+      }
+     }
+     coords 0.972 0.031 -2.01
+     angleY -161.632
+    }
+   }
+   GenericEntity : "{C2C1A49E6EACAA64}Prefabs/Props/Civilian/Ashtray_01_clear.et" {
+    coords -1.137 0.949 0.184
+    angleY 0
+   }
+   $grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTable/PicnicTable_01.et" {
+    {
+     coords -1.15 0.052 2.448
+    }
+    {
+     coords -1.15 0.052 0.024
+    }
+    {
+     coords -3.444 0.052 0.024
+    }
+    {
+     coords -3.444 0.052 2.448
+    }
+   }
+   $grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_01.et" {
+    {
+     coords 2.056 -0.055 -1.926
+     angleX -1.879
+     angleY 4.861
+    }
+    {
+     coords -3.985 -0.055 2.463
+     angleY 14.6
+    }
+    {
+     coords -2.745 -0.055 2.093
+     angleY 11.662
+    }
+    {
+     coords -1.476 -0.099 1.84
+     angleY 4.861
+    }
+    {
+     coords -0.17 -0.104 1.73
+     angleY 4.861
+    }
+    {
+     coords 1.087 -0.092 1.624
+     angleY 4.861
+    }
+    {
+     coords 2.407 -0.055 2.122
+     angleY 4.861
+    }
+    {
+     coords 3.661 -0.055 1.893
+     angleY 4.861
+    }
+    {
+     coords 3.324 -0.063 -1.808
+     angleX -1.879
+     angleY 4.861
+    }
+    {
+     coords -0.577 -0.097 -2.147
+     angleY -85.25
+    }
+    {
+     coords -3.288 -0.055 -1.786
+     angleY 14.653
+    }
+    {
+     coords -0.41 -0.073 -0.889
+     angleY -85.25
+    }
+   }
+   GenericEntity : "{D023942ECEA592ED}Prefabs/Props/Furniture/Stool_02.et" {
+    coords 1.9 -0.004 -0.498
+   }
+   GenericEntity : "{E56F1B739B9792C4}Prefabs/Props/Civilian/Ashtray_01_Full_green.et" {
+    coords 1.253 0.836 -0.328
+    angleY 0
+   }
+   GameEntity : "{EC645B2E2123131F}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_blue.et" {
+    coords -3.53 0.948 2.063
+   }
+   $grp GenericEntity : "{F401D58CD490C872}Prefabs/Props/Civilian/BeerBottle_01_slava.et" {
+    {
+     coords 2.794 0.649 -2.511
+    }
+    {
+     coords 2.794 0.649 -2.324
+     angleY -50.146
+    }
+    {
+     coords 2.889 0.649 -2.472
+    }
+    {
+     coords 2.889 0.649 -2.285
+     angleY -167.378
+    }
+    {
+     coords 2.995 0.649 -2.514
+    }
+    {
+     coords 2.794 0.649 -2.417
+     angleY 89.541
+    }
+    {
+     coords 3.18 0.649 -2.31
+     angleY -170.828
+    }
+    {
+     coords 2.889 0.649 -2.38
+     angleY 19.122
+    }
+    {
+     coords 2.995 0.649 -2.423
+     angleY -159.209
+    }
+    {
+     coords 3.118 0.649 -2.436
+     angleY -38.745
+    }
+    {
+     coords 2.998 0.649 -2.24
+     angleY 11.785
+    }
+    {
+     coords 2.995 0.649 -2.328
+     angleY 67.015
+    }
+   }
+   GenericEntity : "{FCBEDECB2A39B6BC}Prefabs/Props/Military/Generators/GeneratorPortable_USSR_01.et" {
+    coords 3.63 0.076 -3.176
+    angleY 10.707
+   }
+   GenericEntity : "{FCCB91AC2A242FE5}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Large_Soviet.et" {
+    coords -0.145 -0.055 0.404
+    angleY -86.361
+   }
+  }
+ }
+}
+HitRegistrationManager HitRegManager1 : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+ coords 11259.045 1.209 2806.165
+}
+SCR_BaseTaskManager : "{87208DAD6F3C0DE2}Prefabs/MP/Managers/Tasks/TaskManager_Editor.et" {
+ coords 6595.837 156.886 6519.095
+ {
+  SCR_CP_TaskSupportEntity : "{0B69970680D47921}SupportEntities/Task_SupportEntity.et" {
+   coords 0 0 0
+  }
+  $grp SCR_CP_TaskDestroySupportEntity : "{0F2AEEA910943EFE}SupportEntities/Destroy_SupportEntity.et" {
+   DestroySupportEntity_1 {
+    coords 0 0 0
+   }
+   DestroySupportEntity_2 {
+    coords 0 0 0
+   }
+  }
+  SCR_CP_TaskDeliverSupportEntity DeliverSupportEntity_1 : "{762CBEA255677741}SupportEntities/Delivery_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskKillSupportEntity : "{CAB1B044166CA912}SupportEntities/Kill_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskClearAreaSupportEntity ClearAreaSupportEntity_1 : "{CB5AB93B8421B9A8}SupportEntities/ClearAre_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskExtractSupportEntity : "{CD4FCC0C276FAFE5}SupportEntities/Extract_SupportEntity.et" {
+   coords 0 0 0
+  }
+ }
+}
+SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+ coords 11101.125 20.947 1745.966
+ CollectorIterations 6
+ CharacterLifetime 2000
+ VehicleLifetime 1800
+ ItemLifetime 2000
+ m_bOnlyDestroyed 1
+}
+SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords 6581.157 157.772 6506.979
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{5B0B14AD91AFE96B}" {
+   m_sLoadoutName "Base Loadout"
+   m_sLoadoutResource "{51F5214E43167A62}prefabs/Characters/DefaultCharacter_Arland.et"
+   m_sAffiliatedFaction "FIA"
+  }
+ }
+}
+SCR_MapLocator : "{BE308D6461C1BEC3}prefabs/Systems/MapLocator.et" {
+ coords 8731.674 168.747 3528.334
+}

@@ -1,0 +1,15 @@
+GenericEntity : "{FDCDB16825161D12}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Launcher_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C4F2B6736A86D27}" {
+     SlotTemplate InventoryStorageSlot RocketL {
+      Prefab "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+     }
+     NumSlots 8
+    }
+   }
+  }
+ }
+}

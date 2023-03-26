@@ -1,0 +1,14 @@
+GenericEntity : "{BBF4240677F97764}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_Clutter_Base.et" {
+ ID "5C7AD7A976ABD350"
+ components {
+  MeshObject "{5C7AD7A97C455E12}" {
+   Materials {
+    MaterialAssignClass "{5C7AD7A8A914941D}" {
+     SourceMaterial "M_DogTags"
+     AssignedMaterial "{EBB48300A79B45E3}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_USSR.emat"
+    }
+   }
+  }
+ }
+ coords 128.188 1.001 132.388
+}

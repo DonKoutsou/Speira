@@ -1,0 +1,22 @@
+GenericEntity : "{43497A18DD888667}prefabs/Weapons/Rifles/AK74/Rifle_AK74_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5B1B039D2C28C855}" {
+     AttachmentSlot EquipmentStorageSlot DoveTail {
+      PivotID "w_root"
+      Offset 0 0.0555 0.0023
+      Prefab "{261D92ACAF50B60A}Prefabs/Weapons/Attachments/Rail/AK74_Dovetail.et"
+     }
+    }
+    AttachmentSlotComponent "{5B1B039D2E48EF79}" {
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     MagazineTemplate "{0A84AA5A3884176F}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Last_5Tracer.et"
+    }
+   }
+  }
+ }
+ coords 136.011 1.001 118.924
+}

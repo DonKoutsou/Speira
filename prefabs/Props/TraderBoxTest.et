@@ -1,0 +1,19 @@
+GenericEntity : "{C76C3AF337109066}Prefabs/Props/Crates/CardboardBoxStack_01.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ActionsManagerComponent "{5AFB7B1E8A945DDE}" : "{BB025BCE205403CF}prefabs/Characters/TraderActionManager.ct" {
+   ActionContexts {
+    UserActionContext "{5AFB7B1E9BC6B613}" {
+     ContextName "default"
+     Position PointInfo "{5AFB7B1E911E0F76}" {
+      Offset 0 0.5672 0
+     }
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ coords 127.414 1.001 136.915
+}

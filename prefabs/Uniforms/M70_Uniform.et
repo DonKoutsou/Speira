@@ -1,0 +1,21 @@
+GenericEntity {
+ ID "5C6D2479C09ECFFB"
+ components {
+  MeshObject "{5C6D2479B050F35D}" {
+   Object "{7B65117028DECB01}Assets/Characters/Uniforms/Jacket_M70/Jacket_M70_01.xob"
+   LODFactors {
+    1 1 1 1
+   }
+  }
+  Hierarchy "{5C6D247FC91FB0BB}" {
+  }
+  SlotManagerComponent "{5C6D2479B050F361}" {
+   Slots {
+    LoadoutSlotInfo vest {
+     Prefab "{73B77CC20CA40E53}prefabs/Uniforms/VestB_Uniform.et"
+    }
+   }
+  }
+ }
+ coords 118.897 1.001 118.472
+}

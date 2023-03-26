@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{377EB906F591E4BA}Prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Weapons_US.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

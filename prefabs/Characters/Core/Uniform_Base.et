@@ -1,0 +1,23 @@
+GameEntity {
+ ID "5104869D194C6243"
+ components {
+  ActionsManagerComponent "{5104869D194C6245}" {
+   additionalActions {
+    KLM_CraftAction "{5C69441E08BB6591}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C69441E0C152B21}" {
+      Name "Break down uniform to bandages"
+     }
+     Duration 3
+     m_WantedPay "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
+     m_MaxUses 1
+     m_CraftedObject "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+     m_CraftedNumber 3
+     m_bShouldRemoveParent 1
+    }
+   }
+  }
+ }
+}

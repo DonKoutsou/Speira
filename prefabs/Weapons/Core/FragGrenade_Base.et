@@ -1,0 +1,19 @@
+GenericEntity : "{D7EB24176E5CEAA6}Prefabs/Weapons/Core/Grenade_Base.et" {
+ ID "1F80A73AAE197BBE"
+ components {
+  InventoryItemComponent "{51FAA3E3CF6F087A}" {
+   Attributes SCR_ItemAttributeCollection "{51FAA3E3C2D19BD4}" {
+    ItemAnimationAttributes ItemAnimationAttributes "{5284A988FFFB3DAC}" {
+     OverrideDefaultIkBonesBlend 1
+     IncludeBonesInIkBlend {
+      "RightHandProp"
+     }
+    }
+   }
+  }
+  WeaponComponent "{6D23670EA18BF513}" {
+   WeaponOffset 0 0 0
+   WeaponOffsetADS 0 0 0
+  }
+ }
+}

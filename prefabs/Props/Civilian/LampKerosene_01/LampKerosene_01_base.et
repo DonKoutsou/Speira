@@ -1,0 +1,15 @@
+GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_BaseInteractiveLightComponent "{58C4C3C542898CFB}" {
+   m_aLightData {
+    SCR_BaseLightData "{58CF1C125C5670F7}" {
+     m_fRadius 10
+     m_fIntensityClipEV -10
+     m_fScale 0.2
+    }
+   }
+   m_eInitialLightState LIT
+  }
+ }
+}

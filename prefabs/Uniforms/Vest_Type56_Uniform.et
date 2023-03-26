@@ -1,0 +1,20 @@
+GenericEntity {
+ ID "5C6D2479DC6187F1"
+ components {
+  MeshObject "{5C6D2479B050F35D}" {
+   Object "{65B695FBFE5EC1D5}Assets/Characters/Vests/Vest_Type56/Vest_Type56.xob"
+   LODFactors {
+    1 1 1 1
+   }
+  }
+  Hierarchy "{5C6D247EA8D87CBB}" {
+  }
+  SlotManagerComponent "{5C6D2479B050F361}" {
+   Slots {
+    LoadoutSlotInfo vest {
+    }
+   }
+  }
+ }
+ coords 118.897 1.001 118.472
+}

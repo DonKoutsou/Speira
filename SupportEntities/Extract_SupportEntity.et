@@ -1,0 +1,5 @@
+SCR_CP_TaskExtractSupportEntity {
+ ID "5AF9198ADAC774C8"
+ coords -3 0 -3
+ m_sTaskPrefab "{6829FAD588965A88}Prefabs/ScenarioFramework/Tasks/TaskExtract.et"
+}

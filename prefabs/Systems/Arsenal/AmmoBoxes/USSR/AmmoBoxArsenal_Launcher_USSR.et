@@ -1,0 +1,25 @@
+GenericEntity : "{FDCDB16825161D12}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Launcher_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   InitialStorageSlots {
+    InventoryStorageSlot RPG {
+     Prefab "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+    }
+   }
+   MultiSlots {
+    MultiSlotConfiguration "{5B3AC9B11F254BE5}" {
+     SlotTemplate InventoryStorageSlot Grenades {
+      Prefab "{32E12D322E107F1C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM.et"
+     }
+     NumSlots 4
+    }
+   }
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{58A0B19B1E191CC1}" {
+  }
+ }
+}

@@ -1,0 +1,38 @@
+GenericEntity : "{0AD8F5CBED139651}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Medical_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{FE31750973EA92C7}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Medical_01.xob"
+   Materials {
+    MaterialAssignClass "{58A0B19DE4331A9D}" {
+     SourceMaterial "EquipmentBoxWooden_Medical_01"
+     AssignedMaterial "{F040F802F02B0D96}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_Medical_01_USSR.emat"
+    }
+    MaterialAssignClass "{58A0B19DE4331A7C}" {
+     SourceMaterial "EquipmentBoxWooden_decal"
+     AssignedMaterial "{17332645A86C9BA6}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_decal_USSR.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "SmallDestructible"
+  }
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+  SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+   "faction affiliation" "USSR"
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C4F1B8F31C4FA86}" {
+     SlotTemplate InventoryStorageSlot Field_Dressings {
+      Prefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+     NumSlots 20
+    }
+   }
+  }
+ }
+ coords 158.161 1.001 109.491
+}

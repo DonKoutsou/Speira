@@ -1,0 +1,5 @@
+SCR_FactionControlTriggerEntity {
+ ID "59F270A86A78A46A"
+ m_sOwnerFactionKey "FIA"
+ m_fFriendlyRatioLimit 0.8
+}

@@ -1,0 +1,42 @@
+GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{9E1DFF036BCE913E}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Ammunition_01.xob"
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C88A2FA09B799C3}" {
+     ContextName "default"
+     Position PointInfo "{5C88A2FA0BCD4CC2}" {
+      Offset 0 0.324 0
+     }
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C96A26036AE0BBD}" : "{E667FAB99F0F5E38}Prefabs/Trading_Items/Configs/B_M14_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2604B363651}" : "{58979BD9DC41B033}Prefabs/Trading_Items/Configs/B_M16_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2604D59A178}" : "{DF4BA38C5167AAC8}Prefabs/Trading_Items/Configs/B_M249_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2604F4FB77A}" : "{5573D4ED68A7B777}Prefabs/Trading_Items/Configs/B_M60_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A260418D4AD2}" : "{CB4553964EAA6EFA}Prefabs/Trading_Items/Configs/B_M9_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A260443BE0EC}" : "{BB85097826AE700B}Prefabs/Trading_Items/Configs/S_M14_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26045F1347B}" : "{62CD05BE8DB11EA0}Prefabs/Trading_Items/Configs/S_M16_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26046F27869}" : "{381542805FBA0361}Prefabs/Trading_Items/Configs/S_M249_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26047D8D401}" : "{6F294A8A395719E4}Prefabs/Trading_Items/Configs/S_M60_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26051082975}" : "{CA3DF9E9C2527462}Prefabs/Trading_Items/Configs/S_M9_Mag.conf" {
+    }
+   }
+  }
+ }
+ coords 140.064 1.001 126.124
+ angleY 0
+}

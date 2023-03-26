@@ -1,0 +1,44 @@
+GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{26602B855125635D}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Explosives_01.xob"
+   Materials {
+    MaterialAssignClass "{5C9AF12A7683D8E6}" {
+     SourceMaterial "EquipmentBoxWooden_Explosives_01"
+     AssignedMaterial "{0A0A9C1C7B189A8B}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_Explosives_01_FIA.emat"
+    }
+    MaterialAssignClass "{5C9AF12A7683D88E}" {
+     SourceMaterial "EquipmentBoxWooden_decal"
+     AssignedMaterial "{B309152B92729564}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_decal_Factionless.emat"
+    }
+   }
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C96D63DB5D68D86}" {
+     ContextName "default"
+     Position PointInfo "{5C96D63DC862DFF7}" {
+      Offset 0 0.3529 0
+     }
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C96D63DCF1DFF05}" : "{ED11EFBD71303C64}Prefabs/Trading_Items/Configs/Tags/B_ANM8HC_Tag.conf" {
+    }
+    KLM_ConverseAction "{5C96D63DDC017664}" : "{43A4BE3218C1FA1F}Prefabs/Trading_Items/Configs/Tags/B_M67_Tag.conf" {
+    }
+    KLM_ConverseAction "{5C96D63D3755B017}" : "{07891D3BB3AB95EA}Prefabs/Trading_Items/Configs/Tags/B_M15AT_Tag.conf" {
+    }
+    KLM_ConverseAction "{5C96D63DC5244A15}" : "{C5C08B71177ACD27}Prefabs/Trading_Items/Configs/Tags/B_RGD2_Tag.conf" {
+    }
+    KLM_ConverseAction "{5C96D63DC60D304B}" : "{8CD3D11534B5720C}Prefabs/Trading_Items/Configs/Tags/B_RGD5_Tag.conf" {
+    }
+    KLM_ConverseAction "{5C96D63D4A8CD992}" : "{3731E18194661553}Prefabs/Trading_Items/Configs/Tags/B_TM62M_Tag.conf" {
+    }
+   }
+  }
+ }
+ coords 123.291 1.001 120.74
+ angleY 0
+}

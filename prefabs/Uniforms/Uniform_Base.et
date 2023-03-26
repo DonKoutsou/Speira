@@ -1,0 +1,20 @@
+GenericEntity {
+ ID "5C6D2479B31AF769"
+ components {
+  MeshObject "{5C6D2479B050F35D}" {
+   Object ""
+   LODFactors {
+    1 1 1 1
+   }
+  }
+  SlotManagerComponent "{5C6D2479B050F361}" {
+   Slots {
+    LoadoutSlotInfo vest {
+    }
+   }
+  }
+  Hierarchy "{5C6D247FBA08398F}" {
+  }
+ }
+ coords 122.078 1.001 126.355
+}

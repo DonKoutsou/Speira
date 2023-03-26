@@ -1,0 +1,8 @@
+GameEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_BaseInteractiveLightComponent "{5882B9E6B4EFC9DF}" {
+   m_eInitialLightState LIT
+  }
+ }
+}

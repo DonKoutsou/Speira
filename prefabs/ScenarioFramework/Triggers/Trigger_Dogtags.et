@@ -1,0 +1,6 @@
+SCR_CharacterTriggerEntity : "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et" {
+ ID "5A56B37C7C2DA0E7"
+ TriggerActivationType "All changes"
+ m_EActivationPresence SPECIFIC_PREFAB_NAME
+ m_sSpecificPrefabName "{81FA7402825DB0A8}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tag_clutter_alot.et"
+}

@@ -1,0 +1,62 @@
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  SignalsManagerComponent "{5C8ACAC3B5434981}" {
+  }
+  BaseSlotComponent "{5C7555A4642DAF88}" {
+   AttachType LoadoutSlotInfo weapon {
+    InspectionWidgetOffset 0 0 -0.6707
+   }
+  }
+  MeshObject "{58C4C15098F109F6}" {
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C754272B6D76E61}" {
+     ContextName "default"
+     Position PointInfo "{5C754272C89E618E}" {
+      Offset 0 0.1118 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_CraftAction "{5C754272C3D91FE5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C754272C7081451}" {
+     }
+     Duration 0.5
+     m_WantedPay "{9D8E818461216F56}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_USSR.et"
+     m_WantedAmount 6
+     m_bShouldRemoveParent 1
+    }
+    KLM_CraftAction "{5C8ACAC24F16F05B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C8ACAC2596B3178}" {
+     }
+     Duration 0.5
+     m_WantedPay "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+     m_WantedAmount 6
+    }
+    KLM_CraftAction "{5C8ACAC2405DAD4E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C8ACAC247C2A0A8}" {
+     }
+     Duration 0.5
+     m_WantedPay "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+     m_WantedAmount 6
+    }
+   }
+  }
+ }
+ coords 0.745 0.454 0.257
+ angleX 81.765
+ angleY 180
+ angleZ -180
+}

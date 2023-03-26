@@ -1,0 +1,196 @@
+GenericEntity {
+ ID "5AED36F42E5099A6"
+ components {
+  SignalsManagerComponent "{5AED36F415E48915}" {
+  }
+  WeaponSoundComponent "{5AED36F415E48937}" {
+   Filenames {
+    "{44CBBB2C398E653B}Sounds/Weapons/Handguns/PM/Weapons_Handguns_PM_Handling.acp" "{0EDF037F2DC3E098}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_UGL_Generic.acp" "{27E5FEBCE92BE40B}Sounds/Weapons/_SharedData/Melee/Weapons_Melee.acp" "{E93E101E7ACA2172}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Grenade.acp"
+   }
+  }
+  MeshObject "{5AED36F415E489B0}" {
+   Object "{F2E1926C50C222E1}Assets/Weapons/Attachments/Bayonets/Bayonet_6Kh4/Bayonet_6Kh4.xob"
+   LODFactors {
+    1 1 1 1
+   }
+  }
+  Hierarchy "{5AED36F415E489B6}" {
+  }
+  RigidBody "{5AED36F415E489A0}" {
+   ModelGeometry 1
+  }
+  SCR_MeleeWeaponProperties "{5AED36F415E489A6}" {
+   m_fDamage 500
+   m_fRange 2
+   m_fExecutionTime 0.5
+  }
+  SCR_WeaponAttachmentsStorageComponent "{5AED36F415E48BFE}" {
+   Attributes SCR_ItemAttributeCollection "{5AED36F415E48BD2}" {
+    ItemDisplayName WeaponUIInfo "{5AED36F415E48A63}" {
+     Name "Knife"
+     Description "Usefull for close combat encounters, can also be used to tear down clothing to bandages (Still WIP knife gets consumed on craft)"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5AED36F415E48A23}" {
+     Weight 0.7
+     SizeSetupStrategy Manual
+     ItemVolume 200
+     RestingUP Left
+     RestingAdditiveRotationLS 0 0 0
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{5AED36F415E48A83}" {
+     IkSettings {
+      ItemIKSettings "{5AED36F415E48AC6}" {
+       MovementSpeedRange 0 0.01
+       IkSettingsStand 7
+       IkSettingsCrouch 7
+       IkSettingsProne 7
+      }
+      ItemIKSettings "{5AED36F415E48AFC}" {
+       MovementSpeedRange 0.01 2.2
+       IkSettingsStand 7
+       IkSettingsCrouch 7
+       IkSettingsProne 4
+      }
+      ItemIKSettings "{5AED36F415E48AF2}" {
+       MovementSpeedRange 2.2 3
+       IkSettingsStand 4
+       IkSettingsCrouch 4
+       IkSettingsProne 4
+      }
+      ItemIKSettings "{5AED36F415E48AF6}" {
+       Jumping 1
+       IkSettingsStand 4
+      }
+      ItemIKSettings "{5AED36F415E48AE3}" {
+       Lowered 1
+       InAds 0
+       OutAds 0
+      }
+      ItemIKSettings "{5AED36F415E48AE7}" {
+       ProneTurn 1
+       IkSettingsStand 4
+      }
+     }
+     AnimationInstance "{41AABAE44257A657}anims/workspaces/player/player_main_pistol.asi"
+     AnimationIKPose "{E8E2308AB43CB0E6}Assets/Weapons/Handguns/PM/anims/anm/p_PM_ik.anm"
+     OverrideDefaultIkBonesBlend 1
+     IncludeBonesInIkBlend {
+      "RightHandProp"
+     }
+     HandAdditiveRotation 90 0 0
+     HandAdditiveTranslation 1 0 0
+     AllowInspection 1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5AED36F415E48B34}" {
+      CameraOrbitAngles 45 -70 150
+      CameraDistanceToItem 0.3
+      FOV 45
+      AnimationInstance "{B2310BF09F78B065}anims/workspaces/player/player_inventory_pistol.asi"
+     }
+    }
+    m_SlotType SLOT_WEAPONS_STORAGE
+   }
+   StoragePurpose 32
+  }
+  WeaponComponent "{5AED36F415E48FF1}" {
+   components {
+    WeaponAnimationComponent "{5AED36F415E48F68}" {
+     AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+     AnimInstance "{9D1FA29C8172197B}Assets/Weapons/Handguns/workspaces/PM_weapon.asi"
+     StartNode "IdleFireSTM"
+     AlwaysActive 1
+     AnimInjection AnimationAttachmentInfo "{5AED36F415E48F76}" {
+      AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+      AnimInstance "{664133AD19737D97}Assets/Weapons/Handguns/workspaces/PM_player.asi"
+      StartNode "IdleFireSTM"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AnimVariablesToBind {
+      "State"
+     }
+    }
+    AttachmentSlotComponent "{5C6ABAF7AC3D97F5}" {
+     AttachmentSlot InventoryStorageSlot Knife {
+      Angles -90 180 -180
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
+   }
+   SignalsSourceAccess SignalsSourceAccessClass "{5AED36F415E48F62}" {
+   }
+   useAimingType None
+   WeaponType Handgun
+   AllowedRaise "Only lowered"
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0.35
+   obstructionTestBreakingThreshold 0.35
+   ObstructionAlphaThreshold 1
+   obstructionTestBBScale 1 0.75 0.05
+   sightsCameraRollScaler -1
+   SoundInt 1010100
+   UIInfo WeaponUIInfo "{5AED36F415E48F07}" {
+    Name "Knife"
+    Description "Usefull for close combat encounters, can also be used to tear down clothing to bandages (Still WIP knife gets consumed on craft)"
+    Icon "{9DE83EF9996D2EC8}UI/Textures/WeaponIcons/weapon_Bayonet6Kh4.edds"
+   }
+   WeaponSlotType "secondary"
+   WeaponOffset 0 0 0
+  }
+  ActionsManagerComponent "{5AED36F415E4803B}" {
+   ActionContexts {
+    UserActionContext "{5AED36F415E48F9F}" {
+     ContextName "default"
+     Position PointInfo "{5AED36F415E48FE5}" {
+      Offset 0 0.02 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAction "{5AED36F415E48048}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5AED36F415E48055}" {
+      Name "#AR-Inventory_Equip"
+     }
+    }
+    SCR_EquipWeaponHolsterAction "{5AED36F415E48047}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5AED36F415E48044}" {
+      Name "#AR-Inventory_EquipHolster"
+     }
+     "Sort Priority" 1
+    }
+    SCR_PickUpItemAction "{5AED36F415E48077}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5AED36F415E48075}" {
+      Name "#AR-Inventory_PickUp"
+     }
+     "Sort Priority" 2
+    }
+    SCR_WeaponAction "{5AED36F415E48062}" {
+     ParentContextList {
+      "bipod"
+     }
+     UIInfo UIInfo "{5AED36F415E48060}" {
+      Name "Bipod"
+     }
+     m_WeaponActionType Bipod
+    }
+   }
+  }
+  RplComponent "{5AED36F415E48031}" {
+  }
+ }
+ coords 120.452 2.019 123.11
+ Flags 4194307
+}

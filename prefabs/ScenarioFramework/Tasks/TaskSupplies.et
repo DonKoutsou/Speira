@@ -1,0 +1,12 @@
+CP_TaskArea {
+ ID "5B2F221F2D36687D"
+ components {
+  SCR_MapDescriptorComponent "{5B2F221F2D366872}" {
+  }
+ }
+ coords 7566.452 1.105 6797.175
+ m_sName "Recover supplies"
+ m_sDescription "Recover the supplies"
+ m_sMapIconName "Icon_Task_Move"
+ m_sTaskListIconName "Icon_Task_Move"
+}

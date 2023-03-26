@@ -1,0 +1,17 @@
+SCR_CharacterTriggerEntity {
+ ID "5C50D72EFEE09021"
+ components {
+  RplComponent "{5C50D72EFEE09026}" {
+  }
+ }
+ coords 17.346 1.001 156.693
+ TriggerShapeType Sphere
+ SphereRadius 5
+ ShapeColor 0.441 0.845 0.439 0.494
+ TriggerActivationType "Every query"
+ PeriodicQueries 1
+ UpdatePeriod 2
+ ClassFilter "ChimeraCharacter"
+ m_EActivationPresence ANY_CHARACTER
+ m_bOnce 0
+}

@@ -1,0 +1,26 @@
+SCR_ChimeraCharacter : "{2F912ED6E399FF47}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et" {
+ ID "520EC961A090BBD5"
+ components {
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{4B57C11AA5161760}prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup.et"
+     PrefabsToSpawn {
+      "{73950FBA2D7DB5C5}Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et" "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{C68F53EF85E90734}prefabs/Currency/Wallet_US_10_Watches.et" "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et"
+     }
+    }
+   }
+  }
+ }
+ coords 130.116 1.001 113.426
+}

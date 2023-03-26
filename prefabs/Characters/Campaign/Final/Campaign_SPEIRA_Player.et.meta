@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{8A1EF2F465C86A5A}prefabs/Characters/Campaign/Final/Campaign_SPEIRA_Player.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

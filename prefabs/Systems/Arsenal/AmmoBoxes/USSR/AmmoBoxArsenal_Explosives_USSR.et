@@ -1,0 +1,18 @@
+GenericEntity : "{541D161EFAF67003}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Explosives_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C4F1B8F77705489}" {
+     SlotTemplate InventoryStorageSlot Grenades {
+      Prefab "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
+     }
+     NumSlots 10
+    }
+   }
+  }
+ }
+}

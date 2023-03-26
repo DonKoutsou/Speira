@@ -1,0 +1,34 @@
+SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     PrefabsToSpawn {
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{E1A5D4B878AA8980}Prefabs/Items/Equipment/Radios/Radio_R148.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{55709011B609AA99}" {
+     PrefabsToSpawn {
+      "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KLM_ConverseAction "{5AF6864D33C5A787}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5AF6864D47B71305}" {
+      Name "Give SVD magazine for a broken watch"
+     }
+     Duration 1
+     m_WantedPay "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+    }
+   }
+  }
+ }
+}

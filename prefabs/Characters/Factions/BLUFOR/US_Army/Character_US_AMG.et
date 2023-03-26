@@ -1,0 +1,50 @@
+SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
+ ID "522AAC66D0A2C0DC"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{3CCA7A9BB4FD3197}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup.et"
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{63830819B7C25898}Prefabs/Characters/HeadGear/Helmet_M1_01/Helmet_M1_01.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{4B57C11AA5161760}prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup.et"
+    }
+    ItemsInitConfigurationItem "{54A49B49D97BB412}" {
+     PrefabsToSpawn {
+     }
+    }
+    ItemsInitConfigurationItem "{54A49B42D138207E}" {
+     TargetStorage ""
+     PrefabsToSpawn {
+     }
+    }
+    ItemsInitConfigurationItem "{5538C29BEE4A1A4E}" {
+     TargetStorage ""
+     PrefabsToSpawn {
+     }
+    }
+    ItemsInitConfigurationItem "{5538C29BEE39272E}" {
+     TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et"
+     PrefabsToSpawn + {
+      "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+     }
+    }
+   }
+  }
+ }
+}

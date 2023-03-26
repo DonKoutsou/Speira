@@ -1,0 +1,24 @@
+GenericEntity : "{211E104BCAB8C7DA}Prefabs/Weapons/Rifles/Vz52/Rifle_Vz52_base.et" {
+ ID "5260C45AAAA407F4"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5AB43CFC937E38B5}" {
+     AttachmentSlot InventoryStorageSlot Scope {
+      Offset 0 0.0075 0.0526
+      InspectionWidgetOffset -0.0286 0.0533 0.0927
+     }
+     AttachmentType AttachmentOpticsDovetail "{5AB43CFC937E38BE}" {
+     }
+     AttachmentObstructs 0
+     ShowInInspection 1
+    }
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPointRear PointInfo "{5AB43CFC937E144D}" {
+      PivotID "w_sight"
+     }
+    }
+   }
+  }
+ }
+}

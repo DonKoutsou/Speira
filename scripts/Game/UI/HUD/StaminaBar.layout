@@ -1,0 +1,20 @@
+FrameWidgetClass {
+ Color 0 0.502 0.125 1
+ {
+  ProgressBarWidgetClass "{5965486C4D9C8173}" {
+   Prefab "{5965486C4D9C8173}"
+   Slot FrameWidgetSlot "{5965486C4D9C809B}" {
+    PositionX -944.2
+    OffsetLeft -944.2
+    PositionY -22.5
+    OffsetTop -22.5
+    SizeX 300
+    OffsetRight 644.2
+    SizeY 6
+    OffsetBottom 16.5
+   }
+   Opacity 0.517
+   Color 0.261 0.337 0.264 1
+  }
+ }
+}

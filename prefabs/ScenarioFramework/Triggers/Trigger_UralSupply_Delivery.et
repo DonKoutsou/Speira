@@ -1,0 +1,5 @@
+SCR_CharacterTriggerEntity : "{C8C146601F21A5D4}prefabs/ScenarioFramework/Triggers/TriggerUralDelivery.et" {
+ ID "5A56B37C7C2DA0E7"
+ coords 7184.156 137.74 2303.335
+ m_sSpecificPrefabName "{B52E9B739C16B4EF}prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Supply_Truck.et"
+}

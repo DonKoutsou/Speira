@@ -1,0 +1,4925 @@
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ StPhillipe_Area {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 1000
+   }
+  }
+  coords 4442.54 12.819 10747.677
+  {
+   GenericEntity D_Destroy : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+    components {
+     CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      D_Truck1 {
+       coords 110.101 3.869 -181.805
+       angleY -10.467
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+      D_Truck2 {
+       coords -136.666 -11.714 191.671
+       angleY -6.362
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    D_Logic {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+       coords 0 0 0
+       m_aInputs {
+        CP_LogicInput "{5AF8FAD73AB86443}" {
+         m_pInputAction CP_ActionInputCheckEntitiesInTrigger "{5AF8FAD73F9495E1}" {
+          m_pGetter CP_GetEntityByName "{5AF8FAD732FB48A5}" {
+           m_sEntityName "D_TriggerQRF"
+          }
+          m_iValue 2
+         }
+        }
+       }
+       m_aActions {
+        CP_ActionSpawnClosestObjectFromList "{5AF8FACEBD4D8AC1}" {
+         m_pGetter CP_GetPlayerEntity "{5AF8FACEB23BDA8E}" {
+         }
+         m_sListOfObjects {
+          "D_QRF"
+         }
+        }
+       }
+      }
+      GenericEntity D_TriggerQRF : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       components {
+        CP_SlotTrigger "{5A4B5098DE424991}" {
+         m_aPlugins {
+          CP_PluginTrigger "{5AC53D73FCB1F805}" {
+           m_fAreaRadius 256.375
+           m_EActivationPresence ANY_CHARACTER
+           m_sActivatedByThisFaction "US"
+          }
+         }
+         m_sFaction "US"
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    D_QRF {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity D_QRF_Pool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACE70B8773F}" {
+              m_sName "D_QRF_WP"
+             }
+            }
+           }
+          }
+          coords -187.25 13.394 198.958
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACD821B6C87}" {
+              m_sName "D_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 171.374 2.462 -210.942
+         }
+        }
+       }
+      }
+      GenericEntity D_QRF_WP : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        CP_SlotBase "{5A22E1D67E712EC8}" {
+         m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+        }
+        Hierarchy "{5A22E1D67107AD52}" {
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    D_Guards {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 66
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -438.671 -10.708 -70.29
+          angleY -129.689
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FCF7F5DC4F83955C}prefabs/Groups/BLUFOR/Group_US_LightFireTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 280.343 10.454 -44.76
+          angleY 143.044
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 145.836 1.91 -364.471
+          angleY -8.455
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -96.266 -11.312 247.078
+          angleY -25.375
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -35.23 -2.851 -8.807
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 15.724 -1.177 30.262
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 160.601 4.795 -137.267
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 111.487 3.161 101.954
+          angleY 164.727
+         }
+        }
+       }
+      }
+     }
+    }
+    D_Patrols {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 80
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -96.046 -12.819 88.487
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7AA03A436}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -257.141 -7.364 -81.22
+          angleY 143.044
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7BA3FD2AF}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords 61.301 5.247 -207.371
+          angleY -139.375
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7BE34AB41}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -38.056 -2.415 -37.59
+          angleY 25.841
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7B2288C0F}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -134.291 0.502 -143.396
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7B74841FC}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords 138.859 5.703 -28.119
+          angleY -180
+         }
+        }
+       }
+      }
+     }
+    }
+    D_PatrolWaypoints {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity D_Patrol_WP : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 0 0 0
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -37.88 -2.454 -36.955
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -142.3 -7.897 -49.62
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -397.487 -9.174 -80.481
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -190.103 -0.768 -139.502
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -171.682 16.686 -254.799
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -73.314 17.901 -318.189
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 62 4.882 -313.808
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 157.148 2.13 -328.885
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 156.602 5.206 -102.643
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 48.557 -5.17 256.935
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -29.229 -6.617 223.893
+         }
+        }
+       }
+      }
+     }
+    }
+    StPhillipe_Exploration_Task {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 46.135 3.708 -112.729
+     {
+      GenericEntity : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        CP_LayerTask "{5A2283E9F84958A1}" {
+         m_sTaskTitle "Unexplored Area"
+         m_sTaskDescription "StPhillipe"
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 212.306
+            }
+           }
+           m_sFaction "FIA"
+           m_sTaskTitle "Unexplored Area"
+           m_sTaskDescription "The port of St.Phillipe is the main base of the US forces on the Island. Enemy presence is high"
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   GenericEntity D_Documents : "{88821DCA414AF4C7}Prefabs/ScenarioFramework/Components/LayerTaskDeliver.et" {
+    components {
+     CP_LayerTaskDeliver "{5A6513F48903E7DA}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+      m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+      m_sTaskTitleUpdated "Deliver Intel"
+      m_sTaskDescriptionUpdated "#AR-CombatScenario_Intel_Description_D"
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{9F70B00322910AED}Prefabs/ScenarioFramework/Components/SlotPick.et" {
+      C_Document_Spawn3 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords -30.679 4.628 -95.024
+       angleY 142.904
+      }
+      C_Document_Spawn4 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords -22.076 0.771 -95.729
+      }
+     }
+    }
+   }
+   GenericEntity D_ClearArea : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+    components {
+     CP_LayerTaskClearArea "{5A6513F46D132331}" {
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "Clear the area"
+      m_sTaskDescription "#AR-CombatScenario_ClearAreaTask_Description"
+     }
+    }
+    coords 6.092 -0.153 6.192
+    {
+     GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       GenericEntity : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+        components {
+         CP_SlotClearArea "{5A633AF525D5B972}" {
+          m_aPlugins {
+           CP_PluginTrigger "{5A633AF5368D26A3}" {
+            m_fAreaRadius 485.224
+           }
+          }
+          m_aActionsOnFinished {
+           CP_ActionPlaySound "{5AF8FAD6BD9353E6}" {
+            m_sSound "SOUND_CP_TACC"
+           }
+          }
+         }
+        }
+        coords -144.597 0 189.179
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Tyrone_Area {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 1000
+   }
+  }
+  coords 4948.736 12.819 9121.478
+  {
+   GenericEntity F_Destroy : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+    components {
+     CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords -535.97 0.721 414.609
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      F_Truck1 {
+       coords -106.409 -12.415 34.79
+       angleY 50.007
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+      F_Truck2 {
+       coords 4.45 1.553 34.367
+       angleY 2.084
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    F_Logic {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+       Meaux_LogicC {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5AF8FAD73AB86443}" {
+          m_pInputAction CP_ActionInputCheckEntitiesInTrigger "{5AF8FAD73F9495E1}" {
+           m_pGetter CP_GetEntityByName "{5AF8FAD732FB48A5}" {
+            m_sEntityName "F_Meaux_TriggerQRF"
+           }
+           m_iValue 2
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnClosestObjectFromList "{5AF8FACEBD4D8AC1}" {
+          m_pGetter CP_GetPlayerEntity "{5AF8FACEB23BDA8E}" {
+          }
+          m_sListOfObjects {
+           "F_Meaux_QRF"
+          }
+         }
+        }
+       }
+       Tyrone_LogicC {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5AF8FAD73AB86443}" {
+          m_pInputAction CP_ActionInputCheckEntitiesInTrigger "{5AF8FAD73F9495E1}" {
+           m_pGetter CP_GetEntityByName "{5AF8FAD732FB48A5}" {
+            m_sEntityName "DF_Tyrone_TriggerQRF"
+           }
+           m_iValue 2
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnClosestObjectFromList "{5AF8FACEBD4D8AC1}" {
+          m_pGetter CP_GetPlayerEntity "{5AF8FACEB23BDA8E}" {
+          }
+          m_sListOfObjects {
+           "F_Tyrone_QRF"
+          }
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       F_Tyrone_TriggerQRF {
+        components {
+         CP_SlotTrigger "{5A4B5098DE424991}" {
+          m_aPlugins {
+           CP_PluginTrigger "{5AC53D73FCB1F805}" {
+            m_fAreaRadius 256.375
+            m_EActivationPresence ANY_CHARACTER
+            m_sActivatedByThisFaction "US"
+           }
+          }
+          m_sFaction "US"
+         }
+        }
+        coords -18.662 23.576 -8.289
+       }
+       F_Meaux_TriggerQRF {
+        components {
+         CP_SlotTrigger "{5A4B5098DE424991}" {
+          m_aPlugins {
+           CP_PluginTrigger "{5AC53D73FCB1F805}" {
+            m_fAreaRadius 256.375
+            m_EActivationPresence ANY_CHARACTER
+            m_sActivatedByThisFaction "US"
+           }
+          }
+          m_sFaction "US"
+         }
+        }
+        coords -527.455 1.026 414.531
+       }
+      }
+     }
+    }
+    F_Tyrone_QRF {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -10.975 23.304 19.765
+     {
+      GenericEntity F_Tyrone_QRF_Pool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACE70B8773F}" {
+              m_sName "F_Tyrone_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 45.046 8.543 350.529
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACD821B6C87}" {
+              m_sName "F_Tyrone_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 199.249 36.521 -508.352
+         }
+        }
+       }
+      }
+      GenericEntity F_Tyrone_QRF_WP : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        CP_SlotBase "{5A22E1D67E712EC8}" {
+         m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+        }
+        Hierarchy "{5A22E1D67107AD52}" {
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    F_Guards {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -281.903 -1.245 203.734
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 66
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -362.463 -9.449 215.024
+          angleY -129.689
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -356.81 -10.448 167.858
+          angleY -129.689
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -163.566 2.337 150.812
+          angleY -129.689
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -136.461 -3.562 27.21
+          angleY -129.689
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -29.87 -2.892 -46.272
+          angleY -129.689
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -56.49 10.929 305.249
+          angleY 94.937
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -102.658 9.709 429.379
+          angleY 5.225
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 262.799 24.656 -148.166
+          angleY -20.147
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 174.09 31.588 -347.705
+          angleY -147.986
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 459.359 23.923 -238.667
+          angleY 69.749
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 249.347 24.54 -229.268
+          angleY 119.562
+         }
+        }
+       }
+      }
+     }
+    }
+    F_Patrols {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_MULTIPLE
+       m_iRandomPercent 70
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -315.359 -4.254 153.738
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 80
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -103.646 -0.551 76.78
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 40.241 2.768 1.69
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 253.855 27.04 -30.982
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 292.89 27.592 -183.153
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -30.16 72.843 -578.483
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -314.683 46.239 -447.649
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -450.995 18.71 -257.007
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -158.881 14.536 -152.114
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -105.243 -0.475 79.98
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -296.964 -7.315 266.526
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -135.808 8.828 332.211
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -28.032 13.674 352.071
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 239.087 12.703 435.831
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 245.76 15.904 122.577
+          angleY -77.728
+         }
+        }
+       }
+      }
+     }
+    }
+    F_PatrolWaypoints {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -263.023 -0.382 155.646
+     {
+      GenericEntity F_Patrol_WP : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -53.329 0 0.656
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -208.493 3.309 -153.176
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -495.94 19.479 -271.957
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -295.807 47 -481.997
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -82.634 69.201 -582.512
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 183.134 27.91 -258.329
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 354.917 36.396 -363.812
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 319.067 26.604 -227.607
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 239.978 23.659 -182.75
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 207.548 18.043 -27.388
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 194.382 8.725 442.513
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -74.772 8.423 353.427
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -69.293 6.227 197.017
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -129.945 2.707 201.156
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -196.018 1.31 198.456
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -184.163 5.021 331.427
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -138.713 8.729 415.347
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -184.933 7.298 443.321
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -249.061 1.239 336.008
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -311.69 -1.423 318.562
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -351.221 -11.436 262.301
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -192.829 -0.718 150.916
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -155.15 -4.461 73.233
+         }
+        }
+       }
+      }
+     }
+    }
+    F_Meaux_QRF {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -517.737 1.577 424.072
+     {
+      GenericEntity F_Meaux_QRF_Pool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACE70B8773F}" {
+              m_sName "F_Meaux_QRF_WP"
+             }
+            }
+           }
+          }
+          coords -231.25 10.146 541.071
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACD821B6C87}" {
+              m_sName "F_Meaux_QRF_WP"
+             }
+            }
+           }
+          }
+          coords -37.058 34.615 -507.598
+         }
+        }
+       }
+      }
+      GenericEntity F_Meaux_QRF_WP : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        CP_SlotBase "{5A22E1D67E712EC8}" {
+         m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+        }
+        Hierarchy "{5A22E1D67107AD52}" {
+        }
+       }
+       coords 55.792 -0.062 -48.189
+      }
+     }
+    }
+    Tyrone_Exploration_Task {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -23.73 23.397 -30.526
+     {
+      GenericEntity : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        CP_LayerTask "{5A2283E9F84958A1}" {
+         m_sTaskTitle "Unexplored Area"
+         m_sTaskDescription "Tyrone"
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 212.306
+            }
+           }
+           m_sFaction "FIA"
+           m_sTaskTitle "Unexplored Area"
+           m_sTaskDescription "The City of Tyrone still remains occupied by US forces"
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+    Meaux_Exploration_Task {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -436.047 1.229 354.157
+     {
+      GenericEntity : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        CP_LayerTask "{5A2283E9F84958A1}" {
+         m_sTaskTitle "Unexplored Area"
+         m_sTaskDescription "Meaux"
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 212.306
+            }
+           }
+           m_sFaction "FIA"
+           m_sTaskTitle "Unexplored Area"
+           m_sTaskDescription "The City of Meaux still remains occupied by US forces"
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   GenericEntity F_Documents : "{88821DCA414AF4C7}Prefabs/ScenarioFramework/Components/LayerTaskDeliver.et" {
+    components {
+     CP_LayerTaskDeliver "{5A6513F48903E7DA}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+      m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+      m_sTaskTitleUpdated "Deliver Intel"
+      m_sTaskDescriptionUpdated "#AR-CombatScenario_Intel_Description_D"
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{9F70B00322910AED}Prefabs/ScenarioFramework/Components/SlotPick.et" {
+      F_Document_Spawn1 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords -27.334 28.698 -55.118
+       angleY 165.781
+      }
+      F_Document_Spawn2 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords -441.484 6.352 366.404
+       angleY 31.531
+      }
+     }
+    }
+   }
+   GenericEntity F_ClearArea : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+    components {
+     CP_LayerTaskClearArea "{5A6513F46D132331}" {
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_ClearAreaTask_Title"
+      m_sTaskDescription "#AR-CombatScenario_ClearAreaTask_Description"
+     }
+    }
+    coords -536.667 -0.153 429.883
+    {
+     GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       GenericEntity : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+        components {
+         CP_SlotClearArea "{5A633AF525D5B972}" {
+          m_aPlugins {
+           CP_PluginTrigger "{5A633AF5368D26A3}" {
+            m_fAreaRadius 303.27
+           }
+          }
+          m_aActionsOnFinished {
+           CP_ActionPlaySound "{5AF8FAD6BD9353E6}" {
+            m_sSound "SOUND_CP_TACC"
+           }
+          }
+         }
+        }
+        coords 0 0 0
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Lamentin_Area {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 1000
+   }
+  }
+  coords 1715.099 36.634 5846.57
+  {
+   GenericEntity G_Destroy : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+    components {
+     CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords -463.459 -0.367 142.616
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      D_Truck3 {
+       coords -147.58 -33.434 125.783
+       angleY -13.466
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+      D_Truck4 {
+       coords 1.003 -5.018 99.501
+       angleY -51.021
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    G_Logic {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+       coords 0 0 0
+       m_aInputs {
+        CP_LogicInput "{5AF8FAD73AB86443}" {
+         m_pInputAction CP_ActionInputCheckEntitiesInTrigger "{5AF8FAD73F9495E1}" {
+          m_pGetter CP_GetEntityByName "{5AF8FAD732FB48A5}" {
+           m_sEntityName "G_TriggerQRF"
+          }
+          m_iValue 2
+         }
+        }
+       }
+       m_aActions {
+        CP_ActionSpawnClosestObjectFromList "{5AF8FACEBD4D8AC1}" {
+         m_pGetter CP_GetPlayerEntity "{5AF8FACEB23BDA8E}" {
+         }
+         m_sListOfObjects {
+          "G_QRF"
+         }
+        }
+       }
+      }
+      GenericEntity G_TriggerQRF : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       components {
+        CP_SlotTrigger "{5A4B5098DE424991}" {
+         m_aPlugins {
+          CP_PluginTrigger "{5AC53D73FCB1F805}" {
+           m_fAreaRadius 256.375
+           m_EActivationPresence ANY_CHARACTER
+           m_sActivatedByThisFaction "US"
+          }
+         }
+         m_sFaction "US"
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    G_QRF {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -485.38 -7.04 292.915
+     {
+      GenericEntity G_QRF_Pool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACE70B8773F}" {
+              m_sName "D_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 605.876 -17.996 -12.037
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACD821B6C87}" {
+              m_sName "D_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 460.275 -5.637 -904.616
+         }
+        }
+       }
+      }
+      GenericEntity G_QRF_WP : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        CP_SlotBase "{5A22E1D67E712EC8}" {
+         m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+        }
+        Hierarchy "{5A22E1D67107AD52}" {
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    G_Guards {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -473.481 -3.631 207.313
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 66
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -182.983 -30.19 129.911
+          angleY -118.119
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FCF7F5DC4F83955C}prefabs/Groups/BLUFOR/Group_US_LightFireTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -282.989 -25.282 -58.986
+          angleY 118.564
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 29.854 1.91 -37.075
+          angleY -171.01
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -88.638 0.53 265.085
+          angleY -25.375
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 64.466 23.74 186.514
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 213.948 29.224 95.592
+          angleY 83.82
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 301.948 21.248 -86.309
+          angleY 96.93
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 260.89 28.112 -249.699
+          angleY 117.074
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 39.311 4.89 -129.939
+          angleY 52.093
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -151.414 -22.551 -112.745
+          angleY 31.906
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -180.34 -29.283 -26.8
+          angleY -24.768
+         }
+        }
+       }
+      }
+     }
+    }
+    G_Patrols {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 80
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -639.136 -33.913 211.453
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7AA03A436}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -433.34 0.872 89.657
+          angleY 143.044
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7BA3FD2AF}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords 4.912 41.747 -163.8
+          angleY -139.375
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7BE34AB41}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -38.118 23.972 102.24
+          angleY 25.841
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7B2288C0F}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -292.036 12.814 147.709
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7B74841FC}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -565.322 -2.462 424.795
+          angleY 180
+         }
+        }
+       }
+      }
+     }
+    }
+    G_PatrolWaypoints {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity G_Patrol_WP : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 495.282 74.775 -471.52
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 6.207 41.969 -167.027
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -36.104 23.58 101.525
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -304.924 11.708 152.938
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -483.428 -7.051 294.044
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -543.346 -3.197 381.061
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -655.321 -33.821 336.24
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -655.609 -30.14 118.333
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -495.286 -5.749 52.126
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -436.928 0.802 90.315
+         }
+        }
+       }
+      }
+     }
+    }
+    Lamentin_Exploration_Task {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -434.455 0.949 98.458
+     {
+      GenericEntity : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        CP_LayerTask "{5A2283E9F84958A1}" {
+         m_sTaskTitle "Unexplored Area"
+         m_sTaskDescription "Lamentin"
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 212.306
+            }
+           }
+           m_sFaction "FIA"
+           m_sTaskTitle "Unexplored Area"
+           m_sTaskDescription "The City of Lamentin still remains occupied by US forces"
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   GenericEntity G_Documents : "{88821DCA414AF4C7}Prefabs/ScenarioFramework/Components/LayerTaskDeliver.et" {
+    components {
+     CP_LayerTaskDeliver "{5A6513F48903E7DA}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+      m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+      m_sTaskTitleUpdated "Deliver Intel"
+      m_sTaskDescriptionUpdated "#AR-CombatScenario_Intel_Description_D"
+     }
+    }
+    coords -473.43 -1.454 167.804
+    {
+     $grp GenericEntity : "{9F70B00322910AED}Prefabs/ScenarioFramework/Components/SlotPick.et" {
+      G_Document_Spawn1 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords 30.741 3.27 24.432
+       angleY 142.904
+      }
+      G_Document_Spawn2 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords 42.455 10.136 13.41
+       angleY 56.216
+      }
+     }
+    }
+   }
+   GenericEntity G_ClearArea : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+    components {
+     CP_LayerTaskClearArea "{5A6513F46D132331}" {
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_ClearAreaTask_Title"
+      m_sTaskDescription "#AR-CombatScenario_ClearAreaTask_Description"
+     }
+    }
+    coords -474.503 -1.101 167.359
+    {
+     GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       GenericEntity : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+        components {
+         CP_SlotClearArea "{5A633AF525D5B972}" {
+          m_aPlugins {
+           CP_PluginTrigger "{5A633AF5368D26A3}" {
+            m_fAreaRadius 485.224
+           }
+          }
+          m_aActionsOnFinished {
+           CP_ActionPlaySound "{5AF8FAD6BD9353E6}" {
+            m_sSound "SOUND_CP_TACC"
+           }
+          }
+         }
+        }
+        coords -21.291 -0.21 2.68
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Montignac_Area {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 1000
+   }
+  }
+  coords 4801.302 167.383 7041.826
+  {
+   GenericEntity H_Destroy : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+    components {
+     CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      H_Truck1 {
+       coords -156.893 -7.317 -38.733
+       angleY 56.251
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+      H_Truck2 {
+       coords 43.733 -3.602 74.408
+       angleY -25.528
+       {
+        GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+         components {
+          CP_SlotDestroy "{5A22E1D6276BD209}" {
+           m_rObjectToSpawn "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et"
+           m_sID "BIS_ObjectToDestroy"
+           m_sTaskTitle "#AR-CombatScenario_DestroyTask_B_Title"
+           m_sTaskDescription "#AR-CombatScenario_DestroyTask_B_Description"
+           m_aActionsOnFinished {
+            CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+             m_sSound "SOUND_CP_TD_VC"
+            }
+           }
+          }
+         }
+         coords 0 0 0
+        }
+        GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          CP_SlotBase "{5A22E1D67E712EC8}" {
+          }
+          Hierarchy "{5A22E1D67107AD52}" {
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    G_Logic2 {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+       coords 0 0 0
+       m_aInputs {
+        CP_LogicInput "{5AF8FAD73AB86443}" {
+         m_pInputAction CP_ActionInputCheckEntitiesInTrigger "{5AF8FAD73F9495E1}" {
+          m_pGetter CP_GetEntityByName "{5AF8FAD732FB48A5}" {
+           m_sEntityName "G_TriggerQRF"
+          }
+          m_iValue 2
+         }
+        }
+       }
+       m_aActions {
+        CP_ActionSpawnClosestObjectFromList "{5AF8FACEBD4D8AC1}" {
+         m_pGetter CP_GetPlayerEntity "{5AF8FACEB23BDA8E}" {
+         }
+         m_sListOfObjects {
+          "G_QRF"
+         }
+        }
+       }
+      }
+      GenericEntity G_TriggerQRF2 : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
+       components {
+        CP_SlotTrigger "{5A4B5098DE424991}" {
+         m_aPlugins {
+          CP_PluginTrigger "{5AC53D73FCB1F805}" {
+           m_fAreaRadius 256.375
+           m_EActivationPresence ANY_CHARACTER
+           m_sActivatedByThisFaction "US"
+          }
+         }
+         m_sFaction "US"
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    G_QRF2 {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -485.38 -7.04 292.915
+     {
+      GenericEntity G_QRF_Pool2 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACE70B8773F}" {
+              m_sName "D_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 605.876 -17.996 -12.037
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FACD821B6C87}" {
+              m_sName "D_QRF_WP"
+             }
+            }
+           }
+          }
+          coords 460.275 -5.637 -904.616
+         }
+        }
+       }
+      }
+      GenericEntity G_QRF_WP2 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        CP_SlotBase "{5A22E1D67E712EC8}" {
+         m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+        }
+        Hierarchy "{5A22E1D67107AD52}" {
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+    H_Guards {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 66
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -182.983 -13.659 129.911
+          angleY -118.119
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FCF7F5DC4F83955C}prefabs/Groups/BLUFOR/Group_US_LightFireTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords -282.989 -15.378 -58.986
+          angleY 118.564
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+           }
+          }
+          coords 29.854 -167.383 -37.075
+          angleY -171.01
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -88.638 -5.57 265.085
+          angleY -25.375
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 64.466 -2.234 186.514
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 213.948 6.369 95.592
+          angleY 83.82
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 301.948 7.786 -86.309
+          angleY 96.93
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 260.89 -19.028 -249.699
+          angleY 117.074
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -151.414 -6.898 -112.745
+          angleY 31.906
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords -180.34 -9.087 -26.8
+          angleY -24.768
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{FAEA8B9E1252F56E}Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et"
+            m_sFaction "US"
+           }
+          }
+          coords 41.26 0.134 -123.911
+          angleY 52.093
+         }
+        }
+       }
+      }
+     }
+    }
+    G_Patrols2 {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+         m_SpawnChildren RANDOM_MULTIPLE
+         m_iRandomPercent 80
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAC80CEB6518}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -639.136 -77.311 211.453
+          angleY -77.728
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7AA03A436}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -433.34 -51.241 89.657
+          angleY 143.044
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7BA3FD2AF}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords 4.912 -1.164 -163.8
+          angleY -139.375
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7BE34AB41}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -38.118 -5.947 102.24
+          angleY 25.841
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7B2288C0F}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -292.036 -32.878 147.709
+          angleY 164.727
+         }
+         {
+          components {
+           CP_SlotAI "{5A26B3E02AC77BA0}" {
+            m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+            m_sFaction "US"
+            m_aWaypointGroupNames {
+             SCR_WaypointSet "{5AF8FAF7B74841FC}" {
+              m_sName "D_Patrol_WP"
+              m_bCycleWaypoints 1
+             }
+            }
+            m_rWPToSpawn ""
+           }
+          }
+          coords -565.322 -81.344 424.795
+          angleY -180
+         }
+        }
+       }
+      }
+     }
+    }
+    G_PatrolWaypoints2 {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity G_Patrol_WP2 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       components {
+        CP_LayerBase "{5A2283EA2A0B4B14}" {
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 495.282 -61.729 -471.52
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -36.104 -5.761 101.525
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -304.924 -23.044 152.938
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -483.428 -68.533 294.044
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -543.346 -64.072 381.061
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -655.321 -80.058 336.24
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -655.609 -71.99 118.333
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -495.286 -60.934 52.126
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords -436.928 -51.819 90.315
+         }
+         {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sFaction "US"
+           }
+           Hierarchy "{5A22E1D67107AD52}" {
+           }
+          }
+          coords 6.207 -1.419 -167.027
+         }
+        }
+       }
+      }
+     }
+    }
+    Montignac_Exploration_Task {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_TRIGGER_ACTIVATION
+      }
+     }
+     coords -3.041 -0.456 8.625
+     {
+      GenericEntity : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+       components {
+        CP_LayerTask "{5A2283E9F84958A1}" {
+         m_sTaskTitle "Unexplored Area"
+         m_sTaskDescription "Montignac"
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+         components {
+          CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+           m_aPlugins {
+            CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+             m_fAreaRadius 212.306
+            }
+           }
+           m_sFaction "FIA"
+           m_sTaskTitle "Unexplored Area"
+           m_sTaskDescription "The City of Montignac still remains occupied by US forces"
+          }
+         }
+         coords 0 0 0
+        }
+       }
+      }
+     }
+    }
+   }
+   GenericEntity H_Documents : "{88821DCA414AF4C7}Prefabs/ScenarioFramework/Components/LayerTaskDeliver.et" {
+    components {
+     CP_LayerTaskDeliver "{5A6513F48903E7DA}" {
+      m_SpawnChildren RANDOM_ONE
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+      m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+      m_sTaskTitleUpdated "Deliver Intel"
+      m_sTaskDescriptionUpdated "#AR-CombatScenario_Intel_Description_D"
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{9F70B00322910AED}Prefabs/ScenarioFramework/Components/SlotPick.et" {
+      H_Document_Spawn1 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords 26.433 7.101 -17.188
+       angleY 142.904
+      }
+      H_Document_Spawn2 {
+       components {
+        CP_SlotPick "{5A2283FD60F69A1A}" {
+         m_rObjectToSpawn "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+         m_sTaskTitle "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescription "#AR-CombatScenario_Intel_Description_A"
+         m_aActionsOnUpdated {
+          CP_ActionPlaySound "{5AF8FAD677F25C52}" {
+           m_sSound "SOUND_CP_TIF"
+          }
+         }
+         m_sTaskTitleUpdated1 "Deliver Intel"
+         m_sTaskDescriptionUpdated1 "#AR-CombatScenario_Intel_Description_E"
+         m_sTaskTitleUpdated2 "#AR-CombatScenario_Intel_Title"
+         m_sTaskDescriptionUpdated2 "#AR-CombatScenario_Intel_Description_D"
+        }
+       }
+       coords -12.501 3.304 -47.151
+       angleY 49.727
+      }
+     }
+    }
+   }
+   GenericEntity H_ClearArea : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+    components {
+     CP_LayerTaskClearArea "{5A6513F46D132331}" {
+      m_EActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "#AR-CombatScenario_ClearAreaTask_Title"
+      m_sTaskDescription "#AR-CombatScenario_ClearAreaTask_Description"
+     }
+    }
+    coords 0 0 0
+    {
+     GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       GenericEntity : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+        components {
+         CP_SlotClearArea "{5A633AF525D5B972}" {
+          m_aPlugins {
+           CP_PluginTrigger "{5A633AF5368D26A3}" {
+            m_fAreaRadius 229.788
+           }
+          }
+          m_aActionsOnFinished {
+           CP_ActionPlaySound "{5AF8FAD6BD9353E6}" {
+            m_sSound "SOUND_CP_TACC"
+           }
+          }
+         }
+        }
+        coords -21.291 -0.21 2.68
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Figari_Area {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 508.628
+   }
+  }
+  coords 5179.697 57.449 5366.574
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    Figari_Logic {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      $grp CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+       Figari_Task_Counter {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5B06B699063D3862}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B06B685F79E12EF}" {
+           m_sTaskLayerName "Figari_Destroy"
+          }
+         }
+         CP_LogicInput "{5B2AEA964457468F}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B2AEA9646304ADB}" {
+           m_sTaskLayerName "Figari_Kill_VIP"
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnObjects "{5B2AEA9670AE5487}" {
+          m_sNameOfObjectsToSpawnOnActivation {
+           "Figari_Missions_Stage2"
+          }
+         }
+        }
+       }
+       Figari_Init_Counter {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5B2AEA95F46F0B06}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B2AEA95F7623EE6}" {
+           m_sTaskLayerName "Figari_Exploration_Task"
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnObjects "{5B2AEA951E94F039}" {
+          m_sNameOfObjectsToSpawnOnActivation {
+           "Figari_Missions_Stage1"
+          }
+         }
+        }
+       }
+       Figari_Finit_Counter {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5B2AEA956DDA8003}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B2AEA9561BEBFA0}" {
+           m_sTaskLayerName "Figari_ClearArea"
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnObjects "{5B2AEA95672712A5}" {
+          m_sNameOfObjectsToSpawnOnActivation {
+           "Figari_FIA_Units"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    Figari_Missions {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 566.066 -55.262 226.575
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       Figari_Missions_Stage1 {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_TRIGGER_ACTIVATION
+         }
+        }
+        coords 0 0 0
+        {
+         GenericEntity Figari_FIABase_Task : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+          components {
+           CP_LayerTask "{5A2283E9F84958A1}" {
+            m_sTaskTitle "Hidden FIA base"
+            m_sTaskDescription "Visit Hidden FIA base near Morton"
+           }
+          }
+          coords 518.324 104.273 -477.276
+          {
+           GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+            coords 0 0 0
+            {
+             GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+              components {
+               CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+                m_aPlugins {
+                 CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+                 }
+                }
+                m_sFaction "FIA"
+                m_sTaskTitle "Visit Hidden FIA base near Figari and Provins"
+                m_sTaskDescription "I was given the location of a Hidden FIA base close to Figari and Provins"
+               }
+              }
+              coords 0 0 0
+             }
+            }
+           }
+          }
+         }
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          Figari_Mission_Pool {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+            }
+           }
+           coords -468.208 61.79 -264.024
+           {
+            $grp GenericEntity : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+             Figari_Destroy {
+              components {
+               CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+                m_SpawnChildren RANDOM_ONE
+                m_sTaskTitle "Assault on Figari - Destroy the command vehicle"
+                m_sTaskDescription "Destroy the command vehicle located in Figari"
+                m_bPlaceMarkerOnSubjectSlot 1
+               }
+              }
+              coords 0 0 0
+              {
+               $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+                Figari_Truck {
+                 components {
+                  CP_LayerBase "{5A2283EA2A0B4B14}" {
+                  }
+                 }
+                 coords 15.976 -2.249 59.342
+                 angleY 36.343
+                 {
+                  GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+                   components {
+                    CP_SlotDestroy "{5A22E1D6276BD209}" {
+                     m_rObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
+                     m_sID "BIS_ObjectToDestroy"
+                     m_sTaskTitle "Assault on Figari - Destroy the command vehicle located on Figari"
+                     m_sTaskDescription "The assault Morton will start with us destroying their command truck. Expect a friendly QRF on the completion of this objective."
+                     m_aActionsOnFinished {
+                      CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+                       m_sSound "SOUND_CP_TD_VC"
+                      }
+                     }
+                    }
+                   }
+                   coords 0 0 0
+                  }
+                 }
+                }
+                Figari_Truck2 {
+                 components {
+                  CP_LayerBase "{5A2283EA2A0B4B14}" {
+                  }
+                 }
+                 coords -9.806 -0.198 8.554
+                 angleY -57.072
+                 {
+                  GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+                   components {
+                    CP_SlotDestroy "{5A22E1D6276BD209}" {
+                     m_rObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
+                     m_sID "BIS_ObjectToDestroy"
+                     m_sTaskTitle "Assault on Figari - Destroy the command vehicle located on Figari"
+                     m_sTaskDescription "The assault Morton will start with us destroying their command truck. Expect a friendly QRF on the completion of this objective."
+                     m_aActionsOnFinished {
+                      CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+                       m_sSound "SOUND_CP_TD_VC"
+                      }
+                     }
+                    }
+                   }
+                   coords 0 0 0
+                  }
+                 }
+                }
+               }
+              }
+             }
+             Figari_Kill_VIP {
+              components {
+               CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+                m_SpawnChildren RANDOM_ONE
+                m_sTaskTitle "Assault on Figari - Elliminate the commander"
+                m_sTaskDescription "Locate and elliminate the whistleblower nested in Figari."
+                m_bPlaceMarkerOnSubjectSlot 1
+               }
+              }
+              coords 0 0 0
+              {
+               GenericEntity Figari_Commander : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+                components {
+                 CP_LayerBase "{5A2283EA2A0B4B14}" {
+                 }
+                }
+                coords -2.285 0.53 12.563
+                {
+                 GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+                  components {
+                   CP_SlotDestroy "{5A22E1D6276BD209}" {
+                    m_rObjectToSpawn "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et"
+                    m_sID "BIS_ObjectToDestroy"
+                    m_sTaskTitle "Assault on Figari - Elliminate the commander"
+                    m_sTaskDescription "We will need to start the assault by elliminating the commander of the base. Expect friendly QRF on the completion of this objective."
+                    m_aActionsOnFinished {
+                     CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+                      m_sSound "SOUND_CP_TD_VC"
+                     }
+                    }
+                   }
+                  }
+                  coords 0 0 0
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          Figari_Patrols {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords -463.951 61.228 -258
+           {
+            GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+               m_iRandomPercent 66
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FAF7B74841FC}" {
+                    m_sName "Figari_Patrol_WP_Pool"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 0 0 0
+                angleY 180
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5B34D2EF050C6FBA}" {
+                    m_sName "Figari_Patrol_WP_Pool"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -24.09 -0.523 11.486
+                angleY -55.203
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       Figari_Missions_Stage2 {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_TRIGGER_ACTIVATION
+         }
+        }
+        coords -477.026 61.392 -253.308
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          Figari_QRF {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity Figari_QRF_Pool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACE70B8773F}" {
+                    m_sName "Figari_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 293.991 16.065 119.882
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Figari_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -140.754 -12.604 279.757
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Figari_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 1.328 -7.687 447.046
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Figari_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -126.198 25.901 -391.058
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Figari_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 374.618 67.755 389.915
+               }
+              }
+             }
+            }
+           }
+          }
+          Figari_Friendly_QRF {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+               m_iRandomPercent 66
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+                  m_sFaction "FIA"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AFAFC0B2C00B297}" {
+                    m_sName "Figari_QRF_WP"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 299.983 22.245 -314.362
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+                  m_sFaction "FIA"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AFAFC0B2C00B297}" {
+                    m_sName "Figari_QRF_WP"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 370.8 28.558 -191.381
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+                  m_sFaction "FIA"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AFAFC0B2C00B297}" {
+                    m_sName "Figari_QRF_WP"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 388.055 27.072 -100.35
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+         GenericEntity Figari_ClearArea : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+          components {
+           CP_LayerTaskClearArea "{5A6513F46D132331}" {
+            m_EActivationType ON_TRIGGER_ACTIVATION
+            m_sTaskTitle "Assault on Figari - Clear Area"
+            m_sTaskDescription "Clear Figari"
+           }
+          }
+          coords -89.147 -3.262 21.081
+          {
+           GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+            components {
+             CP_LayerBase "{5A2283EA2A0B4B14}" {
+             }
+            }
+            coords 0 0 0
+            {
+             GenericEntity : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+              components {
+               CP_SlotClearArea "{5A633AF525D5B972}" {
+                m_aPlugins {
+                 CP_PluginTrigger "{5A633AF5368D26A3}" {
+                  m_fAreaRadius 223.154
+                 }
+                }
+                m_sTaskTitle "Assault on Figari - ClearArea"
+                m_sTaskDescription "First part of the assault is done. Now we need to clear the area of enemy units so that FIA can reclaim the base. A friendly QRF has been dispatched to help you with the objective."
+                m_aActionsOnFinished {
+                 CP_ActionPlaySound "{5AF8FAD6BD9353E6}" {
+                  m_sSound "SOUND_CP_TACC"
+                 }
+                }
+               }
+              }
+              coords 0 0 0
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       Figari_Exploration_Mission {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_TRIGGER_ACTIVATION
+         }
+        }
+        coords -561.574 61.658 -231.978
+        {
+         GenericEntity Figari_Exploration_Task : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+          components {
+           CP_LayerTask "{5A2283E9F84958A1}" {
+            m_sTaskTitle "Scout for US forces"
+            m_sTaskDescription "Scout Figari for US presence"
+           }
+          }
+          coords 0 0 0
+          {
+           GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+            components {
+             CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+              m_aPlugins {
+               CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+                m_fAreaRadius 493.756
+               }
+              }
+              m_sTaskTitle "Scout for US forces"
+              m_sTaskDescription "We have report of US troops around Figari. If that is true then we will have to investigate northern Everon and see how far the infestation has gone."
+             }
+            }
+            coords 0 0 0
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    Figari_Units {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 566.066 -55.262 226.575
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       Figari_US_Units {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+         }
+        }
+        coords -463.951 61.228 -258
+        {
+         GenericEntity Figari_Guards : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          components {
+           CP_LayerBase "{5A2283EA2A0B4B14}" {
+            m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+           }
+          }
+          coords 0 0 0
+          {
+           GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+            components {
+             CP_LayerBase "{5A2283EA2A0B4B14}" {
+              m_SpawnChildren RANDOM_MULTIPLE
+              m_iRandomPercent 66
+             }
+            }
+            coords 0 0 0
+            {
+             $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords 0.542 -0.458 19.519
+               angleY -77.728
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords -41.514 3.976 -90.072
+               angleY -135.478
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords 77.845 1.473 125.658
+               angleY 26.464
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords 19.509 -1.535 55.43
+               angleY 26.464
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords -2.114 -0.144 10.949
+               angleY -77.728
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{FCF7F5DC4F83955C}prefabs/Groups/BLUFOR/Group_US_LightFireTeam.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords -112.027 -4.355 42.622
+               angleY -148.442
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords -108.808 -3.711 32.503
+               angleY -115.536
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{6058AB54781A0C52}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords -42.376 15.341 -287.834
+               angleY 26.464
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{6058AB54781A0C52}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords -56.667 14.822 -297.915
+               angleY 26.464
+              }
+              {
+               components {
+                CP_SlotAI "{5A26B3E02AC77BA0}" {
+                 m_rObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
+                }
+                Hierarchy "{5A26B3E02E941739}" {
+                }
+               }
+               coords 48.682 5.448 -28.065
+               angleY -135.478
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       Figari_FIA_Units {
+        coords 0 0 0
+       }
+      }
+     }
+    }
+    Figari_Patrol_WP {
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       Figari_QRF_WP {
+        coords 0 0 0
+        {
+         GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+           }
+          }
+          coords 100.924 5.573 -16.597
+         }
+        }
+       }
+       Figari_Patrol_WP_Pool {
+        coords 0 0 0
+        {
+         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 104.953 5.803 -26.632
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 104.852 4.202 19.577
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 173.15 6.246 79.951
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 146.104 10.585 -60.1
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 119.493 22.035 -173.533
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 71.006 21.831 -318.403
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 62.115 9.596 -110.582
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -15.307 4.726 -46.2
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -3.576 2.457 0.662
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 39.827 -2.125 68.614
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    Figari_Vehicles {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{F6B23D17D5067C11}Prefabs/Vehicles/Wheeled/M151A2/M151A2_M2HB.et"
+         }
+        }
+        coords 82.599 4.859 -7.693
+        angleY 48.368
+       }
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{F6B23D17D5067C11}Prefabs/Vehicles/Wheeled/M151A2/M151A2_M2HB.et"
+         }
+        }
+        coords 100.783 6.761 -55.128
+        angleY 120.457
+       }
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{F1FBD0972FA5FE09}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport.et"
+         }
+        }
+        coords 97.666 7.05 -60.162
+        angleY 120.457
+       }
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{26013123314183EA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker_MERDC.et"
+         }
+        }
+        coords 130.403 4.481 28.734
+        angleY 120.457
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Provins_Area {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 508.628
+   }
+  }
+  coords 5486.01 96.104 6096.657
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    Provins_Logic {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      $grp CP_LogicCounter : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+       Provins_Task_Counter {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5B06B699063D3862}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B06B685F79E12EF}" {
+           m_sTaskLayerName "Provins_Destroy"
+          }
+         }
+         CP_LogicInput "{5B2AEA964457468F}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B2AEA9646304ADB}" {
+           m_sTaskLayerName "Provins_Kill_VIP"
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnObjects "{5B2AEA9670AE5487}" {
+          m_sNameOfObjectsToSpawnOnActivation {
+           "Provins_Missions_Stage2"
+          }
+         }
+        }
+       }
+       Provins_Init_Counter {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5B2AEA95F46F0B06}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B2AEA95F7623EE6}" {
+           m_sTaskLayerName "Provins_Exploration_Task"
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnObjects "{5B2AEA951E94F039}" {
+          m_sNameOfObjectsToSpawnOnActivation {
+           "Provins_Missions_Stage1"
+          }
+         }
+        }
+       }
+       Provins_Finit_Counter {
+        coords 0 0 0
+        m_aInputs {
+         CP_LogicInput "{5B2AEA956DDA8003}" {
+          m_pInputAction CP_ActionInputOnTaskEventIncreaseCounter "{5B2AEA9561BEBFA0}" {
+           m_sTaskLayerName "Provins_ClearArea"
+          }
+         }
+        }
+        m_aActions {
+         CP_ActionSpawnObjects "{5B2AEA95672712A5}" {
+          m_sNameOfObjectsToSpawnOnActivation {
+           "Provins_FIA_Units"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    Provins_Missions {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 566.066 -55.262 226.575
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       Provins_Missions_Stage1 {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_TRIGGER_ACTIVATION
+         }
+        }
+        coords 0 0 0
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          Provins_Mission_Pool {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+            }
+           }
+           coords -468.208 61.79 -264.024
+           {
+            $grp GenericEntity : "{5EDF39860639027D}Prefabs/ScenarioFramework/Components/LayerTaskDestroy.et" {
+             Provins_Destroy {
+              components {
+               CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+                m_SpawnChildren RANDOM_ONE
+                m_sTaskTitle "Assault on Provins - Destroy the command vehicle"
+                m_sTaskDescription "Destroy the command vehicle located in Provins"
+                m_bPlaceMarkerOnSubjectSlot 1
+               }
+              }
+              coords 0 0 0
+              {
+               $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+                Provins_Truck1 {
+                 components {
+                  CP_LayerBase "{5A2283EA2A0B4B14}" {
+                  }
+                 }
+                 coords -84.533 -7.794 -24.81
+                 angleY 36.343
+                 {
+                  GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+                   components {
+                    CP_SlotDestroy "{5A22E1D6276BD209}" {
+                     m_rObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
+                     m_sID "BIS_ObjectToDestroy"
+                     m_sTaskTitle "Assault on Provins - Destroy the command vehicle"
+                     m_sTaskDescription "Start with destroying their command truck. Expect a friendly QRF on the completion of this objective."
+                     m_aActionsOnFinished {
+                      CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+                       m_sSound "SOUND_CP_TD_VC"
+                      }
+                     }
+                    }
+                   }
+                   coords 0 0 0
+                  }
+                 }
+                }
+                Provins_Truck2 {
+                 components {
+                  CP_LayerBase "{5A2283EA2A0B4B14}" {
+                  }
+                 }
+                 coords -22.235 -6.757 -43.436
+                 angleY -92.063
+                 {
+                  GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+                   components {
+                    CP_SlotDestroy "{5A22E1D6276BD209}" {
+                     m_rObjectToSpawn "{36BDCC88B17B3BFA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command.et"
+                     m_sID "BIS_ObjectToDestroy"
+                     m_sTaskTitle "Assault on Provins - Destroy the command vehicle"
+                     m_sTaskDescription "Start with destroying their command truck. Expect a friendly QRF on the completion of this objective."
+                     m_aActionsOnFinished {
+                      CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+                       m_sSound "SOUND_CP_TD_VC"
+                      }
+                     }
+                    }
+                   }
+                   coords 0 0 0
+                  }
+                 }
+                }
+               }
+              }
+             }
+             Provins_Kill_VIP {
+              components {
+               CP_LayerTaskDestroy "{5A6513F41BA457C8}" {
+                m_SpawnChildren RANDOM_ONE
+                m_sTaskTitle "Assault on Provins - Elliminate the commander"
+                m_sTaskDescription "Locate and elliminate the commander nested in Provins."
+                m_bPlaceMarkerOnSubjectSlot 1
+               }
+              }
+              coords -68.813 -7.647 -13.434
+              angleY -71.327
+              {
+               GenericEntity Provins_Commander : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+                components {
+                 CP_LayerBase "{5A2283EA2A0B4B14}" {
+                 }
+                }
+                coords 0 0 0
+                {
+                 GenericEntity : "{7586595959BA2D99}Prefabs/ScenarioFramework/Components/SlotDestroy.et" {
+                  components {
+                   CP_SlotDestroy "{5A22E1D6276BD209}" {
+                    m_rObjectToSpawn "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et"
+                    m_sID "BIS_ObjectToDestroy"
+                    m_sTaskTitle "Assault on Provins - Elliminate the commander"
+                    m_sTaskDescription "We will need to start the assault by elliminating the commander of the base. Expect friendly QRF on the completion of this objective."
+                    m_aActionsOnFinished {
+                     CP_ActionPlaySound "{5AF8FAD61DE9772D}" {
+                      m_sSound "SOUND_CP_TD_VC"
+                     }
+                    }
+                   }
+                  }
+                  coords 0 0 0
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          Provins_Patrols {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords -463.951 61.228 -258
+           {
+            GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+               m_iRandomPercent 66
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FAF7B74841FC}" {
+                    m_sName "A_Patrol_WP2"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords -89.14 -6.272 26.212
+                angleY -180
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -26.902 -3.268 128.089
+                angleY -55.203
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       Provins_Missions_Stage2 {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_TRIGGER_ACTIVATION
+         }
+        }
+        coords -477.026 61.392 -253.308
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          Provins_QRF {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity Provins_QRF_Pool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACE70B8773F}" {
+                    m_sName "Provins_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 44.219 4.257 249.306
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Provins_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -163.777 -17.09 232.874
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Provins_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 208.735 31.056 48.618
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Provins_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -356.852 -38.225 32.488
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AF8FACD821B6C87}" {
+                    m_sName "Provins_QRF_WP"
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 299.789 42.143 541.248
+                angleY -99.071
+               }
+              }
+             }
+            }
+           }
+          }
+          Provins_Friendly_QRF {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+               m_iRandomPercent 66
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+                  m_sFaction "FIA"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AFAFC0B2C00B297}" {
+                    m_sName "Provins_QRF_WP"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 359.598 -5.369 -176.578
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+                  m_sFaction "FIA"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AFAFC0B2C00B297}" {
+                    m_sName "Provins_QRF_WP"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 264.722 -21.49 -394.714
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+                  m_sFaction "FIA"
+                  m_aWaypointGroupNames {
+                   SCR_WaypointSet "{5AFAFC0B2C00B297}" {
+                    m_sName "Provins_QRF_WP"
+                    m_bCycleWaypoints 1
+                   }
+                  }
+                  m_rWPToSpawn ""
+                 }
+                }
+                coords 263.637 -17.095 -311.629
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+         GenericEntity Provins_ClearArea : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+          components {
+           CP_LayerTaskClearArea "{5A6513F46D132331}" {
+            m_EActivationType ON_TRIGGER_ACTIVATION
+            m_sTaskTitle "Assault on Provins - ClearArea"
+            m_sTaskDescription "Clear Provins"
+           }
+          }
+          coords 2.747 -3.262 -28.743
+          {
+           GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+            components {
+             CP_LayerBase "{5A2283EA2A0B4B14}" {
+             }
+            }
+            coords 0 0 0
+            {
+             GenericEntity : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+              components {
+               CP_SlotClearArea "{5A633AF525D5B972}" {
+                m_aPlugins {
+                 CP_PluginTrigger "{5A633AF5368D26A3}" {
+                  m_fAreaRadius 214.566
+                 }
+                }
+                m_sTaskTitle "Assault on Provins - ClearArea"
+                m_sTaskDescription "First part of the assault is done. Now we need to clear the area of enemy units so that FIA can reclaim the base. A friendly QRF has been dispatched to help you with the objective."
+                m_aActionsOnFinished {
+                 CP_ActionPlaySound "{5AF8FAD6BD9353E6}" {
+                  m_sSound "SOUND_CP_TACC"
+                 }
+                }
+               }
+              }
+              coords 0 0 0
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       Provins_Exploration_Mission {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_TRIGGER_ACTIVATION
+         }
+        }
+        coords -561.574 61.658 -231.978
+        {
+         GenericEntity Provins_Exploration_Task : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+          components {
+           CP_LayerTask "{5A2283E9F84958A1}" {
+            m_sTaskTitle "Scout for US forces"
+            m_sTaskDescription "Scout Provins for US presence"
+           }
+          }
+          coords 0 0 0
+          {
+           GenericEntity : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+            components {
+             CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+              m_aPlugins {
+               CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+                m_fAreaRadius 476.581
+               }
+              }
+              m_sTaskTitle "Scout for US forces"
+              m_sTaskDescription "We have report of US troops around Provins. If that is true then we will have to investigate northern Everon and see how far the infestation has gone."
+             }
+            }
+            coords 0 0 0
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    Provins_Units {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 10.365 -37.271 -45.075
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       Provins_US_Units {
+        components {
+         CP_LayerBase "{5A2283EA2A0B4B14}" {
+          m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+         }
+        }
+        coords 91.75 43.237 13.65
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          Provins_Guards {
+           components {
+            CP_LayerBase "{5A2283EA2A0B4B14}" {
+             m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+             components {
+              CP_LayerBase "{5A2283EA2A0B4B14}" {
+               m_SpawnChildren RANDOM_MULTIPLE
+               m_iRandomPercent 66
+              }
+             }
+             coords 0 0 0
+             {
+              $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -74.686 -7.103 -22.62
+                angleY -77.728
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 150.79 3.863 -63.699
+                angleY -135.478
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -128.396 -6.204 50.765
+                angleY 26.464
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -119.841 -7.229 20.3
+                angleY 26.464
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -14.226 -3.779 172.996
+                angleY -77.728
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{FCF7F5DC4F83955C}prefabs/Groups/BLUFOR/Group_US_LightFireTeam.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords -134.39 -14.411 -141.702
+                angleY -148.442
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 97.146 -10.382 -155.095
+                angleY -115.536
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 90.388 -10.382 -183.807
+                angleY -115.536
+               }
+               {
+                components {
+                 CP_SlotAI "{5A26B3E02AC77BA0}" {
+                  m_rObjectToSpawn "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et"
+                 }
+                 Hierarchy "{5A26B3E02E941739}" {
+                 }
+                }
+                coords 205.333 -0.018 -128.384
+                angleY -115.536
+               }
+              }
+             }
+            }
+           }
+          }
+          {
+           coords 0 0 0
+          }
+         }
+        }
+       }
+       Provins_FIA_Units {
+        coords 555.701 -17.991 271.65
+       }
+      }
+     }
+    }
+    Provins_Patrol_WP {
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       Provins_QRF_WP {
+        coords 0 0 0
+        {
+         GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          components {
+           CP_SlotBase "{5A22E1D67E712EC8}" {
+            m_rObjectToSpawn "{B3E7B8DC2BAB8ACC}prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et"
+           }
+          }
+          coords 5.623 -1.627 -47.554
+         }
+        }
+       }
+       Provins_Patrol_WP_Pool {
+        coords 0 0 0
+        {
+         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 241.219 9.938 -88.446
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 149.393 -4.519 -197.184
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 194.289 -4.411 -208.929
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -29.519 -10.404 -206.138
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -4.486 -0.278 -11.979
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -114.344 -13.412 188.196
+          }
+          {
+           components {
+            CP_SlotBase "{5A22E1D67E712EC8}" {
+             m_rObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 91.965 3.297 147.548
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    Provins_Vehicles {
+     components {
+      CP_LayerBase "{5A2283EA2A0B4B14}" {
+       m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{81FDAD5EB644CC3D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered.et"
+         }
+        }
+        coords -7.906 -3.187 -48.159
+        angleY 31.569
+       }
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et"
+         }
+        }
+        coords -12.603 -1.352 -18.718
+        angleY 80.833
+       }
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et"
+         }
+        }
+        coords 208.505 -4.323 -186.857
+        angleY -80.879
+       }
+       {
+        components {
+         CP_SlotBase "{5A22E1D67E712EC8}" {
+          m_rObjectToSpawn "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et"
+         }
+        }
+        coords 207.624 -4.323 -192.348
+        angleY -80.879
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

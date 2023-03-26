@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{9D4135DCEB7F69C1}UI/layouts/HUD/Notifications/Notifications_Message_Base.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

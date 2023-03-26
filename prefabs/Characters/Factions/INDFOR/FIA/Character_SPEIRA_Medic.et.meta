@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{4A06C6BB4EFEDB8C}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Medic.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

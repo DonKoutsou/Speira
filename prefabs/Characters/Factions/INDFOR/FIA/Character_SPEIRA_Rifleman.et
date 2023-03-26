@@ -1,0 +1,43 @@
+SCR_ChimeraCharacter : "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et" {
+ ID "520EC961A090B1EE"
+ components {
+  FactionAffiliationComponent "{555C98D1CD949F3E}" {
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{96A2309CE280198F}prefabs/Weapons/Rifles/Vz52/Rifle_Vz52.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{557090130BCD36B7}" {
+     PrefabsToSpawn {
+      "{4B0D5960ECE64D82}Prefabs/Weapons/Magazines/Vz52/Magazine_762x39_Vz52_10rnd.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24CC1119C7787F}" {
+    }
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{5984BDEE297E2A27}" {
+     PrefabsToSpawn +{
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+   }
+  }
+ }
+}

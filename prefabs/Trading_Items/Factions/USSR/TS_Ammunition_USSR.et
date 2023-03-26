@@ -1,0 +1,52 @@
+GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{9E1DFF036BCE913E}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Ammunition_01.xob"
+   Materials {
+    MaterialAssignClass "{5C89144FDA7D6CB0}" {
+     SourceMaterial "EquipmentBoxWooden_Ammunition_01"
+     AssignedMaterial "{EB85A5589049E9D1}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_Ammunition_01_USSR.emat"
+    }
+    MaterialAssignClass "{5C89144FDA7D6CA4}" {
+     SourceMaterial "EquipmentBoxWooden_decal_US"
+     AssignedMaterial "{17332645A86C9BA6}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_decal_USSR.emat"
+    }
+   }
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C88A2FA09B799C3}" {
+     ContextName "default"
+     Position PointInfo "{5C88A2FA0BCD4CC2}" {
+      Offset 0 0.324 0
+     }
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C96A2607ADA1F33}" : "{AD07C8E9B4972307}Prefabs/Trading_Items/Configs/B_AK74_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2607CB75C04}" : "{8AF5FA4E2A47DECB}Prefabs/Trading_Items/Configs/B_PKM_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2607C7687D8}" : "{E9CAA03D06BC12AF}Prefabs/Trading_Items/Configs/B_PM_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2607D65DCCB}" : "{59DC75933608B674}Prefabs/Trading_Items/Configs/B_RPK_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A2607F039BF3}" : "{98B2151904A55A51}Prefabs/Trading_Items/Configs/B_SVD_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26070292324}" : "{AC7F6296386F399F}Prefabs/Trading_Items/Configs/S_AK74_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26072B12973}" : "{B0AF64297BB77058}Prefabs/Trading_Items/Configs/S_PKM_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26073C93C15}" : "{E8B20A428A440837}Prefabs/Trading_Items/Configs/S_PM_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26074BE8F0E}" : "{6386EBF467F818E7}Prefabs/Trading_Items/Configs/S_RPK_Mag.conf" {
+    }
+    KLM_ConverseAction "{5C96A26074764424}" : "{A2E88B7E5555F4C2}Prefabs/Trading_Items/Configs/S_SVD_Mag.conf" {
+    }
+   }
+  }
+ }
+ coords 140.064 1.001 125.194
+ angleY 0
+}

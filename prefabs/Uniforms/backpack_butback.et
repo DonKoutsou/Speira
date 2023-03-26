@@ -1,0 +1,19 @@
+GenericEntity : "{5C5C6EE05EE2FF1A}prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
+ ID "525674F5B3E45F0D"
+ components {
+  MeshObject "{511E9C6ADE70F7BD}" {
+   Object "{E0BEDFA62478F57F}Assets/Items/Equipment/Backpacks/Backpack_ALICE_Medium/Backpack_ALICE_Medium_combined.xob"
+  }
+  BaseLoadoutClothComponent "{511E9C6ADE70F7BB}" {
+   Slots {
+    LoadoutSlotInfo butpack {
+     PivotID "Spine5"
+     Offset 0 -0.1557 -0.1536
+     Angles -1.2058 179.99989 -0.0001
+     Prefab "{9A21918AC35AC182}Prefabs/Characters/Vests/Vest_ALICE/Vest_ALICE_buttpack.et"
+    }
+   }
+  }
+ }
+ coords 114.383 1.418 119.118
+}

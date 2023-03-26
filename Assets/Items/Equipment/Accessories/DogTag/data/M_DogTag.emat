@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.871 0.871 0.871 1
+ Cull none
+ AlphaTest 0.024
+ BCRMap "{09AA0C60DCE349ED}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTags_BCR.edds"
+ OpacityMap "{F8D0A42B9C7C0026}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_ChainMask.edds"
+ NMOMap "{3172B7F205941B73}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTags_NMO.edds"
+}

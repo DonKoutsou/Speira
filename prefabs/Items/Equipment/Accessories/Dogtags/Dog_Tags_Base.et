@@ -1,0 +1,71 @@
+GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
+ ID "5104869D194C6243"
+ components {
+  SignalsManagerComponent "{5C8AFD06BE931A01}" {
+  }
+  RigidBody "{5104869D194C6267}" {
+   Static 1
+  }
+  SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
+   Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
+    ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
+     Name "US soldier tags"
+     Description "Tags carried by all soldiers, used for identification"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5C792EB03DCCEFE0}" {
+     Weight 0.05
+     SizeSetupStrategy Manual
+     ItemDimensions 2 2 2
+     ItemVolume 8
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5C792EB0490D988A}" {
+      CameraOrbitAngles -90 0 0
+      CameraDistanceToItem 0.07
+      CameraOffset -0.005 -0.018 0
+      ItemRenderRotation 0 15 10
+      FOV 45
+      IsDynamicObject 1
+      PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+     }
+    }
+    CommonItemType "WATCH"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Soldier tags"
+     Description "Tags carried by all soldiers, used for identification"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.05
+     SizeSetupStrategy Manual
+     ItemDimensions 1 1 1
+     ItemVolume 1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 15 0
+      CameraDistanceToItem 0.5
+      PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+     }
+    }
+    CommonItemType "WATCH"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   AreaType LoadoutWatchArea "{5C792EB61C73847A}" {
+   }
+   WornModel "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   ItemModel "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+  }
+ }
+ coords 123.967 1.001 122.743
+}

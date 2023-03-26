@@ -1,0 +1,5 @@
+SCR_CharacterTriggerEntity : "{C8C146601F21A5D4}prefabs/ScenarioFramework/Triggers/TriggerUralDelivery.et" {
+ ID "5A56B37C7C2DA0E7"
+ coords 9241.406 1.628 375.922
+ m_sSpecificPrefabName "{6D56FED1E55A8F84}Prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+}

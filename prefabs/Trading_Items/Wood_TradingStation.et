@@ -1,0 +1,36 @@
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{68280EA228FEDC23}Assets/Props/Civilian/BasketWicker_01/BasketWicker_01_wood.xob"
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5B111124513CA245}" {
+     ContextName "default"
+     Position PointInfo "{5B11112457635154}" {
+      Offset 0 0.464 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5B11112464F90984}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B1111246707E143}" {
+      Name "Sell wood for 2 watches"
+     }
+     Duration 1
+     m_WantedPay "{6D1606775A2FBC48}prefabs/Items/Other/WoodPieces.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_SellingAmount 2
+     m_SpawnOffset 0 0.464 0
+    }
+   }
+  }
+ }
+ coords 128.076 1.001 130.281
+ angleY 0
+}

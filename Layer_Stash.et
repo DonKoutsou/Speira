@@ -1,0 +1,130 @@
+GenericEntity : "{11A5E38112DB0664}prefabs/ScenarioFramework/Components/Layer_Stash.et" {
+ ID "59F0B4850F342318"
+ components {
+  CP_LayerBase "{5A2283EA2A0B4B14}" {
+   m_SpawnChildren RANDOM_ONE
+  }
+ }
+ coords 108.572 1.001 113.784
+ {
+  $grp GenericEntity : "{BBD0E53E2DB951D9}prefabs/ScenarioFramework/Components/SlotStash.et" {
+   Vz52ammo_Stash2 {
+    ID "5C71148F6FBCC1D9"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{8DEAEA7490573B8A}prefabs/Items/Equipment/Backpacks/Backpack_SPEIRA_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   Veshmeshok_Bac_Stash3 {
+    ID "5C71148F6FBD2288"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{C58500D260A868AA}prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   SVDAmmo_Stash3 {
+    ID "5C71148F6FBD79E2"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{DC1F9FB9AB8D1E24}prefabs/Items/Equipment/Accessories/Pouch_Soviet_10rnd_SVD/Pouch_Soviet_10rnd_SVD_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   RPG_Bac_Stash3 {
+    ID "5C71148F6FBD79E3"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{1B961227520B6E21}prefabs/Items/Equipment/Backpacks/Backpack_RPG_Gunner_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   PKMAmmo_Stash3 {
+    ID "5C71148F6FBD85F1"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{522950CFD7E854C8}prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   PaintCan5_Stash3 {
+    ID "5C71148F6FBE06E0"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{101E9E33919F3A80}prefabs/Stashes/PaintCan_Variants/Stash_PC_5_Watches.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   PaintCan3_Stash3 {
+    ID "5C71148F6FBE06E3"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{AD5AC571399C2C9F}prefabs/Stashes/PaintCan_Variants/Stash_PC_3_Watches.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   PaintCan1_Stash3 {
+    ID "5C71148F6FBE5FDC"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{2D2042064A5D6546}prefabs/Items/Equipment/Backpacks/Backpack_Kolobok_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   Grenade_Stash3 {
+    ID "5C71148F6FBE8B79"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{FEE0AC251714D543}prefabs/Characters/Vests/Vest_SovietHarness/Vest_SovietHarness_GrenadePouch_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   Intel_Stash3 {
+    ID "5C71148F6FBE8B7E"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{2A7B82B6A7076239}prefabs/Props/Civilian/Suitcase_01Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   Kolob_Backpack_Stash3 {
+    ID "5C71148F6FBE8B7F"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{2D2042064A5D6546}prefabs/Items/Equipment/Backpacks/Backpack_Kolobok_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   AKAmmo_Stash3 {
+    ID "5C71148F6FBF335C"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{6360B90A2BDB17D1}prefabs/Characters/Vests/Vest_SovietHarness/Vest_SovietHarness_6Sh46_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+   FIA_Bac_Stash3 {
+    ID "5C71148F6FBF335D"
+    components {
+     CP_SlotBase "{5A22E1D67E712EC8}" {
+      m_rObjectToSpawn "{2B2BFBDEF888C248}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_Stash.et"
+     }
+    }
+    coords -1.204 0 0.126
+   }
+  }
+ }
+}

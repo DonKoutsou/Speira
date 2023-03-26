@@ -1,0 +1,98 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
+   m_fActionDelayTime_StanceChange 0.05
+   ChangeWeaponWhenNoGrenades 0
+  }
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot WristwatchSlot {
+      }
+      SCR_EquipmentStorageSlot BinocularSlot {
+       PivotID "Spine3"
+      }
+     }
+    }
+   }
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   StaminaRegainPerS 0.01
+   StaminaDrainRun -0.0002
+   StaminaDrainSprint -0.005
+   EncumbranceMassMax 160
+   EncumbranceDrainMax -0.03
+   BreathExhaustedMagnitude 10
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponType Handgun
+   AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
+    PivotID "Spine3"
+    Offset 0.1914 -0.022 0.0126
+    Angles -82.72499 70.8924 -93.7374
+   }
+   WeaponSlotType "secondary"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "Spine3"
+    Offset 0.1771 -0.004 -0.0459
+    Angles -58.5902 -175.5675 -171.59599
+   }
+   HolsteredHidden 0
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Watch {
+     Prefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
+     AreaType LoadoutWatchArea "{5C8AFD05B5B6D829}" {
+     }
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    SP_DialogueAction "{5CE4DA22515DBC87}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5CE4DA22525775D5}" {
+      Name "Talk"
+     }
+     Duration 0.1
+     m_DialogText "init diag"
+     m_DialogText1 "1st diag"
+     m_DialogText2 "2nd diag"
+     m_DialogText3 "3rd diag"
+     m_DialogText4 "last diag"
+     m_ChatChannel LocalChatChannel "{5CE51077E5BE0D43}" {
+      "Channel name" "Context"
+      Style BaseChatChannelStyle "{5CE51061D6223FD4}" {
+      }
+     }
+     senderName "Satan"
+    }
+   }
+  }
+  CharacterAnimationComponent "{520EA1D2F659C994}" {
+   components {
+    SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
+     MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
+      MovementFilterMaxChange 32
+      LeaningSpeed 10
+      HeadingChangeSpeedMax 2000
+     }
+    }
+   }
+  }
+ }
+ coords 2941.26 67.11 1622.64
+}

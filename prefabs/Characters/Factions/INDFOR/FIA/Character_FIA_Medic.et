@@ -1,0 +1,76 @@
+SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "Hips"
+   }
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     PrefabsToSpawn {
+      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
+     }
+    }
+    ItemsInitConfigurationItem "{55709017677CEFCD}" {
+     PrefabsToSpawn {
+      "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5570901746070FD4}" {
+     PrefabsToSpawn + {
+      "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    SP_DialogueAction "{5CE4DA22515DBC87}" {
+     m_DialogText1 "Hello"
+     m_DialogText2 "Hi"
+     m_DialogText3 "Fuck off"
+     m_DialogText4 "Suck ma dick"
+    }
+    KLM_ConverseAction "{5B089B35DBC1543D}" {
+     UIInfo UIInfo "{5B089B35D0CCAA31}" {
+      Name "Give 1 soviet field dressing for 2 broken watches"
+     }
+     m_SellingAmount 2
+    }
+    KLM_ConverseAction "{5B089B3478BB41B2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B089B3475B96874}" {
+      Name "Give 1 US field dressing for 2 broken watches"
+     }
+     Duration 1
+     m_WantedPay "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_SellingAmount 2
+    }
+    KLM_ConverseAction "{5B089B379B81BFE3}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B089B379DA0CD57}" {
+      Name "Give 1 VZ58 magazine for 1 broken watch"
+     }
+     Duration 1
+     "Sort Priority" 1
+     m_WantedPay "{48720FC416263FC1}Prefabs/Weapons/Magazines/Vz58/Magazine_762x39_Vz58_30rnd_Ball.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+    }
+   }
+  }
+ }
+}

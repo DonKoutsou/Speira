@@ -1,0 +1,12 @@
+SCR_SpawnPoint : "{E7F4D5562F48DDE4}Prefabs/MP/Spawning/SpawnPoint_Base.et" {
+ ID "544EB04DCBFBD126"
+ components {
+  RplComponent "{552E67F19D2F2A2F}" {
+  }
+ }
+ m_sFaction "FIA"
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "FIA Point"
+  Icon "{B784E694BA4A7D40}UI/Textures/Flags/Everon-flag-base-3it.edds"
+ }
+}

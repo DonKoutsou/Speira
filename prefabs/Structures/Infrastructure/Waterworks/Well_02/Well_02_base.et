@@ -1,0 +1,33 @@
+StaticModelEntity : "{A52C6DE05FE53B3B}Prefabs/Structures/Core/StaticObject_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ActionsManagerComponent "{5C6944101D02E9CB}" {
+   ActionContexts {
+    UserActionContext "{5C6944101E2636F3}" {
+     ContextName "default"
+     Position PointInfo "{5C6944101356F4A0}" {
+      Offset 0.7742 1.1827 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C69441024C3080B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C6944102671373D}" {
+      Name "Fill canteen"
+     }
+     Duration 3
+     m_WantedPay "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et"
+     m_PrefabToSell "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+     m_SpawnOffset 0.669 0.447 0
+    }
+   }
+  }
+  RplComponent "{5C694410183FE6C5}" {
+  }
+ }
+ coords 2048.722 0.109 2676.251
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F4D37F9FD7131AED}prefabs/ScenarioFramework/Triggers/Trigger_UralSupply_Delivery.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

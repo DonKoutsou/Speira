@@ -1,0 +1,9 @@
+GenericEntity {
+ ID "5C7AD7A976ABD350"
+ components {
+  MeshObject "{5C7AD7A97C455E12}" {
+   Object "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+  }
+ }
+ coords 128.512 1.001 132.709
+}

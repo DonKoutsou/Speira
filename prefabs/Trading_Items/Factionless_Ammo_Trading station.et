@@ -1,0 +1,84 @@
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{9E1DFF036BCE913E}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Ammunition_01.xob"
+   Materials {
+    MaterialAssignClass "{5C53408A130E603A}" {
+     SourceMaterial "EquipmentBoxWooden_Ammunition_01"
+     AssignedMaterial "{01344AC5F9E023E4}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_Ammunition_01_FIA.emat"
+    }
+    MaterialAssignClass "{5C53408A130E602C}" {
+     SourceMaterial "EquipmentBoxWooden_decal_US"
+     AssignedMaterial "{1BB946314607B6A7}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_decal_FIA.emat"
+    }
+   }
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C534083C83245CD}" {
+     ContextName "default"
+     Position PointInfo "{5C534083CD8A9C2A}" {
+      Offset 0 0.3852 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C53408A42A1EFAE}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C53408A454147C2}" {
+      Name "Buy 545x39 45 round AK magazine for 3 watches"
+     }
+     Duration 0.5
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 3
+     m_PrefabToSell "{D78C667F59829717}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_4Ball_1Tracer.et"
+     m_SpawnOffset 0 0.385 0
+    }
+    KLM_ConverseAction "{5C53408BC56E0CF3}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C53408BDACEBA05}" {
+      Name "Buy 762x51 20 round M14 magazine"
+     }
+     Duration 0.5
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 2
+     m_PrefabToSell "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+     m_SpawnOffset 0 0.385 0
+    }
+    KLM_ConverseAction "{5C53408B6E7A1697}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C53408B66057B6E}" {
+      Name "Buy 556x45 30 round STANG magazine for 2 watches"
+     }
+     Duration 0.5
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 2
+     m_PrefabToSell "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+     m_SpawnOffset 0 0.385 0
+    }
+    KLM_ConverseAction "{5C710D0DB4C0267D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C710D0DC9F12AF5}" {
+      Name "Buy 762x39 10 round vz52 magazine for 1 watch"
+     }
+     Duration 0.5
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_PrefabToSell "{4B0D5960ECE64D82}Prefabs/Weapons/Magazines/Vz52/Magazine_762x39_Vz52_10rnd.et"
+     m_SpawnOffset 0 0.385 0
+    }
+   }
+  }
+ }
+ coords 127.397 1.001 131.371
+ angleY 0
+}

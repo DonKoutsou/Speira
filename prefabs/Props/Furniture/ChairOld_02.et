@@ -1,0 +1,29 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ControllersManagerComponent "{5B3CE794D46F621A}" {
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Static 0
+  }
+  SCR_AISmartActionSentinelComponent "{5B3CE7969367403E}" {
+   AIBehaviorTree "{733B72C3C0264BF0}AI/BehaviorTrees/Chimera/Soldier/GetInVehicle.bt"
+   Tags {
+    "GetIn"
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{5B3D0527FCFDA77E}" : "{430455409450B2F0}prefabs/Chair_Test/SCR_BaseCompartmentManagerComponent_Chair.ct" {
+  }
+  SCR_VehicleCameraDataComponent "{5B3D0527FDA46118}" : "{9D9C5ECD8B281408}prefabs/Chair_Test/SCR_VehicleCameraDataComponent_Chair.ct" {
+  }
+  ActionsManagerComponent "{5B3D0527FB5DE5F4}" : "{512B1B7AA9366957}prefabs/Chair_Test/ActionManagerComponent_Chair.ct" {
+  }
+  VehicleAnimationComponent "{5B3D0527FD647773}" : "{2841AFB9C1C623F8}prefabs/Chair_Test/VehicleAnimationComponent_Chair.ct" {
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ coords 125.927 1.001 99.823
+ Flags 3
+}

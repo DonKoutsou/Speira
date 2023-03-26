@@ -1,0 +1,19 @@
+GenericEntity : "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et" {
+ ID "5C69441465A329D6"
+ components {
+  InventoryMagazineComponent "{5C69441421AB61A9}" {
+   Attributes SCR_ItemAttributeCollection "{5C69441421AB61A7}" {
+    ItemDisplayName UIInfo "{5C69441421AB6164}" {
+     Name "Empty Soviet Canteen"
+     Description "Empty Canteen that can be filled on wells and taps"
+    }
+   }
+  }
+  MagazineComponent "{5C69441421AB61D6}" {
+   MaxAmmo 1
+   AmmoMapping {
+   }
+  }
+ }
+ coords 85.78 1.001 123.283
+}

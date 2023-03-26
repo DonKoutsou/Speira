@@ -1,0 +1,102 @@
+GenericEntity {
+ ID "5AE8A89E8769CFBA"
+ components {
+  SignalsManagerComponent "{5AE8A8999D0F3D2B}" {
+  }
+  SoundComponent "{5AE8A8999D0F3DD1}" {
+   Filenames {
+    "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+   }
+   DistanceManagement 0
+  }
+  InventoryItemComponent "{5AE8A8999D0F3E50}" {
+   Attributes SCR_ItemAttributeCollection "{5AE8A8999D0F3E5E}" {
+    ItemDisplayName UIInfo "{5AE8A8999D0F3DE7}" {
+     Name "Broken watch"
+     Description "Broken watch, still holds value as trade item"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5AE8A8999D0F3D90}" {
+     Weight 0.1
+     SizeSetupStrategy Manual
+     ItemDimensions 2 2 2
+     ItemVolume 10
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{5AE8A8999D0F3DB7}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{5AE8A8999D0F3DB2}" {
+       AnimGraph "{95F36C067E914E76}Assets/Items/Equipment/workspaces/Watch_Vostok.agr"
+       AnimInstance "{03F05A84D48612B4}Assets/Items/Equipment/workspaces/Watch_Vostok_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     CharacterModifierAttributes "{5AE8A8999D0F3DAE}" {
+      Supress1hShooting 0
+     }
+     PreviewRenderAttributes "{5AE8A8999D0F3E5C}" {
+      CameraPreset Top
+      CameraOrbitAngles 10 20 45
+      CameraDistanceToItem 0.1
+      CameraOffset 0.003 -0.003 0
+      FOV 45
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+  }
+  MeshObject "{5AE8A8999D0F3E4F}" {
+   Object "{593528B35FDDDB4A}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.xob"
+   Materials {
+    MaterialAssignClass "{5C954B31450A3C19}" {
+     SourceMaterial "16__Default"
+     AssignedMaterial "{9BCB9AA9CC2B7BA0}Assets/Items/Equipment/Watches/Watch_Vostok/Data/Watch_Vostok_01.emat"
+    }
+   }
+   LODFactors {
+    1
+   }
+  }
+  Hierarchy "{5C954B303B21A979}" {
+  }
+  RigidBody "{5AE8A8999D0F3E79}" {
+   ModelGeometry 1
+  }
+  ProcAnimComponent "{5AE8A8999D0F3E65}" {
+   Parameters {
+    ProcAnimParams "{5AE8A8999D0F3E62}" {
+     ResourceName "{6D6D2FEA1F89DC9F}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.pap"
+     BoneNames {
+      "i_hours_Vostok" "i_minutes_Vostok" "i_seconds_Vostok" "i_date_Vostok"
+     }
+     SimulationDistance 20
+    }
+   }
+  }
+  ActionsManagerComponent "{5AE8A8999D0F3EFB}" {
+   ActionContexts {
+    UserActionContext "{5AE8A8999D0F3ED1}" {
+     ContextName "default"
+     Position PointInfo "{5AE8A8999D0F3EDE}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{5AE8A8999D0F3EF9}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5AE8A8999D0F3EC3}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  RplComponent "{5AE8A8999D0F3EF5}" {
+  }
+ }
+ coords 1361.597 38.011 2871.331
+}

@@ -1,0 +1,9 @@
+GenericEntity : "{A8FEC84978BD945E}prefabs/Uniforms/Uniform_Base.et" {
+ ID "5C6D2479B31AF769"
+ components {
+  MeshObject "{5C6D2479B050F35D}" {
+   Object "{E0BEDFA62478F57F}Assets/Items/Equipment/Backpacks/Backpack_ALICE_Medium/Backpack_ALICE_Medium_combined.xob"
+  }
+ }
+ coords 120.769 1.001 126.93
+}

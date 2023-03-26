@@ -1,0 +1,13 @@
+GenericEntity : "{AA01691FDC4E9167}prefabs/ScenarioFramework/Components/Slot.et" {
+ ID "5A22E1D64BC88E05"
+ components {
+  SCR_EditableCommentComponent "{5B0697D4914FE556}" {
+   Enabled 0
+   m_UIInfo SCR_EditableCommentUIInfo "{5B0697D405C1BA74}" {
+    Name "-"
+    Icon "{EA975C03DF5422AD}UI/Textures/Editor/EditableEntities/Systems/EditableEntity_System_Arsenal.edds"
+   }
+   m_fSizeCoef 0.5
+  }
+ }
+}

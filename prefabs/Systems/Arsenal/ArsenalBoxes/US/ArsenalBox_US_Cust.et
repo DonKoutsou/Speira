@@ -1,0 +1,119 @@
+GenericEntity {
+ ID "5C4F2D8F407E9D4D"
+ components {
+  MeshObject "{5C4F2D8FF59190D0}" {
+   Object "{5172A6E151032216}Assets/Props/Military/AmmoBox/EquipmentBoxStack/EquipmentBoxStack_01_V1.xob"
+   LODFactors {
+   }
+  }
+  Hierarchy "{5C4F2D8FF59190C8}" {
+   Enabled 1
+  }
+  RigidBody "{5C4F2D8FF591903E}" {
+   Mass 10
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_SlotCompositionComponent "{5C4F2D8FF5919074}" {
+   m_bOrientChildrenToTerrain 0
+  }
+  RplComponent "{5C4F2D8FF59193D5}" {
+   Enabled 1
+  }
+ }
+ coords 201.991 1.001 143.536
+ Flags 1027
+ {
+  GenericEntity : "{0011A3CBD1B1212A}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_US_01.et" {
+   ID "5C4F2D8F407E9D47"
+   components {
+    Hierarchy "{5C4F2D8FFAD6B331}" {
+     Enabled 1
+    }
+   }
+   coords -0.349 0 0.866
+   angleY -45.82
+  }
+  GenericEntity : "{1A942A9E6D0CD0F2}prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Explosives_US.et" {
+   ID "5C4F2D8F407F1DD5"
+   coords -1.427 0 0.59
+   angleY 1.619
+  }
+  GenericEntity : "{1EC801E208CB16C6}Prefabs/Vegetation/Cuttings/Rubus_idaeus_small_01.et" {
+   ID "5C4F2D8F407E9D43"
+   coords 0.811 0 -1.143
+   angleX 7.117
+   angleY 97.794
+   angleZ -1.702
+  }
+  GenericEntity : "{377EB906F591E4BA}prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Weapons_US.et" {
+   ID "5C4F2D8F407F1DEF"
+   coords -0.924 0.568 -0.03
+   angleY -90.571
+  }
+  GenericEntity : "{4A09EF1D855AF2C4}Prefabs/Vegetation/Cuttings/Rosa_canina_small_01.et" {
+   ID "5C4F2D8F407E9D41"
+   coords -1.461 0 -0.781
+   angleX 30.705
+   angleY -127.202
+   angleZ -21.186
+  }
+  GenericEntity : "{5FFD91CF507BFFFB}prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Ammunition_US.et" {
+   ID "5C4F2D8F407F1DE9"
+   coords -0.069 -0.001 0.773
+  }
+  GenericEntity : "{620E2BD5E8C26FAB}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V6_covered.et" {
+   ID "5C4F2D8F407E9CB9"
+   coords -1.132 0 -0.057
+   angleY 89.179
+  }
+  GenericEntity : "{74843BB0BF08A845}Prefabs/Vegetation/Cuttings/Corylus_avellana_small_01.et" {
+   ID "5C4F2D8F407E9CB6"
+   coords -0.856 0 -0.923
+   angleX 11.144
+   angleY -118.209
+  }
+  GenericEntity : "{891EF8A5FB7162F1}prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Medical_US.et" {
+   ID "5C4F2D8F407F1DD7"
+   coords 0.849 0 -0.04
+   angleY 93.492
+  }
+  GenericEntity : "{9DD476816836FFED}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V5_covered.et" {
+   ID "5C4F2D8F407E9CB3"
+   coords 0.036 0 -1.064
+   angleY 177.707
+  }
+  $grp GenericEntity : "{A04DC55EB7C367F8}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_US_02.et" {
+   {
+    ID "5C4F2D8F407E9CB1"
+    components {
+     Hierarchy "{5C4F2D8FFAD6B32D}" {
+      Enabled 1
+     }
+    }
+    coords 0.533 0 0.922
+    angleY -19.083
+   }
+   {
+    ID "5C4F2D8F407F1DF9"
+    components {
+     Hierarchy "{5C4F2D8FFAD6B32B}" {
+      Enabled 1
+     }
+    }
+    coords 1.104 0 0.282
+    angleY 39.419
+   }
+  }
+  GenericEntity : "{C026AEDDA55DB43C}prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Launcher_US.et" {
+   ID "5C4F2D8F407F1DED"
+   coords -0.016 0.884 0.008
+   angleY 53.345
+  }
+  GenericEntity : "{E51E2E1D77B54223}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_01.et" {
+   ID "5C4F2D8F407F1DE4"
+   coords 0.438 0 0.315
+   angleY 54.557
+  }
+ }
+}

@@ -1,0 +1,61 @@
+SCR_ChimeraCharacter : "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et" {
+ ID "520EC961A090B1EE"
+ components {
+  FactionAffiliationComponent "{555C98D1CD949F3E}" {
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "Hips"
+   }
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC1119C7787F}" {
+     TargetPurpose 1
+     PrefabsToSpawn {
+      "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et" "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{55709016178D263C}" {
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M70_v2.et"
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{5984BDEFD98CA865}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+   }
+  }
+ }
+ coords 11848.392 16.475 1839.093
+}

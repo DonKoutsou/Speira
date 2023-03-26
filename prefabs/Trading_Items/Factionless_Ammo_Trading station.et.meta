@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F532EDEF93C0363E}prefabs/Trading_Items/Factionless_Ammo_Trading station.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

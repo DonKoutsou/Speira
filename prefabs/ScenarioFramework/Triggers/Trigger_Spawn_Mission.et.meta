@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{86C11CDF6DFA1842}prefabs/ScenarioFramework/Triggers/Trigger_Spawn_Mission.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

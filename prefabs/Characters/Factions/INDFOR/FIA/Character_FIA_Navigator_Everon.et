@@ -1,0 +1,87 @@
+SCR_ChimeraCharacter : "{18B5DC5C4088B7BD}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator.et" {
+ ID "520EC961A090B1EE"
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KLM_ConverseAction "{5B089B35DBC1543D}" {
+     ParentContextList {
+     }
+     UIInfo UIInfo "{5B089B35D0CCAA31}" {
+      Name ""
+     }
+     Duration 0
+     m_WantedPay ""
+     m_PrefabToSell ""
+    }
+    BaseUserAction "{5C65182A4DC7224D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182A41925E4A}" {
+      Name "Hire navigator for 10 watches"
+     }
+     "Sort Priority" -1
+    }
+    KLM_TeleportAction "{5C65182A50916988}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182A534233B4}" {
+      Name "Navigate to FIA base in Camurac"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 6578.131 6.061 3109.122
+    }
+    KLM_TeleportAction "{5C65182BA212669E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182BA6B63F70}" {
+      Name "Navigate to FIA base near Morton"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 5330.995 126.772 4458.047
+    }
+    KLM_TeleportAction "{5C65182BEF66278E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182BE25543F7}" {
+      Name "Navigate to FIA base East of Levie"
+     }
+     Duration 1
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 7845.093 140.781 5123.308
+    }
+    KLM_TeleportAction "{5C65182B67B9DD60}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C65182B7B80283E}" {
+      Name "Navigate to FIA base near the Quarry"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 10
+     m_TeleportToWorldPosition 8585.309 185.934 4618.53
+    }
+    KLM_TeleportAction "{5C6568CCF458511D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C6568CC0880506B}" {
+      Name "Navigate to FIA fort HQ (2 watches)"
+     }
+     Duration 1
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_TeleportToWorldPosition 9867.888 2.72 4502.397
+    }
+   }
+  }
+ }
+ coords 6591.044 5.815 3108.603
+}

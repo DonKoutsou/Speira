@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{8FA7FC0B8D21ABFC}Prefabs/Systems/Arsenal/WeaponRacks/FIA/WeaponRackStandArsenal_FIA.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

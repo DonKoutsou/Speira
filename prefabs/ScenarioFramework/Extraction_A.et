@@ -1,0 +1,71 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ ID "59E8CDC4819B4FE1"
+ components {
+  CP_Area "{59E8CDC50969206E}" {
+  }
+ }
+ coords 2152.016 1.947 3536.347
+ {
+  GenericEntity TaskExtraction_A : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+   ID "5AFCE552909B2E24"
+   components {
+    CP_LayerTask "{5A2283E9F84958A1}" {
+     m_EActivationType ON_TRIGGER_ACTIVATION
+     m_sTaskTitle "#AR-CombatScenario_ExfilTask_Title"
+     m_sTaskDescription "#AR-CombatScenario_ExfilTask_Description_NoLimit"
+     m_aTriggerActionsOnFinish {
+      CP_ActionEndMission "{5A6D34926E5735E2}" {
+      }
+     }
+    }
+   }
+   coords 6.257 -0.29 0.518
+   {
+    GenericEntity ext_A : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+     ID "5AFCE552909B2E20"
+     coords 1.52 -0.079 1.598
+     {
+      GenericEntity : "{4C2EF5C1E53FE511}Prefabs/ScenarioFramework/Components/SlotDelivery.et" {
+       ID "5AFCE552909B2E1D"
+       components {
+        CP_SlotDelivery "{59F51EA7A10294D2}" {
+         m_bShowDebugShapesDuringRuntime 0
+         m_aPlugins {
+          CP_PluginTrigger "{5A4F42B2D2F47948}" {
+           m_fAreaRadius 93.916
+          }
+         }
+         m_aAssociatedTaskLayers {
+          "A_Documents" "B_Documents" "C_Documents" "D_Documents" "E_Documents" "G_Documents"
+         }
+        }
+       }
+       coords 2.889 0.711 -1.866
+      }
+      GenericEntity : "{9C47DECB98FDA4DA}Prefabs/ScenarioFramework/Components/SlotExtraction.et" {
+       ID "5AFCE552909B2E1B"
+       components {
+        CP_SlotExtraction "{5A1EEEC837EEA27B}" {
+         m_aPlugins {
+          CP_PluginTrigger "{5A6C6D099D49E4BA}" {
+           m_fAreaRadius 50
+           m_EActivationPresence ALL_PLAYERS
+          }
+         }
+         m_rObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+         m_sFaction "US"
+         m_aActionsOnFinished {
+          CP_ActionPlaySound "{5A96DC4CC736B5F0}" {
+           m_sSound "SOUND_CP_TEC"
+          }
+         }
+        }
+       }
+       coords 1.868 1.043 -2.178
+      }
+     }
+    }
+   }
+  }
+ }
+}

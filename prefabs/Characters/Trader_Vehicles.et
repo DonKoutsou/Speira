@@ -1,0 +1,1517 @@
+SCR_ChimeraCharacter {
+ ID "5B06B6874207438F"
+ components {
+  ControllersManagerComponent "{5B06B68794040CA3}" {
+  }
+  EventHandlerManagerComponent "{5B06B68794040D01}" {
+   EventHandlers {
+    BaseEventHandler "{5B06B68794040D46}" {
+     EventName "OnWeaponChanged"
+    }
+    BaseEventHandler "{5B06B68794040D7D}" {
+     EventName "OnMuzzleChanged"
+    }
+    BaseEventHandler "{5B06B68794040D70}" {
+     EventName "OnMagazineChanged"
+    }
+    BaseEventHandler "{5B06B68794040D77}" {
+     EventName "OnAmmoCountChanged"
+    }
+    BaseEventHandler "{5B06B68794040D6A}" {
+     EventName "OnMagazineCountChanged"
+    }
+    BaseEventHandler "{5B06B68794040D63}" {
+     EventName "OnFiremodeChanged"
+    }
+    BaseEventHandler "{5B06B68794040D18}" {
+     EventName "OnZeroingChanged"
+    }
+    BaseEventHandler "{5B06B68794040D11}" {
+     EventName "OnADSChanged"
+    }
+    BaseEventHandler "{5B06B68794040D14}" {
+     EventName "OnWeaponAttachementChanged"
+    }
+    BaseEventHandler "{5B06B68794040D0B}" {
+     EventName "OnTurretReload"
+    }
+    BaseEventHandler "{5B06B68794040D0F}" {
+     EventName "OnConsciousnessChanged"
+    }
+   }
+  }
+  SCR_CharacterControllerComponent "{5B06B68794040DCF}" {
+   LeftHandPosition EntitySlotInfo "{520EA1D2F659CEAB}" {
+    PivotID "lefthandprop"
+    ChildPivotID "snap_weapon"
+   }
+   RightHandPosition InventoryStorageSlot RightHand {
+    PivotID "RightHandProp"
+    Enabled 0
+    Prefab ""
+   }
+   WaterMovementLimits {
+    0 0 0.221 0 0.375 0.247 0.562 0.395 0.715 0.457 0.828 0.628 1 0.75
+   }
+   LeanSpeed 5
+   HoldInputForRoll 1
+  }
+  SignalsManagerComponent "{5B06B68794040DC6}" {
+  }
+  CharacterSoundComponent "{5B06B68794040DEF}" {
+   Filenames {
+    "{81D32DC765A2B68D}Sounds/Character/Character_Movement_Foley_Locomotion.acp" "{4D7D189EAFF7AC12}Sounds/Character/Character_Footsteps.acp" "{67007BA2E4D81B0D}Sounds/Character/Character_Movement_Foley_Additive.acp" "{685F8084FD1F0569}Sounds/Vegetation/Collisions/Vegetation_Collision.acp" "{B3C8216759E0809B}Sounds/Character/Character_Movement_Vehicles.acp" "{5A6E4C9089CB9606}Sounds/Character/Character_Movement_Swim.acp" "{E59C77F94B1AE155}Sounds/Character/Character_Jump_Landing.acp" "{FC1845C71FCA50CC}Sounds/Character/Character_Prone.acp" "{413F56BD2A1737CD}Sounds/Character/Character_Items.acp"
+   }
+   FoliageCollisionLayer "Foliage"
+  }
+  SCR_CommunicationSoundComponent "{5B06B68794040D9B}" {
+   Filenames {
+    "{BEC7770A04409030}Sounds/RadioProtocol/RadioProtocol_Report_US.acp" "{592626568066103C}Sounds/RadioProtocol/RadioProtocol_Movement_US.acp" "{337FD2BFEFC028E6}Sounds/RadioProtocol/RadioProtocol_Confirmations_US.acp" "{7F439DEA74FDB888}Sounds/RadioProtocol/RadioProtocol_Combat_US.acp" "{30C6D89341B1EA1A}Sounds/Character/Character_Voice_Code.acp" "{C9BE186498C3B447}Sounds/Character/Character_Voice_Animations.acp" "{2A4581E5F38A843A}Sounds/RadioProtocol/RadioProtocol_Actions_US.acp" "{AC63EDBF94C5C8D3}Sounds/RadioProtocol/RadioProtocol_IdleSpeech_US.acp"
+   }
+   StaminaThresholdMinimum 0.05
+  }
+  SCR_CharacterInventoryStorageComponent "{5B06B68794040F67}" {
+   components {
+    SCR_EquipmentStorageComponent "{5B06B68794040EF1}" {
+     StoragePurpose 64
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       PivotID "Spine5"
+       Offset 0 0.12 0.17
+       Angles -85 0 0
+       Prefab ""
+       AllowedItemTypes {
+        "BINOCULARS"
+       }
+       AffectedByOcluders {
+        "ChestLeftBottomFront" "ChestRightBottomFront"
+       }
+       AnimatedMeshRefference "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+       AllowedItemTypes {
+        "WATCH"
+       }
+      }
+     }
+    }
+    SCR_TourniquetStorageComponent "{5B06B68794040E87}" {
+     StoragePurpose 0
+     InitialStorageSlots {
+      SCR_TourniquetStorageSlot TourniquetSlotLA {
+       AllowedItemTypes {
+        "TOURNIQUET"
+       }
+       m_eHitZoneGroup LEFTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRA {
+       AllowedItemTypes {
+        "TOURNIQUET"
+       }
+       m_eHitZoneGroup RIGHTARM
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotLL {
+       AllowedItemTypes {
+        "TOURNIQUET"
+       }
+       m_eHitZoneGroup LEFTLEG
+      }
+      SCR_TourniquetStorageSlot TourniquetSlotRL {
+       AllowedItemTypes {
+        "TOURNIQUET"
+       }
+       m_eHitZoneGroup RIGHTLEG
+      }
+     }
+    }
+   }
+   Attributes ItemAttributeCollection "{5B06B68794040F52}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5B06B68794040EA6}" {
+      CameraDistanceToItem 1.8
+      CameraOffset 0 0.3 0
+      FOV 40
+      IsDynamicObject 1
+     }
+     SCR_CharacterInventoryPreviewAttributes "{5B06B68794040F53}" {
+      CameraDistanceToItem 2
+      ItemRenderRotation 10 0 0
+      IsDynamicObject 1
+     }
+    }
+   }
+   Priority 10
+   StoragePurpose 9
+   CharacterPreviewPrefab "{A46F7A3C178EBBAC}Prefabs/Characters/Preview/BasebodyPreviewCharacter.et"
+   m_fMaxWeight 80
+  }
+  AIControlComponent "{5B06B68794040FE5}" {
+   components {
+    AICharacterAimingComponent "{5B06B68794040F0E}" {
+     AimingPID 0.3 0 0
+     UsePID 1
+    }
+    AICharacterHeadAimingComponent "{5B06B68794040F05}" {
+    }
+    AICharacterMovementComponent "{5B06B68794040F3D}" {
+    }
+    AIPathfindingComponent "{5B06B68794040F35}" {
+     NavmeshProject "Soldiers"
+    }
+    PerceptionComponent "{5B06B68794040FC9}" {
+     PositionInfo PointInfo "{5B06B68794040F27}" {
+      PivotID "eyerightpupil"
+      Angles 90 0 0
+     }
+     SensorsList {
+      EyesSensor "{5B06B68794040FDC}" {
+       MaxRange 330
+      }
+      EarsSensor "{5B06B68794040FD7}" {
+      }
+     }
+     VehicleThreatMinSpeed 0.5
+     VehicleThreatCollisionTime 2.8
+    }
+    SCR_AICombatComponent "{5B06B68794040FCC}" {
+    }
+   }
+   Agenttemplate "{B4C861A6DA2F5E05}AI/AIAgents/SCR_ChimeraAIAgentFull.et"
+   OverrideAIBehaviorData "{B62F3C5AA48FFEEF}AI/BehaviorTrees/Chimera/Soldier/Wait.bt"
+   EnableAI 1
+   PhysicsLayerPreset "CharacterAI"
+  }
+  ActionsPerformerComponent "{5B06B68794040F9A}" {
+  }
+  BaseFlattenGrassComponent "{5B06B68794040FB0}" {
+   ParametersCollection {
+    FlattenGrassParametersObject "{5B06B68794040F82}" {
+     SideX 0.6
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{5B06B68794040FB9}" {
+     SideX 0.9
+     SideZ 0.7
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+    FlattenGrassParametersObject "{5B06B68794040FBE}" {
+     SideX 2
+     SideZ 0.8
+     Offset 0
+     CenterLerp 0.5
+     TimeDown 0.75
+     MaxHeight 1
+     ShapeOfGrassFlattening "Ellipse"
+    }
+   }
+  }
+  BaseWeaponManagerComponent "{5B06B687940B8701}" {
+   SlingPosition PointInfo "{5B06B68794040FAF}" {
+    PivotID "stomach3"
+    Angles 0 140 -90
+   }
+  }
+  CharacterAimingComponent "{5B06B687940BA4AC}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{5B06B687940B88F8}" {
+    signalsSuffix "Weapon"
+   }
+   LimitsHoriz -80 80
+   LimitsVert -80 80
+   AimingMaxSpeed 0.7 4
+   AimingSpeedControls 1.5 0.75
+   ProneLimitsVertical -40 20
+   AimModifiers {
+    OneHandAimModifier "{5B06B687940B88E1}" {
+    }
+   }
+   Shoulder PointInfo "{5B06B687940B88EA}" {
+    PivotID "RightShoulder"
+   }
+  }
+  CharacterHeadAimingComponent "{5B06B687940BA48B}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{5B06B687940BA482}" {
+    signalsSuffix "Head"
+   }
+   ProvideAimingType Head
+   LimitsHoriz -360 360
+   LimitsVert -360 360
+   AimingMaxSpeed 10 5
+   AimingSpeedControls 1.5 0.75
+   AimPivot PointInfo "{5B06B687940BA488}" {
+    PivotID "Neck1"
+   }
+   PitchReduction {
+    0 0 1 0.4
+   }
+  }
+  CharacterPerceivableComponent "{5B06B687940B3E6E}" {
+   "Additional aim points" {
+    AimPoint "{5B06B687940BA4E8}" {
+     AimPointPosition PointInfo "{5B06B687940BA4E9}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.5
+    }
+    AimPoint "{5B06B687940BA4D2}" {
+     AimPointPosition PointInfo "{5B06B687940BA4D3}" {
+      PivotID "Head"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.25
+     AimPointType Weak
+    }
+    AimPoint "{5B06B687940BA4DB}" {
+     AimPointPosition PointInfo "{5B06B687940BA4D8}" {
+      PivotID "Hips"
+     }
+     AimpointChecked 1
+     VsibilityChecked 1
+     Dimension 0.4
+     AimPointType Incapacitate
+    }
+   }
+   UnitType Infantry
+  }
+  ClimbingDataComponent "{5B06B687940B3E75}" {
+   CanClimbOver 0
+  }
+  ColliderHistoryComponent "{5B06B687940B3E7C}" {
+  }
+  EquipedWeaponStorageComponent "{5B06B687940B3E86}" {
+   StoragePurpose 2
+  }
+  FactionAffiliationComponent "{5B06B687940B3E8B}" {
+   "faction affiliation" "FIA"
+  }
+  MeshObject "{5B06B687940B3E9C}" {
+   Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+  }
+  Hierarchy "{5B06B687940B3EA1}" {
+  }
+  SCR_BaseHUDComponent "{5B06B687940B3ECE}" {
+   InfoDisplays {
+    SCR_WeaponInfo "{5B06B687940B3EB8}" {
+     m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
+     m_sContentWidget "m_WeaponInfoPanel"
+     m_bAdaptiveOpacity 1
+    }
+    SCR_WeaponSwitchingBaseUI "{5B06B687940B3ECC}" {
+     VisibleAtParent 1
+     m_LayoutPath "{2A1E1E023967C5A8}UI/layouts/HUD/QuickSelectBar.layout"
+     m_eLayer OVERLAY
+    }
+   }
+  }
+  SCR_CallsignCharacterComponent "{5B06B687940B3EC9}" {
+  }
+  SCR_CharacterDamageManagerComponent "{5B06B687940B3D7C}" {
+   "Additional hit zones" {
+    ScriptedHitZone Health {
+     HZDefault 1
+     IgnoreExplosions 1
+     MaxHealth 100
+     "DamageState threshold" {
+      0.75 0.5 0.333
+     }
+    }
+    SCR_CharacterBloodHitZone Blood {
+     IgnoreExplosions 1
+     MaxHealth 6000
+     DamageReduction 0
+     "DamageState threshold" {
+      0.75 0.5 0.333
+     }
+     m_fFullRegenerationTime 5400
+    }
+    SCR_CharacterResilienceHitZone Resilience {
+     IgnoreExplosions 1
+     BaseDamageMultiplier 0.666
+     MaxHealth 100
+     "Explosive multiplier" 2
+     "DamageState threshold" {
+      0.75 0.5 0.333
+     }
+     m_fFullRegenerationTime 30
+    }
+    SCR_CharacterHeadHitZone Head {
+     ColliderNames {
+      "UTM_Head"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3F1D}" {
+       Parent "Health"
+       Overkill 1
+      }
+      ParentHitZone "{5B06B687940B3F1A}" {
+       Parent "Resilience"
+       DamageMultiplier 2
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     MaxHealth 30
+     DamageReduction 1
+     DamageThreshold 1
+     AreaOverride 0.2
+     "Melee multiplier" 3
+     "Kinetic multiplier" 3
+     "Explosive multiplier" 3
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 600
+     m_eHitZoneGroup HEAD
+     m_eBandageAnimationBodyPart UpperHead
+    }
+    SCR_CharacterHitZone Chest {
+     ColliderNames {
+      "UTM_Chest" "UTM_ShoulderArea_L" "UTM_ShoulderArea_R" "UTM_Ribcage"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3F3C}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.7
+       Overkill 1
+      }
+      ParentHitZone "{5B06B687940B3F39}" {
+       Parent "Resilience"
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     MaxHealth 100
+     DamageReduction 1
+     DamageThreshold 1
+     AreaOverride 0.75
+     "Explosive multiplier" 3
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Torso"
+     }
+     m_aBleedingAreas {
+      LoadoutJacketArea "{5B06B687940B3F46}" {
+      }
+      LoadoutVestArea "{5B06B687940B3F43}" {
+      }
+     }
+     m_eHitZoneGroup UPPERTORSO
+     m_eBandageAnimationBodyPart UpperTorso
+    }
+    SCR_CharacterHitZone Abdomen {
+     ColliderNames {
+      "UTM_Waist" "UTM_Belly"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3F59}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.7
+       Overkill 1
+      }
+      ParentHitZone "{5B06B687940B3F67}" {
+       Parent "Resilience"
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 100
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Torso"
+     }
+     m_aBleedingAreas {
+      LoadoutJacketArea "{5B06B687940B3F61}" {
+      }
+      LoadoutVestArea "{5B06B687940B3F63}" {
+      }
+     }
+     m_eHitZoneGroup LOWERTORSO
+     m_eBandageAnimationBodyPart LowerTorso
+    }
+    SCR_CharacterHitZone Hips {
+     ColliderNames {
+      "UTM_Hips" "UTM_ButtockArea_L" "UTM_ButtockArea_R" "UTM_Buttocks_L" "UTM_Buttocks_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3F7B}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3F82}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 100
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Groin"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3F8F}" {
+      }
+     }
+     m_eHitZoneGroup LOWERTORSO
+     m_eBandageAnimationBodyPart LowerTorso
+    }
+    SCR_CharacterHitZone RArm {
+     ColliderNames {
+      "UTM_Arm_R" "UTM_Shoulder_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3FAC}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3FB4}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 70
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Arm_R"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3FB7}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3FB1}" {
+      }
+     }
+     m_eHitZoneGroup RIGHTARM
+     m_eBandageAnimationBodyPart RightHand
+    }
+    SCR_CharacterHitZone LArm {
+     ColliderNames {
+      "UTM_Arm_L" "UTM_Shoulder_L"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3FCA}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3FD3}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 70
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Arm_L"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3FDD}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3FDE}" {
+      }
+     }
+     m_eHitZoneGroup LEFTARM
+     m_eBandageAnimationBodyPart LeftHand
+    }
+    SCR_CharacterHitZone RForearm {
+     ColliderNames {
+      "UTM_Forearm_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3FEB}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3FF0}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     MaxHealth 50
+     DamageReduction 1
+     DamageThreshold 1
+     AreaOverride 0.5
+     "Explosive multiplier" 2
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "ArmUpper_R"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3FF3}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3FFD}" {
+      }
+     }
+     m_eHitZoneGroup RIGHTARM
+     m_eBandageAnimationBodyPart RightHand
+    }
+    SCR_CharacterHitZone LForearm {
+     ColliderNames {
+      "UTM_Forearm_L"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3C09}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3C15}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     MaxHealth 50
+     DamageReduction 1
+     DamageThreshold 1
+     AreaOverride 0.5
+     "Explosive multiplier" 2
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "ArmUpper_L"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3C17}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3C11}" {
+      }
+     }
+     m_eHitZoneGroup LEFTARM
+     m_eBandageAnimationBodyPart LeftHand
+    }
+    SCR_CharacterHitZone RHand {
+     ColliderNames {
+      "UTM_Hand_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3C23}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.7
+      }
+      ParentHitZone "{5B06B687940B3C28}" {
+       Parent "Resilience"
+       DamageMultiplier 0.75
+       HealingMultiplier 0
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 30
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Hand_R"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3C2A}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3C2B}" {
+      }
+     }
+     m_eHitZoneGroup RIGHTARM
+     m_eBandageAnimationBodyPart RightHand
+    }
+    SCR_CharacterHitZone LHand {
+     ColliderNames {
+      "UTM_Hand_L"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3C42}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.7
+      }
+      ParentHitZone "{5B06B687940B3C48}" {
+       Parent "Resilience"
+       DamageMultiplier 0.75
+       HealingMultiplier 0
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 30
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Hand_L"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3C4A}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3C4B}" {
+      }
+     }
+     m_eHitZoneGroup LEFTARM
+     m_eBandageAnimationBodyPart LeftHand
+    }
+    SCR_CharacterHitZone RThigh {
+     ColliderNames {
+      "UTM_Thigh_R" "UTM_Knee_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3C6E}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.65
+      }
+      ParentHitZone "{5B06B687940B3C76}" {
+       Parent "Resilience"
+       DamageMultiplier 0.65
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 70
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Leg_R"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3C71}" {
+      }
+     }
+     m_eHitZoneGroup RIGHTLEG
+     m_eBandageAnimationBodyPart RightLeg
+    }
+    SCR_CharacterHitZone LThigh {
+     ColliderNames {
+      "UTM_Thigh_L" "UTM_Knee_L"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3C8E}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.65
+      }
+      ParentHitZone "{5B06B687940B3C8A}" {
+       Parent "Resilience"
+       DamageMultiplier 0.65
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 70
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Leg_L"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3C8B}" {
+      }
+     }
+     m_eHitZoneGroup LEFTLEG
+     m_eBandageAnimationBodyPart LeftLeg
+    }
+    SCR_CharacterHitZone RCalf {
+     ColliderNames {
+      "UTM_Calf_R" "UTM_Shin_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3CAC}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3CAF}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     MaxHealth 50
+     DamageReduction 1
+     DamageThreshold 1
+     AreaOverride 0.75
+     "Explosive multiplier" 2
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Calf_R"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3CAB}" {
+      }
+     }
+     m_eHitZoneGroup RIGHTLEG
+     m_eBandageAnimationBodyPart RightLeg
+    }
+    SCR_CharacterHitZone LCalf {
+     ColliderNames {
+      "UTM_Calf_L" "UTM_Shin_L"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3CC7}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.5
+      }
+      ParentHitZone "{5B06B687940B3CC3}" {
+       Parent "Resilience"
+       DamageMultiplier 0.5
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     MaxHealth 50
+     DamageReduction 1
+     DamageThreshold 1
+     AreaOverride 0.75
+     "Explosive multiplier" 2
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Calf_L"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3CCE}" {
+      }
+     }
+     m_eHitZoneGroup LEFTLEG
+     m_eBandageAnimationBodyPart LeftLeg
+    }
+    SCR_CharacterHitZone RFoot {
+     ColliderNames {
+      "UTM_Foot_R" "UTM_Toe_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3CE4}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.425
+      }
+      ParentHitZone "{5B06B687940B3CE3}" {
+       Parent "Resilience"
+       DamageMultiplier 0.425
+       HealingMultiplier 0
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 30
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Foot_R"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3CEE}" {
+      }
+     }
+     m_eHitZoneGroup RIGHTLEG
+     m_eBandageAnimationBodyPart RightLeg
+    }
+    SCR_CharacterHitZone LFoot {
+     ColliderNames {
+      "UTM_Foot_L" "UTM_Toe_L"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3CFA}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.425
+      }
+      ParentHitZone "{5B06B687940B3D06}" {
+       Parent "Resilience"
+       DamageMultiplier 0.425
+       HealingMultiplier 0
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 30
+     DamageReduction 1
+     DamageThreshold 1
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_aDamageSubmeshes {
+      "Foot_L"
+     }
+     m_aBleedingAreas {
+      LoadoutPantsArea "{5B06B687940B3D00}" {
+      }
+     }
+     m_eHitZoneGroup LEFTLEG
+     m_eBandageAnimationBodyPart LeftLeg
+    }
+    SCR_CharacterHitZone Neck {
+     ColliderNames {
+      "UTM_Neck" "UTM_NeckArea_L" "UTM_NeckArea_R"
+     }
+     ParentHZs {
+      ParentHitZone "{5B06B687940B3D20}" {
+       Parent "Health"
+       DamageMultiplier 0.7
+       HealingMultiplier 0.7
+       Overkill 1
+      }
+      ParentHitZone "{5B06B687940B3D2C}" {
+       Parent "Resilience"
+       HealingMultiplier 0
+       Overkill 1
+      }
+     }
+     IgnoreExplosions 1
+     MaxHealth 25
+     DamageReduction 1
+     DamageThreshold 1
+     "Kinetic multiplier" 3
+     "DamageState threshold" {
+      0.5
+     }
+     m_fFullRegenerationTime 1800
+     m_fBleedingRateScale 10
+     m_aDamageSubmeshes {
+      "Head"
+     }
+     m_aBleedingAreas {
+      LoadoutVestArea "{5B06B687940B3D2E}" {
+      }
+      LoadoutJacketArea "{5B06B687940B3D28}" {
+      }
+     }
+     m_eHitZoneGroup HEAD
+     m_eBandageAnimationBodyPart LowerHead
+    }
+   }
+   "Fall damage min height" 4
+   "Fall damage max height" 6.5
+   CollisionVelocityThreshold 1.2
+   "Heavy damage threshold" 999
+   m_sBleedingParticle "{486BD20FE5257A33}Particles/Enviroment/Bleeding_01_Continuous.ptc"
+  }
+  SCR_CharacterRankComponent "{5B06B687940B3D78}" {
+  }
+  SCR_CharacterRegistrationComponent "{5B06B687940B3D7A}" {
+  }
+  SCR_CharacterStaminaComponent "{5B06B687940B3D9F}" {
+   StaminaDrainRun -0.008
+   StaminaDrainSprint -0.016
+   EncumbranceDrainMax -0.1
+   BreathNormalFrequency 0.45
+   BreathExhaustedFrequency 1.1
+   m_fStaminaDrainThreshold 100
+   m_EventParams MetabolismEventParams "{5B06B687940B3D9E}" {
+    m_fCaloriesDrain 2
+    m_fHydrationDrain 2
+    m_fEnergyDrain 4
+   }
+  }
+  SCR_CharacterVicinityComponent "{5B06B687940B3DA6}" {
+   DiscoveryRadius 3
+  }
+  SCR_CompartmentAccessComponent "{5B06B687940B3DA9}" {
+   CompartmentLayerPreset "CharNoCollide"
+  }
+  SCR_EditableCharacterComponent "{5B06B687940B3A26}" {
+   m_EntityType CHARACTER
+   m_UIInfo SCR_EditableEntityUIInfo "{5B06B687940B3DD3}" {
+    Name "#AR-Role_Unarmed"
+    Icon "{9164E45B9A237FE9}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Unarmed.edds"
+    IconSetName ""
+    m_Image "{0F62C575785D87CD}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Unarmed.edds"
+    m_sFaction "FIA"
+    m_aAuthoredLabels {
+     70 2 12 22
+    }
+    m_aAutoLabels {
+     122
+    }
+   }
+   m_sIconBoneName "spine5"
+   m_PrefabGroup "{000CD338713F2B5A}Prefabs/AI/Groups/Group_Base.et"
+   m_AccessKey 769
+   m_Flags 69
+  }
+  SCR_FuelNozzleHolderComponent "{5B06B687940B3A22}" {
+  }
+  SCR_GadgetManagerComponent "{5B06B687940B3A29}" {
+  }
+  SCR_MeleeComponent "{5B06B687940B3A2B}" {
+  }
+  SCR_PreviewEntityComponent "{5B06B687940B3A32}" {
+   m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
+  }
+  SCR_RadialMenuComponent "{5B06B687940B3A48}" {
+   m_RadialMenuVisuals SCR_RadialMenuVisualsWeapons "{5B06B687940B3A4E}" {
+    m_rMissingIconPrimary "{E6BDE9DF9368C48C}UI/Textures/WeaponIcons/weapon_AK74.edds"
+    m_rMissingIconSecondary "{A299AF13A9949AE0}UI/Textures/WeaponIcons/weapon_PM.edds"
+    m_rMissingIconGrenade "{29FA998781E23B91}UI/Textures/WeaponIcons/grenade_RGD-5.edds"
+   }
+  }
+  SCR_VoNComponent "{5B06B687940B3A50}" {
+   "Speaking Range" 50
+   Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
+  }
+  TagComponent "{5B06B687940B3A5E}" {
+   "Tag categories" 1
+  }
+  CharacterGrenadeSlotComponent "{5B06B687940B3A74}" {
+   isThrowable 1
+   WeaponType None
+   AttachType InventoryStorageSlot "{416B67397BB4F7EE}" {
+    PivotID "LeftArmVolume"
+    Enabled 0
+   }
+   WeaponSlotType "grenade"
+   WeaponSlotIndex 3
+  }
+  CharacterGrenadeSlotComponent "{5B06B687940B3A7F}" {
+   isThrowable 1
+   WeaponType None
+   AttachType InventoryStorageSlot throwable {
+    PivotID "LeftArmVolume"
+    Enabled 0
+   }
+   WeaponSlotType "throwable"
+   WeaponSlotIndex 4
+  }
+  CharacterWeaponSlotComponent "{5B06B687940B3AD3}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
+    PivotID "RightShoulderBlade"
+    Offset 0.05 -0.3 0.05
+    Angles 90 90 90
+    Enabled 0
+   }
+   WeaponTemplate ""
+   WeaponSlotType "primary"
+   HolsteredIndex 1
+  }
+  CharacterWeaponSlotComponent "{5B06B687940B3B02}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
+    PivotID "LeftShoulderBlade"
+    Offset 0.03 -0.3 -0.05
+    Angles 90 -90 90
+    Enabled 0
+   }
+   WeaponSlotType "primary"
+   WeaponSlotIndex 1
+  }
+  CharacterWeaponSlotComponent "{5B06B687940B3B36}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "leftshoulderblade"
+    Offset 0.1 -0.2 -0.1
+    Angles 90 -90 90
+    Enabled 0
+   }
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+   WeaponSlotType "secondary"
+   WeaponSlotIndex 2
+   HolsteredHidden 1
+  }
+  SCR_CharacterIdentityComponent "{5B06B687940B3817}" {
+   Identity Identity "{5B06B687940B3803}" {
+    VisualIdentity VisualIdentity "{5B06B687940B3BF3}" {
+     Head "{EAF055495BA85CA1}Prefabs/Characters/Heads/Head_White_02.et"
+     Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+     BodyMeshesConfig MeshConfig "{5B06B687940B3BE0}" {
+      SubmeshesOfBody {
+       IdentityBodyMesh "{5B06B687940B3B6C}" {
+        PartType "Arm_L"
+        HealthyVersion "Basebody_Arm_L"
+        WoundVersion "Basebody_Arm_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3B6B}" {
+        PartType "Arm_R"
+        HealthyVersion "Basebody_Arm_R"
+        WoundVersion "Basebody_Arm_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3B7D}" {
+        PartType "ArmUpper_L"
+        HealthyVersion "Basebody_ArmUpper_L"
+        WoundVersion "Basebody_ArmUpper_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3B80}" {
+        PartType "ArmUpper_R"
+        HealthyVersion "Basebody_ArmUpper_R"
+        WoundVersion "Basebody_ArmUpper_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3B89}" {
+        PartType "Calf_L"
+        HealthyVersion "Basebody_Calf_L"
+        WoundVersion "Basebody_Calf_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3B91}" {
+        PartType "Calf_R"
+        HealthyVersion "Basebody_Calf_R"
+        WoundVersion "Basebody_Calf_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3B9F}" {
+        PartType "Foot_L"
+        HealthyVersion "Basebody_Foot_L"
+        WoundVersion "Basebody_Foot_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BA5}" {
+        PartType "Foot_R"
+        HealthyVersion "Basebody_Foot_R"
+        WoundVersion "Basebody_Foot_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BA3}" {
+        PartType "Groin"
+        HealthyVersion "Basebody_Groin"
+        WoundVersion "Basebody_Groin_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BAA}" {
+        PartType "Hand_L"
+        HealthyVersion "Basebody_Hand_L"
+        WoundVersion "Basebody_Hand_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BB0}" {
+        PartType "Hand_R"
+        HealthyVersion "Basebody_Hand_R"
+        WoundVersion "Basebody_Hand_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BBE}" {
+        PartType "Leg_L"
+        HealthyVersion "Basebody_Leg_L"
+        WoundVersion "Basebody_Leg_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BBB}" {
+        PartType "Leg_R"
+        HealthyVersion "Basebody_Leg_R"
+        WoundVersion "Basebody_Leg_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BC1}" {
+        PartType "Torso"
+        HealthyVersion "Basebody_Torso"
+        WoundVersion "Basebody_Torso_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BC9}" {
+        PartType "Head"
+        HealthyVersion "Head"
+        WoundVersion "Head_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BD0}" {
+        PartType "CalfLower_L"
+        HealthyVersion "Basebody_CalfLower_L"
+        WoundVersion "Basebody_CalfLower_L_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BDF}" {
+        PartType "CalfLower_R"
+        HealthyVersion "Basebody_CalfLower_R"
+        WoundVersion "Basebody_CalfLower_R_wound"
+       }
+       IdentityBodyMesh "{5B06B687940B3BE7}" {
+        PartType "Head_neck"
+        HealthyVersion "Head_neck"
+        WoundVersion "Head_wound_neck"
+       }
+      }
+     }
+    }
+    SoundIdentity SoundIdentity "{5B06B687940B3BFA}" {
+     VoiceID 100
+    }
+   }
+  }
+  BaseLoadoutManagerComponent "{5B06B687940B3911}" {
+   Slots {
+    LoadoutSlotInfo Back {
+     PivotID "scene_root"
+     Name "Backpack"
+     AreaType LoadoutBackpackArea "{5B06B687940B3837}" {
+     }
+    }
+    LoadoutSlotInfo Watch {
+     AreaType LoadoutWatchArea "{5B06B687940B383A}" {
+     }
+    }
+    LoadoutSlotInfo Binoculars {
+     AreaType LoadoutBinocularsArea "{5B06B687940B384C}" {
+     }
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     Name "Vest"
+     AreaType LoadoutVestArea "{5B06B687940B3857}" {
+     }
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{C7923961D7235D70}Prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+     Name "Boots"
+     AreaType LoadoutBootsArea "{5B06B687940B3873}" {
+     }
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{BE19A15F1073E7BD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_black.et"
+     Name "Helmet"
+     AreaType LoadoutHeadCoverArea "{5B06B687940B3898}" {
+     }
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{BBA08EC4EC40FA94}Prefabs/Characters/Uniforms/Jacket_M70.et"
+     Name "Jacket"
+     AreaType LoadoutJacketArea "{5B06B687940B38B6}" {
+     }
+     MeshesToHide {
+      "Torso" "Arm_L" "Arm_R" "ArmUpper_L" "ArmUpper_R"
+     }
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{06BC3F18B47799AE}Prefabs/Characters/Uniforms/Pants_M70.et"
+     Name "Pants"
+     AreaType LoadoutPantsArea "{5B06B687940B38E1}" {
+     }
+     MeshesToHide {
+      "Leg_L" "Leg_R" "Groin" "Calf_L" "Calf_R"
+     }
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{5B06B687940B393F}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5B06B687940B392C}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M70.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5B06B687940B393C}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_M70.et"
+     PrefabsToSpawn {
+      "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{5B06B687940936AA}" {
+   ActionContexts {
+    UserActionContext "{5B06B687940B395A}" {
+     ContextName "default"
+     Position PointInfo "{5B06B687940B3959}" {
+      PivotID "spine3"
+     }
+     Radius 0.5
+    }
+    UserActionContext "{5B06B687940B3969}" {
+     ContextName "Head"
+     Position PointInfo "{5B06B687940B396F}" {
+      PivotID "Head"
+     }
+    }
+    UserActionContext "{5B06B687940B3979}" {
+     ContextName "Chest"
+     Position PointInfo "{5B06B687940B3978}" {
+      PivotID "Spine5"
+      Offset 0 0.2 0
+     }
+    }
+    UserActionContext "{5B06B687940B5CB6}" {
+     ContextName "LeftLeg"
+     Position PointInfo "{5B06B687940B3981}" {
+      PivotID "LeftKnee"
+     }
+    }
+    UserActionContext "{5B06B687940B5CA2}" {
+     ContextName "RightLeg"
+     Position PointInfo "{5B06B687940B5CA3}" {
+      PivotID "RightKnee"
+     }
+    }
+    UserActionContext "{5B06B687940B5CAE}" {
+     ContextName "LowerTorso"
+     Position PointInfo "{5B06B687940B5CAF}" {
+      PivotID "Spine4"
+     }
+    }
+    UserActionContext "{5B06B687940B752C}" {
+     ContextName "LeftArm"
+     Position PointInfo "{5B06B687940B5C99}" {
+      PivotID "LeftForeArm"
+     }
+    }
+    UserActionContext "{5B06B687940B6099}" {
+     ContextName "RightArm"
+     Position PointInfo "{5B06B687940B7531}" {
+      PivotID "RightForeArm"
+     }
+    }
+   }
+   additionalActions {
+    SCR_BandageUserAction "{5B06B687940B60E3}" {
+     ParentContextList {
+      "Head"
+     }
+     UIInfo UIInfo "{5B06B687940B60E5}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup HEAD
+    }
+    SCR_BandageUserAction "{5B06B687940AEE1F}" {
+     ParentContextList {
+      "Chest"
+     }
+     UIInfo UIInfo "{5B06B687940B60F6}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup UPPERTORSO
+    }
+    SCR_BandageUserAction "{5B06B687940A22D1}" {
+     ParentContextList {
+      "LeftLeg"
+     }
+     UIInfo UIInfo "{5B06B687940AEE25}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTLEG
+    }
+    SCR_BandageUserAction "{5B06B687940A1D27}" {
+     ParentContextList {
+      "RightLeg"
+     }
+     UIInfo UIInfo "{5B06B687940A1D20}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTLEG
+    }
+    SCR_LootDeadBodyAction "{5B06B687940A1D12}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B06B687940A1D13}" {
+      Name "#AR-UserAction_Loot"
+     }
+     CanAggregate 1
+    }
+    SCR_BandageUserAction "{5B06B687940A1D1F}" {
+     ParentContextList {
+      "LeftArm"
+     }
+     UIInfo UIInfo "{5B06B687940A1D18}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LEFTARM
+    }
+    SCR_BandageUserAction "{5B06B687940998DF}" {
+     ParentContextList {
+      "RightArm"
+     }
+     UIInfo UIInfo "{5B06B687940A1D0B}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup RIGHTARM
+    }
+    SCR_BandageUserAction "{5B06B687940998A3}" {
+     ParentContextList {
+      "LowerTorso"
+     }
+     UIInfo UIInfo "{5B06B687940998A4}" {
+      Name "#AR-BandageAction"
+     }
+     m_eHitZoneGroup LOWERTORSO
+    }
+    KLM_ConverseAction "{5B06B687940936B5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B06B687940936B4}" {
+      Name "Deploy UAZ for 4 watches"
+     }
+     Duration 2
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 4
+     m_PrefabToSell "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et"
+     m_SpawnOffset 0 0.2 10
+    }
+    KLM_ConverseAction "{5B22EECFA2F9CA36}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B22EECFA8CFF33D}" {
+      Name "Deploy transport Ural for 6 watches"
+     }
+     Duration 2
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 6
+     m_PrefabToSell "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et"
+     m_SpawnOffset 0 0.2 10
+    }
+   }
+  }
+  CharacterAnimationComponent "{5B06B687940948BF}" {
+   components {
+    SCR_CharacterCommandHandlerComponent "{5B06B687940936D5}" {
+     "Static Layer" 2
+     "Vehicles Layers" 64
+     "Ladders Layers" 65536
+     LadderDetectMaxDist 1.7
+     "Body Offset Reference Point" PointInfo "{5B06B687940936F2}" {
+      PivotID "RightShoulder"
+      Offset 0 -0.144 -0.04
+     }
+     ObstructionLayers 32
+     MoveSettings ScriptCharacterCommandMoveSettings "{5B06B687940936D4}" {
+      MovementFilterMaxChange 16
+      MaxSprintAngle 0.8
+      OnTurnSpeedReducFactor 0.2
+      OnTurnNoReducAngle 1.57
+      BankingAngleCurve {
+       0 0 0.075 0 1 1
+      }
+      AdjustedStanceChangeTime 0.025
+      AdjustedStanceChangeMaxSpeed 4
+      AdjustedStanceTraceLength 1
+      AdjustedStanceUpperThreshold 1.4
+      AdjustedStanceLowerThreshold 0.7
+      DetectLadders 0
+      MaxEnterLadderAngle 55
+      MaxLadderTangentAngle 110
+      m_fSpeed_Crouch_Fast_Forward 4
+      m_fSpeed_Crouch_Fast_Strafe 3.5
+      m_fSpeed_Prone_Normal_Forward 0.9
+      m_fSpeed_Prone_Normal_Strafe 0.9
+      m_fSpeed_Prone_Fast_Forward 1.1
+      m_fSpeed_Prone_Fast_Strafe 1
+      InnertiaCurve {
+       0 1 0.25 1 0.497 0.691 0.754 0.658 1 0.497
+      }
+      HeadingAdjustmentSpeedReduction {
+       0 0.597 0.353 0.552 0.507 0.503 0.804 0 1 0
+      }
+     }
+    }
+   }
+   AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+   AnimInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+   StartNode "MasterControl"
+   "Collision bone" "collision"
+   "Server LOD" 1
+   "LOD camera distances" {
+    5 20
+   }
+   DefaultShapeLayer 524288
+   FreshwaterLayer 4194304
+   LayerPreset "Character"
+   IkPoseBonesBlend {
+    "LeftShoulder" "LeftArm" "LeftArmTwist" "LeftForeArm" "LeftForeArmTwist" "LeftHand"
+   }
+   UnarmedIkPose "{A1A073C1B48F9AEC}anims/anm/player/death/unarmed/p_hands_death.anm"
+   ColliderStand PhysAgentCollisionShapeItem "{5B06B687940936C1}" {
+    Shape Capsule
+    Size 0.75 1.8 0
+    Offset 0.05 0 0.05
+    StepHeight 0.55
+   }
+   ColliderCrouch PhysAgentCollisionShapeItem "{5B06B68794093638}" {
+    Shape Capsule
+    Size 0.75 1.4 0
+    Offset 0.175 0 0.175
+    DynamicOffset 0 0 0.25
+    StepHeight 0.4
+   }
+   ColliderProne PhysAgentCollisionShapeItem "{5B06B6879409363C}" {
+    Size 0.6 0.4 1.8
+    StepHeight 0.25
+   }
+   ColliderJump PhysAgentCollisionShapeItem "{5B06B68794093630}" {
+    Shape Capsule
+    Size 0.9 1.8 0
+    Offset 0.05 0 0.15
+    DynamicOffset 0 0 0.35
+    StepHeight 0.65
+   }
+   ColliderSwim PhysAgentCollisionShapeItem "{5B06B68794093635}" {
+    Size 1 1.35 2
+    StepHeight 1
+   }
+   ColliderLadder PhysAgentCollisionShapeItem "{5B06B68794093628}" {
+    Shape Capsule
+    Size 0.4 2 0.4
+    StepHeight 1
+   }
+   ColliderVehicle PhysAgentCollisionShapeItem "{5B06B6879409362D}" {
+    Size 0.4 0.85 0.4
+    StepHeight 0.25
+   }
+   RagdollLayer 1024
+   Definition "{CE761502CE2E1990}Prefabs/Characters/character.ragdoll"
+  }
+  SCR_CharacterCameraHandlerComponent "{5B06B68794094888}" {
+   "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
+   "CameraSet name" "CharacterCameraSet"
+  }
+  RplComponent "{5B06B6879409488D}" {
+  }
+ }
+ coords 7181.689 137.823 2296.008
+}

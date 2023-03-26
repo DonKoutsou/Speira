@@ -1,0 +1,15 @@
+GenericEntity {
+ ID "5C672A36B5EE44E0"
+ components {
+  CP_SlotClearArea "{5C672A36B5EE449B}" {
+   m_aPlugins {
+    CP_PluginTrigger "{5C672A36B5EE4491}" {
+    }
+   }
+   m_rObjectToSpawn "{ECFEB02042DAAD93}prefabs/ScenarioFramework/Triggers/TriggerDefend.et"
+  }
+  Hierarchy "{5C672A36B5EE4492}" {
+  }
+ }
+ coords 81.248 1.001 170.096
+}

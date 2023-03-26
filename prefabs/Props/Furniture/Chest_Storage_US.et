@@ -1,0 +1,146 @@
+GenericEntity {
+ ID "5C89144BEFB837A0"
+ components {
+  SignalsManagerComponent "{5C89144BE8F03BE9}" {
+  }
+  SoundComponent "{5C89144BE8F03B91}" {
+   Filenames {
+    "{1A1F49248284A1CF}Sounds/Props/Military/AmmoBoxes/AmmoBox_81mm_mortar_3rnd/Props_AmmoBox_81mm_mortar_3rnd.acp"
+   }
+   DistanceManagement 0
+  }
+  MeshObject "{5C89144BE8F03CD2}" {
+   Object "{98CD0A123E772237}Assets/Props/Furniture/Chest_01/Chest_01.xob"
+   Materials {
+    MaterialAssignClass "{5C89144BE8F03BB7}" {
+     SourceMaterial "Chest_01"
+     AssignedMaterial "{858B962F92110E8A}Assets/Props/Furniture/Chest_01/Data/Chest_storage_US.emat"
+    }
+   }
+   LODFactors {
+    5 2 1.5 1 1 1
+   }
+  }
+  RigidBody "{5C89144BE8F03CC1}" {
+   ResponseIndex "SmallDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{5C89144BE8F03CA4}" {
+   Enabled 0
+   "Additional hit zones" {
+    ScriptedHitZone Default {
+     HZDefault 1
+     "Melee multiplier" 1
+     "Kinetic multiplier" 1
+     "Explosive multiplier" 90
+     "Incendiary multiplier" 1
+    }
+   }
+   m_fBaseHealth 6000
+   m_fForceToDamageScale 350
+   m_fDamageThresholdMaximum 50000
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{5C89144BE8F03C85}" {
+     m_vOffsetPosition 0 1.5 0.4
+     m_ModelPrefabs {
+      "{407938CF48D8B657}Assets/Props/Debris/Metal/FragmentMetal_dbr_01.xob" "{D9678156553F87C7}Assets/Props/Debris/Metal/FragmentMetal_dbr_02.xob" "{AE6DE9DEA19D68B7}Assets/Props/Debris/Metal/FragmentMetal_dbr_03.xob" "{D9678156553F87C7}Assets/Props/Debris/Metal/FragmentMetal_dbr_02.xob" "{407938CF48D8B657}Assets/Props/Debris/Metal/FragmentMetal_dbr_01.xob" "{407938CF48D8B657}Assets/Props/Debris/Metal/FragmentMetal_dbr_01.xob"
+     }
+     m_fMass 1
+     m_fDamageToImpulse 3
+     m_fRandomVelocityLinear 3
+     m_eMaterialSoundType METAL_LIGHT
+    }
+   }
+   m_aDamagePhases {
+    SCR_DamagePhaseData "{5C89144BE8F03CA2}" {
+     m_fPhaseHealth 5000
+     m_PhaseModel "{647B1D106023B158}Assets/Props/Furniture/Safe_01/Dst/Safe_01_dst.xob"
+     m_PhaseDestroySpawnObjects {
+      SCR_DebrisSpawnable "{5C89144BE8F03CA3}" {
+       m_ModelPrefabs {
+        "{647B1D106023B158}Assets/Props/Furniture/Safe_01/Dst/Safe_01_dst.xob"
+       }
+       m_fMass 150
+       m_eMaterialSoundType METAL_HEAVY
+      }
+     }
+    }
+   }
+  }
+  SCR_FactionAffiliationComponent "{5C89144BE8F03D5F}" {
+   "faction affiliation" "US"
+  }
+  SCR_UniversalInventoryStorageComponent "{5C89144BE8F03DDF}" {
+   Attributes SCR_ItemAttributeCollection "{5C89144BE8F03D17}" {
+    ItemDisplayName UIInfo "{5C89144BE8F03D65}" {
+     Name "Storage Chest"
+     Description "Wooden chest, used to store clothing and personal items"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5C89144BE8F03D15}" {
+      CameraOrbitAngles 15 0 0
+      CameraDistanceToItem 1
+      ItemRenderRotation 15 15 0
+      FOV 45
+     }
+    }
+   }
+   Priority 100
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 100000
+   MultiSlots {
+    MultiSlotConfiguration "{5C89144BE8F03D3E}" {
+     SlotTemplate InventoryStorageSlot Knives {
+      Prefab "{CB716A41903571AD}prefabs/Weapons/Melee/Knife_US.et"
+     }
+     NumSlots 15
+    }
+    MultiSlotConfiguration "{5C89144BE8F03D25}" {
+     SlotTemplate InventoryStorageSlot usfull {
+      Prefab "{2F5A0196CA2DB912}prefabs/Items/Food/Canteen_Filled_US.et"
+     }
+     NumSlots 1
+    }
+    MultiSlotConfiguration "{5C89144BE8F03DDD}" {
+     SlotTemplate InventoryStorageSlot usemtpy {
+      Prefab "{D3BA44530C896C38}prefabs/Items/Food/Canteen_Empty_US.et"
+     }
+     NumSlots 15
+    }
+   }
+   m_fMaxWeight 1000
+   m_aSlotsToShow {
+   }
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{5C89144BE8F03DD4}" {
+  }
+  ActionsManagerComponent "{5C89144BE8F03D93}" {
+   ActionContexts {
+    UserActionContext "{5C89144BE8F03DF6}" {
+     ContextName "default"
+     Position PointInfo "{5C89144BE8F03DF7}" {
+      Offset 0 0.3261 0
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{5C89144BE8F03D9E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5C89144BE8F03D9F}" {
+      Name "#AR-Inventory_OpenStorage"
+     }
+     "Sort Priority" 100
+    }
+   }
+  }
+  RplComponent "{5C89144BE8F03D8A}" {
+   Enabled 1
+  }
+ }
+ coords 142.861 1.001 128.34
+ Flags 1027
+}

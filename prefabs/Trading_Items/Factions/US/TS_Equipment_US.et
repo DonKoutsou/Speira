@@ -1,0 +1,42 @@
+GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{62A30D148D0D93B0}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Equipment_01.xob"
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5C96A262728C3C24}" {
+     ContextName "default"
+     Position PointInfo "{5C96A262757549D0}" {
+      Offset 0 0.46 0
+     }
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5C96A265D353C91C}" : "{8177EB6BA66BE03C}Prefabs/Trading_Items/Configs/Equipment/B_Map.conf" {
+    }
+    KLM_ConverseAction "{5C96A265D5917EFC}" : "{5A426ACD07D129B0}Prefabs/Trading_Items/Configs/Equipment/B_AliceBag.conf" {
+    }
+    KLM_ConverseAction "{5C96A265D63EFA54}" : "{1256243A1D8E042A}Prefabs/Trading_Items/Configs/Equipment/B_US_MedBag.conf" {
+    }
+    KLM_ConverseAction "{5C96A265D71864B8}" : "{E59AB64B342320CE}Prefabs/Trading_Items/Configs/Equipment/B_US_Binoc.conf" {
+    }
+    KLM_ConverseAction "{5C96A265E94C650C}" : "{64135EAA75607636}Prefabs/Trading_Items/Configs/Equipment/B_US_Comp.conf" {
+    }
+    KLM_ConverseAction "{5C96A265F74BF82E}" : "{738C6CE1D364442E}Prefabs/Trading_Items/Configs/Equipment/B_US_Radio.conf" {
+    }
+    KLM_ConverseAction "{5C96A26502F972C8}" : "{83372782EEE62664}Prefabs/Trading_Items/Configs/Equipment/S_Map.conf" {
+    }
+    KLM_ConverseAction "{5C96A26516570F8B}" : "{02C457473AFE8967}Prefabs/Trading_Items/Configs/Equipment/S_US_Binoc.conf" {
+    }
+    KLM_ConverseAction "{5C96A265175AB957}" : "{5E49C0CD2490D8A5}Prefabs/Trading_Items/Configs/Equipment/S_US_Comp.conf" {
+    }
+    KLM_ConverseAction "{5C96A265480EC5AF}" : "{94D28DEDDDB9ED87}Prefabs/Trading_Items/Configs/Equipment/S_US_Radio.conf" {
+    }
+   }
+  }
+ }
+ coords 145.688 1.001 119.617
+ angleY 0
+}

@@ -1,0 +1,40 @@
+Projectile : "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" {
+ ID "50C6F965BA00FAAC"
+ components {
+  TimerTriggerComponent "{5AF1561D1122D9D5}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5AF1561D390B9494}" {
+     TriggerOnce 1
+     EffectPrefab "{4D6F9560D75E1C54}Prefabs/Weapons/Warheads/Warhead_Smoke_ANM8HC.et"
+     ParticleEffect "{D9E301D28125234A}Particles/Weapon/Smoke_grenade_AN-M8_HC.ptc"
+     SoundEvent "SOUND_EXPLOSION_SMOKE"
+    }
+   }
+   DELETE_ON_TRIGGER 0
+   TRIGGER_ALIVE 0
+   TIMER 4
+  }
+  CollisionTriggerComponent "{52093EA2424A69CE}" {
+   Enabled 0
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{52093EA2455AB307}" {
+     EffectPrefab "{4D6F9560D75E1C54}Prefabs/Weapons/Warheads/Warhead_Smoke_ANM8HC.et"
+     ParticleEffect "{D9E301D28125234A}Particles/Weapon/Smoke_grenade_AN-M8_HC.ptc"
+    }
+   }
+   DELETE_ON_TRIGGER 0
+  }
+  RigidBody "{52095623D9699150}" {
+  }
+  ShellMoveComponent "{20FB66C5FA209A29}" {
+   InitSpeed 30
+   TimeToLive 1500
+   DeleteWhenStop 0
+   TriggerWhenStop 0
+   TriggerWhenTimeout 0
+   PenetrationUse 0
+  }
+ }
+ coords 2706.878 5.313 922.609
+ ProjectileVisibleTimeScale 10
+}

@@ -1,0 +1,31 @@
+Vehicle : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ ID "44EC665ABD2FF04B"
+ components {
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 8582.14
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo WheelSpare {
+     Prefab ""
+    }
+    RegisteringComponentSlotInfo Door_L02 {
+     Prefab "{B1A96F754CC2525F}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_L02.et"
+    }
+    RegisteringComponentSlotInfo Door_R02 {
+     Prefab "{7ED9B4389C61531F}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R02.et"
+    }
+    RegisteringComponentSlotInfo Frame {
+     Prefab "{CB57B46FCFE1A189}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_roof_frame.et"
+    }
+    RegisteringComponentSlotInfo Door_L01 {
+     Prefab "{810A16FEB3F79EF1}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_L02_bottom.et"
+    }
+    RegisteringComponentSlotInfo Door_R01 {
+     Prefab "{AA8102F7B249EBCE}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R01_bottom.et"
+    }
+   }
+  }
+ }
+ coords 113.078 1.001 111.792
+}

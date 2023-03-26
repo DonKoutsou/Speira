@@ -1,0 +1,6 @@
+SCR_CharacterTriggerEntity : "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et" {
+ ID "5A56B37C7C2DA0E7"
+ coords 7840.827 139.284 5137.992
+ m_EActivationPresence SPECIFIC_PREFAB_NAME
+ m_sSpecificPrefabName "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+}

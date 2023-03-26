@@ -1,0 +1,40 @@
+MetaFileClass {
+ Name "{F8D0A42B9C7C0026}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_ChainMask.edds"
+ Configurations {
+  TIFFResourceClass PC : "{DC555BD399D92412}Configs/System/ResourceTypes/PC/TextureUnspecified.conf" {
+   MaxSize "128"
+   Conversion RedHQCompression
+   GenerateMips 0
+   MipMapFunction FoliageAlpha1
+   TiledTexture 0
+  }
+  TIFFResourceClass XBOX_ONE : "{8F13AE697AE60784}Configs/System/ResourceTypes/XBOX_ONE/TextureUnspecified.conf" {
+   MaxSize "128"
+   Conversion RedHQCompression
+   GenerateMips 0
+   MipMapFunction FoliageAlpha1
+   TiledTexture 0
+  }
+  TIFFResourceClass XBOX_SERIES : "{D28E01700D90F52C}Configs/System/ResourceTypes/XBOX_SERIES/TextureUnspecified.conf" {
+   MaxSize "128"
+   Conversion RedHQCompression
+   GenerateMips 0
+   MipMapFunction FoliageAlpha1
+   TiledTexture 0
+  }
+  TIFFResourceClass PS4 : "{C6CD3D8752652D2A}Configs/System/ResourceTypes/PS4/TextureUnspecified.conf" {
+   MaxSize "128"
+   Conversion RedHQCompression
+   GenerateMips 0
+   MipMapFunction FoliageAlpha1
+   TiledTexture 0
+  }
+  TIFFResourceClass HEADLESS : "{699C82A6807668A7}Configs/System/ResourceTypes/HEADLESS/TextureUnspecified.conf" {
+   MaxSize "128"
+   Conversion RedHQCompression
+   GenerateMips 0
+   MipMapFunction FoliageAlpha1
+   TiledTexture 0
+  }
+ }
+}

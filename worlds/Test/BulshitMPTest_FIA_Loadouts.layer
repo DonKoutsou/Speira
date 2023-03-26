@@ -1,0 +1,63 @@
+SCR_ChimeraCharacter : "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et" {
+ coords 134.55 1.001 144.486
+ angleY -180
+}
+SCR_ChimeraCharacter : "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et" {
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    LIW_ConverseAction "{5B089B379B81BFE3}" {
+     "Sort Priority" 1
+    }
+   }
+  }
+ }
+ coords 142.313 1.001 145.104
+ angleY -180
+}
+SCR_ChimeraCharacter : "{58E47E5A4D599432}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_MG.et" {
+ coords 143.735 1.001 145.172
+ angleY -180
+}
+SCR_ChimeraCharacter : "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et" {
+ coords 129.556 1.001 144.276
+ angleY -180
+}
+SCR_ChimeraCharacter : "{75FC25863194612A}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AMG.et" {
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+   }
+  }
+ }
+ coords 139.315 1.001 144.828
+ angleY -180
+}
+SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
+ coords 146.562 1.001 145.499
+ angleY 180
+}
+SCR_ChimeraCharacter : "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et" {
+ coords 136.21 1.001 144.639
+ angleY 180
+}
+SCR_ChimeraCharacter : "{BF1E43FF39AA526B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Scout.et" {
+ coords 132.951 1.001 144.49
+ angleY -180
+}
+SCR_ChimeraCharacter : "{CE33AB22F61F3365}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Sharpshooter.et" {
+ coords 131.2 1.001 144.574
+ angleY -180
+}
+SCR_ChimeraCharacter : "{D25BC9815A9F9E8D}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AT.et" {
+ coords 140.801 1.001 144.839
+ angleY -180
+}
+SCR_ChimeraCharacter : "{FE65E8C60C751352}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_PL.et" {
+ coords 145.272 1.001 145.345
+ angleY -180
+}
+SCR_ChimeraCharacter : "{FF43925D26526B95}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AAT.et" {
+ coords 137.934 1.001 144.695
+ angleY -180
+}

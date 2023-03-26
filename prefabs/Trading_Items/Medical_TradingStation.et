@@ -1,0 +1,52 @@
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ ID "5B11113704C2B0B4"
+ components {
+  MeshObject "{58C4C15098F109F6}" {
+   Object "{FE31750973EA92C7}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Medical_01.xob"
+  }
+  RigidBody "{5B11113AE9F696A6}" {
+   Static 0
+  }
+  ActionsManagerComponent "{5B1111371149AC02}" {
+   ActionContexts {
+    UserActionContext "{5B111134DDBA8EDC}" {
+     ContextName "default"
+     Position PointInfo "{5B11113450B30DD6}" {
+      Offset 0 0.4557 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    KLM_ConverseAction "{5B11113715A23157}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B111137260AC220}" {
+      Name "Buy field dressing for 2 watches"
+     }
+     Duration 0.5
+     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_WantedAmount 2
+     m_PrefabToSell "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     m_SpawnOffset 0 0.456 0
+    }
+    KLM_ConverseAction "{5B111135A237C319}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5B111135A75E0540}" {
+      Name "Sell field dressing for 1 watch"
+     }
+     Duration 0.5
+     "Sort Priority" 1
+     m_WantedPay "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
+     m_SpawnOffset 0 0.456 0
+    }
+   }
+  }
+ }
+ coords 131.097 1.001 130.364
+ angleY 0
+}

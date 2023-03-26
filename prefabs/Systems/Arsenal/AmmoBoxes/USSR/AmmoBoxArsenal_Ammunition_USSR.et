@@ -1,0 +1,35 @@
+GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Ammunition_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C4F1B8C93C5AB9E}" {
+     SlotTemplate InventoryStorageSlot AK_Ammo {
+      Prefab "{D78C667F59829717}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_4Ball_1Tracer.et"
+     }
+     NumSlots 15
+    }
+    MultiSlotConfiguration "{5C4F1B8CBF8F3FDA}" {
+     SlotTemplate InventoryStorageSlot SVD_AMMO {
+      Prefab "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et"
+     }
+    }
+    MultiSlotConfiguration "{5C4F1B8CCC808613}" {
+     SlotTemplate InventoryStorageSlot PM_Ammo {
+      Prefab "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+     NumSlots 10
+    }
+    MultiSlotConfiguration "{5C4F2D8E724D3EE5}" {
+     SlotTemplate InventoryStorageSlot PKMAmmo {
+      Prefab "{D8421F6E70B2FB4F}Prefabs/Weapons/Magazines/Box_762x54_PK_250rnd_4Ball_1Tracer.et"
+     }
+     NumSlots 6
+    }
+   }
+  }
+ }
+}

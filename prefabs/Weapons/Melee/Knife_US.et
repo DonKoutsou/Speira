@@ -1,0 +1,14 @@
+GenericEntity : "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" {
+ ID "5AED36F42E5099A6"
+ components {
+  MeshObject "{5AED36F415E489B0}" {
+   Object "{CB4B410E5D99D4CF}Assets/Weapons/Attachments/Bayonets/Bayonet_M9/Bayonet_M9.xob"
+  }
+  SCR_WeaponAttachmentsStorageComponent "{5AED36F415E48BFE}" {
+   Attributes SCR_ItemAttributeCollection "{5AED36F415E48BD2}" {
+    CommonItemType "KNIFE"
+   }
+  }
+ }
+ coords 119.632 1.001 113.493
+}

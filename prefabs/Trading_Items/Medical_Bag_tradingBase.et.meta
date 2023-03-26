@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{BD5EA6D53662AE0D}prefabs/Trading_Items/Medical_Bag_tradingBase.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

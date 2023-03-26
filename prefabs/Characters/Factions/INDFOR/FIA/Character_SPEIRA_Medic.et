@@ -1,0 +1,59 @@
+SCR_ChimeraCharacter : "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et" {
+ ID "520EC961A090B1EE"
+ components {
+  FactionAffiliationComponent "{555C98D1CD949F3E}" {
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID "Hips"
+   }
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{55709017677CEFCD}" {
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{5570901746070FD4}" {
+     PrefabsToSpawn + {
+      "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KLM_ConverseAction "{5B089B35DBC1543D}" {
+     UIInfo UIInfo "{5B089B35D0CCAA31}" {
+      Name "Give 1 soviet field dressing for 2 broken watches"
+     }
+     m_SellingAmount 2
+    }
+   }
+  }
+ }
+}

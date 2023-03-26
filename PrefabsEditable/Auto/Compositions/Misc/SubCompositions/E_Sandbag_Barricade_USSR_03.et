@@ -1,0 +1,9 @@
+GenericEntity : "{3CD490132ECE6645}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" {
+ ID "5282DCB5DFC8538F"
+ components {
+  SCR_AISmartActionSentinelComponent "{5B1EF58F345838AC}" {
+   ActionOffset 1.194 0.039 -0.8
+   m_vLookPosition -10.923 1 3.172
+  }
+ }
+}

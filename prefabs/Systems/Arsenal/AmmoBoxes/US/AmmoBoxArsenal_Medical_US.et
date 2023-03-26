@@ -1,0 +1,15 @@
+GenericEntity : "{0AD8F5CBED139651}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Medical_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5C4F2B675016A52F}" {
+     SlotTemplate InventoryStorageSlot FieldDressings {
+      Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+     }
+     NumSlots 20
+    }
+   }
+  }
+ }
+}
