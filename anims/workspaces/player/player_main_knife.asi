@@ -1,0 +1,29 @@
+AnimSetInstanceSource {
+ Template "{CD0E6C3490BF0847}anims/workspaces/player/player_main.ast"
+ ParentTemplates {
+  "{41AABAE44257A657}anims/workspaces/player/player_main_pistol.asi"
+ }
+ IkPose "{B4AE33A93315AF26}Assets/Weapons/workspaces/txa/p_knf_01_ik.anm"
+ Lines {
+  AnimSetInstanceSource_Line "WeaponSwitching.ErcLow.Show02" {
+   Resource "{BA8F5A8F3D8317E0}Assets/Weapons/workspaces/txa/p_knf_erc_slot_belt_show.anm"
+  }
+  AnimSetInstanceSource_Line "WeaponSwitching.ErcLow.Show01" {
+   Resource "{BA8F5A8F3D8317E0}Assets/Weapons/workspaces/txa/p_knf_erc_slot_belt_show.anm"
+  }
+  AnimSetInstanceSource_Line "MeleeAttacks.ErcLow.MeleeAttack01" {
+   Resource "{BA49CF79615C8B5B}Assets/Weapons/workspaces/txa/p_knf_erc_low_atack_slash_melee_ras.anm"
+  }
+  AnimSetInstanceSource_Line "WeaponSwitching.ErcLow.Hide01" {
+   Resource "{32F55410BFC3C5B7}Assets/Weapons/workspaces/txa/p_knf_erc_slot_belt_hide.anm"
+  }
+  AnimSetInstanceSource_Line "WeaponSwitching.ErcLow.Hide02" {
+   Resource "{32F55410BFC3C5B7}Assets/Weapons/workspaces/txa/p_knf_erc_slot_belt_hide.anm"
+  }
+  AnimSetInstanceSource_Line "MeleeAttacks.CroLow.MeleeAttack01" {
+   Resource "{7C7A3EB0BD27CD93}Assets/Weapons/workspaces/txa/p_knf_cro_low_atack_slash_melee_ras.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{5CCD1362AAC08DD1}" {
+ }
+}

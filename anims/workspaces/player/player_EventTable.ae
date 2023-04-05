@@ -1,0 +1,9 @@
+AnimEventTable {
+ EventNames +{
+  "IK_Release_L"
+  "IK_Release_R"
+  "Weapon_Change_Hide"
+  "Weapon_Change_Show"
+  "Voice"
+ }
+}

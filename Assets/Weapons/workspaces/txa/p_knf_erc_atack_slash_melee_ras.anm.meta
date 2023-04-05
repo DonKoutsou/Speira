@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{20BE1383879B5138}Assets/Weapons/workspaces/txa/p_knf_erc_atack_slash_melee_ras.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

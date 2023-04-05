@@ -68,17 +68,6 @@ SCR_ChimeraCharacter {
       Name "Talk"
      }
      Duration 0.1
-     m_DialogText "init diag"
-     m_DialogText1 "1st diag"
-     m_DialogText2 "2nd diag"
-     m_DialogText3 "3rd diag"
-     m_DialogText4 "last diag"
-     m_ChatChannel LocalChatChannel "{5CE51077E5BE0D43}" {
-      "Channel name" "Context"
-      Style BaseChatChannelStyle "{5CE51061D6223FD4}" {
-      }
-     }
-     senderName "Satan"
     }
    }
   }

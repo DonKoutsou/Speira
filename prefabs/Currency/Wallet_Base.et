@@ -18,6 +18,8 @@ GenericEntity {
     }
    }
   }
+  Hierarchy "{5D0A82B441460D5B}" {
+  }
   RigidBody "{5C78C42204C93A50}" {
    ModelGeometry 1
    Static 1
@@ -40,7 +42,7 @@ GenericEntity {
       FOV 45
      }
     }
-    CommonItemType "WALLET"
+    CommonItemType "NONE"
     m_Size SLOT_1x1
     m_SlotType SLOT_LOOT_STORAGE
    }

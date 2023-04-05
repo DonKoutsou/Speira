@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+ Name "{D562ED744D4BFB7E}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_assembled.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

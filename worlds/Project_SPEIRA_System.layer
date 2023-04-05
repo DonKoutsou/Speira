@@ -29,6 +29,7 @@ SCR_BaseGameMode GameMode_Plain1 : "{1B76F75A3175E85C}prefabs/MP/Modes/Plain/Gam
    Enabled 0
   }
   SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
+   Enabled 0
    m_iForcedFaction 1
    m_iForcedLoadout 0
   }
@@ -36,6 +37,7 @@ SCR_BaseGameMode GameMode_Plain1 : "{1B76F75A3175E85C}prefabs/MP/Modes/Plain/Gam
    m_sCommandsConfigPath "{54764D4E706F348C}Configs/Commanding/Commands.conf"
   }
   SCR_GameModeCombatOpsManager "{5AF8FAD571C17736}" {
+   m_iMaxNumberOfTasks 0
   }
   SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
    m_fDOTScale 0.7
@@ -282,7 +284,7 @@ SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/
   }
  }
 }
-ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 7125.065 114.586 6157.262
 }
 $grp GenericEntity {
@@ -791,6 +793,9 @@ SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
  VehicleLifetime 1800
  ItemLifetime 2000
  m_bOnlyDestroyed 1
+}
+SCR_CharacterTriggerEntity : "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et" {
+ coords 11802.682 15.845 2198.42
 }
 SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 6581.157 157.772 6506.979

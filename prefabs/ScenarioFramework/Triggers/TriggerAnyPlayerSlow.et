@@ -1,4 +1,0 @@
-SCR_CharacterTriggerEntity : "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et" {
- ID "5A56B37C7C2DA0E7"
- TriggerActivationType "First change"
-}

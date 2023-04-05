@@ -1,7 +1,8 @@
 GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
  ID "5104869D194C6243"
  components {
-  SignalsManagerComponent "{5C8AFD06BE931A01}" {
+  MeshObject "{5104869D194C6262}" {
+   Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
   }
   RigidBody "{5104869D194C6267}" {
    Static 1

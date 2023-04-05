@@ -17,12 +17,10 @@ GenericEntity {
   Hierarchy "{5AED36F415E489B6}" {
   }
   RigidBody "{5AED36F415E489A0}" {
-   ModelGeometry 1
   }
   SCR_MeleeWeaponProperties "{5AED36F415E489A6}" {
-   m_fDamage 500
-   m_fRange 2
-   m_fExecutionTime 0.5
+   m_fDamage 300
+   m_fExecutionTime 0.1
   }
   SCR_WeaponAttachmentsStorageComponent "{5AED36F415E48BFE}" {
    Attributes SCR_ItemAttributeCollection "{5AED36F415E48BD2}" {
@@ -40,54 +38,22 @@ GenericEntity {
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5AED36F415E48A83}" {
      IkSettings {
-      ItemIKSettings "{5AED36F415E48AC6}" {
-       MovementSpeedRange 0 0.01
-       IkSettingsStand 7
-       IkSettingsCrouch 7
-       IkSettingsProne 7
-      }
-      ItemIKSettings "{5AED36F415E48AFC}" {
-       MovementSpeedRange 0.01 2.2
-       IkSettingsStand 7
-       IkSettingsCrouch 7
-       IkSettingsProne 4
-      }
-      ItemIKSettings "{5AED36F415E48AF2}" {
-       MovementSpeedRange 2.2 3
-       IkSettingsStand 4
-       IkSettingsCrouch 4
-       IkSettingsProne 4
-      }
-      ItemIKSettings "{5AED36F415E48AF6}" {
-       Jumping 1
-       IkSettingsStand 4
-      }
-      ItemIKSettings "{5AED36F415E48AE3}" {
+      ItemIKSettings "{5CF4A1B5118EAA24}" {
        Lowered 1
-       InAds 0
-       OutAds 0
-      }
-      ItemIKSettings "{5AED36F415E48AE7}" {
        ProneTurn 1
-       IkSettingsStand 4
+       InAds 0
+       MovementSpeedRange 2 3
       }
      }
-     AnimationInstance "{41AABAE44257A657}anims/workspaces/player/player_main_pistol.asi"
-     AnimationIKPose "{E8E2308AB43CB0E6}Assets/Weapons/Handguns/PM/anims/anm/p_PM_ik.anm"
-     OverrideDefaultIkBonesBlend 1
-     IncludeBonesInIkBlend {
-      "RightHandProp"
-     }
-     HandAdditiveRotation 90 0 0
-     HandAdditiveTranslation 1 0 0
-     AllowInspection 1
+     AnimationInstance "{17DE3CEA53D08CB5}anims/workspaces/player/player_main_knife.asi"
+     AnimationIKPose "{B4AE33A93315AF27}Assets/Weapons/workspaces/txa/p_knf_01_ik.anm"
     }
     CustomAttributes {
      PreviewRenderAttributes "{5AED36F415E48B34}" {
       CameraOrbitAngles 45 -70 150
       CameraDistanceToItem 0.3
       FOV 45
-      AnimationInstance "{B2310BF09F78B065}anims/workspaces/player/player_inventory_pistol.asi"
+      AnimationInstance "{570480B0C25349EF}anims/workspaces/player/player_inventory_knife.asi"
      }
     }
     m_SlotType SLOT_WEAPONS_STORAGE
@@ -102,8 +68,8 @@ GenericEntity {
      StartNode "IdleFireSTM"
      AlwaysActive 1
      AnimInjection AnimationAttachmentInfo "{5AED36F415E48F76}" {
-      AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
-      AnimInstance "{664133AD19737D97}Assets/Weapons/Handguns/workspaces/PM_player.asi"
+      AnimGraph "{6966BF858039C3D9}Assets/Weapons/Handguns/workspaces/Knife.agr"
+      AnimInstance "{0F070F540CA6B706}Assets/Weapons/workspaces/Knife_weapon.asi"
       StartNode "IdleFireSTM"
       BindingName "Weapon"
      }
@@ -112,23 +78,15 @@ GenericEntity {
       "State"
      }
     }
-    AttachmentSlotComponent "{5C6ABAF7AC3D97F5}" {
-     AttachmentSlot InventoryStorageSlot Knife {
-      Angles -90 180 -180
-      ChildPivotID "snap_weapon"
-      Enabled 0
-     }
-    }
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5AED36F415E48F62}" {
    }
-   useAimingType None
    WeaponType Handgun
    AllowedRaise "Only lowered"
+   StanceLimits 0 2
+   shouldHandleObstruction 0
    obstructionTestCharacterOffset 0 0 0
    obstructionTestAddedLength 0.35
-   obstructionTestBreakingThreshold 0.35
-   ObstructionAlphaThreshold 1
    obstructionTestBBScale 1 0.75 0.05
    sightsCameraRollScaler -1
    SoundInt 1010100

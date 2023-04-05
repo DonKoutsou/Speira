@@ -1,0 +1,14 @@
+AnimSetInstanceSource {
+ Template "{27996C9FFB1A1D50}anims/workspaces/player/player_inventory.ast"
+ ParentTemplates {
+  "{B2310BF09F78B065}anims/workspaces/player/player_inventory_pistol.asi"
+ }
+ IkPose "{B4AE33A93315AF26}Assets/Weapons/workspaces/txa/p_knf_01_ik.anm"
+ Lines {
+  AnimSetInstanceSource_Line "Idles.Low.Idle" {
+   Resource "{45550FC064BBE7A7}Assets/Weapons/workspaces/txa/p_knf_01_idle.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{5CF4A1B5CA581FC6}" {
+ }
+}

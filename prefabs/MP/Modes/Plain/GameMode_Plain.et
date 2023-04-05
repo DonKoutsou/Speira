@@ -8,27 +8,7 @@ SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
    }
   }
   SP_DialogueComponent "{5CE91B9862423A72}" {
-   m_CharacterArchetypeList {
-    SP_CharacterArchetype "{5CE9447B0B9F7DD4}" {
-     m_sCharacterID "1"
-     DialogueConfig {
-      SP_DialogueConfig "{5CE9447B0D9A46B6}" {
-       m_sDialogueText "ooooaaaa"
-      }
-      SP_DialogueConfig "{5CE944788DFDBBC6}" {
-       m_sDialogueKey 1
-       m_sDialogueText "fawfwafwaf"
-       AditionalText {
-        "hfaeafhuaef"
-       }
-      }
-      SP_DialogueConfig "{5CE94478B1AC03B6}" {
-       m_sDialogueKey 2
-       m_sDialogueText "Bitch"
-      }
-     }
-    }
-   }
+   Enabled 0
   }
  }
 }

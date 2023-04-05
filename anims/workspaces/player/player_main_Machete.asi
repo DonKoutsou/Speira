@@ -1,0 +1,13 @@
+AnimSetInstanceSource {
+ Template "{CD0E6C3490BF0847}anims/workspaces/player/player_main.ast"
+ ParentTemplates {
+  "{17DE3CEA53D08CB5}anims/workspaces/player/player_main_knife.asi"
+ }
+ Lines {
+  AnimSetInstanceSource_Line "MeleeAttacks.ErcLow.MeleeAttack01" {
+   Resource "{F800E1324A4B7D97}Assets/Weapons/workspaces/txa/p_macht_erc_low_atack_slash_melee_ras.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{5CFCD6D0B7AEE0FB}" {
+ }
+}
