@@ -1,16 +1,10 @@
 GameEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et" {
  ID "5104869D194C6243"
  components {
-  SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
-   Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
-    ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
+  InventoryItemComponent "{5D30CD6ABE952AC2}" {
+   Attributes SCR_ItemAttributeCollection "{5D30CD6AA0DE169F}" {
+    ItemDisplayName UIInfo "{5D30CD6AA5A328AE}" {
      Name "FIA soldier tags"
-     Description "Tags carried by all soldiers, used for identification. "
-    }
-    CustomAttributes {
-     PreviewRenderAttributes "{5C792EB0490D988A}" {
-      PreviewPrefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
-     }
     }
    }
   }
@@ -23,5 +17,5 @@ GameEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_
    }
   }
  }
- coords 124.211 1.001 122.827
+ coords 1292.273 37.761 2863.521
 }

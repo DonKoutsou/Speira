@@ -1,18 +1,6 @@
 GameEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et" {
  ID "5104869D194C6243"
  components {
-  SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
-   Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
-    ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
-     Name "USSR soldier tags"
-    }
-    CustomAttributes {
-     PreviewRenderAttributes "{5C792EB0490D988A}" {
-      PreviewPrefab "{9D8E818461216F56}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_USSR.et"
-     }
-    }
-   }
-  }
   BaseLoadoutClothComponent "{5104869D194C627A}" {
    WornMaterialsOverride {
     "{EBB48300A79B45E3}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_USSR.emat"

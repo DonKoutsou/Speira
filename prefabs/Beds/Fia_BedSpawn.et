@@ -6,33 +6,6 @@ GenericEntity : "{50801280D56B67A1}Prefabs/Props/Services/Healthcare/BedMedical_
   }
   Hierarchy "{5B22A239ECB5CA82}" {
   }
-  ActionsManagerComponent "{5B22A239E459334E}" {
-   ActionContexts {
-    UserActionContext "{5B22A2399430B54E}" {
-     ContextName "default"
-     Position PointInfo "{5B22A23ED3538C3E}" {
-      Offset -0.2887 0.5108 -0.4027
-     }
-     Radius 2.997
-    }
-   }
-   additionalActions {
-    KLM_ConverseAction "{5B22A2398A296ACC}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B22A23EFB10692D}" {
-      Name "Unlock Spawn point for 2 watches"
-     }
-     Duration 1
-     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_MaxUses 1
-     m_PrefabToSell "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et"
-     m_SpawnOffset -0.289 0.511 -0.403
-    }
-   }
-  }
   RplComponent "{5624A88DC2D9928D}" {
    Enabled 1
   }

@@ -33,7 +33,6 @@ GenericEntity {
       FOV 45
      }
     }
-    CommonItemType "NONE"
     m_Size SLOT_1x1
     m_SlotType SLOT_BACKPACK
    }

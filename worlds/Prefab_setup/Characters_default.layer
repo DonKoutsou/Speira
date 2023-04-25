@@ -1,0 +1,182 @@
+SCR_BaseGameMode GameMode_Plain1 : "{1B76F75A3175E85C}prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+ coords 135.735 1.001 254.555
+}
+SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/MP/Campaign/CampaignFactionManager.et" {
+ coords 160.579 1.001 249.195
+}
+SCR_ChimeraCharacter : "{0F6689B491641155}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et" {
+ coords 160.635 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{1623EA3AEFACA0E4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_MG.et" {
+ coords 161.507 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{1C78331E156A3D65}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et" {
+ coords 151.377 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{1CA3D30464EE4674}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Spotter.et" {
+ coords 172.3 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{23ADBBC31B6A3DC6}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et" {
+ coords 152.558 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et" {
+ coords 131.846 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" {
+ coords 166.834 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{27BF1FF235DD6036}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_LAT.et" {
+ coords 162.326 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{2F912ED6E399FF47}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et" {
+ coords 165.767 1.001 252.158
+ angleY -180
+}
+SCR_ChimeraCharacter : "{3726077BE60962FF}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_RTO.et" {
+ coords 171.233 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et" {
+ coords 136.627 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et" {
+ coords 145.373 1.001 253.002
+ angleY -180
+}
+SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
+ coords 146.2 1.001 252.93
+ angleY -180
+}
+SCR_ChimeraCharacter : "{5436629450D8387A}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_SL.et" {
+ coords 150.2 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{58E47E5A4D599432}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_MG.et" {
+ coords 135.586 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et" {
+ coords 164.451 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et" {
+ coords 119.063 1.001 253.733
+ angleY -180
+}
+SCR_ChimeraCharacter : "{6058AB54781A0C52}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et" {
+ coords 165.627 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{612F43A4D5AE765F}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_RTO.et" {
+ coords 148.022 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{631158F6898738A4}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AAT.et" {
+ coords 141.869 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et" {
+ coords 127.025 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{75FC25863194612A}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AMG.et" {
+ coords 125.02 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
+ coords 130.611 1.001 252.929
+ angleY -180
+}
+SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
+ coords 166.845 1.001 252.345
+ angleY -180
+}
+SCR_ChimeraCharacter : "{84029128FA6F6BB9}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_GL.et" {
+ coords 169.185 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et" {
+ coords 133.146 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{854C04F0EA2129CC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Unarmed.et" {
+ coords 129.406 1.001 253.066
+ angleY -180
+}
+SCR_ChimeraCharacter : "{8E0FE664CE7D1CA9}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et" {
+ coords 145.063 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{96C784C502AC37DA}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et" {
+ coords 143.39 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{976AC400219898FA}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et" {
+ coords 149.144 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et" {
+ coords 144.241 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et" {
+ coords 167.835 1.001 252.293
+ angleY -180
+}
+SCR_ChimeraCharacter : "{BF1E43FF39AA526B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Scout.et" {
+ coords 129.407 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{C6DF098AEC5AE52E}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Whistleblower.et" {
+ coords 142.616 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{C9E4FEAF5AAC8D8C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et" {
+ coords 170.196 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{CE33AB22F61F3365}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Sharpshooter.et" {
+ coords 128.101 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{D25BC9815A9F9E8D}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AT.et" {
+ coords 137.829 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" {
+ coords 147.234 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{E398E44759DA1A43}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_TL.et" {
+ coords 163.272 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{E45F1E163F5CA080}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_SL.et" {
+ coords 168.059 1.001 253.393
+ angleY -180
+}
+SCR_ChimeraCharacter : "{E9AEEF2D9E41321B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AMG.et" {
+ coords 146.2 1.001 253.936
+ angleY -180
+}
+SCR_ChimeraCharacter : "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Commander.et" {
+ coords 126.116 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{FE65E8C60C751352}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_PL.et" {
+ coords 134.264 1.001 253.84
+ angleY -180
+}
+SCR_ChimeraCharacter : "{FF43925D26526B95}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AAT.et" {
+ coords 130.611 1.001 253.84
+ angleY -180
+}

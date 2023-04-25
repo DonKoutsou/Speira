@@ -1,30 +1,3 @@
-$grp GameEntity {
- {
-  coords 3558.748 2.537 1555.707
- }
- {
-  coords 1682.259 4.338 872.695
- }
- {
-  coords 1462.232 36.252 1161.42
- }
- {
-  coords 913.922 2.583 1562.137
- }
- {
-  coords 1070.871 1.39 1727.789
- }
- {
-  coords 684.798 3.03 2258.087
-  angleZ -10.594
- }
- {
-  coords 3236.64 1.542 1143.721
- }
- {
-  coords 2659.534 9.926 916.706
- }
-}
 $grp GenericEntity {
  {
   components {
@@ -43,8 +16,9 @@ $grp GenericEntity {
     Object "{AA473E53D483267F}Assets/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.xob"
    }
   }
-  coords 879.083 0.733 3087.259
-  angleZ -1.868
+  coords 868.116 1.358 3073.467
+  angleX -14.876
+  angleZ -7.278
  }
  {
   components {
@@ -65,6 +39,10 @@ $grp GenericEntity {
    }
   }
   coords 2655.844 7.755 916.592
+ }
+ {
+  coords 3566.313 45.748 2647.001
+  angleY -18.397
  }
 }
 GenericEntity : "{0133284E3BDEAEC4}Prefabs/Props/Civilian/Ashtray_01_Full_yellow.et" {
@@ -378,7 +356,7 @@ $grp GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_c
   angleY 0
  }
  {
-  coords 867.884 0.788 3082.734
+  coords 868.047 0.406 3082.107
   angleY 0
  }
  {
@@ -694,9 +672,9 @@ GenericEntity : "{9CC48F0DD34D92A8}prefabs/Items/Other/SovietManual.et" {
  angleY -97.235
 }
 GenericEntity : "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" {
- coords 2707.12 5.309 920.857
- angleX 1.752
- angleZ 6.675
+ coords 2707.305 5.28 920.667
+ angleX 1.779
+ angleZ 6.618
 }
 SCR_DestructibleEntity : "{A7BBEF1B337479E0}PrefabLibrary/Props/Civilian/MessageBoard_02.et" {
  coords 3239.373 1.158 1142.525
@@ -776,14 +754,6 @@ GenericEntity : "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/He
  coords 2174.85 4.004 3411.138
  angleX 2.819
  angleY -91.133
- {
-  GameEntity {
-   coords -1.453 -0.281 -4.492
-   angleX 5.371
-   angleY 0.118
-   angleZ 0.792
-  }
- }
 }
 SCR_DestructibleBuildingEntity : "{CAE9DDFBF282E3C7}PrefabLibrary/Structures/Ruins/HouseRuin_01_Corner_Stairs.et" {
  coords 873.539 -0.034 3085.522
@@ -809,10 +779,6 @@ $grp GenericEntity : "{D9262B57C7940790}prefabs/Items/Food/BeerSlava.et" {
  {
   coords 684.468 1.236 2259.14
  }
-}
-GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
- coords 3566.313 45.748 2647.001
- angleY -18.397
 }
 GenericEntity : "{DBE7228E9EABF241}PrefabLibrary/Props/Agricultural/SackUniversal_01.et" {
  coords 911.206 1.159 1563.008

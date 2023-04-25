@@ -1,33 +1,5 @@
-GenericEntity : "{0E57659542679147}prefabs/Currency/Wallet_Base_US.et" {
- components {
-  SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
-   Attributes SCR_ItemAttributeCollection "{5C78C42204C93A04}" {
-    CommonItemType "NONE"
-   }
-  }
- }
- coords 123.723 1.001 126.18
-}
-$grp GameEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et" {
- {
-  coords 125.402 1.001 119.758
- }
- {
-  components {
-   SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
-    Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
-     m_SlotType SLOT_LOADOUT_STORAGE
-    }
-   }
-  }
-  coords 124.32 1.001 121.68
- }
-}
 MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Base.et" {
  coords 4.813 1.001 230.289
-}
-SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
- coords 124.945 1.001 121.945
 }
 SCR_CharacterTriggerEntity : "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et" {
  coords 48.789 1.001 204.703
@@ -38,33 +10,7 @@ SCR_CharacterTriggerEntity : "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Trigge
  m_sOwnerFactionKey "USSR"
  m_bOnce 0
 }
-$grp GenericEntity : "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" {
- {
-  coords 124.013 1.001 125.922
- }
- {
-  coords 120.179 1.001 140.15
- }
-}
-$grp GenericEntity : "{7B6802E9AD265A57}prefabs/Currency/Wallet_Base.et" {
- {
-  coords 123.554 1.001 125.986
- }
- {
-  coords 123.554 1.001 125.986
- }
- {
-  components {
-   SCR_UniversalInventoryStorageComponent "{5C78C42204C93A3C}" {
-    Attributes SCR_ItemAttributeCollection "{5C78C42204C93A04}" {
-     CommonItemType "NONE"
-    }
-   }
-  }
-  coords 121.24 1.001 140.221
- }
-}
-SCR_CharacterTriggerEntity : "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et" {
+SCR_CharacterTriggerEntity : "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et" {
  coords 208.441 1.001 105.754
 }
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
@@ -194,7 +140,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  {
   components {
    CP_Area "{59E8CDC50969206E}" {
-    m_rTriggerResource "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_rTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
     m_fAreaRadius 1000
    }
   }
@@ -1142,7 +1088,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_bOnce 1
              }
             }
-            m_rObjectToSpawn "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+            m_rObjectToSpawn "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
             m_aTriggerActions {
              CP_ActionSpawnObjects "{5C42B31C212268F0}" {
               m_sNameOfObjectsToSpawnOnActivation {
@@ -1784,6 +1730,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn ""
                  }
                 }
                 coords -479.367 192.709 -385.656
@@ -1798,6 +1745,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn ""
                  }
                 }
                 coords -149.252 18.93 176.769
@@ -1814,6 +1762,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn ""
                  }
                 }
                 coords -508.139 193.409 -360.19
@@ -1828,6 +1777,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn ""
                  }
                 }
                 coords 161.114 -1.301 50.963
@@ -1843,6 +1793,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn ""
                  }
                 }
                 coords -30.05 1.543 -125.683
@@ -1858,6 +1809,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn ""
                  }
                 }
                 coords -108.477 13.541 -122.457
@@ -1873,6 +1825,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
+                  m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
                  }
                 }
                 coords 106.412 -1.426 1.402
@@ -1909,6 +1862,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_sFaction "USSR"
                   m_sTaskTitle "Assault on St.Pierre - Kill the commander"
                   m_sTaskDescription "Before clearing the area we will have to execute the town's commander to create an opening for a friendly QRF to move in and assist with clearing the town."
+                  m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                  }
                 }
                 coords 556.668 3.414 28.819
@@ -1921,6 +1875,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_sFaction "USSR"
                   m_sTaskTitle "Assault on St.Pierre - Kill the commander"
                   m_sTaskDescription "Before clearing the area we will have to execute the town's commander to create an opening for a friendly QRF to move in and assist with clearing the town."
+                  m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                  }
                 }
                 coords 82.481 4.564 36.613
@@ -2312,7 +2267,4 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
   coords 192.615 1.001 86.389
  }
-}
-GenericEntity : "{D3BA44530C896C38}prefabs/Items/Food/Canteen_Empty_US.et" {
- coords 120.665 1.001 138.835
 }

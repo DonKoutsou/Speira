@@ -70,9 +70,6 @@ SCR_ChimeraCharacter : "{2F912ED6E399FF47}prefabs/Characters/Factions/BLUFOR/US_
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
-    LoadoutSlotInfo Watch {
-     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
-    }
     LoadoutSlotInfo Back {
     }
     LoadoutSlotInfo Hat {

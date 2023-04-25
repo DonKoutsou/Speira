@@ -1,3 +1,18 @@
+GenericEntity : "{01F006DCCD718FD9}prefabs/Trading_Items/Factions/FIA/TS_Equipment_FIA.et" {
+ coords 9811.507 4.805 4389.515
+}
+$grp GenericEntity : "{200D9452114FCD3D}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/EquipmentBoxStack_01_V6_base.et" {
+ {
+  coords 9810.373 4.219 4389.296
+ }
+ {
+  coords 9811.645 4.219 4389.296
+ }
+}
+GenericEntity : "{BD8D487D0841A49D}prefabs/Trading_Items/Factions/FIA/TS_Weapons_FIA.et" {
+ coords 9808.196 4.558 4393.76
+ angleY -180
+}
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  Spawn_AreaB {
   components {
@@ -60,7 +75,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            CP_SlotAI "{5A26B3E02AC77BA0}" {
             m_rObjectToSpawn "{C470A532057E57D3}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Rifleman.et"
             m_sFaction "FIA"
-            m_rWPToSpawn ""
            }
            Hierarchy "{5A26B3E02E941739}" {
            }
@@ -78,7 +92,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_bCycleWaypoints 1
              }
             }
-            m_rWPToSpawn ""
            }
            Hierarchy "{5A26B3E02E941739}" {
            }
@@ -343,7 +356,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-             m_rWPToSpawn "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et"
             }
             Hierarchy "{5A26B3E02E941739}" {
             }
@@ -367,7 +379,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
              m_sFaction "USSR"
-             m_rWPToSpawn "{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et"
             }
            }
            coords -25.902 -1.601 -36.687
@@ -384,7 +395,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 12.135 -1.838 -37.158
@@ -394,7 +404,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-             m_rWPToSpawn "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et"
             }
             Hierarchy "{5A26B3E02E941739}" {
             }
@@ -406,7 +415,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-             m_rWPToSpawn "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et"
             }
             Hierarchy "{5A26B3E02E941739}" {
             }
@@ -437,7 +445,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 367.227 20.669 -605.242
@@ -454,7 +461,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 295.186 27.01 -810.554
@@ -471,7 +477,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 718.485 18.908 -531.996
@@ -488,7 +493,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 826.265 3.739 -346.593
@@ -505,7 +509,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 636.653 5.724 -410.287
@@ -750,7 +753,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            CP_SlotAI "{5A26B3E02AC77BA0}" {
             m_rObjectToSpawn "{4A06C6BB4EFEDB8C}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Medic.et"
             m_sFaction "FIA"
-            m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
            }
           }
           coords 12.484 -0.698 2.887
@@ -932,7 +934,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_EActivationType ON_INIT
             m_rObjectToSpawn "{CE33AB22F61F3365}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Sharpshooter.et"
             m_sFaction "FIA"
-            m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
            }
            Hierarchy "{5A26B3E02E941739}" {
            }
@@ -946,7 +947,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_EActivationType ON_INIT
             m_rObjectToSpawn "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et"
             m_sFaction "FIA"
-            m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
            }
            Hierarchy "{5A26B3E02E941739}" {
            }
@@ -959,7 +959,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            CP_SlotAI "{5A26B3E02AC77BA0}" {
             m_rObjectToSpawn "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et"
             m_sFaction "FIA"
-            m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
            }
           }
           coords -0.808 -0.001 6.492
@@ -1550,7 +1549,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            CP_SlotAI "{5A26B3E02AC77BA0}" {
             m_rObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
             m_sFaction "FIA"
-            m_rWPToSpawn ""
            }
            Hierarchy "{5A26B3E02E941739}" {
            }
@@ -1569,7 +1567,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_bCycleWaypoints 1
              }
             }
-            m_rWPToSpawn ""
            }
            Hierarchy "{5A26B3E02E941739}" {
            }
@@ -1619,7 +1616,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_bCycleWaypoints 1
            }
           }
-          m_rWPToSpawn ""
          }
          Hierarchy "{5A26B3E02E941739}" {
          }
@@ -1638,7 +1634,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_bCycleWaypoints 1
            }
           }
-          m_rWPToSpawn ""
          }
          Hierarchy "{5A26B3E02E941739}" {
          }
@@ -1786,7 +1781,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{4A06C6BB4EFEDB8C}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Medic.et"
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords 185.272 2.213 30.633
@@ -1832,7 +1826,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{B7D1603D84CDB2B6}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator_Everon.et"
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords 185.483 2.282 21.619
@@ -1943,7 +1936,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 203.203 0.288 135.923
@@ -1959,7 +1951,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 223.754 -0.126 -48.81
@@ -1975,7 +1966,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 214.053 0.757 287.816
@@ -1991,7 +1981,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 115.111 -0.492 636.678
@@ -2007,7 +1996,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_bCycleWaypoints 1
               }
              }
-             m_rWPToSpawn ""
             }
            }
            coords 218.177 0.616 487.535
@@ -2028,7 +2016,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{D112B6601F671D6F}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_RTO.et"
-             m_rWPToSpawn "{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et"
             }
            }
            coords 4.885 -2.734 7.535
@@ -2038,7 +2025,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{4A06C6BB4EFEDB8C}prefabs/Characters/Factions/INDFOR/FIA/Character_SPEIRA_Medic.et"
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords -12.219 -2.365 -6.979
@@ -2049,7 +2035,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{CE33AB22F61F3365}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Sharpshooter.et"
              m_bSpawnAIOnWPPos 1
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords 33.432 11.971 10.185
@@ -2077,7 +2062,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{B7D1603D84CDB2B6}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator_Everon.et"
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords -16.966 -2.641 -3.365
@@ -2087,7 +2071,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{58E47E5A4D599432}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_MG.et"
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords -22.641 -2.756 14.138
@@ -2142,7 +2125,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
-             m_rWPToSpawn "{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et"
              m_bBalanceOnPlayersCount 1
             }
            }
@@ -2153,7 +2135,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            components {
             CP_SlotAI "{5A26B3E02AC77BA0}" {
              m_rObjectToSpawn "{B8811BAF5B21D5C5}prefabs/Characters/Trader_Vehicles.et"
-             m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
             }
            }
            coords -3.89 -2.786 -7.12
@@ -2349,7 +2330,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_sName "Bay_Invasion_WP"
              }
             }
-            m_rWPToSpawn ""
            }
           }
           coords 371.677 50.183 -489.071
@@ -2363,7 +2343,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_sName "Bay_Invasion_WP"
              }
             }
-            m_rWPToSpawn ""
            }
           }
           coords 176.529 7.663 -764.053
@@ -2377,7 +2356,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_sName "Bay_Invasion_WP"
              }
             }
-            m_rWPToSpawn ""
            }
           }
           coords 353.102 -6.843 103.272
@@ -2391,7 +2369,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               m_sName "Bay_Invasion_WP"
              }
             }
-            m_rWPToSpawn ""
            }
           }
           coords 166.625 17.19 -363.345
@@ -2521,4 +2498,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
+}
+GenericEntity : "{DFC5EEAB65C44D26}prefabs/Trading_Items/Factions/FIA/TS_Medical_FIA.et" {
+ coords 9809.61 4.199 4400.019
+}
+GenericEntity : "{E682E960C6232AF6}prefabs/Trading_Items/Factions/FIA/TS_Ammunition_FIA.et" {
+ coords 9810.377 4.79 4389.48
 }

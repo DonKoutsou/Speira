@@ -1,9 +1,6 @@
 SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
  coords 118.439 1.001 129.744
 }
-SCR_PlayerController DefaultPlayerController1 : "{6E2BB64764E3BE9B}Prefabs/Characters/Core/DefaultPlayerController.et" {
- coords 131.236 1.001 124.035
-}
 $grp GenericEntity {
  {
   coords 126.447 1.001 126.612
@@ -1214,7 +1211,7 @@ GenericEntity : "{49ADEF17D3D91B4F}Prefabs/Structures/Military/Camps/Canvas_Cove
   GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
    coords -1.453 -0.002 -4.478
   }
-  GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
+  GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/Factions/FIA/FIA_TradingStation.et" {
    coords -0.516 0 0.527
    angleY -90
   }

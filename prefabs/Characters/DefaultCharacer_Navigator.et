@@ -28,9 +28,6 @@ SCR_ChimeraCharacter : "{0329EE29F102920D}prefabs/Characters/DefaultCharacter.et
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
-    LoadoutSlotInfo Watch {
-     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
-    }
     LoadoutSlotInfo Vest {
      Prefab "{9945D5435F12C370}prefabs/Characters/Vests/Vest_M79GrenadeCarrier/Vest_M79GrenadeCarrier.et"
     }
@@ -42,8 +39,6 @@ SCR_ChimeraCharacter : "{0329EE29F102920D}prefabs/Characters/DefaultCharacter.et
     }
     LoadoutSlotInfo Pants {
      Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
-    }
-    LoadoutSlotInfo Binoculars {
     }
     LoadoutSlotInfo Back {
      Prefab "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"

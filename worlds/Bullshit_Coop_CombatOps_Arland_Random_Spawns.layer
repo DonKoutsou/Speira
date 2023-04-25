@@ -1,0 +1,62 @@
+$grp StaticModelEntity : "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et" {
+ {
+  coords 524.625 0.934 2947.156
+ }
+ {
+  coords 530.152 0.879 2951.97
+  angleY 51.911
+ }
+}
+GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ coords 521.6 0.463 2960.412
+ angleX -3.116
+ angleY -52.601
+ angleZ -22.979
+}
+GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ coords 523.638 0.807 2950.018
+ angleX 0
+ angleY 0
+ angleZ 0
+}
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  CP_Area "{59E8CDC50969206E}" {
+  }
+ }
+ coords 1129.218 38.001 2871.099
+ {
+  $grp GenericEntity : "{3C96F7B01333FD15}prefabs/ScenarioFramework/Spawn_Presets/US_USSR_RandomSpawnLayer.et" {
+   {
+    coords 161.91 -35.643 -1758.101
+   }
+   {
+    coords 549.855 -36.482 -2024.285
+   }
+   {
+    coords 1361.45 -37.126 -2109.955
+   }
+   {
+    coords 2438.891 -36.961 -1333.008
+   }
+   {
+    coords 2384.978 -35.49 -427.958
+   }
+   {
+    coords 2148.279 -35.938 3.911
+   }
+   {
+    coords 1969.724 6.773 -456.974
+   }
+   {
+    coords 895.854 13.633 165.289
+   }
+   {
+    coords -29.208 -37.125 -1102.399
+   }
+  }
+ }
+}
+GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 525.908 0.8 2951.314
+}

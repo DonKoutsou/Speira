@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{18B5DC5C4088B7BD}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator.et"
+ Name "{96BCF8AE1E4652B5}Character_FIA_Navigator.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

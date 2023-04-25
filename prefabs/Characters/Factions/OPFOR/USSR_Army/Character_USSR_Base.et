@@ -26,7 +26,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
      TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
      PrefabsToSpawn + {
-      "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et" "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+      "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {

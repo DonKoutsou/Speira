@@ -22,6 +22,15 @@ GenericEntity {
      ItemVolume 10
      RestingAdditiveOffsetLS 0 0 0
     }
+    ItemAnimationAttributes ItemAnimationAttributes "{5AE8A8999D0F3DB7}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{5AE8A8999D0F3DB2}" {
+       AnimGraph "{95F36C067E914E76}Assets/Items/Equipment/workspaces/Watch_Vostok.agr"
+       AnimInstance "{03F05A84D48612B4}Assets/Items/Equipment/workspaces/Watch_Vostok_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
     CustomAttributes {
      PreviewRenderAttributes "{5AE8A8999D0F3E5C}" {
       CameraPreset Top
@@ -33,7 +42,7 @@ GenericEntity {
     }
     CommonItemType "NONE"
     m_Size SLOT_1x1
-    m_SlotType SLOT_LOOT_STORAGE
+    m_SlotType SLOT_LOOT_CURRENCY
    }
   }
   MeshObject "{5AE8A8999D0F3E4F}" {
@@ -52,6 +61,17 @@ GenericEntity {
   }
   RigidBody "{5AE8A8999D0F3E79}" {
    ModelGeometry 1
+  }
+  ProcAnimComponent "{5AE8A8999D0F3E65}" {
+   Parameters {
+    ProcAnimParams "{5AE8A8999D0F3E62}" {
+     ResourceName "{6D6D2FEA1F89DC9F}Assets/Items/Equipment/Watches/Watch_Vostok/Watch_Vostok.pap"
+     BoneNames {
+      "i_hours_Vostok" "i_minutes_Vostok" "i_seconds_Vostok" "i_date_Vostok"
+     }
+     SimulationDistance 20
+    }
+   }
   }
   ActionsManagerComponent "{5AE8A8999D0F3EFB}" {
    ActionContexts {

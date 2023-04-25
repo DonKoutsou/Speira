@@ -7,8 +7,5 @@ SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
     }
    }
   }
-  SP_DialogueComponent "{5CE91B9862423A72}" {
-   Enabled 0
-  }
  }
 }

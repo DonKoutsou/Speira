@@ -1,26 +1,20 @@
 GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
  ID "5104869D194C6243"
  components {
-  MeshObject "{5104869D194C6262}" {
-   Object "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
-  }
-  RigidBody "{5104869D194C6267}" {
-   Static 1
-  }
-  SCR_BaseInventoryItemComponent "{5C792EB02A70E747}" {
-   Attributes SCR_ItemAttributeCollection "{5C792EB02C466A71}" {
-    ItemDisplayName UIInfo "{5C792EB02EA6B240}" {
+  InventoryItemComponent "{5D30CD6ABE952AC2}" {
+   Attributes SCR_ItemAttributeCollection "{5D30CD6AA0DE169F}" {
+    ItemDisplayName UIInfo "{5D30CD6AA5A328AE}" {
      Name "US soldier tags"
      Description "Tags carried by all soldiers, used for identification"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{5C792EB03DCCEFE0}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{5D30CD6AA8B2774F}" {
      Weight 0.05
      SizeSetupStrategy Manual
      ItemDimensions 2 2 2
      ItemVolume 8
     }
     CustomAttributes {
-     PreviewRenderAttributes "{5C792EB0490D988A}" {
+     PreviewRenderAttributes "{5D30CD6A5C0E0BB8}" {
       CameraOrbitAngles -90 0 0
       CameraDistanceToItem 0.07
       CameraOffset -0.005 -0.018 0
@@ -32,8 +26,11 @@ GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
     }
     CommonItemType "WATCH"
     m_Size SLOT_1x1
-    m_SlotType SLOT_LOOT_STORAGE
+    m_SlotType SLOT_GADGETS_STORAGE
    }
+  }
+  RigidBody "{5104869D194C6267}" {
+   Static 1
   }
   SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
    Enabled 0

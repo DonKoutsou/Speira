@@ -326,7 +326,7 @@ GenericEntity : "{49ADEF17D3D91B4F}Prefabs/Structures/Military/Camps/Canvas_Cove
    ID "5C7315DAF456BF5F"
    coords -1.453 -0.002 -4.478
   }
-  GenericEntity "FIA_TradingStation.et2" : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
+  GenericEntity "FIA_TradingStation.et2" : "{DA4353EEE7006DD8}prefabs/Trading_Items/Factions/FIA/FIA_TradingStation.et" {
    ID "5C7315DAF456BF5C"
    coords -0.547 0.092 0.509
    angleY -90

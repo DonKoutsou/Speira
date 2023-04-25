@@ -300,7 +300,7 @@ SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/
   }
  }
 }
-ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords -2817.714 115.587 1921.053
 }
 $grp GenericEntity {
@@ -345,7 +345,6 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
      }
      Duration 0.5
      CanAggregate 1
-     m_DialogText 5
     }
    }
   }

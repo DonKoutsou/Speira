@@ -4,8 +4,8 @@ SubScene {
 Layer System {
  Index 0
 }
-Layer Areas {
- Index 1
+Layer Waypoints {
+ Index 9
 }
 Layer Placed_assets {
  Index 2
@@ -13,12 +13,24 @@ Layer Placed_assets {
 Layer Trader_Layer {
  Index 3
 }
-Layer Stashes {
- Index 4
+Layer Spawns {
+ Index 11
 }
 Layer Stash_Spawner {
  Index 7
 }
-Layer AI_spawn_test {
- Index 6
+Layer FIA_Units {
+ Index 10
+}
+Layer FIA_SpawnedClutter {
+ Index 12
+}
+Layer FIA_Clutter {
+ Index 8
+}
+Layer Underground_area {
+ Index 14
+}
+Layer Random_Spawns {
+ Index 1
 }

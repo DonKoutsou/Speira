@@ -1,0 +1,139 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 1110.581 38.054 2878.144
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+   FIA_Guards {
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -28.39 -0.175 7.441
+       angleY 118.668
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -12.333 -0.054 -22.557
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -53.779 0 -13.764
+       angleY 73.699
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{23D81C023DBF85AC}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_RTO.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -49.839 -0.009 -21.559
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Commander.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -44.638 -0.009 -13.509
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+        }
+       }
+       coords -27.962 -0.009 -14.228
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -27.88 -0.144 2.529
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+        }
+       }
+       coords -38.453 1.097 63.68
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+        }
+       }
+       coords -65.273 -0.053 -2.69
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+        }
+       }
+       coords -61.622 -0.053 -7.655
+       angleY -29.337
+      }
+      {
+       components {
+        CP_SlotAI "{5A26B3E02AC77BA0}" {
+         m_rObjectToSpawn "{96BCF8AE1E4652B5}Character_FIA_Navigator.et"
+        }
+       }
+       coords -40.598 -0.009 -7.462
+       angleY 153.01
+      }
+     }
+    }
+   }
+   {
+    components {
+     CP_LayerBase "{5A2283EA2A0B4B14}" {
+      m_bEnableRepeatedSpawn 1
+      m_iRepeatedSpawnNumber 100
+      m_fRepeatedSpawnTimer 120
+     }
+    }
+    coords 0 0 0
+    {
+     GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       CP_SlotAI "{5A26B3E02AC77BA0}" {
+        m_rObjectToSpawn "{CE41AF625D05D0F0}Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et"
+        m_aWaypointGroupNames {
+         SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
+          m_sName "Chill_WP"
+          m_bCycleWaypoints 1
+         }
+        }
+        m_sWPToSpawn ""
+       }
+      }
+      coords 7.767 0 -7.894
+     }
+    }
+   }
+  }
+ }
+}

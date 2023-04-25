@@ -1,0 +1,61 @@
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et"
+      }
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
+      }
+     }
+    }
+   }
+  }
+  FactionAffiliationComponent "{5D3308C1B3ACFC5E}" {
+   "faction affiliation" "RENEGADE"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{BCCB7D5AB38BB3A7}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_base.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{F3F988448707C507}Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{738798231DAF3078}Prefabs/Characters/Uniforms/Pants_6b51_VKPO.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{320FA1CD5B1D5601}Prefabs/Characters/Footwear/USMC_Combat_Boots/USMC_Combat_Boots.et"
+    }
+    LoadoutSlotInfo Back {
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3308C10F446455}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
+     PrefabsToSpawn {
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_6b51_VKPO.et"
+     PrefabsToSpawn {
+      "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" ""
+     }
+    }
+   }
+  }
+ }
+ coords 119.565 1.001 253.85
+ angleY -180
+}

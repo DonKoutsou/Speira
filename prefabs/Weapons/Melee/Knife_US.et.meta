@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{CB716A41903571AD}prefabs/weapons/Melee/Knife_US.et"
+ Name "{CB716A41903571AD}prefabs/Weapons/Melee/Knife_US.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

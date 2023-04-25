@@ -27,8 +27,6 @@ SCR_ChimeraCharacter {
    BreathExhaustedMagnitude 10
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
-   }
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
    WeaponType Handgun
@@ -51,7 +49,7 @@ SCR_ChimeraCharacter {
    Slots {
     LoadoutSlotInfo Watch {
      Prefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
-     AreaType LoadoutWatchArea "{5C8AFD05B5B6D829}" {
+     AreaType LoadoutWatchArea "{5D310258A29A9707}" {
      }
     }
    }
@@ -60,15 +58,6 @@ SCR_ChimeraCharacter {
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
-    SP_DialogueAction "{5CE4DA22515DBC87}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5CE4DA22525775D5}" {
-      Name "Talk"
-     }
-     Duration 0.1
-    }
    }
   }
   CharacterAnimationComponent "{520EA1D2F659C994}" {

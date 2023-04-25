@@ -45,9 +45,9 @@ GenericEntity {
       Supress1hShooting 0
      }
     }
-    CommonItemType "WATCH"
+    CommonItemType "CURRENCY"
     m_Size SLOT_1x1
-    m_SlotType SLOT_LOOT_STORAGE
+    m_SlotType SLOT_ANY
    }
   }
   MeshObject "{5C7D11CAD4E6F39C}" {

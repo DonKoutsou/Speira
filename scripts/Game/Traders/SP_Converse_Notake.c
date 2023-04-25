@@ -30,7 +30,7 @@ class PrefabResource_PredicateNoTake : InventorySearchPredicate
 	}
 }
 
-class LIW_ConverseActionNoTake : ScriptedUserAction
+class SP_ConverseActionNoTake : ScriptedUserAction
 {
 	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
 	ResourceName m_WantedPay;
