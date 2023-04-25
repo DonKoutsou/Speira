@@ -43,10 +43,18 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 	override void OnControllableDestroyed(IEntity entity, IEntity instigator)
 	{
 		FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
-		if (!FactionComp.GetAffiliatedFaction().GetFactionKey())
+		FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
+		FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
+		FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
+		if (!KillerKey)
 		{
 			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 		}
+		else if (KillerKey == VictimKey)
+		{
+			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+		}
+		
 		if (IsProxy())
 			return;
 		
