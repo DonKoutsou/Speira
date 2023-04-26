@@ -2,6 +2,10 @@ SCR_ChimeraCharacter : "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA
  ID "520EC961A090B1EE"
  components {
   FactionAffiliationComponent "{555C98D1CD949F3E}" {
+   "faction affiliation" "SPEIRA"
+  }
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+   m_iRank MEDIC
   }
   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
    WeaponTemplate ""

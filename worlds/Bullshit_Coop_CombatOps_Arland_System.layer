@@ -165,6 +165,10 @@ SCR_BaseGameMode GameMode_Plain2 : "{1B76F75A3175E85C}prefabs/MP/Modes/Plain/Gam
    m_CharacterArchetypeList {
     SP_DialogueArchetype "{5D1D0E1C141A7A3C}" : "{329463647B42DB55}Configs/Dilaogue_Configs/DialogueConf_FIA_Medic.conf" {
     }
+    SP_DialogueArchetype "{5D34E7B22B6471FE}" : "{B51D142303614356}Configs/Dilaogue_Configs/DialogueConf_FIA_Navigator.conf" {
+    }
+    SP_DialogueArchetype "{5D350D456F606D52}" : "{B18C661393614CB3}Configs/Dilaogue_Configs/DialogueConf_SPEIRA_Commander.conf" {
+    }
    }
    m_ChatChannel LocalChatChannel "{5D1547897CBD7ACF}" {
     "Channel name" "Context"

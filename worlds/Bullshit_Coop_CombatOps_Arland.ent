@@ -34,3 +34,6 @@ Layer Underground_area {
 Layer Random_Spawns {
  Index 1
 }
+Layer SPEIRA_Units {
+ Index 4
+}

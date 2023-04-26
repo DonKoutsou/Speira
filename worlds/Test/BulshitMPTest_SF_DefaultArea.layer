@@ -1,6 +1,9 @@
 MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Base.et" {
  coords 4.813 1.001 230.289
 }
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ coords 103.183 1.001 151.921
+}
 SCR_CharacterTriggerEntity : "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et" {
  coords 48.789 1.001 204.703
  SphereRadius 17.7
@@ -1730,7 +1733,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn ""
                  }
                 }
                 coords -479.367 192.709 -385.656
@@ -1745,7 +1747,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn ""
                  }
                 }
                 coords -149.252 18.93 176.769
@@ -1762,7 +1763,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn ""
                  }
                 }
                 coords -508.139 193.409 -360.19
@@ -1777,7 +1777,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn ""
                  }
                 }
                 coords 161.114 -1.301 50.963
@@ -1793,7 +1792,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn ""
                  }
                 }
                 coords -30.05 1.543 -125.683
@@ -1809,7 +1807,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn ""
                  }
                 }
                 coords -108.477 13.541 -122.457
@@ -1825,7 +1822,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                     m_bCycleWaypoints 1
                    }
                   }
-                  m_rWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
                  }
                 }
                 coords 106.412 -1.426 1.402
@@ -1862,7 +1858,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_sFaction "USSR"
                   m_sTaskTitle "Assault on St.Pierre - Kill the commander"
                   m_sTaskDescription "Before clearing the area we will have to execute the town's commander to create an opening for a friendly QRF to move in and assist with clearing the town."
-                  m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                  }
                 }
                 coords 556.668 3.414 28.819
@@ -1875,7 +1870,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                   m_sFaction "USSR"
                   m_sTaskTitle "Assault on St.Pierre - Kill the commander"
                   m_sTaskDescription "Before clearing the area we will have to execute the town's commander to create an opening for a friendly QRF to move in and assist with clearing the town."
-                  m_rWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
                  }
                 }
                 coords 82.481 4.564 36.613

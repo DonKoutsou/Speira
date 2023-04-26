@@ -1470,6 +1470,15 @@ GenericEntity : "{47E258BBC8968F11}Prefabs/Props/Industrial/GasTank_01_rusty.et"
  coords 2932.905 67.988 1621.832
  angleY 35.453
 }
+$grp StaticModelEntity : "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et" {
+ {
+  coords 524.625 0.934 2947.156
+ }
+ {
+  coords 530.152 0.879 2951.97
+  angleY 51.911
+ }
+}
 $grp GenericEntity : "{48C9E7CE89BA2360}PrefabLibrary/Props/Garbage/TirePile_01_medium.et" {
  {
   coords 2609.369 110.977 2488.321
@@ -1531,6 +1540,12 @@ $grp GenericEntity : "{48C9E7CE89BA2360}PrefabLibrary/Props/Garbage/TirePile_01_
   angleY -123.196
   angleZ 0.286
  }
+}
+GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ coords 521.6 0.463 2960.412
+ angleX -3.116
+ angleY -52.601
+ angleZ -22.979
 }
 GenericEntity : "{49ADEF17D3D91B4F}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_A_Soviet.et" {
  coords 2291.333 0.977 716.407
@@ -3627,6 +3642,12 @@ $grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et
   angleY -70.772
   angleZ 0
  }
+ {
+  coords 523.638 0.807 2950.018
+  angleX 0
+  angleY 0
+  angleZ 0
+ }
 }
 $grp StaticModelEntity : "{C6BFE324CCCFE6C4}Prefabs/Props/Military/Furniture/CotMilitary_USSR_01.et" {
  {
@@ -4179,6 +4200,9 @@ $grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
  {
   coords 3334.192 13.077 2802.258
   angleY 62.631
+ }
+ {
+  coords 525.908 0.8 2951.314
  }
 }
 $grp StaticModelEntity : "{DA1B42FB9AEC02BE}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V3.et" {
