@@ -1,0 +1,9 @@
+SCR_SpawnPoint SpawnPoint_Speira : "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et" {
+ components {
+  RplComponent "{552E67F19D2F2A2F}" {
+  }
+ }
+ coords 403.132 1.2 5655.813
+ angleY -143.136
+ m_sFaction "SPEIRA"
+}

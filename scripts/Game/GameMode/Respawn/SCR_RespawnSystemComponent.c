@@ -183,13 +183,6 @@ class SCR_RespawnSystemComponent : RespawnSystemComponent
 		loadout.OnLoadoutSpawned(spawned, playerId);
 		if (spawnPoint)
 			spawnPoint.EOnPlayerSpawn(spawned);
-		FactionAffiliationComponent Factaf = FactionAffiliationComponent.Cast(spawned.FindComponent(FactionAffiliationComponent));
-		FactionKey SPEIRA = "SPEIRA";
-		if (Factaf.GetAffiliatedFaction().GetFactionKey() == SPEIRA)
-		{
-			FactionKey Factkey;
-			Factaf.SetAffiliatedFactionByKey(Factkey);
-		}
 		
 		return spawned;
 	}

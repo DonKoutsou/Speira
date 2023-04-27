@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Commander.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

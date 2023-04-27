@@ -1,0 +1,47 @@
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  FactionAffiliationComponent "{5D3723DCCA2492D3}" {
+   "faction affiliation" "SPEIRA"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{DC76B5A3E6290D5A}prefabs/Characters/HeadGear/Hat_M70_01/Hat_M70_02.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{C7923961D7235D70}prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+    }
+    LoadoutSlotInfo Watch {
+     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3723DCABD65062}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+    }
+   }
+  }
+ }
+ coords 1299.569 2.886 5211.812
+}

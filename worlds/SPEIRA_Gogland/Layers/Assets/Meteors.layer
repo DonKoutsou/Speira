@@ -1,0 +1,67 @@
+$grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+ {
+  coords 501.812 2.662 5387.589
+  angleX 88.703
+  angleY 180
+  angleZ -180
+ }
+ {
+  coords 341.264 -3.248 5702.684
+  angleX 77.716
+  angleY -13.875
+  angleZ -13.569
+ }
+ {
+  coords 2584.698 -2.117 4151.96
+  angleX 77.396
+  angleY -180
+  angleZ 180
+ }
+ {
+  coords 1204.352 0.117 5884.29
+  angleX -65.633
+  angleY -161.155
+  angleZ -17.271
+ }
+ {
+  coords 1158.909 1.161 5418.477
+  angleX 57.022
+  angleY -134.88
+  angleZ 27.445
+ }
+ {
+  coords 1177.758 3.714 5134.58
+  angleX 88.083
+  angleY 66.22
+  angleZ -125.602
+  scale 0.205
+ }
+ {
+  coords 602.618 3.903 5057.811
+  angleX 68.459
+  angleY -152.662
+  angleZ 63.657
+  scale 0.395
+ }
+ {
+  coords 633.245 4.689 5407.012
+  angleX -73.944
+  angleY -21.286
+  angleZ -18.111
+  scale 0.395
+ }
+ {
+  coords 3300.369 0.196 1868.522
+  angleX 5.24
+  angleY 137.448
+  angleZ 0.189
+  scale 1.963
+ }
+ {
+  coords 1243.867 4.276 4984.148
+  angleX 88.703
+  angleY -180
+  angleZ -138.263
+  scale 0.757
+ }
+}

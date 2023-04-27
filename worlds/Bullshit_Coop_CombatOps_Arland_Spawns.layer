@@ -1,4 +1,0 @@
-SCR_SpawnPoint Spawn_Point_FIA_Initial : "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et" {
- coords 2303.851 1.982 678.898
- m_sFaction "SPEIRA"
-}
