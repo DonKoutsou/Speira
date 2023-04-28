@@ -1,0 +1,14 @@
+SCR_AIWorld {
+ ID "50B2B8F35661FB44"
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5D38629C41F8D5C2}" {
+     NavmeshFileOveride {
+      "{44C7D7A2485A2DF8}worlds/SPEIRA_Gogland/Navmesh/SPEIRA_Gogland_Navmesh.nmn"
+     }
+    }
+   }
+  }
+ }
+}
