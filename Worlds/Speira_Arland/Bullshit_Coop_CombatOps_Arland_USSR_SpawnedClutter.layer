@@ -1,0 +1,48 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 1082.219 39.151 2904.672
+ {
+  GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+   coords 0 0 0
+   {
+    $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+     {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et"
+       }
+      }
+      coords -10.769 0 42.572
+      angleY 112.943
+     }
+     {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et"
+       }
+      }
+      coords -11.842 0 47.063
+      angleY 112.943
+     }
+     {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et"
+       }
+      }
+      coords -12.987 0 51.969
+      angleY 112.943
+     }
+     {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et"
+       }
+      }
+      coords -14.051 0 57.171
+      angleY 112.943
+     }
+    }
+   }
+  }
+ }
+}

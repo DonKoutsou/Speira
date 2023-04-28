@@ -1,0 +1,4903 @@
+$grp SplineShapeEntity {
+ {
+  coords 2380.784 1.152 3278.707
+  Points {
+   ShapePoint "{5D091247B638C63A}" {
+    Position -247.034 0 287.518
+   }
+   ShapePoint "{5D0912478B248D75}" {
+    Position -246.453 0 274.412
+   }
+   ShapePoint "{5D091246A02C195F}" {
+    Position -169.189 -0.001 238.324
+   }
+   ShapePoint "{5D091247B3D6B740}" {
+    Position -182.464 0 151.123
+   }
+   ShapePoint "{5D091246435C7B10}" {
+    Position -154.932 0 51.948
+   }
+   ShapePoint "{5D091246A02C18AC}" {
+    Position 10.309 -0.034 4.382
+   }
+  }
+  {
+   WallGeneratorEntity : "{CC598445023EBC23}Prefabs/WEGenerators/Walls/Net/WG_NetFence_04.et" {
+    coords 0 0 0
+    Flags 1048579
+    ExactPlacement 1
+    m_aWallGroups {
+     WallLengthGroup "{50D4C6C145131133}" {
+      m_aWallPrefabs {
+       WallWeightPair "{50D4C6C0FC2D621B}" {
+        m_fWeight 0.01
+       }
+      }
+     }
+    }
+    {
+     $grp SCR_DestructibleEntity : "{2591F1D52FD5DC65}PrefabLibrary/Walls/Net/NetFence_04_8m.et" {
+      {
+       coords -247.034 0 287.518
+       angleY 87.462
+      }
+      {
+       coords -246.453 0 274.412
+       angleY 25.036
+      }
+      {
+       coords -239.206 0 271.027
+       angleY 25.036
+      }
+      {
+       coords -231.959 0 267.642
+       angleY 25.036
+      }
+      {
+       coords -224.712 0 264.257
+       angleY 25.036
+      }
+      {
+       coords -217.464 0 260.872
+       angleY 25.036
+      }
+      {
+       coords -210.217 0 257.487
+       angleY 25.036
+      }
+      {
+       coords -202.97 0 254.103
+       angleY 25.036
+      }
+      {
+       coords -195.723 -0.001 250.718
+       angleY 25.036
+      }
+      {
+       coords -188.476 -0.001 247.333
+       angleY 25.036
+      }
+      {
+       coords -181.229 -0.001 243.948
+       angleY 25.036
+      }
+      {
+       coords -169.189 -0.001 238.324
+       angleY -261.344
+      }
+      {
+       coords -170.393 -0.001 230.417
+       angleY -261.344
+      }
+      {
+       coords -172.198 -0.001 218.556
+       angleY -261.344
+      }
+      {
+       coords -174.004 -0.001 206.695
+       angleY -261.344
+      }
+      {
+       coords -175.208 -0.001 198.788
+       angleY -261.344
+      }
+      {
+       coords -176.412 0 190.88
+       angleY -261.344
+      }
+      {
+       coords -177.616 0 182.973
+       angleY -261.344
+      }
+      {
+       coords -178.819 0 175.065
+       angleY -261.344
+      }
+      {
+       coords -180.023 0 167.158
+       angleY -261.344
+      }
+      {
+       coords -181.227 0 159.25
+       angleY -261.344
+      }
+      {
+       coords -182.464 0 151.123
+       angleY 74.485
+      }
+      {
+       coords -178.185 0 135.71
+       angleY 74.485
+      }
+      {
+       coords -176.046 0 128.003
+       angleY 74.485
+      }
+      {
+       coords -172.837 0 116.443
+       angleY 74.485
+      }
+      {
+       coords -170.697 0 108.735
+       angleY 74.485
+      }
+      {
+       coords -167.488 0 97.175
+       angleY 74.485
+      }
+      {
+       coords -164.279 0 85.615
+       angleY 74.485
+      }
+      {
+       coords -162.139 0 77.908
+       angleY 74.485
+      }
+      {
+       coords -158.93 0 66.348
+       angleY 74.485
+      }
+      {
+       coords -154.932 0 51.948
+       angleY 16.059
+      }
+      {
+       coords -143.403 -0.003 48.629
+       angleY 16.059
+      }
+      {
+       coords -135.716 -0.004 46.417
+       angleY 16.059
+      }
+      {
+       coords -128.03 -0.006 44.204
+       angleY 16.059
+      }
+      {
+       coords -120.343 -0.007 41.991
+       angleY 16.059
+      }
+      {
+       coords -112.657 -0.009 39.779
+       angleY 16.059
+      }
+      {
+       coords -104.97 -0.01 37.566
+       angleY 16.059
+      }
+      {
+       coords -97.284 -0.012 35.353
+       angleY 16.059
+      }
+      {
+       coords -89.597 -0.014 33.141
+       angleY 16.059
+      }
+      {
+       coords -74.225 -0.017 28.716
+       angleY 16.059
+      }
+      {
+       coords -66.539 -0.018 26.503
+       angleY 16.059
+      }
+      {
+       coords -55.009 -0.021 23.184
+       angleY 16.059
+      }
+      {
+       coords -47.323 -0.022 20.972
+       angleY 16.059
+      }
+      {
+       coords -39.636 -0.024 18.759
+       angleY 16.059
+      }
+      {
+       coords -31.95 -0.025 16.546
+       angleY 16.059
+      }
+      {
+       coords -20.421 -0.028 13.227
+       angleY 16.059
+      }
+      {
+       coords -12.734 -0.029 11.015
+       angleY 16.059
+      }
+      {
+       coords -5.048 -0.031 8.802
+       angleY 16.059
+      }
+      {
+       coords 2.639 -0.032 6.589
+       angleY 16.059
+      }
+     }
+     SCR_DestructibleEntity : "{3C2E83667F3B45E3}PrefabLibrary/Walls/Net/NetFence_04_Pole.et" {
+      coords 10.326 -0.034 4.377
+      angleY 16.059
+     }
+     SCR_DestructibleEntity : "{B4C746BF99B922B0}PrefabLibrary/Walls/Net/NetFence_04_2m.et" {
+      coords -155.722 0 54.793
+      angleY 74.485
+     }
+     $grp SCR_DestructibleEntity : "{C40AD4660B9D7703}PrefabLibrary/Walls/Net/NetFence_04_4m.et" {
+      {
+       coords -246.68 0 279.527
+       angleY 87.462
+      }
+      {
+       coords -173.981 -0.001 240.563
+       angleY 25.036
+      }
+      {
+       coords -156.79 0 58.64
+       angleY 74.485
+      }
+     }
+     $grp SCR_DestructibleEntity : "{DAB15C3D26A854FF}PrefabLibrary/Walls/Net/NetFence_04_4m_D.et" {
+      {
+       coords -171.596 -0.001 222.509
+       angleY -261.344
+      }
+      {
+       coords -173.402 -0.001 210.649
+       angleY -261.344
+      }
+      {
+       coords -180.325 0 143.416
+       angleY 74.485
+      }
+      {
+       coords -179.255 0 139.563
+       angleY 74.485
+      }
+      {
+       coords -173.906 0 120.296
+       angleY 74.485
+      }
+      {
+       coords -168.557 0 101.028
+       angleY 74.485
+      }
+      {
+       coords -165.348 0 89.468
+       angleY 74.485
+      }
+      {
+       coords -159.999 0 70.201
+       angleY 74.485
+      }
+      {
+       coords -147.246 -0.002 49.736
+       angleY 16.059
+      }
+      {
+       coords -81.911 -0.015 30.928
+       angleY 16.059
+      }
+      {
+       coords -78.068 -0.016 29.822
+       angleY 16.059
+      }
+      {
+       coords -58.852 -0.02 24.29
+       angleY 16.059
+      }
+      {
+       coords -24.263 -0.027 14.334
+       angleY 16.059
+      }
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 2441.727 1.052 3267.06
+  Points {
+   ShapePoint "{5D0912478B248D75}" {
+    Position 268.41 0 62.696
+   }
+   ShapePoint "{5D091246A02C195F}" {
+    Position 270.152 -0.018 42.559
+   }
+   ShapePoint "{5D091247B3D6B740}" {
+    Position 202.754 -0.03 -16.867
+   }
+   ShapePoint "{5D091246435C7B10}" {
+    Position 59.663 -0.026 -8.803
+   }
+   ShapePoint "{5D091246A02C18AC}" {
+    Position -46.146 -0.034 15.26
+   }
+  }
+  {
+   WallGeneratorEntity : "{CC598445023EBC23}Prefabs/WEGenerators/Walls/Net/WG_NetFence_04.et" {
+    coords 0 0 0
+    Flags 1048579
+    m_aWallGroups {
+     WallLengthGroup "{50D4C6C145131133}" {
+      m_aWallPrefabs {
+       WallWeightPair "{50D4C6C0FC2D621B}" {
+        m_fWeight 0.01
+       }
+      }
+     }
+    }
+    {
+     $grp SCR_DestructibleEntity : "{2591F1D52FD5DC65}PrefabLibrary/Walls/Net/NetFence_04_8m.et" {
+      {
+       coords 268.41 0 62.696
+       angleY 85.055
+      }
+      {
+       coords 269.099 -0.007 54.727
+       angleY 85.055
+      }
+      {
+       coords 270.133 -0.017 42.78
+       angleY -221.517
+      }
+      {
+       coords 264.144 -0.018 37.478
+       angleY -221.517
+      }
+      {
+       coords 258.155 -0.02 32.176
+       angleY -221.517
+      }
+      {
+       coords 252.166 -0.021 26.874
+       angleY -221.517
+      }
+      {
+       coords 246.177 -0.022 21.572
+       angleY -221.517
+      }
+      {
+       coords 237.194 -0.024 13.62
+       angleY -221.517
+      }
+      {
+       coords 231.204 -0.025 8.318
+       angleY -221.517
+      }
+      {
+       coords 225.215 -0.026 3.017
+       angleY -221.517
+      }
+      {
+       coords 219.226 -0.027 -2.285
+       angleY -221.517
+      }
+      {
+       coords 213.237 -0.028 -7.587
+       angleY -221.517
+      }
+      {
+       coords 202.767 -0.03 -16.855
+       angleY -176.779
+      }
+      {
+       coords 194.781 -0.03 -16.406
+       angleY -176.779
+      }
+      {
+       coords 186.795 -0.03 -15.957
+       angleY -176.779
+      }
+      {
+       coords 174.817 -0.029 -15.283
+       angleY -176.779
+      }
+      {
+       coords 166.831 -0.029 -14.833
+       angleY -176.779
+      }
+      {
+       coords 158.845 -0.029 -14.384
+       angleY -176.779
+      }
+      {
+       coords 150.859 -0.029 -13.934
+       angleY -176.779
+      }
+      {
+       coords 142.873 -0.028 -13.485
+       angleY -176.779
+      }
+      {
+       coords 134.887 -0.028 -13.036
+       angleY -176.779
+      }
+      {
+       coords 126.9 -0.028 -12.586
+       angleY -176.779
+      }
+      {
+       coords 118.914 -0.028 -12.137
+       angleY -176.779
+      }
+      {
+       coords 110.928 -0.028 -11.688
+       angleY -176.779
+      }
+      {
+       coords 102.942 -0.027 -11.238
+       angleY -176.779
+      }
+      {
+       coords 94.956 -0.027 -10.789
+       angleY -176.779
+      }
+      {
+       coords 86.97 -0.027 -10.34
+       angleY -176.779
+      }
+      {
+       coords 74.992 -0.027 -9.666
+       angleY -176.779
+      }
+      {
+       coords 61.031 -0.026 -8.88
+       angleY -167.307
+      }
+      {
+       coords 53.228 -0.027 -7.122
+       angleY -167.307
+      }
+      {
+       coords 45.425 -0.027 -5.365
+       angleY -167.307
+      }
+      {
+       coords 37.622 -0.028 -3.607
+       angleY -167.307
+      }
+      {
+       coords 29.818 -0.028 -1.85
+       angleY -167.307
+      }
+      {
+       coords 22.015 -0.029 -0.092
+       angleY -167.307
+      }
+      {
+       coords 14.212 -0.03 1.665
+       angleY -167.307
+      }
+      {
+       coords 6.409 -0.03 3.423
+       angleY -167.307
+      }
+      {
+       coords -1.394 -0.031 5.18
+       angleY -167.307
+      }
+      {
+       coords -9.198 -0.031 6.938
+       angleY -167.307
+      }
+      {
+       coords -17.001 -0.032 8.695
+       angleY -167.307
+      }
+      {
+       coords -24.804 -0.032 10.453
+       angleY -167.307
+      }
+      {
+       coords -32.607 -0.033 12.21
+       angleY -167.307
+      }
+     }
+     SCR_DestructibleEntity : "{3C2E83667F3B45E3}PrefabLibrary/Walls/Net/NetFence_04_Pole.et" {
+      coords -46.248 -0.034 15.283
+      angleY -167.307
+     }
+     $grp SCR_DestructibleEntity : "{B4C746BF99B922B0}PrefabLibrary/Walls/Net/NetFence_04_2m.et" {
+      {
+       coords 204.258 -0.03 -15.536
+       angleY -221.517
+      }
+      {
+       coords 63.019 -0.026 -8.992
+       angleY -176.779
+      }
+      {
+       coords -44.306 -0.034 14.845
+       angleY -167.307
+      }
+     }
+     $grp SCR_DestructibleEntity : "{C40AD4660B9D7703}PrefabLibrary/Walls/Net/NetFence_04_4m.et" {
+      {
+       coords 269.789 -0.014 46.758
+       angleY 85.055
+      }
+      {
+       coords 207.248 -0.029 -12.889
+       angleY -221.517
+      }
+      {
+       coords 67.006 -0.026 -9.216
+       angleY -176.779
+      }
+      {
+       coords -40.411 -0.034 13.968
+       angleY -167.307
+      }
+     }
+     $grp SCR_DestructibleEntity : "{DAB15C3D26A854FF}PrefabLibrary/Walls/Net/NetFence_04_4m_D.et" {
+      {
+       coords 240.188 -0.023 16.271
+       angleY -221.517
+      }
+      {
+       coords 178.809 -0.03 -15.507
+       angleY -176.779
+      }
+      {
+       coords 78.984 -0.027 -9.89
+       angleY -176.779
+      }
+     }
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et" {
+ {
+  coords 2862.402 6.88 1120.254
+  angleY -146.462
+ }
+ {
+  coords 3064.9 56.544 1714.214
+  angleY 108.593
+ }
+ {
+  coords 3193.543 17.72 2686.445
+ }
+ {
+  coords 1366.313 47.895 2962.058
+  angleY 145.769
+ }
+ {
+  coords 1374.966 41.686 2353.672
+  angleY -28.698
+ }
+ {
+  coords 2204.821 54.509 2894.562
+  angleY -87.486
+ }
+ {
+  coords 1386.379 10.468 1861.372
+ }
+}
+$grp GenericEntity : "{013297BA01640EB9}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_USSR_02.et" {
+ {
+  coords 2540.786 143.555 2267.022
+  angleX 0.895
+  angleZ 1.79
+ }
+ {
+  coords 3280.588 2.133 2862.981
+  angleX 0.895
+  angleY 51.915
+  angleZ 0.895
+ }
+ {
+  coords 3064.135 55.65 1714.398
+  angleY -17.606
+ }
+ {
+  coords 3062.887 55.65 1713.883
+  angleY 101.846
+ }
+}
+GenericEntity : "{01969A28078FCA69}Prefabs/Compositions/Misc/SubCompositions/BarrelClutter_02.et" {
+ coords 2928.816 68.062 1622.943
+ angleY 17.847
+}
+GenericEntity : "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
+ coords 2548.46 68.838 1185.234
+ angleY 103.571
+}
+GenericEntity : "{03B44EA7652D0D17}Prefabs/Props/Military/Radios/RadioStation_R123M_01.et" {
+ coords 2502.142 148.34 2266.404
+ angleX 5.785
+ angleY 80.795
+ angleZ -4.531
+}
+$grp GenericEntity : "{03DE957D8161212B}Prefabs/Props/Civilian/Notebook_01_Open.et" {
+ {
+  coords 3041.876 56.968 1711.603
+  angleY 150
+ }
+ {
+  coords 1489.804 2.082 1863.565
+  angleY -28.121
+ }
+}
+$grp StaticModelEntity : "{07F043DD6AACCD0B}Prefabs/Structures/Infrastructure/Barriers/BarGate_01/BarGate_01.et" {
+ {
+  coords 2930.629 0.062 1590.322
+  angleY 17.853
+  angleZ 2.922
+ }
+ {
+  coords 3134.38 0.013 2712.036
+  angleY -57.391
+ }
+}
+$grp GenericEntity : "{0879933F4FDD2C2B}Prefabs/Props/Civilian/SackUniversal_01_Pile.et" {
+ {
+  coords 2865.732 5.97 1120.339
+  angleY -23.902
+ }
+ {
+  coords 3045.127 56.037 1713.683
+  angleY -121.388
+ }
+ {
+  coords 2924.574 67.753 1609.504
+  angleY 75.908
+ }
+}
+$grp GenericEntity : "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et" {
+ {
+  coords 2145.04 53.125 2873.64
+  angleY -43.455
+ }
+ {
+  coords 1320.729 37.352 2346.431
+  angleX 3.083
+  angleY -127.97
+ }
+ {
+  coords 2938.915 67.719 1581.552
+  angleY -74.152
+ }
+ {
+  coords 3201.712 18.661 2648.048
+  angleY -142.99
+ }
+}
+$grp GenericEntity : "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et" {
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 2543.692 143.461 2263.562
+  angleX -0.886
+  angleY 4.921
+  angleZ 0.294
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 1389.915 9.591 1860.291
+  angleX -0.928
+  angleY 17.29
+  angleZ 0.097
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 2538.554 143.645 2268.222
+  angleY 7
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 1387.818 9.609 1870.342
+  angleX 0.921
+  angleY -171.682
+  angleZ -0.22
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 1383.298 9.54 1852.044
+  angleX -0.941
+  angleY 15.117
+  angleZ 0.109
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 3281.246 2.218 2858.793
+  angleY 58.908
+ }
+}
+$grp StaticModelEntity : "{0B8558B95D5FC67E}Prefabs/Structures/BuildingParts/Doors/DoorSet_WoodenFence_04_Gate.et" {
+ {
+  coords 1511.965 1.274 1850.42
+  angleY 150
+ }
+ {
+  coords 1515 0.996 1852.261
+  angleY 148.53
+  {
+   GenericEntity {
+    ID "564E86E6D05B9718"
+    coords 0 0.104 0
+   }
+   GenericEntity {
+    ID "564E86E6D05B973F"
+    coords 0 0.089 0
+   }
+  }
+ }
+ {
+  coords 1518.054 0.889 1854.084
+  angleY 148.887
+ }
+ {
+  coords 1516.099 0.16 1857.097
+  angleY 58.887
+ }
+ {
+  coords 1514.27 0.154 1860.128
+  angleY 58.887
+ }
+ {
+  coords 1512.429 0.154 1863.178
+  angleY 58.887
+ }
+ {
+  coords 1510.58 0.154 1866.241
+  angleY 58.887
+ }
+ {
+  coords 1508.748 0.153 1869.277
+  angleY 58.887
+ }
+ {
+  coords 1506.919 -0.187 1872.308
+  angleY 58.887
+ }
+ {
+  coords 1503.911 0.152 1870.362
+  angleY -31.113
+ }
+ {
+  coords 1500.567 0.234 1869.139
+  angleY -20.951
+ }
+ {
+  coords 1497.389 0.223 1867.544
+  angleY -26.615
+ }
+ {
+  coords 1494.208 0.159 1865.95
+  angleY -26.615
+ }
+ {
+  coords 1491.022 -0.043 1864.354
+  angleY -26.615
+ }
+}
+GenericEntity : "{0F4F2F8A1BB4766F}Prefabs/Structures/Signs/Military/SignRectangle_01_140x100/SignFlag_USSR_01.et" {
+ coords 1414.537 11.657 1887.594
+ angleX 4.544
+ angleY 76.009
+ angleZ 0.033
+}
+$grp GenericEntity : "{1112756E8A13445B}Prefabs/Props/Industrial/Pallets/Pallet_01_Pile.et" {
+ {
+  coords 2925.435 67.743 1613.455
+  angleY 105.849
+ }
+ {
+  coords 2925.189 67.743 1612.59
+  angleY 103.795
+ }
+ {
+  coords 2924.97 67.743 1611.698
+  angleY 103.795
+ }
+ {
+  coords 2926.531 67.743 1612.801
+  angleY 13.795
+ }
+}
+$grp GenericEntity : "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et" {
+ {
+  coords 1681.827 3.532 872.053
+  angleY -89.61
+ }
+ {
+  coords 3239.037 0.725 1140.221
+  angleY -118.762
+ }
+ {
+  coords 3566.18 45.748 2645.145
+  angleY -112.867
+ }
+ {
+  coords 2547.894 69.239 1185.187
+  angleY -78.24
+ }
+ {
+  coords 2289.843 1.053 715.428
+  angleY 50.903
+ }
+ {
+  coords 3460.309 2.431 2346.792
+  angleY 38.192
+ }
+}
+$grp GenericEntity : "{1359D393ED1D1A3F}Prefabs/Props/Garbage/Medical/GarbageMedicalUSSR_01.et" {
+ {
+  coords 3280.123 2.181 2862.467
+  angleX 1.79
+  angleY 51.922
+  angleZ 0.895
+ }
+ {
+  coords 2865.72 6.869 1124.934
+ }
+ {
+  coords 3054.879 56.867 1712.189
+ }
+ {
+  coords 3054.962 56.867 1713.642
+  angleY -102.472
+ }
+}
+GenericEntity : "{13891AA1F5833C4A}Prefabs/Props/Civilian/Notebook_01_Double.et" {
+ coords 1490.445 2.082 1863.993
+}
+$grp GenericEntity : "{14DDB40171F949A9}Prefabs/Props/Military/Camps/ConstructionMaterialPacked_WoodPlanks_01_USSR.et" {
+ {
+  coords 2525.106 143.708 2256.626
+  angleX 1.788
+  angleY -90.056
+  angleZ -1.791
+ }
+ {
+  coords 1282.543 38.904 2250.348
+  angleX -1.807
+  angleY -37.973
+  angleZ -0.86
+ }
+ {
+  coords 1278.42 38.91 2247.178
+  angleX 1.05
+  angleY 144.099
+  angleZ 1.45
+ }
+}
+GenericEntity : "{15FCFED968B7854F}PrefabLibrary/Props/Industrial/ConcretePanel_01_C.et" {
+ coords 2614.401 110.863 2496.299
+ angleX -1.147
+ angleY 70.015
+ angleZ -0.535
+}
+$grp StaticModelEntity : "{172DD50ACF177B9E}Prefabs/Props/Military/Furniture/ChairMilitary_USSR_01.et" {
+ {
+  coords 1260.142 38.962 2237.358
+  angleY 76.063
+ }
+ {
+  coords 2540.098 143.57 2263.474
+  angleX -1.425
+  angleY 0.024
+  angleZ -0.982
+ }
+ {
+  coords 2539.57 143.649 2270.635
+  angleX -0.122
+  angleY 30.063
+  angleZ 1.997
+ }
+ {
+  coords 2537.267 143.899 2278.416
+  angleY -0.174
+ }
+ {
+  coords 1391.423 9.548 1870.312
+  angleX 0.29
+  angleY -179.969
+  angleZ -1.719
+ }
+ {
+  coords 1386.385 9.572 1860.973
+  angleX -1.484
+  angleY 12.394
+  angleZ -1.174
+ }
+ {
+  coords 1262.409 38.962 2241.594
+  angleY 0
+ }
+ {
+  coords 1385.602 9.588 1850.822
+  angleY 0
+ }
+ {
+  coords 1303.611 11.4 1886.892
+  angleY 0
+ }
+ {
+  coords 2535.167 143.885 2279.375
+  angleX -1.026
+  angleY -34.983
+  angleZ -1.466
+ }
+ {
+  coords 3283.87 2.197 2849.654
+  angleX 0.036
+  angleY -7.607
+  angleZ -0.263
+ }
+ {
+  coords 3283.771 2.218 2859.482
+  angleX -0.122
+  angleY 81.97
+  angleZ 1.997
+ }
+ {
+  coords 3284.803 2.202 2850.372
+  angleX 1.8
+  angleY 14.376
+  angleZ 0.874
+ }
+ {
+  coords 3284.924 2.219 2853.903
+  angleY 0
+ }
+ {
+  coords 2929.51 67.743 1611.877
+  angleY -147.901
+ }
+ {
+  coords 2928.204 67.761 1611.372
+  angleY 82.67
+ }
+}
+GenericEntity : "{1736B81121CCABC2}PrefabLibrary/Props/Industrial/PalletJack_01.et" {
+ coords 3253.898 2.224 2879.803
+ angleX -0.047
+ angleY -37.018
+ angleZ -0.894
+}
+GenericEntity : "{18982CB5D0D29247}Prefabs/Props/Civilian/BeerBottle_01_empty_brown.et" {
+ coords 3042.537 56.97 1712.38
+}
+GenericEntity : "{190101E6E60E7C47}Prefabs/Props/Civilian/BeerBottle_01_empty_green.et" {
+ coords 2925.882 67.79 1608.676
+ angleZ -90.928
+}
+$grp StaticModelEntity : "{1A1020205E2B1710}Prefabs/Props/Military/Furniture/TableMilitary_USSR_01.et" {
+ {
+  coords 1248.598 37.659 2853.701
+  angleX 0.216
+  angleY 76.003
+  angleZ 0.869
+ }
+ {
+  coords 1266.597 37.69 2857.52
+  angleY -103
+ }
+ {
+  coords 1262.894 38.962 2241.807
+  angleY 53
+ }
+ {
+  coords 1229.284 37.784 2848.146
+  angleY 68
+ }
+ {
+  coords 1208.674 37.974 2842.461
+  angleY 76
+ }
+}
+$grp GenericEntity : "{1AC31E2AF0C54F8A}Prefabs/Props/Military/Camps/PalletAmmo_01_Soviet_camo.et" {
+ {
+  coords 1385.233 9.622 1863.917
+  angleY 14
+ }
+ {
+  coords 1265.533 38.962 2237.359
+  angleY -32
+ }
+ {
+  coords 1284.369 38.94 2252.032
+  angleX -1.253
+  angleY -126.996
+  angleZ -0.176
+ }
+ {
+  coords 1399.503 10.964 1846.797
+  angleY -64
+ }
+}
+$grp GenericEntity : "{1B9FE4BAE1AC3C1D}PrefabLibrary/Props/Civilian/Bucket_0/Bucket_01.et" {
+ {
+  coords 2540.802 143.541 2266.156
+  angleX -1.872
+  angleY 137.266
+  angleZ -0.707
+  scale 0.951
+ }
+ {
+  coords 2530.952 143.996 2280.804
+  angleX -2.266
+  angleY 161.466
+  angleZ -1.127
+  scale 1.085
+ }
+}
+GameEntity : "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et" {
+ coords 2932.714 68.554 1609.238
+}
+GenericEntity : "{1DE88E6E3B4FEC8D}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V3_covered.et" {
+ coords 3061.239 55.636 1713.763
+ angleY 77.183
+}
+GenericEntity : "{1EDBE01AAD5EE137}Prefabs/Props/Industrial/GasTank_02_blue.et" {
+ coords 2932.745 67.997 1622.318
+ angleY -36.821
+}
+$grp GameEntity : "{2521D0D11FB543C7}PrefabsEditable/Auto/Props/Civilian/E_Fireplace_01.et" {
+ {
+  coords 2943.347 66.683 1609.211
+ }
+ {
+  coords 3060.288 55.737 1692.165
+ }
+}
+GenericEntity : "{25B265F3E7CBDFC8}Prefabs/Props/Wrecks/BMP1_wreck.et" {
+ coords 2097.801 67.813 2377.794
+ angleX -5.794
+ angleY -49.958
+ angleZ -4.944
+}
+$grp GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
+ {
+  coords 2857.43 5.95 1128.33
+  angleX -1.79
+  angleZ 5.353
+ }
+ {
+  coords 2859.44 5.79 1130.96
+  angleX 0.88
+  angleY -100.616
+  angleZ -0.165
+ }
+ {
+  coords 2855.02 6.132 1131.37
+  angleX -6.908
+  angleY 66.978
+  angleZ 1.962
+ }
+ {
+  coords 2545.47 69.989 1187.05
+  angleX -9.196
+  angleY -175.099
+  angleZ -6.96
+ }
+ {
+  coords 2292.9 0.703 720.594
+  angleX -0.68
+  angleY 119.42
+  angleZ -2.437
+ }
+ {
+  coords 2294.38 0.775 718.006
+  angleX -2.693
+  angleY 0.604
+  angleZ 0.866
+ }
+ {
+  coords 3062.14 55.689 1691.59
+  angleX 1.908
+  angleY -99.029
+  angleZ 0.603
+ }
+ {
+  coords 3182.238 13.314 2722.063
+  angleY 150.606
+ }
+ {
+  coords 3130.205 11.777 2768.406
+  angleY 164.186
+ }
+ {
+  coords 3129.607 11.78 2766.653
+  angleY 96.973
+ }
+ {
+  coords 2910.697 41.191 2734.429
+  angleY 47.988
+ }
+ {
+  coords 3564.21 45.748 2643.592
+ }
+}
+StaticModelEntity : "{2692D2E817172D1B}Prefabs/Structures/BuildingParts/Doors/DoorSet_MetalGate_01_Long_S.et" {
+ coords 2395.415 0.042 3282.341
+ angleY -169.517
+ {
+  GenericEntity {
+   ID "5562AB08C6C9A7C8"
+   coords 0 0 0
+  }
+ }
+}
+$grp GenericEntity : "{2B1D0128ED660BE9}Prefabs/Props/Crates/BoxWooden_01.et" {
+ {
+  coords 2926.805 68 1618.701
+ }
+ {
+  coords 2926.805 68.277 1618.701
+  angleY 2
+ }
+ {
+  coords 2926.805 68.555 1618.701
+  angleY 2
+ }
+}
+$grp GenericEntity : "{2C23344BB9907209}PrefabLibrary/Props/Garbage/Cardboard_Pile_07.et" {
+ {
+  coords 3249.108 2.252 2880.754
+  angleX 0.222
+  angleY 41.647
+  angleZ 0.867
+  scale 1.086
+ }
+ {
+  coords 3258.947 2.007 2888.619
+  angleY 131.646
+  angleZ -0.837
+  scale 1.086
+ }
+}
+GameEntity : "{2CB0AA2A87842C18}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_military_USSR.et" {
+ components {
+  Hierarchy "{5706F8D0EEF042CF}" {
+  }
+ }
+ coords 3042.984 56.968 1711.593
+ angleY 104.941
+}
+GenericEntity : "{2F02434B102E47E5}PrefabLibrary/Props/Industrial/GasTank_01/GasTank_01_rusty.et" {
+ coords 2542.481 143.496 2265.841
+ angleY -103.439
+}
+$grp GenericEntity : "{2F2BBFDA3A2C73D4}prefabs/Props/Civilian/RadioSmall_01_black.et" {
+ {
+  coords 2863.854 6.88 1122.376
+  angleY -147.918
+ }
+ {
+  coords 2976.476 63.494 1635.075
+  angleY 111.591
+ }
+}
+$grp GenericEntity : "{2FCB46C395C9CBE7}Prefabs/Props/Airport/GeneratorAirfield_USSR_01/GeneratorAirfield_USSR_01.et" {
+ {
+  coords 1207.152 37.972 2843.159
+  angleY -104
+ }
+ {
+  coords 1265.012 37.69 2858.372
+  angleY -102.546
+ }
+ {
+  coords 1246.966 37.659 2854.33
+  angleY -106.462
+ }
+ {
+  coords 1227.565 37.793 2848.646
+  angleX 0.82
+  angleY -113.672
+  angleZ -0.359
+ }
+}
+Tree : "{2FE01B5E743D5205}PrefabLibrary/Vegetation/Trees/t_pinus_sylvestris_1s.et" {
+ coords 2082.231 0.031 2328.922
+ angleX -0.735
+ angleY -29.873
+ angleZ -0.728
+ scale 0.875
+}
+$grp GenericEntity : "{326E60F7A7358EDA}Prefabs/Props/Crates/CrateWooden_01_blue.et" {
+ {
+  coords 2926.435 67.591 1601.681
+  angleY 15.096
+ }
+ {
+  coords 2924.395 67.591 1602.371
+  angleY -101.545
+ }
+}
+GenericEntity : "{3386EAA823BE462E}Prefabs/Props/Wrecks/UAZ469_wreck_static.et" {
+ coords 2548.618 69.779 1190.334
+ angleX 4.633
+ angleY -84.684
+ angleZ -7.325
+}
+GenericEntity : "{33882C61BA9F0F90}Prefabs/Props/Civilian/Globe_01.et" {
+ coords 3041.19 56.968 1710.982
+ angleY -79.855
+}
+GenericEntity : "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et" {
+ components {
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Enabled 0
+  }
+ }
+ coords 1373.565 9.679 1859.086
+ angleX -1.042
+ angleY 100.427
+ angleZ 0.718
+}
+GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.et" {
+ coords 2928.602 68.654 1611.936
+ angleY -19.149
+}
+GenericEntity : "{3AE0A97C6595801F}Prefabs/Props/Military/WaterTanks/MobileWaterTank_USSR_01.et" {
+ coords 2525.269 143.921 2271.633
+ angleX 0.682
+ angleY -10.979
+ angleZ 3.511
+}
+$grp GenericEntity : "{3BAF6AA8C20D924D}Prefabs/Compositions/Misc/SubCompositions/Barricade_Logs_01.et" {
+ {
+  coords 3065.586 11.941 2864.772
+  angleY 26.984
+ }
+ {
+  coords 3166.586 12.415 2743.251
+  angleY -69.139
+ }
+ {
+  coords 3157.717 13.358 2714.166
+  angleX -4.188
+  angleY 113.745
+  angleZ -3.786
+ }
+ {
+  coords 3289.977 29.596 2684.681
+  angleY -73.447
+ }
+ {
+  coords 3284.985 30.142 2673.894
+  angleY -89.677
+ }
+ {
+  coords 3286.651 29.426 2679.453
+  angleY -67.895
+ }
+}
+$grp GenericEntity : "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" {
+ {
+  coords 2871.249 5.719 1129.331
+  angleY 116.287
+ }
+ {
+  coords 3056.271 55.944 1688.523
+  angleY -67.535
+ }
+ {
+  coords 3309.555 2.029 2852.267
+  angleY 168.877
+ }
+}
+$grp GenericEntity : "{3FD26066E47DD5AE}PrefabLibrary/Props/Commercial/CrateWooden_01_plain.et" {
+ {
+  coords 1374.869 9.964 1838.439
+  angleY 106.082
+ }
+ {
+  coords 2502.042 147.524 2266.299
+  angleX 6.124
+  angleY 88.14
+  angleZ -3.756
+ }
+ {
+  coords 1374.418 10.012 1836.695
+  angleX -0.238
+  angleY -84.92
+  angleZ 2.673
+ }
+ {
+  coords 1375.658 9.964 1839.495
+  angleY 165.371
+ }
+ {
+  coords 1374.588 9.97 1837.585
+  angleX 0.534
+  angleY 101.469
+  angleZ -2.63
+ }
+ {
+  coords 3071.488 54.938 1715.537
+  angleY -104.494
+ }
+ {
+  coords 3252.42 2.493 2872.585
+  angleX 1.796
+  angleY -33.662
+  angleZ -0.645
+ }
+ {
+  coords 3251.51 2.505 2872.027
+  angleX 1.122
+  angleY -25.701
+  angleZ 0.337
+ }
+ {
+  coords 3258.39 2.13 2883.642
+  angleY 146.928
+ }
+ {
+  coords 3258.984 2.099 2884.348
+  angleY 147.262
+ }
+ {
+  coords 3254.361 2.175 2882.778
+  angleX 0.036
+  angleY -31.739
+  angleZ -0.895
+ }
+}
+$grp GenericEntity : "{43E4371F76A8706A}PrefabLibrary/Props/Industrial/Pallet_01.et" {
+ {
+  coords 2539.07 143.484 2256.984
+  angleX 0.094
+  angleY -83.994
+  angleZ -0.89
+ }
+ {
+  coords 2537.092 143.398 2261.856
+  angleX -1.779
+  angleY -173.646
+  angleZ -0.198
+ }
+ {
+  coords 3061.955 55.409 1710.012
+  angleX -0.16
+  angleY 31.152
+  angleZ 1.994
+ }
+ {
+  coords 3251.341 2.511 2873.259
+  angleX 0.45
+  angleY 59.178
+  angleZ 0.424
+ }
+ {
+  coords 3258.292 2.344 2873.762
+  angleX 2.045
+  angleY 164.727
+  angleZ -1.124
+ }
+ {
+  coords 3256.159 2.101 2885.524
+  angleY -29.86
+ }
+ {
+  coords 3071.658 54.93 1713.8
+  angleX -0.16
+  angleY 31.152
+  angleZ 1.994
+ }
+ {
+  coords 3071.663 55.072 1713.798
+  angleX -0.975
+  angleY 55.711
+  angleZ 1.747
+ }
+}
+GenericEntity : "{44AF0871DDDD5119}PrefabLibrary/Props/Civilian/BarrelMetal_01/BarrelMetal_01.et" {
+ coords 1387.799 9.597 1863.455
+ angleX -1.196
+ angleY 25.846
+ angleZ 0.415
+}
+GenericEntity : "{44FD6B68E3E9F83F}Prefabs/Structures/Signs/Military/SignRectangle_01_140x100/Sign_BaseEntrance_USSR_01.et" {
+ coords 1602.964 8.455 2004.976
+ angleX 1.483
+ angleY 110
+ angleZ -2.485
+}
+GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_Soviet.et" {
+ coords 1376.086 9.965 1837.936
+ angleY 11
+}
+GenericEntity : "{47E258BBC8968F11}Prefabs/Props/Industrial/GasTank_01_rusty.et" {
+ coords 2932.905 67.988 1621.832
+ angleY 35.453
+}
+$grp StaticModelEntity : "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et" {
+ {
+  coords 524.625 0.934 2947.156
+ }
+ {
+  coords 530.152 0.879 2951.97
+  angleY 51.911
+ }
+}
+$grp GenericEntity : "{48C9E7CE89BA2360}PrefabLibrary/Props/Garbage/TirePile_01_medium.et" {
+ {
+  coords 2609.369 110.977 2488.321
+  angleX -0.855
+  angleY 92.518
+  angleZ -0.933
+ }
+ {
+  coords 2618.057 110.819 2482.726
+  angleX 0.823
+  angleY -113.156
+  angleZ -0.352
+ }
+ {
+  coords 2615.742 110.83 2487.643
+  angleX 0.225
+  angleY 159.899
+  angleZ -1.988
+ }
+ {
+  coords 2613.486 110.859 2490.337
+  angleX -2
+  angleY 65.648
+  angleZ -0.077
+ }
+ {
+  coords 2618.552 110.803 2479.646
+  angleX -1.25
+  angleY 135.718
+  angleZ -1.281
+ }
+ {
+  coords 2611.272 111.08 2478.618
+  angleX 1.998
+  angleY -113.243
+  angleZ 0.116
+ }
+ {
+  coords 2607.467 111.124 2482.607
+  angleX 2.25
+  angleY -107.776
+  angleZ 1.157
+ }
+ {
+  coords 2610.17 111.061 2481.998
+  angleX 1.798
+  angleY -90.493
+  angleZ 0.879
+ }
+ {
+  coords 2607.01 111.009 2489.684
+  angleX -1.51
+  angleY 104.455
+  angleZ -1.313
+ }
+ {
+  coords 2603.892 111.454 2475.73
+  angleX 4.458
+  angleY -123.196
+  angleZ 0.286
+ }
+}
+GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ coords 521.6 0.463 2960.412
+ angleX -3.116
+ angleY -52.601
+ angleZ -22.979
+}
+GenericEntity : "{49ADEF17D3D91B4F}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_A_Soviet.et" {
+ coords 2291.333 0.977 716.407
+ angleY 48.179
+ angleZ -2.594
+}
+$grp GenericEntity : "{4A4B245D7CAC341B}prefabs/Props/Furniture/ChairOld_02.et" {
+ {
+  coords 3461.356 2.386 2343.242
+  angleY 112.033
+ }
+ {
+  coords 2252.498 94.334 2322.896
+  angleY -138.783
+ }
+}
+$grp GenericEntity : "{4CF66B5FBFD0C6EB}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Folded_Soviet.et" {
+ {
+  coords 1386.804 9.609 1864.717
+  angleY -76
+ }
+ {
+  coords 3075.365 54.696 1715.876
+  angleY -7.023
+ }
+ {
+  coords 2926.895 67.462 1606.147
+  angleY -75
+ }
+ {
+  coords 2926.741 67.459 1605.572
+  angleY -75
+ }
+ {
+  coords 3261.218 2.117 2883.188
+  angleY -39.675
+ }
+ {
+  coords 3260.662 2.117 2882.681
+  angleY -27.099
+ }
+}
+GenericEntity : "{4D797B18EB473B0B}PrefabLibrary/Props/Military/FlagPole_01_empty.et" {
+ coords 3053.763 55.661 1702.692
+}
+$grp GenericEntity : "{4DE60347B19D0354}Prefabs/Props/Furniture/Chair_03/Chair_03_Base.et" {
+ {
+  coords 3046.022 56.04 1710.036
+  angleY -106.294
+ }
+ {
+  coords 3046.025 56.043 1710.679
+  angleY -104.065
+ }
+ {
+  coords 3045.788 56.041 1711.385
+  angleY -95.799
+ }
+ {
+  coords 3045.632 56.041 1712.19
+  angleY -122.666
+ }
+}
+GenericEntity : "{4EF68238FE2FC26B}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_USSR_04.et" {
+ coords 1471.225 1.126 1841.512
+ angleY 120
+}
+$grp GenericEntity : "{50801280D56B67A1}Prefabs/Props/Services/Healthcare/BedMedical_01.et" {
+ {
+  coords 3049.99 55.968 1715.026
+  angleY -12.318
+ }
+ {
+  coords 3052.112 55.968 1715.49
+  angleY -12.318
+ }
+ {
+  coords 3054.373 55.968 1715.984
+  angleY -12.318
+ }
+ {
+  coords 3050.658 55.968 1711.966
+  angleY -12.318
+ }
+}
+GenericEntity : "{50A752B7D5E679A2}Prefabs/Props/Industrial/Repair/GasWelder_01.et" {
+ coords 2932.208 67.993 1622.229
+ angleY -166.546
+}
+$grp GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+ {
+  coords 3566.758 71.776 2645.035
+  angleY 50.502
+ }
+ {
+  coords 3065.265 56.544 1714.723
+  angleY 86.122
+ }
+ {
+  coords 1489.395 2.082 1863.539
+ }
+}
+GenericEntity : "{52572E6F47A801C3}PrefabLibrary/Props/Military/Tire_UAZ469.et" {
+ coords 2610.98 110.951 2487.418
+ angleX 1.71
+ angleY -85.288
+ angleZ 1.039
+}
+GenericEntity : "{52CE7C3A4CF10307}PrefabLibrary/Props/Civilian/Garden/LogChopping_01.et" {
+ coords 2534.699 143.902 2277.893
+ angleY -106.307
+ scale 0.759
+}
+$grp GenericEntity : "{5452BDA9DEFBA5E6}PrefabLibrary/Props/Garbage/TirePile_01_small.et" {
+ {
+  coords 2615.977 110.788 2491.025
+  angleX -0.029
+  angleY 178.149
+  angleZ -0.895
+ }
+ {
+  coords 2613.456 110.949 2482.72
+  angleX 0.212
+  angleY -32.65
+  angleZ 1.99
+ }
+}
+$grp GenericEntity : "{55FB3C326FC49328}prefabs/Trading_Items/Factionless_WPN_TradingStation.et" {
+ {
+  coords 3460.149 2.483 2345.507
+  angleY -77.259
+ }
+ {
+  coords 2255.034 94.511 2323.29
+  angleY 31.925
+ }
+}
+GenericEntity : "{57FB5E487EC91D63}Prefabs/Compositions/Misc/SubCompositions/Barricade_Logs_02.et" {
+ coords 3072.777 11.682 2859.524
+ angleY 18.891
+}
+GenericEntity : "{58F91BD9331B6A9D}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V6.et" {
+ components {
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Enabled 0
+  }
+ }
+ coords 1372.92 9.67 1856.972
+ angleX 0.804
+ angleY -63.964
+ angleZ 0.393
+}
+GenericEntity : "{59E8CDFB824DE3B9}Prefabs/Props/Civilian/Notebook_01_Single_MarbleBlack_CP.et" {
+ coords 2863.257 6.88 1122.995
+ angleY -149.235
+}
+$grp StaticModelEntity : "{5C2E29ECFAD48807}Prefabs/Terrain/Erosion/ErodedEmbankment_01/ErodedEmbankment_01_dirt_turnin.et" {
+ {
+  coords 2219.811 35.76 1630.037
+  angleY 165
+  angleZ 11.075
+ }
+ {
+  coords 2232.774 37.818 1634.031
+  angleY 165
+  angleZ 7.999
+ }
+ {
+  coords 2225.54 36.321 1641.536
+  angleX -1.665
+  angleY -12.216
+  angleZ -12.295
+ }
+ {
+  coords 3321.703 3.822 2068.347
+  angleX 1.011
+  angleY -119.656
+  angleZ -3.68
+ }
+ {
+  coords 3313.319 4.715 2078.884
+  angleY -135
+  angleZ -3.816
+ }
+ {
+  coords 3305.012 5.035 2086.303
+  angleY -137.963
+ }
+ {
+  coords 2237.009 38.852 1642.472
+  angleX 0.635
+  angleY -1.733
+  angleZ -12.389
+ }
+}
+$grp GenericEntity : "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et" {
+ {
+  coords 3462.289 2.398 2344.491
+  angleY 0
+ }
+ {
+  coords 2253.369 94.4 2321.603
+  angleY 109.184
+ }
+ {
+  coords 3181.877 13.344 2720.474
+  angleY 0
+ }
+ {
+  coords 3131.875 11.693 2765.997
+  angleY 0
+ }
+ {
+  coords 2910.401 41.315 2736.128
+  angleY 0
+ }
+ {
+  coords 2925.787 67.247 1594.147
+  angleY 0
+ }
+ {
+  coords 3066.751 72.932 1575.04
+  angleY 0
+ }
+ {
+  coords 1472.36 1.126 1845.766
+  angleY 0
+ }
+}
+$grp GenericEntity : "{5E249786B7A6896D}Prefabs/Props/Construction/ConcretePipe/ConcretePipe_01_Large.et" {
+ {
+  coords 2570.801 6.592 3162.574
+  angleZ 20.534
+  scale 3.37
+ }
+ {
+  coords 2453.846 6.411 3171.615
+  angleX 42.537
+  angleY -12.574
+  angleZ 44.586
+  scale 3.37
+ }
+ {
+  coords 2554.454 3.405 3220.313
+  angleX 58.215
+  angleY -62.309
+  angleZ 4.95
+  scale 3.37
+ }
+ {
+  coords 2484.23 0.737 3212.671
+  angleX 66.658
+  angleY -105.18
+  angleZ 2.819
+  scale 3.37
+ }
+ {
+  coords 2312.825 6.362 3202.689
+  angleX 58.791
+  angleY -79.961
+  angleZ 45.06
+  scale 3.37
+ }
+ {
+  coords 2202.185 2.776 3338.021
+  angleX 67.456
+  angleY -114.284
+  angleZ 8.458
+  scale 3.37
+ }
+ {
+  coords 2169.066 5.777 3499.77
+  angleX -3.233
+  angleY -32.104
+  angleZ 82.677
+  scale 2.258
+ }
+ {
+  coords 2205.676 9.789 3232.045
+  angleX 67.456
+  angleY -114.284
+  angleZ 82.673
+  scale 3.37
+ }
+ {
+  coords 2162.734 16.067 3178.768
+  angleX -59.218
+  angleY -102.797
+  angleZ 76.906
+  scale 3.37
+ }
+}
+GenericEntity : "{5E6CBF60621C39CD}prefabs/Systems/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Ammunition_USSR.et" {
+ coords 2861.635 6.88 1120.162
+ angleY 0.212
+}
+GenericEntity : "{5F76887813B86AD4}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V6_covered.et" {
+ components {
+  SCR_SlotCompositionComponent "{570283C37DBE4F55}" {
+   Enabled 0
+  }
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   Enabled 0
+  }
+ }
+ coords 2537.277 143.578 2264.385
+ angleX -1.673
+ angleY 102.924
+ angleZ 3.285
+}
+$grp GenericEntity : "{60AA21344D68BACE}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Medium_Top_Soviet.et" {
+ {
+  coords 1278.558 38.922 2262.176
+  angleY 169.804
+  scale 1.06
+ }
+ {
+  coords 2512.211 147.829 2266.157
+  angleY -10
+ }
+ {
+  coords 3099.249 72.36 1611.409
+ }
+}
+StaticModelEntity : "{61A1055D397072A5}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_USSR_01.et" {
+ coords 2204.585 53.513 2895.174
+ angleY 137.535
+ {
+  SCR_DestructibleBuildingEntity {
+   ID "5A5344E1DC2830DD"
+   coords 0 0.1 0
+  }
+ }
+}
+$grp GenericEntity : "{62B2ADC4243454F9}Prefabs/Props/Civilian/Jerrycan_01.et" {
+ {
+  components {
+   Hierarchy "{5A427B47A9DF8879}" {
+    Enabled 1
+   }
+  }
+  coords 2207.997 53.552 2898.839
+  angleY 38.637
+ }
+ {
+  components {
+   Hierarchy "{5A427B47A9DF887C}" {
+    Enabled 1
+   }
+  }
+  coords 2208.203 53.556 2898.784
+  angleY 45.255
+ }
+}
+Tree : "{62F83A9D7FC42B7A}PrefabLibrary/Vegetation/Trees/t_pinus_sylvestris_0f.et" {
+ coords 2215.876 0.036 1638.387
+ angleX -4.792
+ angleY 58.515
+ angleZ -7.769
+ scale 1.163
+}
+GenericEntity : "{642101F827FFA52D}Prefabs/Props/Military/Manuals/Manual_Soviet_01.et" {
+ coords 3285.311 2.219 2850.056
+ angleY -12.696
+}
+GenericEntity : "{6435D97D7A23D208}Prefabs/Props/Crates/Crate_01_white.et" {
+ coords 2931.26 68.004 1622.461
+ angleY -25.592
+}
+GenericEntity : "{64A37FE9287F1A77}Prefabs/Props/Industrial/Workbench_02.et" {
+ coords 2930.655 67.994 1622.512
+ angleY -166.924
+}
+$grp GenericEntity : "{65CD3EE14677E3AA}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V1.et" {
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 1260.07 38.962 2235.333
+  angleY 46
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 2540.976 143.573 2269.177
+  angleX 1.79
+  angleZ 1.789
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 1278.337 38.908 2259.511
+  angleX 1.448
+  angleY 53.973
+  angleZ -1.053
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 1261.039 38.962 2233.151
+  angleY -38
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 3283.492 2.218 2857.472
+  angleX 1.79
+  angleY 51.908
+  angleZ 1.789
+ }
+}
+$grp GenericEntity : "{68E9AEC4A23E2CE7}PrefabLibrary/Props/Civilian/Garden/WoodKindling_01.et" {
+ {
+  coords 1384.32 9.62 1863.013
+  angleY -114.25
+  scale 0.923
+ }
+ {
+  coords 1383.999 9.62 1863.397
+  angleY 128.28
+  scale 1.147
+ }
+ {
+  coords 1384.333 9.62 1863.812
+  angleY -152.989
+  scale 1.029
+ }
+ {
+  coords 1383.893 9.619 1862.775
+  angleY 154.681
+  scale 1.033
+ }
+}
+GenericEntity : "{68ED84218EA1BDC2}prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
+ coords 3051.219 56.302 1676.985
+ angleY -166.535
+}
+$grp GenericEntity : "{693602152472D2F6}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_AssemblyKit_Soviet.et" {
+ {
+  coords 2536.885 143.725 2268.193
+  angleY 4
+  angleZ 2.195
+ }
+ {
+  coords 3075.029 54.748 1718
+  angleY -92.407
+ }
+ {
+  coords 2928.201 67.313 1605.802
+  angleY 12.377
+  angleZ 4.271
+ }
+ {
+  coords 3259.243 2.139 2882.758
+  angleY -33.608
+ }
+ {
+  coords 3280.193 2.218 2860.088
+  angleY 55.908
+  angleZ 2.195
+ }
+}
+GenericEntity : "{6C57BFFFA642C60C}Prefabs/Compositions/Misc/SubCompositions/CrateStacked_04.et" {
+ coords 2923.583 67.611 1598.434
+ angleY 16.421
+}
+GenericEntity : "{6CD65604C7945A66}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_03.et" {
+ coords 2207.893 53.407 2881.653
+ angleY -78.478
+ {
+  DecalEntity {
+   ID "56E0B29E01E2AC90"
+   coords 8.283 0 0
+  }
+ }
+}
+$grp GenericEntity : "{6D66A35ABDA08197}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_USSR_01.et" {
+ {
+  coords 3062.122 55.662 1714.306
+ }
+ {
+  coords 3063.529 55.649 1714.634
+  angleY 70.57
+ }
+ {
+  coords 3064.699 55.642 1714.304
+  angleY 70.57
+ }
+}
+GenericEntity : "{6F3C54D31ED01EFC}Prefabs/Structures/BuildingParts/Eletrical/AmplionAddon_E_01/AmplionAddon_E_01_base.et" {
+ coords 2928.21 68.19 1621.771
+ angleX -24.822
+ angleY 8.732
+ angleZ -97.997
+}
+$grp GenericEntity : "{6FD4315AF0CDA442}PrefabLibrary/Props/Industrial/Pallet_01_Pile.et" {
+ {
+  coords 1258.475 38.962 2237.36
+  angleY -132.865
+ }
+ {
+  coords 1259.042 38.962 2234.954
+  angleY -44.892
+ }
+ {
+  coords 2540.534 143.575 2268.173
+  angleX 2.67
+  angleY -90.892
+  angleZ -0.936
+ }
+ {
+  coords 2538.411 143.668 2269.439
+  angleX -0.859
+  angleY -178.865
+  angleZ -1.807
+ }
+ {
+  coords 3061.218 55.442 1711.209
+  angleX -1.846
+  angleY 86.147
+  angleZ -0.772
+ }
+ {
+  coords 3016.613 56.212 1683.994
+  angleX -0.301
+  angleY -9.328
+  angleZ -0.843
+ }
+ {
+  coords 2977.144 62.189 1638.315
+  angleX 0.169
+  angleY 179.459
+  angleZ 0.879
+ }
+ {
+  coords 2977.72 61.707 1639.625
+  angleX -2.651
+  angleY 90.555
+  angleZ -3.596
+ }
+ {
+  coords 3257.153 2.36 2873.501
+  angleY 144.113
+ }
+ {
+  coords 3285.535 2.335 2848.624
+  angleX -0.109
+  angleY -39.495
+  angleZ -0.242
+ }
+ {
+  coords 3282.116 2.218 2859.654
+  angleX -0.859
+  angleY -126.957
+  angleZ -1.807
+ }
+ {
+  coords 3257.729 2.031 2887.994
+  angleY -125.886
+ }
+ {
+  coords 3256.548 2.047 2887.209
+  angleX 0.893
+  angleY 60.117
+  angleZ 0.065
+ }
+ {
+  coords 3284.879 2.2 2848.083
+  angleX -0.109
+  angleY -39.495
+  angleZ -0.242
+ }
+ {
+  coords 3282.43 2.218 2857.203
+  angleX 2.67
+  angleY -38.985
+  angleZ -0.936
+ }
+ {
+  coords 3256.476 2.089 2873.027
+  angleX 0.893
+  angleY -29.883
+  angleZ 0.065
+ }
+}
+GenericEntity : "{72DB1179C1201B64}PrefabLibrary/Props/Garbage/Cardboard_03.et" {
+ coords 3245.664 2.392 2877.898
+ angleX -0.758
+ angleY 178.08
+ angleZ -0.476
+ scale 0.908
+}
+$grp GenericEntity : "{757FCCE8E756175C}Prefabs/Props/Furniture/MeetingTable_01.et" {
+ {
+  coords 3055.006 55.961 1712.826
+  angleY 78.365
+ }
+ {
+  coords 3042.015 56.062 1711.381
+  angleY -11.299
+ }
+}
+$grp StaticModelEntity : "{75A7C06222E6218B}Prefabs/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.et" {
+ {
+  components {
+   MeshObject "{527A8AD68830D1F5}" {
+    ClutterOccluder 1
+   }
+  }
+  coords 2540.457 143.75 2275.096
+  angleX 2.623
+  angleY -93.583
+  angleZ -1.06
+ }
+ {
+  components {
+   MeshObject "{527A8AD68830D1F5}" {
+    ClutterOccluder 1
+   }
+  }
+  coords 2535.881 143.842 2273.609
+  angleZ 0.895
+ }
+ {
+  components {
+   MeshObject "{527A8AD68830D1F5}" {
+    ClutterOccluder 1
+   }
+  }
+  coords 2532.081 143.937 2279.705
+  angleY 127.284
+ }
+}
+GenericEntity : "{75FEF1CA582431F3}Prefabs/Props/Wrecks/BTR70_wreck.et" {
+ coords 3292.402 31.374 2665.815
+ angleX -15.455
+ angleY -21.044
+}
+$grp StaticModelEntity : "{764414C0E2EF983E}Prefabs/Props/Military/Furniture/TableMilitary_USSR_02.et" {
+ {
+  coords 2539.832 143.633 2270.119
+  angleX 0.894
+  angleY 0.028
+  angleZ 1.79
+ }
+ {
+  coords 1259.953 38.962 2236.811
+  angleY 46.028
+ }
+ {
+  coords 2539.721 143.558 2263.978
+  angleX 0.533
+  angleY -175.637
+  angleZ 0.038
+ }
+ {
+  coords 1386.123 9.558 1861.545
+  angleX 0.577
+  angleY -163.269
+  angleZ 0.234
+ }
+ {
+  coords 1390.742 9.584 1872.854
+  angleX -1.269
+  angleY 7.757
+  angleZ 0.569
+ }
+ {
+  coords 1391.758 9.556 1869.692
+  angleX -1.269
+  angleY 7.757
+  angleZ 0.569
+ }
+ {
+  coords 1304.144 11.4 1887.202
+  angleY -75
+ }
+ {
+  coords 1302.778 11.4 1890.906
+  angleY -157.211
+ }
+ {
+  coords 1385.458 9.588 1851.419
+  angleY -166.915
+ }
+ {
+  coords 3284.472 2.2 2849.273
+  angleX -0.101
+  angleY -37.606
+  angleZ -0.246
+ }
+ {
+  coords 3284.855 2.219 2854.723
+  angleY 145.228
+ }
+ {
+  coords 3283.528 2.218 2858.957
+  angleX 0.894
+  angleY 51.936
+  angleZ 1.79
+ }
+}
+GenericEntity : "{76D4B8AFA34EE178}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V1_covered.et" {
+ components {
+  SCR_SlotCompositionComponent "{570283C3593D9483}" {
+   Enabled 0
+  }
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Enabled 0
+  }
+ }
+ coords 1372.356 9.693 1858.776
+ angleX -1.338
+ angleY -166.904
+ angleZ -2.149
+}
+GenericEntity : "{78A930FB0825AA9F}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Camo_long_high_USSR.et" {
+ coords 2853.054 6.336 1123.877
+ angleY 89.348
+}
+$grp GenericEntity : "{79AA43911CC6C3E8}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Small_Soviet.et" {
+ {
+  coords 1376.758 9.979 1837.587
+  angleY -170.077
+ }
+ {
+  coords 2502.549 147.424 2268.733
+  angleY 85
+ }
+ {
+  coords 1397.33 10.954 1845.097
+  angleY 17
+ }
+}
+$grp GenericEntity : "{7AF4B627D5C90235}Prefabs/Props/Military/Sandbags/Sandbag_01_round_high_burlap.et" {
+ {
+  components {
+   Hierarchy "{5A427B47A9DF886C}" {
+    Enabled 1
+   }
+  }
+  coords 2207.869 53.307 2900.559
+  angleY 45.277
+ }
+ {
+  coords 3240.271 4.589 2848.657
+  angleY -66.954
+ }
+ {
+  coords 3240.905 4.645 2846.614
+  angleY -150
+ }
+ {
+  coords 2932.056 67.344 1609.842
+  angleY 52.204
+ }
+}
+$grp StaticModelEntity : "{7B79E1EA73D3F4B0}prefabs/Props/Military/Furniture/ChairMilitary_USSR_02.et" {
+ {
+  coords 2205.658 53.409 2890.435
+  angleY 135.514
+ }
+ {
+  coords 2230.29 53.469 2871.75
+  angleY 135.514
+ }
+ {
+  coords 2232.4 53.419 2867.2
+  angleY -42.098
+ }
+ {
+  coords 2957.761 63.425 1642.344
+  angleY 127.826
+ }
+ {
+  coords 2960.55 63.355 1639.5
+  angleY 0
+ }
+ {
+  coords 3334.631 13.012 2803.806
+  angleY 167.702
+ }
+ {
+  coords 3333.793 13.184 2800.622
+  angleY 47.217
+ }
+ {
+  coords 1362.047 46.989 2962.107
+  angleY 58.19
+ }
+ {
+  coords 3041.577 56.051 1710.119
+  angleY 20.613
+ }
+ {
+  coords 3042.88 56.051 1710.373
+  angleY -45.879
+ }
+ {
+  coords 3041.501 56.051 1712.207
+  angleY 149.903
+ }
+ {
+  coords 3041.216 55.824 1705.682
+  angleY 121.022
+ }
+ {
+  coords 1513.532 1.179 1857.214
+  angleY -176.432
+ }
+}
+GenericEntity : "{7BB30759D09C70B5}Prefabs/Props/Civilian/StepladderWooden_01.et" {
+ coords 2927.123 67.808 1608.282
+ angleX 89.477
+ angleY -70.563
+}
+$grp GenericEntity : "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et" {
+ {
+  coords 2040.65 43.633 2678.487
+ }
+ {
+  coords 2040.303 43.633 2678.057
+ }
+ {
+  coords 2040.587 43.633 2678.396
+ }
+ {
+  coords 2049.828 43.811 2676.963
+ }
+ {
+  coords 2050.396 43.826 2677.334
+ }
+}
+$grp GenericEntity : "{7C93700E1AC4C387}prefabs/Systems/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Medical_USSR.et" {
+ {
+  coords 2866.182 6.869 1124.909
+  angleY -91.131
+ }
+ {
+  coords 3055.355 56.871 1712.27
+  angleY -100.524
+ }
+}
+$grp GenericEntity : "{7D43259370387410}PrefabLibrary/Props/Garbage/Cardboard_Pile_03.et" {
+ {
+  coords 3250.528 2.289 2876.961
+  angleX 0.579
+  angleY 15.657
+  angleZ 0.683
+  scale 1.087
+ }
+ {
+  coords 3256.22 2.125 2883.989
+  angleX -0.682
+  angleY 105.65
+  angleZ 0.579
+  scale 1.087
+ }
+}
+GenericEntity : "{7DA20C66CE0299D6}Prefabs/Structures/Signs/Military/Sign_CommandPost_USSR_01.et" {
+ components {
+  Hierarchy "{5A427B47A9DF8869}" {
+   Enabled 1
+  }
+ }
+ coords 2206.395 53.576 2885.948
+ angleX -1.992
+ angleY 152.3
+ angleZ 0.6
+}
+GenericEntity : "{7E5A4578657283E6}Prefabs/Props/Industrial/GasTank_02_red.et" {
+ coords 2933.053 67.987 1622.108
+ angleY 171.24
+}
+GenericEntity : "{7F95D831CA586F06}prefabs/Compositions/Misc/SubCompositions/CableReelWooden_Cluttered_USSR_01.et" {
+ coords 1513.809 1.163 1855.772
+ angleY 0
+}
+GenericEntity : "{8088790C2D455045}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Small_Top_Soviet.et" {
+ coords 2525.658 143.894 2270.742
+ angleY 14
+}
+DecalEntity : "{82EAFB1B8237D519}PrefabLibrary/Decals/Dirt/Decal_Dirt_Patch_04.et" {
+ coords 3256.889 0 2884.222
+ angleX -89.96
+ angleY 142.552
+ scale 4.949
+}
+$grp GenericEntity : "{83A10E8547281E57}prefabs/Compositions/Slotted/SlotRoadSmall/Barricade_S_USSR_01.et" {
+ {
+  coords 2213.433 53.229 2867.265
+  angleY -138.13
+ }
+ {
+  coords 2242.486 54.549 2915.851
+  angleX 4.744
+  angleY -8.789
+ }
+}
+SCR_BaseTaskManager : "{87208DAD6F3C0DE2}Prefabs/MP/Managers/Tasks/TaskManager_Editor.et" {
+ coords -1801.377 160.011 3018.211
+ {
+  SCR_CP_TaskSupportEntity : "{0B69970680D47921}SupportEntities/Task_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskDestroySupportEntity DestroySupportEntity_1 : "{0F2AEEA910943EFE}SupportEntities/Destroy_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskDeliverSupportEntity DeliverSupportEntity_1 : "{762CBEA255677741}SupportEntities/Delivery_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskKillSupportEntity : "{CAB1B044166CA912}SupportEntities/Kill_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskClearAreaSupportEntity ClearAreaSupportEntity_1 : "{CB5AB93B8421B9A8}SupportEntities/ClearAre_SupportEntity.et" {
+   coords 0 0 0
+  }
+  SCR_CP_TaskExtractSupportEntity : "{CD4FCC0C276FAFE5}SupportEntities/Extract_SupportEntity.et" {
+   coords 0 0 0
+  }
+ }
+}
+$grp GenericEntity : "{876B096F32584485}Prefabs/Props/Civilian/FileOffice_01_Stack.et" {
+ {
+  coords 2864.362 6.88 1122.365
+  angleY -170.436
+ }
+ {
+  coords 3040.319 57.508 1713.777
+  angleY 160.85
+ }
+}
+SCR_DestructibleEntity : "{8A4C9D5B12F83209}Prefabs/Compositions/Misc/SubCompositions/BarbedCoil_Cluttered_USSR_01.et" {
+ coords 3042.28 -0.011 1706.583
+ angleY -77.475
+}
+GenericEntity : "{8B97C14F4617AC07}Prefabs/Compositions/Misc/SubCompositions/EquipmentBoxStacked_Cluttered_USSR_03.et" {
+ coords 2927.527 67.995 1619.875
+ angleY -77.645
+}
+$grp GenericEntity : "{8BB5855208F77724}prefabs/Props/Furniture/BenchWooden_01.et" {
+ {
+  coords 2232.708 53.504 2870.42
+  angleX -2.355
+  angleY -113.492
+  angleZ -0.928
+ }
+ {
+  coords 2210.163 53.532 2897.793
+  angleX 1.223
+  angleY 106.106
+  angleZ 2.215
+ }
+ {
+  coords 3058.341 55.803 1691.964
+  angleY -91.395
+ }
+ {
+  coords 2253.564 94.262 2319.699
+  angleY 145.021
+ }
+}
+$grp GenericEntity : "{8C82BBBDEE9CBA3A}Prefabs/Props/Military/Camps/WeaponRackStand_01.et" {
+ {
+  coords 1373.227 9.687 1864.528
+  angleX 1.073
+  angleY 102.988
+  angleZ -0.671
+ }
+ {
+  coords 1373.999 9.738 1867.553
+  angleX 3.454
+  angleY 105.039
+  angleZ 0.927
+ }
+ {
+  coords 1370.583 9.608 1852.949
+  angleX 2.416
+  angleY 104.808
+  angleZ -2.136
+ }
+ {
+  coords 1372.764 9.696 1862.741
+  angleX 0.216
+  angleY 103.995
+  angleZ -0.869
+ }
+}
+GenericEntity : "{8E431002132E51BD}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Footprints_01.et" {
+ coords 2209.005 53.407 2880.542
+ angleY -30
+}
+GenericEntity : "{8FE6D62204173656}Prefabs/Props/Civilian/BeerBottle_01_group.et" {
+ coords 2925.542 67.759 1608.474
+ angleY 20.886
+}
+$grp Tree : "{932E56F57F6F0C9A}PrefabLibrary/Vegetation/Bushes/b_salix_cinerea_1w.et" {
+ {
+  coords 3337.81 -0.227 2068.174
+  angleX -1.169
+  angleY -174.708
+  angleZ 2.415
+  scale 0.861
+ }
+ {
+  coords 3327.766 -1.825 2071.656
+  angleX 1.973
+  angleY -78.886
+  angleZ 3.451
+  scale 1.172
+ }
+ {
+  coords 3322.057 -0.97 2086.599
+  angleX -1.351
+  angleY 136.139
+  angleZ 1.084
+  scale 0.81
+ }
+ {
+  coords 3326.466 -1.313 2084.501
+  angleX 3.828
+  angleY 7.178
+  angleZ 2.374
+  scale 1.087
+ }
+ {
+  coords 3338.989 -0.184 2073.024
+  angleX 3.326
+  angleY 63.823
+  angleZ -5.745
+  scale 1.168
+ }
+ {
+  coords 3339.603 -0.047 2076.359
+  angleX 2.464
+  angleY 147.585
+  angleZ 1.059
+  scale 1.004
+ }
+ {
+  coords 3336.665 -0.043 2071.358
+  angleX -4.121
+  angleY -18.25
+  angleZ -2
+  scale 0.793
+ }
+ {
+  coords 3323.486 -1.092 2090.408
+  angleX 6.608
+  angleY -53.491
+  angleZ 0.205
+  scale 1.113
+ }
+}
+$grp GenericEntity : "{937999008F178E82}Prefabs/Props/Military/Sandbags/Sandbag_01_short_high_burlap.et" {
+ {
+  components {
+   Hierarchy "{5A427B47A9DF8811}" {
+    Enabled 1
+   }
+  }
+  coords 2208.389 53.307 2887.724
+  angleY -30
+ }
+ {
+  coords 3271.31 2.228 2847.793
+  angleY 60
+ }
+ {
+  coords 2852.951 6.459 1126.51
+  angleY -89.098
+ }
+ {
+  coords 2853.161 6.498 1128.341
+  angleY -89.098
+ }
+ {
+  coords 2853.311 6.284 1130.183
+  angleY 92.745
+ }
+ {
+  coords 2859.227 5.801 1133.231
+  angleY 175.771
+ }
+ {
+  coords 2861.138 5.807 1133.122
+  angleY -174.542
+ }
+ {
+  coords 2862.954 5.856 1133.134
+  angleY 177.612
+ }
+ {
+  coords 2853.284 6.264 1121.054
+  angleY -89.098
+ }
+ {
+  coords 3055.491 11.901 2891.618
+  angleY -46.245
+ }
+ {
+  coords 3056.779 11.779 2892.891
+  angleY -46.245
+ }
+ {
+  coords 3058.087 11.691 2894.26
+  angleY 128.109
+ }
+ {
+  coords 3059.421 11.61 2895.343
+  angleY 148.869
+ }
+ {
+  coords 3060.673 11.541 2896.551
+  angleY 123.394
+ }
+ {
+  coords 3061.688 11.599 2898.091
+  angleY 123.394
+ }
+ {
+  coords 3062.702 11.721 2899.753
+  angleY 123.394
+  angleZ 7.281
+ }
+}
+$grp GenericEntity : "{93B2511EFB2B6A51}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/CrateStack_01_grey.et" {
+ {
+  coords 3017.915 56.13 1682.87
+  angleY -97.351
+ }
+ {
+  coords 3018.069 56.121 1681.678
+  angleY -97.351
+ }
+ {
+  coords 3017.772 56.139 1683.974
+  angleY -7.351
+ }
+}
+$grp GenericEntity : "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" {
+ {
+  coords 1447.949 36.261 2279.984
+  angleY 88.569
+ }
+ {
+  coords 3370.744 1.85 2841.114
+  angleX 4.464
+  angleY 112.205
+ }
+ {
+  coords 3135.341 14.487 2707.901
+  angleY -59.454
+ }
+ {
+  coords 2392.405 0.966 3279.44
+  angleY -176.086
+ }
+}
+GenericEntity : "{9545DA837C6C4E3F}Prefabs/Props/Crates/Crate_01_yellow.et" {
+ coords 2927.323 67.998 1620.986
+ angleY 77.959
+}
+$grp StaticModelEntity : "{9639C7B3CF572320}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_old_V2.et" {
+ {
+  coords 2940.83 -0.086 1621.378
+ }
+ {
+  coords 2939.73 0 1603.38
+  angleX 3.044
+  angleY -75.601
+  angleZ -1.065
+ }
+ {
+  coords 2940.894 0 1588.942
+  angleX 5
+  angleY -75.645
+  angleZ -1.488
+ }
+ {
+  coords 2954.38 0 1612.59
+  angleX 7.37
+  angleY -75.499
+  angleZ 0.054
+ }
+}
+$grp GenericEntity : "{96C0A7DFEAFAF534}prefabs/Beds/Fia_BedSpawn.et" {
+ {
+  coords 1684.819 3.311 874.716
+  angleY 7.535
+ }
+ {
+  coords 3567.108 71.527 2646.339
+  angleY -50.616
+ }
+ {
+  coords 2548.801 69.679 1186.808
+  angleY 11.957
+ }
+ {
+  coords 2292.498 0.806 714.891
+  angleY 55.179
+ }
+ {
+  coords 3458.61 2.252 2345.989
+  angleY 36.123
+ }
+ {
+  coords 2255.995 94.28 2324.585
+  angleY 145.307
+ }
+}
+GenericEntity : "{975B4AB9CF32FDBA}Prefabs/Props/Civilian/Fan_01.et" {
+ coords 3042.78 56.968 1712.287
+ angleY -165
+}
+$grp GenericEntity : "{97CB57E67481F871}Prefabs/Props/Civilian/Notebook_01_Single_Orange.et" {
+ {
+  coords 2863.523 6.88 1122.209
+  angleY 34.693
+ }
+ {
+  coords 2928.416 68.654 1612.262
+  angleY -36.672
+ }
+ {
+  coords 2928.677 68.654 1612.311
+  angleY 2.459
+ }
+}
+GenericEntity : "{9ABAFFCBC76D824B}Prefabs/Props/Civilian/NoticeBoardCork_01.et" {
+ coords 3284.568 3.2 2855.361
+ angleY 144.688
+}
+$grp GenericEntity : "{9B7F08BF4C938AD2}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_Soviet.et" {
+ {
+  coords 2539.427 143.637 2269.287
+  angleY -90
+ }
+ {
+  components {
+   Hierarchy "{5A427B47A9DF881A}" {
+    Enabled 1
+   }
+  }
+  coords 2206.932 53.587 2899.372
+  angleY -134.185
+  scale 0.85
+ }
+ {
+  coords 3278.631 2.218 2841.398
+  angleY 53.676
+ }
+ {
+  coords 3242.448 4.702 2847.752
+  angleY -29.734
+ }
+ {
+  coords 3274.844 2.228 2846.549
+  angleY 53.676
+ }
+ {
+  coords 3280.408 2.228 2838.982
+  angleY 53.676
+ }
+ {
+  coords 3276.758 2.218 2843.947
+  angleY 53.676
+ }
+ {
+  coords 3282.624 2.218 2858.761
+  angleY -38.092
+ }
+ {
+  coords 2546.733 69.778 1186.553
+  angleY 6.707
+ }
+}
+SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+ coords 2703.911 24.072 -1754.919
+ CollectorIterations 6
+ CharacterLifetime 2000
+ VehicleLifetime 1800
+ ItemLifetime 2000
+ m_bOnlyDestroyed 1
+}
+$grp GenericEntity : "{9C231B6AC1BD0A26}Prefabs/Props/Civilian/Broom_01.et" {
+ {
+  coords 3041.882 56.051 1714.29
+  angleX -11.033
+ }
+ {
+  coords 2927.346 67.985 1618.489
+  angleX 14.774
+ }
+}
+GenericEntity : "{9C47AA9369ACB1C6}PrefabLibrary/Props/Military/Tire_BTR70.et" {
+ coords 2614.593 110.806 2493.47
+}
+$grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+ {
+  coords 3273.877 2.353 2843.984
+  angleY -126.443
+ }
+ {
+  coords 3279.879 2.317 2837.524
+  angleY -36.443
+ }
+ {
+  coords 3275.362 2.395 2841.973
+  angleY 53.557
+ }
+ {
+  coords 3272.392 2.3 2845.997
+  angleY 53.557
+ }
+ {
+  coords 3278.332 2.463 2837.952
+  angleY 53.557
+ }
+ {
+  coords 3276.847 2.424 2839.962
+  angleY 53.557
+ }
+}
+GenericEntity : "{9DBA8179AFD4FF9F}Prefabs/Props/Furniture/LightTable_02.et" {
+ coords 2862.174 6.88 1120.014
+ angleY 60.238
+}
+GenericEntity : "{9F9924B626C5FA2B}prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_USSR_01.et" {
+ coords 3046.761 12.093 2888.775
+ angleX 2.495
+ angleY -49.362
+}
+GenericEntity : "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" {
+ coords 2211.415 53.231 2850.969
+ angleY 45
+}
+GenericEntity : "{A084E2908AA694CB}Prefabs/Structures/BuildingParts/Industrial/ToolRack_Filled_01.et" {
+ coords 2930.705 69.522 1622.87
+ angleX 7.83
+ angleY -166.572
+ angleZ 0.121
+}
+$grp GenericEntity : "{A0ACD52C934CFA92}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5_covered.et" {
+ {
+  components {
+   SCR_SlotCompositionComponent "{570283C37434F5E9}" {
+    Enabled 0
+   }
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+  }
+  coords 1372.593 9.705 1859.773
+  angleX -0.354
+  angleY 11.42
+  angleZ 1.754
+ }
+ {
+  components {
+   SCR_SlotCompositionComponent "{570283C37434F5E9}" {
+    Enabled 0
+   }
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 2541.633 143.488 2265.95
+ }
+}
+GenericEntity : "{A208248B503EF831}Prefabs/Props/Civilian/Cart_01.et" {
+ coords 2928.011 68.081 1622.345
+ angleX 45.465
+}
+GenericEntity : "{A23255A73D4E9FFC}PrefabLibrary/Props/Construction/PaintCan_01.et" {
+ coords 3258.293 2.135 2883.367
+ angleX -0.425
+ angleY -104.653
+ angleZ -0.142
+}
+$grp GenericEntity : "{A700AD9077074654}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Large_Soviet.et" {
+ {
+  coords 1258.709 38.966 2238.385
+  angleY 126.285
+ }
+ {
+  coords 3013.738 56.391 1683.431
+  angleY 1.948
+ }
+ {
+  coords 2982.243 62.145 1636.004
+  angleY -155.428
+ }
+}
+$grp DecalEntity : "{A8F7CB83AA7FE99B}Prefabs/Decals/Dirt/Decal_Dirt_Footprints_02.et" {
+ {
+  components {
+   Hierarchy "{56E0B29EBDD2485F}" {
+   }
+  }
+  coords 1389.207 -0.036 1873.794
+  angleX -90
+  angleY 180
+  angleZ -180
+  FarPlane 1.5
+ }
+ {
+  components {
+   Hierarchy "{56E0B29EBDD2485F}" {
+   }
+  }
+  coords 1384.915 -0.037 1859.927
+  angleX -90
+  angleY 180
+  angleZ -180
+  FarPlane 1.5
+ }
+ {
+  coords 1388.241 -0.035 1873.008
+  angleX -90
+ }
+ {
+  coords 1385.44 -0.039 1859.775
+  angleX -90
+  angleY 180
+  angleZ -180
+ }
+ {
+  coords 1392.93 -0.037 1873.827
+  angleX -90
+ }
+ {
+  coords 1390.445 -0.036 1874.597
+  angleX -90
+ }
+}
+$grp GenericEntity : "{A924939DC9CB318C}Prefabs/Props/Commercial/CabinetCardFile_01/CabinetCardFile_01_grey.et" {
+ {
+  coords 3040.378 56.067 1713.772
+  angleY 165
+ }
+ {
+  coords 3040.888 56.067 1713.909
+  angleY 167.625
+ }
+ {
+  coords 3041.406 56.067 1714.048
+  angleY 159.928
+ }
+}
+SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords -1816.057 160.897 3006.094
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{5B0B14AD91AFE96B}" {
+   m_sLoadoutName "Starting Loadout"
+   m_sLoadoutResource "{51F5214E43167A62}prefabs/Characters/DefaultCharacter_Arland.et"
+   m_sAffiliatedFaction "SPEIRA"
+  }
+  SCR_FactionPlayerLoadout "{5CFD305894BD543D}" {
+   m_sLoadoutResource "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+   m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{5CFD48751FCFC691}" {
+   m_sLoadoutResource "{2D4256EC479F8844}prefabs/Characters/DefaultCharacter_US.et"
+   m_sAffiliatedFaction "US"
+  }
+ }
+}
+$grp GenericEntity : "{AC68AFDF1B181436}PrefabLibrary/Props/Industrial/WoodenPalletBox_01.et" {
+ {
+  coords 1386.418 9.616 1863.836
+  angleX -0.872
+  angleY 103.002
+  angleZ -0.201
+ }
+ {
+  coords 3016.776 56.201 1682.45
+  angleY 10.341
+  angleZ -0.895
+ }
+}
+$grp GenericEntity : "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et" {
+ {
+  coords 2863.731 5.98 1122.916
+  angleY -180
+ }
+ {
+  coords 2863.731 5.98 1122.252
+ }
+ {
+  coords 2861.924 5.98 1120.154
+  angleY -180
+ }
+}
+DecalEntity : "{AECF054EA98F1929}PrefabLibrary/Decals/Asphalt/Decal_Asphalt_Patch_BlobCluster_02.et" {
+ coords 3247.948 0.001 2879.002
+ angleX -89.951
+ angleY 55.982
+ scale 3
+}
+GenericEntity : "{AF87DF4E0C8C81C4}Prefabs/Props/Services/Healthcare/LampMedical_01.et" {
+ coords 3054.46 55.978 1714.348
+ angleY -105
+}
+StaticModelEntity : "{B03F9691E961C4CA}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v3.et" {
+ components {
+  Hierarchy "{5A427B47A9DF8807}" {
+   Enabled 1
+  }
+ }
+ coords 2209.344 -0.099 2888.156
+ angleY -30
+}
+$grp GenericEntity : "{B17411929589C43C}prefabs/MP/Campaign/Assets/CampaignHQRadioEast.et" {
+ {
+  coords 2864.21 6.88 1122.832
+ }
+ {
+  coords 3065.369 56.544 1714.349
+  angleY -104.22
+ }
+ {
+  coords 3042.622 56.97 1712.823
+  angleY -125.9
+ }
+}
+GenericEntity : "{B2658E47B2E284C7}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/Dst/CrateStack_01_Dst_3_decal_02.et" {
+ coords 2922.31 67.611 1602.823
+ angleY -71.379
+}
+$grp GenericEntity : "{B31A14BC1A0E7776}Prefabs/Props/Military/Sandbags/Sandbag_01_round_burlap.et" {
+ {
+  coords 3295.665 2.177 2846.599
+  angleY -170.557
+ }
+ {
+  coords 1476.028 1.101 1846.788
+  angleY 58.744
+ }
+}
+$grp GenericEntity : "{B3283803059E2750}Prefabs/Props/Crates/CrateWooden_01_plain.et" {
+ {
+  coords 1259.07 38.962 2236.21
+  angleY -44
+ }
+ {
+  coords 2536.658 143.765 2269.326
+  angleY 1
+ }
+ {
+  coords 2539.651 143.623 2269.068
+  angleY -90
+ }
+ {
+  coords 2537.526 143.713 2269.286
+  angleY -179
+ }
+ {
+  coords 3280.946 2.218 2860.963
+  angleY 52.908
+ }
+ {
+  coords 3282.59 2.218 2858.45
+  angleY -38.092
+ }
+ {
+  coords 3281.45 2.218 2860.257
+  angleY -127.092
+ }
+}
+GenericEntity : "{B3286DBA01D17D24}PrefabLibrary/Props/Commercial/BoxWooden_01.et" {
+ coords 3252.994 2.514 2873.261
+ angleX -0.314
+ angleY 14.534
+ angleZ 2.191
+}
+GenericEntity : "{B3C782D689A52412}Prefabs/Props/Civilian/FileOffice_01_Open.et" {
+ coords 3042.215 56.97 1712.616
+ angleY -109.333
+}
+GenericEntity : "{B4FFD63EDFCBD850}Prefabs/Compositions/Misc/SubCompositions/CrateStacked_02.et" {
+ coords 2921.482 67.613 1598.97
+ angleY 15.173
+}
+$grp GenericEntity : "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" {
+ {
+  coords 2956.787 63.905 1636.163
+  angleY -122.798
+ }
+ {
+  coords 2957.71 63.146 1646.922
+  angleX -7.785
+  angleY 57.215
+  angleZ -0.155
+ }
+ {
+  coords 3062.201 55.607 1694.714
+  angleY 83.371
+ }
+}
+$grp GenericEntity : "{B547CF929FCC6BB7}Prefabs/Props/Military/Sandbags/Sandbag_01_end_high_burlap.et" {
+ {
+  coords 3096.35 72.396 1608.59
+  angleY 180
+ }
+ {
+  coords 3097.133 72.18 1611.87
+  angleY -96.009
+ }
+ {
+  coords 3095.856 71.94 1614.854
+  angleY 164.902
+ }
+ {
+  coords 3102.819 72.029 1611.385
+  angleY 84.771
+ }
+ {
+  coords 3101.315 72.568 1608.799
+  angleY -15
+ }
+ {
+  components {
+   Hierarchy "{5A427B47A9DF8803}" {
+    Enabled 1
+   }
+  }
+  coords 2209.768 53.307 2888.74
+  angleY -30
+ }
+ {
+  components {
+   Hierarchy "{5A427B47A9DF880C}" {
+    Enabled 1
+   }
+  }
+  coords 2206.961 53.307 2886.812
+  angleY 150
+ }
+ {
+  coords 3276.135 2.219 2849.874
+  angleY -33.3
+ }
+ {
+  coords 3275.379 2.219 2848.661
+  angleY 56.7
+ }
+ {
+  coords 3278.059 2.218 2844.265
+  angleY 146.7
+ }
+ {
+  coords 3271.079 2.047 2849.266
+  angleY -33.459
+ }
+ {
+  coords 3245.44 2.043 2884.761
+  angleY -126.672
+ }
+ {
+  coords 3244.386 4.19 2848.068
+  angleY -120
+ }
+ {
+  coords 3253.397 2.014 2885.511
+  angleY -30
+ }
+}
+GenericEntity : "{B5F4EDE258B8D946}Prefabs/Props/Civilian/FileOffice_01_Single.et" {
+ coords 3040.577 57.511 1713.765
+ angleY 165
+ angleZ 13.332
+}
+DecalEntity : "{B67F6EEAC8056C12}PrefabLibrary/Decals/Asphalt/Decal_Asphalt_Smudge_01_large.et" {
+ coords 3257.026 -0.001 2881.894
+ angleX -89.972
+ angleY 86.982
+ scale 3
+}
+GenericEntity : "{B6895A2FB9F47B9C}PrefabLibrary/Props/Industrial/TableWorkshop_01.et" {
+ coords 3251.681 2.495 2876.837
+ angleY -30
+}
+$grp GenericEntity : "{B898D2A1F45058F6}Prefabs/Props/Garbage/Military/Food/GarbageFoodMilitaryUSSR_01.et" {
+ {
+  coords 3282.277 2.189 2861.772
+  angleX 0.893
+  angleY 51.936
+  angleZ 3.576
+ }
+ {
+  coords 3281.829 2.218 2858.377
+  angleX 0.895
+  angleY 51.922
+  angleZ 1.79
+ }
+}
+$grp GenericEntity : "{BC81E968D1B4C6B4}Prefabs/Props/Military/Camps/BoardingLadder_01/BoardingLadder_USSR_01.et" {
+ {
+  coords 1210.35 38.38 2838.769
+  angleY 63
+  angleZ 93.006
+ }
+ {
+  coords 1270.284 38.091 2854.659
+  angleX 1.273
+  angleY 53.815
+  angleZ 92.508
+ }
+ {
+  coords 1232.253 38.155 2844.008
+  angleX -1.873
+  angleY 101.528
+  angleZ 93.42
+ }
+ {
+  coords 1250.07 38.03 2850.341
+  angleX 1.77
+  angleY 45.894
+  angleZ 92.803
+ }
+}
+GenericEntity : "{BCB4BD5DE153BCFD}PrefabLibrary/Vegetation/Debris/T_stump_debris_01_dry.et" {
+ coords 2090.541 68.335 2309.886
+ angleX -1.801
+ angleY -117.894
+ angleZ 9.637
+ scale 0.811
+}
+$grp GenericEntity : "{BD65F1D86388640D}Prefabs/Props/Civilian/FireExtinguisher_01.et" {
+ {
+  coords 2861.139 5.957 1125.3
+  angleY 138.82
+ }
+ {
+  coords 3045.148 56.049 1715.16
+  angleY -118.468
+ }
+}
+$grp GenericEntity : "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et" {
+ {
+  coords 3101.063 71.883 1614.934
+  angleY 5.808
+ }
+ {
+  coords 3102.418 72.028 1613.555
+  angleY 79.551
+ }
+ {
+  coords 3098.816 72.587 1608.596
+ }
+ {
+  coords 3097.332 72.187 1609.726
+  angleY 83.923
+ }
+ {
+  coords 3098.12 71.956 1615.116
+ }
+ {
+  coords 3246.775 2.185 2882.894
+  angleY 54.935
+ }
+ {
+  coords 3248.704 2.163 2882.201
+  angleY -35.065
+ }
+ {
+  coords 3251.241 2.08 2883.982
+  angleY -35.065
+ }
+ {
+  coords 3242.989 4.294 2846.733
+  angleY -27.951
+ }
+ {
+  coords 2953.719 63.913 1639.354
+  angleY 55.738
+ }
+ {
+  coords 2951.968 63.913 1641.984
+  angleY -124.262
+ }
+ {
+  coords 2960.633 63.053 1643.889
+  angleX 7.786
+  angleY -124.263
+  angleZ -0.045
+ }
+ {
+  coords 2962.385 63.056 1641.259
+  angleX -7.786
+  angleY 55.737
+  angleZ 0.045
+ }
+ {
+  coords 1470.506 1.126 1849.738
+  angleY 24.013
+ }
+ {
+  coords 1473.457 1.126 1848.423
+  angleY 24.013
+ }
+ {
+  coords 1406.755 36.17 2316.514
+ }
+ {
+  coords 1403.567 36.17 2316.514
+ }
+ {
+  coords 1395.868 36.17 2316.514
+ }
+}
+SCR_MapLocator : "{BE308D6461C1BEC3}prefabs/Systems/MapLocator.et" {
+ coords 334.46 171.872 27.449
+ m_WorldDirections SCR_MapLocationQuadHint "{5AAA8B37D1168EEB}" {
+  m_aQuadHints {
+   "#AR-MapLocationHint_ArlandSouthWest" "#AR-MapLocationHint_ArlandSouth" "#AR-MapLocationHint_ArlandSouthEast" "#AR-MapLocationHint_ArlandWest" "#AR-MapLocationHint_ArlandCentral" "#AR-MapLocationHint_ArlandEast" "#AR-MapLocationHint_ArlandNorthWest" "#AR-MapLocationHint_ArlandNorth" "#AR-MapLocationHint_ArlandNorthEast"
+  }
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{BE5D5CFA90224646}Prefabs/Structures/Military/Camps/TentUSSR_01/TentUSSR_01_base.et" {
+ {
+  coords 1385.027 -0.041 1849.197
+  angleY -76
+ }
+ {
+  coords 1387.394 -0.035 1858.816
+  angleY -76
+ }
+ {
+  coords 1390.684 -0.034 1872.295
+  angleY -76
+ }
+ {
+  coords 1302.252 -0.036 1888.692
+  angleY -158.735
+ }
+ {
+  coords 2541.316 -0.038 2261.433
+  angleY -85
+ }
+}
+$grp GenericEntity : "{BFC48B664ED362EE}Prefabs/Structures/Military/Camps/Canvas_Covers/CanvasCover_Medium_Base.et" {
+ {
+  coords 3070.436 55.004 1715.874
+  angleY 80.696
+ }
+ {
+  coords 3458.557 2.34 2345.809
+  angleY 127.994
+ }
+ {
+  coords 2255.844 94.368 2324.697
+  angleY -122.822
+ }
+}
+$grp DecalEntity : "{C0FAEF93F8DB08F5}Prefabs/Decals/Dirt/Decal_Dirt_Patch_07.et" {
+ {
+  coords 1390.888 -0.036 1873.836
+  angleX -90
+  scale 2
+ }
+ {
+  coords 1391.498 -0.037 1871.126
+  angleX -90
+  scale 2
+ }
+ {
+  coords 1387.099 -0.038 1872.451
+  angleX -89.98
+  angleY 180
+  angleZ -131.669
+  scale 2
+ }
+ {
+  coords 1389.364 -0.036 1870.902
+  angleX -90
+  scale 2
+ }
+ {
+  coords 1391.097 -0.037 1870.225
+  angleX -90
+  scale 2
+ }
+ {
+  coords 1389.658 -0.036 1871.8
+  angleX -90
+  scale 2
+ }
+}
+GenericEntity : "{C13993E540367BA3}Prefabs/Structures/Military/Bunkers/AircraftShelter_E_01/AircraftShelter_E_01_lightning_rod.et" {
+ coords 1331.433 44.93 2785.354
+ angleX 0.966
+ angleY -156.05
+ angleZ -1.844
+}
+StaticModelEntity : "{C1576E5555582214}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_short.et" {
+ components {
+  Hierarchy "{5A427B47A9DF8809}" {
+   Enabled 1
+  }
+ }
+ coords 2206.66 -0.099 2886.711
+ angleY -26.457
+}
+$grp GenericEntity : "{C1868B74D5A0C96E}Prefabs/Props/Military/CargoContainers/CargoContainer_01_20ft_USSR_ammo.et" {
+ {
+  coords 3073.505 54.663 1716.893
+  angleX 2.026
+  angleY 170.024
+  angleZ -0.417
+ }
+ {
+  coords 2946.455 66.302 1601.226
+  angleY -150
+ }
+}
+GenericEntity : "{C1977A326F2AA011}Prefabs/Structures/Signs/Military/SignCheckpoint_01_stop.et" {
+ coords 3239.198 4.871 2848.854
+ angleY -85.8
+}
+$grp GenericEntity : "{C1E318C4198DFA2A}PrefabLibrary/Props/Military/Duckboard_01.et" {
+ {
+  coords 1379.516 9.559 1850.168
+  angleX 0.478
+  angleY -164.014
+  angleZ -0.86
+  scale 1.018
+ }
+ {
+  coords 1385.623 9.614 1872.988
+  angleX 0.952
+  angleY 16.501
+  angleZ 0.386
+  scale 1.018
+ }
+ {
+  coords 1384.547 9.562 1869.29
+  angleY -163.002
+  scale 1.018
+ }
+ {
+  coords 1380.47 9.584 1853.978
+  angleX -0.675
+  angleY 14.988
+  angleZ 0.865
+  scale 1.018
+ }
+ {
+  coords 1381.463 9.558 1857.714
+  angleX -0.657
+  angleY 14.998
+  scale 1.018
+ }
+ {
+  coords 1382.461 9.555 1861.542
+  angleY -166.002
+  scale 1.018
+ }
+ {
+  coords 1383.471 9.578 1865.579
+  angleX -0.409
+  angleY 13.998
+  scale 1.018
+ }
+}
+$grp GenericEntity : "{C2C1CEA73A4D8779}Prefabs/Props/Civilian/Notebook_01_Stack.et" {
+ {
+  coords 2863.24 6.88 1122.267
+  angleY -34.011
+ }
+ {
+  coords 3041.431 57.508 1714.123
+  angleY -89.563
+ }
+ {
+  coords 3041.431 57.581 1714.123
+  angleY -89.563
+ }
+ {
+  coords 3041.339 57.653 1714.07
+  angleY 60.437
+ }
+}
+$grp GenericEntity : "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" {
+ {
+  coords 2865.574 6.869 1125.182
+  angleY -45.218
+ }
+ {
+  coords 2865.605 6.869 1124.669
+  angleX 9.002
+  angleY 44.131
+ }
+ {
+  coords 3055.112 56.867 1712.953
+  angleY 44.145
+ }
+ {
+  coords 3054.745 56.867 1712.631
+  angleX 10.059
+  angleY -155.351
+ }
+ {
+  coords 2858.379 5.875 1128.913
+ }
+}
+GenericEntity : "{C599195C442D7125}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_CigarButts_01.et" {
+ coords 2210.473 53.407 2883.311
+ angleY -30
+ {
+  DecalEntity {
+   ID "56E0B29F4975B6A9"
+   coords 0 0 0
+  }
+ }
+}
+$grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ {
+  coords 2662.41 8.394 919.781
+  angleX 0
+  angleY -29.282
+  angleZ 0
+ }
+ {
+  coords 2926.138 67.271 1592.899
+  angleX 0
+  angleY 60.293
+  angleZ 0
+ }
+ {
+  coords 2977.35 62.401 1635.92
+  angleX 0
+  angleY 80.368
+  angleZ 0
+ }
+ {
+  coords 2977.776 62.401 1634.585
+  angleX 0
+  angleY 52.286
+  angleZ 0
+ }
+ {
+  coords 3065.089 72.908 1576.949
+  angleX 0
+  angleY 132.554
+  angleZ 0
+ }
+ {
+  coords 1471.057 1.136 1843.533
+  angleX 0
+  angleY 150
+  angleZ 0
+ }
+ {
+  coords 1490.118 1.476 1862.935
+  angleX 0
+  angleY -70.772
+  angleZ 0
+ }
+ {
+  coords 523.638 0.807 2950.018
+  angleX 0
+  angleY 0
+  angleZ 0
+ }
+}
+$grp StaticModelEntity : "{C6BFE324CCCFE6C4}Prefabs/Props/Military/Furniture/CotMilitary_USSR_01.et" {
+ {
+  coords 1383.104 9.545 1848.108
+  angleY 105
+ }
+ {
+  coords 1385.579 9.584 1847.445
+  angleY 105
+ }
+ {
+  coords 1385.893 9.619 1857.522
+  angleY 101.487
+ }
+ {
+  coords 1388.532 9.619 1856.945
+  angleY 105
+ }
+ {
+  coords 1392.47 9.588 1874.198
+  angleY 13.504
+ }
+}
+GenericEntity : "{C70D9DAB40548BCF}PrefabLibrary/Props/Industrial/TableWorkshop_01_short.et" {
+ coords 3261.978 2.023 2886.471
+ angleY 56.982
+}
+$grp GenericEntity : "{C7A49C5B54C86903}Prefabs/Props/Military/Sandbags/Sandbag_01_single_burlap.et" {
+ {
+  coords 3242.593 5.599 2846.663
+  angleY 152.286
+  angleZ -21.384
+ }
+ {
+  coords 3242.262 5.599 2846.537
+  angleY 64.008
+ }
+}
+GenericEntity : "{C977A93D74F5356A}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_OilStain_01_medium.et" {
+ coords 2207.715 53.54 2899.474
+ angleY -90.762
+}
+$grp GenericEntity : "{C98FCC6CA6C56069}Prefabs/Items/Medicine/AspirinBottle.et" {
+ {
+  coords 3055.263 56.867 1713.249
+ }
+ {
+  coords 3055.099 56.867 1713.319
+ }
+}
+$grp StaticModelEntity : "{C99D1B2E817E12D9}Prefabs/Props/Military/Furniture/TableMilitary_USSR_02_cabinet.et" {
+ {
+  coords 1299.388 11.4 1888.053
+  angleY 113.066
+ }
+ {
+  coords 1304.648 11.4 1888.499
+  angleY -74.958
+ }
+ {
+  coords 1299.075 11.4 1887.316
+  angleY 113.066
+ }
+ {
+  coords 1389.246 9.588 1875.303
+  angleY -165
+ }
+ {
+  coords 3285.519 2.205 2849.962
+  angleX 0.237
+  angleY 48.004
+  angleZ -0.119
+ }
+}
+StaticModelEntity : "{C9CFDED29542A968}Prefabs/Props/Military/Furniture/CotMilitary_US_01.et" {
+ coords 1300.048 11.4 1889.55
+ angleY -68.008
+}
+$grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+ {
+  coords 2546.874 -8.23 3329.748
+  angleX -36.373
+  angleY 79.8
+  angleZ 9.173
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 2295.505 -6.845 3371.216
+  angleX 16.774
+  angleY 87.506
+  angleZ 7.705
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 1771.88 40.038 1147.853
+  angleX 57.006
+  angleY 102.854
+  angleZ -18.208
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 2500.204 145.311 2244.519
+  angleX -1.485
+  angleY 138.19
+  angleZ 11.244
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 3498.585 -0.046 1780.018
+  angleX -81.26
+  angleY -37.384
+  angleZ 122.351
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 2382.746 64.793 2953.81
+  angleX 1.553
+  angleY 14.875
+  angleZ 11.76
+  scale 0.44
+  Flags 3
+ }
+ {
+  coords 2995.294 57.932 1710.769
+  angleX 84.725
+  angleY 112.599
+  angleZ -116.11
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 850.603 6.845 1487.25
+  angleX 78.584
+  angleY -121.326
+  angleZ 99.99
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 814.049 21.001 2474.64
+  angleX 19.613
+  angleY 83.81
+  angleZ 5.071
+  scale 0.585
+  Flags 3
+ }
+ {
+  coords 2487.284 -50.956 3579.325
+  angleX 0.656
+  angleY -109.562
+  angleZ -8.479
+  scale 5.97
+  Flags 3
+ }
+ {
+  coords 2509.021 -28.628 3590.78
+  angleX 10.916
+  angleY 85.324
+  angleZ 8.257
+  scale 5.97
+  Flags 3
+ }
+ {
+  coords 2456.92 -54.117 3582.938
+  angleX -0.306
+  angleY -115.999
+  angleZ -8.499
+  scale 3.403
+  Flags 3
+ }
+ {
+  coords 2540.805 -37.099 3581.433
+  angleX 6.54
+  angleY 103.507
+  angleZ 4.553
+  scale 3.659
+  Flags 3
+ }
+ {
+  coords 2525.521 27.09 3595.552
+  angleX 12.176
+  angleY 62.147
+  angleZ -0.887
+  scale 2.744
+  Flags 3
+ }
+}
+$grp GenericEntity : "{CC5453CCC311603B}Prefabs/Props/Military/Sandbags/Sandbag_01_end_burlap.et" {
+ {
+  components {
+   Hierarchy "{5A427B47A9DF8833}" {
+    Enabled 1
+   }
+  }
+  coords 2210.521 53.307 2889.261
+  angleY -30
+ }
+ {
+  coords 2925.381 68.682 1612.956
+  angleY -70.165
+ }
+}
+$grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_01.et" {
+ {
+  components {
+   Hierarchy "{5A427B47A9DF883F}" {
+    Enabled 1
+   }
+  }
+  coords 2204.322 53.35 2886.868
+  angleY 41.394
+ }
+ {
+  components {
+   Hierarchy "{5A427B47A9DF883A}" {
+    Enabled 1
+   }
+  }
+  coords 2207.233 53.359 2889.401
+  angleY 57.816
+ }
+ {
+  coords 2548.179 69.831 1186.269
+  angleY 15.705
+ }
+ {
+  coords 2292.94 1.003 714.423
+  angleX -1.867
+  angleY 47.626
+  angleZ -0.719
+ }
+ {
+  coords 2292.08 0.99 715.293
+  angleX 1.867
+  angleY -132.374
+  angleZ 0.719
+ }
+ {
+  coords 3459.216 2.388 2346.476
+  angleY -52.695
+ }
+ {
+  coords 3458.528 2.388 2345.427
+  angleY -52.695
+ }
+ {
+  coords 2255.491 94.416 2324.848
+  angleY 56.489
+ }
+ {
+  coords 2256.257 94.416 2323.854
+  angleY 56.489
+ }
+}
+GenericEntity : "{CC8D07933AD0B07E}Prefabs/Props/Industrial/GasTank_01_red.et" {
+ coords 2932.452 67.992 1621.872
+ angleY 169.725
+}
+$grp GenericEntity : "{CFFEB23FBEA00322}Prefabs/Props/Military/Sandbags/Sandbag_01_short_burlap.et" {
+ {
+  coords 3307.238 2.083 2849.932
+  angleY -30.753
+ }
+ {
+  coords 3305.632 2.26 2848.976
+  angleY -30.753
+ }
+}
+GenericEntity : "{D0B44EB8DBEDDA97}Prefabs/Props/Civilian/Bucket_02.et" {
+ coords 2927.179 67.756 1612.225
+}
+GenericEntity : "{D0BD7A55306FC46B}prefabs/Props/Furniture/Faucet_01.et" {
+ components {
+  ActionsManagerComponent "{5C69441373FFB48E}" {
+   ActionContexts {
+    UserActionContext "{5C69441374A5EDA1}" {
+     Position PointInfo "{5C69441377B8FC1D}" {
+      Offset 0 0 0.1206
+     }
+    }
+   }
+  }
+ }
+ coords 2039.183 44.037 2678.803
+}
+$grp GenericEntity : "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et" {
+ {
+  coords 3060.235 55.637 1717.798
+  angleY -10.438
+ }
+ {
+  coords 3061.733 55.637 1718.072
+  angleY 169.562
+ }
+ {
+  coords 3063.021 55.637 1718.282
+  angleY -100.438
+ }
+ {
+  coords 3064.309 55.637 1718.52
+  angleY -10.438
+ }
+ {
+  coords 3063.395 55.637 1717.021
+  angleY -10.438
+ }
+ {
+  coords 3064.891 55.637 1717.294
+  angleY 169.562
+ }
+ {
+  coords 3062.106 55.637 1716.811
+  angleY 79.562
+ }
+ {
+  coords 3060.817 55.637 1716.573
+  angleY 169.562
+ }
+ {
+  coords 3063.448 55.637 1715.729
+  angleY -10.438
+ }
+ {
+  coords 3064.944 55.637 1716.002
+  angleY 169.562
+ }
+ {
+  coords 3062.159 55.637 1715.519
+  angleY 79.562
+ }
+ {
+  coords 3060.87 55.637 1715.281
+  angleY 169.562
+ }
+}
+$grp Tree : "{D174C13435C394FF}PrefabLibrary/Vegetation/Trees/t_pinus_sylvestris_0s.et" {
+ {
+  coords 2078.471 -0.029 2325.371
+  angleX -2.689
+  angleY 47.396
+  angleZ -0.496
+  scale 0.854
+ }
+ {
+  coords 2080.123 -0.021 2327.372
+  angleX 1.71
+  angleY -15.217
+  angleZ -0.271
+  scale 1.083
+ }
+ {
+  coords 2081.395 -0.025 2326.833
+  angleX -6.771
+  angleY 173.468
+  angleZ 3.984
+  scale 1.349
+ }
+ {
+  coords 2082.617 -0.017 2331.716
+  angleX -1.156
+  angleY 164.624
+  angleZ 2.616
+  scale 0.885
+ }
+ {
+  coords 2082.699 -0.03 2326.153
+  angleX -2.506
+  angleY -68.93
+  angleZ -4.333
+  scale 0.807
+ }
+ {
+  coords 2083.457 -0.032 2327.745
+  angleX -5.199
+  angleY 149.1
+  angleZ -7.174
+  scale 1.216
+ }
+ {
+  coords 2081.662 -0.039 2325.359
+  angleX -6.166
+  angleY 126.984
+  angleZ 0.034
+  scale 1.053
+ }
+ {
+  coords 2091.461 -0.06 2323.834
+  angleX -3.32
+  angleY 24.929
+  angleZ 1.679
+  scale 1.065
+ }
+ {
+  coords 2213.398 0.027 1638.783
+  angleX 2.344
+  angleY 125.226
+  angleZ -2.604
+  scale 1.044
+ }
+ {
+  coords 2216.106 0.018 1637.896
+  angleX 0.467
+  angleY -125.852
+  angleZ 4.955
+  scale 1.282
+ }
+ {
+  coords 2100.805 -0.041 2338.071
+  angleX -2.867
+  angleY 49.242
+  angleZ 4.647
+  scale 1.343
+ }
+ {
+  coords 2091.006 -0.019 2341.028
+  angleX 6.771
+  angleY 50.561
+  angleZ 6.018
+  scale 0.932
+ }
+ {
+  coords 2214.907 0.029 1638.917
+  angleX -6.423
+  angleY 8.636
+  angleZ -4.434
+  scale 0.918
+ }
+ {
+  coords 2079.63 -0.03 2344.361
+  angleX -3.043
+  angleY 143.596
+  angleZ -7.682
+  scale 0.873
+ }
+}
+$grp DecalEntity : "{D4F60BD4A5C9A287}PrefabLibrary/Decals/Cracks/Decal_Asphalt_Cracks_03.et" {
+ {
+  coords 3261.597 -0.001 2889.93
+  angleX -89.972
+  angleY 57.982
+  scale 3
+ }
+ {
+  coords 3263.458 -0.001 2886.464
+  angleX -89.951
+  angleY -48.018
+  scale 3
+ }
+}
+GenericEntity : "{D5062960B7211EB4}Prefabs/Props/Construction/GarbageStack_01/GarbageStack_01_Long.et" {
+ coords 3057.889 55.553 1715.454
+ angleY 80.935
+}
+$grp GenericEntity : "{D5C3CF5996B43A27}Prefabs/Props/Civilian/BasketWicker_01.et" {
+ {
+  coords 2927.531 67.742 1612.863
+  angleY -10.797
+ }
+ {
+  coords 2926.193 67.742 1611.833
+  angleY -128.755
+ }
+}
+GenericEntity : "{D62A80FF7E61B2FA}Prefabs/Props/Furniture/LightTable_01.et" {
+ coords 2863.456 6.88 1122.838
+ angleY 50.407
+}
+$grp GenericEntity : "{D7B12E34E5FCF490}PrefabLibrary/Props/Industrial/Jerrycan_01.et" {
+ {
+  coords 2501.744 147.438 2267.047
+  angleX -3.96
+  angleY -3.585
+  angleZ -5.994
+ }
+ {
+  coords 2537.461 143.494 2257.696
+ }
+ {
+  coords 2534.67 143.805 2268.933
+ }
+ {
+  coords 2527.296 143.872 2269.59
+ }
+ {
+  coords 3252.242 2.527 2873.431
+  angleY -120
+ }
+ {
+  coords 3279.41 2.196 2862.286
+  angleY 51.908
+ }
+}
+$grp GenericEntity : "{D7F69BF7D2DCA0A8}Prefabs/Props/Industrial/Pallets/Pallet_01.et" {
+ {
+  coords 2535.721 143.801 2269.248
+  angleY 0.985
+ }
+ {
+  coords 3280.307 2.218 2861.653
+  angleY 52.893
+ }
+}
+GenericEntity : "{D8ABE2DE630F577E}Prefabs/Compositions/Misc/SubCompositions/CrateStacked_01.et" {
+ coords 2921.507 67.596 1600.375
+ angleY -63.075
+}
+GenericEntity : "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" {
+ coords 2869.787 5.419 1115.799
+ angleY -30.85
+}
+$grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ {
+  coords 2536.085 143.937 2278.218
+ }
+ {
+  coords 2959.602 63.346 1641.065
+  angleX -2.865
+  angleY -0.285
+  angleZ 5.673
+ }
+ {
+  components {
+   SCR_AISmartActionComponent "{5A50D7C3080FB179}" {
+    AIBehaviorTree "{433E9A9AC51C72F5}AI/BehaviorTrees/SmartActions/SA_Fireplace.bt"
+    Tags {
+     "Loiter"
+    }
+   }
+  }
+  coords 2231.022 53.402 2869.465
+ }
+ {
+  coords 2857.66 5.897 1130.29
+  angleX -0.895
+  angleZ 4.467
+ }
+ {
+  coords 2546.319 69.554 1185.353
+  angleX 13.191
+  angleZ 7.796
+ }
+ {
+  coords 2294.338 0.75 719.712
+ }
+ {
+  coords 3334.192 13.077 2802.258
+  angleY 62.631
+ }
+ {
+  coords 525.908 0.8 2951.314
+ }
+}
+$grp StaticModelEntity : "{DA1B42FB9AEC02BE}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V3.et" {
+ {
+  components {
+   Hierarchy "{569E7A0B05AB21F4}" {
+    Enabled 1
+   }
+  }
+  coords 3037.099 0.01 2894.672
+  angleX 3.552
+  angleY 16.207
+  angleZ 3.738
+ }
+ {
+  components {
+   Hierarchy "{569E7A0B05AB21F4}" {
+    Enabled 1
+   }
+  }
+  coords 3035.29 -0.002 2904.67
+  angleX 0.08
+  angleY 15.98
+  angleZ 3.73
+ }
+ {
+  components {
+   Hierarchy "{569E7A0B05AB21F4}" {
+    Enabled 1
+   }
+  }
+  coords 3026.66 0 2904.97
+  angleX 3.15
+  angleY 15.962
+  angleZ 9.24
+ }
+ {
+  components {
+   Hierarchy "{569E7A0B05AB21F4}" {
+    Enabled 1
+   }
+  }
+  coords 3033.689 0 2911.904
+  angleX 3.15
+  angleY 15.962
+  angleZ 9.24
+ }
+ {
+  components {
+   Hierarchy "{569E7A0B05AB21F4}" {
+    Enabled 1
+   }
+  }
+  coords 3021.96 0 2900.8
+  angleX 28.749
+  angleY 16.463
+  angleZ -0.227
+ }
+}
+$grp GenericEntity : "{DB17133F11B2B8C5}Prefabs/Props/Construction/ConcretePipe/ConcretePipe_01_Short.et" {
+ {
+  coords 2365.255 5.731 3195.873
+  scale 3.37
+ }
+ {
+  coords 2417.746 12.225 3129.971
+  angleY 9.874
+  scale 3.37
+ }
+ {
+  coords 2340.828 0.951 3276.228
+  angleY 108.939
+  angleZ -2.205
+  scale 3.37
+ }
+ {
+  coords 2341.989 2.897 3246.837
+  angleY 63.55
+  scale 3.37
+ }
+ {
+  coords 2413.362 1.706 3238.641
+  angleX 8.175
+  angleY 76.243
+  angleZ 12.491
+  scale 3.37
+ }
+}
+$grp GenericEntity : "{DB56577F30DE9129}Prefabs/Props/Furniture/Table_02.et" {
+ {
+  coords 2865.944 5.962 1124.896
+ }
+ {
+  coords 3065.114 55.637 1714.387
+  angleY -12.982
+ }
+ {
+  coords 3042.487 56.063 1712.545
+  angleY -10.507
+ }
+ {
+  coords 2928.543 67.747 1612.079
+  angleY 17.097
+ }
+}
+$grp GenericEntity : "{DB6A6F1554219C14}PrefabLibrary/Infrastructure/Lamps/LampStreet_E_03_single/LampStreet_E_03_single.et" {
+ {
+  coords 1252.467 -0.029 2868.258
+  angleX 1.945
+  angleY 166.253
+  angleZ -1.526
+ }
+ {
+  coords 1272.278 -0.033 2873.184
+  angleX 1.945
+  angleY 166.253
+  angleZ -1.526
+ }
+ {
+  coords 1233.403 -0.032 2863.248
+  angleX 1.945
+  angleY 166.253
+  angleZ -1.526
+ }
+ {
+  coords 1213.849 -0.037 2857.657
+  angleX 1.945
+  angleY 166.253
+  angleZ 2.449
+ }
+ {
+  coords 1193.848 -0.036 2852.879
+  angleX 1.945
+  angleY 166.253
+  angleZ -1.526
+ }
+}
+$grp GenericEntity : "{DBBF0B94C4C86B85}PrefabLibrary/Props/Military/BarrelFuel_01_closed/BarrelFuel_01_closed_old.et" {
+ {
+  coords 2537.489 143.728 2270.326
+  angleX -3.477
+  angleY 84.621
+  angleZ 1.225
+ }
+ {
+  coords 2540.87 143.674 2272.461
+  angleX 1.836
+  angleY 31.118
+  angleZ 2.152
+ }
+ {
+  coords 2538.087 143.491 2257.505
+  angleX -0.127
+  angleY 98.165
+  angleZ 0.886
+ }
+ {
+  coords 2538.23 143.692 2270.449
+  angleX 1.474
+  angleY -20.882
+  angleZ 1.353
+ }
+ {
+  coords 3017.788 56.138 1687.417
+  angleX 1.361
+  angleY 140.863
+  angleZ 1.163
+ }
+ {
+  coords 3017.62 56.149 1688.083
+  angleX -1.78
+  angleY -73.506
+  angleZ -0.192
+ }
+ {
+  coords 3017.336 56.167 1684.88
+  angleX -1.567
+  angleY -144.662
+  angleZ 1.244
+ }
+ {
+  coords 3016.698 56.206 1687.881
+  angleX -0.518
+  angleY -134.302
+  angleZ 0.73
+ }
+ {
+  coords 3017.142 56.179 1687.387
+  angleX -1.31
+  angleY -36.679
+  angleZ -1.22
+ }
+ {
+  coords 2975.758 62.518 1635.117
+  angleX 0.097
+  angleY -30.364
+  angleZ -0.098
+ }
+ {
+  coords 2976.399 62.5 1635.047
+  angleX -0.101
+  angleY 152.094
+  angleZ 0.094
+ }
+ {
+  coords 2975.821 62.568 1634.434
+  angleX -0.025
+  angleY 115.278
+  angleZ 0.135
+ }
+ {
+  coords 2976.762 62.531 1634.492
+  angleX 0.624
+  angleY 54.486
+  angleZ -0.642
+ }
+ {
+  coords 2976.592 62.288 1637.553
+  angleX -0.69
+  angleY 44.158
+  angleZ -0.311
+ }
+ {
+  coords 3282.799 2.212 2860.42
+  angleX 1.474
+  angleY 31.025
+  angleZ 1.353
+ }
+ {
+  coords 3282.246 2.204 2860.929
+  angleX -3.477
+  angleY 136.529
+  angleZ 1.225
+ }
+}
+GenericEntity : "{DCBC472CDA3EA9B2}Prefabs/Props/Civilian/WallMap_01.et" {
+ coords 3040.595 57.084 1711.514
+ angleY 75
+}
+StaticModelEntity : "{DF649B29EC7635F3}Prefabs/Structures/Military/Fortifications/DirtPile_01/DirtPile_01_small.et" {
+ components {
+  Hierarchy "{5A427B47A9DF8825}" {
+   Enabled 1
+  }
+ }
+ coords 2209.402 -0.131 2882.988
+ angleY -30
+}
+$grp GenericEntity : "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" {
+ {
+  coords 2863.942 6.913 1123.146
+  angleX 90
+  angleZ -31.027
+ }
+ {
+  coords 2864.285 6.913 1123.185
+  angleX -90
+  angleY 17.677
+  angleZ 107.677
+ }
+ {
+  coords 3065.467 56.544 1714.023
+  angleY 8.944
+ }
+}
+GenericEntity : "{E3382F292BA2A27D}Prefabs/Props/Furniture/TableCoffee_01.et" {
+ coords 1489.971 1.482 1863.768
+ angleY 150
+}
+$grp StaticModelEntity : "{E34FFA7EC13C10DA}Prefabs/Structures/Military/Camps/TentUSSR_01/TentUSSR_01_foundation.et" {
+ {
+  coords 2923.616 67.426 1600.295
+  angleY 105
+ }
+ {
+  coords 2926.822 67.574 1610.718
+  angleY 105
+ }
+ {
+  coords 2929.845 67.825 1620.416
+  angleY 105
+ }
+ {
+  coords 3043.201 55.877 1712.029
+  angleY 168.277
+  {
+   SCR_DestructibleBuildingEntity {
+    ID "5A5344E1DC2830DD"
+    {
+     GenericEntity {
+      ID "5A04A8A7BC9EFAA1"
+      coords 0 0 0
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 3052.503 55.796 1713.959
+  angleY 168.277
+ }
+ {
+  coords 3062.784 55.469 1716.093
+  angleY 168.277
+ }
+ {
+  coords 3250.899 2.33 2873.739
+  angleY 60
+ }
+ {
+  coords 2863.741 5.795 1122.581
+ }
+}
+$grp GenericEntity : "{E51E2E1D77B54223}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_01.et" {
+ {
+  coords 2207.272 53.537 2898.808
+  angleY 38.338
+ }
+ {
+  coords 2211.071 53.407 2885.005
+  angleY -30
+ }
+ {
+  coords 2209.078 53.407 2880.653
+  angleY -30
+ }
+ {
+  coords 2211.808 53.407 2883.961
+  angleY 32.898
+ }
+ {
+  coords 2205.794 53.407 2886.918
+  angleY -96.163
+ }
+}
+$grp GenericEntity : "{E56F1B739B9792C4}Prefabs/Props/Civilian/Ashtray_01_Full_green.et" {
+ {
+  coords 2862.585 6.88 1120.085
+  angleY 0
+ }
+ {
+  coords 3042.505 56.968 1711.59
+  angleY 0
+ }
+ {
+  coords 2930.84 67.859 1607.204
+  angleY 0
+ }
+}
+GenericEntity : "{E681FC9543B34B51}PrefabLibrary/Props/Commercial/CardboardBoxStack_01.et" {
+ coords 3253.396 2.494 2872.559
+ angleX 0.53
+ angleY -27.356
+ angleZ 0.068
+ {
+  GenericEntity : "{E7A4AA1C549E2371}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Folded_Soviet.et" {
+   coords 20.254 -0.061 -22.872
+   angleX -0.032
+   angleY 79.265
+   angleZ -0.533
+  }
+ }
+}
+GenericEntity : "{E7A4AA1C549E2371}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Folded_Soviet.et" {
+ coords 2536.78 143.774 2270.437
+}
+$grp GenericEntity : "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et" {
+ {
+  coords 3179.898 13.479 2719.488
+  angleY 123.087
+ }
+ {
+  coords 3463.778 2.438 2345.813
+  angleY -173.005
+ }
+ {
+  coords 2930.591 67.323 1606.708
+  angleX -1.327
+  angleY 110.852
+  angleZ 2.873
+ }
+ {
+  coords 2927.367 67.187 1596.436
+  angleY 105.557
+ }
+ {
+  coords 3051.132 55.725 1708.836
+  angleY 171.191
+ }
+ {
+  coords 3067.368 72.885 1577.641
+  angleY 172.001
+ }
+}
+GenericEntity : "{E9FA4D7B531C7FF0}PrefabLibrary/Props/Agricultural/WaterTank_01/WaterTank_01.et" {
+ coords 3066.844 55.663 1681.772
+ angleX -1.558
+ angleY 14.989
+ angleZ 2.361
+}
+GenericEntity : "{EB66EE2298D16D18}Prefabs/Props/Civilian/SackTruck_01.et" {
+ coords 2926.43 67.758 1608.37
+ angleY 37.146
+}
+GenericEntity : "{EC0546F8F656FBEF}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V3.et" {
+ components {
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Enabled 0
+  }
+ }
+ coords 1372.915 9.699 1860.916
+ angleX 0.864
+ angleY 15.18
+ angleZ 0.234
+}
+GameEntity : "{EC645B2E2123131F}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_blue.et" {
+ coords 2926.66 68.698 1612.475
+}
+$grp SCR_DestructibleEntity : "{EF39F5715EF2323E}Prefabs/Structures/Walls/BarbedWire/BarbedTape_01/BarbedTape_01_Short.et" {
+ {
+  components {
+   Hierarchy "{59A2DAE340BDC446}" {
+   }
+  }
+  coords 3071.891 0.323 2857.474
+  angleY 117.306
+ }
+ {
+  components {
+   Hierarchy "{59A2DAE340BDC446}" {
+   }
+  }
+  coords 3069.834 0.041 2859.437
+  angleY 129.358
+ }
+ {
+  components {
+   Hierarchy "{59A2DAE340BDC446}" {
+   }
+  }
+  coords 3067.588 -0.005 2861.886
+  angleY 139.468
+ }
+ {
+  components {
+   Hierarchy "{59A2DAE340BDC446}" {
+   }
+  }
+  coords 3065.58 -0.006 2864.06
+  angleY 110.416
+ }
+ {
+  components {
+   Hierarchy "{59A2DAE340BDC446}" {
+   }
+  }
+  coords 3063.742 -0.027 2864.91
+  angleY 128.41
+ }
+}
+$grp GenericEntity : "{F0DCB55B7FDB746B}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Footprints_02.et" {
+ {
+  coords 2211.973 53.407 2883.681
+  angleY 162.587
+ }
+ {
+  coords 2210.941 53.407 2884.743
+  angleY 91.72
+ }
+ {
+  coords 2209.539 53.407 2875.427
+  angleY -62.012
+ }
+}
+$grp GenericEntity : "{F15B99F6B06E7200}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01_generator.et" {
+ {
+  coords 1401.765 10.792 1863.646
+  angleX 0.104
+  angleY -163.675
+  angleZ 2.827
+ }
+ {
+  coords 1259.214 38.963 2242.961
+  angleY -128.973
+ }
+ {
+  coords 1279.124 38.933 2261.587
+  angleX -1.052
+  angleY -35.973
+  angleZ -1.449
+ }
+}
+$grp GenericEntity : "{F3652FD9E9774E2D}prefabs/Props/Furniture/ChairOffice_01_2.et" {
+ {
+  coords 1375.324 40.781 2352.826
+  angleY -39.521
+ }
+ {
+  coords 1387.574 9.686 1860.909
+  angleY -133.408
+ }
+}
+GenericEntity : "{F4123D86F860B5E1}Prefabs/Props/Garbage/Medical/GarbageMedicalUSSR_02.et" {
+ coords 3054.445 55.991 1712.776
+ angleY 76.965
+}
+$grp GenericEntity : "{F4CA533A99B20DAE}Prefabs/Props/Civilian/SackUniversal_01.et" {
+ {
+  coords 2864.484 5.955 1120.105
+  angleX 12.521
+ }
+ {
+  coords 2924.487 67.913 1610.911
+  angleX 72.798
+  angleY 11.772
+  angleZ 85.743
+ }
+ {
+  coords 2924.501 68.907 1611.845
+  angleX 73.425
+  angleY 39.541
+  angleZ 98.955
+ }
+}
+SCR_DestructibleBuildingEntity : "{F50905235FBAA094}Prefabs/Structures/Military/Houses/GuardBox_01/GuardBox_01_beige.et" {
+ coords 1490.187 0.107 1863.299
+ angleY -119.811
+}
+$grp GenericEntity : "{F532EDEF93C0363E}prefabs/Trading_Items/Factionless_Ammo_Trading station.et" {
+ {
+  coords 3459.305 2.463 2344.587
+  angleY -166.729
+ }
+ {
+  coords 2254.444 94.491 2324.389
+  angleY -57.545
+ }
+}
+$grp GenericEntity : "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red.et" {
+ {
+  coords 3459.65 2.49 2346.464
+  angleY 161.642
+ }
+ {
+  coords 2256.102 94.518 2323.447
+  angleY -89.174
+ }
+}
+StaticModelEntity : "{FA75C3DBECE46A72}Prefabs/Vegetation/Plant/CurbsideWeeds_02.et" {
+ coords 3252.947 0 2884.388
+ angleX 89.972
+ angleY -124.018
+ angleZ 180
+ scale 0.333
+}
+$grp GenericEntity : "{FA7D049A734AD1B5}PrefabLibrary/Vegetation/Debris/BranchTrash_con_01.et" {
+ {
+  coords 2086.652 66.229 2334.311
+  angleX -4.808
+  angleY -159.097
+  angleZ 0.078
+  scale 1.12
+ }
+ {
+  coords 2088.935 66.169 2331.393
+  angleX -3.045
+  angleY -69.693
+  angleZ -2.077
+  scale 0.729
+ }
+ {
+  coords 2087.171 66.08 2332.136
+  angleX -3.69
+  angleY -108.757
+  angleZ -2.517
+  scale 1.062
+ }
+ {
+  coords 2085.881 66.024 2323.601
+  angleX -4.803
+  angleY -12.231
+  angleZ -5.338
+  scale 0.811
+ }
+ {
+  coords 2087.66 66.129 2321.823
+  angleX -7.268
+  angleY -39.491
+  angleZ -3.235
+  scale 1.184
+ }
+}
+$grp DecalEntity : "{FC56FA6166DEE7B7}Prefabs/Decals/Dirt/Decal_Dirt_Footprints_01.et" {
+ {
+  coords 1389.038 -0.037 1871.775
+  angleX -90
+  scale 1.5
+ }
+ {
+  coords 1392.684 -0.037 1872.212
+  angleX -90
+  scale 1.5
+ }
+ {
+  coords 1390.547 -0.035 1872.18
+  angleX -90
+  scale 1.5
+ }
+ {
+  coords 1391.928 -0.037 1873.226
+  angleX -90
+  scale 1.5
+ }
+ {
+  coords 1391.532 -0.037 1870.628
+  angleX -90
+  scale 1.5
+ }
+}
+$grp GenericEntity : "{FCBEDECB2A39B6BC}Prefabs/Props/Military/Generators/GeneratorPortable_USSR_01.et" {
+ {
+  coords 1375.43 10.007 1836.824
+  angleY 10
+ }
+ {
+  coords 1385.775 9.623 1864.856
+  angleY 94
+ }
+ {
+  coords 2535.01 143.805 2269.051
+  angleX 1.885
+  angleY 1.011
+  angleZ 0.67
+ }
+ {
+  coords 2502.275 147.486 2267.037
+  angleX -3.509
+  angleY -91.066
+  angleZ 3.635
+ }
+ {
+  components {
+   Hierarchy "{5A427B47A9DF8FD5}" {
+    Enabled 1
+   }
+  }
+  coords 2207.397 53.407 2899.678
+  angleY -25.295
+ }
+ {
+  coords 3279.713 2.211 2862.09
+  angleX 1.885
+  angleY 52.918
+  angleZ 0.67
+ }
+ {
+  coords 2927.964 68 1618.363
+  angleY 105.279
+ }
+}
+$grp GenericEntity : "{FEA6D4F59C34A6C4}PrefabLibrary/Props/Military/PalletFuel_01.et" {
+ {
+  coords 3071.04 54.977 1716.669
+  angleY 74.696
+ }
+ {
+  coords 2921.12 67.449 1595.12
+  angleY 15
+ }
+ {
+  coords 3252.419 3.419 2883.102
+  angleY 55.982
+ }
+ {
+  coords 3253.057 3.416 2882.02
+  angleY -124.018
+ }
+ {
+  coords 3253.887 2.21 2880.66
+  angleY -119.078
+ }
+ {
+  coords 3260.05 2.084 2884.576
+  angleY 150.982
+ }
+ {
+  coords 3252.416 2.179 2883.046
+  angleY 55.982
+ }
+ {
+  coords 3261.238 2.054 2885.309
+  angleY 145.982
+ }
+ {
+  coords 3253.15 2.203 2881.857
+  angleY 60.982
+ }
+}

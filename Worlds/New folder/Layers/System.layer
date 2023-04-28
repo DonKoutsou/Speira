@@ -1,0 +1,246 @@
+SCR_AIWorld : "{01DC74137CFDDB6A}Prefabs/AI/SCR_AIWorld_Arland.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   Enabled 1
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C8715672870E41F}" {
+     NavmeshFile "{FA94770AE4F52B83}worlds/MP/Navmeshes/Coop_CombatOps_Arland.nmn"
+    }
+   }
+  }
+ }
+ coords 2171.352 61.845 2116.522
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 2504.668 139.045 2344.997
+}
+TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
+ coords 2553.087 146.388 2344.572
+}
+SCR_CameraManager SCR_CameraManager1 : "{33F9FD881E3700CC}Prefabs/World/Game/SCR_CameraManager.et" {
+ coords 1068.668 38.546 2870.59
+}
+SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ coords 2517.663 147.434 2275.716
+ Factions {
+  SCR_Faction "{56DEAC40D2DBC8B1}" {
+   "Identity of soldiers" FactionIdentity "{570D128F4022EF5A}" {
+    SocialIdentity SocialIdentity "{56E4EBD9F0C03530}" {
+    }
+   }
+   m_aFriendlyFactionsIds {
+    "SPEIRA"
+   }
+  }
+  SCR_Faction "{56DEAC40D3C2E623}" {
+   m_aFriendlyFactionsIds {
+    "SPEIRA"
+   }
+  }
+  SCR_Faction "{56DEAC40D132400B}" {
+   "Identity of soldiers" FactionIdentity "{570EEB96B808B7E1}" {
+    SocialIdentity SocialIdentity "{5C9692BC507AE8BC}" {
+    }
+   }
+   m_aFriendlyFactionsIds {
+    "SPEIRA"
+   }
+  }
+  SCR_Faction "{5CA6FDB025B5A9EF}" {
+   FactionKey "RENEGADE"
+   FactionColor 0 0.983 1 0
+   UIInfo UIInfo "{5D3901173E155532}" {
+    Name "Renegade"
+   }
+   "Identity of soldiers" FactionIdentity "{5D3901174E0C2F54}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
+   }
+   m_iOrder 4000
+   m_bIsPlayable 0
+   m_FactionLabel FACTION_RENEGADE
+   m_bFriendlyToSelf 0
+   m_sFactionRadioEncryptionKey "Civ"
+   m_iFactionRadioFrequency 69
+  }
+  SCR_CampaignFaction "{5CA6FDB017FD8A30}" : "{6D1DC960D66B2EB3}Configs/SpeiraFaction.conf" {
+   m_iOrder 5000
+   m_FactionLabel FACTION_SPEIRA
+   m_aFriendlyFactionsIds {
+    "US" "FIA" "USSR"
+   }
+  }
+ }
+ m_bCanChangeFactionsPlayable 0
+}
+RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 2263.008 6.712 3232.114
+}
+SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
+ components {
+  SignalsManagerComponent "{5A96D5C2D8585FC2}" {
+  }
+  SCR_CommunicationSoundComponent "{5A96D5C2D1670EEF}" {
+  }
+  SCR_ArsenalManagerComponent "{5C9521EC5FBB3654}" {
+  }
+  SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
+   m_iForcedFaction 2
+   m_iForcedLoadout 0
+  }
+  SCR_CallsignManagerComponent "{56B6E8B2652E1419}" {
+  }
+  SCR_CommandingManagerComponent "{5C89145D427EDF48}" {
+  }
+  SCR_DataCollectorComponent "{5ADE83EE64329989}" {
+   m_aModules {
+    SCR_DataCollectorBasicActionsModule "{5AE097A82ED69A98}" {
+    }
+    SCR_DataCollectorDriverModule "{5AE097BB69284302}" {
+    }
+    SCR_DataCollectorHealingItemsModule "{5AE097BB64B3D413}" {
+    }
+    SCR_DataCollectorShootingModule "{5AE097BB6217A2F8}" {
+    }
+   }
+  }
+  SCR_DestructionManagerComponent "{56B6E8B263C4FF7D}" {
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   m_iMaxNumberOfTasks 1
+  }
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+    m_aGameOverScreens {
+     SCR_FactionGameOverScreenInfo "{56D6AA9BE2D70B6E}" {
+      m_bGetWinningFactionImage 0
+      m_bGetWinningSubtitleParam 0
+     }
+     SCR_EditorFactionGameOverScreenInfo "{56EED1ED0A9954E6}" {
+      m_bGetWinningFactionImage 0
+     }
+     SCR_BaseGameOverScreenInfo "{59EC75B80C1DD0D2}" {
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{59EC75B9C0E9E099}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5B24F6E08F8449D0}" {
+       m_bCanBeSetByGameMaster 0
+       m_bNeedsPlayableFactions 1
+      }
+     }
+    }
+   }
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+  }
+  SCR_HintManagerComponent "{5702B54C6CBC9D7F}" {
+  }
+  SCR_MapConfigComponent "{5C669498E250A34B}" {
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_aKillfeedTypeNames {
+    SCR_NotificationKillfeedTypeName "{5932B0310455E486}" {
+     m_iKillfeedType DISABLED
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_DISABLED"
+    }
+    SCR_NotificationKillfeedTypeName "{5932B0310491106B}" {
+     m_iKillfeedType UNKNOWN_KILLER
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_UNKNOWN_KILLER"
+    }
+    SCR_NotificationKillfeedTypeName "{5932B031048D51BD}" {
+     m_iKillfeedType FULL
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_FULL"
+    }
+   }
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B747E765}" {
+     m_iKillfeedreceiveType ALL
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ALL"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B7003ECC}" {
+     m_iKillfeedreceiveType ALLIES_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ALLIES_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B7D2B6CF}" {
+     m_iKillfeedreceiveType SAME_FACTION_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_SAME_FACTION_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B6AB6528}" {
+     m_iKillfeedreceiveType GROUP_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_GROUP_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036A5A136C4}" {
+     m_iKillfeedreceiveType ENEMIES_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ENEMIES_ONLY"
+    }
+   }
+   m_PlayerKickReasonsConfig SCR_ConfigurableDialogUiPresets "{5AD6C337FC7F76C0}" : "{D3BFEE28E7D5B6A1}Configs/ServerBrowser/KickDialogs.conf" {
+   }
+  }
+  SCR_PlayersRestrictionZoneManagerComponent "{56D09BEE802CA7C5}" {
+  }
+  SCR_PossessingManagerComponent "{56E0B02F4D91C3EF}" {
+  }
+  SCR_RadialMenuComponent "{5AA8AA57BE70F20E}" {
+   m_sInput_Toggle "Inventory_WeaponSwitchingRadial"
+   m_bUsingLeftStick 0
+   m_bHoldToggleToOpen 1
+   m_iEntryPerformType OnClose
+   m_bEvenlyPlacedEntries 1
+   m_iSelectionBehavior FreeMove
+  }
+  SCR_RadialMenuGameModeComponent "{5C7E75494DC4CB62}" {
+   m_Menu SCR_RadialMenu "{5C7E7549355B981C}" : "{D9448EF097CB0ACB}Configs/HUD/RadialMenu/GlobalRadialMenu.conf" {
+    m_Inputs SCR_RadialMenuInputs "{5B26E2FE7B2FF1D4}" {
+     m_sPerformAction "RadialTrigger"
+    }
+   }
+  }
+  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
+  }
+  SCR_RespawnMenuHandlerComponent "{5C871564190296C3}" {
+   m_bAllowSpawnPointSelection 0
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+  }
+  SCR_RespawnTimerComponent "{5C871563CF0CD762}" {
+   m_fRespawnTime 1
+  }
+  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" : "{37037CBB8B4CD354}Prefabs/MP/Components/VotingManagerComponent.ct" {
+  }
+  SerializerInventoryStorageManagerComponent "{5C9530EDE66E845B}" {
+  }
+  RplComponent "{56B2B4793BF2E1B4}" {
+  }
+ }
+ coords 2172.613 61.864 2117.02
+}
+ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
+ coords 1071.804 38.045 2867.438
+}
+SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+ coords 3052.151 56.09 1719.602
+ CharacterLifetime 1810.286
+ VehicleLifetime 1752
+ ItemLifetime 1848
+ m_bOnlyDestroyed 1
+}
+SCR_SpawnPoint : "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et" {
+ coords 1459.248 1.126 1809.975
+}
+SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords 2514.815 147.785 2269.364
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{5CA7060267058AD7}" {
+   m_sLoadoutName "Default"
+   m_sLoadoutResource "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et"
+   m_sAffiliatedFaction "SPEIRA"
+  }
+ }
+}

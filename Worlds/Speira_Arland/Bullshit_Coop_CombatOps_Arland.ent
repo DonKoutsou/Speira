@@ -1,0 +1,39 @@
+SubScene {
+ Parent "{A9806AF617972E97}worlds/Arland/Arland.ent"
+}
+Layer System {
+ Index 0
+}
+Layer Waypoints {
+ Index 9
+}
+Layer Placed_assets {
+ Index 2
+}
+Layer Trader_Layer {
+ Index 3
+}
+Layer Spawns {
+ Index 11
+}
+Layer Stash_Spawner {
+ Index 7
+}
+Layer FIA_Units {
+ Index 10
+}
+Layer FIA_SpawnedClutter {
+ Index 12
+}
+Layer FIA_Clutter {
+ Index 8
+}
+Layer Underground_area {
+ Index 14
+}
+Layer Random_Spawns {
+ Index 1
+}
+Layer SPEIRA_Units {
+ Index 4
+}

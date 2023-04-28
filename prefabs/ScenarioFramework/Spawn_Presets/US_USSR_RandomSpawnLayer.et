@@ -1,12 +1,6 @@
 GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
  ID "59F0B4850F342318"
  components {
-  CP_LayerBase "{5A2283EA2A0B4B14}" {
-   m_SpawnChildren RANDOM_ONE
-   m_bEnableRepeatedSpawn 1
-   m_iRepeatedSpawnNumber 100
-   m_fRepeatedSpawnTimer 20
-  }
  }
  coords 161.91 -35.643 -1758.101
  Flags 4195395
@@ -15,15 +9,14 @@ GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D34EBED0A942629"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{DDF3799FA1387848}Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et"
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
       m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
+       SCR_WaypointSet "{5D39011385EB8F13}" {
         m_sName "Chill_WP"
         m_bCycleWaypoints 1
        }
       }
-      m_sWPToSpawn ""
      }
     }
     coords 0 0 0
@@ -31,176 +24,66 @@ GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D34EBED0A945310"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A945312"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9475F0"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9475F1"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9B1FCC"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9B4B9B"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{E552DABF3636C2AD}prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9BBDA2"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{43C7A28EEB660FF8}prefabs/Groups/OPFOR/Group_USSR_Team_GL.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9BBDA3"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9BD645"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9BF039"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }
    {
     ID "5D34EBED0A9BF03E"
     components {
-     CP_SlotAI "{5A26B3E02AC77BA0}" {
-      m_rObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
-      m_aWaypointGroupNames {
-       SCR_WaypointSet "{5CFD5A14BC3F5C6C}" {
-        m_sName "Chill_WP"
-        m_bCycleWaypoints 1
-       }
-      }
-      m_sWPToSpawn ""
-     }
     }
     coords 0 0 0
    }

@@ -1,0 +1,264 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 2540.32 73.68 1236.38
+ {
+  GenericEntity Chill_WP : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+   coords 0 0 0
+   {
+    $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+     ChillSlot_1 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP1"
+       }
+      }
+      coords 1197.335 -70.739 1456.352
+     }
+     ChillSlot_3 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP22"
+       }
+      }
+      coords 571.16 -29.862 1190.984
+     }
+     ChillSlot_4 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP23"
+       }
+      }
+      coords 372.385 -32.586 1499.555
+     }
+     ChillSlot_2 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP12"
+       }
+      }
+      coords 1016.872 -28.473 1407.935
+     }
+     ChillSlot_7 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP26"
+       }
+      }
+      coords -165.136 -70.865 2013.524
+     }
+     ChillSlot_10 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP2"
+       }
+      }
+      coords -1359.71 -72.554 2057.323
+     }
+     ChillSlot_11 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP3"
+       }
+      }
+      coords -1474.642 -35.635 1628.002
+     }
+     ChillSlot_9 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP28"
+       }
+      }
+      coords -602.275 -16.322 2066.784
+     }
+     ChillSlot_6 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP25"
+       }
+      }
+      coords 652.101 -72.845 1754.577
+     }
+     ChillSlot_5 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP24"
+       }
+      }
+      coords 579.241 -69.717 1772.477
+     }
+     ChillSlot_8 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP27"
+       }
+      }
+      coords -521.518 -21.984 1794.357
+     }
+     ChillSlot_12 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP4"
+       }
+      }
+      coords -77.502 14.196 251.855
+     }
+     ChillSlot_13 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP5"
+       }
+      }
+      coords -227.392 16.514 19.42
+     }
+     ChillSlot_14 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP6"
+       }
+      }
+      coords -1056.561 -40.054 -69.686
+     }
+     ChillSlot_15 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP7"
+       }
+      }
+      coords -642.79 -70.651 306.593
+     }
+     ChillSlot_16 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP8"
+       }
+      }
+      coords -196.5 -7.679 483.559
+     }
+     ChillSlot_17 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP9"
+       }
+      }
+      coords -1049.954 -72.599 616.759
+     }
+     ChillSlot_18 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP10"
+       }
+      }
+      coords -1128.18 -62.688 629.053
+     }
+     ChillSlot_19 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP11"
+       }
+      }
+      coords -1248.219 -62.274 646.643
+     }
+     ChillSlot_20 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP13"
+       }
+      }
+      coords -1536.617 -61.199 735.432
+     }
+     ChillSlot_21 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP14"
+       }
+      }
+      coords -1841.299 -73.367 939.626
+     }
+     ChillSlot_22 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP15"
+       }
+      }
+      coords -1675.007 -73.4 1845.054
+     }
+     ChillSlot_23 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP16"
+       }
+      }
+      coords -325.204 -20.21 1648.673
+     }
+     ChillSlot_24 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP17"
+       }
+      }
+      coords -495.005 -30.148 1441.798
+     }
+     ChillSlot_25 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP18"
+       }
+      }
+      coords -25.881 74.088 1035.459
+     }
+     ChillSlot_26 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP19"
+       }
+      }
+      coords 657.63 -57.343 1457.088
+     }
+     ChillSlot_27 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP20"
+       }
+      }
+      coords 507.01 -57.115 1529.346
+     }
+     ChillSlot_28 {
+      components {
+       CP_SlotBase "{5A22E1D67E712EC8}" {
+        m_rObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        m_sID "Chill_WP21"
+       }
+      }
+      coords -509.125 -63.005 610.467
+     }
+    }
+   }
+  }
+ }
+}

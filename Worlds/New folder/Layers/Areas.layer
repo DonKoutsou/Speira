@@ -1,0 +1,3337 @@
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ WP_Area {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_sTriggerResource "{9DB5EBFFEC1A54B4}prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+    m_fAreaRadius 132.403
+   }
+  }
+  coords 2407.01 -2.983 3233.675
+  {
+   GenericEntity Chill_waypoints : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+      Slot_144 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        }
+       }
+       coords 840.317 4.984 -307.545
+      }
+      Slot_145 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        }
+       }
+       coords 712.671 18.31 -532.871
+      }
+      Slot_146 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        }
+       }
+       coords 350.462 80.336 -1595.892
+      }
+      Slot_147 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        }
+       }
+       coords -944.185 37.795 -2080.728
+      }
+      Slot_148 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        }
+       }
+       coords -731.214 5.983 -2371.323
+      }
+      Slot_143 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96312FE6CE3F634D}prefabs/AI/Waypoints/AIWaypoint_Chill.et"
+        }
+       }
+       coords 0 0 0
+      }
+     }
+    }
+   }
+  }
+ }
+ USSR_Area {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   }
+  }
+  coords 1069.121 39.402 2862.637
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    USSR_Initial_Patrols {
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       USSR_Initial_Patrols1 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords 312.468 -3.116 -487.552
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+       USSR_Initial_Patrols2 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -61.273 -27.36 -908.601
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+       USSR_Initial_Patrols3 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords 347.096 -28.367 -984.447
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    USSR_AreaPool {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       USSR_Area1 {
+        coords 0 0 0
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          USSR_Guards {
+           coords 0 -1.36 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+                m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+               }
+              }
+              coords 8.137 0 30.064
+              angleY 83.85
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                m_bSpawnAIOnWPPos 1
+               }
+              }
+              coords 13.217 -0.008 -0.143
+              angleY 77.563
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et"
+                m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+               }
+              }
+              coords -6.481 0.235 -2.24
+              angleY 72.854
+             }
+            }
+           }
+          }
+          USSR_Outgoing_Patrols {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 50
+             m_fRepeatedSpawnTimer 300
+            }
+           }
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "Chill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 5.701 -1.327 3.404
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "LongChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 5.701 -1.327 3.404
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "FastChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 5.701 -1.327 3.404
+             }
+            }
+           }
+          }
+          USSR_PlayerSpawn {
+           coords 10.945 -1.357 -0.657
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+          USSR_Outgoing_CommandGroup {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 10
+             m_fRepeatedSpawnTimer 1800
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{897BE4F5F021060F}Prefabs/Groups/OPFOR/Group_USSR_CommandGroup.et"
+               m_aWaypointGroupNames {
+                SCR_WaypointSet "{5C88918A129D9CBB}" {
+                 m_sName "Chill_waypoints"
+                 m_bCycleWaypoints 1
+                }
+               }
+               m_sWPToSpawn ""
+              }
+             }
+             coords -15.305 -0.254 59.936
+             angleY 86.582
+            }
+           }
+          }
+          USSR_Vehicles {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             Ural6 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 1.521 -0.25 82.409
+              angleY 117.858
+             }
+             Ural5 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 0.151 -0.25 86.554
+              angleY 117.858
+             }
+             Ural4 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords -0.785 -0.25 90.582
+              angleY 117.858
+             }
+             Ural3 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords -1.917 -0.25 94.873
+              angleY 117.858
+             }
+             Ural2 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords -2.625 -0.25 98.851
+              angleY 117.858
+             }
+             Ural1 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords -3.536 -0.25 102.632
+              angleY 117.858
+             }
+            }
+           }
+          }
+          USSR_Assets_1 {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             Slot_49 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 18.442 -1.385 -5.589
+              angleY -105.577
+             }
+             Slot_50 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 17.746 -1.385 -2.992
+              angleY -105.021
+             }
+             Slot_51 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 13.598 -1.347 12.397
+              angleY -105.577
+             }
+             Slot_52 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 12.874 -1.347 15.022
+              angleY 76.211
+             }
+             Slot_53 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 1.48 -0.448 71.304
+              angleY -105.577
+              angleZ -2.407
+             }
+             Slot_54 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 0.733 -0.351 73.984
+              angleY -105.577
+             }
+             Slot_55 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -1.534 -0.351 74.8
+              angleY -14.547
+             }
+             Slot_56 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 15.005 -0.448 75.074
+              angleY -105.577
+              angleZ -2.407
+             }
+             Slot_57 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 14.258 -0.351 77.754
+              angleY -105.577
+             }
+             Slot_58 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 15.718 -0.351 79.59
+              angleY -14.547
+             }
+             Slot_59 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et"
+               }
+              }
+              coords 0.958 -1.377 24.141
+              angleY 71.987
+             }
+             Slot_61 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 14.347 -1.432 9.567
+              angleY 74.718
+             }
+             Slot_62 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 15.193 -1.432 6.471
+              angleY 74.718
+             }
+             Slot_63 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 16.923 -1.432 -0.019
+              angleY 74.718
+             }
+             Slot_64 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords -6.82 -1.33 2.303
+              angleY 75.071
+             }
+             Slot_65 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords -5.25 -1.386 -4.184
+              angleY 75.071
+             }
+             Slot_66 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 16.701 -0.696 69.145
+              angleY 74.718
+              angleZ 4.321
+             }
+             Slot_67 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 15.842 -0.528 72.29
+              angleY 74.718
+              angleZ 2.41
+             }
+             Slot_68 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 3.136 -0.801 65.347
+              angleY 74.718
+              angleZ 4.724
+             }
+             Slot_69 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 2.279 -0.576 68.485
+              angleY 74.718
+              angleZ 3.529
+             }
+             Slot_70 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -7.566 -1.347 5.084
+              angleY 77.261
+              angleZ 0.76
+             }
+             Slot_71 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -4.51 -1.34 -6.929
+              angleY 77.261
+              angleZ 0.76
+             }
+             Slot_72 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et"
+               }
+              }
+              coords -3.526 -1.357 -5.867
+              angleY 167.22
+             }
+             Slot_60 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+               }
+              }
+              coords 9.432 -1.506 26.02
+              angleY 166.46
+             }
+             Slot_74 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -6.016 -1.357 -5.811
+              angleY -103.54
+             }
+             Slot_75 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -1.742 -1.363 -6.981
+              angleY 166.46
+             }
+             Slot_76 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -5.354 -1.357 -8.064
+              angleY 166.46
+             }
+             Slot_77 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -5.659 -1.357 -6.932
+              angleY 76.46
+             }
+             Slot_78 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -8.821 -1.357 5.354
+              angleY 76.46
+             }
+             Slot_79 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -8.421 -1.357 4.005
+              angleY -92.381
+             }
+             Slot_80 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+               }
+              }
+              coords -5.478 -1.357 -1.973
+              angleY 75
+             }
+             Slot_81 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+               }
+              }
+              coords -5.832 -1.357 -0.933
+              angleY 165
+             }
+             Slot_82 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
+               }
+              }
+              coords -5.779 -1.357 0.212
+              angleY -106.995
+             }
+             Slot_83 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
+               }
+              }
+              coords -6.651 -1.372 6.214
+              angleY -15.707
+             }
+             Slot_73 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords -3.227 -1.363 -7.173
+              angleY 166.46
+             }
+             Slot_85 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
+               }
+              }
+              coords -7.562 -1.357 1.125
+              angleY -104.678
+             }
+             Slot_84 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
+               }
+              }
+              coords -5.406 -1.372 6.551
+              angleY 167.305
+             }
+             Slot_86 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+               }
+              }
+              coords 16.822 -1.411 6.654
+              angleY -15.863
+             }
+             Slot_87 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+               }
+              }
+              coords 15.91 -1.411 10.007
+              angleY -14.623
+             }
+             Slot_88 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+               }
+              }
+              coords 18.366 -1.411 0.162
+              angleY -12.934
+             }
+             Slot_170 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et"
+               }
+              }
+              coords -6.024 -0.569 0.261
+             }
+             Slot_171 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+               }
+              }
+              coords -12.813 -1.357 -5.743
+              angleY -105.822
+             }
+             Slot_172 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+               }
+              }
+              coords -12.38 -1.357 -7.27
+              angleY -106.702
+             }
+             Slot_173 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+               }
+              }
+              coords -11.894 -1.357 -8.889
+              angleY -104.466
+             }
+             Slot_174 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+               }
+              }
+              coords -10.112 -1.357 -9.316
+              angleY 164.178
+             }
+             Slot_175 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+               }
+              }
+              coords -8.585 -1.357 -8.883
+              angleY 163.298
+             }
+             Slot_176 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+               }
+              }
+              coords -6.966 -1.357 -8.398
+              angleY 165.534
+             }
+             Slot_177 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red.et"
+               }
+              }
+              coords -7.311 -0.457 -8.613
+             }
+             Slot_178 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B17411929589C43C}prefabs/MP/Campaign/Assets/CampaignHQRadioEast.et"
+               }
+              }
+              coords -6.468 -0.454 -8.282
+              angleY -65.789
+             }
+             Slot_169 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et"
+               }
+              }
+              coords -5.364 -0.086 -2.836
+             }
+             Slot_179 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et"
+               }
+              }
+              coords 15.391 -1.413 0.953
+              angleY 166.46
+             }
+             Slot_140 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{27343582106CE816}prefabs/Trading_Items/Factions/USSR/TS_Vehicles_USSR.et"
+               }
+              }
+              coords 3.361 -0.251 107.073
+              angleY 165.004
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       USSR_Area2 {
+        coords 289.183 9.764 -649.908
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          USSR_Guards2 {
+           coords 0 -1.36 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+                m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+               }
+              }
+              coords 29.115 -8.802 -5.405
+              angleY -134.146
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+                m_bSpawnAIOnWPPos 1
+               }
+              }
+              coords 23.759 -8.806 22.539
+              angleY -122.884
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et"
+                m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+               }
+              }
+              coords 39.896 -8.71 38.848
+              angleY -122.146
+             }
+            }
+           }
+          }
+          USSR_Outgoing_Patrols2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 50
+             m_fRepeatedSpawnTimer 300
+            }
+           }
+           coords 6.366 -10.156 14.226
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "Chill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 31.876 -0.022 -20.884
+              angleY -135
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "LongChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 31.876 -0.022 -20.884
+              angleY -135
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "FastChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 31.886 0.035 -20.865
+              angleY -135
+             }
+            }
+           }
+          }
+          USSR_PlayerSpawn2 {
+           coords 10.945 -1.357 -0.657
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et"
+              }
+             }
+             coords 5.122 -8.799 4.835
+            }
+           }
+          }
+          USSR_Outgoing_CommandGroup2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 10
+             m_fRepeatedSpawnTimer 1800
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{897BE4F5F021060F}Prefabs/Groups/OPFOR/Group_USSR_CommandGroup.et"
+               m_aWaypointGroupNames {
+                SCR_WaypointSet "{5C88918A129D9CBB}" {
+                 m_sName "Chill_waypoints"
+                 m_bCycleWaypoints 1
+                }
+               }
+               m_sWPToSpawn ""
+              }
+             }
+             coords -10.979 -9.151 49.438
+             angleY -164.101
+            }
+           }
+          }
+          USSR_Vehicles2 {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             Ural7 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 9.885 -10.052 39.173
+              angleY -168.866
+             }
+             Ural8 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 13.458 -10.052 41.677
+              angleY -168.866
+             }
+             Ural9 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 17.049 -10.052 43.732
+              angleY -168.866
+             }
+             Ural10 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 20.833 -10.052 46.051
+              angleY -168.866
+             }
+             Ural11 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 24.437 -10.052 47.874
+              angleY -168.866
+             }
+             Ural12 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{CE06FFAEBCA64105}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_NoFuel.et"
+               }
+              }
+              coords 27.797 -10.052 49.834
+              angleY -168.866
+             }
+            }
+           }
+          }
+          USSR_Assets_2 {
+           coords 32.311 -10.147 34.221
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             Slot_2 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 18.442 -1.385 -5.589
+              angleY -105.577
+             }
+             Slot_3 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 17.746 -1.385 -2.992
+              angleY -105.021
+             }
+             Slot_4 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -11.069 -0.037 -21.644
+              angleY 54.985
+             }
+             Slot_5 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -9.512 -0.037 -23.877
+              angleY -123.227
+             }
+             Slot_6 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -7.134 0.009 -27.656
+              angleY 147.77
+              angleZ 1.947
+             }
+             Slot_7 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 11.018 -0.058 -42.694
+              angleY 147.77
+             }
+             Slot_8 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 3.309 -0.071 -31.57
+              angleY -124.522
+             }
+             Slot_9 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -31.141 -0.052 6.117
+              angleY 147.77
+              angleZ -0.084
+             }
+             Slot_10 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -32.239 -0.048 4.34
+              angleY -122.23
+             }
+             Slot_11 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords -9.036 0.007 -26.588
+              angleY -125.049
+             }
+             Slot_12 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et"
+               }
+              }
+              coords 11.437 0.121 -32.522
+              angleY -33.778
+             }
+             Slot_13 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords -12.717 -0.122 -19.223
+              angleY -124.72
+             }
+             Slot_14 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords -14.545 -0.122 -16.585
+              angleY -124.72
+             }
+             Slot_15 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 16.923 -1.432 -0.019
+              angleY 74.718
+             }
+             Slot_16 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 8.24 0.013 0.796
+              angleY -125.381
+             }
+             Slot_17 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 4.502 -0.043 6.324
+              angleY -125.381
+             }
+             Slot_18 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords -36.346 -0.04 0.678
+              angleY 148.065
+              angleZ 0.118
+             }
+             Slot_19 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords -33.676 -0.012 2.415
+              angleY -31.935
+              angleZ 0.291
+             }
+             Slot_20 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 9.072 -0.087 -41.343
+              angleX 4.724
+              angleY -121.935
+             }
+             Slot_21 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+               }
+              }
+              coords 4.823 -0.062 -34.119
+              angleX -3.529
+              angleY 58.065
+             }
+             Slot_22 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 9.911 -0.004 -1.551
+              angleY -123.191
+              angleZ 0.76
+             }
+             Slot_23 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+               }
+              }
+              coords 2.849 0.003 8.639
+              angleY -123.191
+              angleZ 0.76
+             }
+             Slot_24 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et"
+               }
+              }
+              coords 2.299 -0.014 7.299
+              angleY -33.232
+             }
+             Slot_25 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+               }
+              }
+              coords -0.459 0.039 -34.892
+              angleY 166.46
+             }
+             Slot_26 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 4.651 -0.014 8.117
+              angleY 56.008
+             }
+             Slot_27 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 4.873 -0.02 9.665
+              angleY -33.992
+             }
+             Slot_28 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 3.244 -0.014 9.996
+              angleY -33.992
+             }
+             Slot_29 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 3.926 -0.014 9.041
+              angleY -123.992
+             }
+             Slot_30 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 11.181 -0.014 -1.365
+              angleY -123.992
+             }
+             Slot_31 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 10.335 -0.014 -0.241
+              angleY 67.167
+             }
+             Slot_32 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+               }
+              }
+              coords 5.489 -0.014 4.332
+              angleY -125.452
+             }
+             Slot_33 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+               }
+              }
+              coords 6.184 -0.014 3.48
+              angleY -35.452
+             }
+             Slot_34 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
+               }
+              }
+              coords 6.535 -0.014 2.39
+              angleY 52.553
+             }
+             Slot_35 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
+               }
+              }
+              coords 12.125 -0.029 -2.136
+              angleY -36.159
+             }
+             Slot_36 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+               }
+              }
+              coords 4.26 -0.02 10.978
+              angleY 141.138
+             }
+             Slot_37 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
+               }
+              }
+              coords 8.524 -0.014 2.159
+              angleY 54.87
+             }
+             Slot_38 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
+               }
+              }
+              coords 13.244 -0.029 -1.481
+              angleY -33.147
+             }
+             Slot_39 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+               }
+              }
+              coords -16.021 -0.101 -17.301
+              angleY 144.699
+             }
+             Slot_40 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+               }
+              }
+              coords -14.045 -0.101 -20.159
+              angleY 145.939
+             }
+             Slot_41 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+               }
+              }
+              coords 18.366 -1.411 0.162
+              angleY -12.934
+             }
+             Slot_142 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et"
+               }
+              }
+              coords -19.024 0.002 -13.776
+              angleY 166.46
+             }
+             Slot_141 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{27343582106CE816}prefabs/Trading_Items/Factions/USSR/TS_Vehicles_USSR.et"
+               }
+              }
+              coords 1.15 0.007 10.874
+              angleY -125.649
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ US_Area {
+  coords 3736.063 2.969 2698.09
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    US_Initial_Patrols {
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       US_Initial_Patrols1 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -622.197 13.003 46.699
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+         }
+        }
+       }
+       US_Initial_Patrols2 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -669.558 44.103 -293.389
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+         }
+        }
+       }
+       US_Initial_Patrols3 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -299.284 -1.833 -429.6
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+           angleY -91.365
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    US_AreaPool {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       US_Area1 {
+        coords 0 0 0
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          US_Guards {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{C9E4FEAF5AAC8D8C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et"
+               }
+              }
+              coords 4.776 0 -1.222
+              angleY -23.572
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et"
+               }
+              }
+              coords 3.46 0.232 10.563
+              angleY -159
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+               }
+              }
+              coords -3.196 0.071 -7.485
+              angleY -23.572
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+               }
+              }
+              coords 9.237 -0.206 -30.536
+              angleY -23.572
+             }
+            }
+           }
+          }
+          US_Outgoing_Patrols {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 50
+             m_fRepeatedSpawnTimer 300
+            }
+           }
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "Chill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 8.793 -0.076 -10.431
+              angleY -91.365
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "LongChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 8.793 -0.076 -10.431
+              angleY -91.365
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "FastChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 8.793 -0.076 -10.431
+              angleY -91.365
+             }
+            }
+           }
+          }
+          US_PlayerSpawn {
+           coords 0 0 0
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+          US_Outgoing_CommandGroup {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 10
+             m_fRepeatedSpawnTimer 1800
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{921318374CADE04B}Prefabs/Groups/BLUFOR/Group_US_CommandTeam.et"
+               m_aWaypointGroupNames {
+                SCR_WaypointSet "{5C88918A129D9CBB}" {
+                 m_sName "Chill_waypoints"
+                 m_bCycleWaypoints 1
+                }
+               }
+               m_sWPToSpawn ""
+              }
+             }
+             coords 20.714 -0.946 -22.585
+             angleY -86.146
+            }
+           }
+          }
+          US_Vehicles {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             M2 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -5.489 0.377 6.293
+              angleY 94.064
+             }
+             M3 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -4.618 0.377 10.959
+              angleY 94.064
+             }
+             M4 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -0.922 -0.565 -35.984
+              angleY 146.59
+             }
+             M5 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords 2.699 -0.564 -33.647
+              angleY 146.59
+             }
+             M1 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -6.56 0.377 2.414
+              angleY 94.064
+             }
+            }
+           }
+          }
+          US_Comp {
+           coords -2233.098 1.322 -1762.964
+           angleY -114.069
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{1C6CB7504CBD1CC4}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_03.et"
+               }
+              }
+              coords 693.145 -0.397 -2744.941
+              angleY -3.105
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{95A4CF49FC9C0481}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_01.et"
+               }
+              }
+              coords 677.071 -0.601 -2745.595
+              angleY -7.571
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F9F0FBA940588BAF}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_02.et"
+               }
+              }
+              coords 685.07 -0.593 -2745.006
+              angleY -6.325
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B75E2C587D3A55BA}Prefabs/Compositions/Misc/SubCompositions/TentUS_Camo_Cluttered_01.et"
+               }
+              }
+              coords 707.701 -1.463 -2765.438
+              angleY 29.832
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DFA178C08722964D}prefabs/Trading_Items/Factions/US/US_TradingStation.et"
+               }
+              }
+              coords 711.69 -1.322 -2766.854
+              angleY 38.499
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F72CCE795830834E}prefabs/Trading_Items/Factions/US/TS_Vehicles_US.et"
+               }
+              }
+              coords 702.666 -1.296 -2758.754
+              angleY -57.763
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F39BC00F1D5823C4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_end_high_Cluttered_USSR_01.et"
+               }
+              }
+              coords 704.054 -1.359 -2759.741
+              angleY -56.295
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+               }
+              }
+              coords 697.861 -1.325 -2761.69
+              angleY 114.069
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+               }
+              }
+              coords 681.739 -1.354 -2752.449
+              angleY 114.069
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+       US_Area2 {
+        coords -620.542 63.698 -272.162
+        angleY 53.136
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          US_Comp2 {
+           coords -2233.098 1.322 -1762.964
+           angleY -114.069
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{1C6CB7504CBD1CC4}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_03.et"
+               }
+              }
+              coords 678.694 -23.291 -2758.009
+              angleY -143.832
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{95A4CF49FC9C0481}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_01.et"
+               }
+              }
+              coords 691.553 -24.229 -2767.676
+              angleY -148.298
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F9F0FBA940588BAF}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_02.et"
+               }
+              }
+              coords 684.987 -23.792 -2763.069
+              angleY -147.052
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B75E2C587D3A55BA}Prefabs/Compositions/Misc/SubCompositions/TentUS_Camo_Cluttered_01.et"
+               }
+              }
+              coords 672.213 -23.171 -2741.295
+              angleY 131.115
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{DFA178C08722964D}prefabs/Trading_Items/Factions/US/US_TradingStation.et"
+               }
+              }
+              coords 670.042 -23.03 -2744.934
+              angleY 139.781
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F72CCE795830834E}prefabs/Trading_Items/Factions/US/TS_Vehicles_US.et"
+               }
+              }
+              coords 677.269 -23.184 -2745.877
+              angleY 129.301
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{F39BC00F1D5823C4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_end_high_Cluttered_USSR_01.et"
+               }
+              }
+              coords 671.697 -22.771 -2749.724
+              angleY 129.363
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+               }
+              }
+              coords 691.145 -23.871 -2754.927
+              angleY 114.069
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+               }
+              }
+              coords 687.229 -23.714 -2738.383
+              angleY 114.069
+             }
+            }
+           }
+          }
+          US_Guards2 {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{C9E4FEAF5AAC8D8C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et"
+               }
+              }
+              coords -1.138 -22.197 -14.785
+              angleY -23.572
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et"
+               }
+              }
+              coords -8.647 -21.154 -29.329
+              angleY -159
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+               }
+              }
+              coords -3.196 -22.591 -7.485
+              angleY -23.572
+             }
+             {
+              components {
+               Hierarchy "{5A26B3E02E941739}" {
+               }
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+               }
+              }
+              coords -19.742 -23.98 16.334
+              angleY -23.572
+             }
+            }
+           }
+          }
+          US_Outgoing_CommandGroup2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 10
+             m_fRepeatedSpawnTimer 1800
+            }
+           }
+           coords 0 0 0
+           {
+            GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{921318374CADE04B}Prefabs/Groups/BLUFOR/Group_US_CommandTeam.et"
+               m_aWaypointGroupNames {
+                SCR_WaypointSet "{5C88918A129D9CBB}" {
+                 m_sName "Chill_waypoints"
+                 m_bCycleWaypoints 1
+                }
+               }
+               m_sWPToSpawn ""
+              }
+             }
+             coords -8.378 -23.359 10.259
+             angleY -86.146
+            }
+           }
+          }
+          US_Outgoing_Patrols2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 50
+             m_fRepeatedSpawnTimer 300
+            }
+           }
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "Chill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 9.696 -23.077 5.237
+              angleY -91.365
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "LongChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 9.696 -23.077 5.237
+              angleY -91.365
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et"
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "FastChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 9.696 -23.077 5.237
+              angleY -91.365
+             }
+            }
+           }
+          }
+          US_PlayerSpawn2 {
+           coords 0 0 0
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et"
+              }
+             }
+             coords -6.252 -22.931 0.145
+             angleY 100.459
+            }
+           }
+          }
+          US_Vehicles2 {
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             M6 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -23.382 -21.236 -38.58
+              angleY -168.957
+             }
+             M7 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -18.856 -21.13 -40.012
+              angleY -168.957
+             }
+             M8 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -37.19 -24.184 4.708
+              angleY 102.517
+             }
+             M9 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -36.214 -24.315 8.906
+              angleY 102.517
+             }
+             M10 {
+              components {
+               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+                m_sObjectToSpawn "{B9B519E69B0476CE}Prefabs/Vehicles/Wheeled/M998/M1025_NoFuel.et"
+               }
+              }
+              coords -27.102 -21.337 -37.045
+              angleY -168.957
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ FIA_Area {
+  coords 1502.965 4.291 935.126
+  angleY -114.069
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    FIA_Initial_Patrols {
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       FIA_Initial_Patrols1 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -23.663 85.041 -842.917
+        angleY 114.069
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et"
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+       FIA_Initial_Patrols2 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords 162.132 73.081 -1435.48
+        angleY -131.862
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et"
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+       FIA_Initial_Patrols3 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -216.679 -1.959 -2175.802
+        angleY -17.793
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et"
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+       FIA_Initial_Patrols4 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords 361.518 32.389 -1891.357
+        angleY -17.793
+        {
+         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et"
+             m_aIncludedEditableEntityLabels {
+             }
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_sObjectToSpawn "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et"
+             m_aExcludedEditableEntityLabels {
+             }
+             m_aWaypointGroupNames {
+              SCR_WaypointSet "{5C88918A129D9CBB}" {
+               m_sName "Chill_waypoints"
+               m_bCycleWaypoints 1
+              }
+             }
+             m_sWPToSpawn ""
+            }
+           }
+           coords 0 0 0
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    FIA_Area_Pool {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+       FIA_Area_1 {
+        coords 0 0 0
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          FIA_Guards {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et"
+               }
+              }
+              coords 0.086 -1.462 2.81
+              angleY 142.131
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+               }
+              }
+              coords -6.197 -1.34 -4.397
+              angleY 124.403
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+               }
+              }
+              coords 2.766 -1.633 -5.084
+              angleY -128.323
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Commander.et"
+                m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+               }
+              }
+              coords -4.304 -1.664 -2.693
+              angleY 110.899
+             }
+            }
+           }
+          }
+          FIA_Outgoing_Patrols {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 50
+             m_fRepeatedSpawnTimer 300
+            }
+           }
+           coords 7.766 -2.396 0.471
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+                m_aIncludedEditableEntityLabels {
+                }
+                m_aExcludedEditableEntityLabels {
+                }
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "Chill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 6.013 2.443 7.731
+              angleY -165
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et"
+                m_aExcludedEditableEntityLabels {
+                }
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "LongChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 6.013 2.443 7.731
+              angleY -165
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et"
+                m_aIncludedEditableEntityLabels {
+                }
+                m_aExcludedEditableEntityLabels {
+                }
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "FastChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 6.013 2.443 7.731
+              angleY -165
+             }
+            }
+           }
+          }
+          FIA_PlayerSpawn {
+           coords -4.072 -1.827 -4.34
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et"
+              }
+             }
+             coords 2.048 0.248 -3.908
+            }
+           }
+          }
+          FIA_Outgoing_CommandGroup {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 10
+             m_fRepeatedSpawnTimer 1800
+            }
+           }
+           coords 7.766 -2.396 0.471
+           angleY 114.069
+           {
+            GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{A4DE7F52351A73C7}Prefabs/Groups/INDFOR/Group_FIA_CommandTeam.et"
+               m_aIncludedEditableEntityLabels {
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_aWaypointGroupNames {
+                SCR_WaypointSet "{5C88918A129D9CBB}" {
+                 m_sName "Chill_waypoints"
+                 m_bCycleWaypoints 1
+                }
+               }
+               m_sWPToSpawn ""
+              }
+             }
+             coords 20.579 0.979 -22.006
+             angleY 152.773
+            }
+           }
+          }
+          FIA_Comp {
+           coords 0 0 0
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_FIA_01.et"
+              }
+             }
+             coords -4.249 -1.505 3.232
+             angleY -46.326
+            }
+           }
+          }
+         }
+        }
+       }
+       FIA_Area_2 {
+        coords -310.669 1.069 -2096.221
+        angleY 114.069
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+          FIA_Guards2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            }
+           }
+           coords 0 0 0
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et"
+               }
+              }
+              coords -3.261 -3.579 4.945
+              angleY 142.131
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+               }
+              }
+              coords -5.72 -2.736 10.313
+              angleY 83.913
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+               }
+              }
+              coords -2.676 -3.445 -2.685
+              angleY 80.246
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Commander.et"
+                m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+               }
+              }
+              coords -0.096 -3.575 1.65
+              angleY 34.807
+             }
+            }
+           }
+          }
+          FIA_Outgoing_Patrols2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_SpawnChildren RANDOM_ONE
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 50
+             m_fRepeatedSpawnTimer 300
+            }
+           }
+           coords 7.766 -2.396 0.471
+           {
+            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+                m_aIncludedEditableEntityLabels {
+                }
+                m_aExcludedEditableEntityLabels {
+                }
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "Chill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 15.105 -2.196 24.803
+              angleY -123.966
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et"
+                m_aExcludedEditableEntityLabels {
+                }
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "LongChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 15.105 -2.196 24.803
+              angleY -123.966
+             }
+             {
+              components {
+               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                m_sObjectToSpawn "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et"
+                m_aIncludedEditableEntityLabels {
+                }
+                m_aExcludedEditableEntityLabels {
+                }
+                m_aWaypointGroupNames {
+                 SCR_WaypointSet "{5C88918A129D9CBB}" {
+                  m_sName "FastChill_waypoints"
+                  m_bCycleWaypoints 1
+                 }
+                }
+                m_sWPToSpawn ""
+               }
+              }
+              coords 15.105 -2.196 24.803
+              angleY -123.966
+             }
+            }
+           }
+          }
+          FIA_PlayerSpawn2 {
+           coords -4.072 -1.827 -4.34
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et"
+              }
+             }
+             coords 3.403 -1.767 -10.381
+            }
+           }
+          }
+          FIA_Outgoing_CommandGroup2 {
+           components {
+            SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+             m_bEnableRepeatedSpawn 1
+             m_iRepeatedSpawnNumber 10
+             m_fRepeatedSpawnTimer 1800
+            }
+           }
+           coords 7.766 -2.396 0.471
+           angleY 114.069
+           {
+            GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{A4DE7F52351A73C7}Prefabs/Groups/INDFOR/Group_FIA_CommandTeam.et"
+               m_aIncludedEditableEntityLabels {
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_aWaypointGroupNames {
+                SCR_WaypointSet "{5C88918A129D9CBB}" {
+                 m_sName "Chill_waypoints"
+                 m_bCycleWaypoints 1
+                }
+               }
+               m_sWPToSpawn ""
+              }
+             }
+             coords -15.042 -2.179 10.473
+             angleY 152.773
+            }
+           }
+          }
+          FIA_Comp2 {
+           coords 0 0 0
+           {
+            GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_FIA_01.et"
+              }
+             }
+             coords -6.977 -3.318 4
+             angleY -91.052
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Civilian_Units {
+  coords 2148.57 40.293 1820.709
+  {
+   GenericEntity Trading_Areas : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
+        }
+       }
+       coords -465.758 -36.729 -946.533
+      }
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords 1080.325 -38.178 1098.764
+       angleY 144.115
+      }
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{B12EF12F265A8780}prefabs/Characters/Navigator_Factionless_Arland.et"
+        }
+       }
+       coords -467.564 -36.777 -950.747
+      }
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{B12EF12F265A8780}prefabs/Characters/Navigator_Factionless_Arland.et"
+        }
+       }
+       coords 1076.453 -38.178 1094.179
+       angleY 74.289
+      }
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -153.927 11.382 1203.097
+       angleY -173.164
+      }
+      {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
+        }
+       }
+       coords -929.248 -3.16 760.035
+      }
+      SlotAI_100 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{B12EF12F265A8780}prefabs/Characters/Navigator_Factionless_Arland.et"
+        }
+       }
+       coords -970.42 -39.167 1469.563
+       angleY -76.487
+      }
+      SlotAI_101 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
+        }
+       }
+       coords -968.878 -39.119 1473.51
+      }
+      SlotAI_102 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{B12EF12F265A8780}prefabs/Characters/Navigator_Factionless_Arland.et"
+        }
+       }
+       coords 265.911 -37.646 1427.314
+       angleY -146.671
+      }
+      SlotAI_103 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{EE45318B9A38FF7C}prefabs/Characters/Trader_Factionless.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords 269.445 -37.566 1425.85
+       angleY -146.671
+      }
+     }
+    }
+   }
+  }
+ }
+ Renegade_Spawn {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   }
+  }
+  coords 1168.281 39.011 2695.925
+  {
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    Layer_63 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+       m_bEnableRepeatedSpawn 1
+       m_iRepeatedSpawnNumber 50
+       m_fRepeatedSpawnTimer 300
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity SlotAI_83 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
+         m_aWaypointGroupNames {
+          SCR_WaypointSet "{5CA6BBBE5118FA42}" {
+           m_sName "Chill_waypoints"
+           m_bCycleWaypoints 1
+          }
+         }
+         m_sWPToSpawn ""
+        }
+       }
+       coords -798.764 -36.855 -371.416
+      }
+     }
+    }
+    Layer_66 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+       m_bEnableRepeatedSpawn 1
+       m_iRepeatedSpawnNumber 50
+       m_fRepeatedSpawnTimer 300
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity SlotAI_85 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
+         m_aWaypointGroupNames {
+          SCR_WaypointSet "{5CA6BBBE5118FA42}" {
+           m_sName "Chill_waypoints"
+           m_bCycleWaypoints 1
+          }
+         }
+         m_sWPToSpawn ""
+        }
+       }
+       coords -62.761 -38.239 -943.54
+      }
+     }
+    }
+    Layer_67 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+       m_bEnableRepeatedSpawn 1
+       m_iRepeatedSpawnNumber 50
+       m_fRepeatedSpawnTimer 300
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity SlotAI_86 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
+         m_aWaypointGroupNames {
+          SCR_WaypointSet "{5CA6BBBE5118FA42}" {
+           m_sName "Chill_waypoints"
+           m_bCycleWaypoints 1
+          }
+         }
+         m_sWPToSpawn ""
+        }
+       }
+       coords 1312.262 -37.701 -1978.26
+      }
+     }
+    }
+    Layer_68 {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_SpawnChildren RANDOM_ONE
+       m_bEnableRepeatedSpawn 1
+       m_iRepeatedSpawnNumber 50
+       m_fRepeatedSpawnTimer 300
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity SlotAI_87 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et"
+         m_aWaypointGroupNames {
+          SCR_WaypointSet "{5CA6BBBE5118FA42}" {
+           m_sName "Chill_waypoints"
+           m_bCycleWaypoints 1
+          }
+         }
+         m_sWPToSpawn ""
+        }
+       }
+       coords 1885.302 -36.067 645.589
+      }
+     }
+    }
+   }
+  }
+ }
+ Grave_WP {
+  coords 1139.162 39.76 2546.472
+  {
+   GenericEntity Grave_WP_Layer : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    coords 0 0 0
+    {
+     $grp GenericEntity {
+      Slot_Chill_214 {
+       coords 226.741 -39.343 -766.294
+       angleY 109.654
+      }
+      Slot_Chill_215 {
+       coords -31.108 -39.21 -787.453
+       angleY -36.614
+      }
+      Slot_Chill_216 {
+       coords -149.882 -5.984 -1136.71
+       angleY -118.897
+      }
+      Slot_Chill_217 {
+       coords -290.456 -39.227 -956.557
+       angleY -14.283
+      }
+      Slot_Chill_218 {
+       coords 288.754 -12.067 -1322.373
+       angleY -26.178
+      }
+      Slot_Chill_219 {
+       coords 1263.736 14.285 500.678
+      }
+      Slot_Chill_220 {
+       coords 1443.589 61.676 80.72
+      }
+      Slot_Chill_221 {
+       coords 2462.09 -10.594 159.185
+       angleY -146.196
+      }
+      Slot_Chill_222 {
+       coords 197.333 -2.579 -597.581
+       angleY -25.708
+      }
+      Slot_Chill_223 {
+       coords 2226.808 -22.828 232.918
+       angleY 16.533
+      }
+      Slot_Chill_224 {
+       coords 357.969 -36.317 962.955
+       angleY 16.205
+      }
+     }
+    }
+   }
+  }
+ }
+}
