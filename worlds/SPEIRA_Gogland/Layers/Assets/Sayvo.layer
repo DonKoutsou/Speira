@@ -141,3 +141,11 @@ StaticModelEntity : "{FE60E5AB52B7114D}Prefabs/Compositions/Misc/SubCompositions
  coords 1236.021 2.779 4999.202
  angleY -51.366
 }
+$grp SP_AIDirector : "{FF2BF0037B368591}prefabs/AI/Spawners/SP_AIDirector.et" {
+ {
+  coords 6610.88 92.393 3676.905
+ }
+ {
+  coords 7267.051 5.707 5312.559
+ }
+}

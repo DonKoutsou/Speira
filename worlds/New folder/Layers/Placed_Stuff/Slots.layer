@@ -1,0 +1,526 @@
+$grp SCR_SiteSlotEntity : "{055DDE93F47A6A1D}PrefabsEditable/Slots/Flat/E_SlotFlatLarge.et" {
+ {
+  coords 3059.751 59.217 1793.553
+  angleY -30.273
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.28 0
+    angleX 1.376
+    angleZ -1.686
+   }
+  }
+ }
+ {
+  coords 1343.074 8.345 1845.797
+  angleY 17.629
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 2.442 0
+    angleX -0.015
+    angleZ -1.516
+   }
+  }
+ }
+ {
+  coords 2157.632 53.754 2943.909
+  angleY -40.713
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.037 0
+    angleX -0.595
+    angleZ -0.211
+   }
+  }
+ }
+}
+$grp SCR_SiteSlotEntity : "{4B1C4BDDF6683101}PrefabsEditable/Slots/Flat/E_SlotFlatMedium.et" {
+ {
+  coords 2354.536 66 1704.255
+  angleY -156.202
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.062 0
+    angleX 0.236
+    angleZ -0.298
+   }
+  }
+ }
+ {
+  coords 2284.506 89.526 1224.587
+  angleY -156.202
+  {
+   GenericEntity {
+    coords 0 -9223371487098961920 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.062 0
+    angleX 0.236
+    angleZ -0.298
+   }
+  }
+ }
+ {
+  coords 3047.318 58.303 1753.321
+  angleY -156.202
+  {
+   GenericEntity {
+    coords 0 -9223371487098961920 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.062 0
+    angleX 0.236
+    angleZ -0.298
+   }
+  }
+ }
+ {
+  coords 3082.481 60.331 1825.715
+  angleY 20.312
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.202 0
+    angleX 1.79
+    angleZ 2.129
+   }
+  }
+ }
+ {
+  coords 3099.187 58.936 1796.894
+  angleY 88.533
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.36 0
+    angleX -1.219
+    angleZ 1.317
+   }
+  }
+ }
+ {
+  coords 2320.775 4.018 3245.074
+  angleY 88.533
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.36 0
+    angleX -1.219
+    angleZ 1.317
+   }
+  }
+ }
+ {
+  coords 2466.344 4.162 3221.841
+  angleY 88.533
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.36 0
+    angleX -1.219
+    angleZ 1.317
+   }
+  }
+ }
+ {
+  coords 2210.999 53.415 2888.287
+  angleY -137.417
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.162 0
+    angleX -0.412
+    angleZ -0.397
+   }
+  }
+ }
+ {
+  coords 2117.626 53.639 2952.253
+  angleY -90.647
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.021 0
+    angleX -0.214
+    angleZ 0.813
+   }
+  }
+ }
+}
+$grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFlatSmall.et" {
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2358.064 63.12 1662.216
+  angleY -144.774
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.667 0
+    angleX -4.199
+    angleZ 3.59
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2323.965 65.136 1694.533
+  angleY -54.774
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.148 0
+    angleX -0.828
+    angleZ -5.951
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2332.952 66 1711.448
+  angleY -92.854
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0 0
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3101.224 73.032 1590.515
+  angleY 86.284
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.115 0
+    angleX 1.363
+    angleZ 0.876
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2366.08 96.886 1273.137
+  angleY 86.284
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.115 0
+    angleX 1.363
+    angleZ 0.876
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3027.052 58.471 1799.965
+  angleY -85.132
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.063 0
+    angleX -2.786
+    angleZ -2.626
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3104.327 59.864 1819.793
+  angleY 55.245
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.015 0
+    angleX 0.882
+    angleZ 2.243
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3081.876 58.931 1768.818
+  angleY 146.508
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.006 0
+    angleX -1.262
+    angleZ 0.931
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2132.779 53.563 2919.057
+  angleY -147.729
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.04 0
+    angleX 0.077
+    angleZ -0.213
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2164.534 53.873 2908.642
+  angleY 161.944
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.014 0
+    angleX -0.864
+    angleZ 0.929
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 2141.132 53.385 2975.436
+  angleY 2.993
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.05 0
+    angleX -0.937
+    angleZ -0.692
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1336.308 8.972 1872.221
+  angleY 2.993
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.07 0
+    angleX 3.054
+    angleZ 2.049
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1359.595 8.703 1865.56
+  angleY 58.324
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.07 0
+    angleX 0.636
+    angleZ 0.994
+   }
+  }
+ }
+}
+SP_AIDirector SP_AIDirector_Beuregard_US : "{FF2BF0037B368591}prefabs/AI/Spawners/SP_AIDirector.et" {
+ coords 3103.794 44.332 2420.606
+ DangerEventRange 200
+ m_MaxAgentsToSpawn 3
+ m_RespawnTimer 500
+ m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
+ {
+  SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+   coords 0 0 0
+   SphereRadius 50
+   m_DirectorKey "Beuregard_US"
+  }
+  SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+   coords 0 0 0
+   SphereRadius 50
+   m_DirectorKey "Beuregard_US"
+  }
+  GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+   coords -19.587 1.164 2.943
+   angleX -29.415
+   angleY 91.64
+   angleZ 170.936
+  }
+  SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+   coords 0 0 0
+   SphereRadius 50
+   m_DirectorKey "Beuregard_US"
+  }
+ }
+}

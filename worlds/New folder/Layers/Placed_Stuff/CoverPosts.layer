@@ -1,0 +1,36 @@
+GenericEntity : "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
+ coords 2377.975 2.957 3237.529
+ angleY -166.233
+}
+GenericEntity : "{05137D09E06465C6}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_04.et" {
+ coords 3162.532 12.39 2742.157
+ angleY 62.737
+}
+GenericEntity : "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" {
+ coords 2411.76 2.998 3237.557
+ angleY -146.788
+}
+GenericEntity : "{53870B8B08C181D7}prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_US_03.et" {
+ coords 3139.144 11.626 2765.391
+ angleY -138.62
+}
+GenericEntity : "{718808A63CFC4CC0}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_US_03_Campaign.et" {
+ coords 3144.413 11.462 2772.289
+ angleY 41.481
+}
+GenericEntity : "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" {
+ coords 2424.6 2.813 3245.482
+ angleY 102.156
+}
+GenericEntity : "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" {
+ coords 2339.862 2.02 3272.332
+ angleY 125.346
+}
+GenericEntity : "{DDBB14C899ED7B9A}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_02.et" {
+ coords 3154.521 12.575 2743.364
+ angleY 122.07
+}
+GenericEntity : "{E08F31F0EC81F2AD}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_05.et" {
+ coords 3132.421 13.94 2722.987
+ angleY -146.108
+}

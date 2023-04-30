@@ -1,0 +1,5 @@
+SCR_AIWaypoint {
+ ID "552E90658B56FB63"
+ CompletionRadius 50
+ Autocomplete 0
+}

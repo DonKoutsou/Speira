@@ -34,7 +34,7 @@ SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_
     }
     ItemsInitConfigurationItem "{5538C29CBE93E810}" {
      PrefabsToSpawn + {
-      "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et" "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et" "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et"
+      "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et" "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et" "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et" "{5F3BD9B25FEAEF28}Prefabs/Weapons/Magazines/Magazine_45acp_M1911_7rnd_Ball.et"
      }
     }
     ItemsInitConfigurationItem "{54A49B42D138207E}" {

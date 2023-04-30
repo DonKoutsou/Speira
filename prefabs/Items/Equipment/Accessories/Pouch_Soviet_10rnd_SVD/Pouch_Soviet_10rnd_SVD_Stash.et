@@ -1,6 +1,8 @@
 GenericEntity : "{2149560A9BEFBAC2}Prefabs/Items/Core/Equip_Accessory_base.et" {
  ID "521AC0491712FB3A"
  components {
+  SignalsManagerComponent "{5D3CDC3BE4C6A338}" {
+  }
   SoundComponent "{5A7C7000CBC39F3E}" {
    Filenames {
     "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"

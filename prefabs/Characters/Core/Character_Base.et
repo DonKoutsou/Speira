@@ -18,6 +18,16 @@ SCR_ChimeraCharacter {
     }
    }
   }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    PerceptionComponent "{54A2CBC75F06064B}" {
+     SensorsList {
+      EarsSensor "{520EA1D2DB109AA9}" {
+      }
+     }
+    }
+   }
+  }
   SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
    StaminaRegainPerS 0.01
    StaminaDrainRun -0.0002

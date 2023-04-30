@@ -1,6 +1,8 @@
 GenericEntity : "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et" {
  ID "511E9C6ADE70F798"
  components {
+  SignalsManagerComponent "{5D3CDC3BFBF2CBFB}" {
+  }
   SCR_UniversalInventoryStorageComponent "{5222CB03A40528FA}" {
    MultiSlots {
     MultiSlotConfiguration "{5C71148FA7F7CB5D}" {

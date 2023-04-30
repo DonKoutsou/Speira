@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DD2994895297DBD0}Configs/Dilaogue_Configs/DialogueConf_US_Commander.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

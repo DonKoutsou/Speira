@@ -1,6 +1,8 @@
 GenericEntity : "{FDC0074A9D46125F}Prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM_base.et" {
  ID "51EAE4EBB3FF9591"
  components {
+  SignalsManagerComponent "{5D3CDC3BE09C309B}" {
+  }
   SCR_UniversalInventoryStorageComponent "{5C50AAFCFED3F172}" {
    Attributes SCR_ItemAttributeCollection "{5C50AAFCFED3F17D}" {
     ItemDisplayName UIInfo "{5C50AAFCFED3F160}" {

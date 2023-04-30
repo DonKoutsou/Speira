@@ -1,0 +1,16 @@
+SCR_AIGroup : "{F22EDFBEFC193357}Prefabs/Groups/Campaign/Group_FIA_Remnants.et" {
+ ID "0000000000000001"
+ components {
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_EntityType CHARACTER
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    Name "Commander"
+   }
+  }
+ }
+ coords 2344.859 96.569 1293.002
+ m_aUnitPrefabSlots {
+  "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Commander.et" "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et" "{84B40583F4D1B7A3}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et" "{58E47E5A4D599432}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_MG.et" "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et" "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et" "{BF1E43FF39AA526B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Scout.et" "{CE33AB22F61F3365}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Sharpshooter.et"
+ }
+ m_bSpawnImmediately 1
+}

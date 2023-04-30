@@ -28,7 +28,7 @@ GenericEntity {
    Enabled 1
   }
  }
- coords 147.994 1.001 129.118
+ coords 2033.467 52.308 3059.979
  Flags 1027
  {
   GenericEntity : "{0011A3CBD1B1212A}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_US_01.et" {
@@ -49,22 +49,22 @@ GenericEntity {
    coords -0.732 -0.002 -1.599
    angleY -43.2
   }
-  GenericEntity : "{34C189DD4094A08A}Prefabs/Trading_Items/Factions/USSR/TS_Equipment_USSR.et" {
+  GenericEntity : "{34C189DD4094A08A}prefabs/Trading_Items/Factions/USSR/TS_Equipment_USSR.et" {
    ID "5C96A2673B6D0C52"
    coords -1.018 0 -0.949
    angleY -180
   }
-  GenericEntity : "{52D7749A35F86AFB}Prefabs/Trading_Items/Factions/USSR/TS_Medical_USSR.et" {
+  GenericEntity : "{52D7749A35F86AFB}prefabs/Trading_Items/Factions/USSR/TS_Medical_USSR.et" {
    ID "5C96A2673B6D0C4B"
    coords 0.032 0.59 -0.809
    angleY 180
   }
-  GenericEntity : "{54A1C6EBC68CF49E}Prefabs/Trading_Items/Wood_TradingStation.et" {
+  GenericEntity : "{54A1C6EBC68CF49E}prefabs/Trading_Items/Wood_TradingStation.et" {
    ID "5C96A2673B6D0DB2"
    coords -1.409 0.335 0.075
    angleY -89.417
   }
-  GenericEntity : "{5A886252FA5D9F67}Prefabs/Props/Furniture/Chest_Storage_USSR.et" {
+  GenericEntity : "{5A886252FA5D9F67}prefabs/Props/Furniture/Chest_Storage_USSR.et" {
    ID "5C9920B774B67971"
    coords -1.868 0 -0.029
    angleY -90
@@ -100,7 +100,7 @@ GenericEntity {
    coords -1.679 0 -0.765
    angleY -20.222
   }
-  GenericEntity : "{6F011B58D6D2DBE7}Prefabs/Trading_Items/Factions/USSR/TS_Ammunition_USSR.et" {
+  GenericEntity : "{6F011B58D6D2DBE7}prefabs/Trading_Items/Factions/USSR/TS_Ammunition_USSR.et" {
    ID "5C96A2673B6D0C4E"
    coords -0.881 0.82 -0.106
    angleY -92.067
@@ -132,7 +132,7 @@ GenericEntity {
    coords -1.12 0 -0.094
    angleY 90.2
   }
-  GenericEntity : "{89EF92CA286A962C}Prefabs/Trading_Items/Factions/USSR/TS_Weapons_USSR.et" {
+  GenericEntity : "{89EF92CA286A962C}prefabs/Trading_Items/Factions/USSR/TS_Weapons_USSR.et" {
    ID "5C96A2673B6D0C4A"
    coords -0.019 0.884 0.115
    angleY -141.117

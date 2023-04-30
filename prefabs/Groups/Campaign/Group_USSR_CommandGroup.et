@@ -1,0 +1,16 @@
+SCR_AIGroup : "{9E45E4F7AE1CB45A}Prefabs/Groups/Campaign/Group_USSR.et" {
+ ID "13BAA835F61E3602"
+ components {
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_EntityType CHARACTER
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    Name "Commander"
+   }
+  }
+ }
+ coords 2339.831 94.985 1295.908
+ m_aUnitPrefabSlots {
+  "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et" "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" "{612F43A4D5AE765F}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_RTO.et" "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et" "{631158F6898738A4}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AAT.et" "{8E0FE664CE7D1CA9}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et" "{976AC400219898FA}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
+ }
+ m_bSpawnImmediately 1
+}

@@ -9,7 +9,7 @@ GenericEntity {
    Streamable Disabled
   }
  }
- coords 9581.661 10.876 5213.431
+ coords 168.171 1.001 137.999
  {
   $grp GenericEntity {
    {
@@ -48,7 +48,7 @@ GenericEntity {
         m_PhaseModel "{1E7EFCDE8AC46E13}Assets/Structures/BuildingsParts/Lights/Dst/LampIndustrial_02_dst.xob"
        }
       }
-      m_eMaterialSoundType METAL_LIGHT
+      m_eMaterialSoundType NONE
      }
      RplComponent "{5C75643311733B02}" {
       Enabled 0
@@ -168,7 +168,7 @@ GenericEntity {
         m_PhaseModel "{1E7EFCDE8AC46E13}Assets/Structures/BuildingsParts/Lights/Dst/LampIndustrial_02_dst.xob"
        }
       }
-      m_eMaterialSoundType METAL_LIGHT
+      m_eMaterialSoundType NONE
      }
      RplComponent "{5C75643311733B02}" {
       Enabled 0
@@ -229,11 +229,6 @@ GenericEntity {
     coords -5.43 1.225 -6.894
     angleY -74.751
    }
-  }
-  StaticModelEntity : "{07F043DD6AACCD0B}Prefabs/Structures/Infrastructure/Barriers/BarGate_01/BarGate_01.et" {
-   ID "5C7574029E9C6441"
-   coords -18.848 0.133 6.649
-   angleY -95.657
   }
   GenericEntity : "{0E43D5546330841F}Prefabs/Structures/BuildingParts/Industrial/ToolRack_01_tool_01.et" {
    ID "5C7574029E9C644D"
@@ -304,28 +299,6 @@ GenericEntity {
     ID "5C7574029E93D6CF"
     coords 6.223 0.178 2.306
     angleY -176.792
-   }
-  }
-  $grp GenericEntity : "{20D02D188D3E883F}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Camo_wall_high_USSR.et" {
-   {
-    ID "5C7574029E8E8175"
-    coords -38.072 0 3.171
-    angleY 83.191
-   }
-   {
-    ID "5C7574029E8EB04C"
-    coords -33.407 1.362 11.281
-    angleY 109.871
-   }
-   {
-    ID "5C7574029E8EB04D"
-    coords -36.62 -0.039 -6.022
-    angleY 83.191
-   }
-   {
-    ID "5C7574029E939515"
-    coords -30.25 2.343 16.463
-    angleY 108.834
    }
   }
   GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
@@ -662,13 +635,6 @@ GenericEntity {
     angleX -87.24
     angleY 180
    }
-  }
-  GenericEntity : "{78A930FB0825AA9F}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Camo_long_high_USSR.et" {
-   ID "5C7574029E91AAB4"
-   coords 29.97 5.725 18.99
-   angleX 11.12
-   angleY 23.557
-   angleZ 6.25
   }
   $grp GenericEntity : "{792A2C359A0728C8}Prefabs/Compositions/Misc/SubCompositions/CrateWooden_Stacked_01.et" {
    {

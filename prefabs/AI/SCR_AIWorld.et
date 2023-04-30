@@ -4,6 +4,7 @@ SCR_AIWorld {
   NavmeshWorldComponent "{5584F30E67F617AD}" {
    NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
     NavmeshFilesConfig BaseNavmeshFilesConfig "{5D38629C41F8D5C2}" {
+     NavmeshFile "{20E5B728C88940C2}Worlds/Gamemaster/Navmeshes/gogland_navmesh.nmn"
      NavmeshFileOveride {
       "{44C7D7A2485A2DF8}worlds/SPEIRA_Gogland/Navmesh/SPEIRA_Gogland_Navmesh.nmn"
      }

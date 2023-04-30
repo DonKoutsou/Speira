@@ -1,43 +1,47 @@
-GenericEntity : "{533CDABD77C4C43E}Prefabs/Rocks/Granite/GraniteCliff_02.et" {
- ID "5512A6BD2056BB81"
+GenericEntity {
+ ID "5D3C792197608C3C"
  components {
-  MeshObject "{5512A6BD2C7B4349}" {
+  MeshObject "{5D3C7921ECB768BC}" {
+   Object "{EFF7EEDA722D6326}Assets/Rocks/Granite/GraniteCliff_02.xob"
    Materials {
-    MaterialAssignClass "{5CFE9914F610656D}" {
+    MaterialAssignClass "{5D3C7921ECB7768F}" {
      SourceMaterial "GraniteCliff_02"
      AssignedMaterial "{B04D794D8E4C7DC4}Assets/Rocks/Granite/Data/GraniteCliff_Meteor.emat"
     }
    }
+   LODFactors {
+    100 40 20 10 5 2 1
+   }
   }
-  ActionsManagerComponent "{5D32D3A83391640F}" {
+  RigidBody "{5D3C7921ECB768AC}" {
+   ModelGeometry 1
+   Static 1
+  }
+  ActionsManagerComponent "{5D3C7921ECB7684B}" {
    ActionContexts {
-    UserActionContext "{5D32D3A8376A71B2}" {
+    UserActionContext "{5D3C7921ECB7687D}" {
      ContextName "default"
-     Position PointInfo "{5D32D3A83D2E6E65}" {
+     Position PointInfo "{5D3C7921ECB76879}" {
       Offset 0 5.5692 0
      }
      Radius 9.764
     }
    }
    additionalActions {
-    SP_ConverseActionNoTake "{5D32D3A9AED5CF0B}" {
+    SP_ConverseActionNoTake "{5D3C7921ECB76848}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{5D32D3A94D7A7662}" {
+     UIInfo UIInfo "{5D3C7921ECB76846}" {
       Name "Harvest sample"
      }
-     m_WantedPay "{9820B0986FF6B35A}prefabs/Toolkits/Mining_Toolkit.et"
+     m_WantedPay "{9820B0986FF6B35A}prefabs/Toolkits/Uniform_Toolkit.et"
      m_PrefabToSell "{9DF239BE88931B81}prefabs/Items/Other/Meteor_Sample.et"
      m_UnavailableText "Missing Toolkit"
     }
    }
   }
  }
- coords 2382.746 64.793 2953.81
- angleX 1.553
- angleY 14.875
- angleZ 11.76
+ coords 0 0 0
  scale 0.44
- Flags 3
 }

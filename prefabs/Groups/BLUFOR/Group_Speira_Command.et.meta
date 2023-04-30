@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B021F7A59BF12A39}prefabs/Groups/BLUFOR/Group_Speira_Comand.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

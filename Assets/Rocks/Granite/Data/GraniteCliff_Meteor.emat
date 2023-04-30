@@ -1,8 +1,8 @@
 MatPBRMulti {
  Color 0.956 0.92 0.889 1
- SpecularIBL 0.708 1 0.78 1
+ SpecularIBL 1 0.935 0.863 1
  SurfaceProperties "{D745FD8FC67DB26A}Common/Materials/Game/stone.gamemat"
- Specular 0.197 0.456 0.558 1
+ Specular 0.296 0.195 0.171 1
  SpecularMul 4.991
  WetnessScale 0.705
  PorosityScale 0.7

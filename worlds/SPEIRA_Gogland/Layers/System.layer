@@ -1,6 +1,9 @@
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 1249.948 2.751 5010.93
 }
+TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
+ coords 7045.188 7.878 5407.095
+}
 SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
  components {
   SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
@@ -52,19 +55,7 @@ SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/
     }
    }
   }
-  SCR_CampaignFaction "{5D36EADDD04C9870}" {
-   FactionKey "RENEGADE"
-   FactionColor 0.237 0.635 0.632 0
-   UIInfo SCR_FactionUIInfo "{5D36EADDD7368D9A}" {
-    Name "RENEGADE"
-    m_sNameUpper "RENEGADE"
-   }
-   "Identity of soldiers" FactionIdentity "{5D36EADDF82600CF}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
-   }
-   m_iOrder 5000
-   m_bIsPlayable 0
-   m_FactionLabel FACTION_SPEIRA
-   m_bFriendlyToSelf 0
+  SCR_CampaignFaction "{5D394497E1B862A1}" : "{62F71F8F80F285C0}Configs/RenegadeFaction.conf" {
   }
  }
 }
