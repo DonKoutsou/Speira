@@ -17,9 +17,6 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
 TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
  coords 2553.087 146.388 2344.572
 }
-SCR_CameraManager SCR_CameraManager1 : "{33F9FD881E3700CC}Prefabs/World/Game/SCR_CameraManager.et" {
- coords 1068.668 38.546 2870.59
-}
 SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
  coords 2517.663 147.434 2275.716
  Factions {
@@ -95,11 +92,19 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
   }
   SP_DialogueComponent "{5D1547897BFE725A}" {
    m_CharacterArchetypeList {
-    SP_DialogueArchetype "{5D3CB78DF5A7DE97}" : "{DD2994895297DBD0}Configs/Dilaogue_Configs/DialogueConf_US_Commander.conf" {
+    SP_DialogueArchetype "{5D4313ADFB87ECD7}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/DialogueConf_BANDIT_Commander.conf" {
     }
-    SP_DialogueArchetype "{5D3D3344300CFDFC}" : "{12AA38C67EA60053}Configs/Dilaogue_Configs/DialogueConf_USSR_Commander.conf" {
+    SP_DialogueArchetype "{5D4313ADFAE3BEFA}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/DialogueConf_BANDIT_Private.conf" {
     }
-    SP_DialogueArchetype "{5D3D3344346F6897}" : "{86459EFF28C3E347}Configs/Dilaogue_Configs/DialogueConf_FIA_Commander.conf" {
+    SP_DialogueArchetype "{5D4313ADFDEDF602}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/DialogueConf_FIA_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D4313ADFCF7A88E}" : "{B18C661393614CB3}Configs/Dilaogue_Configs/DialogueConf_SPEIRA_Commander.conf" {
+    }
+    SP_DialogueArchetype "{5D4313ADFFC34947}" : "{3782D34EFAC95F19}Configs/Dilaogue_Configs/DialogueConf_SPEIRA_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D4313ADFE74006E}" : "{EB56F91868FDABCE}Configs/Dilaogue_Configs/DialogueConf_US_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D4313ADE14CA305}" : "{5598C834512501C4}Configs/Dilaogue_Configs/DialogueConf_USSR_Private.conf" {
     }
    }
   }
@@ -109,20 +114,15 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
 ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 1071.804 38.045 2867.438
 }
-SCR_CampaignGarbageManager : "{38018ED573ED2316}Prefabs/MP/Campaign/CampaignGarbageManager.et" {
- coords 2724.381 49.271 1426.741
- CharacterLifetime 600
- ItemLifetime 250
-}
 SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
  coords 3052.151 56.09 1719.602
- CharacterLifetime 1810.286
- VehicleLifetime 1752
- ItemLifetime 1848
+ CharacterLifetime 985.071
+ VehicleLifetime 1040.252
+ ItemLifetime 599.863
  m_bOnlyDestroyed 1
 }
 SCR_SpawnPoint : "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et" {
- coords 689.702 0.287 2174.38
+ coords 476.611 0.429 2912.619
  angleY 41.08
 }
 SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {

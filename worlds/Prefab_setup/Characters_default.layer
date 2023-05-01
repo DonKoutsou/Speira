@@ -1277,6 +1277,15 @@ SCR_ChimeraCharacter : "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA
 GenericEntity : "{6C45B0C477B7EBAD}Prefabs/Compositions/Misc/CustomEntities/Systems/AmmoBoxArsenal_Equipment_USSR_Gadgets.et" {
  coords 113.528 1.001 242.501
 }
+SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
+ coords 116.051 1.001 247.678
+ m_CommanderRespawn 0
+ m_AgentTemplates {
+  "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et"
+ }
+ m_Commander ""
+ m_sLocationName "Bandit Hideout"
+}
 GenericEntity : "{759115303A582527}Prefabs/Compositions/Misc/CustomEntities/Systems/AmmoBoxArsenal_Equipment_USSR_Apparel.et" {
  coords 113.64 1.001 243.708
 }
@@ -1331,6 +1340,31 @@ SCR_ChimeraCharacter : "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR
  coords 144.241 1.001 253.936
  angleY -180
 }
+SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
+ coords 116.628 1.001 248.992
+ DangerEventRange 200
+ DynamicSim_Lod1_distance 500
+ m_Radius 60
+ m_Respawn 1
+ m_SpawnAI 1
+ m_RespawnTimer 600
+ m_CommanderRespawnTimer 600
+ m_AgentTemplates {
+  "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+ }
+ m_Compositions {
+  "{B1EF20282529F4B4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_01.et" "{DDBB14C899ED7B9A}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_02.et" "{382758319508ECF1}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_03.et" "{05137D09E06465C6}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_04.et" "{E08F31F0EC81F2AD}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_05.et" "{2BC1606244F9F491}Prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et" "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et"
+ }
+ m_CompositionsMed {
+  "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{781A5361CCEA95FC}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_US_01.et" "{A53CBBE41A6C9EC1}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_US_01.et" "{BD9032E3E3510329}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_US_01.et" "{69131FD53AF6C044}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_US_01.et" "{44B3130F12865442}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_US_01.et"
+ }
+ m_CompositionsLarge {
+  "{9FDEDDF92C5D7408}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_US_01.et" "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+ }
+ m_sLocationName "Director Area"
+ m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
+ m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+}
 SCR_ChimeraCharacter : "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et" {
  coords 167.835 1.001 252.293
  angleY -180
@@ -1384,6 +1418,9 @@ SCR_ChimeraCharacter : "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA
 SCR_ChimeraCharacter : "{FE65E8C60C751352}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_PL.et" {
  coords 134.264 1.001 253.84
  angleY -180
+}
+SP_AIDirector : "{FF2BF0037B368591}prefabs/AI/Spawners/SP_AIDirector.et" {
+ coords 115.901 1.001 247.975
 }
 SCR_ChimeraCharacter : "{FF43925D26526B95}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AAT.et" {
  coords 130.611 1.001 253.84

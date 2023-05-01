@@ -1449,10 +1449,6 @@ GenericEntity : "{1A1CE09F7BCA6650}Prefabs/Props/Wrecks/S105_wreck_static.et" {
  angleX 3.639
  angleZ 1.414
 }
-StaticModelEntity : "{1C6CB7504CBD1CC4}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_03.et" {
- coords 3105.415 45.332 2407.992
- angleY 156.474
-}
 GenericEntity : "{20902DC3C035E9F2}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V3_covered.et" {
  coords 1210.705 37.138 2595.817
  angleY 167.969
@@ -1734,10 +1730,6 @@ $grp GenericEntity : "{8E0A5198519C41DD}Prefabs/Props/Military/AmmoBoxes/Equipme
   angleY -49.681
  }
 }
-StaticModelEntity : "{95A4CF49FC9C0481}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_01.et" {
- coords 3120.472 44.38 2418.184
- angleY 150
-}
 GenericEntity : "{9633134198F3AB1A}Prefabs/Rocks/Granite/GraniteRock_01.et" {
  coords 2527.563 4.581 3217.535
 }
@@ -1806,10 +1798,6 @@ $grp SCR_DestructibleBuildingEntity : "{ADDA5472F867C249}Prefabs/Structures/Cult
   coords 1020.225 1.028 1219.035
   angleY -47.631
  }
-}
-GenericEntity : "{B75E2C587D3A55BA}Prefabs/Compositions/Misc/SubCompositions/TentUS_Camo_Cluttered_01.et" {
- coords 3089.448 45.332 2411.036
- angleY 63.553
 }
 GenericEntity : "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_FIA_01.et" {
  coords 3535.657 2.059 1510.787
@@ -1996,9 +1984,6 @@ $grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
  {
   coords 2349.399 66.001 1722.052
  }
- {
-  coords 3105.484 44.324 2419.169
- }
 }
 GenericEntity : "{D99955DFCF7D3962}Prefabs/Props/Wrecks/CannonWreck_01.et" {
  coords 1341.572 38.808 2925.977
@@ -2180,8 +2165,4 @@ GenericEntity : "{F6FCE24216D243D1}Prefabs/Props/Forest/WoodPile/WoodPile_02_bas
 GenericEntity : "{F9B96527E16549AB}Prefabs/Props/Wrecks/M998_wreck_static.et" {
  coords 1236.665 39.303 2880.211
  angleY 108.923
-}
-StaticModelEntity : "{F9F0FBA940588BAF}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_02.et" {
- coords 3113.737 44.592 2412.111
- angleY 154.65
 }

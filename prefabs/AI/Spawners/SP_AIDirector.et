@@ -13,7 +13,7 @@ SP_AIDirector {
   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
    m_EntityType COMMENT
    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-    Name "US Main Base"
+    Name "US Main Base Director"
    }
    m_bAutoRegister NEVER
    m_vIconPos 0 50 0
@@ -22,27 +22,35 @@ SP_AIDirector {
   }
   RplComponent "{5D42902F42C75668}" {
   }
+  SCR_MapDescriptorComponent "{5D42AA23646297F1}" {
+   ImagesetQuadElement "1"
+   MainType "Name Settlement"
+   Scale 0
+  }
  }
- coords 1084.194 37.922 2885.076
- DangerEventRange 80
- m_MaxAgentsToSpawn 3
- m_Radius 80
- m_RespawnTimer 150
+ coords 692.935 1.501 2258.046
+ DangerEventRange 50
+ DynamicSim_Lod1_distance 300
+ m_MaxAgentsToSpawn 2
+ m_Radius 40
+ m_CommanderRespawn 1
+ m_RespawnTimer 60
  m_CommanderRespawnTimer 600
  m_AgentTemplates {
-  "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{30ED11AA4F0D41E5}prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
+  "{F7EEAE5C07267C6D}prefabs/Groups/Campaign/Group_SPEIRA_Defenders.et"
  }
+ m_Commander "{B44E1DD513AD2007}prefabs/Groups/Campaign/Group_SPEIRA.et"
  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
  m_Compositions {
-  "{2BC1606244F9F491}Prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et" "{B02F3D2B4389C68B}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03_Campaign.et" "{FFD9E8A7CD2592B5}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" "{0F131BF4B8C373E2}Prefabs/Compositions/Misc/SubCompositions/Sandbag_MG_US_02_M2HB.et" "{B1EF20282529F4B4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_01.et" "{DDBB14C899ED7B9A}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_02.et" "{382758319508ECF1}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_03.et" "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{3D7A9C97331C3F0B}prefabs/Compositions/Misc/CombatOps/FIA_S_HQ.et"
+  "{2BC1606244F9F491}Prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et" "{B02F3D2B4389C68B}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03_Campaign.et" "{FFD9E8A7CD2592B5}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" "{B1EF20282529F4B4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_01.et" "{DDBB14C899ED7B9A}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_02.et" "{382758319508ECF1}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_03.et" "{05137D09E06465C6}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_04.et" "{E08F31F0EC81F2AD}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_05.et" "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et"
  }
  m_CompositionsMed {
-  "{F7820A5500AE5BE8}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_US_01.et" "{7492BAA88AFCEDCD}prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_USSR_01.et" "{D41D0213ED10734B}Prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_US_01.et" "{70BEEEC472F2CD7D}Prefabs/Compositions/Slotted/SlotFlatMedium/FieldHospital_M_USSR_01.et" "{5196CA1829D428F7}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Bunker_Cluttered_US_01.et" "{9A6B7E1F874E5C0F}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Bunker_Cluttered_USSR_01.et" "{CD02EBFB0E2E274E}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_FIA_01.et" "{D3049174EF7497C4}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_Fia_02.et"
+  "{D3049174EF7497C4}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_Fia_02.et"
  }
  m_CompositionsLarge {
   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{9FDEDDF92C5D7408}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_US_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
  }
- m_sLocationName "soviet headquarters"
+ m_sLocationName "SPEIRA headquarters"
  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
 }

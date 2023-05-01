@@ -1,639 +1,21 @@
-$grp SP_AIDirector : "{FF2BF0037B368591}prefabs/AI/Spawners/SP_AIDirector.et" {
- SP_AIDirector_MossHill {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Moss Hill Director"
-    }
-   }
-  }
-  coords 2303.545 90.179 1257.391
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "Moss Hill"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "MossHill"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "MossHill"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 38.422 3.217 19.411
-    angleX -80.632
-    angleY 45.598
-    angleZ -81.843
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "MossHill"
-   }
-  }
- }
- SP_AIDirector_Church {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Church Director"
-    }
-   }
-  }
-  coords 3039.723 72.573 1572.223
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "Arleville church"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
- }
- SP_AIDirector_Beuregard {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Beuregard Director"
-    }
-   }
-  }
-  coords 3111.977 16 2743.141
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "Beuregard"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
- }
- SP_AIDirector_Beach {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Beach Director"
-    }
-   }
-  }
-  coords 2374.741 7.267 3205.31
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "shouth shore"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    SphereRadius 80
-    m_DirectorKey "Beach"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Beach"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 2.792 1.172 -1.242
-    angleZ -174.647
-    scale 1.409
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Beach"
-   }
-  }
- }
- SP_AIDirector_Stable {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Cow Stable Director"
-    }
-    m_Flags 0
-   }
-  }
-  coords 1989.541 51.657 3049.895
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "cow stable west of farm"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Stable"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Stable"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 17.413 -9.37 -0.094
-    angleX -48.665
-    angleY -73.092
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Stable"
-   }
-  }
- }
- SP_AIDirector_Farm {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Farm Director"
-    }
-   }
-  }
-  coords 2210.064 53.434 2841.115
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "farm"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Farm"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Farm"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 0 -13.646 -2.618
-    angleY -68.365
-    angleZ 28.144
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Farm"
-   }
-  }
- }
- SP_AIDirector_Lake {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Lake Director"
-    }
-   }
-  }
-  coords 1911.268 22.705 2768.583
-  angleZ 52.565
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "Lake east of airfield"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Lake"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Lake"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    components {
-     BaseSlotComponent "{5D3D577B16308F11}" {
-      AttachType EntitySlotInfo Particle {
-       Offset 0 1.0206 0
-      }
-     }
-    }
-    coords -4.498 11.359 -1.732
-    scale 0.634
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Lake"
-   }
-  }
- }
- SP_AIDirector_DHouse {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Destroyed house Director"
-    }
-   }
-  }
-  coords 1596.909 40.312 2375.497
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "destroyed house southwest of aifield"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
- }
- SP_AIDirector_Harbour {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Harbour Director"
-    }
-   }
-  }
-  coords 1246.246 0.723 3258.396
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "harbour south of airfield"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Harbour"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Harbour"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -1.197 0.439 -1.638
-    angleX -89.512
-    scale 0.44
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Harbour"
-   }
-  }
- }
- SP_AIDirector_SignalHill {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Signal Hill Director"
-    }
-   }
-  }
-  coords 2507.267 148.872 2261.225
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "signal hill"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "SignalHill"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "SignalHill"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -22.908 -9.172 -17.028
-    angleX 60.727
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "SignalHill"
-   }
-  }
- }
- SP_AIDirector_Mil {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Mil Director"
-    }
-   }
-  }
-  coords 1407.979 -5.751 1833.893
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "Angler Bluff military base"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 4.543 13.291 23.753
-    angleX 69
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil"
-   }
-  }
- }
- SP_AIDirector_US {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "US Main Base Director"
-    }
-   }
-  }
-  coords 3739.592 2.938 2694.145
-  DangerEventRange 50
-  DynamicSim_Lod1_distance 300
-  m_MaxAgentsToSpawn 3
-  m_Radius 50
-  m_CommanderRespawn 1
-  m_RespawnTimer 60
-  m_CommanderRespawnTimer 600
-  m_AgentTemplates {
-   "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et" "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et" "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{81B6DBF2B88545F5}Prefabs/Groups/BLUFOR/Group_US_Team_Suppress.et"
-  }
-  m_Commander "{33EDF8CC81F4483F}prefabs/Groups/Campaign/Group_US_CommandGroup.et"
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "US headquarters"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  {
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 11.137 -6.068 -34.257
-    angleX 83.138
-    angleY 37.553
-    angleZ -1.177
-   }
-  }
- }
- SP_AIDirector_USSR {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "USSR Main Base Director"
-    }
-   }
-  }
-  coords 1084.194 37.922 2885.076
-  DynamicSim_Lod1_distance 300
-  m_CommanderRespawn 1
-  m_RespawnTimer 60
-  m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
-  {
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -67.663 1.048 22.95
-    angleX 88.783
-    angleY 79.163
-    angleZ -180
-   }
-  }
- }
- SP_AIDirector_FIA {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "FIA Main Base Director"
-    }
-   }
-  }
-  coords 3480.75 4.805 1513.527
-  DangerEventRange 80
-  DynamicSim_Lod1_distance 300
-  m_MaxAgentsToSpawn 3
-  m_Radius 90
-  m_CommanderRespawn 1
-  m_RespawnTimer 60
-  m_CommanderRespawnTimer 600
-  m_AgentTemplates {
-   "{EE92725E9B949C3D}Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et" "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{5BEA04939D148B1D}Prefabs/Groups/INDFOR/Group_FIA_FireTeam.et"
-  }
-  m_Commander "{9DD40CCED358852A}prefabs/Groups/Campaign/Group_FIA_CommandGroup.et"
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "FIA main base"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
- }
- SP_AIDirector_Junk {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Junkyard Director"
-    }
-   }
-  }
-  coords 1014.897 13.642 1988.266
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "junkyard southwest of airfield"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Junk"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Junk"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords 3.213 -3.946 -17.259
-    angleY 49.511
-    angleZ -96.36
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Junk"
-   }
-  }
- }
- SP_AIDirector_Highfield {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Highfield Director"
-    }
-   }
-  }
-  coords 2345.705 66 1713.909
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "south of highfield"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
- }
- SP_AIDirector_Mil2 {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Mil2 Director"
-    }
-   }
-  }
-  coords 1677.715 38.997 3011.264
-  DangerEventRange 200
-  m_Radius 300
-  m_CommanderRespawn 0
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_Commander ""
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "airfield military base"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil2"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil2"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -20.159 -7.759 -1.065
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil2"
-   }
-  }
- }
- SP_AIDirector_Mil3 {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Mil 3 Director"
-    }
-   }
-  }
-  coords 1370.624 36.48 2379.26
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "airfield military compound"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
-  {
-   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil3"
-   }
-   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil3"
-   }
-   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -2.608 -7.784 -14.74
-   }
-   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
-    m_DirectorKey "Mil3"
-   }
-  }
- }
+$grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_HostileArea.et" {
  SP_AIDirector_Arleville {
   components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Arleville Director"
+   SCR_EditableCommentComponent "{5D42AA2A86C39121}" {
+    m_UIInfo SCR_BlockUIInfo "{5D42AA2A86C391DD}" {
+     Name "Arleville mineral"
     }
    }
   }
-  coords 2746.205 72.762 1719.003
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
+  coords 2746.771 73.762 1718.854
   m_sLocationName "Arleville"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   {
    SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
+    coords -0.566 -1 0.149
     m_DirectorKey "Arleville"
    }
    SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
+    coords -0.566 -1 0.149
     m_DirectorKey "Arleville"
    }
    GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
@@ -644,162 +26,412 @@ $grp SP_AIDirector : "{FF2BF0037B368591}prefabs/AI/Spawners/SP_AIDirector.et" {
       }
      }
     }
-    coords 0 -8.395 2.603
+    coords -0.566 -9.395 2.752
    }
    SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
+    coords -0.566 -1 0.149
     m_DirectorKey "Arleville"
    }
   }
  }
- SP_AIDirector_Beuregard_out {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Beuregard Out Director"
-    }
-   }
-  }
-  coords 3118.547 3.96 3011.565
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
-  }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_sLocationName "Beuregard"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ SP_AIDirector_Beach {
+  coords 2375.204 8.272 3204.727
+  m_sLocationName "Beach"
   {
    SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
+    coords -0.463 -1.005 0.583
+    SphereRadius 80
+    m_DirectorKey "Beach"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -0.463 -1.005 0.583
+    m_DirectorKey "Beach"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 2.329 0.167 -0.659
+    angleZ -174.647
+    scale 1.409
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -0.463 -1.005 0.583
+    m_DirectorKey "Beach"
+   }
+  }
+ }
+ SP_AIDirector_Beuregard {
+  coords 3112.964 16.001 2742.939
+ }
+ SP_AIDirector_Beuregard_out {
+  coords 3118.335 3.933 3011.318
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords 0.212 0.027 0.247
     SphereRadius 50
     m_DirectorKey "Beuregard_out"
    }
    SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
+    coords 0.212 0.027 0.247
     SphereRadius 50
     m_DirectorKey "Beuregard_out"
    }
    GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -0.473 -8.813 17.477
+    coords -0.261 -8.786 17.724
     angleX -1.084
     angleY -55.449
     angleZ 89.253
     scale 1.1
    }
    SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
+    coords 0.212 0.027 0.247
     SphereRadius 50
     m_DirectorKey "Beuregard_out"
    }
   }
  }
- SP_AIDirector_BANDITS {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Bandit Main Base Director"
-    }
-   }
-  }
-  coords 1680.286 3.543 874.489
-  DangerEventRange 80
-  m_MaxAgentsToSpawn 3
-  m_Radius 40
-  m_CommanderRespawn 1
-  m_RespawnTimer 150
-  m_CommanderRespawnTimer 600
-  m_AgentTemplates {
-   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et"
-  }
-  m_Commander ""
-  m_ResearchGroup ""
-  m_sLocationName "Bandit Main Base"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
- }
  SP_AIDirector_Beuregard_US {
-  coords 3103.794 44.332 2420.606
-  DangerEventRange 200
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
+  coords 3104.028 44.296 2420.974
+  m_sLocationName "Beuregard"
   {
    SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
-    coords 0 0 0
+    coords -0.234 0.036 -0.368
     SphereRadius 50
     m_DirectorKey "Beuregard_US"
    }
    SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
-    coords 0 0 0
+    coords -0.234 0.036 -0.368
     SphereRadius 50
     m_DirectorKey "Beuregard_US"
    }
    GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
-    coords -20.196 -0.093 6.447
+    coords -20.43 -0.057 6.079
     angleX -29.415
     angleY 91.64
     angleZ 170.936
    }
    SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
-    coords 0 0 0
+    coords -0.234 0.036 -0.368
     SphereRadius 50
     m_DirectorKey "Beuregard_US"
    }
   }
  }
- SP_AIDirector_Shack {
-  components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "Shack Director"
-    }
+ SP_AIDirector_Church {
+  coords 3055.839 72.761 1578.185
+  m_sLocationName "Church"
+ }
+ SP_AIDirector_DHouse {
+  coords 1596.985 41.385 2381.301
+ }
+ SP_AIDirector_Farm {
+  coords 2213.278 54.434 2869.188
+  m_sLocationName "Farm"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -3.214 -1 -28.073
+    m_DirectorKey "Farm"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -3.214 -1 -28.073
+    m_DirectorKey "Farm"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords -3.214 -14.646 -30.691
+    angleY -68.365
+    angleZ 28.144
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -3.214 -1 -28.073
+    m_DirectorKey "Farm"
    }
   }
-  coords 2018.399 11.546 1858.436
-  DangerEventRange 200
-  m_Radius 300
-  m_RespawnTimer 500
-  m_CommanderRespawnTimer 3000
-  m_AgentTemplates {
-   "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+ }
+ SP_AIDirector_Harbour {
+  coords 1229.948 1.723 3265.582
+  m_sLocationName "harbour south of airfield"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords 16.298 -1 -7.186
+    m_DirectorKey "Harbour"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords 16.298 -1 -7.186
+    m_DirectorKey "Harbour"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 15.101 -0.561 -8.824
+    angleX -89.512
+    scale 0.44
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords 16.298 -1 -7.186
+    m_DirectorKey "Harbour"
+   }
   }
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
+ }
+ SP_AIDirector_Highfield {
+  coords 2348.403 67.136 1711.206
   m_sLocationName "south of highfield"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
-  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
  }
- SP_AIDirector_SPEIRA {
+ SP_AIDirector_Junk {
   components {
-   SCR_EditableCommentComponent "{5D3D4C14530572B1}" {
-    m_UIInfo SCR_BlockUIInfo "{5D3D4C145CE44991}" {
-     Name "US Main Base Director"
+   SCR_EditableCommentComponent "{5D42AA2A86C39121}" {
+    m_UIInfo SCR_BlockUIInfo "{5D42AA2A86C391DD}" {
+     Name "Junkyard Hostile Area"
     }
    }
   }
-  coords 692.935 1.501 2258.046
-  DangerEventRange 50
-  DynamicSim_Lod1_distance 300
-  m_MaxAgentsToSpawn 2
-  m_Radius 40
-  m_CommanderRespawn 1
-  m_RespawnTimer 60
-  m_CommanderRespawnTimer 600
-  m_AgentTemplates {
-   "{F7EEAE5C07267C6D}prefabs/Groups/Campaign/Group_SPEIRA_Defenders.et"
+  coords 1015.127 14.151 1988.013
+  m_sLocationName "junkyard southwest of airfield"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -0.23 -0.509 0.253
+    m_DirectorKey "Junk"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -0.23 -0.509 0.253
+    m_DirectorKey "Junk"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 2.983 -4.455 -17.006
+    angleY 49.511
+    angleZ -96.36
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -0.23 -0.509 0.253
+    m_DirectorKey "Junk"
+   }
   }
-  m_Commander "{B44E1DD513AD2007}prefabs/Groups/Campaign/Group_SPEIRA.et"
-  m_ResearchGroup "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
-  m_Compositions {
-   "{2BC1606244F9F491}Prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et" "{B02F3D2B4389C68B}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03_Campaign.et" "{FFD9E8A7CD2592B5}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" "{B1EF20282529F4B4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_01.et" "{DDBB14C899ED7B9A}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_02.et" "{382758319508ECF1}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_03.et" "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et"
-  }
-  m_CompositionsMed {
-   "{D3049174EF7497C4}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_Fia_02.et"
-  }
-  m_sLocationName "SPEIRA headquarters"
-  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
  }
+ SP_AIDirector_Lake {
+  coords 1915.646 38.471 2755.635
+  m_sLocationName "Lake east of airfield"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -4.378 -15.766 12.948
+    angleZ 52.565
+    m_DirectorKey "Lake"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -4.378 -15.766 12.948
+    angleZ 52.565
+    m_DirectorKey "Lake"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    components {
+     BaseSlotComponent "{5D3D577B16308F11}" {
+      AttachType EntitySlotInfo Particle {
+       Offset 0 1.0206 0
+      }
+     }
+    }
+    coords 1.907 -5.29 11.216
+    angleZ 52.565
+    scale 0.634
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -4.378 -15.766 12.948
+    angleZ 52.565
+    m_DirectorKey "Lake"
+   }
+  }
+ }
+ SP_AIDirector_Mil {
+  coords 1396.601 11.077 1839.75
+  m_sLocationName "Angler Bluff military base"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords 11.378 -16.828 -5.857
+    m_DirectorKey "Mil"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords 11.378 -16.828 -5.857
+    m_DirectorKey "Mil"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 15.921 -3.537 17.896
+    angleX 69
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords 11.378 -16.828 -5.857
+    m_DirectorKey "Mil"
+   }
+  }
+ }
+ SP_AIDirector_Mil2 {
+  coords 1678.274 39.997 3009.058
+  m_sLocationName "airfield military base"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -0.559 -1 2.206
+    m_DirectorKey "Mil2"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -0.559 -1 2.206
+    m_DirectorKey "Mil2"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords -20.718 -8.759 1.141
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -0.559 -1 2.206
+    m_DirectorKey "Mil2"
+   }
+  }
+ }
+ SP_AIDirector_Mil3 {
+  coords 1370.695 36.524 2379.196
+  m_sLocationName "airfield military compound"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -0.071 -0.044 0.064
+    m_DirectorKey "Mil3"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -0.071 -0.044 0.064
+    m_DirectorKey "Mil3"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords -3.786 -16.768 -17.238
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -0.071 -0.044 0.064
+    m_DirectorKey "Mil3"
+   }
+  }
+ }
+ SP_AIDirector_MossHill {
+  coords 2303.842 90.158 1257.358
+  m_sLocationName "Moss Hill"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -0.297 0.021 0.033
+    m_DirectorKey "MossHill"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -0.297 0.021 0.033
+    m_DirectorKey "MossHill"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 38.125 3.238 19.444
+    angleX -80.632
+    angleY 45.598
+    angleZ -81.843
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -0.297 0.021 0.033
+    m_DirectorKey "MossHill"
+   }
+  }
+ }
+ SP_AIDirector_Shack {
+  coords 2019.047 10.555 1855.412
+  m_AgentTemplates {
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+ }
+ SP_AIDirector_SignalHill {
+  coords 2506.653 148.866 2260.434
+  m_sLocationName "signal hill"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords 0.614 0.006 0.791
+    m_DirectorKey "SignalHill"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords 0.614 0.006 0.791
+    m_DirectorKey "SignalHill"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords -22.294 -9.166 -16.237
+    angleX 60.727
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords 0.614 0.006 0.791
+    m_DirectorKey "SignalHill"
+   }
+  }
+ }
+ SP_AIDirector_Stable {
+  coords 1989.583 52.657 3050.197
+  m_sLocationName "cow stable west of farm"
+  {
+   SP_CharacterTriggerEntity : "{3943C511F541D2CC}prefabs/AI/Spawners/Commander_Trigger_FIA.et" {
+    coords -0.042 -1 -0.302
+    m_DirectorKey "Stable"
+   }
+   SP_CharacterTriggerEntity : "{4386DF1571F1BEB1}prefabs/AI/Spawners/Commander_Trigger_US.et" {
+    coords -0.042 -1 -0.302
+    m_DirectorKey "Stable"
+   }
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 17.371 -10.37 -0.396
+    angleX -48.665
+    angleY -73.092
+   }
+   SP_CharacterTriggerEntity : "{F8AB7DB25B6C5F3E}prefabs/AI/Spawners/Commander_Trigger_USSR.et" {
+    coords -0.042 -1 -0.302
+    m_DirectorKey "Stable"
+   }
+  }
+ }
+ SP_AIDirector_FIAInf {
+  components {
+  }
+  coords 833.276 1.176 1559.762
+  DangerEventRange 20
+  m_MaxAgentsToSpawn 1
+  m_Radius 20
+  m_RespawnTimer 120
+  m_AgentTemplates {
+   "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et"
+  }
+  m_sLocationName "Stray FIA"
+  m_pDefaultWaypoint "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+  {
+   GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+    coords 12.222 -5.89 -8.077
+    angleX 19.744
+    angleY -25.971
+    angleZ -51.643
+   }
+  }
+ }
+}
+SP_AIDirector SP_AIDirector_US : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
+ coords 3740.397 3.938 2693.604
+ {
+  GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+   coords 10.332 -7.068 -33.716
+   angleX 83.138
+   angleY 37.553
+   angleZ -1.177
+  }
+ }
+}
+SP_AIDirector SP_AIDirector_FIA : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
+ coords 3481.01 4.84 1514.799
+}
+SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_AIDirector_Bandits.et" {
+ coords 1679.214 3.531 873.805
+}
+SP_AIDirector SP_AIDirector_USSR : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AIDirector_USSR.et" {
+ coords 1085.439 38.922 2885.061
+ {
+  GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+   coords -68.908 0.048 22.965
+   angleX 88.783
+   angleY 79.163
+   angleZ 180
+  }
+ }
+}
+SP_AIDirector SP_AIDirector_SPEIRA : "{B51B1F790BDF84AF}prefabs/AI/Spawners/SP_AIDirector_SPEIRA.et" {
+ components {
+  SCR_MapDescriptorComponent "{5D42AA2A86C39135}" {
+   DisplayName "SPEIRA HQ"
+   MainType "Name City"
+  }
+ }
+ coords 689.964 1.501 2260.719
+ m_Radius 50
 }

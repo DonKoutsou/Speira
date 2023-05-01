@@ -1,6 +1,15 @@
 SCR_ChimeraCharacter : "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et" {
  ID "520EC961A090B1EE"
  components {
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+   m_iRank COMMANDER
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Commander"
+    Icon "{E1048FA6B4A24E45}UI/Textures/MainMenu/Icons/Rank_L_128x_UI.edds"
+   }
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    WeaponTemplate "{15F0CB459CE8750E}Prefabs/Weapons/Rifles/M16/Rifle_M16A1.et"
   }

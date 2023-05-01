@@ -48,6 +48,9 @@ class SP_AIDirector : AIGroup
 	ref array<ResourceName> m_CompositionsLarge;
 	
 	[Attribute("")]
+	ref array<ResourceName> m_CompositionsRoad;
+	
+	[Attribute("")]
 	string m_sLocationName;
 	
 	
@@ -94,6 +97,12 @@ class SP_AIDirector : AIGroup
 		int i = Math.RandomInt(0, m_CompositionsLarge.Count());
 		return m_CompositionsLarge[i];
 	}
+	ResourceName GetRandomCompositionRoad()
+	{
+		int i = Math.RandomInt(0, m_CompositionsRoad.Count());
+		return m_CompositionsRoad[i];
+	}
+	
 	bool HandleFoundSlot(IEntity e)
 	{
 		SCR_SiteSlotEntity slot = SCR_SiteSlotEntity.Cast(e);
@@ -138,6 +147,21 @@ class SP_AIDirector : AIGroup
 				SCR_EditableEntityUIInfo info = SCR_EditableEntityUIInfo.Cast(edit.GetInfo());
 				ResourceName n;
 				if (slot.GetOccupant()) continue;
+				if (m_CompositionsRoad.Count() > 0)
+				{
+					if(info.HasEntityLabel(EEditableEntityLabel.SLOT_ROAD_LARGE) == true)
+					{
+						n = GetRandomCompositionRoad();
+					}
+					if(info.HasEntityLabel(EEditableEntityLabel.SLOT_ROAD_MEDIUM) == true)
+					{
+						n = GetRandomCompositionRoad();
+					}
+					if(info.HasEntityLabel(EEditableEntityLabel.SLOT_ROAD_SMALL) == true)
+					{
+						n = GetRandomCompositionRoad();
+					}
+				}
 				if(info.HasEntityLabel(EEditableEntityLabel.SLOT_FLAT_LARGE) == true)
 				{
 					n = GetRandomCompositionLarge();
