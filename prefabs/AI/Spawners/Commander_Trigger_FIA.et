@@ -2,6 +2,6 @@ SP_CharacterTriggerEntity : "{E3DF6B07A1162BF1}prefabs/AI/Spawners/Commander_Tri
  ID "5D3ADC799F601062"
  coords 3741.24 2.889 2682.048
  m_sOwnerFactionKey "FIA"
- m_fActivationCountdownTimer 1200
+ m_fActivationCountdownTimer 1800
  m_Commanders "{9DD40CCED358852A}prefabs/Groups/Campaign/Group_FIA_CommandGroup.et"
 }

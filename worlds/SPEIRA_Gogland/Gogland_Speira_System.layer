@@ -1,0 +1,81 @@
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 1249.948 2.751 5010.93
+}
+TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
+ coords 7045.188 7.878 5407.095
+}
+SCR_CameraManager SCR_CameraManager2 : "{33F9FD881E3700CC}Prefabs/World/Game/SCR_CameraManager.et" {
+ coords 1238.602 3.001 5069.528
+}
+SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
+ components {
+  SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
+   m_iForcedFaction 2
+   m_iForcedLoadout 1
+  }
+  SCR_CompositionSlotManagerComponent "{5D42899B85A3E3C0}" {
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_bPermitUnconsciousness 1
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   Enabled 0
+  }
+  SCR_PlayerPenaltyComponent "{5D36F6EA0CB1D4B5}" {
+  }
+ }
+ coords 6125.058 34.614 6430.288
+}
+SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/MP/Campaign/CampaignFactionManager.et" {
+ coords 6090.081 31.179 6516.461
+ Factions {
+  SCR_CampaignFaction "{50B30C3AF4BFD934}" {
+   m_bIsPlayable 0
+  }
+  SCR_CampaignFaction "{50B30C3ADB052C80}" {
+   m_bIsPlayable 0
+  }
+  SCR_CampaignFaction "{56F0C3A6336375DC}" {
+  }
+  SCR_CampaignFaction "{5D36EADDDFA1308F}" : "{6D1DC960D66B2EB3}Configs/SpeiraFaction.conf" {
+   m_bIsPlayable 1
+   m_FactionLabel FACTION_SPEIRA
+  }
+  SCR_CampaignFaction "{5D394497E1B862A1}" : "{62F71F8F80F285C0}Configs/RenegadeFaction.conf" {
+  }
+  SCR_CampaignFaction "{5D428998D4FBC04F}" : "{E0C7D48A2AB622F0}Configs/BanditFaction.conf" {
+  }
+ }
+}
+$grp ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
+ {
+  coords 6149.758 23.548 6501.662
+ }
+ {
+  coords 1258.255 4.037 5054.796
+ }
+}
+SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+ coords 1277.483 2.751 5035.694
+ CharacterLifetime 834.146
+ VehicleLifetime 769.756
+ ItemLifetime 664.39
+ m_bOnlyDestroyed 1
+}
+SCR_MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+ coords 6145.979 74.075 6150.203
+}
+SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords 6148.394 74.176 6149.447
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{5D36EEDBCC7F5FBF}" {
+   m_sLoadoutName "Default"
+   m_sLoadoutResource "{51F5214E43167A62}prefabs/Characters/DefaultCharacter_Arland.et"
+   m_sAffiliatedFaction "SPEIRA"
+  }
+  SCR_FactionPlayerLoadout "{5D36F6E2BF81F794}" {
+   m_sLoadoutResource "{51F5214E43167A62}prefabs/Characters/DefaultCharacter_Arland.et"
+   m_sAffiliatedFaction "SPEIRA"
+  }
+ }
+}

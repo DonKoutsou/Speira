@@ -106,10 +106,6 @@ StaticModelEntity : "{54AF9F7C4603B71B}Prefabs/Structures/Military/Camps/TentFIA
    ID "5B168E88CC2865E0"
    coords 0.7 1.114 0.14
   }
-  GenericEntity : "{160E4E4110803F26}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_FIA.et" {
-   ID "5B168E88CC2865EE"
-   coords -3.765 0 3.935
-  }
   $grp GenericEntity : "{18982CB5D0D29247}Prefabs/Props/Civilian/BeerBottle_01_empty_brown.et" {
    {
     ID "5B168E88CC2865EC"
@@ -157,7 +153,7 @@ StaticModelEntity : "{54AF9F7C4603B71B}Prefabs/Structures/Military/Camps/TentFIA
    coords 2.299 1.543 2.284
    angleY -133.87
   }
-  $grp GenericEntity : "{261F10BDC068BB35}Prefabs/Props/Furniture/ChairOld_01.et" {
+  $grp GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
    {
     ID "5B168E88CC22CC6D"
     coords -6.916 0.083 1.147
@@ -183,7 +179,7 @@ StaticModelEntity : "{54AF9F7C4603B71B}Prefabs/Structures/Military/Camps/TentFIA
    ID "5B168E88CC2F9410"
    coords -2.541 0.169 1.769
   }
-  $grp GenericEntity : "{2F2BBFDA3A2C73D4}Prefabs/Props/Civilian/RadioSmall_01_black.et" {
+  $grp GenericEntity : "{2F2BBFDA3A2C73D4}prefabs/Props/Civilian/RadioSmall_01_black.et" {
    {
     ID "5B168E88CC228F17"
     coords -5.956 0.675 0.774
@@ -217,7 +213,7 @@ StaticModelEntity : "{54AF9F7C4603B71B}Prefabs/Structures/Military/Camps/TentFIA
    coords -2.556 0 8.75
    angleY -29.138
   }
-  GenericEntity : "{3CD490132ECE6645}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" {
+  GenericEntity : "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" {
    ID "5B168E88CC2EC405"
    coords 3.513 0 8.071
    angleY 94.303
@@ -225,11 +221,6 @@ StaticModelEntity : "{54AF9F7C4603B71B}Prefabs/Structures/Military/Camps/TentFIA
   GenericEntity : "{453433739A2A5851}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/FIA/EquipmentBoxStack_FIA_01_V3_covered.et" {
    ID "5B168E88CC2EC408"
    coords 2.108 0.168 -2.256
-  }
-  GenericEntity : "{469407A6CAC599DC}prefabs/Trading_Items/FIA_TradingStation.et" {
-   ID "5B168E88CC2EC40D"
-   coords -2.129 0.23 -2.13
-   angleY 176.857
   }
   GenericEntity : "{476EBA1E8B1CAA05}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/FIA/EquipmentBoxStack_FIA_01_V3.et" {
    ID "5B168E88CC2EC7F7"
@@ -262,10 +253,10 @@ StaticModelEntity : "{54AF9F7C4603B71B}Prefabs/Structures/Military/Camps/TentFIA
     ID "5B168E88CC23ACF3"
     coords -7.498 0.913 -1.137
    }
-   {
-    ID "5B168E88CC2EC7F9"
-    coords -2.212 1.272 -1.235
-   }
+  }
+  GenericEntity : "{573038AEF0FFA53D}prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_SPEIRA.et" {
+   ID "5D429024A6FBB3B0"
+   coords -3.134 0 3.671
   }
   GenericEntity : "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et" {
    ID "5B168E88CC2EC7FE"

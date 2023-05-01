@@ -82,7 +82,7 @@ GenericEntity {
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5CF51AF1F523FE94}" {
    }
-   WeaponType Rifle
+   WeaponType Handgun
    AllowedRaise "Only lowered"
    StanceLimits 0 2
    obstructionTestCharacterOffset 0 0 0
@@ -94,7 +94,7 @@ GenericEntity {
     Name "Machete"
     Icon "{9DE83EF9996D2EC8}UI/Textures/WeaponIcons/weapon_Bayonet6Kh4.edds"
    }
-   WeaponSlotType "primary"
+   WeaponSlotType "secondary"
    WeaponOffset 0 0 0
   }
   ActionsManagerComponent "{5CF51AF1F523FE9F}" {

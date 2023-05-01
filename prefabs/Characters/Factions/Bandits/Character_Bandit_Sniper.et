@@ -1,0 +1,38 @@
+SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Character_Bandit_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Vest {
+     Prefab "{12C8933903D18885}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_sharpshooter.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3D245D132315DB}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_sharpshooter.et"
+     PrefabsToSpawn {
+      "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D245D13C7468E}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
+     PrefabsToSpawn {
+      "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et" "{D63D1AC66BD5840A}Prefabs/Weapons/Warheads/Warhead_Smoke_RDG2.et" "{D63D1AC66BD5840A}Prefabs/Weapons/Warheads/Warhead_Smoke_RDG2.et"
+     }
+    }
+   }
+  }
+ }
+ coords 112.904 1.001 253.754
+ angleY 0
+}

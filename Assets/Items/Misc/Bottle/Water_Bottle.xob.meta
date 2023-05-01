@@ -2,6 +2,7 @@ MetaFileClass {
  Name "{15FF1BAEA3B87082}Assets/Items/Misc/Bottle/Water_Bottle.xob"
  Configurations {
   FBXResourceClass PC {
+   ExportSkinning 1
    MaterialAssigns {
     MaterialAssignClass "{5D3B141AF734C578}" {
      SourceMaterial "lambert1"
@@ -9,7 +10,7 @@ MetaFileClass {
     }
    }
    MeshParams {
-    MeshParam pCylinder3 {
+    MeshParam Bottle {
     }
    }
    Common TXOCommonClass "{5D3B141AF74A1A9E}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {

@@ -25,7 +25,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
-   WeaponTemplate "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
+   WeaponTemplate "{202B26ADA1621199}prefabs/Weapons/Melee/Machete.et"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {

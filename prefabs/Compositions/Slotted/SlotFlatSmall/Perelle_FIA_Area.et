@@ -431,15 +431,6 @@ GenericEntity {
    coords 3.557 0 -9.371
    angleY 53.275
   }
-  Vehicle Ural4320_tanker1 : "{4C81D7ED8F8C0D87}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker.et" {
-   ID "5D3C792C306289A7"
-   components {
-    SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
-     m_fVehicleDestroyDamage 17524
-    }
-   }
-   coords 14.05 0 -7.917
-  }
   GenericEntity : "{4DBA189750F6F017}Prefabs/Props/Civilian/Typewriter_01/Typewriter_01_grey.et" {
    ID "5D3C792C306289A1"
    coords -5.379 1.225 -6.451

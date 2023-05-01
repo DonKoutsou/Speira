@@ -2,6 +2,6 @@ SCR_AIGroup : "{412A7767B11310C5}Prefabs/Groups/Campaign/Group_US.et" {
  ID "13BAA835F61E3602"
  m_faction "SPEIRA"
  m_aUnitPrefabSlots {
-  "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et"
+  "{2325F62F87062AD5}prefabs/Characters/Factions/SPEIRA/Character_Speira_Guard.et" "{2325F62F87062AD5}prefabs/Characters/Factions/SPEIRA/Character_Speira_Guard.et"
  }
 }

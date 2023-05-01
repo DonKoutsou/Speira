@@ -1,9 +1,9 @@
 SCR_AIGroup : "{000CD338713F2B5A}Prefabs/AI/Groups/Group_Base.et" {
  ID "0000000000000001"
- coords 9941.756 8.074 1250.474
+ coords 3758.692 1.747 2674.937
  m_faction "SPEIRA"
  m_aUnitPrefabSlots {
-  "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et" "{949802AD9F3B7760}prefabs/Characters/DefaultCaracter_Armed.et"
+  "{30D095AA225AC69F}prefabs/Characters/Factions/SPEIRA/Character_Speira_Commander.et" "{2325F62F87062AD5}prefabs/Characters/Factions/SPEIRA/Character_Speira_Guard.et" "{2325F62F87062AD5}prefabs/Characters/Factions/SPEIRA/Character_Speira_Guard.et" "{2325F62F87062AD5}prefabs/Characters/Factions/SPEIRA/Character_Speira_Guard.et" "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et" "{E3591CBE03908B40}prefabs/Characters/Factions/SPEIRA/Character_Speira_Researcher.et"
  }
- m_bSpawnImmediately 0
+ m_bSpawnImmediately 1
 }

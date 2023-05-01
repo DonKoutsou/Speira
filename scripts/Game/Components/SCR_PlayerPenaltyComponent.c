@@ -55,6 +55,7 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 		{
 			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 		}
+		
 		if (IsProxy())
 			return;
 		

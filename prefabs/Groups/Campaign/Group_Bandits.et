@@ -1,0 +1,8 @@
+SCR_AIGroup : "{000CD338713F2B5A}Prefabs/AI/Groups/Group_Base.et" {
+ ID "0000000000000001"
+ coords 115.296 1.001 250.845
+ m_faction "BANDITS"
+ m_aUnitPrefabSlots {
+  "{A0B2084D7A976723}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman.et" "{8BD2C16BCA04A246}prefabs/Characters/Factions/Bandits/Character_Bandit_Sniper.et"
+ }
+}

@@ -39,6 +39,28 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5D3723DCABD65062}" {
      TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     PrefabsToSpawn {
+      "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D4C1160BCCB93}" {
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M70_v2.et"
+     PrefabsToSpawn {
+      "{C9BBC27F31D5DCD8}prefabs/Characters/Factions/OPFOR/USSR_Army/test_knife.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D4C1113EF979D}" {
+     TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"
+     PrefabsToSpawn {
+      "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D4C1135BE22EB}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
     }
    }
   }

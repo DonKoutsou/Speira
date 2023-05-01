@@ -2,7 +2,6 @@ SCR_AIGroup : "{D4A1576757665D02}Prefabs/Groups/Campaign/Group_US_Defenders.et" 
  ID "13BAA835F61E3602"
  components {
   SCR_EditableGroupComponent "{50D291F6C83FA532}" {
-   m_EntityType CHARACTER
    m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
     Name "Commander"
    }
@@ -10,7 +9,7 @@ SCR_AIGroup : "{D4A1576757665D02}Prefabs/Groups/Campaign/Group_US_Defenders.et" 
  }
  coords 1096.984 38.001 2875.455
  m_aUnitPrefabSlots {
-  "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et" "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" "{1623EA3AEFACA0E4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_MG.et" "{1CA3D30464EE4674}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Spotter.et" "{0F6689B491641155}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et" "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" "{3726077BE60962FF}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_RTO.et"
+  "{B52413846EF8082C}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Commander.et" "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" "{3726077BE60962FF}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_RTO.et" "{0F6689B491641155}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et" "{1CA3D30464EE4674}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Spotter.et"
  }
  m_bSpawnImmediately 1
  m_iMaxMembers 2

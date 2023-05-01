@@ -18,25 +18,19 @@ class SP_CharacterTriggerEntity : SCR_CharacterTriggerEntity
 		if (!m_bInitSequenceDone)
 			return;
 
-		if (!m_aPlayersInside.Contains(ent))
-			m_aPlayersInside.Insert(ent);
-		
+		if (!m_aEntitiesInside.Contains(ent))
+			m_aEntitiesInside.Insert(ent);
+
 		ActivationPresenceConditions();
 		CustomTriggerConditions();
 		HandleTimer();
 		
+		
 		if (m_fTempWaitTime <= 0)
 		{
-			
 			Owner.SpawnCommander(m_Commanders);	
 			m_fTempWaitTime = m_fActivationCountdownTimer;
 		}
-		
-		if (m_bEnableAudio)
-			HandleAudio();
-
-		if (m_bTriggerConditionsStatus && m_fTempWaitTime <= 0)
-			FinishTrigger(ent);
 		
 	}
 	override protected void EOnInit(IEntity owner)

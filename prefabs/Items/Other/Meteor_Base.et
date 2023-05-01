@@ -1,6 +1,12 @@
 GenericEntity {
  ID "5D3C792197608C3C"
  components {
+  BaseSlotComponent "{5D3D577B16308F11}" {
+   AttachType EntitySlotInfo Particle {
+    Offset 0 8.7995 1.9652
+   }
+   EntityPrefab "{651D6E9E9BFA8B0E}Particles/Editor/Photo/Meteor_Particle.et"
+  }
   MeshObject "{5D3C7921ECB768BC}" {
    Object "{EFF7EEDA722D6326}Assets/Rocks/Granite/GraniteCliff_02.xob"
    Materials {
@@ -42,6 +48,6 @@ GenericEntity {
    }
   }
  }
- coords 0 0 0
- scale 0.44
+ coords 0 8.228 2.603
+ scale 0.832
 }

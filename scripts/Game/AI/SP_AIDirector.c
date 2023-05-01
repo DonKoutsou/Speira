@@ -13,6 +13,9 @@ class SP_AIDirector : AIGroup
 	[Attribute("true")]
 	bool m_Respawn;
 	
+	[Attribute("false")]
+	bool m_CommanderRespawn;
+	
 	[Attribute("true")]
 	bool m_SpawnAI;
 	
@@ -21,11 +24,17 @@ class SP_AIDirector : AIGroup
 	[Attribute("0")]
 	float m_RespawnTimer;
 	
+	[Attribute("0")]
+	float m_CommanderRespawnTimer;
+	
 	[Attribute("")]
 	ref array<ResourceName> m_AgentTemplates;
 	
 	[Attribute("")]
 	ResourceName m_Commander;
+	
+	[Attribute("")]
+	ResourceName m_ResearchGroup;
 	
 	bool commanderspawned = false;
 	
@@ -38,16 +47,27 @@ class SP_AIDirector : AIGroup
 	[Attribute("")]
 	ref array<ResourceName> m_CompositionsLarge;
 	
+	[Attribute("")]
+	string m_sLocationName;
+	
 	
 	
 	[Attribute("")]
-	private ResourceName m_pDefaultWaypoint;	
+	private ResourceName m_pDefaultWaypoint;
+	
+	[Attribute("")]
+	private ResourceName m_pCommanderWaypoint;
+	
 	// private
 	private int m_SpawnedCounter;	
 	private float m_RespawnPeriod;
+	private float m_CommanderRespawnPeriod;
 	private ref array<SCR_AIGroup> m_aGroups = new array<SCR_AIGroup>();
 	private ref array<SCR_SiteSlotEntity> m_Slots = {};
 	private AIWaypoint DefWaypoint;
+	private AIWaypoint ComWaypoint;
+	protected IEntity m_CommanderEnt;
+	protected SP_DialogueComponent DiagComp;
 
 	void SP_AIDirector(IEntitySource src, IEntity parent)
 	{
@@ -90,6 +110,7 @@ class SP_AIDirector : AIGroup
 		super.EOnInit(owner);
 		m_SpawnedCounter = 0;
 		m_RespawnPeriod = 0;
+		m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
 		// get first children, it should be WP
 		vector position = GetOrigin();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
@@ -98,7 +119,10 @@ class SP_AIDirector : AIGroup
 		spawnParams.TransformMode = ETransformMode.WORLD;
 		spawnParams.Transform = spawnMatrix;
 		Resource WP = Resource.Load(m_pDefaultWaypoint);
+		Resource CWP = Resource.Load(m_pCommanderWaypoint);
 		DefWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(WP, null, spawnParams));
+		ComWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(CWP, null, spawnParams));
+		
 		
 		if (m_SpawnCompositions)
 		{
@@ -141,11 +165,6 @@ class SP_AIDirector : AIGroup
 		if (m_AgentTemplates.Count() == 0 || !m_SpawnAI)
 			return;
 
-		for (;m_SpawnedCounter < m_MaxAgentsToSpawn;)		
-		{
-			if (Spawn())
-				m_SpawnedCounter++;
-		}
 
 		if (m_Respawn)
 		{
@@ -160,7 +179,79 @@ class SP_AIDirector : AIGroup
 					m_RespawnPeriod -= timeSlice;
 			}
 		}
+		if (m_CommanderRespawn)
+		{
+			if (GetLeaderEntity() != m_CommanderEnt)
+			{
+				if (m_CommanderRespawnPeriod <= 0.0)
+				{
+					commanderspawned = false;
+					if (Spawn())
+					{
+						m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
+					}
+				}
+				else
+					m_CommanderRespawnPeriod -= timeSlice;
+			}
+		}
 	}
+	bool SpawnResearchGroup()
+	{
+		if (m_AgentTemplates.Count() == 0)
+			return false;
+		
+		RandomGenerator rand = new RandomGenerator();
+		
+		// randomize position in radius
+		vector position = GetOrigin();
+		float yOcean = GetWorld().GetOceanBaseHeight();
+		
+		position[1] = yOcean - 1; // force at least one iteration
+		while (position[1] < yOcean)
+		{
+			position[0] = position[0] + rand.RandFloatXY(-m_Radius, m_Radius);
+			position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
+			position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
+		}
+
+		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
+		spawnMatrix[3] = position;
+		EntitySpawnParams spawnParams = EntitySpawnParams();
+		spawnParams.TransformMode = ETransformMode.WORLD;
+		spawnParams.Transform = spawnMatrix;
+
+		Resource res = Resource.Load(m_ResearchGroup);
+		IEntity newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
+		if (!newEnt)
+			return false;
+		
+		if (newEnt.GetPhysics())
+			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
+			
+		OnSpawn(newEnt);
+		SCR_AIGroup CommandGroup = SCR_AIGroup.Cast(newEnt);
+		m_CommanderEnt = CommandGroup.GetMaster();
+		if (newEnt)
+		{
+			AIAgent agent = AIAgent.Cast(newEnt);
+			if (agent)
+			{
+				AddAgent(agent);
+				//SetNewLeader(agent);
+			}
+			else
+			{
+				AIControlComponent comp = AIControlComponent.Cast(newEnt.FindComponent(AIControlComponent));
+				if (comp && comp.GetControlAIAgent())
+				{
+					AddAgent(comp.GetControlAIAgent());
+				}
+			}
+		}
+
+		return true;
+	};
 	bool SpawnCommander(ResourceName Name)
 	{
 		if (m_AgentTemplates.Count() == 0)
@@ -191,17 +282,23 @@ class SP_AIDirector : AIGroup
 		if (!newEnt)
 			return false;
 		
+		FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(newEnt.FindComponent(FactionAffiliationComponent));
+		string faction = factcomp.GetAffiliatedFaction().GetFactionName();
+		DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
 		if (newEnt.GetPhysics())
 			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
 			
 		OnSpawn(newEnt);
-
+		SCR_AIGroup CommandGroup = SCR_AIGroup.Cast(newEnt);
+		m_CommanderEnt = CommandGroup.GetMaster();
 		if (newEnt)
 		{
 			AIAgent agent = AIAgent.Cast(newEnt);
 			if (agent)
 			{
 				AddAgent(agent);
+				//SetNewLeader(agent);
 			}
 			else
 			{
@@ -244,26 +341,35 @@ class SP_AIDirector : AIGroup
 		spawnParams.TransformMode = ETransformMode.WORLD;
 		spawnParams.Transform = spawnMatrix;
 		Resource res;
+		IEntity newEnt;
+		IEntity newComEnt;
 		if (commanderspawned == false && m_Commander)
 		{
 			res = Resource.Load(m_Commander);
+			newComEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
+			SCR_AIGroup CommandGroup = SCR_AIGroup.Cast(newComEnt);
+			m_CommanderEnt = CommandGroup.GetLeaderEntity();
+			FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(m_CommanderEnt.FindComponent(FactionAffiliationComponent));
+			string faction = factcomp.GetAffiliatedFaction().GetFactionName();
+			DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
 			commanderspawned = true;
 		}
 		else
 		{
 			res = Resource.Load(name);
+			newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
 		}
-		IEntity newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
-		if (!newEnt)
+		if (!newEnt && !newComEnt)
 			return false;
-		
-		if (newEnt.GetPhysics())
+		if (newEnt && newEnt.GetPhysics())
 			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
-			
-		OnSpawn(newEnt);
+		if (newComEnt && newComEnt.GetPhysics())
+			newComEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
 
 		if (newEnt)
 		{
+			OnSpawn(newEnt);
 			AIAgent agent = AIAgent.Cast(newEnt);
 			if (agent)
 			{
@@ -278,10 +384,29 @@ class SP_AIDirector : AIGroup
 				}
 			}
 		}
+		if (newComEnt)
+		{
+			OnComSpawn(newComEnt);
+			AIAgent agent = AIAgent.Cast(newComEnt);
+			if (agent)
+			{
+				AddAgent(agent);
+				//SetNewLeader(agent);
+			}
+			else
+			{
+				AIControlComponent comp = AIControlComponent.Cast(newComEnt.FindComponent(AIControlComponent));
+				if (comp && comp.GetControlAIAgent())
+				{
+					AddAgent(comp.GetControlAIAgent());
+					//SetNewLeader(comp.GetControlAIAgent());
+				}
+			}
+		}
+		
 
 		return true;
 	}
-	
 	event void OnSpawn(IEntity spawned)
 	{
 		SCR_AIGroup group = SCR_AIGroup.Cast(spawned);
@@ -290,6 +415,16 @@ class SP_AIDirector : AIGroup
 			m_aGroups.Insert(group);
 			if (DefWaypoint)
 				group.AddWaypoint(DefWaypoint);
+		}
+	}
+	event void OnComSpawn(IEntity spawned)
+	{
+		SCR_AIGroup group = SCR_AIGroup.Cast(spawned);
+		if (group)
+		{
+			m_aGroups.Insert(group);
+			if (ComWaypoint)
+				group.AddWaypoint(ComWaypoint);
 		}
 	}
 	
