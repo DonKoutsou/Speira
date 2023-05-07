@@ -25,6 +25,17 @@ GenericEntity : "{6212FEC7A3E08995}prefabs/Compositions/Factions/FIA/TentBase_FI
    }
    {
     ID "5CFD42CC926B6793"
+    components {
+     ActionsManagerComponent "{5D4D351C0D356923}" {
+      additionalActions {
+       SP_SleepAction "{5D4D351C3AFC86BF}" {
+        UIInfo UIInfo "{5D4D351C3E57EB36}" {
+         Name "Sleep for 2 hours"
+        }
+       }
+      }
+     }
+    }
     coords -0.872 -0.118 0.642
     angleY 90
    }

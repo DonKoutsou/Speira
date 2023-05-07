@@ -47,11 +47,15 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 		FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
 		FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
 		FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
-		if (KillerKey == "SPEIRA")
+		if (KillerKey == "SPEIRA" && VictimKey != "RENEGADE")
 		{
 			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 		}
 		else if (KillerKey == VictimKey)
+		{
+			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+		}
+		else if (KillerKey == "FIA" && VictimKey == "BANDITS")
 		{
 			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 		}

@@ -4,8 +4,8 @@ GenericEntity {
   InventoryItemComponent "{5D328BE943F22CED}" {
    Attributes SCR_ItemAttributeCollection "{5D328BE970D7037C}" {
     ItemDisplayName UIInfo "{5D328BE973E89DFF}" {
-     Name "Meteor Sample"
-     Description "A sample taken from on of the meteors"
+     Name "Unrefined Arland gem"
+     Description "A piece of unrefined gem. This gems origin is the Island of Arland. The island is known for using these gems in various ways from jewlery to tools."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{5D328BE96331F812}" {
      Weight 2

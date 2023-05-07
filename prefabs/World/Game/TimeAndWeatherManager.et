@@ -1,5 +1,6 @@
 TimeAndWeatherManagerEntity {
  ID "5244F08C9618CADD"
- "Day Duration" 43433
- "Initial Day Time" 2.806
+ "Day Duration" 14400
+ "Initial Day Time" 1.895
+ "Initial State" 0
 }

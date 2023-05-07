@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{2BD309D29507304F}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_Respawn.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{69B7C0A79FD48B0D}Prefabs/Structures/BuildingParts/Doors/Door_Bunker_02/Door_Bunker_02_A_LEFT_EXT_ST_B.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

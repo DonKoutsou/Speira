@@ -10,6 +10,8 @@ SCR_AIWorld : "{01DC74137CFDDB6A}Prefabs/AI/SCR_AIWorld_Arland.et" {
   }
  }
  coords 2171.352 61.845 2116.522
+ m_aOrders {
+ }
 }
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 2504.668 139.045 2344.997
@@ -35,9 +37,7 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
    }
   }
   SCR_Faction "{56DEAC40D132400B}" {
-   "Identity of soldiers" FactionIdentity "{570EEB96B808B7E1}" {
-    SocialIdentity SocialIdentity "{5C9692BC507AE8BC}" {
-    }
+   "Identity of soldiers" FactionIdentity "{570EEB96B808B7E1}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
    }
    m_aFriendlyFactionsIds {
     "SPEIRA" "BANDITS"
@@ -46,10 +46,14 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
   SCR_CampaignFaction "{5D3941454BE3472C}" : "{62F71F8F80F285C0}Configs/RenegadeFaction.conf" {
   }
   SCR_CampaignFaction "{5CA6FDB017FD8A30}" : "{6D1DC960D66B2EB3}Configs/SpeiraFaction.conf" {
+   "Identity of soldiers" FactionIdentity "{5CA6FD60964A382D}" {
+    SocialIdentity SocialIdentity "{5D4CBCBB32691DB0}" : "{FA1D08D60ECAB4FE}Configs/Green_Names.conf" {
+    }
+   }
    m_iOrder 5000
    m_FactionLabel FACTION_SPEIRA
    m_aFriendlyFactionsIds {
-    "US" "FIA" "USSR"
+    "US" "FIA" "USSR" "BANDITS"
    }
   }
   SCR_CampaignFaction "{5D3D1D342CD8C512}" : "{E0C7D48A2AB622F0}Configs/BanditFaction.conf" {
@@ -60,12 +64,17 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
     Icon "{855625FE8D6A87A8}UI/Textures/DamageState/damageState-dead.edds"
     m_sNameUpper "BANDITS"
    }
+   "Identity of soldiers" FactionIdentity "{5D3D1D342A02DE69}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
+    SocialIdentity SocialIdentity "{5D3D1D342A02DE49}" : "{FA1D08D60ECAB4FE}Configs/Green_Names.conf" {
+    }
+   }
    m_iOrder 5000
    m_OutlineFactionColor 0 0 0 1
    m_sFactionFlag "{855625FE8D6A87A8}UI/Textures/DamageState/damageState-dead.edds"
+   m_FactionLabel FACTION_BANDITS
    m_bFriendlyToSelf 1
    m_aFriendlyFactionsIds {
-    "FIA"
+    "FIA" "SPEIRA"
    }
   }
  }
@@ -76,7 +85,10 @@ RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
 }
 SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
  components {
+  SCR_ArsenalManagerComponent "{5D4E87F0AC4FFABF}" {
+  }
   SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
+   Enabled 0
    m_iForcedFaction 2
    m_iForcedLoadout 0
   }
@@ -89,6 +101,31 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
    m_bPermitUnconsciousness 1
   }
   SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+  }
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+    m_aGameOverScreens {
+     SCR_BaseGameOverScreenInfo "{5D4E7038FA763E33}" {
+      m_GameOverScreenId DEATH
+      m_GameOverContentLayout "{4E98EBC5622B2BFB}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Permadeath.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D4E703873686960}" {
+       m_sTitle "YOU DIED"
+       m_sSubtitle "Your life was lost on the field."
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+    }
+   }
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   Enabled 0
+  }
+  SCR_PlayerPenaltyComponent "{5D4E70305C82CFAD}" {
+  }
+  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
   }
   SP_DialogueComponent "{5D1547897BFE725A}" {
    m_CharacterArchetypeList {
@@ -104,12 +141,23 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
     }
     SP_DialogueArchetype "{5D4313ADFE74006E}" : "{EB56F91868FDABCE}Configs/Dilaogue_Configs/DialogueConf_US_Private.conf" {
     }
-    SP_DialogueArchetype "{5D4313ADE14CA305}" : "{5598C834512501C4}Configs/Dilaogue_Configs/DialogueConf_USSR_Private.conf" {
+    SP_DialogueArchetype "{5D4313ADE14CA305}" {
     }
    }
   }
+  SP_PermadeathRespawnHandlerComponent "{5D4E7039C5A87861}" {
+   m_iForcedFaction 2
+   m_iForcedLoadout 0
+   m_bOverrideGameOverType 1
+   m_eOverriddenGameOverType DEATH
+   m_RespawnWorldPosition 1362.192 3.101 1066.719
+   m_StoragePreset "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et"
+   m_iLives 1
+  }
+  SerializerInventoryStorageManagerComponent "{5D4E87F0505799FA}" {
+  }
  }
- coords 1464.062 1.14 1805.659
+ coords 1464.062 1.182 1805.659
 }
 ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 1071.804 38.045 2867.438
@@ -122,8 +170,9 @@ SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
  m_bOnlyDestroyed 1
 }
 SCR_SpawnPoint : "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et" {
- coords 476.611 0.429 2912.619
+ coords 1361.653 2.142 1064.454
  angleY 41.08
+ m_bShowInDeployMapOnly 1
 }
 SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 2514.815 147.785 2269.364
@@ -131,6 +180,11 @@ SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutMana
   SCR_FactionPlayerLoadout "{5CA7060267058AD7}" {
    m_sLoadoutName "Default"
    m_sLoadoutResource "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et"
+   m_sAffiliatedFaction "SPEIRA"
+  }
+  SCR_FactionPlayerLoadout "{5D4EC11BB20DC322}" {
+   m_sLoadoutName "Respawn"
+   m_sLoadoutResource "{2BD309D29507304F}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_Respawn.et"
    m_sAffiliatedFaction "SPEIRA"
   }
  }

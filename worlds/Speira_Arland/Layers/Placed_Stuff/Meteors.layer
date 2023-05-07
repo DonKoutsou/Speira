@@ -1,6 +1,6 @@
 $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
  {
-  coords 2505.833 -5.476 3290.488
+  coords 2505.833 -7.134 3289.86
   angleX 69.259
  }
  {
@@ -16,30 +16,10 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   angleZ -14.422
  }
  {
-  coords 2484.729 143.968 2238.692
-  angleX 77.598
-  angleY 40.002
-  angleZ 35.687
- }
- {
   coords 2484.691 145.226 2231.446
   angleX 62.664
   angleY 98.069
   angleZ 143.951
-  scale 0.376
- }
- {
-  coords 2490.104 146.476 2239.126
-  angleX 67.986
-  angleY 145.911
-  angleZ -172.1
-  scale 0.376
- }
- {
-  coords 2483.927 145.963 2233.414
-  angleX 82.117
-  angleY 144.791
-  angleZ -118.689
   scale 0.376
  }
  {
@@ -50,13 +30,6 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   scale 0.376
  }
  {
-  coords 2480.777 145.562 2224.914
-  angleX 30.953
-  angleY 115.082
-  angleZ -72.466
-  scale 0.376
- }
- {
   coords 2488.701 142.92 2229.425
   angleX 40.508
   angleY 143.127
@@ -64,150 +37,10 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   scale 0.376
  }
  {
-  coords 2479.074 145.672 2234.269
-  angleX 53.124
-  angleY -61.079
-  angleZ -75.042
-  scale 0.376
- }
- {
-  coords 2477.813 146.479 2225.86
-  angleX 83.017
-  angleY -83.366
-  angleZ -116.63
-  scale 0.376
- }
- {
-  coords 2470.732 144.643 2222.614
-  angleX 64.432
-  angleY -68.228
-  angleZ 84.377
-  scale 0.376
- }
- {
-  coords 2469.291 145.237 2219.734
-  angleX 78.836
-  angleY -55.772
-  angleZ 8.802
-  scale 0.376
- }
- {
-  coords 2477.316 144.531 2216.863
-  angleX 50.953
-  angleY 121.601
-  angleZ -90.662
-  scale 0.376
- }
- {
   coords 2478.628 144.181 2216.651
   angleX 52.705
   angleY 161.003
   angleZ 101.259
-  scale 0.376
- }
- {
-  coords 2473.194 145.893 2217.964
-  angleX 68.189
-  angleY -63.453
-  angleZ -146.178
-  scale 0.376
- }
- {
-  coords 2469.039 144.043 2213.25
-  angleX 66.396
-  angleY 175.708
-  angleZ -94.463
-  scale 0.376
- }
- {
-  coords 2480.772 145.599 2235.531
-  angleX 65.733
-  angleY -69.001
-  angleZ 165.656
-  scale 0.376
- }
- {
-  coords 2475.573 143.033 2236.145
-  angleX 65.733
-  angleY -69.001
-  angleZ -95.696
-  scale 0.376
- }
- {
-  coords 2464.406 141.508 2222.943
-  angleX 54.016
-  angleY -65.536
-  angleZ -6.954
-  scale 0.376
- }
- {
-  coords 2467.177 142.452 2224.858
-  angleX 54.016
-  angleY -65.536
-  angleZ 84.022
-  scale 0.376
- }
- {
-  coords 2482.474 148.318 2229.846
-  angleX 74.836
-  angleY 21.004
-  angleZ -163.166
-  scale 0.376
- }
- {
-  coords 2463.877 143.449 2211.254
-  angleX 71.894
-  angleY -91.71
-  angleZ 89.564
-  scale 0.376
- }
- {
-  coords 2468.765 143.509 2208.188
-  angleX 72.309
-  angleY -169.484
-  angleZ -69.943
-  scale 0.376
- }
- {
-  coords 2464.571 141.822 2211.059
-  angleX 74.322
-  angleY -108.998
-  angleZ -95.395
-  scale 0.376
- }
- {
-  coords 2468.794 144.932 2215.806
-  angleX 74.322
-  angleY -108.998
-  angleZ -121.795
-  scale 0.376
- }
- {
-  coords 2467.066 142.171 2202.871
-  angleX 78.672
-  angleY 167.41
-  angleZ -94.651
-  scale 0.376
- }
- {
-  coords 2467.335 142.358 2201.043
-  angleX 66.881
-  angleY -104.281
-  angleZ 117.169
-  scale 0.376
- }
- {
-  coords 2468.181 144.37 2209.834
-  angleX 66.881
-  angleY -104.281
-  angleZ -148.814
-  scale 0.376
- }
- {
-  coords 2474.421 144.632 2213.951
-  angleX 69.004
-  angleY 151.01
-  angleZ -154.632
   scale 0.376
  }
  {
@@ -286,5 +119,81 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   angleY 114.578
   angleZ 92.553
   scale 0.431
+ }
+ {
+  coords 2377.225 5.151 3204.068
+  angleZ -174.647
+  scale 1.409
+ }
+ {
+  coords 3118.074 -4.853 3029.042
+  angleX -1.084
+  angleY -55.449
+  angleZ 89.253
+  scale 1.1
+ }
+ {
+  coords 3083.598 44.239 2427.053
+  angleX -29.415
+  angleY 91.64
+  angleZ 170.936
+ }
+ {
+  coords 2210.064 39.788 2838.497
+  angleY -68.365
+  angleZ 28.144
+ }
+ {
+  coords 1245.049 1.162 3256.758
+  angleX -89.512
+  scale 0.44
+ }
+ {
+  coords 1000.475 15.109 2047.995
+  angleY 49.511
+  angleZ -96.36
+ }
+ {
+  components {
+   BaseSlotComponent "{5D3D577B16308F11}" {
+    AttachType EntitySlotInfo Particle {
+     Offset 0 1.0206 0
+    }
+   }
+  }
+  coords 1917.553 33.181 2766.851
+  angleZ 52.565
+  scale 0.634
+ }
+ {
+  coords 1657.556 22.351 3010.199
+ }
+ {
+  coords 1366.909 19.756 2361.958
+ }
+ {
+  coords 2341.967 93.396 1276.802
+  angleX -80.632
+  angleY 45.598
+  angleZ -81.843
+ }
+ {
+  coords 845.498 -4.714 1551.685
+  angleX 19.744
+  angleY -25.971
+  angleZ -51.643
+ }
+ {
+  coords 3718.812 2.694 2712.408
+  angleX 83.138
+  angleY 37.553
+  angleZ 28.593
+ }
+ {
+  coords 1016.525 38.695 2908.025
+  angleX 88.783
+  angleY 79.163
+  angleZ -180
+  scale 0.283
  }
 }

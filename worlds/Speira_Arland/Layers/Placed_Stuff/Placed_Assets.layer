@@ -1799,26 +1799,6 @@ $grp SCR_DestructibleBuildingEntity : "{ADDA5472F867C249}Prefabs/Structures/Cult
   angleY -47.631
  }
 }
-GenericEntity : "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_FIA_01.et" {
- coords 3535.657 2.059 1510.787
- angleY -90
- {
-  GameEntity {
-   ID "5C7315DAF456BF5F"
-   coords -1.453 -0.34 -4.478
-  }
-  GenericEntity {
-   ID "5C7315DAF45513FC"
-   coords -2.035 -0.307 -3.265
-   angleY 149.946
-  }
-  GenericEntity {
-   ID "5C7315DAF455547C"
-   coords -2.589 -0.34 -5.461
-   angleY 60.856
-  }
- }
-}
 GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  coords 1397.343 39.019 2251.904
  angleX 0

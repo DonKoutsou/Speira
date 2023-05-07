@@ -1,0 +1,14 @@
+GenericEntity : "{9B07BFCE36759651}Prefabs/Structures/BuildingParts/Doors/Door_Bunker_02/Door_Bunker_02_A_Base.et" {
+ ID "0000000000000001"
+ components {
+  ActionsManagerComponent "{F32B667C3C823800}" {
+   ActionContexts {
+    UserActionContext "{50888D37F529F720}" {
+     Radius 0
+     Omnidirectional 0
+     VisibilityAngle 0.59
+    }
+   }
+  }
+ }
+}

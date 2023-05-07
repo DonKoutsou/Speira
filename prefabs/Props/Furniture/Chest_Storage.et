@@ -89,42 +89,11 @@ GenericEntity {
    Priority 100
    UseCapacityCoefficient 0
    MaxCumulativeVolume 100000
-   InitialStorageSlots {
-    InventoryStorageSlot Canteen_example {
-     Prefab "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
-    }
-   }
-   MultiSlots {
-    MultiSlotConfiguration "{5C6944172EFE755A}" {
-     SlotTemplate InventoryStorageSlot Knives {
-      Prefab "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
-     }
-     NumSlots 15
-    }
-    MultiSlotConfiguration "{5C69441118E0E236}" {
-     SlotTemplate InventoryStorageSlot canteens {
-      Prefab "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et"
-     }
-     NumSlots 40
-    }
-    MultiSlotConfiguration "{5C7CF03FB7FA507C}" {
-     SlotTemplate InventoryStorageSlot usfull {
-      Prefab "{2F5A0196CA2DB912}prefabs/Items/Food/Canteen_Filled_US.et"
-     }
-     NumSlots 1
-    }
-    MultiSlotConfiguration "{5C7CF03FC81D06DE}" {
-     SlotTemplate InventoryStorageSlot usemtpy {
-      Prefab "{D3BA44530C896C38}prefabs/Items/Food/Canteen_Empty_US.et"
-     }
-     NumSlots 15
-    }
-   }
-   m_fMaxWeight 1000
+   m_fMaxWeight 100000
    m_aSlotsToShow {
    }
   }
-  SCR_ArsenalInventoryStorageManagerComponent "{5B22A23E671FE62B}" {
+  SCR_InventoryStorageManagerComponent "{5D4E87F9EBBB199D}" {
   }
   ActionsManagerComponent "{5B22A23E671FE612}" {
    ActionContexts {

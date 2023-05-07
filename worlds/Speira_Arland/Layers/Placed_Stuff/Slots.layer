@@ -1,3 +1,6 @@
+SCR_PlayerController DefaultPlayerController1 : "{6E2BB64764E3BE9B}prefabs/Characters/Core/DefaultPlayerController.et" {
+ coords 3457.014 4.588 1482.704
+}
 $grp SCR_SiteSlotEntity : "{055DDE93F47A6A1D}PrefabsEditable/Slots/Flat/E_SlotFlatLarge.et" {
  {
   coords 3059.751 59.217 1793.553
@@ -44,6 +47,10 @@ $grp SCR_SiteSlotEntity : "{055DDE93F47A6A1D}PrefabsEditable/Slots/Flat/E_SlotFl
    }
   }
  }
+}
+GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ coords 3738.6 2.938 2691.59
+ angleY 0
 }
 StaticModelEntity : "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et" {
  coords 836.936 1.185 1559.35
@@ -271,6 +278,48 @@ $grp SCR_SiteSlotEntity : "{4B1C4BDDF6683101}PrefabsEditable/Slots/Flat/E_SlotFl
     coords 0 0.328 0
     angleX 4.9
     angleZ 2.338
+   }
+  }
+ }
+ {
+  coords 3740.61 2.803 2708.96
+  angleY -171.661
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.35 0
+    angleX -0.49
+    angleZ -0.771
+   }
+  }
+ }
+ {
+  coords 2742.84 72.737 1724.36
+  angleY 56.658
+  {
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.408 0
+    angleX -1.899
+    angleZ 0.92
+   }
+  }
+ }
+ {
+  coords 1155.825 1.156 3334.058
+  angleY 163.976
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.013 0
+    angleX -0.049
+    angleZ -0.358
    }
   }
  }
@@ -955,6 +1004,174 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
    }
   }
  }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3726.15 3.416 2686.79
+  angleY -118.451
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.27 0
+    angleX 4.905
+    angleZ -2.55
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3731.941 3.124 2680.145
+  angleY -118.477
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.139 0
+    angleX 2.346
+    angleZ -1.346
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3736.545 3.124 2673.4
+  angleY -118.477
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.213 0
+    angleX 0.65
+    angleZ -1.564
+   }
+  }
+ }
+ {
+  coords 1972.36 41.363 2662.65
+  angleY 46.521
+  {
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.012 0
+    angleX 3.578
+    angleZ -0.52
+   }
+  }
+ }
+ {
+  coords 1977.174 39.849 2737.692
+  angleY 118.549
+  {
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.019 0
+    angleX 1.567
+    angleZ 1.079
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3422.89 6.935 1470.76
+  angleY 100.734
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.114 0
+    angleX -8.366
+    angleZ -1.045
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3396.12 10.388 1521.02
+  angleY -12.726
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -0.058 0
+    angleX -0.569
+    angleZ 1.316
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 3457.49 4.791 1532.24
+  angleY 23.798
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.077 0
+    angleX -3.643
+    angleZ 7.014
+   }
+  }
+ }
 }
 $grp SCR_SiteSlotEntity : "{66265A506DF1FE2B}PrefabsEditable/Slots/Road/E_SlotRoadSmall.et" {
  {
@@ -1108,6 +1325,30 @@ $grp SCR_SiteSlotEntity : "{66265A506DF1FE2B}PrefabsEditable/Slots/Road/E_SlotRo
     coords 0 -0.012 0
     angleX 0.512
     angleZ 0.017
+   }
+  }
+ }
+ {
+  coords 2012.71 44.594 2673.9
+  angleY 66.277
+  {
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.01 0
+    angleX 0.396
+    angleZ 0.096
+   }
+  }
+ }
+ {
+  coords 3456.534 2.642 1467.16
+  angleY -147.72
+  {
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.114 0
+    angleX -3.095
+    angleZ -0.403
    }
   }
  }

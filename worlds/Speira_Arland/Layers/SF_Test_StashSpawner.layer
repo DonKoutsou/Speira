@@ -7,7 +7,7 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
  }
  coords 2506.143 79.383 1773.427
  {
-  $grp GenericEntity : "{612569B357EC16B7}Layer_Stash.et" {
+  $grp GenericEntity : "{612569B357EC16B7}prefabs/ScenarioFramework/Layer_Stash.et" {
    {
     coords -1226.383 -43.132 657.39
    }
