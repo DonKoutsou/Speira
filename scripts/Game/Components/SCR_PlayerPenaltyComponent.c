@@ -43,23 +43,29 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 	//------------------------------------------------------------------------------------------------
 	override void OnControllableDestroyed(IEntity entity, IEntity instigator)
 	{
-		FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
-		FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
-		FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
-		FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
-		if (KillerKey == "SPEIRA" && VictimKey != "RENEGADE")
+		if (entity && instigator)
 		{
-			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+			FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
+			FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
+			if (FactionComp && FactionCompVictim)
+			{
+				FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
+				FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
+				if (KillerKey == "SPEIRA" && VictimKey != "RENEGADE")
+				{
+					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+				}
+				else if (KillerKey == VictimKey)
+				{
+					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+				}
+				else if (KillerKey == "FIA" && VictimKey == "BANDITS")
+				{
+					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+				}
+			}
+			
 		}
-		else if (KillerKey == VictimKey)
-		{
-			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-		}
-		else if (KillerKey == "FIA" && VictimKey == "BANDITS")
-		{
-			FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-		}
-		
 		if (IsProxy())
 			return;
 		

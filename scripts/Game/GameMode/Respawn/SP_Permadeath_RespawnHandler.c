@@ -8,6 +8,13 @@ class SP_UnretrievableComponentClass : GameComponentClass
 
 class SP_UnretrievableComponent : GameComponent
 {
+	[Attribute("0")]
+	bool b_ShouldRetrieve;
+	
+	bool ShouldRetrieve()
+	{
+		return b_ShouldRetrieve;
+	}
 };
 class SP_PermadeathRespawnHandlerComponentClass: SCR_AutomaticRespawnHandlerComponentClass
 {
@@ -22,10 +29,19 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	protected EGameOverTypes			m_eOverriddenGameOverType;
 	
 	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
+	vector m_StorageWorldPosition;
+	
+	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
 	vector m_RespawnWorldPosition;
 	
 	[Attribute("")]
 	ResourceName m_StoragePreset;
+	
+	[Attribute("")]
+	ResourceName m_SpawnpointFIA;
+	
+	[Attribute("")]
+	ResourceName m_SpawnpointSPEIRA;
 	
 	[Attribute()]
 	int m_iLives;
@@ -76,12 +92,21 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
-		vector mat[4];
-		mat[3] = m_RespawnWorldPosition;
+		if (m_SpawnpointFIA && m_SpawnpointSPEIRA)
+		{
+			EntitySpawnParams spawnParams = EntitySpawnParams();
+			spawnParams.TransformMode = ETransformMode.WORLD;
+			spawnParams.Transform[3] = m_RespawnWorldPosition;
+			Resource spawnFIA = Resource.Load(m_SpawnpointFIA);
+			Resource spawnSPEIRA = Resource.Load(m_SpawnpointSPEIRA);
+			GetGame().SpawnEntityPrefab(spawnFIA, GetGame().GetWorld(), spawnParams);
+			GetGame().SpawnEntityPrefab(spawnSPEIRA, GetGame().GetWorld(), spawnParams);
+		}
 		EntitySpawnParams spawnParams = EntitySpawnParams();
 		spawnParams.TransformMode = ETransformMode.WORLD;
-		spawnParams.Transform = mat;
+		spawnParams.Transform[3] = m_StorageWorldPosition;
 		Resource storage = Resource.Load(m_StoragePreset);
+		
 		DeathStorage = GetGame().SpawnEntityPrefab(storage, GetGame().GetWorld(), spawnParams);
 		
 	}

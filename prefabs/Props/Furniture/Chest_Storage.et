@@ -21,10 +21,12 @@ GenericEntity {
     5 2 1.5 1 1 1
    }
   }
+  Hierarchy "{5D4EC10FD688D231}" {
+  }
   RigidBody "{5B22A23E671FE54D}" {
    ResponseIndex "SmallDestructible"
    ModelGeometry 1
-   Static 1
+   Static 0
   }
   SCR_DestructionMultiPhaseComponent "{5B22A23E671FE6B5}" {
    Enabled 0
@@ -69,6 +71,7 @@ GenericEntity {
    }
   }
   SCR_FactionAffiliationComponent "{5B22A23E671FE68B}" {
+   Enabled 0
    "faction affiliation" "US"
   }
   SCR_UniversalInventoryStorageComponent "{5B22A23E671FE62F}" {
@@ -94,6 +97,7 @@ GenericEntity {
    }
   }
   SCR_InventoryStorageManagerComponent "{5D4E87F9EBBB199D}" {
+   Enabled 1
   }
   ActionsManagerComponent "{5B22A23E671FE612}" {
    ActionContexts {
@@ -121,7 +125,6 @@ GenericEntity {
    Enabled 1
   }
  }
- coords 9854.439 3.149 4504.958
- angleY 98.296
- Flags 1027
+ coords 1353.21 1.937 1063.352
+ Flags 3
 }

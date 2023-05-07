@@ -150,8 +150,11 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
    m_iForcedLoadout 0
    m_bOverrideGameOverType 1
    m_eOverriddenGameOverType DEATH
-   m_RespawnWorldPosition 1362.192 3.101 1066.719
+   m_StorageWorldPosition 3503.444 3.035 1515.1
+   m_RespawnWorldPosition 3504.8 3.035 1515.258
    m_StoragePreset "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et"
+   m_SpawnpointFIA "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et"
+   m_SpawnpointSPEIRA "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et"
    m_iLives 1
   }
   SerializerInventoryStorageManagerComponent "{5D4E87F0505799FA}" {
@@ -162,17 +165,15 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
 ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 1071.804 38.045 2867.438
 }
+SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
+ coords 1362.258 2.149 1064.332
+}
 SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
  coords 3052.151 56.09 1719.602
  CharacterLifetime 985.071
  VehicleLifetime 1040.252
  ItemLifetime 599.863
  m_bOnlyDestroyed 1
-}
-SCR_SpawnPoint : "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et" {
- coords 1361.653 2.142 1064.454
- angleY 41.08
- m_bShowInDeployMapOnly 1
 }
 SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 2514.815 147.785 2269.364
