@@ -18,37 +18,36 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
    }
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{FC93228F03826518}prefabs/Weapons/Rifles/AK74/Rifle_AK74_Dovetail.et"
+   WeaponTemplate "{FA5C25BF66A53DCF}prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Boots {
-     Prefab "{BCEE4FDAC93C56B7}Prefabs/Characters/Uniforms/Boots_Sapogi.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{9B23D435ABD05C79}Prefabs/Characters/Uniforms/Jacket_M88Winter_SA.et"
+     Prefab "{D262D2102B9931C6}prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{F1D60F4A54719909}Prefabs/Characters/Uniforms/Pants_M88Afghanka.et"
+     Prefab "{DCF980831E880F6A}prefabs/Characters/Uniforms/Pants_M88.et"
     }
     LoadoutSlotInfo Vest {
      Prefab "{08155E701A949620}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_rifleman.et"
     }
     LoadoutSlotInfo Hat {
-     Prefab "{553B71F713C10ACF}Prefabs/Characters/Uniforms/Hat_M88_Winter_Ushanka.et"
+     Prefab "{3523CB7D5961246B}Prefabs/Characters/HeadGear/Hat_PeakedCap_USSR_01/Hat_PeakedCap_USSR_01.et"
     }
    }
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88Winter_SA.et"
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M88.et"
      PrefabsToSpawn {
       "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et" "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Pants_M88Afghanka.et"
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
      PrefabsToSpawn +{
      }
     }

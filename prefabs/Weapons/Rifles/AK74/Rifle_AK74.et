@@ -7,7 +7,6 @@ GenericEntity : "{43497A18DD888667}prefabs/Weapons/Rifles/AK74/Rifle_AK74_base.e
      AttachmentSlot EquipmentStorageSlot DoveTail {
       PivotID "w_root"
       Offset 0 0.0555 0.0023
-      Prefab "{261D92ACAF50B60A}Prefabs/Weapons/Attachments/Rail/AK74_Dovetail.et"
      }
     }
     AttachmentSlotComponent "{5B1B039D2E48EF79}" {

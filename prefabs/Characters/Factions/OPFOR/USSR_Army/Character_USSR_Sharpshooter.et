@@ -27,23 +27,19 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
     LoadoutSlotInfo Hat {
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{F3F988448707C507}Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{D15814164972209A}Prefabs/Characters/Uniforms/Pants_KLMK.et"
     }
    }
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
      PrefabsToSpawn {
       "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
     }
     ItemsInitConfigurationItem "{54A68D63B8F6F8C2}" {
      PrefabsToSpawn {
@@ -51,7 +47,7 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
      }
     }
     ItemsInitConfigurationItem "{559277239D4CF40C}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Pants_KLMK.et"
+     TargetStorage "prefabs/Characters/Uniforms/Pants_M88.et"
      PrefabsToSpawn {
       "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
      }

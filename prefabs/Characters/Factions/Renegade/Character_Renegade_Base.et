@@ -36,10 +36,10 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
      Prefab "{BCCB7D5AB38BB3A7}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_base.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{F3F988448707C507}Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
+     Prefab "{24906FE890EC67A9}prefabs/Characters/Uniforms/Jacket_M88_rolledup_v2.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{DCF980831E880F6A}prefabs/Characters/Uniforms/Pants_M88.et"
+     Prefab "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et"
     }
     LoadoutSlotInfo Boots {
      Prefab "{DAAFD15478BDE1C3}prefabs/Characters/Footwear/CombatBoots_US_01.et"
@@ -51,13 +51,13 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5D3308C10F446455}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup_v2.et"
      PrefabsToSpawn {
       "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
      }
     }
     ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
-     TargetStorage "prefabs/Characters/Uniforms/Pants_M88.et"
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_US_BDU.et"
      PrefabsToSpawn {
       "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
      }

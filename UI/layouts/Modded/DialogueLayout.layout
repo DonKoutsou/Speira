@@ -1,2 +1,221 @@
 FrameWidgetClass {
+ Name "rootFrame"
+ {
+  UserWidgetClass "{5D10B304AEF61B3D}" {
+   Name "User0"
+   Slot FrameWidgetSlot "{5D10B304AEF61B19}" {
+   }
+  }
+  OverlayWidgetClass "{5D10B3055CA98F1A}" {
+   Name "Panel0"
+   Slot FrameWidgetSlot "{5D10B3055CA98F76}" {
+    Anchor 0.5 1 0.5 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY -164.1
+    OffsetTop -164.1
+    SizeX 781
+    OffsetRight -781
+    SizeY 296
+    OffsetBottom -131.9
+    Alignment 0.5 0.5
+   }
+   {
+    ImageWidgetClass "{5D10B30460BE65E5}" {
+     Name "Image0"
+     Slot OverlayWidgetSlot "{5D10BE2BD518FA45}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 0 0 0 0
+     }
+     Pivot 0.5 0.5
+     Texture "{307B3AFD133C1121}UI/Textures/LoadingScreen/MenuBackground.edds"
+     Size 2640 1200
+     "Transition width" 0
+     Progress 0.018
+     "Mask Mode" "Include Below"
+     Range 0.069
+    }
+    ImageWidgetClass "{5D13297694E05DFE}" {
+     Name "Image1"
+     Slot OverlayWidgetSlot "{5D132977D0950831}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 0 79.8 0 14.5
+     }
+     Opacity 0.8
+     Color 0 0 0 1
+     Pivot 0.5 0.5
+     Size 512 512
+     "Blend Mode" Opaque
+     "Flip Vertically" 1
+     Saturation 0
+     "Transition width" 0
+     Progress 0.229
+     "Mask Mode" "Include Below"
+    }
+    PanelWidgetClass "{5D128E0CC9EBE7F7}" {
+     Name "Panel0"
+     Slot OverlayWidgetSlot "{5D132976EEB2C7C5}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.761 0.533 0.277 1
+    }
+    BlurWidgetClass "{5D128E0CC9EBE7A5}" {
+     Name "Blur0"
+     Slot OverlayWidgetSlot "{5D132976EEB2C72B}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Intensity 0.17
+     "Smooth Border" 6 6 6 6
+    }
+    OverlayWidgetClass "{5D10CA10CABF9D5A}" : "{94CAAE4A601195D3}UI/layouts/ListBox/ListBox.layout" {
+     Name "ListBox0"
+     Slot OverlayWidgetSlot "{5D10CA10CABF9EB4}" {
+      VerticalAlign 0
+      Padding 0 84.6 0 0
+     }
+     components {
+      SCR_ListBoxComponent "{566C9415BAA54E1B}" {
+       m_sElementLayout "{E3491D3D0D0DE552}UI/layouts/ListBox/ListBoxElement_TextDialogue.layout"
+       m_bMultiSelection 1
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass "{5D10CA1DAB43D9AE}" {
+   Name "Frame0"
+   Slot FrameWidgetSlot "{5D10CA1DAB43D985}" {
+    Anchor 0.5 1 0.5 1
+    OffsetLeft 0
+    PositionY -271.7
+    OffsetTop -271.7
+    SizeX 72.9
+    OffsetRight -72.9
+    SizeY 64
+    OffsetBottom 207.7
+    Alignment 0.5 0.5
+    SizeToContent 1
+   }
+   Opacity 0.895
+   {
+    ImageWidgetClass "{5D10CA1D7B5AFCAF}" {
+     Name "Image0"
+     Slot FrameWidgetSlot "{5D10CA1D7B5AFC2D}" {
+      Anchor 0.5 0.5 0.5 0.5
+      PositionX 0.593
+      OffsetLeft 0.6
+      PositionY 0
+      OffsetTop 0
+      SizeX 760
+      OffsetRight -760.6
+      SizeY 63
+      OffsetBottom -63
+      Alignment 0.5 0.5
+     }
+     Color 0 0 0 1
+     Pivot 0.5 0.5
+     Size 512 512
+     "Blend Mode" Opaque
+     "Flip Vertically" 1
+     Saturation 0
+     "Transition width" 0
+     Progress 0.229
+     "Mask Mode" "Include Below"
+    }
+    PanelWidgetClass "{5D128E0D4C99F2C4}" {
+     Name "Panel0"
+     Slot FrameWidgetSlot "{5D128E0D74D4A16D}" {
+      Anchor 0 0 1 1
+      PositionX 390.264
+      PositionY 31.5
+      SizeX -680.529
+      OffsetRight 0
+      SizeY -33
+      OffsetBottom 0
+      Alignment 0 0
+     }
+     Color 0.761 0.583 0.367 1
+    }
+    BlurWidgetClass "{5D126EC5A621ED82}" {
+     Name "Blur0"
+     Slot FrameWidgetSlot "{5D126EC5A621ED9E}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     Intensity 0.256
+     "Smooth Border" 6 6 6 6
+    }
+    TextWidgetClass "{5D10CA1D63DBBA26}" {
+     Name "CharacterName"
+     Slot FrameWidgetSlot "{5D10CA1D63DBBA3C}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft 0
+      PositionY -11.5
+      OffsetTop -11.5
+      SizeX 100
+      OffsetRight -100
+      SizeY 30
+      OffsetBottom -18.5
+      Alignment 0.5 0.5
+      SizeToContent 1
+     }
+     Text "CharacterName"
+     FontProperties FontProperties "{5D132977C36A3649}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      OutlineSize 3
+      ShadowSize 32
+     }
+    }
+    ImageWidgetClass "{5D126ECA850604EF}" {
+     Name "FactionIcon"
+     Slot FrameWidgetSlot "{5D126ECA850604C0}" {
+      PositionX 6
+      OffsetLeft 6
+      PositionY 6
+      OffsetTop 6
+      SizeX 50
+      OffsetRight -56
+      SizeY 50
+      OffsetBottom -56
+     }
+     Texture "{FB266CDD4502D60B}UI/Textures/Editor/EditableEntities/Factions/EditableEntity_Faction_Fia.edds"
+    }
+    TextWidgetClass "{5D126ECAF57D6258}" {
+     Name "CharacterRank"
+     Slot FrameWidgetSlot "{5D10CA1D63DBBA3C}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft 0
+      PositionY 15.5
+      OffsetTop 15.5
+      SizeX 99.999
+      OffsetRight -100
+      SizeY 30
+      OffsetBottom -45.5
+      Alignment 0.5 0.5
+      SizeToContent 1
+     }
+     Text "CharacterRank"
+     "Font Size" 14
+     "Min Font Size" 14
+     FontProperties FontProperties "{5D132977CD7B0B9E}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      Bold 1
+      OutlineSize 2
+      ShadowSize 32
+     }
+    }
+   }
+  }
+ }
 }

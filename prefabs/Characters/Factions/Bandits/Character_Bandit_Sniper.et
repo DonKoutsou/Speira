@@ -25,7 +25,7 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
      }
     }
     ItemsInitConfigurationItem "{5D3D245D13C7468E}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
      PrefabsToSpawn {
       "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
      }
@@ -34,5 +34,4 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
   }
  }
  coords 112.904 1.001 253.754
- angleY 0
 }

@@ -43,37 +43,40 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 	//------------------------------------------------------------------------------------------------
 	override void OnControllableDestroyed(IEntity entity, IEntity instigator)
 	{
-		if (entity && instigator)
+		if (instigator == GetGame().GetPlayerController().GetControlledEntity())
 		{
-			FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
-			FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
-			if (FactionComp && FactionCompVictim)
+			if (entity && instigator)
 			{
-				FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
-				FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
-				SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
-				if (KillerKey == "SPEIRA" && VictimKey == "USSR")
+				FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
+				FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
+				if (FactionComp && FactionCompVictim)
 				{
-					DiagComp.DoAnouncerDialogue("Killed unit of the soviet faction, you will be considered as part of the FIA from now on");
-					FactionComp.SetAffiliatedFactionByKey("FIA");
+					FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
+					FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
+					SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
+					if (KillerKey == "SPEIRA" && VictimKey == "USSR")
+					{
+						DiagComp.DoAnouncerDialogue("Killed unit of the soviet faction, you will be considered as part of the FIA from now on");
+						FactionComp.SetAffiliatedFactionByKey("FIA");
+					}
+					else if (KillerKey == "SPEIRA" && VictimKey == "FIA")
+					{
+						DiagComp.DoAnouncerDialogue("Killed unit of the FIA faction, you will be considered Renegade from now on");
+						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+					}
+					else if (KillerKey == VictimKey)
+					{
+						DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
+						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+					}
+					else if (KillerKey == "FIA" && VictimKey == "BANDITS")
+					{
+						DiagComp.DoAnouncerDialogue("Killed unit of friendly faction, you've gone Renegade");
+						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+					}
 				}
-				else if (KillerKey == "SPEIRA" && VictimKey == "FIA")
-				{
-					DiagComp.DoAnouncerDialogue("Killed unit of the FIA faction, you will be considered Renegade from now on");
-					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-				}
-				else if (KillerKey == VictimKey)
-				{
-					DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
-					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-				}
-				else if (KillerKey == "FIA" && VictimKey == "BANDITS")
-				{
-					DiagComp.DoAnouncerDialogue("Killed unit of friendly faction, you've gone Renegade");
-					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-				}
+				
 			}
-			
 		}
 		if (IsProxy())
 			return;

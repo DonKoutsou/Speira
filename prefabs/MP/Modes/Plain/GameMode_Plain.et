@@ -1,11 +1,99 @@
-SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+SCR_BaseGameMode : "{0F307326459A1395}prefabs/MP/Modes/GameMode_Base.et" {
  ID "0000000000000001"
  components {
+  SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
+   Enabled 0
+   m_iForcedFaction 2
+   m_iForcedLoadout 0
+  }
+  SCR_CompositionSlotManagerComponent "{5D3CDC3AED5C8774}" {
+  }
+  SCR_DataCollectorComponent "{5ADE83EE64329989}" {
+   Enabled 1
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_bPermitUnconsciousness 1
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+  }
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+    m_aGameOverScreens {
+     SCR_BaseGameOverScreenInfo "{5D4E7038FA763E33}" {
+      m_GameOverScreenId DEATH
+      m_GameOverContentLayout "{4E98EBC5622B2BFB}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Permadeath.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D4E703873686960}" {
+       m_sTitle "YOU DIED"
+       m_sSubtitle "Your life was lost on the field."
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+    }
+   }
+  }
   SCR_HintManagerComponent "{5702B54C6CBC9D7F}" {
    m_aConditionLists {
     SCR_HintConditionList "{5CE91B9B63BF53B5}" {
     }
    }
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   Enabled 0
+  }
+  SCR_PlayerPenaltyComponent "{5D4E70305C82CFAD}" {
+  }
+  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
+  }
+  SCR_TimeAndWeatherHandlerComponent "{5D50D3AD276098D5}" {
+   m_iStartingHours 2
+   m_fDayTimeAcceleration 6
+   m_fNightTimeAcceleration 6
+   m_bRandomStartingWeather 1
+  }
+  SP_DialogueComponent "{5D1547897BFE725A}" {
+   m_ChatChannelFIA FIAChatChannel "{5D4F1DF0E0653056}" {
+    "Channel name" "FIA"
+    Style BaseChatChannelStyle "{5D4F1DF3A88E2A87}" {
+    }
+   }
+   m_ChatChannelUSSR USSRChatChannel "{5D4F1DF0E5396A65}" {
+    "Channel name" "USSR"
+    Style BaseChatChannelStyle "{5D4F1DF3AB2ACB39}" {
+    }
+   }
+   m_ChatChannelBANDITS BANDITSChatChannel "{5D4F1DF0E6E39FDA}" {
+    "Channel name" "BANDITS"
+    Style BaseChatChannelStyle "{5D4F1DF3AB839EA8}" {
+    }
+   }
+   m_ChatChannelSPEIRA SPEIRAChatChannel "{5D4F1DF0EFDB3B50}" {
+    "Channel name" "SPEIRA"
+    Style BaseChatChannelStyle "{5D4F1DF3AA4C0F0F}" {
+    }
+   }
+   m_ChatChannelANOUNCER LocalChatChannel "{5D4F1DF099DEAFA1}" {
+    "Channel name" "Context"
+    Style BaseChatChannelStyle "{5D4F1DF3AADCBD7E}" {
+    }
+   }
+  }
+  SP_PermadeathRespawnHandlerComponent "{5D4E7039C5A87861}" {
+   m_iForcedFaction 2
+   m_iForcedLoadout 0
+   m_bOverrideGameOverType 1
+   m_eOverriddenGameOverType DEATH
+   m_FIAStorageWorldPosition 3503.905 2.946 1514.8
+   m_BanditStorageWorldPosition 1673.945 3.608 874.449
+   m_RespawnWorldPosition 3504.865 2.946 1515.155
+   m_RespawnWorldPositionBandit 1674.282 3.608 877.671
+   m_StoragePreset "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et"
+   m_SpawnpointFIA "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et"
+   m_SpawnpointSPEIRA "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et"
+   m_SpawnpointBandit "{AA99FB47F0760415}prefabs/MP/Spawning/SpawnPoint_Bandits.et"
+   m_iLives 1
   }
  }
 }

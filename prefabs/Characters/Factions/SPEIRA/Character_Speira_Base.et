@@ -13,22 +13,21 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {
-     Prefab ""
+     Prefab "{D8D9EE7F3966589E}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_red.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{9B920BD5C2B5AC1C}Prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
+     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{9D4EE538BFAD6FF6}Prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
+     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
     }
     LoadoutSlotInfo Boots {
-     Prefab "{F3445F545DBF5062}Prefabs/Characters/Uniforms/Shoes_Formal.et"
+     Prefab "{DAAFD15478BDE1C3}prefabs/Characters/Footwear/CombatBoots_US_01.et"
     }
     LoadoutSlotInfo Back {
      Prefab "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
     }
     LoadoutSlotInfo Vest {
-     Prefab ""
     }
     LoadoutSlotInfo Watch {
      Prefab ""
@@ -44,7 +43,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
      }
     }
     ItemsInitConfigurationItem "{5D3D4C1160BCCB93}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
      PrefabsToSpawn {
       "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et"
      }

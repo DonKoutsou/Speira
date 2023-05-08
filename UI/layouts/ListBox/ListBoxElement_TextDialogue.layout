@@ -1,2 +1,116 @@
 ButtonWidgetClass {
+ Name "ListBoxElement"
+ Slot AlignableSlot "{554ADB1D2D5974C0}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+ }
+ components {
+  SCR_ListBoxElementComponent "{5D10C019C741C840}" : "{217E1BF1715F9C33}Configs/UI/ListBoxElement_DialogueModularButtonComponent.conf" {
+   m_aEffects {
+    SCR_ButtonEffectColor "{5D10C019DD0338BA}" {
+     m_eEvents 24580
+     m_cHovered 0 0 0 0
+     m_cActivatedHovered 1 1 1 0
+     m_cClicked 1 1 1 0
+     m_cFocusGained 1 1 1 0
+     m_cToggledOn 0 0 0 1
+    }
+    SCR_ButtonEffectOpacity "{5D10C019DD0338BF}" {
+     m_eEvents EVENT_CLICKED
+    }
+    SCR_ButtonEffectOpacity "{5D10C01FE4F2F751}" {
+     m_bEnabled 0
+     m_eEvents EVENT_CLICKED
+     m_sWidgetName "Image"
+     m_fClicked 1
+     m_fFocusGained 1
+    }
+   }
+  }
+ }
+ style blank
+ {
+  SizeLayoutWidgetClass "{5D10C018F39AE94A}" {
+   Name "SizeLayout"
+   Slot ButtonWidgetSlot "{5548E6E7E6AEDDC1}" {
+   }
+   AllowHeightOverride 1
+   HeightOverride 35
+   {
+    OverlayWidgetClass "{5D10C018F39AE948}" {
+     Name "Overlay"
+     Slot ButtonWidgetSlot "{5548E6E7F213FB11}" {
+     }
+     Clipping False
+     Color 0 0 0 1
+     {
+      ImageWidgetClass "{5D10C01E208EC8F3}" {
+       Name "Image"
+       Slot OverlayWidgetSlot "{5D10C01E208EC825}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       Color 0 0 0 1
+       Size 900 600
+       Saturation 0.005
+       Mask "{081989E2168A288D}Assets/Decals/Asphalt/Patch/Data/Decal_Asphalt_Patch_Square_01_A.edds"
+       "Transition width" 1
+       Range 1
+      }
+      BlurWidgetClass "{5D128E0C40525C3B}" {
+       Name "Blur0"
+       Slot OverlayWidgetSlot "{5D128E0C40525C16}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       Intensity 0.1
+      }
+      PanelWidgetClass "{5D10C018F39AE94E}" {
+       Name "Border"
+       Slot OverlayWidgetSlot "{5548E6E7D859FCD2}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding -10 2 -10 2
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       Color 0.761 0.386 0.08 1
+       style outline_2px
+      }
+      TextWidgetClass "{5D10C018F39AE94C}" : "{E64DA8292CD7DBDD}UI/layouts/WidgetLibrary/TextWidgets/Text_InteractiveSmall.layout" {
+       Name "Text"
+       Slot OverlayWidgetSlot "{569519C7FDE79DBD}" {
+        Padding 8 8 8 8
+       }
+       "Font Size" 20
+       "Min Font Size" 10
+       FontProperties FontProperties "{546AF489DFD25402}" {
+        OutlineSize 1
+        ShadowSize 32
+       }
+      }
+      TextWidgetClass "{5D1303B9CB9C181B}" {
+       Name "TextNumber"
+       Slot OverlayWidgetSlot "{5D1303B9CB9C1842}" {
+        HorizontalAlign 0
+        Padding 0 0 650 0
+       }
+       Text "0"
+       "Font Size" 20
+       "Min Font Size" 10
+       FontProperties FontProperties "{5D1329762D9C23A5}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        OutlineSize 1
+        ShadowSize 32
+       }
+      }
+     }
+    }
+   }
+  }
+ }
 }
