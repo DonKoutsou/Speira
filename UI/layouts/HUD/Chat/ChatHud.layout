@@ -1,2 +1,31 @@
 FrameWidgetClass {
+ {
+  OverlayWidgetClass "{585F053862A9FD1C}" {
+   Prefab "{585F053862A9FD1C}"
+   Slot FrameWidgetSlot "{56150B208158A9EF}" {
+    PositionX 16
+    OffsetLeft 16
+    PositionY 704
+    OffsetTop 704
+    SizeX -48
+    OffsetRight 32
+    SizeY 310
+    OffsetBottom -1014
+   }
+   components {
+    SCR_ChatPanel "{585F32D2A6B295EC}" {
+     m_LocalChannelStyle SCR_ChatMessageStyle "{585F355BADA1334F}" {
+     }
+     m_FIAChannelStyle SCR_ChatMessageStyle "{5D4F1DF3E59AB6A1}" : "{8A40E55D49661404}Configs/Chat/FIAChannel.conf" {
+     }
+     m_USSRChannelStyle SCR_ChatMessageStyle "{5D4F1DF3E96D3CB9}" : "{3B4FB74EDF43FAD9}Configs/Chat/USSRChannel.conf" {
+     }
+     m_BANDITSChannelStyle SCR_ChatMessageStyle "{5D4F1DF3E26D4318}" : "{E8E0BAA2EB65A520}Configs/Chat/BANDITSChannel.conf" {
+     }
+     m_SPEIRAChannelStyle SCR_ChatMessageStyle "{5D4F1DF3E71CAD5E}" : "{988CA041045827FD}Configs/Chat/SPEIRAChannel.conf" {
+     }
+    }
+   }
+  }
+ }
 }

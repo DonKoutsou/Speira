@@ -10,11 +10,6 @@ SP_AIDirector {
     }
    }
   }
-  SCR_MapDescriptorComponent "{5D42AA2A86C39135}" {
-   ImagesetQuadElement "1"
-   MainType "Name Settlement"
-   Scale 0
-  }
   RplComponent "{5D42AA2A86C39139}" {
   }
  }

@@ -1,11 +1,19 @@
 GenericEntity : "{9B07BFCE36759651}Prefabs/Structures/BuildingParts/Doors/Door_Bunker_02/Door_Bunker_02_A_Base.et" {
  ID "0000000000000001"
  components {
+  DoorComponent "{221C667A9F7D4B69}" {
+   DoorAction SCR_LockedDoorUserAction "{50888D3646A61640}" {
+    UIInfo UIInfo "{5D509DBD6D26D9AA}" {
+     Name "Open"
+    }
+    Duration 0.5
+    m_Key "{7609D88D121E0467}prefabs/Items/Misc/IntelligenceFolder_E_01/Key.et"
+   }
+  }
   ActionsManagerComponent "{F32B667C3C823800}" {
    ActionContexts {
     UserActionContext "{50888D37F529F720}" {
-     Radius 0
-     Omnidirectional 0
+     Radius 1
      VisibilityAngle 0.59
     }
    }

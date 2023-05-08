@@ -53,7 +53,8 @@ class SP_AIDirector : AIGroup
 	[Attribute("")]
 	string m_sLocationName;
 	
-	
+	[Attribute("")]
+	bool m_InstantSpawn;
 	
 	[Attribute("")]
 	private ResourceName m_pDefaultWaypoint;
@@ -117,6 +118,7 @@ class SP_AIDirector : AIGroup
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
+		
 		m_SpawnedCounter = 0;
 		m_RespawnPeriod = 0;
 		m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
@@ -194,13 +196,25 @@ class SP_AIDirector : AIGroup
 		{
 			if (GetAgentsCount() < m_MaxAgentsToSpawn)
 			{
+				if (m_InstantSpawn == true)
+				{
+					if (Spawn())
+					{
+						m_InstantSpawn = false;
+					}
+				}
 				if (m_RespawnPeriod <= 0.0)
 				{
 					if (Spawn())
+					{
 						m_RespawnPeriod = m_RespawnTimer;
+					}
 				}
 				else
+				{
 					m_RespawnPeriod -= timeSlice;
+				}
+					
 			}
 		}
 		if (m_CommanderRespawn)
@@ -308,8 +322,8 @@ class SP_AIDirector : AIGroup
 		
 		FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(newEnt.FindComponent(FactionAffiliationComponent));
 		string faction = factcomp.GetAffiliatedFaction().GetFactionName();
-		DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-		DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
+		//DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		//DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
 		if (newEnt.GetPhysics())
 			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
 			
@@ -375,8 +389,8 @@ class SP_AIDirector : AIGroup
 			m_CommanderEnt = CommandGroup.GetLeaderEntity();
 			FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(m_CommanderEnt.FindComponent(FactionAffiliationComponent));
 			string faction = factcomp.GetAffiliatedFaction().GetFactionName();
-			DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-			DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
+			//DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			//DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
 			commanderspawned = true;
 		}
 		else

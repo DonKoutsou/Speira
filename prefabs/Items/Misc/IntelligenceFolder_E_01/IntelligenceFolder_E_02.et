@@ -4,8 +4,8 @@ GenericEntity : "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/In
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
     ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
-     Name "Soviet Operations Intel"
-     Description "Intel on soviet operations taking place around the island. The FIA will be looking for those"
+     Name "Forged permit"
+     Description "To get in Arland a permit is required by the Soviet army. These papers will be enough to fool random soldiers but should avoid having to use it on more experienced members. Better keep them on me when i plan to interact with any soviet units."
     }
     CustomAttributes {
      PreviewRenderAttributes "{5ABE850F29600D4D}" {
@@ -26,5 +26,5 @@ GenericEntity : "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/In
   RigidBody "{5AB0B9C3C3E4A158}" {
   }
  }
- coords 0 0 0
+ coords 2691.683 77.412 1674.572
 }

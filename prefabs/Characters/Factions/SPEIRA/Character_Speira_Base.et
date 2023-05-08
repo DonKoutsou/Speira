@@ -13,57 +13,54 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {
-     Prefab "{DC76B5A3E6290D5A}prefabs/Characters/HeadGear/Hat_M70_01/Hat_M70_02.et"
+     Prefab ""
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     Prefab "{9B920BD5C2B5AC1C}Prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{820FE927294AA39F}prefabs/Characters/Uniforms/Pants_M70_v2.et"
+     Prefab "{9D4EE538BFAD6FF6}Prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
     }
     LoadoutSlotInfo Boots {
-     Prefab "{C7923961D7235D70}prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+     Prefab "{F3445F545DBF5062}Prefabs/Characters/Uniforms/Shoes_Formal.et"
     }
     LoadoutSlotInfo Back {
-     Prefab "{E9F1761D9F579F0B}prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"
+     Prefab "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
     }
     LoadoutSlotInfo Vest {
-     Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     Prefab ""
     }
     LoadoutSlotInfo Watch {
-     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+     Prefab ""
     }
    }
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5D3723DCABD65062}" {
-     TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     TargetStorage "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
      PrefabsToSpawn {
-      "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+      "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et" "{2366EF898F87916B}prefabs/Items/Misc/IntelligenceFolder_E_01/Letter.et"
      }
     }
     ItemsInitConfigurationItem "{5D3D4C1160BCCB93}" {
-     TargetStorage "prefabs/Characters/Uniforms/Pants_M70_v2.et"
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
      PrefabsToSpawn {
-      "{C9BBC27F31D5DCD8}prefabs/Characters/Factions/OPFOR/USSR_Army/test_knife.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+      "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et"
      }
     }
     ItemsInitConfigurationItem "{5D3D4C1113EF979D}" {
      TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss_SPEIRA.et"
      PrefabsToSpawn {
-      "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+      ""
      }
     }
     ItemsInitConfigurationItem "{5D3D4C1135BE22EB}" {
-     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     TargetStorage "Prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
      TargetPurpose 64
-     PrefabsToSpawn {
-      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
-     }
     }
    }
   }
  }
- coords 1299.569 2.886 5211.812
+ coords 2691.705 77.413 1674.468
 }

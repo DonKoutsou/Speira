@@ -3,20 +3,14 @@ SCR_PlayerController {
  components {
   SCR_HUDManagerComponent "{2FDC275D9EBCDB8B}" {
    InfoDisplays {
-   }
-  }
-  SCR_NotificationsComponent "{54C89090E8C413C6}" {
-   m_NotificationConfig SCR_NotificationConfig "{5AEAA026A8045A89}" {
-    m_aNotificationDisplayData {
-     SCR_NotificationDialogue "{5CDF15B0F21FFE34}" {
-      m_NotificationKey PLAYER_JOINED
-      m_info SCR_UINotificationInfo "{5CDF15B0FB352F1C}" {
-       Name "Text"
-       Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
-      }
-     }
+    WJ_StaminaBarUI "{5D509DBCC9040575}" {
+     m_LayoutPath "{8C65180B05811316}scripts/Game/UI/HUD/StaminaBar.layout"
+     m_eLayer HIGH
     }
    }
   }
+  SCR_NotificationsComponent "{54C89090E8C413C6}" {
+  }
  }
+ coords 1160.997 38.376 2514.287
 }

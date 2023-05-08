@@ -1216,6 +1216,9 @@ SCR_ChimeraCharacter : "{2F912ED6E399FF47}prefabs/Characters/Factions/BLUFOR/US_
  coords 165.767 1.001 252.158
  angleY -180
 }
+SCR_ChimeraCharacter : "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et" {
+ coords 116.051 1.001 249.365
+}
 GenericEntity : "{3568138FF7A659A1}Prefabs/Compositions/Misc/CustomEntities/Systems/AmmoBoxArsenal_Equipment_US_Apparel.et" {
  coords 115.155 1.001 242.177
 }
@@ -1296,6 +1299,12 @@ SCR_ChimeraCharacter : "{75FC25863194612A}prefabs/Characters/Factions/INDFOR/FIA
 SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et" {
  coords 130.611 1.001 252.929
  angleY -180
+}
+GenericEntity : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et" {
+ coords 115.878 1.001 247.684
+}
+GenericEntity : "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et" {
+ coords 115.987 1.001 248.356
 }
 SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
  coords 166.845 1.001 252.345

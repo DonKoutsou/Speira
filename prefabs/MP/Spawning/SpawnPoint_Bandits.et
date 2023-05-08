@@ -1,0 +1,9 @@
+SCR_SpawnPoint : "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et" {
+ ID "544EB04DCBFBD126"
+ coords 3180.408 10.796 2812.182
+ m_sFaction "BANDITS"
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Bandit Point"
+  Icon "{855625FE8D6A87A8}UI/Textures/DamageState/damageState-dead.edds"
+ }
+}

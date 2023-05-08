@@ -1,0 +1,5 @@
+SCR_PlayerController : "{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et" {
+ ID "1A9BA6BEFA06E3B1"
+ coords 1471.356 1.178 1816.379
+ DefaultControlledEntity "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et"
+}

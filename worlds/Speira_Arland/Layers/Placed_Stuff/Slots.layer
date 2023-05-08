@@ -55,6 +55,10 @@ StaticModelEntity : "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSma
  angleY 0.122
  angleZ -4.066
 }
+GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ coords 1069.73 -0.161 3287.216
+ angleY -24.181
+}
 $grp SCR_SiteSlotEntity : "{4B1C4BDDF6683101}PrefabsEditable/Slots/Flat/E_SlotFlatMedium.et" {
  {
   coords 2354.536 66 1704.255

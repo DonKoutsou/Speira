@@ -1758,6 +1758,16 @@ $grp GenericEntity : "{9B7F08BF4C938AD2}Prefabs/Structures/Military/Camps/Canvas
   angleY -167.973
  }
 }
+$grp SCR_DestructibleBuildingEntity : "{A2AA324A95883FB2}Prefabs/Structures/Military/Bunkers/ReinforcedFueltank_E_01/ReinforcedFueltank_E_01_camo.et" {
+ {
+  coords 960.323 0.33 2894.032
+  angleY -24.014
+ }
+ {
+  coords 2509.787 0.318 2294.593
+  angleY 96.683
+ }
+}
 Projectile : "{A8FFCD3F3697D77F}Prefabs/Editor/Lightning/LightningStrike.et" {
  coords 3244.301 2.001 2938.219
 }

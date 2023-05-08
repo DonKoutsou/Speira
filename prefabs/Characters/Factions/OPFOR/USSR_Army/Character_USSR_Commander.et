@@ -1,6 +1,13 @@
 SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
  ID "520EC961A090BE1E"
  components {
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault EXPERT
+    }
+   }
+  }
   SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
    m_iRank COMMANDER
   }
@@ -37,13 +44,12 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
      TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88Winter_SA.et"
      PrefabsToSpawn {
-      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et"
+      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et" "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {
      TargetStorage "Prefabs/Characters/Uniforms/Pants_M88Afghanka.et"
-     PrefabsToSpawn + {
-      "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et"
+     PrefabsToSpawn +{
      }
     }
     ItemsInitConfigurationItem "{5D3C9E41CA605600}" {
@@ -55,5 +61,5 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
    }
   }
  }
- coords 132.979 1.001 117.281
+ coords 1190.577 38.518 2514.055
 }

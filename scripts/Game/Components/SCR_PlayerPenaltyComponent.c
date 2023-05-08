@@ -51,16 +51,25 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 			{
 				FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
 				FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
-				if (KillerKey == "SPEIRA" && VictimKey != "RENEGADE")
+				SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
+				if (KillerKey == "SPEIRA" && VictimKey == "USSR")
 				{
+					DiagComp.DoAnouncerDialogue("Killed unit of the soviet faction, you will be considered as part of the FIA from now on");
+					FactionComp.SetAffiliatedFactionByKey("FIA");
+				}
+				else if (KillerKey == "SPEIRA" && VictimKey == "FIA")
+				{
+					DiagComp.DoAnouncerDialogue("Killed unit of the FIA faction, you will be considered Renegade from now on");
 					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 				}
 				else if (KillerKey == VictimKey)
 				{
+					DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
 					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 				}
 				else if (KillerKey == "FIA" && VictimKey == "BANDITS")
 				{
+					DiagComp.DoAnouncerDialogue("Killed unit of friendly faction, you've gone Renegade");
 					FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 				}
 			}

@@ -5,6 +5,11 @@ SCR_ChimeraCharacter {
    m_fActionDelayTime_StanceChange 0.05
    ChangeWeaponWhenNoGrenades 0
   }
+  CharacterSoundComponent "{520EA1D2F659CF84}" {
+   Filenames + {
+    "{CB0646CF33012DDD}Sounds/UI/UI_Gadgets.acp"
+   }
+  }
   SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
    components {
     SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
