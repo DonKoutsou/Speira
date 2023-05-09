@@ -134,13 +134,13 @@ class SP_DialogueArchetype: ScriptAndConfig
     }
 	//------------------------------------------------------------------//
 	//Find correct branch and get dialogue text from it
-	string GetDialogueText(int BranchID)
+	string GetDialogueText(int BranchID, IEntity Character, IEntity Player)
 	{
 		string m_stexttoshow;
 		SP_DialogueBranch branch = GetDialogueBranch(BranchID);
 		if (branch)
 		{
-		m_stexttoshow = branch.GetDialogueText(TalkingCharacter);
+		m_stexttoshow = branch.GetDialogueText(TalkingCharacter, Player);
 		}
 		else
 		{

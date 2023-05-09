@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{59BCD1D8523ACEF1}Configs/Dilaogue_Configs/Locations/Arland_DialogueLocations.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

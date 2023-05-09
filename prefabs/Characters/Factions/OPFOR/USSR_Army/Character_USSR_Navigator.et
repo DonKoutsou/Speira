@@ -1,0 +1,16 @@
+SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
+ ID "520EC961A090BE1E"
+ components {
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+   m_iRank NAVIGATOR
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+   }
+  }
+ }
+ coords 1179.611 1.126 3292.941
+}

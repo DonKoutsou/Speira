@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{5479700A1026D3D2}prefabs/Characters/Factions/Bandits/Character_Bandit_Navigator.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -10,6 +10,9 @@ class SP_AIDirector : AIGroup
 	[Attribute("100")]
 	float m_Radius;
 	
+	[Attribute("100")]
+	float m_CompositionRadius;
+	
 	[Attribute("true")]
 	bool m_Respawn;
 	
@@ -141,7 +144,7 @@ class SP_AIDirector : AIGroup
 			
 			// get composition slots
 			if (GetGame() && GetGame().GetWorld())
-				GetGame().GetWorld().QueryEntitiesBySphere(GetOrigin(), m_Radius, HandleFoundSlot);	
+				GetGame().GetWorld().QueryEntitiesBySphere(GetOrigin(), m_CompositionRadius, HandleFoundSlot);	
 					
 			foreach(SCR_SiteSlotEntity slot : m_Slots)
 			{

@@ -731,34 +731,6 @@ $grp GenericEntity {
   angleY 5.725
  }
 }
-$grp LightEntity {
- {
-  coords 1214.922 40.108 2588.476
-  angleX -89.664
-  ColorType Temperature
-  Color 0.812 0.737 0.506 1
-  LV 2.144
-  ClipEV -8.454
-  Type Spot
-  Radius 14.975
-  NearPlane 0.01
-  SpotAngle 170
-  SpotAngleAttenuation 0.671
- }
- {
-  coords 1216.363 40.122 2582.623
-  angleX -89.664
-  ColorType Temperature
-  Color 0.812 0.737 0.506 1
-  LV 2.144
-  ClipEV -8.454
-  Type Spot
-  Radius 14.975
-  NearPlane 0.01
-  SpotAngle 170
-  SpotAngleAttenuation 0.671
- }
-}
 SplineShapeEntity {
  coords 2143.604 65.555 3447.08
  Points {
@@ -1469,12 +1441,12 @@ $grp GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" 
   angleY 101.436
  }
  {
-  coords 1683.544 3.55 873.331
-  angleY -92.721
+  coords 1683.385 3.55 872.907
+  angleY -111.391
  }
  {
-  coords 1681.78 3.532 870.158
-  angleY 3.661
+  coords 1683.148 3.532 871.154
+  angleY -36.01
  }
  {
   coords 3741.625 2.859 2699.916
@@ -1732,9 +1704,6 @@ $grp GenericEntity : "{8E0A5198519C41DD}Prefabs/Props/Military/AmmoBoxes/Equipme
 }
 GenericEntity : "{9633134198F3AB1A}Prefabs/Rocks/Granite/GraniteRock_01.et" {
  coords 2527.563 4.581 3217.535
-}
-GenericEntity : "{99DCCFC762D1B1D6}prefabs/Trading_Items/Factions/Factionless/TS_Factionless_Expl.et" {
- coords 1216.163 37.441 2590.528
 }
 $grp GenericEntity : "{9B7F08BF4C938AD2}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_Soviet.et" {
  {

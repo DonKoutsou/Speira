@@ -46,7 +46,7 @@ class SP_MapLocator : SCR_MapLocator
 		};
 		return closeLocationAzimuth;
 	}
-	override protected void ShowMapHint()
-	{
-	};
+	//override protected void ShowMapHint()
+	//{
+	//};
 };

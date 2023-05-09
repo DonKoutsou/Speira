@@ -1,0 +1,46 @@
+SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Character_Bandit_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault EXPERT
+    }
+   }
+  }
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+   m_iRank COMMANDER
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D530AD7D106B776}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D530AD7E382DBA6}" {
+     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     PrefabsToSpawn {
+      "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+     }
+    }
+   }
+  }
+ }
+ coords 1681.542 3.563 874.779
+}

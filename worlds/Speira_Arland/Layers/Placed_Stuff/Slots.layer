@@ -1177,6 +1177,174 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
    }
   }
  }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1184.5 38.156 2462.55
+  angleY 115.906
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.436 0
+    angleX 0.239
+    angleZ -0.025
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1140.63 38.541 2521.12
+  angleY -85.48
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.031 0
+    angleX 2.281
+    angleZ -2.768
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1195.542 38.083 2506.942
+  angleY 88.101
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.041 0
+    angleX -2.123
+    angleZ 1.526
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1186.334 39.415 2493.393
+  angleY 143.224
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 -1.087 0
+    angleX -0.141
+    angleZ -1.194
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1214.476 37.837 2477.162
+  angleY -171.176
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.009 0
+    angleX 0.492
+    angleZ -1.708
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1137.675 39.641 2542.683
+  angleY -57.768
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.236 0
+    angleX 0.517
+    angleZ -3.758
+   }
+  }
+ }
+ {
+  components {
+   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+     m_aAuthoredLabels + {
+      28
+     }
+    }
+   }
+  }
+  coords 1213.364 37.223 2501.534
+  angleY 62.279
+  {
+   GenericEntity {
+    coords 0 -9223372036854775808.000 0
+   }
+   StaticModelEntity {
+    ID "52E8C3643526D54D"
+    coords 0 0.404 0
+    angleX -5.148
+    angleZ 3.391
+   }
+  }
+ }
 }
 $grp SCR_SiteSlotEntity : "{66265A506DF1FE2B}PrefabsEditable/Slots/Road/E_SlotRoadSmall.et" {
  {

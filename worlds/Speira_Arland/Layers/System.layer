@@ -82,17 +82,27 @@ RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
 }
 SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
  components {
+  SCR_TimeAndWeatherHandlerComponent "{5D50D3AD276098D5}" {
+   m_iStartingHours 5
+   m_iStartingMinutes 30
+  }
   SP_DialogueComponent "{5D1547897BFE725A}" {
    m_CharacterArchetypeList {
-    SP_DialogueArchetype "{5D511199181B9B46}" : "{5345CEB8F0A8E82E}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Commander.conf" {
+    SP_DialogueArchetype "{5D530AF96687EB29}" : "{5345CEB8F0A8E82E}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Commander.conf" {
     }
-    SP_DialogueArchetype "{5D5111991B7AA23A}" : "{5598C834512501C4}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Private.conf" {
+    SP_DialogueArchetype "{5D530AF9667E43D6}" : "{E46D08B6A1F94291}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_General.conf" {
     }
-    SP_DialogueArchetype "{5D5111991D3149F0}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/DialogueConf_FIA_Private.conf" {
+    SP_DialogueArchetype "{5D530AF9673602B3}" : "{601D4464DB0A483F}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Navigator.conf" {
     }
-    SP_DialogueArchetype "{5D5111991C3EFDF3}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/DialogueConf_BANDIT_Private.conf" {
+    SP_DialogueArchetype "{5D530AF978C172C5}" : "{5598C834512501C4}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Private.conf" {
     }
-    SP_DialogueArchetype "{5D5111991F3A2938}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/DialogueConf_BANDIT_Commander.conf" {
+    SP_DialogueArchetype "{5D530AF97AA55281}" : "{DAEA2B70D60C84CE}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_COMMANDER.conf" {
+    }
+    SP_DialogueArchetype "{5D530AF97A79476F}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D530AF97DC462FF}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Commander.conf" {
+    }
+    SP_DialogueArchetype "{5D530AF97EB0D6FD}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
     }
    }
   }

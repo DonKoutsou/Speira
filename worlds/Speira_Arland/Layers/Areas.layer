@@ -1,643 +1,769 @@
-GenericEntity USSR_Area : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+GenericEntity {
  components {
-  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+  MeshObject "{5D52FCC64C4BB8FD}" {
+   Object "{E0CFE517CA1C358B}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_full.xob"
   }
  }
- coords 1069.121 39.402 2862.637
+ coords 1181.298 2.152 3290.964
+ angleX 86.842
+ angleY 90
+}
+GenericEntity : "{0692BB439764BB1E}Prefabs/Props/Civilian/Notebook_01_base.et" {
+ coords 1180.571 2.026 3291.478
+ angleY -180
+}
+GenericEntity : "{13891AA1F5833C4A}Prefabs/Props/Civilian/Notebook_01_Double.et" {
+ coords 1180.555 2.026 3291.004
+ angleY 127.636
+}
+GameEntity : "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et" {
+ coords 1181.252 2.026 3291.802
+}
+GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.et" {
+ coords 1181.23 2.026 3290.123
+ angleY 0
+}
+$grp StaticModelEntity : "{7762F50A860DD074}Prefabs/Props/Military/Furniture/TableMilitary_US_01.et" {
  {
-  GenericEntity USSR_AreaPool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
-   components {
-    SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+  coords 1181.061 1.126 3291.677
+  angleY 0
+ }
+ {
+  coords 1181.061 1.126 3290.88
+  angleY 0
+ }
+ {
+  coords 1181.061 1.126 3290.084
+  angleY 0
+ }
+}
+$grp StaticModelEntity : "{7B79E1EA73D3F4B0}prefabs/Props/Military/Furniture/ChairMilitary_USSR_02.et" {
+ {
+  coords 1182.442 1.126 3292.195
+  angleY -106.873
+ }
+ {
+  coords 1181.195 1.114 3288.992
+  angleY 11.202
+ }
+ {
+  coords 1179.801 1.126 3291.568
+  angleY 99.341
+ }
+ {
+  coords 1179.74 1.126 3290.218
+  angleY 83.574
+ }
+}
+GenericEntity SlotAI_5 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+ components {
+  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+   m_sObjectToSpawn "{5479700A1026D3D2}prefabs/Characters/Factions/Bandits/Character_Bandit_Navigator.et"
+   m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+  }
+ }
+ coords 2122.497 3.017 3530.683
+}
+GenericEntity : "{B728C4AE0E6EB1E8}prefabs/Systems/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Equipment_USSR.et" {
+ components {
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 1
+   m_eSupportedArsenalItemTypes EQUIPMENT
+   m_eSupportedArsenalItemModes DEFAULT
+   m_eEditableAttributeGroups 0
+  }
+ }
+ coords 1181.014 1.126 3292.741
+}
+$grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ {
+  coords 1062 38.045 2861.886
+  angleX 0
+  angleY 82.706
+  angleZ 0
+ }
+ {
+  coords 2121.58 3.017 3530.806
+  angleX 0
+  angleY 0
+  angleZ 0
+ }
+}
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ USSR_Area {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   }
+  }
+  coords 1069.121 39.402 2862.637
+  {
+   GenericEntity USSR_AreaPool : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+     }
+    }
+    coords 0 0 0
+    {
+     GenericEntity USSR_Area1 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 0 0
+      {
+       $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+        USSR_Vehicles {
+         coords 0 0 0
+         {
+          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+           Ural5 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
+             }
+            }
+            coords 0.151 -0.25 86.554
+            angleY 117.858
+           }
+           Ural3 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
+             }
+            }
+            coords -1.917 -0.25 94.873
+            angleY 117.858
+           }
+           Ural1 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
+             }
+            }
+            coords -3.536 -0.25 102.632
+            angleY 117.858
+           }
+          }
+         }
+        }
+        USSR_Assets_1 {
+         coords 0 0 0
+         {
+          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+             }
+            }
+            coords 5.154 -38.221 412.704
+            angleY 148.681
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+             }
+            }
+            coords 4.167 -38.221 412.104
+            angleY -121.319
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et"
+             }
+            }
+            coords 3.113 -38.219 412.915
+            angleY -0.35
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 18.442 -1.385 -5.589
+            angleY -105.577
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 17.746 -1.385 -2.992
+            angleY -105.021
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 13.598 -1.347 12.397
+            angleY -105.577
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 12.874 -1.347 15.022
+            angleY 76.211
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 1.48 -0.448 71.304
+            angleY -105.577
+            angleZ -2.407
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 0.733 -0.351 73.984
+            angleY -105.577
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords -1.534 -0.351 74.8
+            angleY -14.547
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 15.005 -0.448 75.074
+            angleY -105.577
+            angleZ -2.407
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 14.258 -0.351 77.754
+            angleY -105.577
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords 15.718 -0.351 79.59
+            angleY -14.547
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et"
+             }
+            }
+            coords 0.958 -1.377 24.141
+            angleY 71.987
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords 14.347 -1.432 9.567
+            angleY 74.718
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et"
+             }
+            }
+            coords 14.838 -1.432 5.698
+            angleY -91.459
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et"
+             }
+            }
+            coords 16.287 -1.432 0.396
+            angleY 104.65
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords -6.82 -1.33 2.303
+            angleY 75.071
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords -5.25 -1.386 -4.184
+            angleY 75.071
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords 16.701 -0.696 69.145
+            angleY 74.718
+            angleZ 4.321
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords 15.842 -0.528 72.29
+            angleY 74.718
+            angleZ 2.41
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords 3.136 -0.801 65.347
+            angleY 74.718
+            angleZ 4.724
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
+             }
+            }
+            coords 2.279 -0.576 68.485
+            angleY 74.718
+            angleZ 3.529
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords -7.566 -1.347 5.084
+            angleY 77.261
+            angleZ 0.76
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
+             }
+            }
+            coords -4.51 -1.34 -6.929
+            angleY 77.261
+            angleZ 0.76
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
+             }
+            }
+            coords 9.432 -1.506 26.02
+            angleY 166.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -6.016 -1.357 -5.811
+            angleY -103.54
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -1.742 -1.363 -6.981
+            angleY 166.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -5.354 -1.357 -8.064
+            angleY 166.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -5.659 -1.357 -6.932
+            angleY 76.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -8.821 -1.357 5.354
+            angleY 76.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -8.421 -1.357 4.005
+            angleY -92.381
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+             }
+            }
+            coords -5.478 -1.357 -1.973
+            angleY 75
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
+             }
+            }
+            coords -5.832 -1.357 -0.933
+            angleY 165
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
+             }
+            }
+            coords -5.779 -1.357 0.212
+            angleY -106.995
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
+             }
+            }
+            coords -6.651 -1.372 6.214
+            angleY -15.707
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
+             }
+            }
+            coords -3.227 -1.363 -7.173
+            angleY 166.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
+             }
+            }
+            coords -7.562 -1.357 1.125
+            angleY -104.678
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
+             }
+            }
+            coords -5.406 -1.372 6.551
+            angleY 167.305
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 16.822 -1.411 6.654
+            angleY -15.863
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 15.91 -1.411 10.007
+            angleY -14.623
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 18.366 -1.411 0.162
+            angleY -12.934
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et"
+             }
+            }
+            coords -6.024 -0.569 0.261
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+             }
+            }
+            coords -12.813 -1.357 -5.743
+            angleY -105.822
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+             }
+            }
+            coords -12.38 -1.357 -7.27
+            angleY -106.702
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+             }
+            }
+            coords -11.894 -1.357 -8.889
+            angleY -104.466
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+             }
+            }
+            coords -10.112 -1.357 -9.316
+            angleY 164.178
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+             }
+            }
+            coords -8.585 -1.357 -8.883
+            angleY 163.298
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
+             }
+            }
+            coords -6.966 -1.357 -8.398
+            angleY 165.534
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red.et"
+             }
+            }
+            coords -7.311 -0.457 -8.613
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{B17411929589C43C}prefabs/MP/Campaign/Assets/CampaignHQRadioEast.et"
+             }
+            }
+            coords -6.468 -0.454 -8.282
+            angleY -65.789
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et"
+             }
+            }
+            coords -5.364 -0.086 -2.836
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et"
+             }
+            }
+            coords 13.745 -1.413 0.954
+            angleY 166.46
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{27343582106CE816}prefabs/Trading_Items/Factions/USSR/TS_Vehicles_USSR.et"
+             }
+            }
+            coords 3.361 -0.251 107.073
+            angleY 165.004
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{A528F04F41F2A2D0}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01_on.et"
+             }
+            }
+            coords 45.161 -1.402 -1.78
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 19.152 -1.411 -3.262
+            angleY -12.934
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 20.041 -1.411 -6.447
+            angleY -12.934
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 18.199 -1.411 -8.044
+            angleY 77.066
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 15.01 -1.411 13.457
+            angleY -14.623
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 14.061 -1.411 17.094
+            angleY -14.623
+           }
+           {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
+             }
+            }
+            coords 11.919 -1.411 17.216
+            angleY -104.623
+           }
+           Slot_85 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_sObjectToSpawn "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et"
+             }
+            }
+            coords -1.619 -38.392 414.401
+            angleY -33.242
+           }
+          }
+         }
+        }
+       }
+       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+        SlotAI_1 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{F3342A7CBDF0FF91}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_General.et"
+           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          }
+         }
+         coords 1.501 -38.264 414.023
+        }
+        SlotAI_2 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{B877A86B61D8E132}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Navigator.et"
+           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          }
+         }
+         coords 113.099 -38.276 428.248
+         angleY -87.064
+        }
+        SlotAI_4 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et"
+           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          }
+         }
+         coords -6.863 -1.357 -1.697
+         angleY 63.026
+        }
+       }
+      }
+     }
     }
    }
-   coords 0 0 0
-   {
-    GenericEntity USSR_Area1 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
-     coords 0 0 0
-     {
-      $grp GenericEntity : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
-       USSR_Vehicles {
-        coords 0 0 0
-        {
-         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          Ural5 {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
-            }
-           }
-           coords 0.151 -0.25 86.554
-           angleY 117.858
-          }
-          Ural3 {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
-            }
-           }
-           coords -1.917 -0.25 94.873
-           angleY 117.858
-          }
-          Ural1 {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
-            }
-           }
-           coords -3.536 -0.25 102.632
-           angleY 117.858
-          }
-         }
-        }
-       }
-       USSR_Assets_1 {
-        coords 0 0 0
-        {
-         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
-            }
-           }
-           coords 5.154 -38.221 412.704
-           angleY 148.681
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
-            }
-           }
-           coords 4.167 -38.221 412.104
-           angleY -121.319
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et"
-            }
-           }
-           coords 3.113 -38.219 412.915
-           angleY -0.35
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 18.442 -1.385 -5.589
-           angleY -105.577
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 17.746 -1.385 -2.992
-           angleY -105.021
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 13.598 -1.347 12.397
-           angleY -105.577
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 12.874 -1.347 15.022
-           angleY 76.211
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 1.48 -0.448 71.304
-           angleY -105.577
-           angleZ -2.407
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 0.733 -0.351 73.984
-           angleY -105.577
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords -1.534 -0.351 74.8
-           angleY -14.547
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 15.005 -0.448 75.074
-           angleY -105.577
-           angleZ -2.407
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 14.258 -0.351 77.754
-           angleY -105.577
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords 15.718 -0.351 79.59
-           angleY -14.547
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et"
-            }
-           }
-           coords 0.958 -1.377 24.141
-           angleY 71.987
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords 14.347 -1.432 9.567
-           angleY 74.718
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et"
-            }
-           }
-           coords 14.838 -1.432 5.698
-           angleY -91.459
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et"
-            }
-           }
-           coords 16.287 -1.432 0.396
-           angleY 104.65
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords -6.82 -1.33 2.303
-           angleY 75.071
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords -5.25 -1.386 -4.184
-           angleY 75.071
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords 16.701 -0.696 69.145
-           angleY 74.718
-           angleZ 4.321
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords 15.842 -0.528 72.29
-           angleY 74.718
-           angleZ 2.41
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords 3.136 -0.801 65.347
-           angleY 74.718
-           angleZ 4.724
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et"
-            }
-           }
-           coords 2.279 -0.576 68.485
-           angleY 74.718
-           angleZ 3.529
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords -7.566 -1.347 5.084
-           angleY 77.261
-           angleZ 0.76
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et"
-            }
-           }
-           coords -4.51 -1.34 -6.929
-           angleY 77.261
-           angleZ 0.76
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et"
-            }
-           }
-           coords -3.526 -1.357 -5.867
-           angleY 167.22
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et"
-            }
-           }
-           coords 9.432 -1.506 26.02
-           angleY 166.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -6.016 -1.357 -5.811
-           angleY -103.54
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -1.742 -1.363 -6.981
-           angleY 166.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -5.354 -1.357 -8.064
-           angleY 166.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -5.659 -1.357 -6.932
-           angleY 76.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -8.821 -1.357 5.354
-           angleY 76.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -8.421 -1.357 4.005
-           angleY -92.381
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
-            }
-           }
-           coords -5.478 -1.357 -1.973
-           angleY 75
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et"
-            }
-           }
-           coords -5.832 -1.357 -0.933
-           angleY 165
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
-            }
-           }
-           coords -5.779 -1.357 0.212
-           angleY -106.995
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et"
-            }
-           }
-           coords -6.651 -1.372 6.214
-           angleY -15.707
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{D13163C0833A72D8}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V4.et"
-            }
-           }
-           coords -3.227 -1.363 -7.173
-           angleY 166.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
-            }
-           }
-           coords -7.562 -1.357 1.125
-           angleY -104.678
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{34AD2F398FDFE5B3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V5.et"
-            }
-           }
-           coords -5.406 -1.372 6.551
-           angleY 167.305
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 16.822 -1.411 6.654
-           angleY -15.863
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 15.91 -1.411 10.007
-           angleY -14.623
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 18.366 -1.411 0.162
-           angleY -12.934
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et"
-            }
-           }
-           coords -6.024 -0.569 0.261
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
-            }
-           }
-           coords -12.813 -1.357 -5.743
-           angleY -105.822
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
-            }
-           }
-           coords -12.38 -1.357 -7.27
-           angleY -106.702
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
-            }
-           }
-           coords -11.894 -1.357 -8.889
-           angleY -104.466
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
-            }
-           }
-           coords -10.112 -1.357 -9.316
-           angleY 164.178
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
-            }
-           }
-           coords -8.585 -1.357 -8.883
-           angleY 163.298
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{AD31622B73944B43}Prefabs/Props/Furniture/DeskSchool_01.et"
-            }
-           }
-           coords -6.966 -1.357 -8.398
-           angleY 165.534
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red.et"
-            }
-           }
-           coords -7.311 -0.457 -8.613
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{B17411929589C43C}prefabs/MP/Campaign/Assets/CampaignHQRadioEast.et"
-            }
-           }
-           coords -6.468 -0.454 -8.282
-           angleY -65.789
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_base.et"
-            }
-           }
-           coords -5.364 -0.086 -2.836
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et"
-            }
-           }
-           coords 13.745 -1.413 0.954
-           angleY 166.46
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{27343582106CE816}prefabs/Trading_Items/Factions/USSR/TS_Vehicles_USSR.et"
-            }
-           }
-           coords 3.361 -0.251 107.073
-           angleY 165.004
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{A528F04F41F2A2D0}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01_on.et"
-            }
-           }
-           coords 45.161 -1.402 -1.78
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 19.152 -1.411 -3.262
-           angleY -12.934
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 20.041 -1.411 -6.447
-           angleY -12.934
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 18.199 -1.411 -8.044
-           angleY 77.066
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 15.01 -1.411 13.457
-           angleY -14.623
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 14.061 -1.411 17.094
-           angleY -14.623
-          }
-          {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et"
-            }
-           }
-           coords 11.919 -1.411 17.216
-           angleY -104.623
-          }
-          Slot_85 {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et"
-            }
-           }
-           coords -1.619 -38.392 414.401
-           angleY -33.242
-          }
-         }
-        }
+  }
+ }
+ Area_4 {
+  coords 1658.013 4.531 880.005
+  {
+   GenericEntity Layer_6 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    coords 0 0 0
+    {
+     GenericEntity SlotAI_4 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
+        m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
        }
       }
-      GenericEntity SlotAI_1 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-       components {
-        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-         m_sObjectToSpawn "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et"
-         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-        }
-       }
-       coords 1.501 -38.264 414.023
-      }
+      coords 23.302 -0.956 -8.605
+      angleY -46.069
      }
     }
    }

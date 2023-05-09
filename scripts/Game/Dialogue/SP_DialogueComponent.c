@@ -111,7 +111,7 @@ class SP_DialogueComponent: ScriptComponent
 			//--------------------------------------//
 			//Look for the config that matches our character. Config hold info about progression of dialogue for the Specific AI we are talking to.			
 			DialogueBranchInfo Conf = Branch.LocateConfig(Character);
-			m_DialogTexttoshow = Branch.GetDialogueText(Character);
+			m_DialogTexttoshow = Branch.GetDialogueText(Character, Player);
 			SendText(m_DialogTexttoshow, Channel, senderID, senderName);
 			
 			// Cause a branch of the config
@@ -130,7 +130,7 @@ class SP_DialogueComponent: ScriptComponent
 		//--------------------------------------//
 		Branch.OnPerform(Character, Player);
 		DialogueBranchInfo Conf = Branch.LocateConfig(Character);
-		m_DialogTexttoshow = Branch.GetDialogueText(Character);
+		m_DialogTexttoshow = Branch.GetDialogueText(Character, Player);
 		//--------------------------------------//
 		SendText(m_DialogTexttoshow, Channel, senderID, senderName);
 		
@@ -149,6 +149,20 @@ class SP_DialogueComponent: ScriptComponent
 	//Function used for "GoBack" and "Leave" dialogue options
 	void DoBackDialogue(IEntity Character, IEntity Player)
 	{
+		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
+		if (!comp)
+			return;
+		AIAgent agent = comp.GetAIAgent();
+		if (!agent)
+			return;
+		SCR_AIUtilityComponent utility = SCR_AIUtilityComponent.Cast(agent.FindComponent(SCR_AIUtilityComponent));
+		if (!utility)
+			return;
+		
+		utility.SetStateAllActionsOfType(SCR_AIConverseBehavior, EAIActionState.FAILED, false);
+		// or
+		//SCR_AIConverseBehavior action = SCR_AIConverseBehavior.Cast(utility.FindActionOfType(SCR_AIConverseBehavior));
+		//action.SetActiveConversation(false);
 		string senderName = GetCharacterName(Character);
 		SP_DialogueArchetype DiagArch = LocateDialogueArchetype(Character);
 		string m_DialogTexttoshow = "Go Back";

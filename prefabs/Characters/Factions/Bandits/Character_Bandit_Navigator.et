@@ -1,0 +1,9 @@
+SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Character_Bandit_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
+   m_iRank NAVIGATOR
+  }
+ }
+ coords 2122.607 3.017 3531.215
+}

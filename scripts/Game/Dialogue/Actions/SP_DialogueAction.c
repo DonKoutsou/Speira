@@ -16,7 +16,18 @@ class SP_DialogueAction : ScriptedUserAction
 	//------------------------------------------------------------------//
 	override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
 	{
-
+		AIControlComponent comp = AIControlComponent.Cast(pOwnerEntity.FindComponent(AIControlComponent));
+		if (!comp)
+			return;
+		AIAgent agent = comp.GetAIAgent();
+		if (!agent)
+			return;
+		SCR_AIUtilityComponent utility = SCR_AIUtilityComponent.Cast(agent.FindComponent(SCR_AIUtilityComponent));
+		if (!utility)
+			return;
+		
+		SCR_AIConverseBehavior action = new SCR_AIConverseBehavior(utility, null, pUserEntity.GetOrigin());
+		
 		
 		//vector position[4];
 		//pUserEntity.GetTransform(position);
@@ -27,13 +38,8 @@ class SP_DialogueAction : ScriptedUserAction
 		//DefWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(WP, null, spawnParams));
 		GameMode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());
 		DiagComp = SP_DialogueComponent.Cast(GameMode.FindComponent(SP_DialogueComponent));
-		AIControlComponent AiComp = AIControlComponent.Cast(pOwnerEntity.FindComponent(AIControlComponent));
-		AIAgent Agent = AiComp.GetControlAIAgent();
-		//AICommunicationComponent comComp = AICommunicationComponent.Cast(Agent.GetCommunicationComponent());
-		//SCR_AIWorld m_aiWorld = SCR_AIWorld.Cast(GetGame().GetAIWorld());
-		//SCR_AIOrderBase msg = SCR_AIOrderBase.Cast(comComp.CreateMessage(m_aiWorld.GetOrderMessageOfType(m_OrderType)));	
-		//comComp.RequestBroadcast(msg, Agent);
-		AIGroup group = AIGroup.Cast(Agent.GetParentGroup());
+		
+		AIGroup group = AIGroup.Cast(agent.GetParentGroup());
 		group.AddWaypoint(DefWaypoint);
 		string NoTalkText = "Cant talk to you now";
 		string GreetText;
@@ -45,7 +51,7 @@ class SP_DialogueAction : ScriptedUserAction
 		//CharCont.SetMovement(0, "0 0 0");
         if (group)
 		{
-			Agent = group.GetLeaderAgent();
+			agent = group.GetLeaderAgent();
 		}
 		switch (SenderFaction)
 			{
@@ -84,7 +90,7 @@ class SP_DialogueAction : ScriptedUserAction
 			DiagComp.SendText(NoTalkText, Channel, 0, name);
 			return;
 		}
-		
+		utility.AddAction(action);
 		MenuBase myMenu = GetGame().GetMenuManager().OpenMenu(ChimeraMenuPreset.DialogueMenu);
 		DialogueUIClass DiagUI = DialogueUIClass.Cast(myMenu);
 		DiagUI.Init(pOwnerEntity, pUserEntity);

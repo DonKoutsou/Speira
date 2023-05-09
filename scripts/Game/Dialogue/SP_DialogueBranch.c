@@ -46,14 +46,14 @@ class SP_DialogueBranch
 	}
 	//------------------------------------------------------------------//
 	//Text that is going to be sent in the chat
-	string GetDialogueText(IEntity Character)
+	string GetDialogueText(IEntity Character, IEntity Player)
 	{
 		string DiagText;
 		TalkingCharacter = Character;
 		DialogueBranchInfo Conf = LocateConfig(TalkingCharacter);
 		if(m_BranchStages.Count() >= Conf.GetDialogueBranchStage())
 		{
-		DiagText = m_BranchStages[Conf.GetDialogueBranchStage()].GetDialogueText();
+		DiagText = m_BranchStages[Conf.GetDialogueBranchStage()].GetDialogueText(Character, Player);
 		}
 		return DiagText;
 	}

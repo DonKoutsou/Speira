@@ -109,7 +109,7 @@ class SCR_MapLocator : GenericEntity
 			if (angle1 < angleA && angle1 >= angleB )
 				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorthEast";
 			if (angle1 < angleB && angle1 >=-angleB)
-				closeLocationAzimuth = "#AR-MapLocationHint_DirectionEast";
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionEast";// arland harbor
 			if (angle1 < -angleB && angle1 >=-angleA)
 				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouthEast";
 			if (angle1 < -angleA)

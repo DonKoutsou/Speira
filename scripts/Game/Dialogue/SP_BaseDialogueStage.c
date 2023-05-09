@@ -95,18 +95,18 @@ class DialogueStage
 	}
 	//------------------------------------------------------------------//
 	//Get dialogue text from DialogueStage
-	string GetDialogueText()
+	string GetDialogueText(IEntity Character, IEntity Player)
 	{
 	 return DialogueText;
 	}
 	//------------------------------------------------------------------//
 	//Get dialogue text from SP_MultipleChoiceConfig, text key chooses the entry. TextKey = 0 will take the first entry in SP_MultipleChoiceConfig
-	string GetStageBranchDialogueText(int TextKey, IEntity Character)
+	string GetStageBranchDialogueText(int TextKey, IEntity Character, IEntity Player)
 	{
 		string DiagText;
 		if(m_Branch[TextKey])
 		{
-			DiagText = m_Branch[TextKey].GetDialogueText(Character);
+			DiagText = m_Branch[TextKey].GetDialogueText(Character, Player);
 		}
 		else
 		{

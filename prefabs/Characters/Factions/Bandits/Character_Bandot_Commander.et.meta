@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
