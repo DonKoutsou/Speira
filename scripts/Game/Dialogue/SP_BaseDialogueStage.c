@@ -9,7 +9,7 @@ class DialogueStage
     string DialogueText;
 	//------------------------------------------------------------------//
 	[Attribute(desc: "Dialogue Branch, if present will cause branch to split instead of progressing its stage. When a branch splits, the dialogue system will only look in the entries of this branch only")]
-	private ref array<ref SP_DialogueBranch> m_Branch;
+	ref array<ref SP_DialogueBranch> m_Branch;
 	//------------------------------------------------------------------//
 	string m_sCantBePerformedReason = "(Cant Be Performed)";
 	//------------------------------------------------------------------//

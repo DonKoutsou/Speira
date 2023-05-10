@@ -4,8 +4,8 @@ GenericEntity : "{5CF603986376EAA9}Prefabs/Items/Misc/IntelligenceFolder_E_01/In
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
     ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
-     Name "Soviet Operations Intel"
-     Description "Intel on soviet operations taking place around the island. The FIA will be looking for those"
+     Name "Soviet Prison Intel"
+     Description "Soviet prison intel containing the names of prisoners, looking through the names you spot your brother's name.It states that he was moved in a bunker south of the soviet base."
     }
     CustomAttributes {
      PreviewRenderAttributes "{5ABE850F29600D4D}" {
@@ -20,5 +20,5 @@ GenericEntity : "{5CF603986376EAA9}Prefabs/Items/Misc/IntelligenceFolder_E_01/In
   SP_UnretrievableComponent "{5D4EC118478765E6}" {
   }
  }
- coords 0 0 0
+ coords 2375.7 2.862 3247.459
 }

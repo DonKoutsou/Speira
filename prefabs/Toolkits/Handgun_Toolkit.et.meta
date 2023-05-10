@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{52FB7240C6286A83}prefabs/Toolboxes/Handgun_Toolbox.et"
+ Name "{E56AF5D6547E4265}prefabs/Toolkits/Handgun_Toolkit.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

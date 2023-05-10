@@ -1,6 +1,7 @@
 modded enum EGameOverTypes
 {
-	DEATH,
+	DEATH = 3000,
+	BROTHERFOUND = 3001,
 }
 class SP_UnretrievableComponentClass : GameComponentClass
 {

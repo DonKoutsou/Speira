@@ -55,14 +55,27 @@ $grp StaticModelEntity : "{7B79E1EA73D3F4B0}prefabs/Props/Military/Furniture/Cha
   angleY 83.574
  }
 }
-GenericEntity SlotAI_5 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
- components {
-  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-   m_sObjectToSpawn "{5479700A1026D3D2}prefabs/Characters/Factions/Bandits/Character_Bandit_Navigator.et"
-   m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-  }
+$grp GenericEntity : "{96C0A7DFEAFAF534}prefabs/Beds/Fia_BedSpawn.et" {
+ {
+  coords 1174.418 38.152 2503.916
+  angleY 66.046
  }
- coords 2122.497 3.017 3530.683
+ {
+  coords 1171.964 38.152 2507.857
+  angleY -131.678
+ }
+ {
+  coords 1678.77 3.468 876.639
+  angleX 0.842
+  angleY 19.935
+  angleZ 0.305
+ }
+ {
+  coords 1675.064 3.457 878.888
+  angleX 0.183
+  angleY 78.193
+  angleZ 0.876
+ }
 }
 GenericEntity : "{B728C4AE0E6EB1E8}prefabs/Systems/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Equipment_USSR.et" {
  components {
@@ -742,6 +755,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          coords -6.863 -1.357 -1.697
          angleY 63.026
         }
+        SlotAI_6 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{11B0AC4011176F6B}prefabs/Characters/Factions/SPEIRA/Character_Speira_Brother.et"
+           m_sOverrideObjectDisplayName "Brother"
+           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          }
+         }
+         coords 103.366 -1.003 -356.298
+        }
        }
       }
      }
@@ -755,15 +778,26 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    GenericEntity Layer_6 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
     coords 0 0 0
     {
-     GenericEntity SlotAI_4 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-      components {
-       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-        m_sObjectToSpawn "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
-        m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      SlotAI_5 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{5479700A1026D3D2}prefabs/Characters/Factions/Bandits/Character_Bandit_Navigator.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
        }
+       coords 464.484 -1.514 2650.678
       }
-      coords 23.302 -0.956 -8.605
-      angleY -46.069
+      SlotAI_4 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords 23.302 -0.956 -8.605
+       angleY -46.069
+      }
      }
     }
    }

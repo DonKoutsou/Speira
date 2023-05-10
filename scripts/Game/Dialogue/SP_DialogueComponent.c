@@ -149,17 +149,7 @@ class SP_DialogueComponent: ScriptComponent
 	//Function used for "GoBack" and "Leave" dialogue options
 	void DoBackDialogue(IEntity Character, IEntity Player)
 	{
-		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
-		if (!comp)
-			return;
-		AIAgent agent = comp.GetAIAgent();
-		if (!agent)
-			return;
-		SCR_AIUtilityComponent utility = SCR_AIUtilityComponent.Cast(agent.FindComponent(SCR_AIUtilityComponent));
-		if (!utility)
-			return;
 		
-		utility.SetStateAllActionsOfType(SCR_AIConverseBehavior, EAIActionState.FAILED, false);
 		// or
 		//SCR_AIConverseBehavior action = SCR_AIConverseBehavior.Cast(utility.FindActionOfType(SCR_AIConverseBehavior));
 		//action.SetActiveConversation(false);
@@ -189,6 +179,20 @@ class SP_DialogueComponent: ScriptComponent
 		DialogueUIClass DiagUI = DialogueUIClass.Cast(myMenu);
 		DiagUI.UpdateEntries(Character, Player);
 		PlayDialogueSound();
+	}
+	void ReleaseAI(IEntity Character, IEntity Player)
+	{
+		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
+		if (!comp)
+			return;
+		AIAgent agent = comp.GetAIAgent();
+		if (!agent)
+			return;
+		SCR_AIUtilityComponent utility = SCR_AIUtilityComponent.Cast(agent.FindComponent(SCR_AIUtilityComponent));
+		if (!utility)
+			return;
+		
+		utility.SetStateAllActionsOfType(SCR_AIConverseBehavior, EAIActionState.FAILED, false);
 	}
 	//----------------------------------------------------------------------------------------------------------------//
 	void DoAnouncerDialogue(string Text)

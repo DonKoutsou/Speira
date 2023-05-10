@@ -82,6 +82,21 @@ RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
 }
 SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
  components {
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+    m_aGameOverScreens {
+     SCR_BaseGameOverScreenInfo "{5D54DC75CFCBDB98}" {
+      m_GameOverScreenId BROTHERFOUND
+      m_GameOverContentLayout "{4E98EBC5622B2BFB}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Permadeath.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D54DC75D6A35FAA}" {
+       m_sTitle "You found you brother."
+       m_sSubtitle "Thanks for playing"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+    }
+   }
+  }
   SCR_TimeAndWeatherHandlerComponent "{5D50D3AD276098D5}" {
    m_iStartingHours 5
    m_iStartingMinutes 30
@@ -104,7 +119,12 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
     }
     SP_DialogueArchetype "{5D530AF97EB0D6FD}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
     }
+    SP_DialogueArchetype "{5D54DC66848DE8BA}" : "{276D1D563309A3EE}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Navigator.conf" {
+    }
    }
+  }
+  SP_PermadeathRespawnHandlerComponent "{5D4E7039C5A87861}" {
+   m_RespawnWorldPosition 3504.489 2.946 1515.614
   }
  }
  coords 1464.062 1.182 1805.659

@@ -1981,23 +1981,6 @@ $grp GenericEntity : "{E639E7FAF33DC166}Prefabs/Props/Furniture/BedDouble_02.et"
     Object "{15BBF2E528E4F9C4}Assets/Props/Furniture/BedDouble_02/Dst/BedDouble_02_dst_01.xob"
    }
   }
-  coords 1677.83 3.433 876.508
- }
- {
-  components {
-   MeshObject "{5872F0EB7FA40561}" {
-    Object "{15BBF2E528E4F9C4}Assets/Props/Furniture/BedDouble_02/Dst/BedDouble_02_dst_01.xob"
-   }
-  }
-  coords 1674.609 3.433 879.798
-  angleY 48.096
- }
- {
-  components {
-   MeshObject "{5872F0EB7FA40561}" {
-    Object "{15BBF2E528E4F9C4}Assets/Props/Furniture/BedDouble_02/Dst/BedDouble_02_dst_01.xob"
-   }
-  }
   coords 3229.703 1.9 2913.637
  }
  {

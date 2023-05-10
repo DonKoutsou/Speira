@@ -34,18 +34,20 @@ GenericEntity {
     }
    }
    additionalActions {
-    SP_ConverseActionNoTake "{5D3C7921ECB76848}" {
+    SP_ConverseActionNoTake "{5D551481AB85EE5F}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{5D3C7921ECB76846}" {
+     UIInfo UIInfo "{5D551481AD0B8ED0}" {
       Name "Harvest sample"
      }
-     m_WantedPay "{9820B0986FF6B35A}prefabs/Toolkits/Uniform_Toolkit.et"
+     m_WantedPay "{3C42B2CBFC50A312}prefabs/Toolkits/Mining_Toolkit.et"
      m_PrefabToSell "{9DF239BE88931B81}prefabs/Items/Other/Meteor_Sample.et"
-     m_UnavailableText "Missing Toolkit"
+     m_UnavailableText "Missing toolkit"
     }
    }
+  }
+  RplComponent "{5D551011D606C569}" {
   }
  }
  coords 0 8.228 2.603

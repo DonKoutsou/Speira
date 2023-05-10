@@ -69,11 +69,6 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 						DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
 						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
 					}
-					else if (KillerKey == "FIA" && VictimKey == "BANDITS")
-					{
-						DiagComp.DoAnouncerDialogue("Killed unit of friendly faction, you've gone Renegade");
-						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-					}
 				}
 				
 			}

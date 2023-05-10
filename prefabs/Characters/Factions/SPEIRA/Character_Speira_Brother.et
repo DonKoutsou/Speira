@@ -1,0 +1,25 @@
+SCR_ChimeraCharacter : "{2BD309D29507304F}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_Respawn.et" {
+ ID "520EC961A090B1EE"
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    SP_DialogueAction "{5D026EE20EFDD9C5}" {
+     ParentContextList {
+      ""
+     }
+    }
+    SP_FinishGameModeAction "{5D54DC747D90929A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5D54DC74707F62DD}" {
+      Name "End gamemode"
+     }
+     Duration 0.5
+     m_GameoverType 3001
+    }
+   }
+  }
+ }
+ coords 1173.229 38.399 2505.553
+}

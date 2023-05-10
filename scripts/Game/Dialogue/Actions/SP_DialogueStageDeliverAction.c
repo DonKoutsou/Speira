@@ -87,7 +87,7 @@ class DialogueStageDeliverAction : DialogueStage
 		inv.FindItems(entitiesToDrop, pred);
 		if (entitiesToDrop.Count() < m_WantedAmount)
 		{
-			m_sCantBePerformedReason = "not enough";
+			m_sCantBePerformedReason = "[Missing Item]";
 			return false;
 		}		
 		return true;

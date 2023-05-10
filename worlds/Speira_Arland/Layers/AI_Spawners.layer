@@ -436,8 +436,8 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    }
   }
   coords 1168.653 38.415 2503.364
-  m_MaxAgentsToSpawn 2
-  m_Radius 40
+  DangerEventRange 50
+  m_Radius 20
   m_CommanderRespawn 1
   m_RespawnTimer 300
   m_CommanderRespawnTimer 300
@@ -487,6 +487,8 @@ SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_
 }
 SP_AIDirector SP_AIDirector_USSR : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AIDirector_USSR.et" {
  coords 1085.439 38.922 2885.061
+ DangerEventRange 400
+ m_MaxAgentsToSpawn 4
  m_Radius 10
  m_CompositionRadius 150
  m_InstantSpawn 1

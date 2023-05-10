@@ -5,13 +5,20 @@ class SP_SleepAction : ScriptedUserAction
 	override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
 	{
 		TimeAndWeatherManagerEntity TnWManager = GetGame().GetTimeAndWeatherManager();
-		TimeContainer currenttime = TnWManager.GetTime();
-		int TimeToSet = currenttime.m_iHours + m_Sleepamount;
-		if (TimeToSet > 24)
+		int TimeToWakeUP = TnWManager.GetTime().m_iHours + m_Sleepamount;
+		int DayToWakeUp = TnWManager.GetDay();
+		if(TimeToWakeUP > 24)
 		{
-			TimeToSet = TimeToSet - 24;
+			TimeToWakeUP = DayToWakeUp - 24;
+			DayToWakeUp = DayToWakeUp + 1;
+			TnWManager.SetTimeOfTheDay(TimeToWakeUP, true);
+			TnWManager.SetDate(TnWManager.GetYear(), TnWManager.GetMonth(), DayToWakeUp, true);
 		}
-		TnWManager.SetTimeOfTheDay(TimeToSet, true);
+		else
+		{
+			TnWManager.SetTimeOfTheDay(TimeToWakeUP, true);
+		}
+		
 	}
 	
 }

@@ -1,9 +1,0 @@
-SubScene {
- Parent "Worlds/Gogland/Gogland.ent"
-}
-Layer System {
- Index 0
-}
-Layer AIDirector {
- Index 1
-}

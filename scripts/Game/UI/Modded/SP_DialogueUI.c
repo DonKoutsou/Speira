@@ -243,6 +243,7 @@ class DialogueUIClass: ChimeraMenuBase
     {
 		RemoveListeners();
 		DiagComp.DoBackDialogue(myCallerEntity, myUserEntity);
+		DiagComp.ReleaseAI(myCallerEntity, myUserEntity);
 		GetGame().GetMenuManager().CloseAllMenus();
     }
 	override void OnMenuClose()
