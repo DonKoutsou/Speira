@@ -40,7 +40,6 @@ GenericEntity {
      IkSettings {
       ItemIKSettings "{5CF4A1B5118EAA24}" {
        Lowered 1
-       ProneTurn 1
        InAds 0
        MovementSpeedRange 2 3
       }
@@ -68,7 +67,7 @@ GenericEntity {
      StartNode "IdleFireSTM"
      AlwaysActive 1
      AnimInjection AnimationAttachmentInfo "{5AED36F415E48F76}" {
-      AnimGraph "{6966BF858039C3D9}Assets/Weapons/Handguns/workspaces/Knife.agr"
+      AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
       AnimInstance "{0F070F540CA6B706}Assets/Weapons/workspaces/Knife_weapon.asi"
       StartNode "IdleFireSTM"
       BindingName "Weapon"
@@ -97,6 +96,7 @@ GenericEntity {
    }
    WeaponSlotType "secondary"
    WeaponOffset 0 0 0
+   BeActiveWhenDropped 1
   }
   ActionsManagerComponent "{5AED36F415E4803B}" {
    ActionContexts {

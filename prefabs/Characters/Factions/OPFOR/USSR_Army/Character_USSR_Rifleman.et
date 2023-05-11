@@ -4,7 +4,6 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
    }
-   WeaponTemplate "{6CCE446711874464}prefabs/Weapons/Rifles/AK74/Rifle_AK_74_NoOptic.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
   }

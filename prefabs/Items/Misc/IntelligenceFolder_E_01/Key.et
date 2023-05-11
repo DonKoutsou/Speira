@@ -12,6 +12,9 @@ GenericEntity : "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/In
   MeshObject "{5AB0B9C3C3E4A143}" {
    Object "{E2FC23C36C7A0041}Assets/Items/Equipment/Key/Key.xob"
   }
+  RigidBody "{5AB0B9C3C3E4A158}" {
+   ModelGeometry 0
+  }
  }
  coords 1176.339 38.376 2513.29
 }

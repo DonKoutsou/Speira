@@ -19,7 +19,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    "faction affiliation" "RENEGADE"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{FC93228F03826518}prefabs/Weapons/Rifles/AK74/Rifle_AK74_Dovetail.et"
+   WeaponTemplate "{FA5C25BF66A53DCF}prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
    WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
@@ -36,13 +36,13 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
      Prefab "{BCCB7D5AB38BB3A7}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_base.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{24906FE890EC67A9}prefabs/Characters/Uniforms/Jacket_M88_rolledup_v2.et"
+     Prefab "{8E6AC4A8A3092779}Prefabs/Characters/Uniforms/Shirt_Telynashka_long.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+     Prefab "{36EA38D8DF60ED87}Prefabs/Characters/Uniforms/Pants_M69.et"
     }
     LoadoutSlotInfo Boots {
-     Prefab "{DAAFD15478BDE1C3}prefabs/Characters/Footwear/CombatBoots_US_01.et"
+     Prefab "{BCEE4FDAC93C56B7}Prefabs/Characters/Uniforms/Boots_Sapogi.et"
     }
     LoadoutSlotInfo Back {
     }

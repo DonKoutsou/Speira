@@ -23,7 +23,6 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    "faction affiliation" "BANDITS"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
    WeaponTemplate "{202B26ADA1621199}prefabs/Weapons/Melee/Machete.et"
@@ -31,16 +30,15 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Jacket {
-     Prefab "{25C2411D1499CC53}prefabs/Characters/Uniforms/Jacket_M70_v2.et"
     }
     LoadoutSlotInfo Hat {
-     Prefab "{BE19A15F1073E7BD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_black.et"
+     Prefab "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
     }
     LoadoutSlotInfo Watch {
      Prefab ""
     }
     LoadoutSlotInfo Pants {
-     Prefab "{DCF980831E880F6A}prefabs/Characters/Uniforms/Pants_M88.et"
+     Prefab "{5BFDF7039C8FC81B}Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
     }
     LoadoutSlotInfo Boots {
      Prefab "{DAAFD15478BDE1C3}prefabs/Characters/Footwear/CombatBoots_US_01.et"
@@ -49,6 +47,8 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
      Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
     }
    }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
   }
  }
  coords 1465.479 1.126 1819.913

@@ -25,7 +25,7 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
     LoadoutSlotInfo Boots {
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{D262D2102B9931C6}prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+     Prefab "{9B23D435ABD05C79}Prefabs/Characters/Uniforms/Jacket_M88Winter_SA.et"
     }
     LoadoutSlotInfo Pants {
      Prefab "{DCF980831E880F6A}prefabs/Characters/Uniforms/Pants_M88.et"
@@ -34,7 +34,7 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
      Prefab "{08155E701A949620}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_rifleman.et"
     }
     LoadoutSlotInfo Hat {
-     Prefab "{3523CB7D5961246B}Prefabs/Characters/HeadGear/Hat_PeakedCap_USSR_01/Hat_PeakedCap_USSR_01.et"
+     Prefab "{553B71F713C10ACF}Prefabs/Characters/Uniforms/Hat_M88_Winter_Ushanka.et"
     }
    }
   }
@@ -47,7 +47,7 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {
-     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88Winter_SA.et"
      PrefabsToSpawn +{
      }
     }

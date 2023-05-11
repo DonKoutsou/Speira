@@ -6,8 +6,27 @@ SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
+    LoadoutSlotInfo Boots {
+     Prefab "{BCEE4FDAC93C56B7}Prefabs/Characters/Uniforms/Boots_Sapogi.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{48B1C4411709E30E}Prefabs/Characters/Uniforms/Jacket_M88Butan_VDV_EN1.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{52E1E82C62C29D83}Prefabs/Characters/Uniforms/Pants_M88Butan.et"
+    }
     LoadoutSlotInfo Hat {
      Prefab ""
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC173771408E}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_M88Butan.et"
+    }
+    ItemsInitConfigurationItem "{5A24CC173897B74F}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88Butan_VDV_EN1.et"
     }
    }
   }
