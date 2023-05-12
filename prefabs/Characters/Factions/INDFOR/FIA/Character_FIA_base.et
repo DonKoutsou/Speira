@@ -11,6 +11,16 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     }
    }
   }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault VETERAN
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponTemplate "{880A80C1FD1AE546}Prefabs/Weapons/Handguns/APS/Handgun_APS.et"
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
@@ -24,7 +34,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
      PrefabsToSpawn + {
-      "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et"
+      "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
      }
     }
    }

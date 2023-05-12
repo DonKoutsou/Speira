@@ -1116,9 +1116,20 @@ SCR_ChimeraCharacter : "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_
  coords 164.451 1.001 253.393
  angleY -180
 }
-SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et" {
- coords 119.063 1.001 253.733
- angleY -180
+$grp SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et" {
+ {
+  coords 119.063 1.001 253.733
+  angleY -180
+ }
+ {
+  components {
+   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+    WeaponTemplate "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
+   }
+  }
+  coords 120.006 1.001 253.733
+  angleY -180
+ }
 }
 SCR_ChimeraCharacter : "{6058AB54781A0C52}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et" {
  coords 165.627 1.001 253.393

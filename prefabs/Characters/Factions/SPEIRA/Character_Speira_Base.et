@@ -38,7 +38,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5D3723DCABD65062}" {
      TargetStorage "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
      PrefabsToSpawn {
-      "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" "{96C0A7DFEAFAF534}prefabs/Beds/Fia_BedSpawn.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et" "{2366EF898F87916B}prefabs/Items/Misc/IntelligenceFolder_E_01/Letter.et" "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et"
+      "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" "" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{0102CA31599E00AA}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_02.et" "{2366EF898F87916B}prefabs/Items/Misc/IntelligenceFolder_E_01/Letter.et" "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et"
      }
     }
     ItemsInitConfigurationItem "{5D3D4C1160BCCB93}" {

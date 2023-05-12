@@ -11,18 +11,13 @@ SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA
    AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
     PivotID "Hips"
    }
-   WeaponTemplate "{C0F7DD85A86B2900}prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5A24CC1119C7787F}" {
      PrefabsToSpawn + {
       "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
-     }
-    }
-    ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
-     PrefabsToSpawn {
-      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
      }
     }
     ItemsInitConfigurationItem "{55709016178D263C}" {

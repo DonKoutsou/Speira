@@ -15,11 +15,18 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     }
    }
   }
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault VETERAN
+    }
+   }
+  }
   FactionAffiliationComponent "{5D3308C1B3ACFC5E}" {
    "faction affiliation" "RENEGADE"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{FA5C25BF66A53DCF}prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
+   WeaponTemplate "{C2E516E1F46CFD92}Prefabs/Weapons/Rifles/AN94/Rifle_AN94_base.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
    WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
@@ -51,13 +58,13 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5D3308C10F446455}" {
-     TargetStorage "prefabs/Characters/Uniforms/Jacket_M88_rolledup_v2.et"
+     TargetStorage "Prefabs/Characters/Uniforms/Shirt_Telynashka_long.et"
      PrefabsToSpawn {
       "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
      }
     }
     ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
-     TargetStorage "Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_M69.et"
      PrefabsToSpawn {
       "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
      }
@@ -71,6 +78,6 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    }
   }
  }
- coords 119.565 1.001 253.85
+ coords 119.063 1.001 253.733
  angleY -180
 }

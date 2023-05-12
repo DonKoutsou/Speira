@@ -1,6 +1,13 @@
 SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
  ID "520EC961A090BE1E"
  components {
+  AIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault VETERAN
+    }
+   }
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
    AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
    }
@@ -26,7 +33,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
      TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
      PrefabsToSpawn + {
-      "{F744219D8BBF1E3A}prefabs/Currency/Wallet_2_Watches.et"
+      "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {

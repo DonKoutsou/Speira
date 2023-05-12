@@ -748,7 +748,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         SlotAI_4 {
          components {
           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-           m_sObjectToSpawn "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et"
+           m_sObjectToSpawn "{CD4B4479B4AFF054}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Keyholder.et"
            m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
           }
          }
