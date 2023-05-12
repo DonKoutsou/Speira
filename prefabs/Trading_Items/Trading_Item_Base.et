@@ -5,18 +5,6 @@ GenericEntity {
    m_Categories {
     ""
    }
-   m_AdditionalMerchandise {
-    ADM_ShopMerchandise "{5D5909CA383009EA}" {
-     m_Merchandise ADM_MerchandiseItem "{5D5909CA4E3E0B1F}" {
-      m_Prefab "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodItem "{5D5909CA465A141F}" {
-       m_ItemPrefab "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-      }
-     }
-    }
-   }
   }
   MeshObject "{58C4C15098F109F6}" {
    Object ""

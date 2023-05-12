@@ -162,8 +162,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_InstantSpawn 1
  }
  SP_AIDirector_Harbour {
-  coords 1163.424 1.723 3305.288
-  m_Radius 10
+  coords 1171.629 1.723 3303.083
+  m_MaxAgentsToSpawn 4
+  m_Radius 20
   m_CompositionRadius 150
   m_CommanderRespawn 1
   m_RespawnTimer 120
