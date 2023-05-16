@@ -80,7 +80,7 @@ SCR_ChimeraCharacter {
      UIInfo UIInfo "{5D50F009BFA7ED29}" {
       Name "Talk"
      }
-     Duration 0.5
+     Duration 0
     }
    }
   }

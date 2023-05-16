@@ -141,6 +141,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
+  m_sLocationName "east of airfield military compound"
   m_InstantSpawn 1
  }
  SP_AIDirector_Farm {
@@ -357,6 +358,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
+  m_sLocationName "in the coast shouth-west of signal hill"
   m_InstantSpawn 1
  }
  SP_AIDirector_SignalHill {
@@ -426,7 +428,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "Stray FIA"
+  m_sLocationName "Gull island"
   m_InstantSpawn 1
   m_pDefaultWaypoint "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
  }
@@ -460,7 +462,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "junkyard southwest of airfield"
+  m_sLocationName "south of the soviet headquarters"
   m_InstantSpawn 1
  }
 }
@@ -477,6 +479,7 @@ SP_AIDirector SP_AIDirector_FIA : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDi
  m_CompositionsLarge {
   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et"
  }
+ m_sLocationName "East of Arleville"
  m_InstantSpawn 1
 }
 SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_AIDirector_Bandits.et" {
@@ -486,6 +489,7 @@ SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_
  m_CompositionsMed {
   "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et"
  }
+ m_sLocationName "South of Bald Ridge"
  m_InstantSpawn 1
 }
 SP_AIDirector SP_AIDirector_USSR : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AIDirector_USSR.et" {
@@ -494,6 +498,7 @@ SP_AIDirector SP_AIDirector_USSR : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AID
  m_MaxAgentsToSpawn 4
  m_Radius 10
  m_CompositionRadius 150
+ m_sLocationName "soviet headquarters"
  m_InstantSpawn 1
 }
 SP_AIDirector SP_AIDirector_FIA_Outer : "{B51B1F790BDF84AF}prefabs/AI/Spawners/SP_AIDirector_SPEIRA.et" {
@@ -512,6 +517,6 @@ SP_AIDirector SP_AIDirector_FIA_Outer : "{B51B1F790BDF84AF}prefabs/AI/Spawners/S
  m_Compositions {
   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{FFD9E8A7CD2592B5}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" "{EAADF76426434F42}prefabs/Compositions/Factions/FIA/Tent_Beds_FIA.et"
  }
- m_sLocationName "FIA_Hideout"
+ m_sLocationName "south-west of the airfield"
  m_InstantSpawn 1
 }

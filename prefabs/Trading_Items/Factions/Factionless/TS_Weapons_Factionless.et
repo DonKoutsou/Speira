@@ -34,11 +34,7 @@ GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
     }
     KLM_ConverseAction "{5C9AF129A65A807D}" : "{67489042AAD24EF9}Prefabs/Trading_Items/Configs/Weapons/B_M60.conf" {
     }
-    LIW_ConverseActionNoTake "{5C9AF129A71C7FFB}" : "{1E8B643FEBE18D22}Prefabs/Trading_Items/Configs/Weapons/B_M9.conf" {
-    }
     KLM_ConverseAction "{5C9AF129B88A411D}" : "{2ACD8849C0016828}Prefabs/Trading_Items/Configs/Weapons/B_PKM.conf" {
-    }
-    LIW_ConverseActionNoTake "{5C9AF129B83155BE}" : "{8881FC635217AE54}Prefabs/Trading_Items/Configs/Weapons/B_PM.conf" {
     }
     KLM_ConverseAction "{5C9AF129B9D31E44}" : "{45C95DE5E1BFE034}Prefabs/Trading_Items/Configs/Weapons/B_PSO.conf" {
     }

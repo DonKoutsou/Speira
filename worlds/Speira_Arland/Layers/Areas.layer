@@ -12,6 +12,10 @@ GenericEntity : "{0692BB439764BB1E}Prefabs/Props/Civilian/Notebook_01_base.et" {
  coords 1180.571 2.026 3291.478
  angleY -180
 }
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
+ coords 2904.148 35.557 3123.855
+ angleY 0
+}
 GenericEntity : "{13891AA1F5833C4A}Prefabs/Props/Civilian/Notebook_01_Double.et" {
  coords 1180.555 2.026 3291.004
  angleY 127.636

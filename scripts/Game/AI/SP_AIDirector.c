@@ -3,6 +3,8 @@ class SP_AIDirectorClass: SCR_AIGroupClass
 };
 class SP_AIDirector : SCR_AIGroup
 {
+	
+	static ref array<SP_AIDirector> AllDirectors = null; // new ref array<SP_AIDirector>();
 	// parameters
 	[Attribute("3")]
 	int m_MaxAgentsToSpawn;
@@ -79,7 +81,7 @@ class SP_AIDirector : SCR_AIGroup
 	private AIWaypoint ComWaypoint;
 	protected IEntity m_CommanderEnt;
 	protected SP_DialogueComponent DiagComp;
-	FactionKey GetMajorityHolder()
+	FactionKey GetMajorityHolder(out string factionReadable)
 	{
 		int USSRcount;
 		int UScount;
@@ -93,54 +95,59 @@ class SP_AIDirector : SCR_AIGroup
 			{
 				case "USSR":
 				{
-					USSRcount = USSRcount + 1;
+					USSRcount = USSRcount + m_aGroups[i].GetAgentsCount();
 				}
 				break;
 				case "US":
 				{
-					UScount = UScount + 1;
+					UScount = UScount + m_aGroups[i].GetAgentsCount();
 				}
 				break;
 				case "FIA":
 				{
-					FIAcount = FIAcount + 1;
+					FIAcount = FIAcount + m_aGroups[i].GetAgentsCount();
 				}
 				break;
 				case "BANDITS":
 				{
-					Banditcount = Banditcount + 1;
+					Banditcount = Banditcount + m_aGroups[i].GetAgentsCount();
 				}
 				break;
 				case "RENEGADE":
 				{
-					Renegcount = Renegcount + 1;
+					Renegcount = Renegcount + m_aGroups[i].GetAgentsCount();
 				}
 				break;
 			}
 		}
 		int max = USSRcount;
-    	string MajorFaction = "Soviet";
+    	string MajorFaction = "USSR";
+		factionReadable = "soviet";
 	    if (UScount > max)
 	    {
 	        max = UScount;
-			MajorFaction = "US"
+			MajorFaction = "US";
+			factionReadable= "US";
 	    }
 	    
 	    if (FIAcount > max)
 	    {
 	        max = FIAcount;
-			MajorFaction = "guerrilla"
+			MajorFaction = "FIA";
+			factionReadable = "guerrilla";
 	    }
 	    
 	    if (Banditcount > max)
 	    {
 	        max = Banditcount;
-			MajorFaction = "bandit"
+			MajorFaction = "BANDITS";
+			factionReadable = "bandit";
 	    }
 		if (Renegcount > max)
 	    {
 	        max = Renegcount;
-			MajorFaction = "renegade"
+			MajorFaction = "RENEGADES";
+			factionReadable = "renegade";
 	    }
 	    
 	    return MajorFaction; 
@@ -152,10 +159,17 @@ class SP_AIDirector : SCR_AIGroup
 	{
 		SetFlags(EntityFlags.ACTIVE, false);	
 		SetEventMask(EntityEvent.INIT);
+
 		
 		// allow AI spawning only on the server
 		if (RplSession.Mode() != RplMode.Client)
 			SetEventMask(EntityEvent.FRAME);
+	}
+	
+	void ~SP_AIDirector()
+	{
+		if(AllDirectors)
+			AllDirectors.Remove(AllDirectors.Find(this));
 	}
 	
 	ResourceName GetRandomComposition()
@@ -193,7 +207,10 @@ class SP_AIDirector : SCR_AIGroup
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
+		if(!AllDirectors)
+			AllDirectors = new ref array<SP_AIDirector>();
 		
+		AllDirectors.Insert(this);
 		m_SpawnedCounter = 0;
 		m_RespawnPeriod = 0;
 		m_CommanderRespawnPeriod = m_CommanderRespawnTimer;

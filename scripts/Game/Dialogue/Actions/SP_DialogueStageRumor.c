@@ -1,8 +1,7 @@
 [BaseContainerProps(configRoot:true), DialogueStageTitleAttribute()]
 class DialogueStageRumor : DialogueStage
 {
-	[Attribute("")]
-	ref array<string> m_sAIDirectorName;
+	ref array <int> usedindex = new array<int>();
 	
 	override void Perform(IEntity Character, IEntity Player)
 	{
@@ -18,22 +17,38 @@ class DialogueStageRumor : DialogueStage
 			return GetRandomLocationPopulation(key);
 	};
 	string GetRandomLocationPopulation(string key)
-	{
+	{	
 		int index;
-		index = Math.RandomInt(0, m_sAIDirectorName.Count());
-		string EntName = "SP_AIDirector_" + m_sAIDirectorName[index];
-		SP_AIDirector RendomDirector = SP_AIDirector.Cast(GetGame().FindEntity(EntName));
-		string faction = RendomDirector.GetMajorityHolder();
-		if(faction == key)
-		{
-			index = Math.RandomInt(0, m_sAIDirectorName.Count());
-			EntName = "SP_AIDirector_" + m_sAIDirectorName[index];
-			RendomDirector = SP_AIDirector.Cast(GetGame().FindEntity(EntName));
-			faction = RendomDirector.GetMajorityHolder();
-		}
-		string TextToSend = string.Format(DialogueText, faction, RendomDirector.GetLocationName());
-		return TextToSend;
+		SP_AIDirector RandomDirector;
+		index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
+		RandomDirector = SP_AIDirector.AllDirectors[index];
+		usedindex.Insert(index);
 		
+		while(usedindex.Contains(index) == true)
+		{
+			index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
+			RandomDirector = SP_AIDirector.AllDirectors[index];
+		}
+		
+		string FactioReadble = "";
+		string faction = RandomDirector.GetMajorityHolder(FactioReadble);
+		
+		while (faction == key)
+		{
+			index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
+			if(usedindex.Contains(index) == false)
+			{
+				RandomDirector = SP_AIDirector.AllDirectors[index];
+				usedindex.Insert(index);
+			}
+			faction = RandomDirector.GetMajorityHolder(FactioReadble);
+		}	
+		if(SP_AIDirector.AllDirectors.Count() <= usedindex.Count())
+		{
+			usedindex.Clear();
+		}		
+		string TextToSend = string.Format(DialogueText, FactioReadble, RandomDirector.GetLocationName());
+		return TextToSend;
 	}
 
 };
