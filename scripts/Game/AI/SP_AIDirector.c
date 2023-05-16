@@ -1,7 +1,7 @@
-class SP_AIDirectorClass: AISpawnerGroupClass
+class SP_AIDirectorClass: SCR_AIGroupClass
 {
 };
-class SP_AIDirector : AIGroup
+class SP_AIDirector : SCR_AIGroup
 {
 	// parameters
 	[Attribute("3")]
@@ -65,6 +65,10 @@ class SP_AIDirector : AIGroup
 	[Attribute("")]
 	private ResourceName m_pCommanderWaypoint;
 	
+	string GetLocationName ()
+	{
+		return m_sLocationName;
+	}
 	// private
 	private int m_SpawnedCounter;	
 	private float m_RespawnPeriod;
@@ -75,7 +79,75 @@ class SP_AIDirector : AIGroup
 	private AIWaypoint ComWaypoint;
 	protected IEntity m_CommanderEnt;
 	protected SP_DialogueComponent DiagComp;
-
+	FactionKey GetMajorityHolder()
+	{
+		int USSRcount;
+		int UScount;
+		int FIAcount;
+		int Banditcount;
+		int Renegcount;
+		for (int i = m_aGroups.Count() - 1; i >= 0; i--)
+		{
+			string faction = m_aGroups[i].GetFaction().GetFactionKey();
+			switch(faction)
+			{
+				case "USSR":
+				{
+					USSRcount = USSRcount + 1;
+				}
+				break;
+				case "US":
+				{
+					UScount = UScount + 1;
+				}
+				break;
+				case "FIA":
+				{
+					FIAcount = FIAcount + 1;
+				}
+				break;
+				case "BANDITS":
+				{
+					Banditcount = Banditcount + 1;
+				}
+				break;
+				case "RENEGADE":
+				{
+					Renegcount = Renegcount + 1;
+				}
+				break;
+			}
+		}
+		int max = USSRcount;
+    	string MajorFaction = "Soviet";
+	    if (UScount > max)
+	    {
+	        max = UScount;
+			MajorFaction = "US"
+	    }
+	    
+	    if (FIAcount > max)
+	    {
+	        max = FIAcount;
+			MajorFaction = "guerrilla"
+	    }
+	    
+	    if (Banditcount > max)
+	    {
+	        max = Banditcount;
+			MajorFaction = "bandit"
+	    }
+		if (Renegcount > max)
+	    {
+	        max = Renegcount;
+			MajorFaction = "renegade"
+	    }
+	    
+	    return MajorFaction; 
+		
+			
+		
+	}
 	void SP_AIDirector(IEntitySource src, IEntity parent)
 	{
 		SetFlags(EntityFlags.ACTIVE, false);	
@@ -445,7 +517,7 @@ class SP_AIDirector : AIGroup
 			}
 		}
 		
-
+		
 		return true;
 	}
 	event void OnSpawn(IEntity spawned)

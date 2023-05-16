@@ -40,14 +40,14 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "Beach"
+  m_sLocationName "North Beach"
   m_InstantSpawn 1
  }
  SP_AIDirector_Beuregard {
   coords 3112.964 16.001 2742.939
   m_CompositionRadius 150
   m_AgentTemplates {
-   "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -61,12 +61,13 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
+  m_sLocationName "Beuregard"
   m_InstantSpawn 1
  }
  SP_AIDirector_Beuregard_out {
   coords 3118.335 3.933 3011.318
   m_AgentTemplates {
-   "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -80,6 +81,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
+  m_sLocationName "North-West Beuregard"
   m_InstantSpawn 1
  }
  SP_AIDirector_Beuregard_US {
@@ -99,7 +101,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "Beuregard"
+  m_sLocationName "South Beuregard"
   m_InstantSpawn 1
  }
  SP_AIDirector_Church {
@@ -119,7 +121,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "Church"
+  m_sLocationName "Church east of Arleville"
   m_InstantSpawn 1
  }
  SP_AIDirector_DHouse {
@@ -205,7 +207,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "south of highfield"
+  m_sLocationName "West Arleville"
   m_InstantSpawn 1
  }
  SP_AIDirector_Junk {
@@ -255,7 +257,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CompositionsRoad {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
   }
-  m_sLocationName "Lake east of airfield"
+  m_sLocationName "Southwest of farm"
   m_InstantSpawn 1
  }
  SP_AIDirector_Mil {

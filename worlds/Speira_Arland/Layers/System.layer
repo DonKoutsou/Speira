@@ -42,23 +42,25 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
   }
   SP_DialogueComponent "{5D1547897BFE725A}" {
    m_CharacterArchetypeList {
-    SP_DialogueArchetype "{5D530AF96687EB29}" : "{5345CEB8F0A8E82E}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Commander.conf" {
+    SP_DialogueArchetype "{5D6102839F4C8D45}" : "{DAEA2B70D60C84CE}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_COMMANDER.conf" {
     }
-    SP_DialogueArchetype "{5D530AF9667E43D6}" : "{E46D08B6A1F94291}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_General.conf" {
+    SP_DialogueArchetype "{5D61028390155305}" : "{E9B2A1ACFDAE24DF}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Navigator.conf" {
     }
-    SP_DialogueArchetype "{5D530AF9673602B3}" : "{601D4464DB0A483F}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Navigator.conf" {
+    SP_DialogueArchetype "{5D61028391C24204}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
     }
-    SP_DialogueArchetype "{5D530AF978C172C5}" : "{5598C834512501C4}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Private.conf" {
+    SP_DialogueArchetype "{5D61028396CDC98F}" : "{5345CEB8F0A8E82E}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Commander.conf" {
     }
-    SP_DialogueArchetype "{5D530AF97AA55281}" : "{DAEA2B70D60C84CE}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_COMMANDER.conf" {
+    SP_DialogueArchetype "{5D610283979525B2}" : "{E46D08B6A1F94291}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_General.conf" {
     }
-    SP_DialogueArchetype "{5D530AF97A79476F}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
+    SP_DialogueArchetype "{5D6102839729E9AB}" : "{601D4464DB0A483F}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Navigator.conf" {
     }
-    SP_DialogueArchetype "{5D530AF97DC462FF}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Commander.conf" {
+    SP_DialogueArchetype "{5D610283AA6073D4}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Commander.conf" {
     }
-    SP_DialogueArchetype "{5D530AF97EB0D6FD}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
+    SP_DialogueArchetype "{5D610283AB5B64E2}" : "{276D1D563309A3EE}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Navigator.conf" {
     }
-    SP_DialogueArchetype "{5D54DC66848DE8BA}" : "{276D1D563309A3EE}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Navigator.conf" {
+    SP_DialogueArchetype "{5D610283ADD1929C}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D6110DB93A16420}" : "{5598C834512501C4}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Private.conf" {
     }
    }
   }
