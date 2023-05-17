@@ -1,6 +1,9 @@
 GenericEntity {
  ID "5C9AF12BE5E75D2C"
  components {
+  FactionAffiliationComponent "{5D6259430CABF2C3}" {
+   "faction affiliation" "BANDITS"
+  }
   MeshObject "{5C9AF12BE5E75DF4}" {
    Object "{5172A6E151032216}Assets/Props/Military/AmmoBox/EquipmentBoxStack/EquipmentBoxStack_01_V1.xob"
    Materials {
@@ -26,9 +29,6 @@ GenericEntity {
   }
   RplComponent "{5C9AF12BE5E75D98}" {
    Enabled 1
-  }
-  FactionAffiliationComponent "{5D6259430CABF2C3}" {
-   "faction affiliation" "BANDITS"
   }
  }
  coords 160.965 1.001 124.062
@@ -141,24 +141,13 @@ GenericEntity {
    coords -1.868 0 -0.029
    angleY -90
   }
-  $grp GenericEntity : "{A04DC55EB7C367F8}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_US_02.et" {
-   {
-    ID "5C9AF12BE5E75DFA"
-    components {
-     Hierarchy "{5C9AF12BE5E75DBD}" {
-     }
+  GenericEntity : "{A04DC55EB7C367F8}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_US_02.et" {
+   ID "5C9AF12BE5E75DFA"
+   components {
+    Hierarchy "{5C9AF12BE5E75DBD}" {
     }
-    coords -1.81 0 -0.741
    }
-   {
-    ID "5C9AF12BE5E75DFD"
-    components {
-     Hierarchy "{5C9AF12BE5E75DB1}" {
-     }
-    }
-    coords 1.007 0 0.478
-    angleY -18.235
-   }
+   coords -1.81 0 -0.741
   }
  }
 }

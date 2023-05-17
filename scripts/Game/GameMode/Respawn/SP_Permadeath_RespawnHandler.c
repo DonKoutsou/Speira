@@ -30,22 +30,13 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	protected EGameOverTypes			m_eOverriddenGameOverType;
 	
 	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
-	vector m_FIAStorageWorldPosition;
-	
-	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
 	vector m_BanditStorageWorldPosition;
-	
-	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
-	vector m_RespawnWorldPosition;
 	
 	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
 	vector m_RespawnWorldPositionBandit;
 	
 	[Attribute("")]
 	ResourceName m_StoragePreset;
-	
-	[Attribute("")]
-	ResourceName m_SpawnpointFIA;
 	
 	[Attribute("")]
 	ResourceName m_SpawnpointSPEIRA;
@@ -56,8 +47,6 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	[Attribute()]
 	int m_iLives;
 	
-	IEntity DeathStorageFIA;
-	
 	IEntity DeathStorageBandit;
 	
 	bool m_bDonewithspanpoints = false;
@@ -66,7 +55,7 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	{
 		FactionAffiliationComponent factcompKiller = FactionAffiliationComponent.Cast(killer.FindComponent(FactionAffiliationComponent));
 		FactionKey FactKiller = factcompKiller.GetAffiliatedFaction().GetFactionKey();
-		if (m_SpawnpointFIA && m_SpawnpointSPEIRA && m_bDonewithspanpoints == false)
+		if (m_SpawnpointSPEIRA && m_bDonewithspanpoints == false)
 		{
 			SCR_FactionManager factionManager = SCR_FactionManager.Cast(GetGame().GetFactionManager());
 			SCR_Faction BanditFaction = SCR_Faction.Cast(factionManager.GetFactionByKey("BANDITS"));
@@ -80,14 +69,6 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 				Resource spawnSPEIRA = Resource.Load(m_SpawnpointSPEIRA);
 				GetGame().SpawnEntityPrefab(spawnSPEIRA, GetGame().GetWorld(), spawnParams);
 			}
-			else
-			{
-				EntitySpawnParams spawnParams = EntitySpawnParams();
-				spawnParams.TransformMode = ETransformMode.WORLD;
-				spawnParams.Transform[3] = m_RespawnWorldPosition;
-				Resource spawnSPEIRA = Resource.Load(m_SpawnpointSPEIRA);
-				GetGame().SpawnEntityPrefab(spawnSPEIRA, GetGame().GetWorld(), spawnParams);
-			}
 			m_bDonewithspanpoints = true;
 		}
 		
@@ -97,7 +78,7 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 			SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(player.FindComponent(SCR_InventoryStorageManagerComponent));
 			array<IEntity> items = new array<IEntity>();
 			inv.GetItems(items);
-			if (items && DeathStorageFIA && DeathStorageBandit)
+			if (items && DeathStorageBandit)
 			{
 				InventoryStorageManagerComponent stocomp;
 				SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
@@ -108,8 +89,16 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 				}
 				else
 				{
-					stocomp = InventoryStorageManagerComponent.Cast(DeathStorageFIA.FindComponent(InventoryStorageManagerComponent));
-					DiagComp.DoAnouncerDialogue("The local FIA has saved you from death. Your items are stored on the chest next to the bed.");
+					SCR_GameModeSFManager manager = SCR_GameModeSFManager.Cast(GetGame().GetGameMode().FindComponent(SCR_GameModeSFManager));
+					if (!manager)
+						return;
+					
+					if (m_bOverrideGameOverType)
+						manager.SetMissionEndScreen(m_eOverriddenGameOverType);
+					
+					manager.Finish();
+					//stocomp = InventoryStorageManagerComponent.Cast(DeathStorageFIA.FindComponent(InventoryStorageManagerComponent));
+					//DiagComp.DoAnouncerDialogue("The local FIA has saved you from death. Your items are stored on the chest next to the bed.");
 				}
 				
 				InventoryStorageManagerComponent stocompKiller = InventoryStorageManagerComponent.Cast(killer.FindComponent(InventoryStorageManagerComponent));
@@ -155,21 +144,9 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 			Resource spawnBANDIT = Resource.Load(m_SpawnpointBandit);
 			GetGame().SpawnEntityPrefab(spawnBANDIT, GetGame().GetWorld(), spawnParams);
 		}
-		if (m_SpawnpointFIA)
-		{
-			EntitySpawnParams spawnParams = EntitySpawnParams();
-			spawnParams.TransformMode = ETransformMode.WORLD;
-			spawnParams.Transform[3] = m_RespawnWorldPosition;
-			Resource spawnFIA = Resource.Load(m_SpawnpointBandit);
-			GetGame().SpawnEntityPrefab(spawnFIA, GetGame().GetWorld(), spawnParams);
-		}
 		if (m_StoragePreset)
 		{
-			EntitySpawnParams spawnParams = EntitySpawnParams();
-			spawnParams.TransformMode = ETransformMode.WORLD;
-			spawnParams.Transform[3] = m_FIAStorageWorldPosition;
 			Resource storage = Resource.Load(m_StoragePreset);
-			DeathStorageFIA = GetGame().SpawnEntityPrefab(storage, GetGame().GetWorld(), spawnParams);
 			EntitySpawnParams spawnParamsBand = EntitySpawnParams();
 			spawnParamsBand.TransformMode = ETransformMode.WORLD;
 			spawnParamsBand.Transform[3] = m_BanditStorageWorldPosition;

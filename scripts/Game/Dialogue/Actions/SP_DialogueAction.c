@@ -85,7 +85,7 @@ class SP_DialogueAction : ScriptedUserAction
 		//	return;
 		//}
 		//Agent.GetMovementComponent().ForceFollowPathOfEntity(pUserEntity) = true;
-		if (!DiagComp.LocateDialogueArchetype(pOwnerEntity))
+		if (!DiagComp.LocateDialogueArchetype(pOwnerEntity, pUserEntity))
 		{
 			DiagComp.SendText(NoTalkText, Channel, 0, name);
 			return;

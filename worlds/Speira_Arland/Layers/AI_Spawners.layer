@@ -1,11 +1,14 @@
 $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_HostileArea.et" {
  SP_AIDirector_Arleville {
   components {
+   SCR_MapDescriptorComponent "{5D42AA2A86C39135}" {
+    Enabled 0
+   }
   }
   coords 2746.771 73.762 1718.854
   m_CompositionRadius 150
   m_AgentTemplates {
-   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -26,7 +29,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   coords 2375.204 8.272 3204.727
   m_CompositionRadius 150
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -47,7 +50,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   coords 3112.964 16.001 2742.939
   m_CompositionRadius 150
   m_AgentTemplates {
-   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et" "{EE92725E9B949C3D}Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -67,7 +70,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Beuregard_out {
   coords 3118.335 3.933 3011.318
   m_AgentTemplates {
-   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -87,7 +90,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Beuregard_US {
   coords 3104.028 44.296 2420.974
   m_AgentTemplates {
-   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -147,7 +150,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Farm {
   coords 2213.278 54.434 2869.188
   m_AgentTemplates {
-   "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -194,7 +197,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Highfield {
   coords 2348.403 67.136 1711.206
   m_AgentTemplates {
-   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{581106FA58919E89}Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{96BAB56E6558788E}prefabs/Groups/OPFOR/Group_USSR_Team_AT.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -218,10 +221,13 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
      Name "Junkyard Hostile Area"
     }
    }
+   SCR_MapDescriptorComponent "{5D42AA2A86C39135}" {
+    Enabled 0
+   }
   }
   coords 1015.127 14.151 1988.013
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{43C7A28EEB660FF8}prefabs/Groups/OPFOR/Group_USSR_Team_GL.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -244,7 +250,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   angleZ -0.895
   m_MaxAgentsToSpawn 2
   m_AgentTemplates {
-   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -264,7 +270,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Mil {
   coords 1396.601 11.077 1839.75
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et"
   }
   m_CompositionsMed {
    "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -281,7 +287,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Mil2 {
   coords 1678.274 39.997 3009.058
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -303,7 +309,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CommanderRespawn 1
   m_CommanderRespawnTimer 3000
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_Compositions {
@@ -324,7 +330,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_MossHill {
   coords 2303.842 90.158 1257.358
   m_AgentTemplates {
-   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{EE92725E9B949C3D}Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -344,7 +350,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Shack {
   coords 2019.047 10.555 1855.412
   m_AgentTemplates {
-   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{EE92725E9B949C3D}Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Compositions {
    "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
@@ -364,7 +370,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_SignalHill {
   coords 2506.653 148.866 2260.434
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_Compositions {
@@ -387,7 +393,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_CommanderRespawn 1
   m_CommanderRespawnTimer 1800
   m_AgentTemplates {
-   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+   "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{D815658156080328}Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
   }
   m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_Compositions {
@@ -465,6 +471,171 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_sLocationName "south of the soviet headquarters"
   m_InstantSpawn 1
  }
+ SP_AIDirector_Lighthouse {
+  coords 1462.467 30.804 1143.103
+  m_AgentTemplates {
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{EE92725E9B949C3D}Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "South Lighthouse"
+  m_InstantSpawn 1
+ }
+ SP_AIDirector_BaldRidge {
+  coords 1887.557 53.489 1126.992
+  m_MaxAgentsToSpawn 2
+  m_Radius 100
+  m_AgentTemplates {
+   "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{EE92725E9B949C3D}Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "Bald Ridge"
+  m_InstantSpawn 1
+  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ }
+ SP_AIDirector_BaldRidge2 {
+  coords 2113.867 61.826 1044.42
+  DangerEventRange 200
+  m_MaxAgentsToSpawn 1
+  m_Radius 100
+  m_AgentTemplates {
+   "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "east Bald Ridge"
+  m_InstantSpawn 1
+  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ }
+ SP_AIDirector_MossHill2 {
+  coords 2452.622 88.282 1468.632
+  m_MaxAgentsToSpawn 2
+  m_Radius 100
+  m_AgentTemplates {
+   "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "south Moss Hill"
+  m_InstantSpawn 1
+  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ }
+ SP_AIDirector_ArlevileOutskirts {
+  coords 3085.252 37.501 2026.831
+  DangerEventRange 200
+  m_MaxAgentsToSpawn 1
+  m_Radius 100
+  m_AgentTemplates {
+   "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "northern Arleville outskirts"
+  m_InstantSpawn 1
+  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ }
+ SP_AIDirector_TimberRidge {
+  coords 2624.195 102.436 2586.685
+  DangerEventRange 200
+  m_iMaxMembers 3
+  m_MaxAgentsToSpawn 1
+  m_Radius 150
+  m_CompositionRadius 150
+  m_AgentTemplates {
+   "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "Timber Ridge"
+  m_InstantSpawn 1
+ }
+ SP_AIDirector_SingalHillWest {
+  coords 2308.398 99.489 2320.595
+  DangerEventRange 200
+  m_iMaxMembers 3
+  m_MaxAgentsToSpawn 2
+  m_Radius 100
+  m_CompositionRadius 100
+  m_AgentTemplates {
+   "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+  }
+  m_Compositions {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsMed {
+   "{2A3B53114DEAA60A}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_01.et" "{FD952CFF9CAD3F2A}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_USSR_01.et" "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et" "{4093AE33DCEFAD67}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_USSR_01.et" "{A047DA062D3DA650}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
+  }
+  m_CompositionsLarge {
+   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
+  }
+  m_CompositionsRoad {
+   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et"
+  }
+  m_sLocationName "west of signal hill"
+  m_InstantSpawn 1
+  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ }
 }
 SP_AIDirector SP_AIDirector_FIA : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
  coords 3481.01 4.84 1514.799
@@ -486,6 +657,9 @@ SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_
  coords 1679.214 3.531 873.805
  m_Radius 10
  m_CompositionRadius 150
+ m_AgentTemplates + {
+  "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et"
+ }
  m_CompositionsMed {
   "{BFA4FFB4DA38DCB6}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM_Campaign.et"
  }

@@ -76,8 +76,8 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 		if (IsProxy())
 			return;
 		
-		if (m_iFriendlyAIKillPenalty == 0 && m_iFriendlyPlayerKillPenalty == 0)
-			return;
+		//if (m_iFriendlyAIKillPenalty == 0 && m_iFriendlyPlayerKillPenalty == 0)
+		//	return;
 		
 		if (!instigator)
 			return;
@@ -87,7 +87,7 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 		
 		SCR_ChimeraCharacter victimChar = SCR_ChimeraCharacter.Cast(entity);
 		
-		if (!victimChar)
+		if (!victimChar)     
 			return;
 		
 		SCR_ChimeraCharacter killerChar;
@@ -112,18 +112,32 @@ class SCR_PlayerPenaltyComponent: SCR_BaseGameModeComponent
 		
 		int killerPlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(killerChar);
 		
-		if (killerPlayerId == 0)
-			return;
+		//if (killerPlayerId == 0)
+		//	return;
 		
-		if (!killerChar.GetFaction().IsFactionFriendly(victimChar.GetFaction()))
-			return;
+		//if (!killerChar.GetFaction().IsFactionFriendly(victimChar.GetFaction()))
+		//	return;
 		
-		int victimPlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(victimChar);
+		//int victimPlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(victimChar);
 		
-		if (victimPlayerId == 0)
-			AddPenaltyScore(killerPlayerId, m_iFriendlyAIKillPenalty);
-		else
-			AddPenaltyScore(killerPlayerId, m_iFriendlyPlayerKillPenalty);
+		//if (victimPlayerId == 0)
+		//	AddPenaltyScore(killerPlayerId, m_iFriendlyAIKillPenalty);
+		//else
+		//	AddPenaltyScore(killerPlayerId, m_iFriendlyPlayerKillPenalty);
+		
+		SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(entity.FindComponent(SCR_InventoryStorageManagerComponent));
+		array<IEntity> items = new array<IEntity>();
+		inv.GetItems(items);
+		InventoryStorageManagerComponent stocompKiller = InventoryStorageManagerComponent.Cast(instigator.FindComponent(InventoryStorageManagerComponent));
+		foreach (IEntity item : items)
+		{
+		SP_UnretrievableComponent Unretr = SP_UnretrievableComponent.Cast(item.FindComponent(SP_UnretrievableComponent));
+			if (Unretr)
+				{
+					inv.TryMoveItemToStorage(item, stocompKiller.FindStorageForItem(item));
+				}
+		}
+			
 	}
 	
 	//------------------------------------------------------------------------------------------------

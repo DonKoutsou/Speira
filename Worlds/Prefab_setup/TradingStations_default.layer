@@ -1,3 +1,4 @@
-GenericEntity : "{34C189DD4094A08A}prefabs/Trading_Items/Factions/USSR/TS_Equipment_USSR.et" {
- coords 126.128 0.849 128.868
+GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et" {
+ coords 124.64 0.842 129.776
+ angleY 0
 }

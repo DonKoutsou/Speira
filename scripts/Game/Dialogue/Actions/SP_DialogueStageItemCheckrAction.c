@@ -8,7 +8,6 @@ class DialogueStageItemCheckAction : DialogueStage
 	
 	override void Perform(IEntity Character, IEntity Player)
 	{
-		
 	};
 	override bool CanBePerformed(IEntity Character, IEntity Player)
 	{

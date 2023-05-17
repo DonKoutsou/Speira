@@ -92,6 +92,14 @@ GenericEntity {
    Priority 100
    UseCapacityCoefficient 0
    MaxCumulativeVolume 100000
+   InitialStorageSlots {
+    InventoryStorageSlot uniform {
+     Prefab "{5BFDF7039C8FC81B}Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
+    }
+    InventoryStorageSlot balaclava {
+     Prefab "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
+    }
+   }
    m_fMaxWeight 100000
    m_aSlotsToShow {
    }
@@ -125,6 +133,6 @@ GenericEntity {
    Enabled 1
   }
  }
- coords 1353.21 1.937 1063.352
+ coords 3076.302 23.284 2600.058
  Flags 3
 }

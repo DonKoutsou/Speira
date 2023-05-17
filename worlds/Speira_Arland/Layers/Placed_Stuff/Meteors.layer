@@ -4,13 +4,14 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   angleX 69.259
  }
  {
-  coords 2054.052 36.135 3433.432
-  angleX 26.777
-  angleY -26.274
-  angleZ -14.422
+  coords 2058.487 34.548 3433.909
+  angleX 20.167
+  angleY -24.47
+  angleZ -13.702
+  scale 0.657
  }
  {
-  coords 1436.727 11.253 3506.451
+  coords 1436.954 4.742 3510.228
   angleX 26.777
   angleY -26.274
   angleZ -14.422
@@ -142,20 +143,6 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   coords 2210.064 39.788 2838.497
   angleY -68.365
   angleZ 28.144
- }
- {
-  components {
-   ActionsManagerComponent "{5D3C7921ECB7684B}" {
-    additionalActions {
-     KLM_ConverseAction "{5D551481AB85EE5F}" {
-      m_PrefabToSell "{9DF239BE88931B81}prefabs/Items/Other/Meteor_Sample.et"
-     }
-    }
-   }
-  }
-  coords 1245.049 1.162 3256.758
-  angleX -89.512
-  scale 0.44
  }
  {
   coords 1000.475 15.109 2047.995

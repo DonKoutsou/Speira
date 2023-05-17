@@ -27,6 +27,27 @@ GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.
  coords 1181.23 2.026 3290.123
  angleY 0
 }
+GenericEntity : "{48A4DDEC58BCE45C}prefabs/Graves/Grave_Stash_FIA.et" {
+ components {
+  SCR_UniversalInventoryStorageComponent "{5C789066287F1AC0}" {
+   Attributes SCR_ItemAttributeCollection "{5C78906652DD37E3}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5C789066695CB8F3}" {
+      PreviewPrefab "{48A4DDEC58BCE45C}prefabs/Graves/Grave_Stash_FIA.et"
+     }
+    }
+   }
+  }
+ }
+ coords 2027.191 2.365 782.905
+ angleY -175.377
+}
+GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
+ coords 1254.597 0.807 1125.539
+ angleX -2.81
+ angleY -112.249
+ angleZ -25.099
+}
 $grp StaticModelEntity : "{7762F50A860DD074}Prefabs/Props/Military/Furniture/TableMilitary_US_01.et" {
  {
   coords 1181.061 1.126 3291.677

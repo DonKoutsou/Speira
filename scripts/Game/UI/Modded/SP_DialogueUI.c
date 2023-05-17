@@ -207,7 +207,7 @@ class DialogueUIClass: ChimeraMenuBase
 		//	GetGame().GetInputManager().AddActionListener("Dialogue3", EActionTrigger.DOWN, ExecuteDialogue3);
 		//}
 		//Check if Archtype is branched an choose to create a Leave button or a Go Back button
-		SP_DialogueArchetype DArch = DiagComp.LocateDialogueArchetype(myCallerEntity);
+		SP_DialogueArchetype DArch = DiagComp.LocateDialogueArchetype(myCallerEntity, Player);
 		if (DArch.IsCharacterBranched == true)
 		{
 			m_ListBoxComponent.AddItem("Go Back");

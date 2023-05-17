@@ -1,0 +1,130 @@
+GenericEntity {
+ ID "5D62E589FA3FD437"
+ components {
+  SignalsManagerComponent "{5D62E589FA3FD42D}" {
+  }
+  SoundComponent "{5D62E589FA3FD422}" {
+   Filenames {
+    "{1A1F49248284A1CF}Sounds/Props/Military/AmmoBoxes/AmmoBox_81mm_mortar_3rnd/Props_AmmoBox_81mm_mortar_3rnd.acp"
+   }
+   DistanceManagement 0
+  }
+  MeshObject "{5D62E589FA3FD4D9}" {
+   Object "{98CD0A123E772237}Assets/Props/Furniture/Chest_01/Chest_01.xob"
+   Materials {
+    MaterialAssignClass "{5D62E589FA3FD4DD}" {
+     SourceMaterial "Chest_01"
+     AssignedMaterial "{722F0DF7DE4B4EF9}Assets/Props/Furniture/Chest_01/Data/Chest_storage.emat"
+    }
+   }
+   LODFactors {
+    5 2 1.5 1 1 1
+   }
+  }
+  Hierarchy "{5D62E589FA3FD4DF}" {
+  }
+  RigidBody "{5D62E589FA3FD4D0}" {
+   ResponseIndex "SmallDestructible"
+   ModelGeometry 1
+   Static 0
+  }
+  SCR_DestructionMultiPhaseComponent "{5D62E589FA3FD4D2}" {
+   Enabled 0
+   "Additional hit zones" {
+    ScriptedHitZone Default {
+     HZDefault 1
+     "Melee multiplier" 1
+     "Kinetic multiplier" 1
+     "Explosive multiplier" 90
+     "Incendiary multiplier" 1
+    }
+   }
+   m_fBaseHealth 6000
+   m_fForceToDamageScale 350
+   m_fDamageThresholdMaximum 50000
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{5D62E589FA3FD4CC}" {
+     m_vOffsetPosition 0 1.5 0.4
+     m_ModelPrefabs {
+      "{407938CF48D8B657}Assets/Props/Debris/Metal/FragmentMetal_dbr_01.xob" "{D9678156553F87C7}Assets/Props/Debris/Metal/FragmentMetal_dbr_02.xob" "{AE6DE9DEA19D68B7}Assets/Props/Debris/Metal/FragmentMetal_dbr_03.xob" "{D9678156553F87C7}Assets/Props/Debris/Metal/FragmentMetal_dbr_02.xob" "{407938CF48D8B657}Assets/Props/Debris/Metal/FragmentMetal_dbr_01.xob" "{407938CF48D8B657}Assets/Props/Debris/Metal/FragmentMetal_dbr_01.xob"
+     }
+     m_fMass 1
+     m_fDamageToImpulse 3
+     m_fRandomVelocityLinear 3
+     m_eMaterialSoundType METAL_LIGHT
+    }
+   }
+   m_aDamagePhases {
+    SCR_DamagePhaseData "{5D62E589FA3FD4C1}" {
+     m_fPhaseHealth 5000
+     m_PhaseModel "{647B1D106023B158}Assets/Props/Furniture/Safe_01/Dst/Safe_01_dst.xob"
+     m_PhaseDestroySpawnObjects {
+      SCR_DebrisSpawnable "{5D62E589FA3FD4C3}" {
+       m_ModelPrefabs {
+        "{647B1D106023B158}Assets/Props/Furniture/Safe_01/Dst/Safe_01_dst.xob"
+       }
+       m_fMass 150
+       m_eMaterialSoundType METAL_HEAVY
+      }
+     }
+    }
+   }
+  }
+  SCR_FactionAffiliationComponent "{5D62E589FA3FD4C5}" {
+   Enabled 0
+   "faction affiliation" "US"
+  }
+  SCR_UniversalInventoryStorageComponent "{5D62E589FA3FD4C6}" {
+   Attributes SCR_ItemAttributeCollection "{5D62E589FA3FD4F8}" {
+    ItemDisplayName UIInfo "{5D62E589FA3FD4FF}" {
+     Name "Storage Chest"
+     Description "Wooden chest, used to store clothing and personal items"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5D62E589FA3FD4F3}" {
+      CameraOrbitAngles 15 0 0
+      CameraDistanceToItem 1
+      ItemRenderRotation 15 15 0
+      FOV 45
+     }
+    }
+   }
+   Priority 100
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 100000
+   m_fMaxWeight 100000
+   m_aSlotsToShow {
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{5D62E589FA3FD4EA}" {
+   Enabled 1
+  }
+  ActionsManagerComponent "{5D62E589FA3FD4EC}" {
+   ActionContexts {
+    UserActionContext "{5D62E589FA3FD4EE}" {
+     ContextName "default"
+     Position PointInfo "{5D62E589FA3FD4E0}" {
+      Offset 0 0.3261 0
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{5D62E589FA3FD4E5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5D62E589FA3FD4E7}" {
+      Name "#AR-Inventory_OpenStorage"
+     }
+     "Sort Priority" 100
+    }
+   }
+  }
+  RplComponent "{5D62E589FA3FD498}" {
+   Enabled 1
+  }
+ }
+ coords 3076.302 23.284 2600.058
+ Flags 3
+}

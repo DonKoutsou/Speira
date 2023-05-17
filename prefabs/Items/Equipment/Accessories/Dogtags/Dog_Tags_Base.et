@@ -58,6 +58,8 @@ GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
     m_SlotType SLOT_LOOT_STORAGE
    }
   }
+  SP_UnretrievableComponent "{5D63111D5D7E732A}" {
+  }
   BaseLoadoutClothComponent "{5104869D194C627A}" {
    AreaType LoadoutWatchArea "{5C792EB61C73847A}" {
    }

@@ -65,7 +65,7 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
    }
   }
   SP_PermadeathRespawnHandlerComponent "{5D4E7039C5A87861}" {
-   m_RespawnWorldPosition 3504.489 2.946 1515.614
+   m_StoragePreset "{102E176F082035F8}prefabs/Props/Furniture/Chest_Storage_Respawn.et"
   }
  }
  coords 1464.062 1.182 1805.659
@@ -6554,20 +6554,20 @@ SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/Game
    }
    m_bCanChangeFactionsPlayable 0
   }
-  TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
-   coords 1089.025 145.206 538.913
-  }
-  ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
+  ScriptedChatEntity {
    coords -392.258 36.863 1061.779
   }
-  SCR_GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+  TagManager {
+   coords 1089.025 145.206 538.913
+  }
+  SCR_GarbageManager {
    coords 1588.089 54.908 -86.057
    CharacterLifetime 985.071
    VehicleLifetime 1040.252
    ItemLifetime 599.863
    m_bOnlyDestroyed 1
   }
-  SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+  SCR_LoadoutManager {
    coords 1050.753 146.603 463.705
    m_aPlayerLoadouts {
     SCR_FactionPlayerLoadout "{5CA7060267058AD7}" {
@@ -6590,7 +6590,7 @@ SP_MapLocator MapLocator {
  }
 }
 SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
- coords 1065.075 1.189 3284.578
- angleY 115.163
+ coords 1256.135 0.935 1123.188
+ angleY 83.963
  m_fSpawnRadius 0
 }

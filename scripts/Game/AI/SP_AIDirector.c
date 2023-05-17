@@ -38,9 +38,6 @@ class SP_AIDirector : SCR_AIGroup
 	[Attribute("")]
 	ResourceName m_Commander;
 	
-	[Attribute("")]
-	ResourceName m_ResearchGroup;
-	
 	bool commanderspawned = false;
 	
 	[Attribute("")]
@@ -326,62 +323,6 @@ class SP_AIDirector : SCR_AIGroup
 			}
 		}
 	}
-	bool SpawnResearchGroup()
-	{
-		if (m_AgentTemplates.Count() == 0)
-			return false;
-		
-		RandomGenerator rand = new RandomGenerator();
-		
-		// randomize position in radius
-		vector position = GetOrigin();
-		float yOcean = GetWorld().GetOceanBaseHeight();
-		
-		position[1] = yOcean - 1; // force at least one iteration
-		while (position[1] < yOcean)
-		{
-			position[0] = position[0] + rand.RandFloatXY(-m_Radius, m_Radius);
-			position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
-			position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
-		}
-
-		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
-		spawnMatrix[3] = position;
-		EntitySpawnParams spawnParams = EntitySpawnParams();
-		spawnParams.TransformMode = ETransformMode.WORLD;
-		spawnParams.Transform = spawnMatrix;
-
-		Resource res = Resource.Load(m_ResearchGroup);
-		IEntity newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
-		if (!newEnt)
-			return false;
-		
-		if (newEnt.GetPhysics())
-			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
-			
-		OnSpawn(newEnt);
-		SCR_AIGroup CommandGroup = SCR_AIGroup.Cast(newEnt);
-		m_CommanderEnt = CommandGroup.GetMaster();
-		if (newEnt)
-		{
-			AIAgent agent = AIAgent.Cast(newEnt);
-			if (agent)
-			{
-				AddAgent(agent);
-				//SetNewLeader(agent);
-			}
-			else
-			{
-				AIControlComponent comp = AIControlComponent.Cast(newEnt.FindComponent(AIControlComponent));
-				if (comp && comp.GetControlAIAgent())
-				{
-					AddAgent(comp.GetControlAIAgent());
-				}
-			}
-		}
-
-		return true;
-	};
 	bool SpawnCommander(ResourceName Name)
 	{
 		if (m_AgentTemplates.Count() == 0)

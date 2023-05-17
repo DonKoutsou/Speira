@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3FFD4FFB4D95DB8A}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman2.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
