@@ -28,4 +28,39 @@ class KLM_ConverseAction : KLM_BaseTraderAction
 		}
 		return false;
 	}
+	override bool CanBePerformedScript(IEntity user)
+	{
+#ifdef DEBUG_TRADER_ACTIONS	
+		Print(string.Format("Can be performed script, uses %1. maxUses %2", m_UsesCount, m_MaxUses));		
+#endif
+		FactionAffiliationComponent UserFComp = FactionAffiliationComponent.Cast(user.FindComponent(FactionAffiliationComponent));
+		FactionAffiliationComponent SellerFComp = FactionAffiliationComponent.Cast(GetOwner().FindComponent(FactionAffiliationComponent));
+		FactionKey userkey = UserFComp.GetAffiliatedFaction().GetFactionKey();
+		FactionKey sellerkey = SellerFComp.GetDefaultAffiliatedFaction().GetFactionKey();
+		if(userkey && sellerkey && userkey != sellerkey)
+		{
+			m_sCannotPerformReason = "not part of faction";
+			return false;
+		}
+		if (!HasUses())
+		{
+			m_sCannotPerformReason = "currently unavailable";
+			return false;
+		}
+		
+		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(user.FindComponent(InventoryStorageManagerComponent));
+		if (!inv)
+			return false;
+		
+		PrefabResource_Predicate pred = new PrefabResource_Predicate(m_WantedPay);
+		array<IEntity> entitiesToDrop = new array<IEntity>;
+		inv.FindItems(entitiesToDrop, pred);
+
+		if (entitiesToDrop.Count() < m_WantedAmount)
+		{
+			m_sCannotPerformReason = "not enough";
+			return false;
+		}			
+		return true;
+	}
 }

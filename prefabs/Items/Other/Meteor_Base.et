@@ -34,16 +34,16 @@ GenericEntity {
     }
    }
    additionalActions {
-    SP_ConverseActionNoTake "{5D551481AB85EE5F}" {
+    KLM_ConverseActionSpawnOnMe "{5D551481AB85EE5F}" {
      ParentContextList {
       "default"
      }
      UIInfo UIInfo "{5D551481AD0B8ED0}" {
-      Name "Harvest sample"
+      Name "Gather sample"
      }
+     Duration 2
      m_WantedPay "{3C42B2CBFC50A312}prefabs/Toolkits/Mining_Toolkit.et"
      m_PrefabToSell "{9DF239BE88931B81}prefabs/Items/Other/Meteor_Sample.et"
-     m_UnavailableText "Missing toolkit"
     }
    }
   }

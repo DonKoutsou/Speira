@@ -27,12 +27,15 @@ GenericEntity {
   RplComponent "{5C9AF12BE5E75D98}" {
    Enabled 1
   }
+  FactionAffiliationComponent "{5D6259430CABF2C3}" {
+   "faction affiliation" "BANDITS"
+  }
  }
  coords 160.965 1.001 124.062
  angleY -180
  Flags 1027
  {
-  GenericEntity : "{00067AEE99853EBB}Prefabs/Trading_Items/Factions/Factionless/TS_Weapons_Factionless.et" {
+  GenericEntity : "{00067AEE99853EBB}prefabs/Trading_Items/Factions/Factionless/TS_Weapons_Factionless.et" {
    ID "5C9AF12BE5E75DFB"
    coords -0.019 0.884 0.115
    angleY -141.117
@@ -55,22 +58,22 @@ GenericEntity {
    coords -0.732 -0.002 -1.599
    angleY -43.2
   }
-  GenericEntity : "{11B99AAA62B2AC4A}Prefabs/Props/Furniture/Chest_Storage.et" {
+  GenericEntity : "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et" {
    ID "5C9AF12BE5E75DD2"
    coords -1.409 0.335 0.075
    angleY -89.417
   }
-  GenericEntity : "{16D82E48D7BC51E0}Prefabs/Trading_Items/Factions/Factionless/TS_Ammunition_Factionless.et" {
+  GenericEntity : "{16D82E48D7BC51E0}prefabs/Trading_Items/Factions/Factionless/TS_Ammunition_Factionless.et" {
    ID "5C9AF12BE5E75DC2"
    coords -0.881 0.82 -0.106
    angleY -92.067
   }
-  GenericEntity : "{27555B6FEA7DBBBD}Prefabs/Trading_Items/Factions/Factionless/TS_Medical_Factionless.et" {
+  GenericEntity : "{27555B6FEA7DBBBD}prefabs/Trading_Items/Factions/Factionless/TS_Medical_Factionless.et" {
    ID "5C9AF12BE5E75DD0"
    coords 0.032 0.59 -0.809
    angleY 180
   }
-  GenericEntity : "{4C6DD574D6C7B5EC}Prefabs/Trading_Items/Factions/Factionless/TS_Equipment_Factionless.et" {
+  GenericEntity : "{4C6DD574D6C7B5EC}prefabs/Trading_Items/Factions/Factionless/TS_Equipment_Factionless.et" {
    ID "5C9AF12BE5E75DDE"
    coords -1.018 0 -0.949
    angleY -180
@@ -133,7 +136,7 @@ GenericEntity {
    coords -1.12 0 -0.094
    angleY 90.2
   }
-  GenericEntity : "{99DCCFC762D1B1D6}Prefabs/Trading_Items/Factions/Factionless/TS_Factionless_Expl.et" {
+  GenericEntity : "{99DCCFC762D1B1D6}prefabs/Trading_Items/Factions/Factionless/TS_Factionless_Expl.et" {
    ID "5C9AF12BE5E75DD6"
    coords -1.868 0 -0.029
    angleY -90

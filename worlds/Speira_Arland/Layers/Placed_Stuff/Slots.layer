@@ -45,6 +45,9 @@ $grp SCR_SiteSlotEntity : "{055DDE93F47A6A1D}PrefabsEditable/Slots/Flat/E_SlotFl
   }
  }
 }
+GenericEntity : "{3C42B2CBFC50A312}prefabs/Toolkits/Mining_Toolkit.et" {
+ coords 1239.575 1.268 3262.085
+}
 GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
  coords 3738.6 2.938 2691.59
  angleY 0

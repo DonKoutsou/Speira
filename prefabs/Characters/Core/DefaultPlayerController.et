@@ -13,4 +13,5 @@ SCR_PlayerController {
   }
  }
  coords 1160.997 38.376 2514.287
+ DefaultControlledEntity "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et"
 }
