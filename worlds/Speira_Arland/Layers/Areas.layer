@@ -1,12 +1,60 @@
-GenericEntity {
- components {
-  MeshObject "{5D52FCC64C4BB8FD}" {
-   Object "{E0CFE517CA1C358B}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_full.xob"
+$grp GenericEntity {
+ {
+  components {
+   MeshObject "{5D52FCC64C4BB8FD}" {
+    Object "{E0CFE517CA1C358B}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_full.xob"
+   }
   }
+  coords 1181.298 2.152 3290.964
+  angleX 86.842
+  angleY 90
  }
- coords 1181.298 2.152 3290.964
- angleX 86.842
- angleY 90
+ {
+  components {
+   InventoryItemComponent "{5D64DE09C1F34F21}" {
+    Attributes SCR_ItemAttributeCollection "{5D64DE09C1F34F2C}" {
+     ItemDisplayName UIInfo "{5D64DE09C1F34F0A}" {
+      Name "Unrefined Arland gem"
+      Description "A piece of unrefined gem. This gems origin is the Island of Arland. The island is known for using these gems in various ways from jewlery to tools."
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{5D64DE09C1F34F3C}" {
+      Weight 2
+      SizeSetupStrategy Manual
+      ItemDimensions 7 7 7
+      ItemVolume 70
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{5D64DE09C1F34F2A}" {
+       CameraDistanceToItem 0.1
+      }
+     }
+     m_Size SLOT_1x1
+    }
+   }
+   MeshObject "{5D64DE09C1F34FDE}" {
+    Object "{2C2903391E74AAC9}Assets/Props/Crates/CardboardBox_01.xob"
+   }
+   RigidBody "{5D64DE09DF608D24}" {
+    ModelGeometry 1
+    Static 1
+   }
+   ActionsManagerComponent "{5D64DE09FA5AB206}" : "{366E157111FAB76C}Prefabs/Characters/Core/Actions/ActionsManager_PickUp.ct" {
+    additionalActions {
+     SP_IDPackageAction "{5D64DE0901C48F7F}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{5D64DE0905C33AE0}" {
+       Name "check package info"
+      }
+     }
+    }
+   }
+   RplComponent "{5D64DE09C1F34FD5}" {
+   }
+  }
+  coords 1355.795 39.011 2148.347
+ }
 }
 GenericEntity : "{0692BB439764BB1E}Prefabs/Props/Civilian/Notebook_01_base.et" {
  coords 1180.571 2.026 3291.478
@@ -26,6 +74,9 @@ GameEntity : "{1CE762D0A53A395A}prefabs/Props/Civilian/LampKerosene_01/LampKeros
 GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.et" {
  coords 1181.23 2.026 3290.123
  angleY 0
+}
+GenericEntity : "{41A9C55B61F375F0}prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
+ coords 1355.244 39.011 2147.913
 }
 GenericEntity : "{48A4DDEC58BCE45C}prefabs/Graves/Grave_Stash_FIA.et" {
  components {
@@ -47,6 +98,9 @@ GenericEntity : "{4923E218F59644B9}prefabs/Props/Wrecks/BoatWreck_01.et" {
  angleX -2.81
  angleY -112.249
  angleZ -25.099
+}
+GenericEntity : "{6D56FED1E55A8F84}prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et" {
+ coords 1645.358 31.057 2090.527
 }
 $grp StaticModelEntity : "{7762F50A860DD074}Prefabs/Props/Military/Furniture/TableMilitary_US_01.et" {
  {

@@ -43,8 +43,6 @@ SCR_BaseGameMode : "{0F307326459A1395}prefabs/MP/Modes/GameMode_Base.et" {
   SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
    Enabled 0
   }
-  SCR_PlayerPenaltyComponent "{5D4E70305C82CFAD}" {
-  }
   SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
   }
   SCR_TimeAndWeatherHandlerComponent "{5D50D3AD276098D5}" {
@@ -85,15 +83,14 @@ SCR_BaseGameMode : "{0F307326459A1395}prefabs/MP/Modes/GameMode_Base.et" {
    m_iForcedLoadout 0
    m_bOverrideGameOverType 1
    m_eOverriddenGameOverType DEATH
-   m_FIAStorageWorldPosition 3503.905 2.946 1514.8
    m_BanditStorageWorldPosition 1673.945 3.608 874.449
-   m_RespawnWorldPosition 3504.865 2.946 1515.155
    m_RespawnWorldPositionBandit 1674.282 3.608 877.671
    m_StoragePreset "{11B99AAA62B2AC4A}prefabs/Props/Furniture/Chest_Storage.et"
-   m_SpawnpointFIA "{2B1758F237E4820E}prefabs/MP/Spawning/SpawnPoint_FIA.et"
    m_SpawnpointSPEIRA "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et"
    m_SpawnpointBandit "{AA99FB47F0760415}prefabs/MP/Spawning/SpawnPoint_Bandits.et"
    m_iLives 1
+  }
+  SP_PlayerPenaltyComponent "{5D64DE059DAF7F41}" {
   }
  }
 }

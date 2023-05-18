@@ -78,6 +78,111 @@ class SP_AIDirector : SCR_AIGroup
 	private AIWaypoint ComWaypoint;
 	protected IEntity m_CommanderEnt;
 	protected SP_DialogueComponent DiagComp;
+	bool GetDirectorOccupiedBy(FactionKey Key, out SP_AIDirector Director)
+	{
+		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;
+		int UnitCount;
+		for (int i = 0; i < Directors.Count(); i++)
+		{
+			FactionKey FKey;
+			int Count;
+			FactionKey Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
+			if (Key2 == Key && Count > UnitCount)
+			{
+				Director = Directors[i];
+				UnitCount = Count;
+			}
+		}
+		if(Director)
+		{
+			return true;
+		}
+		return false;
+	}
+	bool GetRandomUnitByFKey(FactionKey Key, out IEntity Char)
+	{
+		for (int i = m_aGroups.Count() - 1; i >= 0; i--)
+		{
+			string faction = m_aGroups[i].GetFaction().GetFactionKey();
+			if (faction == Key)
+			{
+				Char = m_aGroups[i].GetLeaderEntity();;
+				return true;
+			}
+		}
+		return false;
+	}
+	FactionKey GetMajorityHolderNCount(out string factionReadable, out int UnitCount)
+	{
+		int USSRcount;
+		int UScount;
+		int FIAcount;
+		int Banditcount;
+		int Renegcount;
+		for (int i = m_aGroups.Count() - 1; i >= 0; i--)
+		{
+			string faction = m_aGroups[i].GetFaction().GetFactionKey();
+			switch(faction)
+			{
+				case "USSR":
+				{
+					USSRcount = USSRcount + m_aGroups[i].GetAgentsCount();
+				}
+				break;
+				case "US":
+				{
+					UScount = UScount + m_aGroups[i].GetAgentsCount();
+				}
+				break;
+				case "FIA":
+				{
+					FIAcount = FIAcount + m_aGroups[i].GetAgentsCount();
+				}
+				break;
+				case "BANDITS":
+				{
+					Banditcount = Banditcount + m_aGroups[i].GetAgentsCount();
+				}
+				break;
+				case "RENEGADE":
+				{
+					Renegcount = Renegcount + m_aGroups[i].GetAgentsCount();
+				}
+				break;
+			}
+		}
+		int max = USSRcount;
+    	string MajorFaction = "USSR";
+		factionReadable = "soviet";
+	    if (UScount > max)
+	    {
+	        max = UScount;
+			MajorFaction = "US";
+			factionReadable = "US";
+	    }
+	    
+	    if (FIAcount > max)
+	    {
+	        max = FIAcount;
+			MajorFaction = "FIA";
+			factionReadable = "guerrilla";
+	    }
+	    
+	    if (Banditcount > max)
+	    {
+	        max = Banditcount;
+			MajorFaction = "BANDITS";
+			factionReadable = "bandit";
+	    }
+		if (Renegcount > max)
+	    {
+	        max = Renegcount;
+			MajorFaction = "RENEGADES";
+			factionReadable = "renegade";
+	    }
+		UnitCount = max;
+	    return MajorFaction; 	
+	}
 	FactionKey GetMajorityHolder(out string factionReadable)
 	{
 		int USSRcount;

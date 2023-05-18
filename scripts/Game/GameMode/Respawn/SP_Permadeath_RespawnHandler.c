@@ -3,20 +3,6 @@ modded enum EGameOverTypes
 	DEATH = 3000,
 	BROTHERFOUND = 3001,
 }
-class SP_UnretrievableComponentClass : GameComponentClass
-{
-};
-
-class SP_UnretrievableComponent : GameComponent
-{
-	[Attribute("0")]
-	bool b_ShouldRetrieve;
-	
-	bool ShouldRetrieve()
-	{
-		return b_ShouldRetrieve;
-	}
-};
 class SP_PermadeathRespawnHandlerComponentClass: SCR_AutomaticRespawnHandlerComponentClass
 {
 };

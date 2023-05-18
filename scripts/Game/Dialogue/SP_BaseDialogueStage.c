@@ -38,14 +38,14 @@ class DialogueStage
 	//------------------------------------------------------------------//
 	string GetActionText(IEntity Character, IEntity Player)
 	{
+		if (CanBeShown(Character, Player) == false)
+		{
+		 return STRING_EMPTY;
+		}
 		if (CanBePerformed(Character, Player) == false)
 		{
 			string acttext = ActionText + " " + m_sCantBePerformedReason;
 			return acttext;
-		}
-		if (CanBeShown(Character, Player) == false)
-		{
-		 return STRING_EMPTY;
 		}
 	 	return ActionText;
 	}

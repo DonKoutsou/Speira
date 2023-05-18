@@ -43,7 +43,10 @@ class DialogueUIClass: ChimeraMenuBase
 		GetGame().GetInputManager().RemoveActionListener("Dialogue0", EActionTrigger.DOWN, ExecuteDialogue0);
 		GetGame().GetInputManager().RemoveActionListener("Dialogue1", EActionTrigger.DOWN, ExecuteDialogue1);
 		GetGame().GetInputManager().RemoveActionListener("Dialogue2", EActionTrigger.DOWN, ExecuteDialogue2);
-		//GetGame().GetInputManager().RemoveActionListener("Dialogue3", EActionTrigger.DOWN, ExecuteDialogue3);
+		GetGame().GetInputManager().RemoveActionListener("Dialogue3", EActionTrigger.DOWN, ExecuteDialogue3);
+		GetGame().GetInputManager().RemoveActionListener("Dialogue4", EActionTrigger.DOWN, ExecuteDialogue4);
+		GetGame().GetInputManager().RemoveActionListener("Dialogue5", EActionTrigger.DOWN, ExecuteDialogue5);
+		GetGame().GetInputManager().RemoveActionListener("Dialogue6", EActionTrigger.DOWN, ExecuteDialogue6);
 		GetGame().GetInputManager().RemoveActionListener("DialogueBack", EActionTrigger.DOWN, DoDialogueBack);
 		GetGame().GetInputManager().RemoveActionListener("DialogueBack", EActionTrigger.DOWN, LeaveFunction);
 	}
@@ -193,47 +196,114 @@ class DialogueUIClass: ChimeraMenuBase
 			DiagText = STRING_EMPTY;
 			GetGame().GetInputManager().AddActionListener("Dialogue2", EActionTrigger.DOWN, ExecuteDialogue2);
 		}
-		//DiagText = DiagComp.GetActionName(3, myCallerEntity, Player);
-		//if (DiagText != STRING_EMPTY)
-		//{
-		//	m_ListBoxComponent.AddItem(DiagText);
-		//	CurrentBranchID = 3;
-		//	SCR_ListBoxElementComponent elComp3 = m_ListBoxComponent.GetElementComponent(entryamount);
-		//	elComp3.m_OnClicked.Insert(ExecuteDialogue3);
-		//	string entrynumber = (entryamount + 1).ToString();
-		//	elComp3.SetTextNumber(entrynumber);
-		//	entryamount = entryamount + 1;
-		//	DiagText = STRING_EMPTY;
-		//	GetGame().GetInputManager().AddActionListener("Dialogue3", EActionTrigger.DOWN, ExecuteDialogue3);
-		//}
+		DiagText = DiagComp.GetActionName(3, myCallerEntity, Player);
+		if (DiagText != STRING_EMPTY)
+		{
+			m_ListBoxComponent.AddItem(DiagText);
+			CurrentBranchID = 3;
+			SCR_ListBoxElementComponent elComp3 = m_ListBoxComponent.GetElementComponent(entryamount);
+			elComp3.m_OnClicked.Insert(ExecuteDialogue3);
+			string entrynumber = (entryamount + 1).ToString();
+			if(GetGame().GetInputManager().GetLastUsedInputDevice() == EInputDeviceType.GAMEPAD)
+			{
+				elComp3.SetTextNumber("D-Pad Up");
+			}
+			else
+			{
+				elComp3.SetTextNumber(entrynumber);
+			}
+			entryamount = entryamount + 1;
+			DiagText = STRING_EMPTY;
+			GetGame().GetInputManager().AddActionListener("Dialogue3", EActionTrigger.DOWN, ExecuteDialogue3);
+		}
+		DiagText = DiagComp.GetActionName(4, myCallerEntity, Player);
+		if (DiagText != STRING_EMPTY)
+		{
+			m_ListBoxComponent.AddItem(DiagText);
+			CurrentBranchID = 4;
+			SCR_ListBoxElementComponent elComp4 = m_ListBoxComponent.GetElementComponent(entryamount);
+			elComp4.m_OnClicked.Insert(ExecuteDialogue4);
+			string entrynumber = (entryamount + 1).ToString();
+			if(GetGame().GetInputManager().GetLastUsedInputDevice() == EInputDeviceType.GAMEPAD)
+			{
+				elComp4.SetTextNumber("D-Pad Down");
+			}
+			else
+			{
+				elComp4.SetTextNumber(entrynumber);
+			}
+			entryamount = entryamount + 1;
+			DiagText = STRING_EMPTY;
+			GetGame().GetInputManager().AddActionListener("Dialogue4", EActionTrigger.DOWN, ExecuteDialogue4);
+		}
+		DiagText = DiagComp.GetActionName(5, myCallerEntity, Player);
+		if (DiagText != STRING_EMPTY)
+		{
+			m_ListBoxComponent.AddItem(DiagText);
+			CurrentBranchID = 5;
+			SCR_ListBoxElementComponent elComp5 = m_ListBoxComponent.GetElementComponent(entryamount);
+			elComp5.m_OnClicked.Insert(ExecuteDialogue5);
+			string entrynumber = (entryamount + 1).ToString();
+			if(GetGame().GetInputManager().GetLastUsedInputDevice() == EInputDeviceType.GAMEPAD)
+			{
+				elComp5.SetTextNumber("D-Pad Left");
+			}
+			else
+			{
+				elComp5.SetTextNumber(entrynumber);
+			}
+			entryamount = entryamount + 1;
+			DiagText = STRING_EMPTY;
+			GetGame().GetInputManager().AddActionListener("Dialogue5", EActionTrigger.DOWN, ExecuteDialogue5);
+		}
+		DiagText = DiagComp.GetActionName(6, myCallerEntity, Player);
+		if (DiagText != STRING_EMPTY)
+		{
+			m_ListBoxComponent.AddItem(DiagText);
+			CurrentBranchID = 6;
+			SCR_ListBoxElementComponent elComp6 = m_ListBoxComponent.GetElementComponent(entryamount);
+			elComp6.m_OnClicked.Insert(ExecuteDialogue6);
+			string entrynumber = (entryamount + 1).ToString();
+			if(GetGame().GetInputManager().GetLastUsedInputDevice() == EInputDeviceType.GAMEPAD)
+			{
+				elComp6.SetTextNumber("D-Pad Right");
+			}
+			else
+			{
+				elComp6.SetTextNumber(entrynumber);
+			}
+			entryamount = entryamount + 1;
+			DiagText = STRING_EMPTY;
+			GetGame().GetInputManager().AddActionListener("Dialogue6", EActionTrigger.DOWN, ExecuteDialogue6);
+		}
 		//Check if Archtype is branched an choose to create a Leave button or a Go Back button
 		SP_DialogueArchetype DArch = DiagComp.LocateDialogueArchetype(myCallerEntity, Player);
 		if (DArch.IsCharacterBranched == true)
 		{
 			m_ListBoxComponent.AddItem("Go Back");
-			SCR_ListBoxElementComponent elComp4 = m_ListBoxComponent.GetElementComponent(entryamount);
-			elComp4.m_OnClicked.Insert(DoDialogueBack);
+			SCR_ListBoxElementComponent elComp7 = m_ListBoxComponent.GetElementComponent(entryamount);
+			elComp7.m_OnClicked.Insert(DoDialogueBack);
 			if(GetGame().GetInputManager().GetLastUsedInputDevice() == EInputDeviceType.GAMEPAD)
 			{
-				elComp4.SetTextNumber("B");
+				elComp7.SetTextNumber("B");
 			}
 			else
 			{
-				elComp4.SetTextNumber("[BACKSPACE]");
+				elComp7.SetTextNumber("[BACKSPACE]");
 			}
 			GetGame().GetInputManager().AddActionListener("DialogueBack", EActionTrigger.DOWN, DoDialogueBack);
 			return;
 		}
 		m_ListBoxComponent.AddItem("Leave");
-		SCR_ListBoxElementComponent elComp4 = m_ListBoxComponent.GetElementComponent(entryamount);
-		elComp4.m_OnClicked.Insert(LeaveFunction);
+		SCR_ListBoxElementComponent elComp7 = m_ListBoxComponent.GetElementComponent(entryamount);
+		elComp7.m_OnClicked.Insert(LeaveFunction);
 		if(GetGame().GetInputManager().GetLastUsedInputDevice() == EInputDeviceType.GAMEPAD)
 			{
-				elComp4.SetTextNumber("B");
+				elComp7.SetTextNumber("B");
 			}
 			else
 			{
-				elComp4.SetTextNumber("[BACKSPACE]");
+				elComp7.SetTextNumber("[BACKSPACE]");
 			}
 		GetGame().GetInputManager().AddActionListener("DialogueBack", EActionTrigger.DOWN, LeaveFunction);
 	}
@@ -269,12 +339,26 @@ class DialogueUIClass: ChimeraMenuBase
 		RemoveListeners();
 		DiagComp.DoDialogue(myCallerEntity, myUserEntity, 2);
 	}
-	//------------------------------------------------------------------------------------------------//
-	//void ExecuteDialogue3()
-	//{
-	//	RemoveListeners();
-	//	DiagComp.DoDialogue(myCallerEntity, myUserEntity, 3);
-	//}
+	void ExecuteDialogue3()
+	{
+		RemoveListeners();
+		DiagComp.DoDialogue(myCallerEntity, myUserEntity, 3);
+	}
+	void ExecuteDialogue4()
+	{
+		RemoveListeners();
+		DiagComp.DoDialogue(myCallerEntity, myUserEntity, 4);
+	}
+	void ExecuteDialogue5()
+	{
+		RemoveListeners();
+		DiagComp.DoDialogue(myCallerEntity, myUserEntity, 5);
+	}
+	void ExecuteDialogue6()
+	{
+		RemoveListeners();
+		DiagComp.DoDialogue(myCallerEntity, myUserEntity, 6);
+	}
 	//------------------------------------------------------------------------------------------------//
 	void DoDialogueBack()
 	{
