@@ -13,27 +13,36 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 		{
 			if (entity && instigator)
 			{
+				SCR_FactionManager FMan = SCR_FactionManager.Cast(GetGame().GetFactionManager());
 				FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
 				FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
 				if (FactionComp && FactionCompVictim)
 				{
-					FactionKey KillerKey = FactionComp.GetAffiliatedFaction().GetFactionKey();
-					FactionKey VictimKey = FactionCompVictim.GetAffiliatedFaction().GetFactionKey();
-					SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
-					if (KillerKey == "SPEIRA" && VictimKey == "USSR")
+					SCR_Faction KillerF = SCR_Faction.Cast(FactionComp.GetAffiliatedFaction());
+					SCR_Faction VictimF = SCR_Faction.Cast(FactionCompVictim.GetAffiliatedFaction());
+					if(VictimF.IsFactionFriendly(KillerF) == true)
 					{
-						DiagComp.DoAnouncerDialogue("Killed unit of the soviet faction, you will be considered as part of the FIA from now on");
-						FactionComp.SetAffiliatedFactionByKey("FIA");
-					}
-					else if (KillerKey == "SPEIRA" && VictimKey == "FIA")
-					{
-						DiagComp.DoAnouncerDialogue("Killed unit of the FIA faction, you will be considered Renegade from now on");
-						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
-					}
-					else if (KillerKey == VictimKey)
-					{
-						DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
-						FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+						SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
+						if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "USSR")
+						{
+							DiagComp.DoAnouncerDialogue("Killed unit of the soviet faction, soviets will atack you from now on");
+							FMan.SetFactionsHostile(KillerF, VictimF);
+						}
+						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "FIA")
+						{
+							DiagComp.DoAnouncerDialogue("Killed unit of the FIA faction, FIA will atack you from now on");
+							FMan.SetFactionsHostile(KillerF, VictimF);
+						}
+						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "US")
+						{
+							DiagComp.DoAnouncerDialogue("Killed unit of the US faction, US will atack you from now on");
+							FMan.SetFactionsHostile(KillerF, VictimF);
+						}
+						else if (KillerF == VictimF)
+						{
+							DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
+							FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+						}
 					}
 				}
 				

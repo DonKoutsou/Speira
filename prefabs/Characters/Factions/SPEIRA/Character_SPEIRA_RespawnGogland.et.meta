@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D68719F6FED9853A}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_RespawnGogland.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

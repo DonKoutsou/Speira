@@ -8,3 +8,75 @@ GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  angleY 76.427
  angleZ 0
 }
+$grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
+ {
+  coords 5994.675 11.559 5307.151
+  angleY 22.315
+  angleZ 51.818
+ }
+ {
+  coords 6350.755 -8.148 4670.086
+  angleY 22.315
+  angleZ 1.531
+ }
+ {
+  coords 5837.504 77.282 4309.066
+  angleX 56.221
+  angleY -48.511
+  angleZ 86.766
+  scale 0.458
+ }
+ {
+  coords 5601.668 2.314 3580.164
+  angleX 81.189
+  angleY -158.12
+  angleZ -22.432
+  scale 0.732
+ }
+ {
+  coords 5970.635 32.557 3018.457
+  angleX 81.189
+  angleY -158.12
+  angleZ -22.432
+  scale 0.732
+ }
+ {
+  coords 6590.345 60.673 2845.966
+  angleX 60.498
+  angleY -96.044
+  angleZ 123.941
+  scale 0.732
+ }
+ {
+  coords 6553.631 88.377 2817.958
+  angleX 60.498
+  angleY -96.044
+  angleZ 123.941
+  scale 0.483
+ }
+ {
+  coords 7081.707 0.278 3285.756
+  angleX 86.133
+  angleY -139.083
+  angleZ 41.792
+  scale 0.732
+ }
+ {
+  coords 6874.902 85.145 3968.526
+  angleX 35.377
+  angleY -85.241
+  angleZ 176.06
+  scale 0.732
+ }
+ {
+  coords 6821.433 7.736 4939.666
+  angleX 35.377
+  angleY -85.241
+  angleZ 176.06
+  scale 0.732
+ }
+}
+GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
+ coords 7573.779 18.345 4034.403
+ angleY 180
+}

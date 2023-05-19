@@ -1,0 +1,54 @@
+SCR_ChimeraCharacter : "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab ""
+    }
+    LoadoutSlotInfo Pants {
+    }
+    LoadoutSlotInfo Boots {
+     Prefab ""
+    }
+    LoadoutSlotInfo Back {
+     Prefab ""
+    }
+    LoadoutSlotInfo Vest {
+     Prefab ""
+    }
+    LoadoutSlotInfo Watch {
+     Prefab ""
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3723DCABD65062}" {
+     PrefabsToSpawn {
+      "" "" ""
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D4C1160BCCB93}" {
+     PrefabsToSpawn {
+      "" "" ""
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D4C1113EF979D}" {
+     PrefabsToSpawn + {
+      ""
+     }
+    }
+    ItemsInitConfigurationItem "{5D3D4C1135BE22EB}" {
+     PrefabsToSpawn {
+      ""
+     }
+    }
+   }
+  }
+ }
+ coords 3462.518 3.619 1474.811
+}

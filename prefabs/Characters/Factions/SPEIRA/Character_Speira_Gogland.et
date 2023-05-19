@@ -1,0 +1,15 @@
+SCR_ChimeraCharacter : "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3723DCABD65062}" {
+     PrefabsToSpawn {
+      "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et"
+     }
+    }
+   }
+  }
+ }
+ coords 7570.291 18.345 3997.016
+}

@@ -12,6 +12,36 @@ SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.e
   }
  }
  coords 6148.864 68.552 6176.809
+ {
+  SCR_FactionManager "5D66D54FC7860F41" {
+   ID "5D6666A41D4E5319"
+   Factions {
+    SCR_Faction "{5D5705392CC6C3FF}" {
+     "Identity of soldiers" FactionIdentity "{5D5705392CC6C3B3}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
+     }
+    }
+    SCR_Faction "{5D5705392CC6D1CA}" {
+     "Identity of soldiers" FactionIdentity "{5D5705392CC6D19C}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
+     }
+    }
+    SCR_Faction "{5D5705392CC748DC}" {
+     "Identity of soldiers" FactionIdentity "{5D5705392CC748AF}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
+     }
+    }
+   }
+  }
+  SCR_LoadoutManager {
+   ID "5D6666A41D4E7083"
+   m_aPlayerLoadouts {
+    SCR_FactionPlayerLoadout "{5CA7060267058AD7}" {
+     m_sLoadoutResource "{B1CE5CA5A0628961}prefabs/Characters/Factions/SPEIRA/Character_Speira_Gogland.et"
+    }
+    SCR_FactionPlayerLoadout "{5D4EC11BB20DC322}" {
+     m_sLoadoutResource "{D68719F6FED9853A}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_RespawnGogland.et"
+    }
+   }
+  }
+ }
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 8414.325 5.695 2309.07
@@ -20,5 +50,5 @@ ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 8405.761 5.795 2286.157
 }
 SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
- coords 8420.935 3.042 2376.572
+ coords 7334.612 0.325 983.043
 }
