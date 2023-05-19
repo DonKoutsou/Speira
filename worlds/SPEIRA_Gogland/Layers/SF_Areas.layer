@@ -1,0 +1,118 @@
+GenericEntity : "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et" {
+ coords 5206.533 55.322 7953.1
+ angleY 94.371
+}
+SP_AIDirector : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AIDirector_USSR.et" {
+ coords 5230.286 101.13 7970.124
+}
+GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ coords 5225.755 67.175 7967.813
+ angleX 0
+ angleY -54.545
+ angleZ 0
+}
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ Bandit_Area {
+  coords 6484.782 9.563 7040.01
+  {
+   GenericEntity Layer_1 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    coords 0 0 0
+    {
+     GenericEntity SlotAI_1 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
+        m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+       }
+      }
+      coords -31.831 0.11 -6.128
+     }
+    }
+   }
+  }
+ }
+ Area_3 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_SpawnChildren RANDOM_MULTIPLE
+    m_iRandomPercent 50
+   }
+  }
+  coords 6229.61 49.347 6921.423
+  {
+   $grp GenericEntity : "{612569B357EC16B7}prefabs/ScenarioFramework/Layer_Stash.et" {
+    Layer_Stash_2 {
+     coords -72.019 18.637 11.115
+    }
+    Layer_Stash_3 {
+     coords 6.952 -7.442 -87.847
+    }
+    Layer_Stash_4 {
+     coords -24.657 -41.329 461.808
+    }
+    Layer_Stash_5 {
+     coords -1.977 -41.329 451.773
+    }
+    Layer_Stash_6 {
+     coords 2.401 -40.798 446.474
+    }
+    Layer_Stash_7 {
+     coords -23.004 -27.973 680.729
+    }
+    Layer_Stash_8 {
+     coords -24.499 -32.655 686.986
+    }
+    Layer_Stash_9 {
+     coords -27.969 -32.176 683.86
+    }
+    Layer_Stash_10 {
+     coords -26.971 -35.855 672.115
+    }
+    Layer_Stash_11 {
+     coords -22.7 -35.855 681.768
+    }
+    Layer_Stash_12 {
+     coords 1.597 -33.598 623.488
+    }
+    Layer_Stash_13 {
+     coords -55.154 -36.757 712.309
+    }
+    Layer_Stash_14 {
+     coords 6.871 -43.039 747.786
+    }
+    Layer_Stash_15 {
+     coords -2.141 -42.436 754.444
+    }
+   }
+  }
+ }
+ USSR_Area {
+  coords 6484.782 9.563 7040.01
+  {
+   GenericEntity Layer_2 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      SlotAI_5 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et"
+         m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        }
+       }
+       coords -1258.691 57.612 928.319
+      }
+      SlotAI_6 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{AB9726163EC1BD81}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+        }
+       }
+       coords -1290.019 45.67 921.61
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -53,7 +53,14 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5D58FEDAE5607A25}" {
      TargetStorage "Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
      PrefabsToSpawn {
-      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D66C81EB6E635C2}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{20EA3E80E600CB9E}Prefabs/Weapons/Grenades/Grenade_ChemLight_Yellow.et"
      }
     }
    }

@@ -51,11 +51,21 @@ GenericEntity {
   }
   GenericEntity : "{34C189DD4094A08A}prefabs/Trading_Items/Factions/USSR/TS_Equipment_USSR.et" {
    ID "5C96A2673B6D0C52"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "USSR"
+    }
+   }
    coords -1.018 0 -0.949
    angleY -180
   }
   GenericEntity : "{52D7749A35F86AFB}prefabs/Trading_Items/Factions/USSR/TS_Medical_USSR.et" {
    ID "5C96A2673B6D0C4B"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "USSR"
+    }
+   }
    coords 0.032 0.59 -0.809
    angleY 180
   }
@@ -102,6 +112,11 @@ GenericEntity {
   }
   GenericEntity : "{6F011B58D6D2DBE7}prefabs/Trading_Items/Factions/USSR/TS_Ammunition_USSR.et" {
    ID "5C96A2673B6D0C4E"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "USSR"
+    }
+   }
    coords -0.881 0.82 -0.106
    angleY -92.067
   }
@@ -134,6 +149,11 @@ GenericEntity {
   }
   GenericEntity : "{89EF92CA286A962C}prefabs/Trading_Items/Factions/USSR/TS_Weapons_USSR.et" {
    ID "5C96A2673B6D0C4A"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "USSR"
+    }
+   }
    coords -0.019 0.884 0.115
    angleY -141.117
   }

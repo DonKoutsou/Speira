@@ -63,6 +63,13 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
       "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
      }
     }
+    ItemsInitConfigurationItem "{5D66C81E43D88772}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+     TargetPurpose 64
+     PrefabsToSpawn {
+      "{38E71B495CD1F41C}Prefabs/Weapons/Grenades/Grenade_ChemLight_White.et"
+     }
+    }
     ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
      TargetStorage "Prefabs/Characters/Uniforms/Pants_M69.et"
      PrefabsToSpawn {

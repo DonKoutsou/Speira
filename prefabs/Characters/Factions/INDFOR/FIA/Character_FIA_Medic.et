@@ -35,10 +35,6 @@ SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
-    KLM_ConverseAction "{5B089B35DBC1543D}" {
-     UIInfo UIInfo "{5B089B35D0CCAA31}" {
-     }
-    }
    }
   }
  }

@@ -1,0 +1,24 @@
+SCR_AIWorld : "{AE290936DB86A08A}prefabs/Systems/AIWorld_Gogland.et" {
+ coords 8418.793 4.676 2333.14
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 8421.013 3.408 2380.722
+}
+SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
+ components {
+  SP_PermadeathRespawnHandlerComponent "{5D4E7039C5A87861}" {
+   m_BanditStorageWorldPosition 6453.756 9.653 7031.644
+   m_RespawnWorldPositionBandit 6455.271 9.653 7032.4
+  }
+ }
+ coords 6148.864 68.552 6176.809
+}
+RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 8414.325 5.695 2309.07
+}
+ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
+ coords 8405.761 5.795 2286.157
+}
+SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
+ coords 8420.935 3.042 2376.572
+}

@@ -51,12 +51,20 @@ GenericEntity {
   }
   GenericEntity : "{4A0AC6DFF4F6B6D9}prefabs/Trading_Items/Weapon_TradingStation.et" {
    ID "5B36B9A589175B9E"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "FIA"
+    }
+   }
    coords -0.019 0.884 0.115
    angleY -141.117
   }
   GenericEntity : "{51F1FAB79D996AC3}prefabs/Trading_Items/Equipment_TradingStation.et" {
    ID "5B36B9A589175B93"
    components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "FIA"
+    }
     ActionsManagerComponent "{5B1111371149AC02}" {
      additionalActions {
       KLM_ConverseAction "{5B111124CEECD160}" {
@@ -109,6 +117,11 @@ GenericEntity {
   }
   GenericEntity : "{709787683A87DAC5}prefabs/Trading_Items/Ammunition_TradingStation.et" {
    ID "5B36B9A589175B8C"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "FIA"
+    }
+   }
    coords -0.881 0.82 -0.106
    angleY -92.067
   }
@@ -183,6 +196,11 @@ GenericEntity {
   }
   GenericEntity : "{D66B3DBE163EB279}prefabs/Trading_Items/Medical_TradingStation.et" {
    ID "5B36B9A589177601"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "FIA"
+    }
+   }
    coords 0.032 0.59 -0.809
    angleY 180
   }

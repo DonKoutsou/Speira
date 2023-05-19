@@ -18,8 +18,7 @@ SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA
     ItemsInitConfigurationItem "{5A24CC1119C7787F}" {
      TargetStorage "Prefabs/Characters/Uniforms/Jacket_M70.et"
      TargetPurpose 64
-     PrefabsToSpawn {
-      "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+     PrefabsToSpawn +{
      }
     }
     ItemsInitConfigurationItem "{5570901680F8BFE7}" {
@@ -29,17 +28,6 @@ SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
-    KLM_ConverseAction "{5B089B356D2DD681}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B089B356196E0F6}" {
-      Name "Give 1 VZ58 magazine for 1 Broken Watch"
-     }
-     Duration 1
-     m_WantedPay "{48720FC416263FC1}Prefabs/Weapons/Magazines/Vz58/Magazine_762x39_Vz58_30rnd_Ball.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-    }
    }
   }
  }

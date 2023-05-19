@@ -42,8 +42,8 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 		if (IsProxy())
 			return;
 		
-		if (m_iFriendlyAIKillPenalty == 0 && m_iFriendlyPlayerKillPenalty == 0)
-			return;
+		//if (m_iFriendlyAIKillPenalty == 0 && m_iFriendlyPlayerKillPenalty == 0)
+		//	return;
 		
 		if (!instigator)
 			return;

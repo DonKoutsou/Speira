@@ -1,7 +1,7 @@
-class SP_AIDirectorClass: SCR_AIGroupClass
+class SP_AIDirectorClass: AIGroupClass
 {
 };
-class SP_AIDirector : SCR_AIGroup
+class SP_AIDirector : AIGroup
 {
 	
 	static ref array<SP_AIDirector> AllDirectors = null; // new ref array<SP_AIDirector>();
@@ -52,7 +52,6 @@ class SP_AIDirector : SCR_AIGroup
 	[Attribute("")]
 	ref array<ResourceName> m_CompositionsRoad;
 	
-	[Attribute("")]
 	string m_sLocationName;
 	
 	[Attribute("")]
@@ -63,6 +62,15 @@ class SP_AIDirector : SCR_AIGroup
 	
 	[Attribute("")]
 	private ResourceName m_pCommanderWaypoint;
+	
+	[Attribute()]
+    protected ref SCR_MapLocationQuadHint m_WorldDirections;
+
+	protected int m_iGridSizeX;
+	protected int m_iGridSizeY;
+	
+	protected const float angleA = 0.775;
+	protected const float angleB = 0.325;
 	
 	string GetLocationName ()
 	{
@@ -87,7 +95,7 @@ class SP_AIDirector : SCR_AIGroup
 			FactionKey FKey;
 			int Count;
 			FactionKey Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
-			if (Key2 == Key && Count > UnitCount)
+			if (Key2 == Key && Count > UnitCount && Directors[i] != this)
 			{
 				Director = Directors[i];
 				UnitCount = Count;
@@ -104,9 +112,12 @@ class SP_AIDirector : SCR_AIGroup
 		for (int i = m_aGroups.Count() - 1; i >= 0; i--)
 		{
 			string faction = m_aGroups[i].GetFaction().GetFactionKey();
-			if (faction == Key)
+			if (faction && faction == Key)
 			{
-				Char = m_aGroups[i].GetLeaderEntity();;
+				array<AIAgent> outAgents = new array<AIAgent>();
+				m_aGroups[i].GetAgents(outAgents);
+				int z = Math.RandomInt(0,outAgents.Count());				
+				Char = outAgents[z].GetControlledEntity();
 				return true;
 			}
 		}
@@ -305,7 +316,10 @@ class SP_AIDirector : SCR_AIGroup
 		
 		return true;
 	}	
-	
+	protected int GetGridIndex(int x, int y)
+	{
+		return 3*y + x;
+	}
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
@@ -376,6 +390,82 @@ class SP_AIDirector : SCR_AIGroup
 				slot.GetScale();
 			}
 		}
+		//vector posPlayer = this.GetOrigin();
+		//SCR_EditableEntityCore core = SCR_EditableEntityCore.Cast(SCR_EditableEntityCore.GetInstance(SCR_EditableEntityCore));
+	    //   if (!core)
+	    //       return;
+		//SCR_EditableEntityComponent nearest = core.FindNearestEntity(posPlayer, EEditableEntityType.COMMENT, EEditableEntityFlag.LOCAL);
+		//if (!nearest)
+		//	return;
+		//GenericEntity nearestLocation = nearest.GetOwner();
+		//SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
+		//string closestLocationName;
+		//if (!mapDescr)
+		//	return;
+		//MapItem item = mapDescr.Item();
+		//m_sLocationName = item.GetDisplayName();
+		//////////////////////////////////////
+		vector mins,maxs;
+		if(!GetGame().GetWorldEntity())
+		{
+			return;
+		}
+		GetGame().GetWorldEntity().GetWorldBounds(mins, maxs);
+			
+		m_iGridSizeX = maxs[0]/3;
+		m_iGridSizeY = maxs[2]/3;
+	 
+		SCR_EditableEntityCore core = SCR_EditableEntityCore.Cast(SCR_EditableEntityCore.GetInstance(SCR_EditableEntityCore));
+		vector posPlayer = this.GetOrigin();
+			
+		SCR_EditableEntityComponent nearest = core.FindNearestEntity(posPlayer, EEditableEntityType.COMMENT, EEditableEntityFlag.LOCAL);
+		GenericEntity nearestLocation = nearest.GetOwner();
+		SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
+		string closestLocationName;
+		MapItem item = mapDescr.Item();
+		closestLocationName = item.GetDisplayName();
+
+		vector lastLocationPos = nearestLocation.GetOrigin();
+		float lastDistance = vector.DistanceSqXZ(lastLocationPos, posPlayer);
+	
+		string closeLocationAzimuth;
+		vector result = posPlayer - lastLocationPos;
+		result.Normalize();
+		
+		float angle1 = vector.DotXZ(result,vector.Forward);
+		float angle2 = vector.DotXZ(result,vector.Right);
+				
+		if (angle2 > 0)
+		{
+			if (angle1 >= angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorth";
+			if (angle1 < angleA && angle1 >= angleB )
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorthEast";
+			if (angle1 < angleB && angle1 >=-angleB)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionEast";
+			if (angle1 < -angleB && angle1 >=-angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouthEast";
+			if (angle1 < -angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouth";
+		}
+		else
+		{
+			if (angle1 >= angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorth";
+			if (angle1 < angleA && angle1 >= angleB )
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorthWest";
+			if (angle1 < angleB && angle1 >=-angleB)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionWest";
+			if (angle1 < -angleB && angle1 >=-angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouthWest";
+			if (angle1 < -angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouth";
+		}
+		int playerGridPositionX = posPlayer[0]/m_iGridSizeX;
+		int playerGridPositionY = posPlayer[2]/m_iGridSizeY;
+			
+		int playerGridID = GetGridIndex(playerGridPositionX,playerGridPositionY);
+	 	m_sLocationName = m_WorldDirections.GetQuadHint(playerGridID) + ", " + closestLocationName;
 	}
 	
 	override void EOnFrame(IEntity owner, float timeSlice)
@@ -516,6 +606,23 @@ class SP_AIDirector : SCR_AIGroup
 		EntitySpawnParams spawnParams = EntitySpawnParams();
 		spawnParams.TransformMode = ETransformMode.WORLD;
 		spawnParams.Transform = spawnMatrix;
+		vector pos = spawnParams.Transform[3];
+		float surfaceY = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
+		if (pos[1] < surfaceY)
+		{
+			pos[1] = surfaceY;
+		}
+		
+		//Snap to the nearest navmesh point
+		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
+		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(pos, "10 10 10", pos))
+		{
+			float groundHeight = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
+			if (pos[1] < groundHeight)
+				pos[1] = groundHeight;
+		}
+		
+		spawnParams.Transform[3] = pos;
 		Resource res;
 		IEntity newEnt;
 		IEntity newComEnt;

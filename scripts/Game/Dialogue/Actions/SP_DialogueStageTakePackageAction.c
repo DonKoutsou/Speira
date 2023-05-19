@@ -12,12 +12,12 @@ class DialogueStageTakePackageAction : DialogueStage
 	
 	override void Perform(IEntity Character, IEntity Player)
 	{
+		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
+		AIAgent agent = comp.GetAIAgent();
 		FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
 		string key = FC.GetAffiliatedFaction().GetFactionKey();
-		int index;
-		index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
-		MyDirector = SP_AIDirector.AllDirectors[index];
-		MyDirector.GetDirectorOccupiedBy(key, MyDirector);
+		SP_AIDirector OrDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
+		OrDirector.GetDirectorOccupiedBy(key, MyDirector);
 		vector mat[4];
 		Character.GetWorldTransform(mat);
 		vector spawnPos = m_SpawnOffset.Multiply3(mat) + mat[3];
@@ -36,12 +36,13 @@ class DialogueStageTakePackageAction : DialogueStage
 		SP_PackageComponent PComp = SP_PackageComponent.Cast(Package.FindComponent(SP_PackageComponent));
 		string LocName = MyDirector.GetLocationName();
 		CharacterIdentityComponent CharID = CharacterIdentityComponent.Cast(Character.FindComponent(CharacterIdentityComponent));
-		string OName = CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
+		SCR_CharacterRankComponent CharRank = SCR_CharacterRankComponent.Cast(Character.FindComponent(SCR_CharacterRankComponent));
+		string OName = CharRank.GetCharacterRankName(Character) + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
 		IEntity CharToDeliverTo;
 		MyDirector.GetRandomUnitByFKey(key, CharToDeliverTo);
 		CharacterIdentityComponent CharID2 = CharacterIdentityComponent.Cast(CharToDeliverTo.FindComponent(CharacterIdentityComponent));
-		DName = CharID2.GetIdentity().GetName() + " " + CharID2.GetIdentity().GetSurname();
-		PComp.SetInfo(OName, DName, LocName);
+		DName = CharRank.GetCharacterRankName(CharToDeliverTo) + " " + CharID2.GetIdentity().GetName() + " " + CharID2.GetIdentity().GetSurname();
+		PComp.SetInfo(OName, DName, LocName, key);
 	};
 	override bool CanBePerformed(IEntity Character, IEntity Player)
 	{

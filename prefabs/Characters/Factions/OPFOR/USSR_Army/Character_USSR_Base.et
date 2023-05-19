@@ -33,11 +33,14 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
      TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
      PrefabsToSpawn + {
-      "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
+      "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {
      TargetStorage "prefabs/Characters/Uniforms/Jacket_M88.et"
+     PrefabsToSpawn {
+      "{B57571B29C318891}Prefabs/Weapons/Grenades/Grenade_ChemLight_Red.et"
+     }
     }
    }
   }

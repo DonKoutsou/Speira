@@ -34,10 +34,12 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
      }
     }
     ItemsInitConfigurationItem "{5D530AD7E382DBA6}" {
-     TargetStorage "prefabs/Characters/Uniforms/Jacket_M70_v2.et"
+     TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
      PrefabsToSpawn {
       "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
      }
+    }
+    ItemsInitConfigurationItem "{5D66C81EB6E635C2}" {
     }
    }
   }

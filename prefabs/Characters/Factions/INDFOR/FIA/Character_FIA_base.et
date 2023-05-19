@@ -32,50 +32,20 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
+    ItemsInitConfigurationItem "{5A24CC1119C7787F}" {
+     PrefabsToSpawn {
+      "{F6EFEE3F9620937F}Prefabs/Weapons/Grenades/Grenade_ChemLight_Green.et"
+     }
+    }
     ItemsInitConfigurationItem "{5A24CC1119A46C9F}" {
-     PrefabsToSpawn + {
-      "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
+     PrefabsToSpawn {
+      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
      }
     }
    }
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
-    KLM_ConverseAction "{5B089B35DBC1543D}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B089B35D0CCAA31}" {
-      Name "Give 1 soviet field dressing for 1 broken watch"
-     }
-     Duration 1
-     m_WantedPay "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-    }
-    KLM_ConverseAction "{5C7CF03FF95FF666}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5C7CF03FFD286494}" {
-      Name "Give 1 filled soviet canteen for 1 watch"
-     }
-     Duration 0.5
-     m_WantedPay "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
-     m_MaxUses 2
-     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-    }
-    KLM_ConverseAction "{5C7CF03F05CCD977}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5C7CF03F1809ABAD}" {
-      Name "Give 1 filled US canteen for 1 watch"
-     }
-     Duration 0.5
-     m_WantedPay "{2F5A0196CA2DB912}prefabs/Items/Food/Canteen_Filled_US.et"
-     m_MaxUses 2
-     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-    }
    }
   }
  }

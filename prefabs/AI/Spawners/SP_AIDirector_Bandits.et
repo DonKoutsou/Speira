@@ -1,11 +1,6 @@
 SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
  ID "5D42AA2A8C40E9C7"
  components {
-  SCR_EditableCommentComponent "{5D42AA2A86C39121}" {
-   m_UIInfo SCR_BlockUIInfo "{5D42AA2A86C391DD}" {
-    Name "Bandit Main Base Director"
-   }
-  }
  }
  coords 1679.214 3.531 873.805
  m_Radius 100
@@ -23,5 +18,4 @@ SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
  m_CompositionsLarge {
   "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et"
  }
- m_sLocationName "Bandit Hideout"
 }

@@ -7,6 +7,8 @@ class DialogueStageDeliverPackageAction : DialogueStage
 	ResourceName m_ItemToGive;
 	[Attribute("1", UIWidgets.EditBox, params: "1 1000", desc: "")]
 	int m_WantedAmount;
+	[Attribute("1", UIWidgets.EditBox, params: "1 1000", desc: "")]
+	int m_RewardAmount;
 	[Attribute("", UIWidgets.Coords, params: "", desc: "")]
 	vector m_SpawnOffset;
 	
@@ -56,9 +58,13 @@ class DialogueStageDeliverPackageAction : DialogueStage
 		params.TransformMode = ETransformMode.WORLD;
 		params.Transform[3] = spawnPos; 
 		Resource res = Resource.Load(m_ItemToGive);
+		int RewardCount = m_RewardAmount;
 		if (res)
-		{	
-			GetGame().SpawnEntityPrefab(res, Character.GetWorld(), params);
+		{
+			for (int i = 0; i < RewardCount; i++)
+			{
+				GetGame().SpawnEntityPrefab(res, Character.GetWorld(), params);
+			}
 		}
 		
 	};

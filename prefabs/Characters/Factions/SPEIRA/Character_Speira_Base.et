@@ -53,6 +53,9 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5D3D4C1135BE22EB}" {
      TargetStorage "Prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
      TargetPurpose 64
+     PrefabsToSpawn {
+      "{10E65311C09416CE}Prefabs/Weapons/Grenades/Grenade_ChemLight_Purple.et"
+     }
     }
    }
   }

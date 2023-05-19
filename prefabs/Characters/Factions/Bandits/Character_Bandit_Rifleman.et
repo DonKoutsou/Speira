@@ -19,6 +19,12 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D66C81EB6E635C2}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
+     PrefabsToSpawn {
+      "{20EA3E80E600CB9E}Prefabs/Weapons/Grenades/Grenade_ChemLight_Yellow.et"
+     }
+    }
     ItemsInitConfigurationItem "{5D3D245D98BF5D4C}" {
      TargetStorage "prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et"
      PrefabsToSpawn {

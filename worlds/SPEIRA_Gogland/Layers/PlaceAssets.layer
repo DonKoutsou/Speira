@@ -1,0 +1,10 @@
+GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et" {
+ coords 6456.635 9.668 7033.938
+ angleY 14.033
+}
+GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ coords 6451.853 9.668 7034.424
+ angleX 0
+ angleY 76.427
+ angleZ 0
+}

@@ -18,6 +18,9 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D66C81EB6E635C2}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Coveralls_KLMKRedDawnSniperSuit.et"
+    }
     ItemsInitConfigurationItem "{5D3D245D132315DB}" {
      TargetStorage "Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_sharpshooter.et"
      PrefabsToSpawn {
