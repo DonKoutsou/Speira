@@ -36,6 +36,9 @@ class SP_DialogueComponent: ScriptComponent
 	ref BaseChatChannel m_ChatChannelUSSR;
 	
 	[Attribute()]
+	ref BaseChatChannel m_ChatChannelUS;
+	
+	[Attribute()]
 	ref BaseChatChannel m_ChatChannelBANDITS;
 	
 	[Attribute()]
@@ -95,6 +98,11 @@ class SP_DialogueComponent: ScriptComponent
 				case "SPEIRA":
 				{
 					Channel = m_ChatChannelSPEIRA;
+				}
+				break;
+				case "US":
+				{
+					Channel = m_ChatChannelUS;
 				}
 				break;
 			}

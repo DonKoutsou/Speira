@@ -3,6 +3,37 @@ GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
  components {
   Hierarchy "{5D42C14445AF3252}" {
   }
+  SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
+   Enabled 1
+   ActionOffset -1.324 0 -2.582
+   m_fLookDirectionRange 180
+   m_iCharacterStance CROUCH
+  }
+  SCR_AISmartActionSentinelComponent "{5B1EF59F9C8CE0B9}" {
+   Enabled 1
+   ActionOffset 1.965 0 -0.138
+   m_fLookDirectionRange 180
+   m_iCharacterStance CROUCH
+  }
+  SCR_AISmartActionSentinelComponent "{5D68B9560D791328}" {
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ChillPost"
+   }
+   ActionOffset -0.636 0 2.635
+   m_iCharacterStance CROUCH
+  }
+  SCR_AISmartActionSentinelComponent "{5D68B95625C1144A}" {
+   ActionOffset 2.275 0 2.011
+   m_iCharacterStance STAND
+  }
+  SCR_AISmartActionSentinelComponent "{5D6904EB8E6B7293}" {
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ChillPost"
+   }
+   ActionOffset -2.623 0 -3.648
+  }
  }
  coords 1393.892 37.022 2680.135
  angleY 75.507

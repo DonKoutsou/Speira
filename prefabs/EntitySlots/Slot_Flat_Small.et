@@ -1,0 +1,26 @@
+SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFlatSmall.et" {
+ ID "51B29A5A73FA331D"
+ components {
+  SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
+   m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
+    m_aAuthoredLabels + {
+     28
+    }
+   }
+  }
+ }
+ coords 3104.327 59.864 1819.793
+ angleY 55.245
+ {
+  GenericEntity {
+   ID "5D688C395BFE701F"
+   coords 0 -9223372036854775808 0
+  }
+  StaticModelEntity {
+   ID "52E8C3643526D54D"
+   coords 0 0.015 0
+   angleX 0.882
+   angleZ 2.243
+  }
+ }
+}

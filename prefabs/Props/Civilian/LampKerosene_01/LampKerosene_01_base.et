@@ -1,6 +1,19 @@
 GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
  ID "F0DBA538AC2A0552"
  components {
+  SCR_AISmartActionComponent "{5D68E80198B93487}" {
+   AIBehaviorTree "{F719FAF7D4C883D9}AI/BehaviorTrees/SmartActions/LightFire.bt"
+   Tags {
+    "LightFire"
+   }
+  }
+  SCR_AISmartActionSentinelComponent "{5D68E80064AA4C7B}" {
+   Enabled 0
+   AIBehaviorTree "{1BEB7235D444F6C5}AI/BehaviorTrees/SmartActions/SA_ObservationPost2.bt"
+   Tags {
+    "ObservationPost"
+   }
+  }
   SCR_BaseInteractiveLightComponent "{58C4C3C542898CFB}" {
    m_aLightData {
     SCR_BaseLightData "{58CF1C125C5670F7}" {
@@ -9,7 +22,7 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
      m_fScale 0.2
     }
    }
-   m_eInitialLightState LIT
+   m_eInitialLightState OFF
   }
  }
 }

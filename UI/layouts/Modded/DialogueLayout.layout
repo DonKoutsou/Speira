@@ -12,12 +12,12 @@ FrameWidgetClass {
     Anchor 0.5 1 0.5 1
     PositionX 0
     OffsetLeft 0
-    PositionY -164.1
-    OffsetTop -164.1
+    PositionY -182.1
+    OffsetTop -182.1
     SizeX 781
     OffsetRight -781
-    SizeY 296
-    OffsetBottom -131.9
+    SizeY 330.2
+    OffsetBottom -148.1
     Alignment 0.5 0.5
    }
    {
@@ -90,13 +90,14 @@ FrameWidgetClass {
    Name "Frame0"
    Slot FrameWidgetSlot "{5D10CA1DAB43D985}" {
     Anchor 0.5 1 0.5 1
+    PositionX 0
     OffsetLeft 0
-    PositionY -271.7
-    OffsetTop -271.7
+    PositionY -305.6
+    OffsetTop -305.6
     SizeX 72.9
     OffsetRight -72.9
     SizeY 64
-    OffsetBottom 207.7
+    OffsetBottom 241.6
     Alignment 0.5 0.5
     SizeToContent 1
    }

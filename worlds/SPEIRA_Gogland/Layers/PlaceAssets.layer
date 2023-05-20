@@ -1,3 +1,288 @@
+$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ {
+  coords 6809.95 116.79 2933.818
+  angleX 1.089
+  angleY 0.05
+  angleZ 0.908
+ }
+ {
+  coords 6849.677 138.595 2453.107
+  angleX -0.107
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 6699.37 98.451 2106.86
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 7290.465 31.351 1479.446
+  angleX 2.57
+  angleY 0.185
+  angleZ 0.387
+ }
+ {
+  coords 7489.461 39.521 1699.935
+  angleX 8.123
+  angleY 0.181
+  angleZ -2.08
+ }
+ {
+  coords 8014.6 5.07 2014.66
+  angleY 75.507
+ }
+ {
+  coords 8038.482 6.585 3251.79
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 7335.279 8.26 4776.571
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 7078.252 6.099 5194.06
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 7208.672 4.324 5310.882
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 6808.231 52.345 5628.321
+  angleX -0.282
+  angleY 75.507
+ }
+ {
+  coords 6299.014 7.845 7560.238
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 6225.181 7.47 7387.84
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 5759.632 44.092 7535.458
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 5987.094 15.22 7952.134
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 5811.038 6.254 8636.573
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 5788.896 6.751 8787.62
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 5264.981 11.595 9040.24
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 5410.329 12.496 9380.271
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 4287.189 8.544 9154.741
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 4252.499 12.503 8998.105
+  angleX -2.856
+  angleY 75.507
+ }
+ {
+  coords 4503.872 11.393 8859.637
+ }
+ {
+  coords 4198.39 12.917 8487.68
+ }
+ {
+  coords 6254.089 48.876 5087.25
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 5926.906 39.682 5762.434
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 5957.776 39.626 5637.514
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 5384.915 51.858 6391.959
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 5019.744 7.47 6457.119
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 4845.565 3.99 6632.674
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 4779.678 6.609 7177.247
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 4731.182 10.027 7450.17
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 4542.138 5.348 7705.813
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 4804.953 31.501 7906.071
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 5876.264 65.836 6994.578
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.075
+ }
+ {
+  coords 6616.87 52.983 5969.692
+  angleX 2.366
+  angleY 0.061
+  angleZ 1.573
+ }
+ {
+  coords 6813.642 69.959 4074.871
+  angleX 0.788
+  angleY 0.031
+  angleZ 3.902
+ }
+ {
+  coords 7385.538 4.72 3143.795
+  angleX 0.788
+  angleY 0.031
+  angleZ 3.902
+ }
+ {
+  coords 7533.609 18.538 3153.635
+  angleX 0.788
+  angleY 0.031
+  angleZ 3.902
+ }
+ {
+  coords 7523.811 18.563 3195.111
+  angleX 0.788
+  angleY 0.031
+  angleZ 3.902
+ }
+ {
+  coords 7455.225 18.563 3194.794
+  angleX 0.788
+  angleY 0.031
+  angleZ 3.902
+ }
+ {
+  coords 6658.927 146.533 2777.561
+  angleX 1.412
+  angleY -48.552
+  angleZ -0.558
+ }
+ {
+  coords 6508.032 54.668 2931.143
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.047
+ }
+ {
+  coords 5856.532 78.438 4261.06
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.918
+ }
+ {
+  coords 5969.365 82.563 4372.599
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.918
+ }
+ {
+  coords 5850.517 3.662 3590.804
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.918
+ }
+ {
+  coords 5958.953 37.107 2934.147
+  angleX 0.788
+  angleY 0.031
+  angleZ 1.918
+ }
+ {
+  coords 7588.864 40.539 2683.124
+  angleX -1.139
+  angleY -21.308
+  angleZ 3.035
+ }
+ {
+  coords 8057.871 5.615 3807.565
+  angleX -3.251
+  angleY 75.507
+  angleZ 1.294
+ }
+ {
+  coords 6674.519 8.975 3274.359
+  angleX 1.089
+  angleY 0.05
+  angleZ 0.908
+ }
+ {
+  coords 6709.328 19.396 3157.589
+  angleX -5.953
+  angleY -0.062
+  angleZ 4.819
+ }
+ {
+  coords 6920.283 98.874 4068.521
+  angleX -2.272
+  angleY -0.228
+  angleZ 1.19
+ }
+}
 GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et" {
  coords 6456.635 9.668 7033.938
  angleY 14.033

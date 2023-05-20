@@ -17,17 +17,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   {
    GenericEntity Layer_1 : "{5F9FFF4BF027B3A3}prefabs/ScenarioFramework/Components/Layer.et" {
     coords 0 0 0
-    {
-     GenericEntity SlotAI_1 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-      components {
-       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-        m_sObjectToSpawn "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
-        m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-       }
-      }
-      coords -31.831 0.11 -6.128
-     }
-    }
    }
   }
  }

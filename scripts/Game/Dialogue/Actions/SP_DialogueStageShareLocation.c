@@ -1,10 +1,6 @@
 [BaseContainerProps(configRoot:true), DialogueStageTitleAttribute()]
 class DialogueStageShareLocation : DialogueStage
 {
-	
-	[Attribute()]
-    protected ref SP_DialogueDirectionHint m_WorldDirections;
-	
 	protected int m_iGridSizeX;
 	protected int m_iGridSizeY;
 	

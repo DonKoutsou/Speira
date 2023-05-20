@@ -1,0 +1,17 @@
+SCR_SiteSlotEntity : "{055DDE93F47A6A1D}PrefabsEditable/Slots/Flat/E_SlotFlatLarge.et" {
+ ID "51B0BC236995F52A"
+ coords 3059.751 59.217 1793.553
+ angleY -30.273
+ {
+  GenericEntity {
+   ID "5D688C39AE2F4F9C"
+   coords 0 -9223372036854775808 0
+  }
+  StaticModelEntity {
+   ID "52E8C3643526D54D"
+   coords 0 0.28 0
+   angleX 1.376
+   angleZ -1.686
+  }
+ }
+}

@@ -30,7 +30,6 @@ GenericEntity : "{48D88E385C227340}Prefabs/Compositions/Misc/SubCompositions/Bar
        m_eLightFlags CASTSHADOW
       }
      }
-     m_eInitialLightState LIT
     }
    }
    coords -0.005 0.901 -0.012

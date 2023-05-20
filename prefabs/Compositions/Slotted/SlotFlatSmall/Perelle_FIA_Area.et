@@ -444,6 +444,11 @@ GenericEntity {
   $grp GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
    {
     ID "5D3C792C306289AC"
+    components {
+     SCR_BaseInteractiveLightComponent "{5876E7CF88610C12}" {
+      m_eInitialLightState OFF
+     }
+    }
     coords -12.977 1.004 -5.965
    }
    {

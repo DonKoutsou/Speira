@@ -1,24 +1,39 @@
 GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
  ID "F0DBA538AC2A0552"
  components {
-  SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
-   Enabled 0
-   AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+  SCR_AISmartActionComponent "{5D68C508AA42C672}" {
+   AIBehaviorTree "{F719FAF7D4C883D9}AI/BehaviorTrees/SmartActions/LightFire.bt"
    Tags {
-    "CoverPost"
+    "LightFire"
    }
-   ActionOffset -1.064 0 0.312
-   m_fLookDirectionRange 360
+  }
+  SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
+   Enabled 1
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ChillPost"
+   }
+   ActionOffset -2.501 0 -0.615
+   m_fLookDirectionRange 180
    m_iCharacterStance CROUCH
   }
   SCR_AISmartActionSentinelComponent "{5B1EF59F9C8CE0B9}" {
-   Enabled 0
-   AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+   Enabled 1
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
    Tags {
-    "CoverPost"
+    "ChillPost"
    }
-   ActionOffset 1.393 0 0.359
+   ActionOffset 8.593 0 0.359
    m_fLookDirectionRange 360
+   m_iCharacterStance STAND
+  }
+  SCR_AISmartActionSentinelComponent "{5D68B95625C1144A}" {
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ChillPost"
+   }
+   ActionOffset 0.139 0 2.935
+   m_fLookDirectionRange 180
    m_iCharacterStance CROUCH
   }
   SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
@@ -28,7 +43,7 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
      m_fIntensityClipEV -10
     }
    }
-   m_eInitialLightState LIT
+   m_eInitialLightState OFF
   }
  }
  coords -1.453 -0.08 -4.478

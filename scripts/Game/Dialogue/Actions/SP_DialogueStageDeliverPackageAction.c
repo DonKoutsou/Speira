@@ -87,7 +87,9 @@ class DialogueStageDeliverPackageAction : DialogueStage
 	override bool CanBeShown(IEntity Character, IEntity Player)
 	{
 		CharacterIdentityComponent CharID = CharacterIdentityComponent.Cast(Character.FindComponent(CharacterIdentityComponent));
-		string Name = CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
+		SCR_CharacterRankComponent CRank = SCR_CharacterRankComponent.Cast(Character.FindComponent(SCR_CharacterRankComponent));
+		string rank = CRank.GetCharacterRankName(Character);
+		string Name = rank + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
 		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
 		if (!inv)
 			return false;

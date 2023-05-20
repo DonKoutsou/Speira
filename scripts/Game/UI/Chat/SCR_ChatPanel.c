@@ -49,6 +49,9 @@ class SCR_ChatPanel : ScriptedWidgetComponent
 	ref SCR_ChatMessageStyle m_USSRChannelStyle;
 	
 	[Attribute()]
+	ref SCR_ChatMessageStyle m_USChannelStyle;
+	
+	[Attribute()]
 	ref SCR_ChatMessageStyle m_BANDITSChannelStyle;
 	
 	[Attribute()]
@@ -848,6 +851,9 @@ class SCR_ChatPanel : ScriptedWidgetComponent
 				break;
 			case USSRChatChannel:
 				style = m_USSRChannelStyle;
+				break;
+			case USChatChannel:
+				style = m_USChannelStyle;
 				break;
 			case SPEIRAChatChannel:
 				style = m_SPEIRAChannelStyle;

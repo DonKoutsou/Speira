@@ -20,6 +20,7 @@ GenericEntity : "{FDCDB16825161D12}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
    }
   }
   SCR_ArsenalInventoryStorageManagerComponent "{58A0B19B1E191CC1}" {
+   Enabled 0
   }
  }
 }

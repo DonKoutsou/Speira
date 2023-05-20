@@ -1,0 +1,8 @@
+SCR_AIGroup : "{9DD40CCED358852A}prefabs/Groups/Campaign/Group_FIA_CommandGroup.et" {
+ ID "0000000000000001"
+ coords 6456.215 9.668 7031.479
+ m_faction "BANDITS"
+ m_aUnitPrefabSlots {
+  "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et"
+ }
+}

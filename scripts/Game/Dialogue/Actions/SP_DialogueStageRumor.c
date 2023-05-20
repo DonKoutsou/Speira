@@ -13,10 +13,10 @@ class DialogueStageRumor : DialogueStage
 	override string GetDialogueText(IEntity Character, IEntity Player)
 	{
 			FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
-			string key = FC.GetAffiliatedFaction().GetFactionKey();
+			Faction key = FC.GetAffiliatedFaction();
 			return GetRandomLocationPopulation(key);
 	};
-	string GetRandomLocationPopulation(string key)
+	string GetRandomLocationPopulation(Faction key)
 	{	
 		int index;
 		SP_AIDirector RandomDirector;
@@ -31,9 +31,9 @@ class DialogueStageRumor : DialogueStage
 		}
 		
 		string FactioReadble = "";
-		string faction = RandomDirector.GetMajorityHolder(FactioReadble);
+		SCR_Faction faction = SCR_Faction.Cast(RandomDirector.GetMajorityHolder(FactioReadble));
 		
-		while (faction == key)
+		while (faction.DoCheckIfFactionFriendly(key) == true)
 		{
 			index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
 			if(usedindex.Contains(index) == false)
@@ -41,7 +41,7 @@ class DialogueStageRumor : DialogueStage
 				RandomDirector = SP_AIDirector.AllDirectors[index];
 				usedindex.Insert(index);
 			}
-			faction = RandomDirector.GetMajorityHolder(FactioReadble);
+			faction = SCR_Faction.Cast(RandomDirector.GetMajorityHolder(FactioReadble));
 		}	
 		if(SP_AIDirector.AllDirectors.Count() <= usedindex.Count())
 		{

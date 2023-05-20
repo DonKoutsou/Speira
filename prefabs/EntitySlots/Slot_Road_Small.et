@@ -1,0 +1,13 @@
+SCR_SiteSlotEntity : "{66265A506DF1FE2B}PrefabsEditable/Slots/Road/E_SlotRoadSmall.et" {
+ ID "522A73AF8E861751"
+ coords 1942.73 39.427 2714.132
+ angleY 134.544
+ {
+  StaticModelEntity {
+   ID "52E8C3643526D54D"
+   coords 0 -0.011 0
+   angleX 0.762
+   angleZ -0.009
+  }
+ }
+}

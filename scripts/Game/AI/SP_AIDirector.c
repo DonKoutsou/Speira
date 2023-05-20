@@ -194,7 +194,7 @@ class SP_AIDirector : AIGroup
 		UnitCount = max;
 	    return MajorFaction; 	
 	}
-	FactionKey GetMajorityHolder(out string factionReadable)
+	Faction GetMajorityHolder(out string factionReadable)
 	{
 		int USSRcount;
 		int UScount;
@@ -234,32 +234,33 @@ class SP_AIDirector : AIGroup
 			}
 		}
 		int max = USSRcount;
-    	string MajorFaction = "USSR";
+		FactionManager FMan = FactionManager.Cast(GetGame().GetFactionManager());
+    	Faction MajorFaction = FMan.GetFactionByKey("USSR");
 		factionReadable = "soviet";
 	    if (UScount > max)
 	    {
 	        max = UScount;
-			MajorFaction = "US";
+			MajorFaction = FMan.GetFactionByKey("US");
 			factionReadable= "US";
 	    }
 	    
 	    if (FIAcount > max)
 	    {
 	        max = FIAcount;
-			MajorFaction = "FIA";
+			MajorFaction = FMan.GetFactionByKey("FIA");
 			factionReadable = "guerrilla";
 	    }
 	    
 	    if (Banditcount > max)
 	    {
 	        max = Banditcount;
-			MajorFaction = "BANDITS";
+			MajorFaction = FMan.GetFactionByKey("BANDITS");
 			factionReadable = "bandit";
 	    }
 		if (Renegcount > max)
 	    {
 	        max = Renegcount;
-			MajorFaction = "RENEGADES";
+			MajorFaction = FMan.GetFactionByKey("RENEGADES");
 			factionReadable = "renegade";
 	    }
 	    

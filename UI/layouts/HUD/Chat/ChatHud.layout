@@ -39,6 +39,16 @@ FrameWidgetClass {
       m_sNameLower "#AR-Chat_LocalChannel-LC"
       m_sPrefix "5"
      }
+     m_USChannelStyle SCR_ChatMessageStyle "{5D68955C66A9E36B}" {
+      m_Color 0.016 0.552 0.905 1
+      m_bColoredBadge 1
+      m_bColoredIcon 1
+      m_IconImageset "{4C236DCD59B20AA0}UI/Textures/Chat/chat_32.imageset"
+      m_sIconName "local"
+      m_sName "US"
+      m_sNameLower "#AR-Chat_LocalChannel-LC"
+      m_sPrefix "5"
+     }
      m_BANDITSChannelStyle SCR_ChatMessageStyle "{5D5100D49951835D}" {
       m_Color 1 0.982 0.078 1
       m_bColoredBadge 1
