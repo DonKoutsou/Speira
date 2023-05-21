@@ -3,6 +3,6 @@ SCR_DefendWaypoint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_L
  coords 3565.27 0.953 1511.162
  AIBehaviorTreeMoveTo "{C8508A9BBD1D8F65}AI/BehaviorTrees/Waypoints/WP_Follow.bt"
  CompletionRadius 30
- m_holdingTime 1200
+ m_holdingTime 5000
  m_bFastInit 0
 }

@@ -1,0 +1,224 @@
+FrameWidgetClass "{5D6A8028034D56DA}" {
+ Name "ItemInfoRoot"
+ Slot FrameWidgetSlot "{5AA2690598949FA9}" {
+  OffsetLeft 0
+  OffsetTop 0
+  SizeX 0
+  OffsetRight 0
+  SizeY 0
+  OffsetBottom 0
+  SizeToContent 1
+ }
+ "Z Order" 10
+ {
+  FrameWidgetClass "{5D6A8028034D56D8}" {
+   Name "ItemInfo"
+   Slot FrameWidgetSlot "{567A868B1A36D6CA}" {
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   components {
+    SCR_SlotUIComponent "{567A868A4CB58266}" {
+     SizeX 0
+     SizeY 0
+     SizeToContent 1
+    }
+   }
+   {
+    SizeLayoutWidgetClass "{5D6A8028034D56DD}" {
+     Name "size"
+     Slot FrameWidgetSlot "{567A868A7C2126F9}" {
+      OffsetLeft 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+      SizeToContent 1
+     }
+     AllowMinDesiredWidth 1
+     MinDesiredWidth 300
+     AllowMinDesiredHeight 1
+     MinDesiredHeight 150
+     AllowMaxDesiredWidth 1
+     MaxDesiredWidth 500
+     AllowMaxDesiredHeight 1
+     MaxDesiredHeight 300
+     {
+      FrameWidgetClass "{5D6A8028034D56DC}" {
+       Name "SizeLayout0"
+       Slot AlignableSlot "{567A868D73CC5795}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        OverlayWidgetClass "{5D6A8028034D5623}" {
+         Name "Overlay1"
+         Slot FrameWidgetSlot "{567A868D73CC57B6}" {
+          Anchor 0 0 0 0
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+          SizeToContent 1
+         }
+         {
+          BlurWidgetClass "{5D6A8028034D5621}" {
+           Name "Blur0"
+           Slot OverlayWidgetSlot "{567A7CC034D3C2EF}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Intensity 0.421
+          }
+          ImageWidgetClass "{5D6A8028034D5620}" {
+           Name "Background"
+           Slot OverlayWidgetSlot "{567A7CC054B0F870}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Color 0.028 0.028 0.028 0.71
+           Size 256 128
+           Tiling None
+          }
+          ImageWidgetClass "{5D6A8028034D5627}" {
+           Name "Line"
+           Slot OverlayWidgetSlot "{567A941404657E5F}" {
+            HorizontalAlign 3
+            VerticalAlign 0
+           }
+           Color 0.761 0.392 0.078 1
+           Size 32 4
+          }
+          VerticalLayoutWidgetClass "{5D6A8028034D5625}" {
+           Name "VerticalLayout"
+           Slot OverlayWidgetSlot "{5222C612B8CE78D1}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding 24 16 24 24
+           }
+           "Z Order" 3
+           Color 1 1 1 1
+           {
+            HorizontalLayoutWidgetClass "{5D6A8028034D5624}" {
+             Name "HorizontalLayout1"
+             Slot LayoutSlot "{5A8AACE485B83064}" {
+              Padding 0 10 0 10
+              FillWeight 0.4
+             }
+             {
+              TextWidgetClass "{5D6A8028034D562B}" {
+               Name "ItemInfo_name"
+               Slot LayoutSlot "{521D07A6BF99F9AE}" {
+                Padding 0 10 0 10
+                FillWeight 0.4
+               }
+               Color 0.761 0.392 0.078 1
+               Text "Item name:"
+               "Font Size" 20
+               "Min Font Size" 20
+               FontProperties FontProperties "{5222C61204238C11}" {
+                Font "{CD2634D279AB011A}UI/Fonts/Roboto/Roboto_Bold.fnt"
+                Bold 1
+                ShadowSize 0
+                ShadowColor 0 0 0 1
+                ShadowOffset 0 0
+               }
+              }
+              ScaleWidgetClass "{5D6A8028034D562A}" {
+               Name "ItemInfo_iconScale"
+               Slot LayoutSlot "{5A8AACE47139FEC6}" {
+                Padding 8 0 0 0
+               }
+               {
+                ImageWidgetClass "{5D6A8028034D5628}" {
+                 Name "ItemInfo_icon"
+                 Slot AlignableSlot "{5A8AACE4712C0F7B}" {
+                 }
+                 "Is Visible" 0
+                }
+               }
+              }
+             }
+            }
+            SizeLayoutWidgetClass "{5D6A8028034D562F}" {
+             Name "SizeLayout0"
+             Slot LayoutSlot "{567A94130923E2F1}" {
+              VerticalAlign 0
+              FillWeight 0.6
+             }
+             AllowMaxDesiredWidth 1
+             MaxDesiredWidth 300
+             AllowMaxDesiredHeight 1
+             MaxDesiredHeight 200
+             {
+              TextWidgetClass "{5D6A8028034D562E}" {
+               Name "ItemInfo_description"
+               Slot LayoutSlot "{521D07A6BF99F9C9}" {
+                SizeMode Fill
+                FillWeight 0.6
+               }
+               Text "Description:"
+               "Font Size" 13
+               "Min Font Size" 13
+               Wrap 1
+               FontProperties FontProperties "{5222C6125CE24761}" {
+                Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+               }
+              }
+             }
+            }
+            HorizontalLayoutWidgetClass "{5D6A8028034D562C}" {
+             Name "HorizontalLayout0"
+             Slot LayoutSlot "{5290A529D8E44246}" {
+              FillWeight 0.2
+             }
+             {
+              TextWidgetClass "{5D6A8028034D5633}" {
+               Name "ItemInfo_weight"
+               Slot LayoutSlot "{521CFCA3F19183BD}" {
+                Padding 0 10 0 0
+               }
+               Color 0.515 0.515 0.515 1
+               Text "Weight:"
+               "Font Size" 15
+               "Min Font Size" 15
+               FontProperties FontProperties "{5222C613A8D40AAB}" {
+                Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+               }
+              }
+              TextWidgetClass "{5D6A8028034D5632}" {
+               Name "ItemInfo_weightUnit"
+               Slot LayoutSlot "{521CFCA3F19183BD}" {
+                Padding 0 10 0 0
+               }
+               Color 0.515 0.515 0.515 1
+               Text "kg"
+               "Font Size" 15
+               "Min Font Size" 15
+               FontProperties FontProperties "{5222C613A8D40AAB}" {
+                Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

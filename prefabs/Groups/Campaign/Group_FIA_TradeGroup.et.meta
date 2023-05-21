@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{0F02FB70B7BB4F2A}prefabs/Groups/Campaign/Group_FIA_TradeGroup.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

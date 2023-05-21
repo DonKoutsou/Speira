@@ -1,0 +1,7 @@
+SCR_AIGroup : "{9DD40CCED358852A}prefabs/Groups/Campaign/Group_FIA_CommandGroup.et" {
+ ID "0000000000000001"
+ coords 8075.382 25.903 2740.095
+ m_aUnitPrefabSlots {
+  "{96BCF8AE1E4652B5}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Navigator.et"
+ }
+}

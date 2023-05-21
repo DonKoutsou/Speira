@@ -1,0 +1,32 @@
+SCR_AIWorld : "{E0A05C76552E7F58}prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   Enabled 0
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   Enabled 1
+  }
+ }
+ coords 117.452 1.001 111.34
+}
+GameEntity : "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et" {
+ coords 125.797 1.001 117.941
+}
+GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ coords 131.579 0.924 123.683
+ angleY 0
+}
+SCR_AIGroup : "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" {
+ coords 122.589 0.935 127.552
+ angleX -0.895
+ angleZ 0.895
+ m_aUnitPrefabSlots {
+  "{A0B2084D7A976723}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman.et"
+ }
+ m_aStaticWaypoints {
+  "waypint"
+ }
+}
+SCR_DefendWaypoint waypint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et" {
+ coords 128.162 0.741 131.305
+}

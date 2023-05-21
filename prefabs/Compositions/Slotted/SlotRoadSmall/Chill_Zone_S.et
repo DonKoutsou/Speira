@@ -5,7 +5,7 @@ GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
   }
   SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
    Enabled 1
-   ActionOffset -1.324 0 -2.582
+   ActionOffset -1.085 0 -2.028
    m_fLookDirectionRange 180
    m_iCharacterStance CROUCH
   }
@@ -24,7 +24,7 @@ GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
    m_iCharacterStance CROUCH
   }
   SCR_AISmartActionSentinelComponent "{5D68B95625C1144A}" {
-   ActionOffset 2.275 0 2.011
+   ActionOffset 1.902 0 2.508
    m_iCharacterStance STAND
   }
   SCR_AISmartActionSentinelComponent "{5D6904EB8E6B7293}" {

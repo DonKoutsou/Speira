@@ -18,6 +18,9 @@ class SP_AIDirector : AIGroup
 	[Attribute("true")]
 	bool m_Respawn;
 	
+	[Attribute("true")]
+	bool m_RenegadeRespawn;
+	
 	[Attribute("false")]
 	bool m_CommanderRespawn;
 	
@@ -32,11 +35,17 @@ class SP_AIDirector : AIGroup
 	[Attribute("0")]
 	float m_CommanderRespawnTimer;
 	
+	[Attribute("0")]
+	float m_RenegadeRespawnTimer;
+	
 	[Attribute("")]
 	ref array<ResourceName> m_AgentTemplates;
 	
 	[Attribute("")]
 	ResourceName m_Commander;
+	
+	[Attribute("")]
+	ResourceName m_Renegade;
 	
 	bool commanderspawned = false;
 	
@@ -80,6 +89,7 @@ class SP_AIDirector : AIGroup
 	private int m_SpawnedCounter;	
 	private float m_RespawnPeriod;
 	private float m_CommanderRespawnPeriod;
+	private float m_RenegadeRespawnPeriod;
 	private ref array<SCR_AIGroup> m_aGroups = new array<SCR_AIGroup>();
 	private ref array<SCR_SiteSlotEntity> m_Slots = {};
 	private AIWaypoint DefWaypoint;
@@ -331,6 +341,7 @@ class SP_AIDirector : AIGroup
 		m_SpawnedCounter = 0;
 		m_RespawnPeriod = 0;
 		m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
+		m_RenegadeRespawnPeriod = m_RenegadeRespawnTimer;
 		// get first children, it should be WP
 		vector position = GetOrigin();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
@@ -518,7 +529,90 @@ class SP_AIDirector : AIGroup
 					m_CommanderRespawnPeriod -= timeSlice;
 			}
 		}
+		if (m_RenegadeRespawn && GetAgentsCount() >= m_MaxAgentsToSpawn)
+		{
+			if (m_RenegadeRespawnPeriod <= 0.0)
+			{
+				commanderspawned = false;
+				if (SpawnRenegade(m_Renegade))
+				{
+					m_RenegadeRespawnPeriod = m_RenegadeRespawnTimer;
+				}
+			}
+			else
+			{
+				m_RenegadeRespawnPeriod -= timeSlice;
+			}
+		}
 	}
+	bool SpawnRenegade(ResourceName name)
+	{
+		
+		RandomGenerator rand = new RandomGenerator();
+		
+		// randomize position in radius
+		vector position = GetOrigin();
+		float yOcean = GetWorld().GetOceanBaseHeight();
+		
+		position[1] = yOcean - 1; // force at least one iteration
+		while (position[1] < yOcean)
+		{
+			position[0] = position[0] + rand.RandFloatXY(-m_Radius, m_Radius);
+			position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
+			position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
+		}
+
+		// randomize entity template from array
+		int randomId = rand.RandInt(0, m_AgentTemplates.Count());
+		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
+		spawnMatrix[3] = position;
+		EntitySpawnParams spawnParams = EntitySpawnParams();
+		spawnParams.TransformMode = ETransformMode.WORLD;
+		spawnParams.Transform = spawnMatrix;
+		vector pos = spawnParams.Transform[3];
+		float surfaceY = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
+		if (pos[1] < surfaceY)
+		{
+			pos[1] = surfaceY;
+		}
+		
+		//Snap to the nearest navmesh point
+		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
+		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(pos, "10 10 10", pos))
+		{
+			float groundHeight = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
+			if (pos[1] < groundHeight)
+				pos[1] = groundHeight;
+		}
+		
+		spawnParams.Transform[3] = pos;
+		Resource res;
+		IEntity newEnt;
+		res = Resource.Load(name);
+		newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
+		if (!newEnt)
+			return false;
+		if (newEnt && newEnt.GetPhysics())
+			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
+		if (newEnt)
+		{
+			OnSpawn(newEnt);
+			AIAgent agent = AIAgent.Cast(newEnt);
+			if (agent)
+			{
+				AddAgent(agent);
+			}
+			else
+			{
+				AIControlComponent comp = AIControlComponent.Cast(newEnt.FindComponent(AIControlComponent));
+				if (comp && comp.GetControlAIAgent())
+				{
+					AddAgent(comp.GetControlAIAgent());
+				}
+			}
+		}
+		return true;
+	};
 	bool SpawnCommander(ResourceName Name)
 	{
 		if (m_AgentTemplates.Count() == 0)
@@ -578,7 +672,7 @@ class SP_AIDirector : AIGroup
 		}
 
 		return true;
-	};
+	}
 	bool Spawn()
 	{
 		if (m_AgentTemplates.Count() == 0)
@@ -711,5 +805,5 @@ class SP_AIDirector : AIGroup
 				group.AddWaypoint(ComWaypoint);
 		}
 	}
-	
+
 };

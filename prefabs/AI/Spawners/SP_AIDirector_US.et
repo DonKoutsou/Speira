@@ -3,7 +3,7 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  coords 116.628 1.001 248.992
  DangerEventRange 200
  DynamicSim_Lod1_distance 500
- m_Radius 60
+ m_Radius 100
  m_Respawn 1
  m_CommanderRespawn 1
  m_SpawnAI 1
@@ -14,15 +14,17 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  }
  m_Commander "{33EDF8CC81F4483F}prefabs/Groups/Campaign/Group_US_CommandGroup.et"
  m_Compositions {
-  "{95A4CF49FC9C0481}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_01.et" "{F9F0FBA940588BAF}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_02.et" "{1C6CB7504CBD1CC4}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_03.et" "{2158926839D195F3}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_04.et" "{C4C4DE9135340298}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_05.et" "{FA06509902D591F4}Prefabs/Compositions/Misc/SubCompositions/Tent_BarrackHQ_Cluttered_US_01.et"
+  "{B1EF20282529F4B4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_01.et" "{382758319508ECF1}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_03.et" "{DDBB14C899ED7B9A}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_02.et" "{E08F31F0EC81F2AD}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_05.et" "{05137D09E06465C6}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_04.et" "{8F623F3CB68525DC}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Cluttered_US_01.et" "{010D5FBC85347C38}Prefabs/Compositions/Misc/SubCompositions/Sandbag_MG_US_01_M2HB.et" "{BB664061CF5E85C4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Sign_US_01.et" "{0CA7840CD4247D8A}Prefabs/Compositions/Misc/SubCompositions/SandbagCamo_wall_High_US.et" "{2BC1606244F9F491}Prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et" "{8FEA06CA746A084F}Prefabs/Compositions/Misc/SubCompositions/Sandbags_Mixed_Cluttered_US_01.et"
  }
  m_CompositionsMed {
-  "{781A5361CCEA95FC}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_US_01.et" "{A53CBBE41A6C9EC1}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_US_01.et" "{BD9032E3E3510329}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_US_01.et" "{69131FD53AF6C044}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_US_01.et" "{44B3130F12865442}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_US_01.et"
+  "{781A5361CCEA95FC}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_US_01.et" "{A53CBBE41A6C9EC1}Prefabs/Compositions/Slotted/SlotFlatSmall/LivingArea_S_US_01.et" "{BD9032E3E3510329}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_US_01.et" "{69131FD53AF6C044}Prefabs/Compositions/Slotted/SlotFlatSmall/SupplyStorage_S_US_01.et" "{44B3130F12865442}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_US_01.et" "{5196CA1829D428F7}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Bunker_Cluttered_US_01.et" "{F7820A5500AE5BE8}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_US_01.et"
  }
  m_CompositionsLarge {
-  "{9FDEDDF92C5D7408}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_US_01.et"
+  "{9FDEDDF92C5D7408}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_US_01.et" "{84A98E30C72639C5}Prefabs/Compositions/Slotted/SlotFlatMedium/FieldHospital_M_US_01.et"
  }
- m_sLocationName "US HQ"
+ m_InstantSpawn 1
  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
+ m_WorldDirections SCR_MapLocationQuadHint "{5D685A401889836C}" {
+ }
 }

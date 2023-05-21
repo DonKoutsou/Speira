@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F47C0A543AA5A67E}worlds/Prefab_setup/ai_test.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

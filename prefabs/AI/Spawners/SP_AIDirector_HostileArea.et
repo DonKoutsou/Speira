@@ -6,14 +6,14 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
   }
  }
  coords 116.628 1.001 248.992
- DangerEventRange 200
- DynamicSim_Lod1_distance 500
+ m_MaxAgentsToSpawn 2
  m_Radius 150
  m_CompositionRadius 150
  m_Respawn 1
  m_SpawnAI 1
- m_RespawnTimer 600
+ m_RespawnTimer 300
  m_CommanderRespawnTimer 600
+ m_RenegadeRespawnTimer 900
  m_AgentTemplates {
   "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et" "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
  }

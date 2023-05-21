@@ -287,11 +287,55 @@ GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Fa
  coords 6456.635 9.668 7033.938
  angleY 14.033
 }
-GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
- coords 6451.853 9.668 7034.424
- angleX 0
- angleY 76.427
- angleZ 0
+SCR_DefendWaypoint : "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et" {
+ coords 8072.745 25.815 2741.333
+}
+GenericEntity : "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" {
+ coords 8066.03 25.901 2736.11
+ angleX -5.977
+ angleY -93.3
+ angleZ 4.792
+}
+GenericEntity : "{BF50A59453B018EA}prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_FIA_01.et" {
+ coords 8073.033 25.692 2743.829
+ angleX -1.139
+ {
+  GameEntity {
+   ID "5C7315DAF456BF5F"
+   coords -1.453 0.214 -4.482
+   angleX -6.241
+   angleY 0.036
+   angleZ -1.783
+  }
+  GenericEntity {
+   ID "5C7315DAF45513FC"
+   coords -2.035 0.096 -3.267
+   angleX 0.986
+   angleY 149.941
+   angleZ -0.57
+  }
+  GenericEntity {
+   ID "5C7315DAF455547C"
+   coords -2.589 0.248 -5.466
+   angleX -0.555
+   angleY 60.861
+   angleZ -0.995
+  }
+ }
+}
+$grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ {
+  coords 6451.853 9.668 7034.424
+  angleX 0
+  angleY 76.427
+  angleZ 0
+ }
+ {
+  coords 8075.585 26.341 2736.219
+  angleX -4.467
+  angleY -0
+  angleZ 6.223
+ }
 }
 $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
  {
@@ -360,6 +404,17 @@ $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
   angleZ 176.06
   scale 0.732
  }
+}
+GenericEntity : "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" {
+ components {
+  SCR_AISmartActionSentinelComponent "{5B16D3D220F0FD14}" {
+   Tags {
+    "ObservationPost"
+   }
+  }
+ }
+ coords 8086.326 25.518 2732.264
+ angleY -65.99
 }
 GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
  coords 7573.779 18.345 4034.403
