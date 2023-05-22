@@ -3,6 +3,9 @@ GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
  components {
   Hierarchy "{5D42C14445AF3252}" {
   }
+  SCR_AISmartActionComponent "{5D68C508AA42C672}" {
+   AIBehaviorTree ""
+  }
   SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
    Enabled 1
    ActionOffset -1.085 0 -2.028

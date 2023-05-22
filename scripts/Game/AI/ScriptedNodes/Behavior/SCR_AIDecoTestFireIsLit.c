@@ -7,11 +7,11 @@
 	{	
 		if (controlled)
 		{	
-			if (!m_LightComponent)
-				m_LightComponent = SCR_BaseInteractiveLightComponent.Cast(controlled.FindComponent(SCR_BaseInteractiveLightComponent));
+			m_LightComponent = SCR_BaseInteractiveLightComponent.Cast(controlled.FindComponent(SCR_BaseInteractiveLightComponent));
 			if (!m_LightComponent)
 				return false;
-			return m_LightComponent.IsOn();
+			bool light = m_LightComponent.IsOn();
+			return light;
 		}
 		return false;
 	}

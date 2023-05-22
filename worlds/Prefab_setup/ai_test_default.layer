@@ -9,12 +9,40 @@ SCR_AIWorld : "{E0A05C76552E7F58}prefabs/AI/SCR_AIWorld.et" {
  }
  coords 117.452 1.001 111.34
 }
-GameEntity : "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et" {
- coords 125.797 1.001 117.941
+$grp GameEntity : "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et" {
+ {
+  coords 125.797 1.001 117.941
+ }
+ {
+  coords 118.014 1.001 128.21
+ }
+ {
+  coords 124.123 1.001 133.747
+ }
+ {
+  coords 132.198 1.001 134.921
+ }
+ {
+  coords 136.094 1.001 126.953
+ }
 }
-GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
- coords 131.579 0.924 123.683
- angleY 0
+$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ {
+  coords 131.579 0.924 123.683
+  angleY 0
+ }
+ {
+  coords 124.634 0.924 123.975
+  angleY 0
+ }
+ {
+  coords 131.854 1 117.115
+  angleY 0
+ }
+ {
+  coords 115.245 1 122.305
+  angleY 0
+ }
 }
 SCR_AIGroup : "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" {
  coords 122.589 0.935 127.552
