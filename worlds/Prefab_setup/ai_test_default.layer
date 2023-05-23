@@ -9,52 +9,38 @@ SCR_AIWorld : "{E0A05C76552E7F58}prefabs/AI/SCR_AIWorld.et" {
  }
  coords 117.452 1.001 111.34
 }
-$grp GameEntity : "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et" {
+SCR_DefendWaypoint waypint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et" {
+ coords 128.162 0.741 131.305
+}
+$grp GenericEntity : "{B68D3829D4442F80}Prefabs/Props/Civilian/RadioSmall_01_Base.et" {
  {
-  coords 125.797 1.001 117.941
+  coords 133.807 0.67 130.652
  }
  {
-  coords 118.014 1.001 128.21
+  coords 133.807 0.67 131.279
  }
  {
-  coords 124.123 1.001 133.747
+  coords 125.412 0.67 129.432
  }
  {
-  coords 132.198 1.001 134.921
+  coords 130.17 0.67 127.725
  }
  {
-  coords 136.094 1.001 126.953
+  coords 129.182 0.67 129.389
+ }
+ {
+  coords 129.131 0.631 134.524
  }
 }
-$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
- {
-  coords 131.579 0.924 123.683
-  angleY 0
- }
- {
-  coords 124.634 0.924 123.975
-  angleY 0
- }
- {
-  coords 131.854 1 117.115
-  angleY 0
- }
- {
-  coords 115.245 1 122.305
-  angleY 0
- }
-}
-SCR_AIGroup : "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" {
- coords 122.589 0.935 127.552
- angleX -0.895
- angleZ 0.895
+SCR_AIGroup : "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" {
+ coords 132.661 0.586 141.359
  m_aUnitPrefabSlots {
-  "{A0B2084D7A976723}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman.et"
+  "{3FFD4FFB4D95DB8A}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman2.et"
  }
  m_aStaticWaypoints {
   "waypint"
  }
 }
-SCR_DefendWaypoint waypint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et" {
- coords 128.162 0.741 131.305
+GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 132.156 0.64 132.478
 }

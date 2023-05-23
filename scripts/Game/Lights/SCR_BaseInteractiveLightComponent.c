@@ -110,11 +110,6 @@ class SCR_BaseInteractiveLightComponent : SCR_BaseLightComponent
 	//------------------------------------------------------------------------------------------------
 	protected void TurnOn(notnull SCR_BaseInteractiveLightComponentClass componentData, bool skipTransition, bool playSound)
 	{
-		SCR_AISmartActionComponent smartcomp = SCR_AISmartActionComponent.Cast(GetOwner().FindComponent(SCR_AISmartActionComponent));
-		if(smartcomp)
-		{
-			smartcomp.SetActionAccessible(false);
-		}
 		if (!System.IsConsoleApp() && playSound && m_SoundComponent)
 		{
 			m_SoundComponent.SoundEvent(SCR_SoundEvent.SOUND_TURN_ON);
@@ -182,11 +177,6 @@ class SCR_BaseInteractiveLightComponent : SCR_BaseLightComponent
 	//------------------------------------------------------------------------------------------------
 	protected void TurnOff(notnull SCR_BaseInteractiveLightComponentClass componentData, bool playSound)
 	{
-		SCR_AISmartActionComponent smartcomp = SCR_AISmartActionComponent.Cast(GetOwner().FindComponent(SCR_AISmartActionComponent));
-		if(smartcomp)
-		{
-			smartcomp.SetActionAccessible(true);
-		}
 		if (!System.IsConsoleApp() && playSound && m_SoundComponent)
 		{
 			m_SoundComponent.SoundEvent(SCR_SoundEvent.SOUND_TURN_OFF);

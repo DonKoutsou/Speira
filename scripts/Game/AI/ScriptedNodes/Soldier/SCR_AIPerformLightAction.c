@@ -22,9 +22,13 @@ class SCR_AIPerformLightAction : AITaskScripted
 		{
 			userActionString = "SCR_LightFireplaceUserAction";
 		}
-		else
+		else if(SCR_BaseInteractiveLightComponent.Cast(targetEntity.FindComponent(SCR_BaseInteractiveLightComponent)))
 		{
 			userActionString = "SCR_SwitchLightUserAction";
+		}
+		else if(RadioBroadcastComponent.Cast(targetEntity.FindComponent(RadioBroadcastComponent)))
+		{
+			userActionString = "SCR_TurnOnAction";
 		}
 
 		IEntity controlledEntity = owner.GetControlledEntity();
