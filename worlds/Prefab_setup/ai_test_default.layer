@@ -9,10 +9,46 @@ SCR_AIWorld : "{E0A05C76552E7F58}prefabs/AI/SCR_AIWorld.et" {
  }
  coords 117.452 1.001 111.34
 }
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 121.632 0.848 131.081
+}
+$grp GameEntity : "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et" {
+ {
+  coords 125.71 0.729 131.903
+ }
+ {
+  coords 149.92 0.724 129.827
+ }
+}
+$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ {
+  coords 144.675 0.429 135.972
+  angleY 0
+ }
+ {
+  coords 120.516 1.001 123.328
+  angleY 0
+ }
+ {
+  coords 122.525 0.703 138.073
+  angleY 0
+ }
+}
+$grp GameEntity : "{616F4E93658E5A3A}prefabs/Props/Military/Generators/GeneratorFloodlight_USSR_01.et" {
+ {
+  coords 154.882 0.979 121.402
+ }
+ {
+  coords 129.284 0.934 124.258
+ }
+ {
+  coords 141.979 0.798 125.664
+ }
+}
 SCR_DefendWaypoint waypint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et" {
  coords 128.162 0.741 131.305
 }
-$grp GenericEntity : "{B68D3829D4442F80}Prefabs/Props/Civilian/RadioSmall_01_Base.et" {
+$grp GenericEntity : "{B68D3829D4442F80}prefabs/Props/Civilian/RadioSmall_01_Base.et" {
  {
   coords 133.807 0.67 130.652
  }
@@ -32,15 +68,15 @@ $grp GenericEntity : "{B68D3829D4442F80}Prefabs/Props/Civilian/RadioSmall_01_Bas
   coords 129.131 0.631 134.524
  }
 }
-SCR_AIGroup : "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" {
- coords 132.661 0.586 141.359
+GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 132.156 0.64 132.478
+}
+SCR_AIGroup : "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et" {
+ coords 133.067 0.611 142.594
  m_aUnitPrefabSlots {
-  "{3FFD4FFB4D95DB8A}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman2.et"
+  "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et" "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et"
  }
  m_aStaticWaypoints {
   "waypint"
  }
-}
-GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
- coords 132.156 0.64 132.478
 }

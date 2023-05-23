@@ -16,8 +16,12 @@ class SCR_AISetActionOccupied : AITaskScripted
 	{
 		SCR_AISmartActionComponent myaction;
 		GetVariableIn("TargetAction", myaction);
-		myaction.SetActionAccessible(false);
-		return ENodeResult.SUCCESS;			
+		if(myaction)
+		{
+			myaction.SetActionAccessible(false);
+			return ENodeResult.SUCCESS;
+		}
+		return ENodeResult.FAIL;			
 	}
 	//------------------------------------------------------------------------------------------------
 	protected override bool VisibleInPalette()
@@ -43,8 +47,12 @@ class SCR_AISetActionUnOccupied : AITaskScripted
 	{
 		SCR_AISmartActionComponent myaction;
 		GetVariableIn("TargetAction", myaction);
+		if(myaction)
+		{
 		myaction.SetActionAccessible(true);
-		return ENodeResult.SUCCESS;			
+		return ENodeResult.SUCCESS;	
+		}
+		return ENodeResult.FAIL;		
 	}
 	//------------------------------------------------------------------------------------------------
 	protected override bool VisibleInPalette()

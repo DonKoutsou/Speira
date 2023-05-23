@@ -3,20 +3,20 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
  Nodes {
   RootNode Root {
    Name "Root"
-   EditorPos -1738.5 -513.333
+   EditorPos 1178.167 -1140
    Nodes {
     Sequence Sequence {
      Name "Sequence"
-     EditorPos -1740.941 -366.91
+     EditorPos 1190.726 -990.244
      Nodes {
       AITaskGetCurrentSmartAction "Get Current Smart Action" {
        Name "Get Current Smart Action"
-       EditorPos -4333.458 172.622
+       EditorPos -873.458 -667.378
        OutSmartAction 12
       }
       SCR_AIGetSmartActionSentinelParams "SCR_AI Get Smart Action Guard Params" {
        Name "SCR_AI Get Smart Action Guard Params"
-       EditorPos -3848.959 149.781
+       EditorPos -388.959 -690.219
        InPorts {
         SingleInputPortContainer SingleInputPortContainer {
          Port 12
@@ -52,18 +52,18 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
       }
       AITaskGetSmartActionParams "Get Smart Action Params" {
        Name "Get Smart Action Params"
-       EditorPos -3437.167 143.666
+       EditorPos 22.833 -696.334
        InSmartAction 12
        OutPos -1
        OutSmartActionEntity 14
       }
       Sequence Sequence {
        Name "Sequence"
-       EditorPos -2772.906 141.38
+       EditorPos 687.094 -698.62
        Nodes {
         AITaskFindSmartAction "Find Smart Action" {
          Name "Find Smart Action"
-         EditorPos -3028.834 258.666
+         EditorPos 431.166 -581.334
          Radius 53.067
          OutSmartAction 22
          InPosition 24
@@ -74,7 +74,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
         }
         AITaskGetSmartActionParams "Get Smart Action Params" {
          Name "Get Smart Action Params"
-         EditorPos -2725.555 254.524
+         EditorPos 734.445 -585.476
          InSmartAction 22
          OutPos 23
          OutSmartActionEntity 25
@@ -83,247 +83,189 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
       }
       AITaskSetVariable "Set Variable" {
        Name "Set Variable"
-       EditorPos -2425.501 154.999
+       EditorPos 1034.499 -685.001
        SetValue "true"
        OutVariable 27
       }
       Selector Selector {
        Name "Selector"
-       EditorPos 1198.667 -62.333
+       EditorPos 1868.667 -662.333
        Nodes {
         DecoTestVariable "Test Variable" {
          Name "Test Variable"
-         EditorPos -3284.691 1013.643
+         EditorPos -781.357 883.643
          Nodes {
           Parallel Parallel {
            Name "Parallel"
-           EditorPos -3264.5 1239.5
+           EditorPos -754.5 1109.5
            Nodes {
             Sequence Sequence {
              Name "Sequence"
-             EditorPos -4636.822 1558.369
+             EditorPos -1891.822 1468.369
              Nodes {
               AITaskFindSmartAction "Find Smart Action" {
                Name "Find Smart Action"
-               EditorPos -7036.919 1876.821
+               EditorPos -2921.918 1716.821
                Radius 20
                OutSmartAction 19
                InPosition 32
                Tags {
-                "LightFire" "SwitchLight" "SwitchRadio"
+                "LightFire" "SwitchLight"
                }
                TagsTest AnySet
               }
-              SCR_AISetActionOccupied "SCR_AI Set Action Occupied" {
-               Name "SCR_AI Set Action Occupied"
-               EditorPos -6715 1882.5
-               InPorts {
-                SingleInputPortContainer SingleInputPortContainer {
-                 Port 19
-                 PortName "TargetAction"
-                }
-               }
-              }
               AITaskGetSmartActionParams "Get Smart Action Params" {
                Name "Get Smart Action Params"
-               EditorPos -6407.611 1880.334
+               EditorPos -2348.443 1662
                InSmartAction 19
                OutPos 16
                OutSmartActionEntity 34
               }
-              Selector Selector {
-               Name "Selector"
-               EditorPos -3853 1972.167
+              DecoTestVariable "Test Variable" {
+               Name "Test Variable"
+               EditorPos -1605.5 1741
                Nodes {
-                DecoratorEntity Entity {
-                 Name "Entity"
-                 EditorPos -5101.204 2102.668
+                Selector Selector {
+                 Name "Selector"
+                 EditorPos -1583 1963
                  Nodes {
-                  Sequence Sequence {
-                   Name "Sequence"
-                   EditorPos -6226.583 2491.239
+                  SCR_AIDayNightTest "SCR_AI Day Night Test" {
+                   Name "SCR_AI Day Night Test"
+                   EditorPos -1965.881 2119.212
                    Nodes {
-                    SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
-                     Name "SCR_AI Set Action Un Occupied"
-                     EditorPos -6996.584 2704.572
-                     InPorts {
-                      SingleInputPortContainer SingleInputPortContainer {
-                       Port 75
-                       PortName "TargetAction"
-                      }
-                     }
-                    }
-                    AITaskSetVariable "Set Variable" {
-                     Name "Set Variable"
-                     EditorPos -6672.122 2701.812
-                     ClearVariable 1
-                     OutVariable 76
-                    }
-                    AITaskSetVariable "Set Variable" {
-                     Name "Set Variable"
-                     EditorPos -6469.036 2704.953
-                     ClearVariable 1
-                     OutVariable 73
-                     InVariable -1
-                    }
-                    AITaskSetVariable "Set Variable" {
-                     Name "Set Variable"
-                     EditorPos -6210.295 2694.67
-                     SetValue "true"
-                     ClearVariable 1
-                     OutVariable 72
-                     InVariable -1
-                    }
-                    AITaskSetVariable "Set Variable" {
-                     Name "Set Variable"
-                     EditorPos -5989.583 2702.906
-                     SetValue "false"
-                     OutVariable 77
-                    }
-                   }
-                  }
-                 }
-                 ForceNodeResult Success
-                 InEntity 74
-                 TEST {
-                  SCR_AIDecoTestRadioIsLit "{5D6F14C576348E62}" {
-                  }
-                 }
-                }
-                SCR_AIDayNightTest "SCR_AI Day Night Test" {
-                 Name "SCR_AI Day Night Test"
-                 EditorPos -4386.881 2210.712
-                 Nodes {
-                  DecoratorEntity Entity {
-                   Name "Entity"
-                   EditorPos -4395.453 2362.263
-                   Nodes {
-                    Sequence Sequence {
-                     Name "Sequence"
-                     EditorPos -4366.667 2554.167
+                    DecoratorEntity Entity {
+                     Name "Entity"
+                     EditorPos -1993.453 2269.263
                      Nodes {
-                      SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
-                       Name "SCR_AI Set Action Un Occupied"
-                       EditorPos -5136.667 2767.5
-                       InPorts {
-                        SingleInputPortContainer SingleInputPortContainer {
-                         Port 51
-                         PortName "TargetAction"
+                      Sequence Sequence {
+                       Name "Sequence"
+                       EditorPos -1946.667 2429.167
+                       Nodes {
+                        SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
+                         Name "SCR_AI Set Action Un Occupied"
+                         EditorPos -2716.667 2642.5
+                         InPorts {
+                          SingleInputPortContainer SingleInputPortContainer {
+                           Port 51
+                           PortName "TargetAction"
+                          }
+                         }
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -2392.204 2639.74
+                         ClearVariable 1
+                         OutVariable 44
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -2189.118 2642.881
+                         ClearVariable 1
+                         OutVariable 43
+                         InVariable -1
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -1930.379 2632.598
+                         SetValue "true"
+                         ClearVariable 1
+                         OutVariable 45
+                         InVariable -1
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -1709.667 2640.834
+                         SetValue "false"
+                         OutVariable 33
                         }
                        }
                       }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -4812.204 2764.74
-                       ClearVariable 1
-                       OutVariable 44
+                     }
+                     NegativeCondition 1
+                     InEntity 42
+                     TEST {
+                      SCR_AIDecoTestLightIsLit "{5D6F14C56891D61E}" {
                       }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -4609.118 2767.881
-                       ClearVariable 1
-                       OutVariable 43
-                       InVariable -1
+                     }
+                    }
+                   }
+                  }
+                  SCR_AIDayNightTest "SCR_AI Day Night Test" {
+                   Name "SCR_AI Day Night Test"
+                   EditorPos -1129.915 2157.822
+                   Nodes {
+                    DecoratorEntity Entity {
+                     Name "Entity"
+                     EditorPos -1136.096 2307.707
+                     Nodes {
+                      Sequence Sequence {
+                       Name "Sequence"
+                       EditorPos -1084.833 2472.667
+                       Nodes {
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -1428.704 2626.574
+                         ClearVariable 1
+                         OutVariable 47
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -1212.285 2614.715
+                         ClearVariable 1
+                         OutVariable 46
+                         InVariable -1
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -932.713 2638.598
+                         SetValue "true"
+                         ClearVariable 1
+                         OutVariable 48
+                         InVariable -1
+                        }
+                        AITaskSetVariable "Set Variable" {
+                         Name "Set Variable"
+                         EditorPos -675.333 2637.917
+                         SetValue "false"
+                         OutVariable 49
+                        }
+                       }
                       }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -4350.379 2757.598
-                       SetValue "true"
-                       ClearVariable 1
-                       OutVariable 45
-                       InVariable -1
-                      }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -4129.667 2765.834
-                       SetValue "false"
-                       OutVariable 33
+                     }
+                     InEntity 41
+                     TEST {
+                      SCR_AIDecoTestLightIsLit "{5D6F14C56BF26327}" {
                       }
                      }
                     }
                    }
                    NegativeCondition 1
-                   InEntity 42
-                   TEST {
-                    SCR_AIDecoTestLightIsLit "{5D6F14C56891D61E}" {
-                    }
-                   }
+                  }
+                  AITaskSetVariable "Set Variable" {
+                   Name "Set Variable"
+                   EditorPos -554.071 2192.714
+                   SetValue "true"
+                   OutVariable 50
                   }
                  }
-                }
-                SCR_AIDayNightTest "SCR_AI Day Night Test" {
-                 Name "SCR_AI Day Night Test"
-                 EditorPos -3552.415 2250.322
-                 Nodes {
-                  DecoratorEntity Entity {
-                   Name "Entity"
-                   EditorPos -3556.096 2432.707
-                   Nodes {
-                    Sequence Sequence {
-                     Name "Sequence"
-                     EditorPos -3504.833 2597.667
-                     Nodes {
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -3848.704 2751.574
-                       ClearVariable 1
-                       OutVariable 47
-                      }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -3632.285 2739.715
-                       ClearVariable 1
-                       OutVariable 46
-                       InVariable -1
-                      }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -3352.713 2763.598
-                       SetValue "true"
-                       ClearVariable 1
-                       OutVariable 48
-                       InVariable -1
-                      }
-                      AITaskSetVariable "Set Variable" {
-                       Name "Set Variable"
-                       EditorPos -3095.333 2762.917
-                       SetValue "false"
-                       OutVariable 49
-                      }
-                     }
-                    }
-                   }
-                   InEntity 41
-                   TEST {
-                    SCR_AIDecoTestLightIsLit "{5D6F14C56BF26327}" {
-                    }
-                   }
-                  }
-                 }
-                 NegativeCondition 1
-                }
-                AITaskSetVariable "Set Variable" {
-                 Name "Set Variable"
-                 EditorPos -3109.071 2217.714
-                 SetValue "true"
-                 OutVariable 50
                 }
                }
+               InVariable 34
               }
               AITaskIdle Idle {
                Name "Idle"
-               EditorPos -3600 1830
-               Period 2
+               EditorPos -1047.5 1743.333
+               Period 3
               }
              }
             }
             Sequence Sequence {
              Name "Sequence"
-             EditorPos -1498.102 1608.142
+             EditorPos 576.898 1413.142
              Nodes {
               SCR_AISendOrder_MovementType "SCR_AI Send Order_ Movement Type" {
                Name "SCR_AI Send Order_ Movement Type"
-               EditorPos -2332.507 2155.058
+               EditorPos -272.507 1700.058
                InPorts {
                 SingleInputPortContainer SingleInputPortContainer {
                  Port -1
@@ -338,7 +280,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
               }
               SCR_AIGetRandomPoint "SCR_AI Get Random Point" {
                Name "SCR_AI Get Random Point"
-               EditorPos -1865.095 2182.167
+               EditorPos 194.905 1727.167
                InPorts {
                 SingleInputPortContainer SingleInputPortContainer {
                  Port -1
@@ -363,18 +305,18 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
               }
               AITaskMove Move {
                Name "Move"
-               EditorPos -1625.643 2174.714
+               EditorPos 434.357 1719.714
                InTargetLocation 15
               }
               AITaskIdle Idle {
                Name "Idle"
-               EditorPos -1298.975 2229.413
+               EditorPos 761.025 1774.413
                Period 1
                PeriodRandom 0
               }
               SCR_AISendOrder_Stance "SCR_AI Send Order_ Stance" {
                Name "SCR_AI Send Order_ Stance"
-               EditorPos -1045.924 2206.591
+               EditorPos 1014.076 1751.591
                InPorts {
                 SingleInputPortContainer SingleInputPortContainer {
                  Port -1
@@ -388,31 +330,31 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
               }
               Parallel Parallel {
                Name "Parallel"
-               EditorPos -474.666 2137.666
+               EditorPos 1585.334 1682.666
                Nodes {
                 Sequence Sequence {
                  Name "Sequence"
-                 EditorPos -681.102 2264.475
+                 EditorPos 1378.898 1809.475
                  Nodes {
                   DecoTestVariable "Test Variable" {
                    Name "Test Variable"
-                   EditorPos -1362.048 2538.582
+                   EditorPos 697.952 2083.582
                    Nodes {
                     Switch Switch {
                      Name "Switch"
-                     EditorPos -1349.833 2721.25
+                     EditorPos 710.167 2266.25
                      Nodes {
                       DecoTestVariable "Test Variable" {
                        Name "Test Variable"
-                       EditorPos -1533.87 2896.548
+                       EditorPos 526.13 2441.548
                        Nodes {
                         Sequence Sequence {
                          Name "Sequence"
-                         EditorPos -1507.276 3149.105
+                         EditorPos 552.724 2694.105
                          Nodes {
                           SCR_AIEquipRightHandItem "SCR_AI Equip Right Hand Item" {
                            Name "SCR_AI Equip Right Hand Item"
-                           EditorPos -1717.29 3329.77
+                           EditorPos 342.71 2874.77
                            InPorts {
                             SingleInputPortContainer SingleInputPortContainer {
                              Port -1
@@ -427,7 +369,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                           }
                           AITaskSetVariable "Set Variable" {
                            Name "Set Variable"
-                           EditorPos -1456.416 3345.083
+                           EditorPos 603.584 2890.083
                            SetValue "true"
                            OutVariable 6
                           }
@@ -443,20 +385,20 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                       }
                       DecoTestVariable "Test Variable" {
                        Name "Test Variable"
-                       EditorPos -1096.553 2896.162
+                       EditorPos 963.447 2441.162
                        Nodes {
                         Sequence Sequence {
                          Name "Sequence"
-                         EditorPos -1054.276 3174.105
+                         EditorPos 1005.724 2719.105
                          Nodes {
                           SCR_AIUnEquipItems "SCR_AI Un Equip Items" {
                            Name "SCR_AI Un Equip Items"
-                           EditorPos -1248.388 3363.333
+                           EditorPos 811.612 2908.333
                            m_bKeepRunningUntilAborted 0
                           }
                           AITaskSetVariable "Set Variable" {
                            Name "Set Variable"
-                           EditorPos -830.666 3360.333
+                           EditorPos 1229.334 2905.333
                            SetValue "false"
                            OutVariable 7
                           }
@@ -483,7 +425,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                   }
                   SCR_AIGetRandomPointInCircularSector "SCR_AI Get Random Point In Circular Sector" {
                    Name "SCR_AI Get Random Point In Circular Sector"
-                   EditorPos -582.737 2756.111
+                   EditorPos 1477.263 2301.111
                    InPorts {
                     SingleInputPortContainer SingleInputPortContainer {
                      Port -1
@@ -507,7 +449,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                   }
                   SCR_AILookAtPosition "SCR_AI Look At Position" {
                    Name "SCR_AI Look At Position"
-                   EditorPos 141.334 2738.262
+                   EditorPos 2201.334 2283.262
                    InPorts {
                     SingleInputPortContainer SingleInputPortContainer {
                      Port 5
@@ -528,7 +470,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                   }
                   AITaskIdle Idle {
                    Name "Idle"
-                   EditorPos 418.819 2755.034
+                   EditorPos 2478.819 2300.034
                    Period 2
                    PeriodRandom 3
                   }
@@ -536,7 +478,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                 }
                 SCR_AIUnEquipItems "SCR_AI Un Equip Items" {
                  Name "SCR_AI Un Equip Items"
-                 EditorPos -447.721 2287.333
+                 EditorPos 1612.279 1832.333
                 }
                }
               }
@@ -552,86 +494,31 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
         }
         DecoTestVariable "Test Variable" {
          Name "Test Variable"
-         EditorPos 5771.798 801.524
+         EditorPos 4801.798 841.524
          Nodes {
           Parallel Parallel {
            Name "Parallel"
-           EditorPos 5835 1032.667
+           EditorPos 4865 1072.667
            Nodes {
             Selector Selector {
              Name "Selector"
-             EditorPos 4872.5 1302.5
+             EditorPos 4502.5 1347.5
              Nodes {
-              DecoratorEntity Entity {
-               Name "Entity"
-               EditorPos 1509.5 1580.333
-               Nodes {
-                Sequence Sequence {
-                 Name "Sequence"
-                 EditorPos 1554.001 1912.392
-                 Nodes {
-                  SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
-                   Name "SCR_AI Set Action Un Occupied"
-                   EditorPos 1049.713 2431.488
-                   InPorts {
-                    SingleInputPortContainer SingleInputPortContainer {
-                     Port 55
-                     PortName "TargetAction"
-                    }
-                   }
-                  }
-                  AITaskSetVariable "Set Variable" {
-                   Name "Set Variable"
-                   EditorPos 1158.211 2092.259
-                   ClearVariable 1
-                   OutVariable 54
-                  }
-                  AITaskSetVariable "Set Variable" {
-                   Name "Set Variable"
-                   EditorPos 1411.297 2082.066
-                   ClearVariable 1
-                   OutVariable 56
-                   InVariable -1
-                  }
-                  AITaskSetVariable "Set Variable" {
-                   Name "Set Variable"
-                   EditorPos 1633.369 2083.449
-                   SetValue "true"
-                   ClearVariable 1
-                   OutVariable 58
-                   InVariable -1
-                  }
-                  AITaskSetVariable "Set Variable" {
-                   Name "Set Variable"
-                   EditorPos 1854.263 2084.988
-                   SetValue "false"
-                   OutVariable 57
-                  }
-                 }
-                }
-               }
-               AbortType AbortChildrenBranch
-               InEntity 65
-               TEST {
-                SCR_AIDecoTestRadioIsLit "{5D6EF6CF4404293D}" {
-                }
-               }
-              }
               SCR_AIDayNightTest "SCR_AI Day Night Test" {
                Name "SCR_AI Day Night Test"
-               EditorPos 4594.502 1613.306
+               EditorPos 3624.502 1653.306
                Nodes {
                 DecoratorEntity Entity {
                  Name "Entity"
-                 EditorPos 4589.74 1788.178
+                 EditorPos 3619.74 1828.178
                  Nodes {
                   Sequence Sequence {
                    Name "Sequence"
-                   EditorPos 4622.955 1958.904
+                   EditorPos 3652.955 1998.904
                    Nodes {
                     SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
                      Name "SCR_AI Set Action Un Occupied"
-                     EditorPos 3923.667 2143
+                     EditorPos 2953.667 2183
                      InPorts {
                       SingleInputPortContainer SingleInputPortContainer {
                        Port 52
@@ -641,20 +528,20 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 4277.165 2125.437
+                     EditorPos 3307.165 2165.437
                      ClearVariable 1
                      OutVariable 31
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 4480.251 2128.578
+                     EditorPos 3510.251 2168.578
                      ClearVariable 1
                      OutVariable 20
                      InVariable -1
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 4702.323 2129.961
+                     EditorPos 3732.323 2169.961
                      SetValue "true"
                      ClearVariable 1
                      OutVariable 18
@@ -662,7 +549,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 4923.217 2131.5
+                     EditorPos 3953.217 2171.5
                      SetValue "false"
                      OutVariable 28
                     }
@@ -681,19 +568,19 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
               }
               SCR_AIDayNightTest "SCR_AI Day Night Test" {
                Name "SCR_AI Day Night Test"
-               EditorPos 5993.445 1637.666
+               EditorPos 5023.445 1677.666
                Nodes {
                 DecoratorEntity Entity {
                  Name "Entity"
-                 EditorPos 6008.74 1814.027
+                 EditorPos 5038.74 1854.027
                  Nodes {
                   Sequence Sequence {
                    Name "Sequence"
-                   EditorPos 6052.669 2022.671
+                   EditorPos 5082.669 2062.671
                    Nodes {
                     SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
                      Name "SCR_AI Set Action Un Occupied"
-                     EditorPos 5572.333 2195.333
+                     EditorPos 4602.333 2235.333
                      InPorts {
                       SingleInputPortContainer SingleInputPortContainer {
                        Port 53
@@ -703,20 +590,20 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 5829.378 2191.703
+                     EditorPos 4859.378 2231.703
                      ClearVariable 1
                      OutVariable 35
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 6049.966 2187.344
+                     EditorPos 5079.966 2227.344
                      ClearVariable 1
                      OutVariable 38
                      InVariable -1
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 6272.038 2188.727
+                     EditorPos 5302.038 2228.727
                      SetValue "true"
                      ClearVariable 1
                      OutVariable 39
@@ -724,7 +611,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                     }
                     AITaskSetVariable "Set Variable" {
                      Name "Set Variable"
-                     EditorPos 6492.932 2190.266
+                     EditorPos 5522.932 2230.266
                      SetValue "false"
                      OutVariable 37
                     }
@@ -745,15 +632,25 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
             }
             DecoTestVariable "Test Variable" {
              Name "Test Variable"
-             EditorPos 7440.523 1638.263
+             EditorPos 6470.523 1678.263
              Nodes {
               Sequence Sequence {
                Name "Sequence"
-               EditorPos 7467.047 1899.81
+               EditorPos 6497.047 1939.81
                Nodes {
+                SCR_AISetActionOccupied "SCR_AI Set Action Occupied" {
+                 Name "SCR_AI Set Action Occupied"
+                 EditorPos 5520.333 2133.833
+                 InPorts {
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port 59
+                   PortName "TargetAction"
+                  }
+                 }
+                }
                 SCR_AISendOrder_Stance "SCR_AI Send Order_ Stance" {
                  Name "SCR_AI Send Order_ Stance"
-                 EditorPos 6718.333 2107
+                 EditorPos 5748.333 2147
                  InPorts {
                   SingleInputPortContainer SingleInputPortContainer {
                    Port -1
@@ -768,7 +665,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                 }
                 SCR_AISendOrder_MovementType "SCR_AI Send Order_ Movement Type" {
                  Name "SCR_AI Send Order_ Movement Type"
-                 EditorPos 6973.714 2098.81
+                 EditorPos 6003.714 2138.81
                  InPorts {
                   SingleInputPortContainer SingleInputPortContainer {
                    Port -1
@@ -783,19 +680,19 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                 }
                 AITaskMove Move {
                  Name "Move"
-                 EditorPos 7355.048 2103.81
+                 EditorPos 6385.048 2143.81
                  InTargetLocation 21
                  PrecisionXZ 3
                  PrecisionY 3
                 }
                 AITaskIdle Idle {
                  Name "Idle"
-                 EditorPos 7685.381 2103.81
+                 EditorPos 6715.381 2143.81
                  Period 2
                 }
                 SCR_AIPerformLightAction "SCR_AI Perform Light Action" {
                  Name "SCR_AI Perform Light Action"
-                 EditorPos 7820.379 2115.477
+                 EditorPos 6850.379 2155.477
                  InPorts {
                   SingleInputPortContainer SingleInputPortContainer {
                    Port 17
@@ -803,10 +700,48 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                   }
                  }
                 }
-                AITaskIdle Idle {
-                 Name "Idle"
-                 EditorPos 8091.19 2113.428
-                 Period 2
+                Sequence Sequence {
+                 Name "Sequence"
+                 EditorPos 7330.357 2163.975
+                 Nodes {
+                  SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
+                   Name "SCR_AI Set Action Un Occupied"
+                   EditorPos 6850.021 2336.637
+                   InPorts {
+                    SingleInputPortContainer SingleInputPortContainer {
+                     Port 55
+                     PortName "TargetAction"
+                    }
+                   }
+                  }
+                  AITaskSetVariable "Set Variable" {
+                   Name "Set Variable"
+                   EditorPos 7107.066 2333.007
+                   ClearVariable 1
+                   OutVariable 54
+                  }
+                  AITaskSetVariable "Set Variable" {
+                   Name "Set Variable"
+                   EditorPos 7327.654 2328.648
+                   ClearVariable 1
+                   OutVariable 57
+                   InVariable -1
+                  }
+                  AITaskSetVariable "Set Variable" {
+                   Name "Set Variable"
+                   EditorPos 7549.727 2330.031
+                   SetValue "true"
+                   ClearVariable 1
+                   OutVariable 58
+                   InVariable -1
+                  }
+                  AITaskSetVariable "Set Variable" {
+                   Name "Set Variable"
+                   EditorPos 7770.621 2331.57
+                   SetValue "false"
+                   OutVariable 56
+                  }
+                 }
                 }
                }
               }
@@ -825,115 +760,6 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
        }
       }
      }
-    }
-   }
-  }
-  DecoratorEntity Entity {
-   Name "Entity"
-   EditorPos 3050.143 1650.857
-   Nodes {
-    Sequence Sequence {
-     Name "Sequence"
-     EditorPos 3084.192 1921.059
-     Nodes {
-      SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
-       Name "SCR_AI Set Action Un Occupied"
-       EditorPos 2384.904 2105.155
-       InPorts {
-        SingleInputPortContainer SingleInputPortContainer {
-         Port 61
-         PortName "TargetAction"
-        }
-       }
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos 2738.402 2087.592
-       ClearVariable 1
-       OutVariable 63
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos 2941.488 2090.733
-       ClearVariable 1
-       OutVariable 60
-       InVariable -1
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos 3163.56 2092.116
-       SetValue "true"
-       ClearVariable 1
-       OutVariable 59
-       InVariable -1
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos 3384.454 2093.655
-       SetValue "false"
-       OutVariable 62
-      }
-     }
-    }
-   }
-   AbortType AbortChildrenBranch
-   InEntity 64
-   TEST {
-    SCR_AIDecoTestFireIsLit "{5D6F14C5C1AAFE58}" {
-    }
-   }
-  }
-  DecoratorEntity Entity {
-   Name "Entity"
-   EditorPos -6345.287 3442.502
-   Nodes {
-    Sequence Sequence {
-     Name "Sequence"
-     EditorPos -6326.5 3655.406
-     Nodes {
-      SCR_AISetActionUnOccupied "SCR_AI Set Action Un Occupied" {
-       Name "SCR_AI Set Action Un Occupied"
-       EditorPos -7096.5 3868.739
-       InPorts {
-        SingleInputPortContainer SingleInputPortContainer {
-         Port 68
-         PortName "TargetAction"
-        }
-       }
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos -6817.038 3874.312
-       ClearVariable 1
-       OutVariable 66
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos -6568.952 3869.12
-       ClearVariable 1
-       OutVariable 70
-       InVariable -1
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos -6310.212 3858.837
-       SetValue "true"
-       ClearVariable 1
-       OutVariable 67
-       InVariable -1
-      }
-      AITaskSetVariable "Set Variable" {
-       Name "Set Variable"
-       EditorPos -6089.5 3867.073
-       SetValue "false"
-       OutVariable 71
-      }
-     }
-    }
-   }
-   InEntity 69
-   TEST {
-    SCR_AIDecoTestFireIsLit "{5D6F14C2921F28BB}" {
     }
    }
   }
@@ -1021,315 +847,243 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
  VariablesRefs {
   VariableReference lookDirectionRange {
    VariableType 1
-   EditorPos -636.297 3018.506
+   EditorPos 1423.703 2563.506
   }
   VariableReference desiredStance {
    VariableType 2
-   EditorPos -1346.5 2374.294
+   EditorPos 713.5 1919.294
   }
   VariableReference targetPos {
    VariableType 4
-   EditorPos -2115.606 2355.52
+   EditorPos -55.606 1900.52
   }
   VariableReference useBinoculars {
    VariableType 3
-   EditorPos -1580.332 2631.083
+   EditorPos 479.668 2176.083
   }
   VariableReference wantedLookPosition {
    VariableType 5
-   EditorPos -781.095 2560.48
+   EditorPos 1278.905 2105.48
   }
   VariableReference aimAtPosition {
    VariableType 6
-   EditorPos -122.416 2775.583
+   EditorPos 1937.584 2320.583
   }
   VariableReference isEquipped {
    VariableType 7
-   EditorPos -1282.916 3246.916
+   EditorPos 777.084 2791.916
   }
   VariableReference isEquipped {
    VariableType 7
-   EditorPos -744.916 2911.083
+   EditorPos 1315.084 2456.083
   }
   VariableReference wantedLookPosition {
    VariableType 5
-   EditorPos -3482.792 407.288
+   EditorPos -22.792 -432.712
   }
   VariableReference targetPos {
    VariableType 4
-   EditorPos -3420.446 324.427
+   EditorPos 39.554 -515.573
   }
   VariableReference useBinoculars {
    VariableType 3
-   EditorPos -3439.459 690.955
+   EditorPos 20.541 -149.045
   }
   VariableReference lookDirectionRange {
    VariableType 1
-   EditorPos -3432.459 503.955
+   EditorPos 27.541 -336.045
   }
   VariableReference guardComponent {
    VariableType 0
-   EditorPos -4222.958 366.039
+   EditorPos -762.958 -473.961
   }
   VariableReference desiredStance {
    VariableType 2
-   EditorPos -3429.459 597.955
+   EditorPos 30.541 -242.045
   }
   VariableReference FireplaceEnt {
    VariableType 9
-   EditorPos -3059.88 160.786
+   EditorPos 400.12 -679.214
   }
   VariableReference targetPos {
    VariableType 4
-   EditorPos -1700.095 2364.631
+   EditorPos 359.905 1909.631
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos -6275.896 2033.016
+   EditorPos -2193.396 1811.349
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 7620.557 2298
+   EditorPos 6650.557 2338
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 4897.906 2260.547
+   EditorPos 3927.906 2300.547
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos -6968.207 2055.901
+   EditorPos -2715.208 1869.901
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos 4713.908 2270.118
+   EditorPos 3743.908 2310.118
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos 7147 2264.191
+   EditorPos 6177 2304.191
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos -2979.796 449.595
+   EditorPos 480.204 -390.405
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos -2503.906 627.212
+   EditorPos 956.094 -212.788
   }
   VariableReference targetPos {
    VariableType 4
-   EditorPos -3200.976 384.165
+   EditorPos 259.024 -455.835
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos -2533.236 706.13
+   EditorPos 886.764 -93.87
   }
   VariableReference Light {
    VariableType 12
-   EditorPos 7155.237 1733.905
+   EditorPos 6185.237 1773.905
   }
   VariableReference Light {
    VariableType 12
-   EditorPos -2322.167 383.333
+   EditorPos 1137.833 -456.667
   }
   VariableReference Light {
    VariableType 12
-   EditorPos 5137.574 2272.286
+   EditorPos 4167.574 2312.286
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 4365.359 1889.116
+   EditorPos 3395.359 1929.116
   }
   VariableReference Light {
    VariableType 12
-   EditorPos -3723.69 1117.809
+   EditorPos -1213.69 987.809
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos 4231.216 2271.123
+   EditorPos 3261.216 2311.123
   }
   VariableReference targetPos {
    VariableType 4
-   EditorPos -7233.445 1849.278
+   EditorPos -3118.444 1689.278
   }
   VariableReference Light {
    VariableType 12
-   EditorPos -4016.333 2973.834
+   EditorPos -1596.333 2848.834
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos -6289.833 2109.667
+   EditorPos -2195.667 1888
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos 5860.931 2413.221
+   EditorPos 4890.931 2453.221
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 5801.74 1989.549
+   EditorPos 4831.74 2029.549
   }
   VariableReference Light {
    VariableType 12
-   EditorPos 6707.289 2331.052
+   EditorPos 5737.289 2371.052
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos 6233.623 2330.551
+   EditorPos 5263.623 2370.551
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 6467.621 2319.312
+   EditorPos 5489.621 2359.312
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 5283.476 889.095
+   EditorPos 4313.476 929.095
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos -3820.143 2546.038
+   EditorPos -1400.143 2421.038
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos -4624.691 2473.772
+   EditorPos -2334.191 2141.272
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos -4425.461 2911.088
+   EditorPos -2005.461 2786.088
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos -4823.153 2982.093
+   EditorPos -2403.153 2857.093
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos -4191.463 2899.851
+   EditorPos -1771.463 2774.851
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos -3391.128 2905.422
+   EditorPos -971.128 2780.422
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos -3821.32 2965.593
+   EditorPos -1401.32 2840.593
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos -3157.13 2894.184
+   EditorPos -737.13 2769.184
   }
   VariableReference Light {
    VariableType 12
-   EditorPos -2861.667 2913.917
+   EditorPos -441.667 2788.917
   }
   VariableReference Light {
    VariableType 12
-   EditorPos -2996.214 2354.857
+   EditorPos -356.214 2412.357
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos -5535 2895
+   EditorPos -3115 2770
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos 3774.667 2268
+   EditorPos 2804.667 2308
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos 5341.334 2410
+   EditorPos 4371.334 2450
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos 1162.262 2224.611
+   EditorPos 7138.619 2554.525
   }
   VariableReference FoundComponent {
    VariableType 10
-   EditorPos 900.713 2556.488
+   EditorPos 6619.022 2551.304
+  }
+  VariableReference Light {
+   VariableType 12
+   EditorPos 7984.978 2472.356
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos 1644.954 2223.606
-  }
-  VariableReference Light {
-   VariableType 12
-   EditorPos 2068.62 2225.774
+   EditorPos 7511.312 2471.855
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 1828.952 2214.035
+   EditorPos 7745.31 2460.616
   }
   VariableReference FoundEntity {
    VariableType 11
-   EditorPos 3359.143 2222.702
-  }
-  VariableReference SAPos {
-   VariableType 8
-   EditorPos 3175.145 2232.273
-  }
-  VariableReference FoundComponent {
-   VariableType 10
-   EditorPos 2235.904 2230.155
-  }
-  VariableReference Light {
-   VariableType 12
-   EditorPos 3598.811 2234.441
-  }
-  VariableReference FoundComponent {
-   VariableType 10
-   EditorPos 2692.453 2233.278
-  }
-  VariableReference FoundEntity {
-   VariableType 11
-   EditorPos 2668.333 1753.333
-  }
-  VariableReference FoundEntity {
-   VariableType 11
-   EditorPos 1151.667 1748.333
-  }
-  VariableReference FoundComponent {
-   VariableType 10
-   EditorPos -6782.986 4083.332
-  }
-  VariableReference FoundEntity {
-   VariableType 11
-   EditorPos -6151.296 4001.09
-  }
-  VariableReference FoundComponent {
-   VariableType 10
-   EditorPos -7474.833 3758.739
-  }
-  VariableReference FoundEntity {
-   VariableType 11
-   EditorPos -6616.524 3581.011
-  }
-  VariableReference SAPos {
-   VariableType 8
-   EditorPos -6385.294 4012.327
-  }
-  VariableReference Light {
-   VariableType 12
-   EditorPos -5976.167 4075.073
-  }
-  VariableReference FoundEntity {
-   VariableType 11
-   EditorPos -6051.379 2836.923
-  }
-  VariableReference SAPos {
-   VariableType 8
-   EditorPos -6285.377 2848.16
-  }
-  VariableReference FoundEntity {
-   VariableType 11
-   EditorPos -5691.274 2263.677
-  }
-  VariableReference FoundComponent {
-   VariableType 10
-   EditorPos -7374.917 2594.572
-  }
-  VariableReference FoundComponent {
-   VariableType 10
-   EditorPos -6683.07 2919.165
-  }
-  VariableReference Light {
-   VariableType 12
-   EditorPos -5876.25 2910.906
+   EditorPos 5560 1996
   }
  }
 }
