@@ -5,10 +5,9 @@ GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et
   }
   RigidBody "{5872F0EB7DFB5A9D}" {
   }
-  SCR_AISmartActionSentinelComponent "{5B3CE7974E607C8F}" {
-   AIBehaviorTree "{733B72C3C0264BF0}AI/BehaviorTrees/Chimera/Soldier/GetInVehicle.bt"
+  SCR_AISmartActionComponent "{5D73059622C264BA}" {
    Tags {
-    "GetIn" "Sit"
+    "Chair"
    }
   }
   SCR_BaseCompartmentManagerComponent "{5B3D0526F42DC7E1}" : "{430455409450B2F0}prefabs/Chair_Test/SCR_BaseCompartmentManagerComponent_Chair.ct" {

@@ -166,7 +166,7 @@ GenericEntity : "{49ADEF17D3D91B4F}Prefabs/Structures/Military/Camps/Canvas_Cove
     SCR_BaseInteractiveLightComponent "{5876E7CF88610C12}" {
     }
    }
-   coords 1.051 0.995 1.62
+   coords 0.24 0.098 -1.623
   }
   $grp GenericEntity : "{894A1AFDCB71CD0D}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_02.et" {
    {

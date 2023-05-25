@@ -44,6 +44,7 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
     }
    }
    m_eInitialLightState OFF
+   m_fShouldBeAliveFor 1200
   }
  }
  coords -1.453 -0.08 -4.478

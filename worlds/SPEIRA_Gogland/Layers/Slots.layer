@@ -53,7 +53,7 @@ $grp SCR_SiteSlotEntity : "{14A5C1BE7F231714}prefabs/EntitySlots/Slot_Flat_Large
   {
    GenericEntity {
     ID "5D688C39AE2F4F9C"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -69,7 +69,7 @@ $grp SCR_SiteSlotEntity : "{14A5C1BE7F231714}prefabs/EntitySlots/Slot_Flat_Large
   {
    GenericEntity {
     ID "5D688C39AE2F4F9C"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -85,7 +85,7 @@ $grp SCR_SiteSlotEntity : "{14A5C1BE7F231714}prefabs/EntitySlots/Slot_Flat_Large
   {
    GenericEntity {
     ID "5D688C39AE2F4F9C"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -96,19 +96,11 @@ $grp SCR_SiteSlotEntity : "{14A5C1BE7F231714}prefabs/EntitySlots/Slot_Flat_Large
   }
  }
 }
-$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
- {
-  coords 7326.336 5.944 1051.302
-  angleX -0.752
-  angleY -0.027
-  angleZ 2.039
- }
- {
-  coords 7397.508 8.779 1130.945
-  angleX 2.765
-  angleY 0.098
-  angleZ 1.673
- }
+GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ coords 7397.508 8.779 1130.945
+ angleX 2.765
+ angleY 0.098
+ angleZ 1.673
 }
 $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small.et" {
  {
@@ -646,7 +638,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -662,7 +654,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -678,7 +670,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -694,7 +686,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -710,7 +702,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -726,7 +718,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -742,7 +734,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -758,7 +750,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -774,7 +766,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -790,7 +782,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -806,7 +798,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -822,7 +814,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -838,7 +830,7 @@ $grp SCR_SiteSlotEntity : "{4972228289CFCDC8}prefabs/EntitySlots/Slot_Flat_Small
   {
    GenericEntity {
     ID "5D688C395BFE701F"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1141,22 +1133,6 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   }
  }
  {
-  coords 8038.003 5.001 2088.77
-  angleY -110.464
-  {
-   GenericEntity {
-    ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 -0.001 0
-    angleX 0
-    angleZ 0
-   }
-  }
- }
- {
   coords 6299.557 7.845 7537.563
   angleY 45.354
   {
@@ -1242,7 +1218,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1258,7 +1234,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1274,7 +1250,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1290,7 +1266,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1306,7 +1282,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1322,7 +1298,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1338,7 +1314,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1354,7 +1330,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1370,7 +1346,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1386,7 +1362,7 @@ $grp SCR_SiteSlotEntity : "{97CEFF42961E8B7D}prefabs/EntitySlots/Slot_Flat_Mediu
   {
    GenericEntity {
     ID "5D688C3955ED4600"
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"

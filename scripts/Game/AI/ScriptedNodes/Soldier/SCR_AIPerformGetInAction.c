@@ -1,4 +1,4 @@
-class SCR_AIPerformGetInAction : AITaskScripted
+class SCR_AIPerformLightAction : AITaskScripted
 {
 	//------------------------------------------------------------------------------------------------
 	protected static ref TStringArray s_aVarsIn = {
@@ -18,7 +18,18 @@ class SCR_AIPerformGetInAction : AITaskScripted
 		string userActionString;
 		typename userAction;
 		GetVariableIn("TargetEntity", targetEntity);
-		userActionString = "SCR_GetInUserAction";
+		if(SCR_FireplaceComponent.Cast(targetEntity.FindComponent(SCR_FireplaceComponent)))
+		{
+			userActionString = "SCR_LightFireplaceUserAction";
+		}
+		else if(SCR_BaseInteractiveLightComponent.Cast(targetEntity.FindComponent(SCR_BaseInteractiveLightComponent)))
+		{
+			userActionString = "SCR_SwitchLightUserAction";
+		}
+		else if(RadioBroadcastComponent.Cast(targetEntity.FindComponent(RadioBroadcastComponent)))
+		{
+			userActionString = "SCR_TurnOnAction";
+		}
 
 		IEntity controlledEntity = owner.GetControlledEntity();
 		if (!controlledEntity)

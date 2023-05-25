@@ -34,7 +34,33 @@
 		return false;
 	}
 };
- class SCR_AIDecoTestLightIsLit : DecoratorTestScripted
+class SCR_AIDecoTestLightIsLit : DecoratorTestScripted
+{
+	
+	private SCR_BaseInteractiveLightComponent m_LightComponent;
+	
+	//------------------------------------------------------------------------------------------------
+	protected override bool TestFunction(AIAgent agent, IEntity controlled)
+	{	
+		if (controlled)
+		{	
+			m_LightComponent = SCR_BaseInteractiveLightComponent.Cast(controlled.FindComponent(SCR_BaseInteractiveLightComponent));
+			if (!m_LightComponent)
+				return false;
+			
+			if (m_LightComponent.IsInherited(SCR_FireplaceComponent))
+				return false;
+			
+			bool light = m_LightComponent.IsOn();
+			if(light == true)
+			{
+			return true;
+			}
+		}
+		return false;
+	}
+};
+class SCR_AIDecoTestLightIsOff : DecoratorTestScripted
 {
 	private SCR_BaseInteractiveLightComponent m_LightComponent;
 	
@@ -46,8 +72,14 @@
 			m_LightComponent = SCR_BaseInteractiveLightComponent.Cast(controlled.FindComponent(SCR_BaseInteractiveLightComponent));
 			if (!m_LightComponent)
 				return false;
+			if (m_LightComponent.IsInherited(SCR_FireplaceComponent))
+				return false;
 			bool light = m_LightComponent.IsOn();
-			return light;
+			if(light == false)
+			{
+				return true;
+			}
+			
 		}
 		return false;
 	}

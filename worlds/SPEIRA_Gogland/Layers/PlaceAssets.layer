@@ -44,9 +44,10 @@ $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/
   angleY 75.507
  }
  {
-  coords 7078.252 6.099 5194.06
-  angleX -2.856
-  angleY 75.507
+  coords 7078.253 6.175 5194.063
+  angleX -1.25
+  angleY 75.428
+  angleZ -1.947
  }
  {
   coords 7208.672 4.324 5310.882
@@ -282,13 +283,70 @@ $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/
   angleY -0.228
   angleZ 1.19
  }
+ {
+  coords 6942.669 17.139 4705.214
+  angleX -0.45
+  angleY 75.527
+  angleZ -2.562
+ }
+ {
+  coords 7078.022 7.05 5010.823
+  angleX -0.448
+  angleY 75.514
+  angleZ -1.733
+ }
+ {
+  coords 7870.624 10.099 3758.658
+  angleX -1.777
+  angleY 0.562
+  angleZ -2.975
+ }
 }
 GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et" {
  coords 6456.635 9.668 7033.938
  angleY 14.033
 }
-SCR_DefendWaypoint : "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et" {
- coords 8072.745 25.815 2741.333
+$grp GenericEntity : "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et" {
+ {
+  coords 6208.55 11.804 7614.146
+  angleY 0
+ }
+ {
+  coords 6219.995 7.47 7387.726
+  angleY 0
+ }
+ {
+  coords 6463.72 9.563 7029.57
+  angleY -0
+ }
+ {
+  coords 7578.931 18.345 4031.26
+  angleY 0
+ }
+ {
+  coords 5979.766 38.576 2925.662
+  angleY 0
+ }
+ {
+  coords 7351.958 4.319 1082.211
+  angleY 0
+ }
+ {
+  coords 8000.739 5.119 2064.291
+  angleY 0
+ }
+ {
+  coords 8077.259 26.235 2735.247
+  angleY 0
+ }
+ {
+  coords 7888.389 9.827 3748.954
+  angleY 0
+ }
+}
+GenericEntity : "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et" {
+ coords 5206.533 55.322 7953.1
+ angleY 94.371
 }
 GenericEntity : "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" {
  coords 8066.03 25.901 2736.11
@@ -333,8 +391,20 @@ $grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et
  {
   coords 8075.585 26.341 2736.219
   angleX -4.467
-  angleY -0
+  angleY 0
   angleZ 6.223
+ }
+ {
+  coords 5225.755 67.175 7967.813
+  angleX 0
+  angleY -54.545
+  angleZ 0
+ }
+ {
+  coords 7889.751 9.889 3748.143
+  angleX 0
+  angleY 37.648
+  angleZ 0
  }
 }
 $grp GenericEntity : "{CB9858D47F40C445}prefabs/Items/Other/Meteor_Base.et" {
@@ -415,6 +485,29 @@ GenericEntity : "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/San
  }
  coords 8086.326 25.518 2732.264
  angleY -65.99
+}
+$grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ {
+  coords 6322.898 12.581 4761.031
+ }
+ {
+  coords 6413.909 37.982 5154.896
+ }
+ {
+  coords 6555.514 52.407 5524.675
+ }
+ {
+  coords 6467.221 54.62 5519.782
+ }
+ {
+  coords 6482.458 65.262 6009.796
+ }
+ {
+  coords 6372.079 4.501 6576.462
+ }
+ {
+  coords 6547.958 6.97 6950.947
+ }
 }
 GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
  coords 7573.779 18.345 4034.403

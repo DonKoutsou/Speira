@@ -12,64 +12,28 @@ SCR_AIWorld : "{E0A05C76552E7F58}prefabs/AI/SCR_AIWorld.et" {
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 121.632 0.848 131.081
 }
-$grp GameEntity : "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et" {
- {
-  coords 125.71 0.729 131.903
+GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ components {
+  SCR_AISmartActionComponent "{5D68C508AA42C672}" {
+   OnDurringNight 1
+  }
  }
- {
-  coords 149.92 0.724 129.827
- }
-}
-$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
- {
-  coords 144.675 0.429 135.972
-  angleY 0
- }
- {
-  coords 120.516 1.001 123.328
-  angleY 0
- }
- {
-  coords 122.525 0.703 138.073
-  angleY 0
- }
-}
-$grp GameEntity : "{616F4E93658E5A3A}prefabs/Props/Military/Generators/GeneratorFloodlight_USSR_01.et" {
- {
-  coords 154.882 0.979 121.402
- }
- {
-  coords 129.284 0.934 124.258
- }
- {
-  coords 141.979 0.798 125.664
- }
+ coords 122.525 0.703 138.073
+ angleY 0
 }
 SCR_DefendWaypoint waypint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et" {
  coords 128.162 0.741 131.305
 }
-$grp GenericEntity : "{B68D3829D4442F80}prefabs/Props/Civilian/RadioSmall_01_Base.et" {
- {
-  coords 133.807 0.67 130.652
+GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ components {
+  SCR_AISmartActionComponent "{5D73059622C264BA}" {
+   OnDurringNight 1
+  }
  }
- {
-  coords 133.807 0.67 131.279
- }
- {
-  coords 125.412 0.67 129.432
- }
- {
-  coords 130.17 0.67 127.725
- }
- {
-  coords 129.182 0.67 129.389
- }
- {
-  coords 129.131 0.631 134.524
- }
-}
-GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
- coords 132.156 0.64 132.478
+ coords 126.731 0.797 135.061
+ angleX 0
+ angleY 0
+ angleZ 0
 }
 SCR_AIGroup : "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et" {
  coords 133.067 0.611 142.594

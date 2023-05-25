@@ -1054,6 +1054,9 @@ GenericEntity : "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.
 GenericEntity : "{7F1A910F6EA32A82}Prefabs/Systems/Arsenal/AmmoBoxes/FIA/AmmoBoxArsenal_Equipment_FIA.et" {
  coords 98.702 1.001 140.233
 }
+GameEntity : "{83CBF3BB1EE36382}prefabs/Props/Civilian/Fireplace_tower.et" {
+ coords 98.572 1.001 149.343
+}
 GenericEntity : "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" {
  components {
   InventoryItemComponent "{5222EB4D0C73006B}" {

@@ -3246,6 +3246,11 @@ SCR_GameModeEditor {
     Style BaseChatChannelStyle "{5D685A535B29BDD7}" {
     }
    }
+   m_ChatChannelUS USChatChannel "{5D72F115C7F0476D}" {
+    "Channel name" "US"
+    Style BaseChatChannelStyle "{5D72F115D9030191}" {
+    }
+   }
    m_ChatChannelBANDITS BANDITSChatChannel "{5D685A535B29BDC3}" {
     "Channel name" "BANDITS"
     Style BaseChatChannelStyle "{5D685A535B29BDC2}" {

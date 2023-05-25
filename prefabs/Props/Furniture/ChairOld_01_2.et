@@ -1,18 +1,14 @@
-GenericEntity : "{261F10BDC068BB35}Prefabs/Props/Furniture/ChairOld_01.et" {
+GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
  ID "51F6B642F8488774"
  components {
   ControllersManagerComponent "{5C44F26A9AFA9EF0}" {
   }
   RigidBody "{5872F0EB7DFB5A9D}" {
   }
-  SCR_AISmartActionSentinelComponent "{5C44F26A9AFA9EEB}" {
-   AIBehaviorTree "{733B72C3C0264BF0}AI/BehaviorTrees/Chimera/Soldier/GetInVehicle.bt"
+  SCR_AISmartActionSentinelComponent "{5B3CE7974E607C8F}" {
    Tags {
-    "GetIn"
+    "Chair"
    }
-   ActionOffset 0 0.718 0
-   m_vLookPosition 0 1 1.822
-   m_fLookDirectionRange 360
   }
   SCR_BaseCompartmentManagerComponent "{5B3D0526F42DC7E1}" : "{430455409450B2F0}prefabs/Chair_Test/SCR_BaseCompartmentManagerComponent_Chair.ct" {
   }

@@ -22,6 +22,17 @@ GenericEntity : "{48D88E385C227340}Prefabs/Compositions/Misc/SubCompositions/Bar
   GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
    ID "5B04EE39C2C9F10A"
    components {
+    SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
+     ActionOffset -1.4 0 -0.293
+     m_iCharacterStance STAND
+    }
+    SCR_AISmartActionSentinelComponent "{5B1EF59F9C8CE0B9}" {
+     ActionOffset 1.636 0 2.62
+    }
+    SCR_AISmartActionSentinelComponent "{5D68B95625C1144A}" {
+     ActionOffset 1.644 0 -0.947
+     m_iCharacterStance STAND
+    }
     SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
      m_aLightData {
       SCR_BaseLightData "{58D0938270686D72}" {
