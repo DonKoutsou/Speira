@@ -21,6 +21,10 @@ GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill
  coords 122.525 0.703 138.073
  angleY 0
 }
+SCR_ChimeraCharacter : "{A0B2084D7A976723}prefabs/Characters/Factions/Bandits/Character_Bandit_Rifleman.et" {
+ coords 125.655 0.651 140.635
+ angleY 0
+}
 GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  components {
   SCR_AISmartActionComponent "{5D73059622C264BA}" {

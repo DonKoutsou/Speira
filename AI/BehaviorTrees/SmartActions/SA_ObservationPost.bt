@@ -634,6 +634,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                         AITaskFindSmartAction "Find Smart Action" {
                          Name "Find Smart Action"
                          EditorPos 1902.083 3075.19
+                         Radius 20
                          OutSmartAction 83
                          InPosition 82
                          Tags {
@@ -670,15 +671,15 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                         }
                         DecoTestVariable "Test Variable" {
                          Name "Test Variable"
-                         EditorPos 2941.916 3094.666
+                         EditorPos 3059.059 3084.666
                          Nodes {
                           Sequence Sequence {
                            Name "Sequence"
-                           EditorPos 2952.306 3255
+                           EditorPos 3029.449 3649.107
                            Nodes {
                             SCR_AISendOrder_Stance "SCR_AI Send Order_ Stance" {
                              Name "SCR_AI Send Order_ Stance"
-                             EditorPos 2314.131 3443.881
+                             EditorPos 2391.274 3837.988
                              InPorts {
                               SingleInputPortContainer SingleInputPortContainer {
                                Port -1
@@ -692,21 +693,21 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                             }
                             AITaskMove Move {
                              Name "Move"
-                             EditorPos 2703.139 3427.472
+                             EditorPos 2780.282 3821.579
                              InTargetLocation 84
                              PrecisionXZ 2
                              PrecisionY 2
                             }
                             AITaskGetInVehicle "Get In Vehicle" {
                              Name "Get In Vehicle"
-                             EditorPos 3046.667 3431.667
+                             EditorPos 3123.81 3825.774
                              Position Cargo
                              InVehicle 85
                              InCompartmentSlot 88
                             }
                             AITaskIdle Idle {
                              Name "Idle"
-                             EditorPos 3470.357 3428.428
+                             EditorPos 3547.5 3822.535
                              Period 5
                              PeriodRandom 3
                             }
@@ -718,7 +719,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                         }
                         AITaskIdle Idle {
                          Name "Idle"
-                         EditorPos 3253.06 3077.703
+                         EditorPos 3414.489 3094.846
                          Period 2
                          PeriodRandom 3
                         }
@@ -1681,11 +1682,11 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos 2404.667 2963.167
+   EditorPos 2348.953 3278.881
   }
   VariableReference Vehicle {
    VariableType 13
-   EditorPos 2389.023 3232.572
+   EditorPos 2396.166 3195.429
   }
   VariableReference DnightBool {
    VariableType 14
@@ -1697,7 +1698,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
   }
   VariableReference Compartment {
    VariableType 15
-   EditorPos 2612.5 3230
+   EditorPos 2795.714 3272.857
   }
   VariableReference MyAgent {
    VariableType 16

@@ -60,6 +60,19 @@ class DialogueStage
 				}
 			}
 	}
+	bool CheckIfAnyBranchesBranch(IEntity Character, out int branchedID)
+	{
+		for (int i, count = m_Branch.Count(); i < count; i++)
+		{
+				if(m_Branch[i].CheckIfBranched(Character) == true)
+				{
+					branchedID = i;
+					return true;
+				}
+		}
+		return false;
+	}
+	
 	//------------------------------------------------------------------//
 	bool CheckIfStageCanBranch()
 	{

@@ -3219,7 +3219,7 @@ SCR_GameModeEditor {
   }
   SP_DialogueComponent "{5D685A535B29A212}" {
    m_CharacterArchetypeList {
-    SP_DialogueArchetype "{5D685A5B3E2FAF0F}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
+    SP_DialogueArchetype "{5D751D2947B6938D}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
     }
     SP_DialogueArchetype "{5D685A5DD5DC418E}" : "{81B9C2CC73B3921A}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Medic.conf" {
     }

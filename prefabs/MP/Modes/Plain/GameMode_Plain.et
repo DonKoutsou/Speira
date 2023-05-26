@@ -52,6 +52,10 @@ SCR_BaseGameMode : "{0F307326459A1395}prefabs/MP/Modes/GameMode_Base.et" {
    m_bRandomStartingWeather 1
   }
   SP_DialogueComponent "{5D1547897BFE725A}" {
+   m_CharacterArchetypeList {
+    SP_DialogueArchetype "{5D750354ADD40E19}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
+    }
+   }
    m_ChatChannelFIA FIAChatChannel "{5D4F1DF0E0653056}" {
     "Channel name" "FIA"
     Style BaseChatChannelStyle "{5D4F1DF3A88E2A87}" {
@@ -60,6 +64,11 @@ SCR_BaseGameMode : "{0F307326459A1395}prefabs/MP/Modes/GameMode_Base.et" {
    m_ChatChannelUSSR USSRChatChannel "{5D4F1DF0E5396A65}" {
     "Channel name" "USSR"
     Style BaseChatChannelStyle "{5D4F1DF3AB2ACB39}" {
+    }
+   }
+   m_ChatChannelUS USChatChannel "{5D750354990E736E}" {
+    "Channel name" "US"
+    Style BaseChatChannelStyle "{5D7503549C4BDEE8}" {
     }
    }
    m_ChatChannelBANDITS BANDITSChatChannel "{5D4F1DF0E6E39FDA}" {

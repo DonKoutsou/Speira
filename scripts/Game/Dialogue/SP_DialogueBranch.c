@@ -138,7 +138,8 @@ class SP_DialogueBranch
 		{
 
 			int BranchedID = Conf.GetBranchedID();
-			bool BranchState = m_BranchStages[DiagStage].GetBranch(BranchedID).CheckIfBranched(Character);
+			
+			bool BranchState = m_BranchStages[DiagStage].CheckIfAnyBranchesBranch(Character, BranchedID);
 			if (BranchState == true)
 			{
 				branch = m_BranchStages[DiagStage].GetBranch(BranchedID);
@@ -253,16 +254,17 @@ class DialogueBranchConfigTitleAttribute : BaseContainerCustomTitle
 {
 	override bool _WB_GetCustomTitle(BaseContainer source, out string title)
 	{
-		array <ref DialogueStage> Stages;
-		source.Get("m_BranchStages", Stages);
-		string texttoshow;
-		for (int i, count = Stages.Count(); i < count; i++)
-		{
-			if (Stages[i].CheckIfStageCanBranch() == true)
-			texttoshow = "Branches at stage" + " " + i;
-			
-		}
-		title = string.Format("Branch" + " " + texttoshow);
+		//array <ref DialogueStage> Stages;
+		//source.Get("m_BranchStages", Stages);
+		//string texttoshow;
+		//for (int i, count = Stages.Count(); i < count; i++)
+		//{
+		//	if (Stages[i].CheckIfStageCanBranch() == true)
+		//	texttoshow = "Branches at stage" + " " + i;
+		//	
+		//}
+		//title = string.Format("Branch" + " " + texttoshow);
+		title = string.Format("Branch");
 		return true;
 	}
 };
