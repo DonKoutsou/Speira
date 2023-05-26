@@ -1,11 +1,18 @@
 SCR_DefendWaypoint {
  ID "50EECB8790B5A515"
  AIBehaviorTreeMoveTo "{62D36413D46F02A6}AI/BehaviorTrees/Waypoints/WP_Patrol.bt"
- m_holdingTime 5
+ CompletionType Any
+ m_holdingTime 5000
  m_DefendPresets {
   SCR_DefendWaypointPreset "{58D6884489389713}" {
+   m_aTagsForSearch {
+    "ObservationPost" "ChillPost" "GatePost"
+   }
   }
   SCR_DefendWaypointPreset "{58D688448899BCA0}" {
+   m_aTagsForSearch + {
+    "ChillPost"
+   }
   }
  }
 }

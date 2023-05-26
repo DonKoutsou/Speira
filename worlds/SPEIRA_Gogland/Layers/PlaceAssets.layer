@@ -34,9 +34,70 @@ $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/
   angleY 75.507
  }
  {
-  coords 8038.482 6.585 3251.79
+  coords 8040.077 6.51 3250.251
   angleX -2.856
   angleY 75.507
+  {
+   GenericEntity {
+    ID "5D42C1444C1C2140"
+    coords 2.044 0.156 1.039
+   }
+   GenericEntity {
+    ID "5D42C1444C1C214E"
+    coords 2.332 0.153 1.379
+   }
+   GenericEntity {
+    ID "5D42C1444C1C214F"
+    coords 2.262 0.154 0.933
+   }
+   GenericEntity {
+    ID "5D42C1444C1CB21B"
+    coords -1.708 0.122 -1.298
+   }
+   GenericEntity {
+    ID "5D42C1444C1CC5E5"
+    coords -0.329 0.205 2.491
+    angleX 1.243
+    angleY -0.015
+    angleZ -1.386
+   }
+   GenericEntity {
+    ID "5D42C1444C1CE8B0"
+    coords -1.437 0.122 -1.112
+   }
+   GenericEntity {
+    ID "5D42C1444C1CE8B3"
+    coords -0.177 0.21 2.966
+    angleX 1.243
+    angleY -0.015
+    angleZ -1.386
+   }
+   GenericEntity {
+    ID "5D42C1444C1C6AD4"
+    coords 2.403 -0.115 -0.408
+   }
+   GenericEntity {
+    ID "5D42C1444C1DF9FA"
+    coords -1.264 -0.173 1.918
+    angleX 1.861
+    angleY 48.096
+   }
+   GenericEntity {
+    ID "5D42C1444C1CB21E"
+    coords -0.766 -0.031 2.476
+    angleX 1.751
+    angleY 67.948
+    angleZ 0.632
+   }
+   GenericEntity {
+    ID "5D42C1444C1D2266"
+    coords 1.854 0.059 -0.133
+   }
+   GenericEntity {
+    ID "5D42C1444C1D2299"
+    coords -1.531 0.025 -1.577
+   }
+  }
  }
  {
   coords 7335.279 8.26 4776.571
@@ -317,7 +378,7 @@ $grp GenericEntity : "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et" {
  }
  {
   coords 6463.72 9.563 7029.57
-  angleY -0
+  angleY 0
  }
  {
   coords 7578.931 18.345 4031.26
@@ -347,6 +408,19 @@ $grp GenericEntity : "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et" {
 GenericEntity : "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et" {
  coords 5206.533 55.322 7953.1
  angleY 94.371
+}
+GenericEntity : "{AF22EA080CAA0185}Prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_US_01_Campaign.et" {
+ coords 8045.201 6.704 3259.01
+ angleY -143.389
+ {
+  GenericEntity {
+   ID "569C85460C400F2C"
+   coords -0.731 -0.02 -0.1
+   angleX -10.923
+   angleY 95.982
+   angleZ -12.647
+  }
+ }
 }
 GenericEntity : "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" {
  coords 8066.03 25.901 2736.11
@@ -404,6 +478,24 @@ $grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et
   coords 7889.751 9.889 3748.143
   angleX 0
   angleY 37.648
+  angleZ 0
+ }
+ {
+  coords 8034.118 6.703 3252.284
+  angleX 0
+  angleY 156.282
+  angleZ 0
+ }
+ {
+  coords 8145.313 6.503 3668.515
+  angleX 0
+  angleY -112.053
+  angleZ 0
+ }
+ {
+  coords 8145.526 6.624 3666.813
+  angleX 0
+  angleY -74.969
   angleZ 0
  }
 }
@@ -508,8 +600,11 @@ $grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
  {
   coords 6547.958 6.97 6950.947
  }
+ {
+  coords 8144.207 6.491 3667.224
+ }
 }
 GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
- coords 7573.779 18.345 4034.403
+ coords 7581.034 18.345 4041.737
  angleY 180
 }

@@ -1,12 +1,5 @@
 $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_HostileArea.et" {
  {
-  coords 6254.02 48.876 5084.909
-  m_MaxAgentsToSpawn 2
-  m_Radius 200
-  m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
-  }
- }
- {
   coords 7169.131 5.846 5216.708
   m_MaxAgentsToSpawn 2
   m_Radius 200
@@ -310,10 +303,17 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132114A735D}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
+ {
+  coords 6254.02 48.876 5084.909
+  m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
+  }
+ }
 }
 $grp SP_AIDirector : "{248F75698912DFA0}prefabs/AI/Spawners/SP_AIDirector_Trader_Bandit.et" {
  {
   coords 7191.356 33.099 1303.392
+  m_Radius 15
+  m_CommanderRespawnTimer 300
  }
  {
   coords 8073.848 26.057 2739.354
@@ -326,8 +326,17 @@ $grp SP_AIDirector : "{248F75698912DFA0}prefabs/AI/Spawners/SP_AIDirector_Trader
 SP_AIDirector : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
  coords 5993.187 44.563 4777.992
 }
+$grp GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+ {
+  coords 7194.195 33.869 1303.783
+ }
+ {
+  coords 7204.907 33.594 1322.51
+  angleY 104.448
+ }
+}
 SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
- coords 7623.173 18.345 3965.748
+ coords 7597.931 18.345 4006.69
  DangerEventRange 100
  m_Radius 100
  m_CompositionRadius 200
@@ -335,7 +344,7 @@ SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
   "{4721B764D072C7CB}prefabs/Compositions/Misc/Tavern_Comp.et"
  }
  m_CompositionsLarge {
-  "{B0F9762BD9433F2A}prefabs/Compositions/Slotted/SlotFlatSmall/Perelle_FIA_Area.et" "{F68F3B7247F6E80F}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et"
+  "{70BEEEC472F2CD7D}Prefabs/Compositions/Slotted/SlotFlatMedium/FieldHospital_M_USSR_01.et" "{6DF32F9976E68515}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_USSR_01.et"
  }
  m_CompositionsRoad {
   "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et" "{5F42399DF7455261}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_US_01.et" "{27F6A0815E6FF6EE}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_USSR_01.et" "{172D03072FE6ECAA}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_US_01.et" "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et"
@@ -360,6 +369,10 @@ SP_AIDirector : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_AIDirector_Bandits.et"
 }
 SP_AIDirector : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AIDirector_USSR.et" {
  coords 5230.286 101.13 7970.124
+}
+GenericEntity : "{B68D3829D4442F80}prefabs/Props/Civilian/RadioSmall_01_Base.et" {
+ coords 7194.13 33.868 1303.245
+ angleY 178.584
 }
 GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  coords 7190.05 33.063 1299.65

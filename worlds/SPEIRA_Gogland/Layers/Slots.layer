@@ -32,18 +32,18 @@ $grp SCR_SiteSlotEntity : "{14A5C1BE7F231714}prefabs/EntitySlots/Slot_Flat_Large
   }
  }
  {
-  coords 7623.274 18.345 3965.683
+  coords 7620.917 18.345 3971.095
   angleY -9.059
   {
    GenericEntity {
     ID "5D688C39AE2F4F9C"
-    coords 0 -9223372036854775808 0
+    coords 0 -9223372036854775808.000 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
-    coords 0 0.303 0
-    angleX -0.103
-    angleZ -0.774
+    coords 0 0.286 0
+    angleX 0
+    angleZ -0.731
    }
   }
  }

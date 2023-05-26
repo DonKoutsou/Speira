@@ -13,22 +13,13 @@ class SCR_AISetCompartmentInAccessible : AITaskScripted
 	//----------------------------------------------------------------------------------------------------------------------------------------------
 	override ENodeResult EOnTaskSimulate(AIAgent owner, float dt)
 	{
-		return ENodeResult.RUNNING;
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------------	
-	override void OnAbort(AIAgent owner, Node nodeCausingAbort)
-	{
-		if (m_bAbortDone)
-			return;
-		
-		m_bAbortDone = true;
 		IEntity vehicle;
 		BaseCompartmentSlot compartment;
 		if (!GetVariableIn(Vehicle_PORT, vehicle))
-			return;
+			return ENodeResult.FAIL;
 		compartment = BaseCompartmentSlot.Cast(vehicle.FindComponent(BaseCompartmentSlot));
-		compartment.SetCompartmentAccessible(false);
+		compartment.SetReserved(owner.GetControlledEntity());
+		return ENodeResult.SUCCESS;
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------------

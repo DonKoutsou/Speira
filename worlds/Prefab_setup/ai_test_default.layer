@@ -21,9 +21,6 @@ GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill
  coords 122.525 0.703 138.073
  angleY 0
 }
-SCR_DefendWaypoint waypint : "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et" {
- coords 128.162 0.741 131.305
-}
 GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  components {
   SCR_AISmartActionComponent "{5D73059622C264BA}" {
@@ -34,13 +31,4 @@ GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  angleX 0
  angleY 0
  angleZ 0
-}
-SCR_AIGroup : "{EF62027CC75A7459}Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et" {
- coords 133.067 0.611 142.594
- m_aUnitPrefabSlots {
-  "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et" "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et"
- }
- m_aStaticWaypoints {
-  "waypint"
- }
 }
