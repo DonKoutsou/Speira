@@ -7,7 +7,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
    Nodes {
     Sequence Sequence {
      Name "Sequence"
-     EditorPos 1195.226 -986.911
+     EditorPos 1202.726 -1024.411
      Nodes {
       AITaskGetCurrentSmartAction "Get Current Smart Action" {
        Name "Get Current Smart Action"
@@ -805,14 +805,13 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
            }
           }
          }
-         AbortType AbortChildrenBranchAndParentFurtherChildren
          InVariable 67
          TestType EqualsValue
          TestValue "false"
         }
         DecoTestVariable "Test Variable" {
          Name "Test Variable"
-         EditorPos 6901.084 770.334
+         EditorPos 6906.084 770.334
          Nodes {
           Parallel Parallel {
            Name "Parallel"
@@ -1215,7 +1214,6 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
                }
               }
              }
-             AbortType AbortChildrenBranch
              InVariable 68
              TestType EqualsValue
              TestValue "true"
@@ -1223,7 +1221,6 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
            }
           }
          }
-         AbortType AbortChildrenBranch
          InVariable 30
         }
        }

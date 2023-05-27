@@ -73,15 +73,6 @@ SCR_ChimeraCharacter {
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
-    SP_DialogueAction "{5D026EE20EFDD9C5}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5D50F009BFA7ED29}" {
-      Name "Talk"
-     }
-     Duration 0
-    }
    }
   }
   CharacterAnimationComponent "{520EA1D2F659C994}" {

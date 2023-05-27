@@ -116,10 +116,7 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 			return;
 		}
 		m_fShouldBeAliveFor -= timeSlice;
-		if(m_fShouldBeAliveFor <= 0)
-		{
-			ToggleLight(false);
-		}
+		
 		m_fTimer += timeSlice;
 		
 		if (m_fTimer < FLICKER_FREQUENCY)
@@ -147,6 +144,10 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 			auto ld = lightData[i]; // make sure that data is loaded
 			if (ld)
 				m_aLights[i].SetColor(Color.FromVector(ld.GetLightColor()), m_fCurLV);
+		}
+		if(m_fShouldBeAliveFor <= 0)
+		{
+			ToggleLight(false);
 		}
 	}
 
