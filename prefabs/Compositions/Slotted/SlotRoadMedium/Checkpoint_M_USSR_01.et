@@ -15,6 +15,10 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
    m_fLookDirectionRange 180
    m_bUseBinoculars 1
   }
+  SCR_AISmartActionSentinelComponent "{5D78D1F4CD4A0BB8}" : "{A6EB3E0793DF2F7D}Configs/ObservationPost_Sentinel.ct" {
+   ActionOffset -3.074 0 -2.185
+   m_vLookPosition -3.313 0 24.273
+  }
  }
  {
   GenericEntity {

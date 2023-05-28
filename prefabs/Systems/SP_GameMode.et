@@ -5498,7 +5498,7 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
      FactionColor 0.259 0.686 0.669 1
      UIInfo SCR_FactionUIInfo "{5D5705392CC6B2A2}" {
      }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC6C3B3}" {
+     "Identity of soldiers" FactionIdentity "{5D5705392CC6C3B3}" : "{FBBCD73926989580}Configs/Identities/FactionIdentity_USSR.conf" {
      }
      m_iOrder 4000
      m_OutlineFactionColor 0 0.367 0.502 1
@@ -5538,7 +5538,7 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
      FactionColor 0.475 0.259 0.686 1
      UIInfo SCR_FactionUIInfo "{5D5705392CC6C3E9}" {
      }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC6D19C}" {
+     "Identity of soldiers" FactionIdentity "{5D5705392CC6D19C}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
      }
      m_iOrder 5000
      m_OutlineFactionColor 0.251 0 0.502 1
@@ -5580,7 +5580,7 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
      FactionColor 1 0.983 0.078 1
      UIInfo SCR_FactionUIInfo "{5D5705392CC6D1DC}" {
      }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC748AF}" {
+     "Identity of soldiers" FactionIdentity "{5D5705392CC748AF}" : "{034A84F706D102EC}Configs/Identities/FactionIdentity_BANDITS.conf" {
      }
      m_iOrder 5000
      m_OutlineFactionColor 0 0 0 1

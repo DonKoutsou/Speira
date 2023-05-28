@@ -8,7 +8,7 @@ SCR_DefendWaypoint {
  m_DefendPresets {
   SCR_DefendWaypointPreset "{5CA07E9823A76151}" {
    m_aTagsForSearch {
-    "ChillPost"
+    "ObservationPost" "ChillPost"
    }
   }
   SCR_DefendWaypointPreset "{5CA07E9823A76159}" {

@@ -8,6 +8,10 @@ GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
   }
   SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
    Enabled 1
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ChillPost"
+   }
    ActionOffset -1.085 0 -2.028
    m_fLookDirectionRange 180
    m_iCharacterStance CROUCH

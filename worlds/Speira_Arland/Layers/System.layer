@@ -59,21 +59,14 @@ ScriptedChatEntity {
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 2504.668 139.045 2344.997
 }
-SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
- coords 2018.76 51.511 2992.107
- {
-  SCR_FactionManager {
-   ID "5D6666A41D4E5319"
-   Factions {
-    SCR_Faction "{5D5705392CC6C3FF}" {
-    }
-    SCR_Faction "{5D5705392CC6D1CA}" {
-    }
-    SCR_Faction "{5D5705392CC748DC}" {
-    }
-   }
+SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_GameModeEditor.et" {
+ components {
+  SP_PermadeathRespawnHandlerComponent "{5D685A535B29A268}" {
+   m_BanditStorageWorldPosition 1674.86 3.531 876.658
+   m_RespawnWorldPositionBandit 1673.927 3.531 874.546
   }
  }
+ coords 2124.836 2.699 3528.492
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 2263.008 6.712 3232.114

@@ -49,18 +49,28 @@ GenericEntity {
    coords -0.732 -0.002 -1.599
    angleY -43.2
   }
-  GenericEntity : "{11F329D3DDD2AB1D}Prefabs/Trading_Items/Factions/US/TS_Medical_US.et" {
+  GenericEntity : "{11F329D3DDD2AB1D}prefabs/Trading_Items/Factions/US/TS_Medical_US.et" {
    ID "5C96A26713BDE987"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "US"
+    }
+   }
    coords 0.032 0.59 -0.809
    angleY 180
   }
-  GenericEntity : "{54A1C6EBC68CF49E}Prefabs/Trading_Items/Wood_TradingStation.et" {
+  GenericEntity : "{54A1C6EBC68CF49E}prefabs/Trading_Items/Wood_TradingStation.et" {
    ID "5C96A26713BD37AE"
    coords -1.409 0.335 0.075
    angleY -89.417
   }
-  GenericEntity : "{5BB9F3E81ABDA3B9}Prefabs/Trading_Items/Factions/US/TS_Equipment_US.et" {
+  GenericEntity : "{5BB9F3E81ABDA3B9}prefabs/Trading_Items/Factions/US/TS_Equipment_US.et" {
    ID "5C96A26713BDE984"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "US"
+    }
+   }
    coords -1.018 0 -0.949
    angleY -180
   }
@@ -141,18 +151,28 @@ GenericEntity {
     coords -1.81 0 -0.741
    }
   }
-  GenericEntity : "{A84DA138104C2301}Prefabs/Props/Furniture/Chest_Storage_US.et" {
+  GenericEntity : "{A84DA138104C2301}prefabs/Props/Furniture/Chest_Storage_US.et" {
    ID "5C9920B7665326E6"
    coords -1.857 0 0.036
    angleY -90
   }
-  GenericEntity : "{AF936870D3322D56}Prefabs/Trading_Items/Factions/US/TS_Weapons_US.et" {
+  GenericEntity : "{AF936870D3322D56}prefabs/Trading_Items/Factions/US/TS_Weapons_US.et" {
    ID "5C96A26713BDE9BA"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "US"
+    }
+   }
    coords -0.019 0.884 0.115
    angleY -141.117
   }
-  GenericEntity : "{BECF5363018B1B46}Prefabs/Trading_Items/Factions/US/TS_Ammo_US.et" {
+  GenericEntity : "{BECF5363018B1B46}prefabs/Trading_Items/Factions/US/TS_Ammo_US.et" {
    ID "5C96A26713BDE9BD"
+   components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "US"
+    }
+   }
    coords -0.881 0.82 -0.106
    angleY -92.067
   }

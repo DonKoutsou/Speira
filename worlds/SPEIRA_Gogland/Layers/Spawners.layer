@@ -326,15 +326,6 @@ $grp SP_AIDirector : "{248F75698912DFA0}prefabs/AI/Spawners/SP_AIDirector_Trader
 SP_AIDirector : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
  coords 5993.187 44.563 4777.992
 }
-$grp GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
- {
-  coords 7194.195 33.869 1303.783
- }
- {
-  coords 7204.907 33.594 1322.51
-  angleY 104.448
- }
-}
 SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
  coords 7597.931 18.345 4006.69
  DangerEventRange 100

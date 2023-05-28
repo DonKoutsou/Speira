@@ -11,8 +11,17 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
    Tags {
     "CoverPost"
    }
+   ActionOffset 2.438 0 -3.655
    m_vLookPosition -0.89 1.227 -21.413
    m_bUseBinoculars 1
+  }
+  SCR_AISmartActionSentinelComponent "{5D78D1F71BFC3D81}" : "{A6EB3E0793DF2F7D}Configs/ObservationPost_Sentinel.ct" {
+   ActionOffset 4.363 0 2.536
+   m_vLookPosition 3.791 0 19.998
+  }
+  SCR_AISmartActionSentinelComponent "{5D78D1F768B2D4DC}" : "{A6EB3E0793DF2F7D}Configs/ObservationPost_Sentinel.ct" {
+   ActionOffset 1.934 0 -3.323
+   m_vLookPosition 1.188 0 -12.493
   }
  }
  {

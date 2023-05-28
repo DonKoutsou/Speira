@@ -1,15 +1,20 @@
 SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  ID "5D42AA2A8C40E9C7"
  components {
+  AIPathfindingComponent "{5D78885F0C2E2ED1}" {
+   NavmeshProject "Soldiers"
+  }
   SCR_MapDescriptorComponent "{5D42AA2A86C39135}" {
    Enabled 0
   }
  }
  coords 116.628 1.001 248.992
+ DangerEventRange 300
  m_MaxAgentsToSpawn 2
  m_Radius 150
  m_CompositionRadius 150
  m_Respawn 1
+ m_RenegadeRespawn 1
  m_SpawnAI 1
  m_RespawnTimer 300
  m_CommanderRespawnTimer 600
@@ -17,6 +22,7 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  m_AgentTemplates {
   "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et" "{958039B857396B7B}Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et" "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" "{6307F42403E9B8A4}Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et" "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et" "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" "{CB58D90EA14430AD}prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et" "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et" "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{1A5F0D93609DA5DA}Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et" "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et" "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
  }
+ m_Renegade "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
  m_Compositions {
   "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et"
  }

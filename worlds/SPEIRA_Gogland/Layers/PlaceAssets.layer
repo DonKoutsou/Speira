@@ -363,6 +363,15 @@ $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/
   angleZ -2.975
  }
 }
+$grp GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+ {
+  coords 7194.195 33.869 1303.783
+ }
+ {
+  coords 7204.907 33.594 1322.51
+  angleY 104.448
+ }
+}
 GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et" {
  coords 6456.635 9.668 7033.938
  angleY 14.033

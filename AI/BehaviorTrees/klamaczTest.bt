@@ -57,6 +57,7 @@ BehaviorTree "{431061879A1F5324}AI/BehaviorTrees/Chimera/Soldier/klamaczTest.bt"
       AITaskIdle Idle {
        Name "Idle"
        EditorPos 527 143
+       Period 500
       }
      }
     }

@@ -7,23 +7,13 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
     "LightFire"
    }
   }
-  SCR_AISmartActionSentinelComponent "{5B1EF58065C69B1E}" {
-   Enabled 1
-   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
-   Tags {
-    "ChillPost"
-   }
-   ActionOffset -2.501 0 -0.615
-   m_fLookDirectionRange 180
-   m_iCharacterStance CROUCH
-  }
   SCR_AISmartActionSentinelComponent "{5B1EF59F9C8CE0B9}" {
    Enabled 1
    AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
    Tags {
     "ChillPost"
    }
-   ActionOffset 8.593 0 0.359
+   ActionOffset 3.62 0 0.037
    m_fLookDirectionRange 360
    m_iCharacterStance STAND
   }
@@ -32,7 +22,7 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
    Tags {
     "ChillPost"
    }
-   ActionOffset 0.139 0 2.935
+   ActionOffset -2.665 0 -0.128
    m_fLookDirectionRange 180
    m_iCharacterStance CROUCH
   }

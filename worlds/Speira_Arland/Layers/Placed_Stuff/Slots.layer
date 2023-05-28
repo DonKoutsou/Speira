@@ -199,36 +199,6 @@ $grp SCR_SiteSlotEntity : "{4B1C4BDDF6683101}PrefabsEditable/Slots/Flat/E_SlotFl
   }
  }
  {
-  coords 1218.839 0.899 3285.102
-  angleY 7.135
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.017 0
-    angleX -0.215
-    angleZ 0.021
-   }
-  }
- }
- {
-  coords 1203.269 0.981 3263.193
-  angleY 7.135
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.109 0
-    angleX -0.702
-    angleZ -0.135
-   }
-  }
- }
- {
   coords 665.954 0.687 2276.58
   angleY 76.296
   {
@@ -252,36 +222,6 @@ $grp SCR_SiteSlotEntity : "{4B1C4BDDF6683101}PrefabsEditable/Slots/Flat/E_SlotFl
     coords 0 0.103 0
     angleX 0.317
     angleZ 0.311
-   }
-  }
- }
- {
-  coords 1634.403 3.606 890.474
-  angleY 101.259
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.624 0
-    angleX -1.509
-    angleZ -0.318
-   }
-  }
- }
- {
-  coords 1713.74 5.299 870.656
-  angleY 88.611
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.328 0
-    angleX 4.9
-    angleZ 2.338
    }
   }
  }
@@ -312,25 +252,6 @@ $grp SCR_SiteSlotEntity : "{4B1C4BDDF6683101}PrefabsEditable/Slots/Flat/E_SlotFl
    }
   }
  }
- {
-  coords 1155.825 1.156 3334.058
-  angleY 163.976
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 -0.013 0
-    angleX -0.049
-    angleZ -0.358
-   }
-  }
- }
-}
-StaticModelEntity : "{5824BC6E4A1AF407}Prefabs/Compositions/Misc/SubCompositions/Tent_Medical_Cluttered_USSR_01.et" {
- coords 3503.208 2.805 1516.531
- angleY -4.739
 }
 $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFlatSmall.et" {
  {
@@ -653,30 +574,6 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
     }
    }
   }
-  coords 1260.21 8.904 3257.474
-  angleY 153.282
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.092 0
-    angleX 2.159
-    angleZ 5.85
-   }
-  }
- }
- {
-  components {
-   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
-    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
-     m_aAuthoredLabels + {
-      28
-     }
-    }
-   }
-  }
   coords 2019.833 10.426 1841.766
   angleY -117.841
   {
@@ -941,78 +838,6 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
   }
  }
  {
-  coords 1666.54 3.427 875.4
-  angleY -78.892
-  {
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.047 0
-    angleX -0.418
-    angleZ -1.89
-   }
-  }
- }
- {
-  coords 1670.121 4.47 900.268
-  angleY -15.869
-  {
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.086 0
-    angleX 3.951
-    angleZ -4.269
-   }
-  }
- }
- {
-  coords 1641.5 4.453 910.001
-  angleY -1.555
-  {
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.066 0
-    angleX 3.956
-    angleZ -0.168
-   }
-  }
- }
- {
-  coords 1611.743 4.352 900.732
-  angleY -57.389
-  {
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.041 0
-    angleX 1.828
-    angleZ 0.846
-   }
-  }
- }
- {
-  coords 1612.031 4.65 882.116
-  angleY -110.287
-  {
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 -0.072 0
-    angleX 1.372
-    angleZ 0.763
-   }
-  }
- }
- {
-  coords 1725.58 7.193 881.742
-  angleY 68.773
-  {
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.006 0
-    angleX 6.269
-    angleZ 2.511
-   }
-  }
- }
- {
   components {
    SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
     m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
@@ -1153,30 +978,6 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
     coords 0 -0.058 0
     angleX -0.569
     angleZ 1.316
-   }
-  }
- }
- {
-  components {
-   SCR_EditableEntityComponent "{51B0A7B1D3E03B13}" {
-    m_UIInfo SCR_EditableLinkedContentBrowserUIInfo "{528C94DA3B1A682F}" {
-     m_aAuthoredLabels + {
-      28
-     }
-    }
-   }
-  }
-  coords 3457.49 4.791 1532.24
-  angleY 23.798
-  {
-   GenericEntity {
-    coords 0 -9223372036854775808 0
-   }
-   StaticModelEntity {
-    ID "52E8C3643526D54D"
-    coords 0 0.077 0
-    angleX -3.643
-    angleZ 7.014
    }
   }
  }
@@ -1434,7 +1235,7 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
   angleY -168.612
   {
    GenericEntity {
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1458,7 +1259,7 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
   angleY 11.388
   {
    GenericEntity {
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1482,7 +1283,7 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
   angleY 49.28
   {
    GenericEntity {
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1506,7 +1307,7 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
   angleY 141.998
   {
    GenericEntity {
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"
@@ -1530,7 +1331,7 @@ $grp SCR_SiteSlotEntity : "{588A3DAF0296B0C1}PrefabsEditable/Slots/Flat/E_SlotFl
   angleY -168.612
   {
    GenericEntity {
-    coords 0 -9223372036854775808.000 0
+    coords 0 -9223372036854775808 0
    }
    StaticModelEntity {
     ID "52E8C3643526D54D"

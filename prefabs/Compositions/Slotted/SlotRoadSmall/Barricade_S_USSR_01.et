@@ -10,6 +10,14 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
    m_vLookPosition 0 1 17.559
    m_bUseBinoculars 1
   }
+  SCR_AISmartActionSentinelComponent "{5D78D1F49570D8BD}" : "{A6EB3E0793DF2F7D}Configs/ObservationPost_Sentinel.ct" {
+   ActionOffset 0.599 0 -2.012
+   m_vLookPosition 0.979 0 10.574
+  }
+  SCR_AISmartActionSentinelComponent "{5D78D1F49B8ECB07}" : "{A6EB3E0793DF2F7D}Configs/ObservationPost_Sentinel.ct" {
+   ActionOffset -1.881 0 -2.073
+   m_vLookPosition -4.108 0 20.909
+  }
  }
  {
   GenericEntity {

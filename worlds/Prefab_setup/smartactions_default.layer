@@ -1,0 +1,64 @@
+GenericEntity : "{038225BC88D34F68}prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_US_01.et" {
+ coords 160.28 2.354 195.41
+}
+GenericEntity : "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et" {
+ coords 134.851 2.88 176.814
+}
+GenericEntity : "{172D03072FE6ECAA}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_US_01.et" {
+ coords 128.725 1.488 202.536
+}
+GenericEntity : "{24B7F96197053B38}prefabs/Compositions/Slotted/SlotRoadSmall/Barricade_S_US_01.et" {
+ coords 117.11 1.006 185.668
+}
+GenericEntity : "{27F6A0815E6FF6EE}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_USSR_01.et" {
+ coords 131.347 1.488 188.617
+}
+GenericEntity : "{2A27606856B8A913}prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_USSR_01.et" {
+ coords 162.326 2.354 207.989
+}
+GenericEntity : "{34A56AFC3D4FCAE2}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_US_01.et" {
+ components {
+  SCR_AISmartActionSentinelComponent "{54E09E2594B057CE}" {
+   ActionOffset -0.911 0 -0.949
+   m_vLookPosition -0.014 1 15.575
+   m_fLookDirectionRange 180
+  }
+  SCR_AISmartActionSentinelComponent "{58B0D59BB28CCBF8}" {
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ObservationPost"
+   }
+   ActionOffset -1.644 0 -2.895
+   m_fLookDirectionRange 180
+   m_iCharacterStance STAND
+  }
+ }
+ coords 115.142 1.006 196.115
+}
+GenericEntity : "{5F42399DF7455261}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_US_01.et" {
+ coords 143.803 3.099 184.29
+}
+GenericEntity : "{6D9DAF822F4ABFE6}prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_US_01.et" {
+ coords 143.291 2.354 220.111
+}
+GenericEntity : "{7492BAA88AFCEDCD}prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_USSR_01.et" {
+ coords 109.727 1.001 168.682
+}
+GenericEntity : "{83A10E8547281E57}prefabs/Compositions/Slotted/SlotRoadSmall/Barricade_S_USSR_01.et" {
+ coords 108.69 1.006 188.696
+}
+GenericEntity : "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_USSR_01.et" {
+ coords 108.302 1.006 180.178
+}
+GenericEntity : "{9F9924B626C5FA2B}prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_USSR_01.et" {
+ coords 142.819 2.354 201.351
+}
+GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+ coords 129.404 2.114 167.707
+ angleX 0
+ angleY 0
+ angleZ 0
+}
+GenericEntity : "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et" {
+ coords 128.056 2.006 172.005
+}

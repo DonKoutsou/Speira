@@ -1,6 +1,10 @@
 SP_AIDirector {
  ID "5D42AA2A8C40E9C7"
  components {
+  AIPathfindingComponent "{5D78885F0C2E2ED1}" {
+   NavmeshProject "LowRes"
+   IgnoreFlags 1
+  }
   MeshObject "{5D42AA2A86C391EF}" {
    Object "{BC98C50CD847BEB8}Assets/Editor/CompositionSlot/SlotFlatLarge_01.xob"
    Materials {

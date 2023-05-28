@@ -710,7 +710,7 @@ class SP_AIDirector : AIGroup
 		
 		//Snap to the nearest navmesh point
 		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
-		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(pos, "10 10 10", pos))
+		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(pos, "50 50 50", pos))
 		{
 			float groundHeight = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
 			if (pos[1] < groundHeight)

@@ -2,3 +2,12 @@ GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Fa
  coords 124.64 0.842 129.776
  angleY 0
 }
+GenericEntity : "{75364BC4B00FA19E}prefabs/Trading_Items/Factions/USSR/USSR_TradingStation.et" {
+ coords 130.855 0.789 129.3
+}
+GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
+ coords 116.308 0.959 129.463
+}
+GenericEntity : "{DFA178C08722964D}prefabs/Trading_Items/Factions/US/US_TradingStation.et" {
+ coords 120.563 0.953 129.346
+}

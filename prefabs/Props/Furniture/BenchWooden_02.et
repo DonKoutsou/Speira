@@ -3,6 +3,11 @@ GenericEntity : "{8BB5855208F77724}prefabs/Props/Furniture/BenchWooden_01.et" {
  components {
   ControllersManagerComponent "{5C5B61F4A0729647}" {
   }
+  SCR_AISmartActionComponent "{5D78D1F468987244}" {
+   Tags {
+    "Chair"
+   }
+  }
   SCR_BaseCompartmentManagerComponent "{5C42A5C227C98E03}" : "{430455409450B2F0}prefabs/Chair_Test/SCR_BaseCompartmentManagerComponent_Chair.ct" {
    CompartmentSlots {
     CargoCompartmentSlot Passenger_l02 {

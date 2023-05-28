@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D6F3C1EB63FD8159}worlds/Prefab_setup/smartactions.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

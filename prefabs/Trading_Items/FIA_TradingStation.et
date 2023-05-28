@@ -155,6 +155,9 @@ GenericEntity {
   GenericEntity : "{9E5D9DE8AC6CDC85}prefabs/Trading_Items/FIA_Clothing_TradingStation.et" {
    ID "5B36B9A589175B80"
    components {
+    FactionAffiliationComponent "{5D62594118C3B71C}" {
+     "faction affiliation" "FIA"
+    }
     ActionsManagerComponent "{5B1111371149AC02}" {
      ActionContexts {
       UserActionContext "{5B22D08B509A32BC}" {
