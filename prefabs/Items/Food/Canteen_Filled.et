@@ -9,53 +9,32 @@ GenericEntity {
    }
    DistanceManagement 0
   }
-  InventoryMagazineComponent "{5C69441421AB61A9}" {
-   Attributes SCR_ItemAttributeCollection "{5C69441421AB61A7}" {
-    ItemDisplayName UIInfo "{5C69441421AB6164}" {
-     Name "Filled Soviet Canteen"
-     Description "Canteen filled with water, can be sold at FIA bases"
+  InventoryItemComponent "{5D7D35A99EB1D5D0}" {
+   Attributes SCR_ItemAttributeCollection "{5D7D35A99FDEF4A9}" {
+    ItemDisplayName UIInfo "{5D7D35A9914D214D}" {
+     Name "Canteen"
+     Description "drink to replensish thirst"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{5C69441421AB6170}" {
-     Weight 0.05
+    ItemPhysAttributes ItemPhysicalAttributes "{5D7D35A9A953B486}" {
      SizeSetupStrategy Manual
-     ItemDimensions 5 5 5
-     ItemVolume 75
-     RestingUP Backward
-     RestingAdditiveOffsetLS 0 0 -0.04
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{5D7D35A9E03849ED}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{5D7D35A9E5CDEA2C}" {
+       AnimGraph "{DC28104B4BA0200F}Assets/Items/Equipment/workspaces/Compass_Adrianov.agr"
+       AnimInstance "{63B2209ED637B121}Assets/Items/Equipment/workspaces/adrianov_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveTranslation 0 -0.1 0
+     AllowInspection 1
     }
     CustomAttributes {
-     SCR_ItemOfInterestAttribute "{5C69441421AB617C}" {
-      m_InterestType AMMO
-     }
-     PreviewRenderAttributes "{5C69441421AB6148}" {
-      CameraPreset Front
-      CameraOrbitAngles 0 45 45
-      FOV 45
+     SCR_CharacterInventoryPreviewAttributes "{5D7D35A9A01429CF}" {
      }
     }
-    m_Size SLOT_1x1
-    m_SlotType SLOT_BACKPACK
-   }
-   WeightPerAmmo 0.012
-  }
-  MagazineComponent "{5C69441421AB61D6}" {
-   MagazineWell MagazineWellM9Beretta "{5C69441421AB618A}" {
-   }
-   UIInfo MagazineUIInfo "{5C69441421AB61C8}" {
-    Name "#AR-Magazine_Name"
-    Description "#AR-Magazine_Name"
-    m_sAmmoCaliber "#AR-AmmunitionID_9x19mm"
-    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5C69441421AB61FE}" {
-     m_sOutline "magazine-beretta_15rnd-outline"
-     m_sBackground "magazine-beretta_15rnd-background"
-     m_sProgress "magazine-beretta_15rnd-fill"
-     m_sProgressAlphaMask "magazine-beretta_15rnd-alpha"
-    }
-   }
-   MaxAmmo 15
-   AmmoConfig "{BC69F995CEEF2196}Configs/Weapons/Ammo/Ammo_9x19.conf"
-   AmmoMapping {
-    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
    }
   }
   MeshObject "{5C69441421AB6260}" {
@@ -68,6 +47,14 @@ GenericEntity {
   RigidBody "{5C69441421AB624E}" {
    LayerPreset "ItemFireView"
    ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{5D7D310ADD6FDFAA}" {
+   m_eAnimVariable ADRIANOV
+   m_ConsumableEffect WL_ConsumableEffectDrink "{5D7D35A8C7D5DDF0}" {
+    m_bDeleteOnUse 0
+   }
+   m_bIsDrinkable 1
+   m_iUses 3
   }
   ActionsManagerComponent "{5C69441421AB629D}" {
    ActionContexts {

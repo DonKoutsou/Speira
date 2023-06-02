@@ -1367,13 +1367,6 @@ SCR_GameModeEditor {
     }
    }
   }
-  SCR_PlayerPenaltyComponent "{5D685A535B2AE73D}" {
-   m_iFriendlyPlayerKillPenalty 3
-   m_iKickPenaltyLimit 9
-   m_iBanDuration 1800
-   m_iPenaltySubstractionPeriod 900
-   m_iPenaltySubstractionPoints 2
-  }
   SCR_PlayerSpawnPointManagerComponent "{5D685A535B2AE735}" {
    m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
    m_bEnablePlayerSpawnPoints 0
@@ -3278,6 +3271,8 @@ SCR_GameModeEditor {
    m_SpawnpointSPEIRA "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et"
    m_SpawnpointBandit "{AA99FB47F0760415}prefabs/MP/Spawning/SpawnPoint_Bandits.et"
    m_iLives 1
+  }
+  SP_PlayerPenaltyComponent "{5D7D20460DC7AD30}" {
   }
   RplComponent "{5D685A535B29A270}" {
    "Rpl State Override" None

@@ -30,5 +30,6 @@ class SCR_AIPerformActionBehavior : SCR_AIBehaviorBase
 	override void OnActionDeselected()
 	{
 		super.OnActionDeselected();
+		//Fail();
 	}
 };

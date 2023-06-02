@@ -1,3 +1,6 @@
+GenericEntity : "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
+ coords 175.443 1.057 157.887
+}
 GenericEntity : "{038225BC88D34F68}prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_US_01.et" {
  coords 160.28 2.354 195.41
 }
@@ -15,6 +18,9 @@ GenericEntity : "{27F6A0815E6FF6EE}prefabs/Compositions/Slotted/SlotRoadMedium/B
 }
 GenericEntity : "{2A27606856B8A913}prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_USSR_01.et" {
  coords 162.326 2.354 207.989
+}
+GenericEntity : "{2BC1606244F9F491}prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et" {
+ coords 136.426 2.841 161.465
 }
 GenericEntity : "{34A56AFC3D4FCAE2}prefabs/Compositions/Slotted/SlotRoadSmall/Checkpoint_S_US_01.et" {
  components {
@@ -35,6 +41,12 @@ GenericEntity : "{34A56AFC3D4FCAE2}prefabs/Compositions/Slotted/SlotRoadSmall/Ch
  }
  coords 115.142 1.006 196.115
 }
+GenericEntity : "{3CD490132ECE6645}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_03.et" {
+ coords 157.617 2.689 157.012
+}
+GenericEntity : "{53870B8B08C181D7}prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_US_03.et" {
+ coords 147.112 4.786 170.957
+}
 GenericEntity : "{5F42399DF7455261}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_US_01.et" {
  coords 143.803 3.099 184.29
 }
@@ -53,11 +65,21 @@ GenericEntity : "{9483333BFD9E2D0E}prefabs/Compositions/Slotted/SlotRoadSmall/Ch
 GenericEntity : "{9F9924B626C5FA2B}prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_USSR_01.et" {
  coords 142.819 2.354 201.351
 }
+GenericEntity : "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" {
+ coords 176.317 1.44 168.761
+}
 GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
  coords 129.404 2.114 167.707
  angleX 0
  angleY 0
  angleZ 0
+}
+GenericEntity : "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et" {
+ coords 147.821 3.388 160.3
+}
+GenericEntity : "{E027C0CF067256F9}prefabs/Compositions/Misc/SubCompositions/Sandbag_MG_USSR_01.et" {
+ coords 156.155 3.497 170.879
+ angleY 0
 }
 GenericEntity : "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et" {
  coords 128.056 2.006 172.005

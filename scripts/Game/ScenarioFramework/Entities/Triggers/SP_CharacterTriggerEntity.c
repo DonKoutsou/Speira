@@ -28,7 +28,7 @@ class SP_CharacterTriggerEntity : SCR_CharacterTriggerEntity
 		
 		if (m_fTempWaitTime <= 0)
 		{
-			Owner.SpawnCommander(m_Commanders);	
+			//Owner.SpawnCommander(m_Commanders);	
 			m_fTempWaitTime = m_fActivationCountdownTimer;
 		}
 		

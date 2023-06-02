@@ -1,6 +1,14 @@
 GameEntity {
  ID "5104869D194C6243"
  components {
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    CustomAttributes {
+     SP_ClothAttributes "{5D82DAD0CD111356}" {
+     }
+    }
+   }
+  }
   ActionsManagerComponent "{5104869D194C6245}" {
    additionalActions {
     KLM_CraftAction "{5C69441E08BB6591}" {

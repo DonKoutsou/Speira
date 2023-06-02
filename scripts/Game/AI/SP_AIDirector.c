@@ -27,7 +27,6 @@ class SP_AIDirector : AIGroup
 	[Attribute("true")]
 	bool m_SpawnAI;
 	
-	static bool m_SpawnCompositions = true;
 	
 	[Attribute("0")]
 	float m_RespawnTimer;
@@ -48,19 +47,7 @@ class SP_AIDirector : AIGroup
 	ResourceName m_Renegade;
 	
 	bool commanderspawned = false;
-	
-	[Attribute("")]
-	ref array<ResourceName> m_Compositions;
-	
-	[Attribute("")]
-	ref array<ResourceName> m_CompositionsMed;
-	
-	[Attribute("")]
-	ref array<ResourceName> m_CompositionsLarge;
-	
-	[Attribute("")]
-	ref array<ResourceName> m_CompositionsRoad;
-	
+
 	string m_sLocationName;
 	
 	[Attribute("")]
@@ -295,28 +282,7 @@ class SP_AIDirector : AIGroup
 		if(AllDirectors)
 			AllDirectors.Remove(AllDirectors.Find(this));
 	}
-	
-	ResourceName GetRandomComposition()
-	{
-		int i = Math.RandomInt(0, m_Compositions.Count());
-		return m_Compositions[i];
-	}
-	ResourceName GetRandomCompositionMedium()
-	{
-		int i = Math.RandomInt(0, m_CompositionsMed.Count());
-		return m_CompositionsMed[i];
-	}
-	ResourceName GetRandomCompositionLarge()
-	{
-		int i = Math.RandomInt(0, m_CompositionsLarge.Count());
-		return m_CompositionsLarge[i];
-	}
-	ResourceName GetRandomCompositionRoad()
-	{
-		int i = Math.RandomInt(0, m_CompositionsRoad.Count());
-		return m_CompositionsRoad[i];
-	}
-	
+
 	bool HandleFoundSlot(IEntity e)
 	{
 		SCR_SiteSlotEntity slot = SCR_SiteSlotEntity.Cast(e);
@@ -353,55 +319,6 @@ class SP_AIDirector : AIGroup
 		Resource CWP = Resource.Load(m_pCommanderWaypoint);
 		DefWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(WP, null, spawnParams));
 		ComWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(CWP, null, spawnParams));
-		
-		
-		if (m_SpawnCompositions)
-		{
-			m_Slots.Clear();
-			
-			// get composition slots
-			if (GetGame() && GetGame().GetWorld())
-				GetGame().GetWorld().QueryEntitiesBySphere(GetOrigin(), m_CompositionRadius, HandleFoundSlot);	
-					
-			foreach(SCR_SiteSlotEntity slot : m_Slots)
-			{
-				SCR_EditableEntityComponent edit = SCR_EditableEntityComponent.GetEditableEntity(slot);
-				SCR_EditableEntityUIInfo info = SCR_EditableEntityUIInfo.Cast(edit.GetInfo());
-				ResourceName n;
-				if (slot.GetOccupant()) continue;
-				if (m_CompositionsRoad.Count() > 0)
-				{
-					if(info.HasEntityLabel(EEditableEntityLabel.SLOT_ROAD_LARGE) == true)
-					{
-						n = GetRandomCompositionRoad();
-					}
-					if(info.HasEntityLabel(EEditableEntityLabel.SLOT_ROAD_MEDIUM) == true)
-					{
-						n = GetRandomCompositionRoad();
-					}
-					if(info.HasEntityLabel(EEditableEntityLabel.SLOT_ROAD_SMALL) == true)
-					{
-						n = GetRandomCompositionRoad();
-					}
-				}
-				if(info.HasEntityLabel(EEditableEntityLabel.SLOT_FLAT_LARGE) == true)
-				{
-					n = GetRandomCompositionLarge();
-				}
-				else if (info.HasEntityLabel(EEditableEntityLabel.SLOT_FLAT_MEDIUM) == true)
-				{
-					n = GetRandomCompositionMedium();
-				}
-				else
-				{
-					n = GetRandomComposition();
-				}
-				
-				Resource a = Resource.Load(n);
-				slot.SpawnEntityInSlot(a);
-				slot.GetScale();
-			}
-		}
 		//vector posPlayer = this.GetOrigin();
 		//SCR_EditableEntityCore core = SCR_EditableEntityCore.Cast(SCR_EditableEntityCore.GetInstance(SCR_EditableEntityCore));
 	    //   if (!core)
@@ -613,7 +530,7 @@ class SP_AIDirector : AIGroup
 		}
 		return true;
 	};
-	bool SpawnCommander(ResourceName Name)
+	bool SpawnDelivery(ResourceName Name)
 	{
 		if (m_AgentTemplates.Count() == 0)
 			return false;
@@ -650,9 +567,7 @@ class SP_AIDirector : AIGroup
 		if (newEnt.GetPhysics())
 			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
 			
-		OnSpawn(newEnt);
-		SCR_AIGroup CommandGroup = SCR_AIGroup.Cast(newEnt);
-		m_CommanderEnt = CommandGroup.GetMaster();
+		OnDelSpawn(newEnt);
 		if (newEnt)
 		{
 			AIAgent agent = AIAgent.Cast(newEnt);
@@ -803,6 +718,19 @@ class SP_AIDirector : AIGroup
 			m_aGroups.Insert(group);
 			if (ComWaypoint)
 				group.AddWaypoint(ComWaypoint);
+		}
+	}
+	event void OnDelSpawn(IEntity spawned)
+	{
+		FactionAffiliationComponent FactAf = FactionAffiliationComponent.Cast(spawned.FindComponent(FactionAffiliationComponent));
+		SP_AIDirector Dir = SP_AIDirector.AllDirectors.GetRandomElement();
+		Dir.GetDirectorOccupiedBy(FactAf.GetAffiliatedFaction().GetFactionKey(), Dir);
+		SCR_AIGroup group = SCR_AIGroup.Cast(spawned);
+		if (group)
+		{
+			Dir.m_aGroups.Insert(group);
+			if (Dir.DefWaypoint)
+				group.AddWaypoint(DefWaypoint);
 		}
 	}
 

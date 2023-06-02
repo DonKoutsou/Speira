@@ -84,3 +84,27 @@ class SCR_AIDecoTestLightIsOff : DecoratorTestScripted
 		return false;
 	}
 };
+class SCR_AIDecoBodyHasLoot : DecoratorTestScripted
+{
+	//------------------------------------------------------------------------------------------------
+	protected override bool TestFunction(AIAgent agent, IEntity controlled)
+	{	
+		SCR_CharacterDamageManagerComponent dmg = SCR_CharacterDamageManagerComponent.Cast(controlled.FindComponent(SCR_CharacterDamageManagerComponent));
+		if(dmg.GetHealth() > 0)
+		{
+			return false;
+		}
+		SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(controlled.FindComponent(SCR_InventoryStorageManagerComponent));
+		array<IEntity> items = new array<IEntity>();
+		inv.GetItems(items);
+		foreach (IEntity item : items)
+		{
+			SP_UnretrievableComponent Unretr = SP_UnretrievableComponent.Cast(item.FindComponent(SP_UnretrievableComponent));
+			if (Unretr)
+				{
+					return true;
+				}
+		}
+		return false;
+	}
+};

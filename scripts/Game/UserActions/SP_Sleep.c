@@ -18,7 +18,20 @@ class SP_SleepAction : ScriptedUserAction
 		{
 			TnWManager.SetTimeOfTheDay(TimeToWakeUP, true);
 		}
-		
+		SP_CharacterStatsComponent StatComp = SP_CharacterStatsComponent.Cast(pUserEntity.FindComponent(SP_CharacterStatsComponent));
+		StatComp.SetNewHunger(StatComp.GetHunger() - 10.0 * m_Sleepamount);
+		StatComp.SetNewThirst(StatComp.GetThirst() - 10.0 * m_Sleepamount);
 	}
+	event override bool CanBePerformedScript(IEntity user) 
+	{ 
+		SP_CharacterStatsComponent StatComp = SP_CharacterStatsComponent.Cast(user.FindComponent(SP_CharacterStatsComponent));
+		float AmountToDeplete = 10.0 * m_Sleepamount;
+		if(AmountToDeplete >= StatComp.GetHunger() || AmountToDeplete >= StatComp.GetThirst())
+			{
+				SetCannotPerformReason("You are not properly hudrated/fed to sleep that much");
+				return false;
+			}
+		return true;
+	};
 	
 }

@@ -29,58 +29,6 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
     angleY -114.358
    }
   }
-  $grp StaticModelEntity : "{172DD50ACF177B9E}Prefabs/Props/Military/Furniture/ChairMilitary_USSR_01.et" {
-   {
-    ID "5D78E07A6B215949"
-    components {
-     Hierarchy "{56A6E94FD1A5128F}" {
-      Enabled 1
-     }
-    }
-    coords -0.472 0 -1.666
-    angleY 7.89
-   }
-   {
-    ID "5D78E07A6B21B7B1"
-    components {
-     Hierarchy "{56A6E94FD1A624E5}" {
-      Enabled 1
-     }
-    }
-    coords 1.275 0 1.151
-    angleY -123.716
-   }
-   {
-    ID "5D78E07A6B21B7BE"
-    components {
-     Hierarchy "{56A6E94FD1A555CF}" {
-      Enabled 1
-     }
-    }
-    coords 1.039 0 -1.363
-    angleY -28.833
-   }
-   {
-    ID "5D78E07A6B21B7BF"
-    components {
-     Hierarchy "{56A6E94FD1A6EF4C}" {
-      Enabled 1
-     }
-    }
-    coords -1.483 0 -0.972
-    angleY 50.065
-   }
-   {
-    ID "5D78E07A6B21FB55"
-    components {
-     Hierarchy "{56A6E94FD1A676FA}" {
-      Enabled 1
-     }
-    }
-    coords 0.301 0 1.782
-    angleY -146.626
-   }
-  }
   $grp GenericEntity : "{1EC801E208CB16C6}Prefabs/Vegetation/Cuttings/Rubus_idaeus_small_01.et" {
    {
     ID "5D78E07A6B21594C"
@@ -94,11 +42,6 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
     angleX 39.262
     angleY -5.487
    }
-  }
-  SCR_SpawnPoint : "{45225582B358C31A}PrefabsEditable/SpawnPoints/E_SpawnPoint_USSR.et" {
-   ID "5D78E07A6B2156B1"
-   coords 0 0.1 0
-   angleY -29.992
   }
   $grp GenericEntity : "{4A09EF1D855AF2C4}Prefabs/Vegetation/Cuttings/Rosa_canina_small_01.et" {
    {
@@ -209,6 +152,33 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
     }
     coords -4.948 0 0.635
     angleY 93.73
+   }
+  }
+  $grp StaticModelEntity : "{7B79E1EA73D3F4B0}prefabs/Props/Military/Furniture/ChairMilitary_USSR_02.et" {
+   {
+    ID "5D78E07A6B215949"
+    coords -0.472 0 -1.666
+    angleY 7.89
+   }
+   {
+    ID "5D78E07A6B21B7B1"
+    coords 1.275 0 1.151
+    angleY -123.716
+   }
+   {
+    ID "5D78E07A6B21B7BE"
+    coords 1.039 0 -1.363
+    angleY -28.833
+   }
+   {
+    ID "5D78E07A6B21B7BF"
+    coords -1.483 0 -0.972
+    angleY 50.065
+   }
+   {
+    ID "5D78E07A6B21FB55"
+    coords 0.301 0 1.782
+    angleY -146.626
    }
   }
   GenericEntity : "{894A1AFDCB71CD0D}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_02.et" {

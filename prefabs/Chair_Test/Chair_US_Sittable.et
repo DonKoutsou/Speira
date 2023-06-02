@@ -15,10 +15,9 @@ GenericEntity {
    Mass 600
    ModelGeometry 1
   }
-  SCR_AISmartActionSentinelComponent "{5B3CC257637F416B}" {
-   AIBehaviorTree "{733B72C3C0264BF0}AI/BehaviorTrees/Chimera/Soldier/GetInVehicle.bt"
+  SCR_AISmartActionComponent "{5D7AF08581F9EA61}" {
    Tags {
-    "GetIn"
+    "Chair"
    }
   }
   SCR_BaseCompartmentManagerComponent "{5B3CC24BFC6AEEA7}" {

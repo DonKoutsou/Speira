@@ -4,6 +4,24 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   FactionAffiliationComponent "{5D3723DCCA2492D3}" {
    "faction affiliation" "SPEIRA"
   }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   Enabled 0
+  }
+  SP_CharacterStaminaComponent "{5D7F06D095C2AF89}" {
+   StaminaRegainPerS 0.01
+   StaminaDrainRun -0.0002
+   StaminaDrainSprint -0.005
+   EncumbranceDrainMax -0.03
+   BreathNormalFrequency 0.45
+   BreathExhaustedFrequency 1.1
+   BreathExhaustedMagnitude 10
+  }
+  SP_CharacterStatsComponent "{5D82DAD4BA3AA6F7}" {
+   m_fTimeBetweenEachTick 2
+   m_fMaxTemperature 42
+   m_fColdnessTemperature 34
+   m_fDeathTemperature 29
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
@@ -15,7 +33,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     LoadoutSlotInfo Hat {
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{9B920BD5C2B5AC1C}Prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
+     Prefab "{9B920BD5C2B5AC1C}prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
     }
     LoadoutSlotInfo Pants {
      Prefab "{9D4EE538BFAD6FF6}Prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
@@ -38,7 +56,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5D3723DCABD65062}" {
      TargetStorage "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
      PrefabsToSpawn {
-      "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{2366EF898F87916B}prefabs/Items/Misc/IntelligenceFolder_E_01/Letter.et" "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et"
+      "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et" "{2366EF898F87916B}prefabs/Items/Misc/IntelligenceFolder_E_01/Letter.et" "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et" "{410A0A507D24BFDF}prefabs/Items/Equipment/Canteens/Water_Bottle.et" "{50A68300B537EDFA}prefabs/Items/Food/ArmyCrackers_Soviet_01.et" "{50A68300B537EDFA}prefabs/Items/Food/ArmyCrackers_Soviet_01.et"
      }
     }
     ItemsInitConfigurationItem "{5D3D4C1160BCCB93}" {

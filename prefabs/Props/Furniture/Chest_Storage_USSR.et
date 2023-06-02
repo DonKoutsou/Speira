@@ -89,23 +89,12 @@ GenericEntity {
    Priority 100
    UseCapacityCoefficient 0
    MaxCumulativeVolume 100000
-   InitialStorageSlots {
-    InventoryStorageSlot Canteen_example {
-     Prefab "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
-    }
-   }
    MultiSlots {
     MultiSlotConfiguration "{5C89144B82A9DA0E}" {
      SlotTemplate InventoryStorageSlot Knives {
       Prefab "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
      }
      NumSlots 15
-    }
-    MultiSlotConfiguration "{5C89144B82A9DA06}" {
-     SlotTemplate InventoryStorageSlot canteens {
-      Prefab "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et"
-     }
-     NumSlots 40
     }
    }
    m_fMaxWeight 1000

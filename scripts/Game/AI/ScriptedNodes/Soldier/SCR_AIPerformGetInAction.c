@@ -30,6 +30,10 @@ class SCR_AIPerformLightAction : AITaskScripted
 		{
 			userActionString = "SCR_TurnOnAction";
 		}
+		else if(ChimeraCharacter.Cast(targetEntity))
+		{
+			userActionString = "SP_AILootBodyAction";
+		}
 
 		IEntity controlledEntity = owner.GetControlledEntity();
 		if (!controlledEntity)

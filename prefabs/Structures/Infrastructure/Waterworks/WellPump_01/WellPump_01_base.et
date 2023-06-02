@@ -12,17 +12,14 @@ GenericEntity : "{533AC2E8A0F5272A}Prefabs/Structures/BuildingParts/BuildingPart
     }
    }
    additionalActions {
-    KLM_ConverseAction "{5C694410B52C25CE}" {
+    SP_RefillCanteensAction "{5C694410B52C25CE}" {
      ParentContextList {
       "default"
      }
      UIInfo UIInfo "{5C694410C8CC0993}" {
-      Name "Fill canteen"
+      Name "Refill bottles"
      }
      Duration 3
-     m_WantedPay "{7BBFBA7F8C75B593}prefabs/Items/Food/Canteen_Empty.et"
-     m_PrefabToSell "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
-     m_SpawnOffset 0.2 0 0
     }
    }
   }

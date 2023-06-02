@@ -41,6 +41,11 @@ SCR_ChimeraCharacter {
    EncumbranceDrainMax -0.03
    BreathExhaustedMagnitude 10
   }
+  SP_CharacterAISmartActionComponent "{5D7D0C3C31822935}" {
+   Tags {
+    "DeadBody"
+   }
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
@@ -73,6 +78,8 @@ SCR_ChimeraCharacter {
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
+    SP_AILootBodyAction "{5D7D0C3C51B9A371}" {
+    }
    }
   }
   CharacterAnimationComponent "{520EA1D2F659C994}" {
