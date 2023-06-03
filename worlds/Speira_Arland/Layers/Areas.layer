@@ -1,3 +1,14 @@
+SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
+ coords 693.637 1.501 2258.245
+ m_aIncludedEditableEntityLabels {
+ }
+ m_MaxAgentsToSpawn 2
+ m_WorldDirections SCR_MapLocationQuadHint "{5D86C8A7F3399414}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+ }
+}
+GenericEntity SlotAI_7 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+ coords 3022.538 71.268 1562.106
+}
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  USSR_Area {
   components {

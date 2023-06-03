@@ -23,7 +23,7 @@ class DialogueStageShareLocation : DialogueStage
 		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
 		AIAgent agent = comp.GetAIAgent();
 		SP_AIDirector OrDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
-	 	return DialogueText + " " + OrDirector.GetLocationName();
+	 	return DialogueText + " " + OrDirector.GetCharacterLocation(Player);
 	};
 
 };

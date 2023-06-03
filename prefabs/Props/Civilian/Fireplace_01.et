@@ -1,6 +1,15 @@
 GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
  ID "F0DBA538AC2A0552"
  components {
+  BaseSlotComponent "{5876E7F5E53CC9CC}" {
+   AttachType EntitySlotInfo fireplace {
+   }
+  }
+  BaseSlotComponent "{5D8689619FD8223C}" {
+   AttachType EntitySlotInfo CookingPot {
+    Offset 0 0.2196 0
+   }
+  }
   SCR_AISmartActionComponent "{5D68C508AA42C672}" {
    AIBehaviorTree "{F719FAF7D4C883D9}AI/BehaviorTrees/SmartActions/LightFire.bt"
    Tags {
@@ -35,6 +44,20 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
    }
    m_eInitialLightState OFF
    m_fShouldBeAliveFor 20000
+  }
+  ActionsManagerComponent "{5876E7F5CCE95371}" {
+   additionalActions {
+    SP_PlaceEntityToSlot "{5D868960DFA7657F}" {
+     ParentContextList {
+      "fireplace"
+     }
+     UIInfo UIInfo "{5D868960C299F967}" {
+      Name "Place cooking pot"
+     }
+     "Sort Priority" 100
+     m_CompatiblePrefab "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et"
+    }
+   }
   }
  }
  coords -1.453 -0.08 -4.478

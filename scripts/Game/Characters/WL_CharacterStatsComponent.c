@@ -167,7 +167,7 @@ class SP_CharacterStatsComponent : ScriptComponent
 		{
 			if (m_fTemperature < m_fColdnessTemperature)
 			{
-				SCR_CameraShakeManagerComponent.AddCameraShake(0.05, 0.05, 0.1, 200, 0.24);
+				SCR_CameraShakeManagerComponent.AddCameraShake(0.1, 0.05, 0.05, 0.2, 0.5);
 			}
 			if (m_fTemperature < m_fUnconsciousTemperature)
 			{
@@ -230,7 +230,7 @@ class SP_CharacterStatsComponent : ScriptComponent
 			// at distance of 2 the heat should be 0
 			// at distance 0 heat should be 20
 			float dist = (ent.GetOrigin() - GetOwner().GetOrigin()).Length();
-			float heat = (FIREPLACE_RANGE - dist) / FIREPLACE_RANGE * 20;
+			float heat = (FIREPLACE_RANGE - dist) / FIREPLACE_RANGE * 30;
 			
 			if (heat > 0)
 				m_FireplacesHeat = m_FireplacesHeat + heat;
@@ -486,9 +486,8 @@ class SP_CharacterStatsComponent : ScriptComponent
 			// apply factors on current temperature
 			const float cooldownRate = 0.1;
 			
-			float diffTemp = (clothesFactor - needClothes) * timeSlice * cooldownRate;		
-			diffTemp = diffTemp * timeBtwEachTick;
-			m_fTemperature = Math.Clamp(m_fTemperature + diffTemp, 0, m_fMaxTemperature);
+			float diffTemp = (clothesFactor - needClothes) * timeSlice;		
+			m_fTemperature = Math.Clamp(m_fTemperature + diffTemp + p_Drain, 0, m_fMaxTemperature);
 			//Print(string.Format("temp %1 / %2 diff %3 cloth %4 / %5", m_fTemperature, outsideTemperature, diffTemp, clothesFactor, needClothes));
 			
 			// check temperature for crossing thresholds and effects

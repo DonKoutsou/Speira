@@ -55,7 +55,63 @@ SCR_BaseGameMode : "{0F307326459A1395}prefabs/MP/Modes/GameMode_Base.et" {
    m_CharacterArchetypeList {
     SP_DialogueArchetype "{5D750354ADD40E19}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
     }
-    SP_DialogueArchetype "{5D76CECFF0B7DB41}" : "{65CFF309C633A29E}Configs/CharacterTesUS.conf" {
+    SP_DialogueArchetype "{65CFF309C633A29E}Configs/CharacterTesUS.conf" {
+     ArchetypeIdentifier "Faction and Rank"
+     m_sCharacterFaction "US"
+     m_sCharacterRank PRIVATE
+     m_aArchetypeFactionMatch {
+      "US" "USSR" "FIA" "SPEIRA"
+     }
+     DialogueBranch {
+      SP_DialogueBranch "{5D24F6680D99C27C}" {
+       m_BranchStages {
+        DialogueStage "{5D24F6680D99C27E}" {
+         m_Branch {
+          SP_DialogueBranch "{5D24F6680D99A900}" {
+           m_BranchStages {
+            DialogueStage "{5D24F6680D99A90E}" {
+             ActionText "Action Text1"
+             DialogueText "Dialogue Text1"
+            }
+            DialogueStage "{5D24F6680D99A90C}" {
+             ActionText "Action Text2"
+             DialogueText "Dialogue Text2"
+             m_Branch {
+              SP_DialogueBranch "{5D24F6680D99A90B}" {
+               m_BranchStages {
+                DialogueStage "{5D24F6680D963CCC}" {
+                 ActionText "Action Text21"
+                 DialogueText "Dialogue Text21"
+                }
+               }
+              }
+              SP_DialogueBranch "{5D24F6680D963CCD}" {
+               m_BranchStages {
+                DialogueStage "{5D24F6680D963CCE}" {
+                 ActionText "Action Text22"
+                 DialogueText "Dialogue Text22"
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        DialogueStage "{5D24F6680D963CD0}" {
+        }
+       }
+      }
+      SP_DialogueBranch "{5D24F6680D96BE96}" {
+       m_BranchStages {
+        DialogueStageConverseAction "{5D76A140C2D45CD2}" {
+         ActionText "trade"
+         DialogueText "fgaeg"
+        }
+       }
+      }
+     }
     }
    }
    m_ChatChannelFIA FIAChatChannel "{5D4F1DF0E0653056}" {

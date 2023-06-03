@@ -1,0 +1,29 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "74D3E7415542DA9C"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "Dried meat"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     SizeSetupStrategy Manual
+     ItemDimensions 1 1 1
+     ItemVolume 10
+    }
+    m_SlotType SLOT_VEST
+   }
+  }
+  MeshObject "{74D3E741994A4A00}" {
+   Object "{6073CC0058821B73}Assets/Items/Food/Meat_01_Dry.xob"
+  }
+  RigidBody "{74D3E7414740ED9A}" {
+   Mass 5
+   LinearDamping 0.5
+   AngularDamping 0.5
+   ModelGeometry 1
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+  }
+ }
+}

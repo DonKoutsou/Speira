@@ -1,0 +1,16 @@
+Tree : "{388AE316D09D0680}Prefabs/Vegetation/Core/Tree_Base.et" {
+ ID "27132768B0952045"
+ components {
+  ActionsManagerComponent "{5D867CC7EDDAC926}" {
+   ActionContexts {
+    UserActionContext "{5D867CC7EC10A9A3}" {
+     ContextName "default"
+     Position PointInfo "{5D867CC793AD21E2}" {
+      Offset 0 0.8869 0
+     }
+     Radius 1
+    }
+   }
+  }
+ }
+}

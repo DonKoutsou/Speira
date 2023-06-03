@@ -18,8 +18,25 @@ GenericEntity {
 Vehicle AModestBoat_Base1 {
  coords 88.993 1.001 157.337
 }
+$grp GenericEntity : "{128A19AA9F731095}prefabs/Items/Food/MeatLeg_01.et" {
+ {
+  coords 121.431 0.855 130.964
+ }
+ {
+  coords 121.477 0.855 131.383
+ }
+ {
+  coords 121.762 0.855 131.045
+ }
+}
+Tree : "{1C6F9AD2669C17F9}prefabs/Vegetation/Tree/t_malus_domestica_2s.et" {
+ coords 119.358 0.001 135.752
+}
 GenericEntity : "{2F5A0196CA2DB912}prefabs/Items/Food/Canteen_Filled_US.et" {
  coords 116.576 0.889 137.842
+}
+SCR_ChimeraCharacter : "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et" {
+ coords 118.839 0.805 138.776
 }
 $grp GenericEntity : "{410A0A507D24BFDF}prefabs/Items/Equipment/Canteens/Water_Bottle.et" {
  {
@@ -133,11 +150,17 @@ GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill
 GenericEntity : "{50A68300B537EDFA}prefabs/Items/Food/ArmyCrackers_Soviet_01.et" {
  coords 116.365 0.906 135.326
 }
+GenericEntity : "{5C5C6EE05EE2FF1A}prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
+ coords 120.709 0.869 130.879
+}
 GenericEntity : "{630FB4AD4A735264}prefabs/Items/Equipment/Canteens/Canteen_US_01.et" {
  coords 115.33 0.949 134.417
 }
 GenericEntity : "{70BC751317551D9B}prefabs/Items/Equipment/Canteens/Canteen_Soviet_01.et" {
  coords 115.926 0.917 135.524
+}
+GameEntity : "{83CBF3BB1EE36382}prefabs/Props/Civilian/Fireplace_tower.et" {
+ coords 120.409 0.823 132.977
 }
 GenericEntity : "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" {
  coords 115.376 0.929 135.865
@@ -145,6 +168,43 @@ GenericEntity : "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" {
 GenericEntity : "{B68D3829D4442F80}prefabs/Props/Civilian/RadioSmall_01_Base.et" {
  coords 120.493 0.753 136.91
 }
+GenericEntity : "{BBF415EE68294A4E}Prefabs/Props/Furniture/FridgeSmall_01.et" {
+ coords 119.423 0.856 132.435
+}
+$grp GenericEntity : "{C22A2F123CD609FC}prefabs/Items/Food/Meat_01_Dry.et" {
+ {
+  components {
+   InventoryItemComponent "{5222EB4D0C73006B}" {
+    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+     ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+      Name "BurnedMeat"
+     }
+    }
+   }
+   MeshObject "{74D3E741994A4A00}" {
+    Materials {
+     MaterialAssignClass "{5D86A05A4BD97D4B}" {
+      SourceMaterial "Common/Materials/Physics/flesh"
+      AssignedMaterial "{D5A7F470EB6795E1}Assets/Items/Food/Data/Meat_01_Dry_Burned.emat"
+     }
+    }
+   }
+  }
+  coords 122.104 0.873 130.046
+ }
+ {
+  coords 120.96 0.88 130.381
+ }
+}
+GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 122.935 0.804 131.583
+}
 GenericEntity : "{EB21D26B8D5A3232}prefabs/Items/Food/MRE.et" {
  coords 116.741 0.892 135.516
+}
+GenericEntity : "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et" {
+ coords 120.666 0.846 131.631
+}
+GenericEntity : "{FF8BD8E8A95DB3D2}Prefabs/Props/Furniture/Fridge_01.et" {
+ coords 118.242 0.861 134.483
 }

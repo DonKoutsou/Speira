@@ -3,75 +3,62 @@ class SP_AIDirectorClass: AIGroupClass
 };
 class SP_AIDirector : AIGroup
 {
+	[Attribute("0", UIWidgets.ComboBox, "Select Entity Catalog type for random spawn", "", ParamEnumArray.FromEnum(EEntityCatalogType), category: "Randomization")]
+	protected EEntityCatalogType	m_eEntityCatalogType;
+	
+	[Attribute("0", UIWidgets.ComboBox, "Select Entity Labels which you want to optionally include to random spawn. If you want to spawn everything, you can leave it out empty and also leave Include Only Selected Labels attribute to false.", "", ParamEnumArray.FromEnum(EEditableEntityLabel), category: "Randomization")]
+	protected ref array<EEditableEntityLabel> 		m_aIncludedEditableEntityLabels;
+	
+	[Attribute("0", UIWidgets.ComboBox, "Select Entity Labels which you want to exclude from random spawn", "", ParamEnumArray.FromEnum(EEditableEntityLabel), category: "Randomization")]
+	protected ref array<EEditableEntityLabel> 		m_aExcludedEditableEntityLabels;
+	
+	[Attribute(desc: "If true, it will spawn only the entities that are from Included Editable Entity Labels and also do not contain Label to be Excluded.", category: "Randomization")]
+	protected bool				m_bIncludeOnlySelectedLabels;
+	
+	[Attribute("", category: "Randomization")]
+	ref array<FactionKey> m_FactionsToApear;
 	
 	static ref array<SP_AIDirector> AllDirectors = null; // new ref array<SP_AIDirector>();
 	// parameters
-	[Attribute("3")]
+	[Attribute("3", category: "Spawning settings")]
 	int m_MaxAgentsToSpawn;
 	
-	[Attribute("100")]
+	[Attribute("100", category: "Spawning settings")]
 	float m_Radius;
 	
-	[Attribute("100")]
-	float m_CompositionRadius;
-	
-	[Attribute("true")]
+	[Attribute("true", category: "Spawning settings")]
 	bool m_Respawn;
 	
-	[Attribute("true")]
-	bool m_RenegadeRespawn;
-	
-	[Attribute("false")]
-	bool m_CommanderRespawn;
-	
-	[Attribute("true")]
+	[Attribute("true", category: "Spawning settings")]
 	bool m_SpawnAI;
 	
+	[Attribute("false", category: "Spawning settings")]
+	bool m_CommanderRespawn;
 	
-	[Attribute("0")]
+	[Attribute("0", category: "Spawning settings")]
 	float m_RespawnTimer;
 	
-	[Attribute("0")]
+	[Attribute("0", category: "Spawning settings")]
 	float m_CommanderRespawnTimer;
 	
-	[Attribute("0")]
-	float m_RenegadeRespawnTimer;
-	
-	[Attribute("")]
-	ref array<ResourceName> m_AgentTemplates;
-	
-	[Attribute("")]
+	[Attribute("", category: "Spawning settings")]
 	ResourceName m_Commander;
 	
-	[Attribute("")]
-	ResourceName m_Renegade;
-	
-	bool commanderspawned = false;
-
-	string m_sLocationName;
-	
-	[Attribute("")]
-	bool m_InstantSpawn;
-	
-	[Attribute("")]
+	[Attribute("", category: "Spawning settings")]
 	private ResourceName m_pDefaultWaypoint;
 	
-	[Attribute("")]
+	[Attribute("", category: "Spawning settings")]
 	private ResourceName m_pCommanderWaypoint;
-	
+
 	[Attribute()]
     protected ref SCR_MapLocationQuadHint m_WorldDirections;
-
+	bool commanderspawned = false;
+	string m_sLocationName;
 	protected int m_iGridSizeX;
 	protected int m_iGridSizeY;
-	
 	protected const float angleA = 0.775;
 	protected const float angleB = 0.325;
 	
-	string GetLocationName ()
-	{
-		return m_sLocationName;
-	}
 	// private
 	private int m_SpawnedCounter;	
 	private float m_RespawnPeriod;
@@ -83,6 +70,13 @@ class SP_AIDirector : AIGroup
 	private AIWaypoint ComWaypoint;
 	protected IEntity m_CommanderEnt;
 	protected SP_DialogueComponent DiagComp;
+	
+	
+	string GetLocationName ()
+	{
+		return m_sLocationName;
+	}
+	
 	bool GetDirectorOccupiedBy(FactionKey Key, out SP_AIDirector Director)
 	{
 		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;
@@ -193,78 +187,72 @@ class SP_AIDirector : AIGroup
 	}
 	Faction GetMajorityHolder(out string factionReadable)
 	{
-		int USSRcount;
-		int UScount;
-		int FIAcount;
-		int Banditcount;
-		int Renegcount;
-		for (int i = m_aGroups.Count() - 1; i >= 0; i--)
-		{
-			string faction = m_aGroups[i].GetFaction().GetFactionKey();
-			switch(faction)
-			{
-				case "USSR":
-				{
-					USSRcount = USSRcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "US":
-				{
-					UScount = UScount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "FIA":
-				{
-					FIAcount = FIAcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "BANDITS":
-				{
-					Banditcount = Banditcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "RENEGADE":
-				{
-					Renegcount = Renegcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-			}
-		}
-		int max = USSRcount;
-		FactionManager FMan = FactionManager.Cast(GetGame().GetFactionManager());
-    	Faction MajorFaction = FMan.GetFactionByKey("USSR");
-		factionReadable = "soviet";
-	    if (UScount > max)
+	    int USSRcount = 0;
+	    int UScount = 0;
+	    int FIAcount = 0;
+	    int Banditcount = 0;
+	    int Renegcount = 0;
+	
+	    FactionManager FMan = FactionManager.Cast(GetGame().GetFactionManager());
+	    Faction MajorFaction = null;
+	    int max = 0;
+	
+	    for (int i = m_aGroups.Count() - 1; i >= 0; i--)
 	    {
-	        max = UScount;
-			MajorFaction = FMan.GetFactionByKey("US");
-			factionReadable= "US";
+	        string faction = m_aGroups[i].GetFaction().GetFactionKey();
+	        int agentsCount = m_aGroups[i].GetAgentsCount();
+	
+	        switch (faction)
+	        {
+	            case "USSR":
+	                USSRcount += agentsCount;
+	                if (USSRcount > max)
+	                {
+	                    max = USSRcount;
+	                    MajorFaction = FMan.GetFactionByKey("USSR");
+	                    factionReadable = "soviet";
+	                }
+	                break;
+	            case "US":
+	                UScount += agentsCount;
+	                if (UScount > max)
+	                {
+	                    max = UScount;
+	                    MajorFaction = FMan.GetFactionByKey("US");
+	                    factionReadable = "US";
+	                }
+	                break;
+	            case "FIA":
+	                FIAcount += agentsCount;
+	                if (FIAcount > max)
+	                {
+	                    max = FIAcount;
+	                    MajorFaction = FMan.GetFactionByKey("FIA");
+	                    factionReadable = "guerrilla";
+	                }
+	                break;
+	            case "BANDITS":
+	                Banditcount += agentsCount;
+	                if (Banditcount > max)
+	                {
+	                    max = Banditcount;
+	                    MajorFaction = FMan.GetFactionByKey("BANDITS");
+	                    factionReadable = "bandit";
+	                }
+	                break;
+	            case "RENEGADE":
+	                Renegcount += agentsCount;
+	                if (Renegcount > max)
+	                {
+	                    max = Renegcount;
+	                    MajorFaction = FMan.GetFactionByKey("RENEGADES");
+	                    factionReadable = "renegade";
+	                }
+	                break;
+	        }
 	    }
-	    
-	    if (FIAcount > max)
-	    {
-	        max = FIAcount;
-			MajorFaction = FMan.GetFactionByKey("FIA");
-			factionReadable = "guerrilla";
-	    }
-	    
-	    if (Banditcount > max)
-	    {
-	        max = Banditcount;
-			MajorFaction = FMan.GetFactionByKey("BANDITS");
-			factionReadable = "bandit";
-	    }
-		if (Renegcount > max)
-	    {
-	        max = Renegcount;
-			MajorFaction = FMan.GetFactionByKey("RENEGADES");
-			factionReadable = "renegade";
-	    }
-	    
-	    return MajorFaction; 
-		
-			
-		
+	
+	    return MajorFaction;
 	}
 	void SP_AIDirector(IEntitySource src, IEntity parent)
 	{
@@ -297,6 +285,67 @@ class SP_AIDirector : AIGroup
 	{
 		return 3*y + x;
 	}
+	string GetCharacterLocation(IEntity Character)
+	{
+		vector mins,maxs;
+		GetGame().GetWorldEntity().GetWorldBounds(mins, maxs);
+			
+		m_iGridSizeX = maxs[0]/3;
+		m_iGridSizeY = maxs[2]/3;
+	 
+		SCR_EditableEntityCore core = SCR_EditableEntityCore.Cast(SCR_EditableEntityCore.GetInstance(SCR_EditableEntityCore));
+		vector posPlayer = Character.GetOrigin();
+			
+		SCR_EditableEntityComponent nearest = core.FindNearestEntity(posPlayer, EEditableEntityType.COMMENT, EEditableEntityFlag.LOCAL);
+		GenericEntity nearestLocation = nearest.GetOwner();
+		SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
+		string closestLocationName;
+		MapItem item = mapDescr.Item();
+		closestLocationName = item.GetDisplayName();
+
+		vector lastLocationPos = nearestLocation.GetOrigin();
+		float lastDistance = vector.DistanceSqXZ(lastLocationPos, posPlayer);
+	
+		string closeLocationAzimuth;
+		vector result = posPlayer - lastLocationPos;
+		result.Normalize();
+		
+		float angle1 = vector.DotXZ(result,vector.Forward);
+		float angle2 = vector.DotXZ(result,vector.Right);
+				
+		if (angle2 > 0)
+		{
+			if (angle1 >= angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorth";
+			if (angle1 < angleA && angle1 >= angleB )
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorthEast";
+			if (angle1 < angleB && angle1 >=-angleB)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionEast";
+			if (angle1 < -angleB && angle1 >=-angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouthEast";
+			if (angle1 < -angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouth";
+		}
+		else
+		{
+			if (angle1 >= angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorth";
+			if (angle1 < angleA && angle1 >= angleB )
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionNorthWest";
+			if (angle1 < angleB && angle1 >=-angleB)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionWest";
+			if (angle1 < -angleB && angle1 >=-angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouthWest";
+			if (angle1 < -angleA)
+				closeLocationAzimuth = "#AR-MapLocationHint_DirectionSouth";
+		}
+		int playerGridPositionX = posPlayer[0]/m_iGridSizeX;
+		int playerGridPositionY = posPlayer[2]/m_iGridSizeY;
+			
+		int playerGridID = GetGridIndex(playerGridPositionX,playerGridPositionY);
+	 	m_sLocationName = m_WorldDirections.GetQuadHint(playerGridID) + ", " + closestLocationName;
+		return m_sLocationName;
+	}
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
@@ -307,7 +356,6 @@ class SP_AIDirector : AIGroup
 		m_SpawnedCounter = 0;
 		m_RespawnPeriod = 0;
 		m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
-		m_RenegadeRespawnPeriod = m_RenegadeRespawnTimer;
 		// get first children, it should be WP
 		vector position = GetOrigin();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
@@ -319,21 +367,6 @@ class SP_AIDirector : AIGroup
 		Resource CWP = Resource.Load(m_pCommanderWaypoint);
 		DefWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(WP, null, spawnParams));
 		ComWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(CWP, null, spawnParams));
-		//vector posPlayer = this.GetOrigin();
-		//SCR_EditableEntityCore core = SCR_EditableEntityCore.Cast(SCR_EditableEntityCore.GetInstance(SCR_EditableEntityCore));
-	    //   if (!core)
-	    //       return;
-		//SCR_EditableEntityComponent nearest = core.FindNearestEntity(posPlayer, EEditableEntityType.COMMENT, EEditableEntityFlag.LOCAL);
-		//if (!nearest)
-		//	return;
-		//GenericEntity nearestLocation = nearest.GetOwner();
-		//SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
-		//string closestLocationName;
-		//if (!mapDescr)
-		//	return;
-		//MapItem item = mapDescr.Item();
-		//m_sLocationName = item.GetDisplayName();
-		//////////////////////////////////////
 		vector mins,maxs;
 		if(!GetGame().GetWorldEntity())
 		{
@@ -401,7 +434,7 @@ class SP_AIDirector : AIGroup
 	{
 		super.EOnFrame(owner, timeSlice);
 		
-		if (m_AgentTemplates.Count() == 0 || !m_SpawnAI)
+		if (!m_SpawnAI)
 			return;
 
 
@@ -409,13 +442,6 @@ class SP_AIDirector : AIGroup
 		{
 			if (GetAgentsCount() < m_MaxAgentsToSpawn)
 			{
-				if (m_InstantSpawn == true)
-				{
-					if (Spawn())
-					{
-						m_InstantSpawn = false;
-					}
-				}
 				if (m_RespawnPeriod <= 0.0)
 				{
 					if (Spawn())
@@ -426,8 +452,7 @@ class SP_AIDirector : AIGroup
 				else
 				{
 					m_RespawnPeriod -= timeSlice;
-				}
-					
+				}	
 			}
 		}
 		if (m_CommanderRespawn)
@@ -446,98 +471,11 @@ class SP_AIDirector : AIGroup
 					m_CommanderRespawnPeriod -= timeSlice;
 			}
 		}
-		if (m_RenegadeRespawn && GetAgentsCount() >= m_MaxAgentsToSpawn)
-		{
-			if (m_RenegadeRespawnPeriod <= 0.0)
-			{
-				commanderspawned = false;
-				if (SpawnRenegade(m_Renegade))
-				{
-					m_RenegadeRespawnPeriod = m_RenegadeRespawnTimer;
-				}
-			}
-			else
-			{
-				m_RenegadeRespawnPeriod -= timeSlice;
-			}
-		}
 	}
-	bool SpawnRenegade(ResourceName name)
-	{
-		
-		RandomGenerator rand = new RandomGenerator();
-		
-		// randomize position in radius
-		vector position = GetOrigin();
-		float yOcean = GetWorld().GetOceanBaseHeight();
-		
-		position[1] = yOcean - 1; // force at least one iteration
-		while (position[1] < yOcean)
-		{
-			position[0] = position[0] + rand.RandFloatXY(-m_Radius, m_Radius);
-			position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
-			position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
-		}
-
-		// randomize entity template from array
-		int randomId = rand.RandInt(0, m_AgentTemplates.Count());
-		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
-		spawnMatrix[3] = position;
-		EntitySpawnParams spawnParams = EntitySpawnParams();
-		spawnParams.TransformMode = ETransformMode.WORLD;
-		spawnParams.Transform = spawnMatrix;
-		vector pos = spawnParams.Transform[3];
-		float surfaceY = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
-		if (pos[1] < surfaceY)
-		{
-			pos[1] = surfaceY;
-		}
-		
-		//Snap to the nearest navmesh point
-		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
-		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(pos, "10 10 10", pos))
-		{
-			float groundHeight = GetGame().GetWorld().GetSurfaceY(pos[0], pos[2]);
-			if (pos[1] < groundHeight)
-				pos[1] = groundHeight;
-		}
-		
-		spawnParams.Transform[3] = pos;
-		Resource res;
-		IEntity newEnt;
-		res = Resource.Load(name);
-		newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
-		if (!newEnt)
-			return false;
-		if (newEnt && newEnt.GetPhysics())
-			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
-		if (newEnt)
-		{
-			OnSpawn(newEnt);
-			AIAgent agent = AIAgent.Cast(newEnt);
-			if (agent)
-			{
-				AddAgent(agent);
-			}
-			else
-			{
-				AIControlComponent comp = AIControlComponent.Cast(newEnt.FindComponent(AIControlComponent));
-				if (comp && comp.GetControlAIAgent())
-				{
-					AddAgent(comp.GetControlAIAgent());
-				}
-			}
-		}
-		return true;
-	};
 	bool SpawnDelivery(ResourceName Name)
 	{
-		if (m_AgentTemplates.Count() == 0)
-			return false;
-		
 		RandomGenerator rand = new RandomGenerator();
 		
-		// randomize position in radius
 		vector position = GetOrigin();
 		float yOcean = GetWorld().GetOceanBaseHeight();
 		
@@ -562,8 +500,6 @@ class SP_AIDirector : AIGroup
 		
 		FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(newEnt.FindComponent(FactionAffiliationComponent));
 		string faction = factcomp.GetAffiliatedFaction().GetFactionName();
-		//DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-		//DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
 		if (newEnt.GetPhysics())
 			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
 			
@@ -585,14 +521,10 @@ class SP_AIDirector : AIGroup
 				}
 			}
 		}
-
 		return true;
 	}
 	bool Spawn()
 	{
-		if (m_AgentTemplates.Count() == 0)
-			return false;
-		
 		RandomGenerator rand = new RandomGenerator();
 		
 		// randomize position in radius
@@ -606,11 +538,24 @@ class SP_AIDirector : AIGroup
 			position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
 			position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
 		}
-
 		// randomize entity template from array
-		int randomId = rand.RandInt(0, m_AgentTemplates.Count());
-		ResourceName name = m_AgentTemplates.Get(randomId);
-
+		int randomId = rand.RandInt(0, m_FactionsToApear.Count());
+		FactionManager factionm = GetGame().GetFactionManager();
+		if(!m_FactionsToApear.Get(randomId))
+		{
+			Print("Cant find faction set in director");
+			return false;
+		}
+		SCR_Faction randfaction = SCR_Faction.Cast(factionm.GetFactionByKey(m_FactionsToApear.Get(randomId)));
+		SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(m_eEntityCatalogType);
+		if(!entityCatalog)
+		{
+			Print("Faction has no entity catalogs set up");
+			return false;
+		}
+		array<SCR_EntityCatalogEntry> aFactionEntityEntry = {};
+		entityCatalog.GetFullFilteredEntityListWithLabels(aFactionEntityEntry, m_aIncludedEditableEntityLabels, m_aExcludedEditableEntityLabels, m_bIncludeOnlySelectedLabels);
+		ResourceName name = aFactionEntityEntry.GetRandomElement().GetPrefab();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
 		spawnMatrix[3] = position;
 		EntitySpawnParams spawnParams = EntitySpawnParams();
@@ -622,7 +567,6 @@ class SP_AIDirector : AIGroup
 		{
 			pos[1] = surfaceY;
 		}
-		
 		//Snap to the nearest navmesh point
 		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
 		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(pos, "50 50 50", pos))
@@ -644,8 +588,6 @@ class SP_AIDirector : AIGroup
 			m_CommanderEnt = CommandGroup.GetLeaderEntity();
 			FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(m_CommanderEnt.FindComponent(FactionAffiliationComponent));
 			string faction = factcomp.GetAffiliatedFaction().GetFactionName();
-			//DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-			//DiagComp.DoAnouncerDialogue(faction + " " + "Commander squad has been deployed on location" + " " + m_sLocationName);
 			commanderspawned = true;
 		}
 		else
@@ -696,8 +638,6 @@ class SP_AIDirector : AIGroup
 				}
 			}
 		}
-		
-		
 		return true;
 	}
 	event void OnSpawn(IEntity spawned)

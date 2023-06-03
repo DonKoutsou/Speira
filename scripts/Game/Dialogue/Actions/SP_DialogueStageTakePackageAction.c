@@ -5,7 +5,7 @@ class DialogueStageTakePackageAction : DialogueStage
 	ref array <ref ResourceName> m_ItemToGive;
 	[Attribute("", UIWidgets.Coords, params: "", desc: "")]
 	vector m_SpawnOffset;
-	
+	string LocName;
 	SP_AIDirector MyDirector;
 	
 	string DName;
@@ -34,12 +34,13 @@ class DialogueStageTakePackageAction : DialogueStage
 			}
 		}
 		SP_PackageComponent PComp = SP_PackageComponent.Cast(Package.FindComponent(SP_PackageComponent));
-		string LocName = MyDirector.GetLocationName();
+		
 		CharacterIdentityComponent CharID = CharacterIdentityComponent.Cast(Character.FindComponent(CharacterIdentityComponent));
 		SCR_CharacterRankComponent CharRank = SCR_CharacterRankComponent.Cast(Character.FindComponent(SCR_CharacterRankComponent));
 		string OName = CharRank.GetCharacterRankName(Character) + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
 		IEntity CharToDeliverTo;
 		MyDirector.GetRandomUnitByFKey(key, CharToDeliverTo);
+		LocName = MyDirector.GetCharacterLocation(CharToDeliverTo);
 		CharacterIdentityComponent CharID2 = CharacterIdentityComponent.Cast(CharToDeliverTo.FindComponent(CharacterIdentityComponent));
 		DName = CharRank.GetCharacterRankName(CharToDeliverTo) + " " + CharID2.GetIdentity().GetName() + " " + CharID2.GetIdentity().GetSurname();
 		PComp.SetInfo(OName, DName, LocName, key);
@@ -56,7 +57,7 @@ class DialogueStageTakePackageAction : DialogueStage
 	};
 	string GetRandomDeliver(string key)
 	{
-		string TextToSend = string.Format(DialogueText, DName, MyDirector.GetLocationName());
+		string TextToSend = string.Format(DialogueText, DName, LocName);
 		return TextToSend;
 	}
 
