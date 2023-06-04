@@ -1,3 +1,93 @@
+GenericEntity {
+ components {
+  FactionAffiliationComponent "{5D88A7E2692F60BD}" {
+   "faction affiliation" "USSR"
+  }
+  Hierarchy "{5D88A7E2692F609D}" {
+   Enabled 1
+  }
+  SCR_AISmartActionSentinelComponent "{5D88A7E2692F60FF}" {
+   AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+   Tags {
+    "ObservationPost"
+   }
+   ActionOffset 2.154 0 -2.842
+   m_vLookPosition 1.641 1 -47.662
+   m_fLookDirectionRange 180
+   m_iCharacterStance CROUCH
+   m_bUseBinoculars 1
+  }
+  SCR_AISmartActionSentinelComponent "{5D88A7E2692F60CE}" {
+   AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+   Tags {
+    "CoverPost"
+   }
+   ActionOffset -2.25 0 0.832
+   m_vLookPosition -1.827 1 31.407
+   m_fLookDirectionRange 180
+   m_bUseBinoculars 1
+  }
+  SCR_AISmartActionSentinelComponent "{5D88A7E2692F60DE}" {
+   AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+   Tags {
+    "CoverPost"
+   }
+   ActionOffset -2.751 0 -0.657
+   m_vLookPosition -4.737 4.234 29.075
+   m_fLookDirectionRange 180
+   m_iCharacterStance CROUCH
+   m_bUseBinoculars 1
+   m_eLeaningType LEFT
+  }
+  SCR_CampaignBuildingCompositionComponent "{5D88A7E2692F6128}" {
+  }
+  SCR_SlotCompositionComponent "{5D88A7E2692F6126}" {
+  }
+  RplComponent "{5D88A7E2692F6101}" {
+   Streamable Disabled
+  }
+  SCR_AISmartActionSentinelComponent "{5D88A7E2692F6106}" {
+   ActionOffset -3.074 0 -2.185
+   m_vLookPosition -3.313 0 24.273
+  }
+ }
+ coords 121.379 1.509 168.992
+ Flags 1027
+ {
+  SCR_DestructibleEntity : "{15B364C10D53C789}Prefabs/Props/Furniture/TableRecreation_01_redyellow.et" {
+   coords 0.079 0 0.588
+   angleY 37.79
+  }
+  GameEntity : "{50E6A3845C9F20FD}prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+   coords 0.253 0.899 0.933
+  }
+  GenericEntity : "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et" {
+   coords 1.366 0 2.737
+   angleY 0
+  }
+  GenericEntity : "{9B7F08BF4C938AD2}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_Soviet.et" {
+   coords 0 0 0
+  }
+  $grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
+   {
+    coords -0.626 0 -0.668
+    angleX 0
+    angleY 0
+    angleZ 0
+   }
+   {
+    coords 1.199 0 -0.499
+    angleX 0
+    angleY 0
+    angleZ 0
+   }
+  }
+  GenericEntity : "{E56F1B739B9792C4}Prefabs/Props/Civilian/Ashtray_01_Full_green.et" {
+   coords -0.115 0.899 0.492
+   angleY 0
+  }
+ }
+}
 GenericEntity : "{01E0B52B5BA2EF72}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
  coords 175.443 1.057 157.887
 }

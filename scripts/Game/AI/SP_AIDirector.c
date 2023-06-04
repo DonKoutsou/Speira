@@ -80,20 +80,27 @@ class SP_AIDirector : AIGroup
 	bool GetDirectorOccupiedBy(FactionKey Key, out SP_AIDirector Director)
 	{
 		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;
+		ref array<SP_AIDirector> FrDirectors = new ref array<SP_AIDirector>;
 		int UnitCount;
 		for (int i = 0; i < Directors.Count(); i++)
 		{
 			FactionKey FKey;
 			int Count;
 			FactionKey Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
-			if (Key2 == Key && Count > UnitCount && Directors[i] != this)
+			if (Key2 == Key && Directors[i] != this)
 			{
-				Director = Directors[i];
+				FrDirectors.Insert(Directors[i]);
 				UnitCount = Count;
 			}
 		}
-		if(Director)
+		if(FrDirectors.Count() <= 0)
 		{
+			return false;
+		}	
+		else
+		{
+			int index = Math.RandomInt(0, FrDirectors.Count());
+			Director = FrDirectors[index];
 			return true;
 		}
 		return false;
@@ -116,74 +123,73 @@ class SP_AIDirector : AIGroup
 	}
 	FactionKey GetMajorityHolderNCount(out string factionReadable, out int UnitCount)
 	{
-		int USSRcount;
-		int UScount;
-		int FIAcount;
-		int Banditcount;
-		int Renegcount;
-		for (int i = m_aGroups.Count() - 1; i >= 0; i--)
-		{
-			string faction = m_aGroups[i].GetFaction().GetFactionKey();
-			switch(faction)
-			{
-				case "USSR":
-				{
-					USSRcount = USSRcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "US":
-				{
-					UScount = UScount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "FIA":
-				{
-					FIAcount = FIAcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "BANDITS":
-				{
-					Banditcount = Banditcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-				case "RENEGADE":
-				{
-					Renegcount = Renegcount + m_aGroups[i].GetAgentsCount();
-				}
-				break;
-			}
-		}
-		int max = USSRcount;
-    	string MajorFaction = "USSR";
-		factionReadable = "soviet";
-	    if (UScount > max)
+		int USSRcount = 0;
+	    int UScount = 0;
+	    int FIAcount = 0;
+	    int Banditcount = 0;
+	    int Renegcount = 0;
+	
+	    FactionManager FMan = FactionManager.Cast(GetGame().GetFactionManager());
+	    Faction MajorFaction = null;
+	    int max = 0;
+	
+	    for (int i = m_aGroups.Count() - 1; i >= 0; i--)
 	    {
-	        max = UScount;
-			MajorFaction = "US";
-			factionReadable = "US";
+	        string faction = m_aGroups[i].GetFaction().GetFactionKey();
+	        int agentsCount = m_aGroups[i].GetAgentsCount();
+	
+	        switch (faction)
+	        {
+	            case "USSR":
+	                USSRcount += agentsCount;
+	                if (USSRcount > max)
+	                {
+	                    max = USSRcount;
+	                    MajorFaction = FMan.GetFactionByKey("USSR");
+	                    factionReadable = "soviet";
+	                }
+	                break;
+	            case "US":
+	                UScount += agentsCount;
+	                if (UScount > max)
+	                {
+	                    max = UScount;
+	                    MajorFaction = FMan.GetFactionByKey("US");
+	                    factionReadable = "US";
+	                }
+	                break;
+	            case "FIA":
+	                FIAcount += agentsCount;
+	                if (FIAcount > max)
+	                {
+	                    max = FIAcount;
+	                    MajorFaction = FMan.GetFactionByKey("FIA");
+	                    factionReadable = "guerrilla";
+	                }
+	                break;
+	            case "BANDITS":
+	                Banditcount += agentsCount;
+	                if (Banditcount > max)
+	                {
+	                    max = Banditcount;
+	                    MajorFaction = FMan.GetFactionByKey("BANDITS");
+	                    factionReadable = "bandit";
+	                }
+	                break;
+	            case "RENEGADE":
+	                Renegcount += agentsCount;
+	                if (Renegcount > max)
+	                {
+	                    max = Renegcount;
+	                    MajorFaction = FMan.GetFactionByKey("RENEGADE");
+	                    factionReadable = "renegade";
+	                }
+	                break;
+	        }
 	    }
-	    
-	    if (FIAcount > max)
-	    {
-	        max = FIAcount;
-			MajorFaction = "FIA";
-			factionReadable = "guerrilla";
-	    }
-	    
-	    if (Banditcount > max)
-	    {
-	        max = Banditcount;
-			MajorFaction = "BANDITS";
-			factionReadable = "bandit";
-	    }
-		if (Renegcount > max)
-	    {
-	        max = Renegcount;
-			MajorFaction = "RENEGADES";
-			factionReadable = "renegade";
-	    }
+	
 		UnitCount = max;
-	    return MajorFaction; 	
+	    return MajorFaction.GetFactionKey(); 	
 	}
 	Faction GetMajorityHolder(out string factionReadable)
 	{
@@ -245,7 +251,7 @@ class SP_AIDirector : AIGroup
 	                if (Renegcount > max)
 	                {
 	                    max = Renegcount;
-	                    MajorFaction = FMan.GetFactionByKey("RENEGADES");
+	                    MajorFaction = FMan.GetFactionByKey("RENEGADE");
 	                    factionReadable = "renegade";
 	                }
 	                break;
@@ -269,17 +275,6 @@ class SP_AIDirector : AIGroup
 	{
 		if(AllDirectors)
 			AllDirectors.Remove(AllDirectors.Find(this));
-	}
-
-	bool HandleFoundSlot(IEntity e)
-	{
-		SCR_SiteSlotEntity slot = SCR_SiteSlotEntity.Cast(e);
-		if (slot)
-		{
-			m_Slots.Insert(slot);
-		}
-		
-		return true;
 	}	
 	protected int GetGridIndex(int x, int y)
 	{

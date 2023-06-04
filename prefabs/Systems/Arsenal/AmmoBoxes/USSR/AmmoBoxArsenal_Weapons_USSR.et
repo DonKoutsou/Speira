@@ -42,12 +42,6 @@ GenericEntity : "{CCFA1D2A74D3F13E}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
      }
      NumSlots 2
     }
-    MultiSlotConfiguration "{5C4F2D8F9B8D47BC}" {
-     SlotTemplate InventoryStorageSlot AK_Optic {
-      Prefab "{CB9A89C66B1EBE0A}Prefabs/Weapons/Attachments/Optics/Optic_1P29.et"
-     }
-     NumSlots 4
-    }
     MultiSlotConfiguration "{5C4F2D8F9BE7C337}" {
      SlotTemplate InventoryStorageSlot AK_GL {
       Prefab "{1ABABE3551512B0A}Prefabs/Weapons/Attachments/Underbarrel/UGL_GP25.et"

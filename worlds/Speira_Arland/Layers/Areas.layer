@@ -1,14 +1,3 @@
-SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
- coords 693.637 1.501 2258.245
- m_aIncludedEditableEntityLabels {
- }
- m_MaxAgentsToSpawn 2
- m_WorldDirections SCR_MapLocationQuadHint "{5D86C8A7F3399414}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
- }
-}
-GenericEntity SlotAI_7 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
- coords 3022.538 71.268 1562.106
-}
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  USSR_Area {
   components {
@@ -35,7 +24,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            Ural5 {
             components {
              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
+              m_sObjectToSpawn "{BEFBFDEE7BCF4A04}prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Fuelless.et"
              }
             }
             coords 57.373 -1.356 41.762
@@ -44,7 +33,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            Ural3 {
             components {
              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
+              m_sObjectToSpawn "{BEFBFDEE7BCF4A04}prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Fuelless.et"
              }
             }
             coords 54.116 -1.356 52.27
@@ -53,7 +42,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            Ural1 {
             components {
              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-              m_sObjectToSpawn "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et"
+              m_sObjectToSpawn "{BEFBFDEE7BCF4A04}prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Fuelless.et"
              }
             }
             coords 52.497 -1.356 60.028
@@ -1082,15 +1071,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-        SlotAI_1 {
-         components {
-          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-           m_sObjectToSpawn "{F3342A7CBDF0FF91}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_General.et"
-           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-          }
-         }
-         coords 1.501 -38.264 414.023
-        }
         SlotAI_2 {
          components {
           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
@@ -1142,6 +1122,71 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
       }
       coords 464.484 -1.514 2650.678
+     }
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+      Slot_317 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 870.06 33.166 -27.247
+       angleY -180
+      }
+      Slot_319 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 769.737 2.613 -113.578
+       angleY -15
+      }
+      Slot_320 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 1074.819 -0.374 40.674
+       angleY 120
+      }
+      Slot_322 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 1693.582 41.544 792.096
+       angleY 107.884
+      }
+      Slot_323 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 1565.178 46.924 916.318
+       angleY 107.884
+      }
+      Slot_324 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 1252.416 36.631 1853.944
+       angleY 86.628
+      }
+      Slot_325 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 747.648 49.677 2164.995
+       angleY -40.779
+      }
      }
     }
    }
@@ -2081,7 +2126,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et"
+         m_sObjectToSpawn "{48A04E0A139BB167}prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et"
         }
        }
        coords -562.42 -46.195 6.722
@@ -2092,7 +2137,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et"
+         m_sObjectToSpawn "{48A04E0A139BB167}prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et"
         }
        }
        coords -563.343 -46.21 13.189
@@ -3191,8 +3236,4 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
-}
-GenericEntity : "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et" {
- coords 2293.09 90.205 1253.1
- angleY 152.894
 }

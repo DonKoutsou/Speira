@@ -36,10 +36,10 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
      Prefab "{9B920BD5C2B5AC1C}prefabs/Characters/Uniforms/ShirtFormal_M69_SA_EN1.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{9D4EE538BFAD6FF6}Prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
+     Prefab "{9D4EE538BFAD6FF6}prefabs/Characters/Uniforms/Pants_M69FormalSlacks.et"
     }
     LoadoutSlotInfo Boots {
-     Prefab "{F3445F545DBF5062}Prefabs/Characters/Uniforms/Shoes_Formal.et"
+     Prefab "{F3445F545DBF5062}prefabs/Characters/Uniforms/Shoes_Formal.et"
     }
     LoadoutSlotInfo Back {
      Prefab "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
@@ -47,7 +47,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     LoadoutSlotInfo Vest {
     }
     LoadoutSlotInfo Watch {
-     Prefab ""
+     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
     }
    }
   }

@@ -1,25 +1,21 @@
 SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  ID "5D42AA2A8C40E9C7"
  coords 7196.424 32.436 1292.248
- DangerEventRange 100
+ DangerEventRange 50
+ m_eEntityCatalogType GROUP
+ m_FactionsToApear {
+  "BANDITS"
+ }
  m_MaxAgentsToSpawn 2
- m_Radius 5
- m_CompositionRadius 10
+ m_Radius 10
  m_Respawn 1
- m_CommanderRespawn 1
  m_SpawnAI 1
+ m_CommanderRespawn 1
  m_RespawnTimer 300
  m_CommanderRespawnTimer 60
- m_AgentTemplates {
-  "{93596538D2FA5608}prefabs/Groups/Campaign/Group_Bandits.et"
- }
  m_Commander "{227ED44DA25DC1E0}prefabs/Groups/Campaign/Group_Bandits_Commander.et"
- m_Compositions {
-  "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et"
- }
- m_InstantSpawn 1
  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
- m_pCommanderWaypoint "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+ m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
  m_WorldDirections SCR_MapLocationQuadHint "{5D6A802F64DFDAE1}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
  }
 }

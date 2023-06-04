@@ -10,9 +10,9 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 	override void OnControllableDestroyed(IEntity entity, IEntity instigator)
 	{
 		
-		if (instigator == GetGame().GetPlayerController().GetControlledEntity())
+		if (instigator && EntityUtils.IsPlayer(instigator))
 		{
-			if (entity && instigator)
+			if (entity)
 			{
 				SCR_FactionManager FMan = SCR_FactionManager.Cast(GetGame().GetFactionManager());
 				FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
@@ -37,6 +37,11 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "US")
 						{
 							DiagComp.DoAnouncerDialogue("Killed unit of the US faction, US will atack you from now on");
+							FMan.SetFactionsHostile(KillerF, VictimF);
+						}
+						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "BANDITS")
+						{
+							DiagComp.DoAnouncerDialogue("Killed unit of the Bandit faction, they will atack you from now on");
 							FMan.SetFactionsHostile(KillerF, VictimF);
 						}
 						else if (KillerF == VictimF)

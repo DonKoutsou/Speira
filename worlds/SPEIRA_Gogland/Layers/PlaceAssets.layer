@@ -613,7 +613,3 @@ $grp GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
   coords 8144.207 6.491 3667.224
  }
 }
-GenericEntity : "{DA4353EEE7006DD8}prefabs/Trading_Items/FIA_TradingStation.et" {
- coords 7581.034 18.345 4041.737
- angleY 180
-}

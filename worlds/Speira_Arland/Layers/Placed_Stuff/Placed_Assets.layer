@@ -1200,6 +1200,10 @@ $grp GenericEntity : "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.e
   coords 1658.031 3.511 884.848
   angleY -179.747
  }
+ {
+  coords 2293.09 90.205 1253.1
+  angleY 152.894
+ }
 }
 GameEntity : "{EC645B2E2123131F}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_blue.et" {
  coords 1455.2 2.025 1814.029

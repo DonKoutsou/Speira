@@ -27,6 +27,8 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
   MeshObject "{50E6A0E7D5C64E40}" {
    Object "{4C5DB4BC63F4D4F0}Assets/Items/Food/MeatLeg_01.xob"
   }
+  Hierarchy "{5D88A7E74150F546}" {
+  }
   RigidBody "{50E6A0E7D5C64E4B}" {
    ModelGeometry 1
   }

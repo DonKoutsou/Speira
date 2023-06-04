@@ -1,6 +1,9 @@
 $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_HostileArea.et" {
  {
   coords 7169.131 5.846 5216.708
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_RespawnTimer 300
@@ -9,6 +12,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 5882.239 78.926 4256.529
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_RespawnTimer 320
@@ -17,6 +23,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 5973.283 37.799 2958.457
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_RespawnTimer 310
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D13213E634DB}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -24,6 +33,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 6772.699 124.929 2891.358
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_RespawnTimer 290
@@ -32,40 +44,51 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 7247.334 33.406 1472.488
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_RespawnTimer 280
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D13214575D8D}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 7369.336 3.98 1074.569
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_RespawnTimer 300
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132170450A8}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 8003.716 5.001 2079.141
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
-  m_CompositionRadius 200
   m_RespawnTimer 315
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D13216D3125A}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 6286.731 10.411 7454.451
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
-  m_CompositionRadius 200
   m_RespawnTimer 312
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D13219F60693}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 5010.461 5.132 6418.488
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132189EAC65}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -73,6 +96,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 5581.695 123.407 6828.419
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1321BB5CA00}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -80,6 +106,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 5401.547 47.44 6320.531
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1321D5E1EEA}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -87,6 +116,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 5431.691 87.251 7257.772
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1321C528A43}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -94,12 +126,18 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 5757.52 10.501 8606.189
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1321F66A5DA}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 5355.983 9.485 9146.407
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1321E755F9A}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -107,18 +145,27 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 4326.245 8.399 9118.603
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D13201D0DFFD}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 4533.381 11.157 8820.374
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1320083A337}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 4769.222 26.012 7919.958
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 250
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1320252C06A}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -126,12 +173,18 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 6693.933 98.373 2109.839
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132056E1B3A}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 7486.668 39.857 1663.287
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132046C7701}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -140,6 +193,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6917.667 98.617 4068.918
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -148,6 +204,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6673.582 8.973 3274.647
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -156,6 +215,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 5821.375 2.76 3617.086
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -164,6 +226,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 7398.361 13.533 3530.405
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 1
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -172,6 +237,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 7481.016 18.573 3180.235
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -180,6 +248,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6860.711 138.452 2496.352
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -188,6 +259,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 7645.765 62.002 2704.773
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 1
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -196,6 +270,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 7495.479 13.129 4762.147
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 1
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -204,6 +281,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 5445.178 6.38 4734.346
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -212,6 +292,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6784.598 52.135 5626.785
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -220,6 +303,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 5820.204 66.713 7008.909
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -228,6 +314,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 5756.051 40.326 7577.931
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 1
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -236,6 +325,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6029.253 14.23 7934.563
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -244,6 +336,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 4784.785 6.807 7207.714
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 1
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -252,6 +347,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 5900.076 39.171 5713.901
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -260,6 +358,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6546.226 65.818 5933.148
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -268,6 +369,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6294.484 71.498 5760.348
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -276,6 +380,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6114.491 8.125 1539.57
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -284,6 +391,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 8047.98 5.957 3223.432
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -292,6 +402,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  {
   coords 6958.807 19.076 4667.845
   DangerEventRange 300
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
@@ -299,12 +412,18 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  {
   coords 6371.978 11.334 4699.82
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_MaxAgentsToSpawn 2
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132114A735D}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
  {
   coords 6254.02 48.876 5084.909
+  m_FactionsToApear + {
+   "FIA"
+  }
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
@@ -317,30 +436,23 @@ $grp SP_AIDirector : "{248F75698912DFA0}prefabs/AI/Spawners/SP_AIDirector_Trader
  }
  {
   coords 8073.848 26.057 2739.354
-  m_AgentTemplates {
-   "{22F33D3EC8F281AB}Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et"
+  m_FactionsToApear {
+   "FIA"
   }
+  m_MaxAgentsToSpawn 1
   m_Commander "{0F02FB70B7BB4F2A}prefabs/Groups/Campaign/Group_FIA_TradeGroup.et"
  }
 }
 SP_AIDirector : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
  coords 5993.187 44.563 4777.992
+ m_WorldDirections SCR_MapLocationQuadHint "{5D86ED2CC938C430}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
+ }
 }
 SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
- coords 7597.931 18.345 4006.69
+ coords 7582.65 18.345 4038.626
  DangerEventRange 100
+ m_MaxAgentsToSpawn 2
  m_Radius 100
- m_CompositionRadius 200
- m_CompositionsMed + {
-  "{4721B764D072C7CB}prefabs/Compositions/Misc/Tavern_Comp.et"
- }
- m_CompositionsLarge {
-  "{70BEEEC472F2CD7D}Prefabs/Compositions/Slotted/SlotFlatMedium/FieldHospital_M_USSR_01.et" "{6DF32F9976E68515}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_USSR_01.et"
- }
- m_CompositionsRoad {
-  "{089470408DAADC20}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_USSR_01.et" "{5F42399DF7455261}prefabs/Compositions/Slotted/SlotRoadMedium/Checkpoint_M_US_01.et" "{27F6A0815E6FF6EE}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_USSR_01.et" "{172D03072FE6ECAA}prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_US_01.et" "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et" "{D948DCEA222BF12E}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_02.et"
- }
- m_InstantSpawn 1
  m_WorldDirections SCR_MapLocationQuadHint "{5D66D54F6ECC8D02}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
  }
 }
@@ -349,17 +461,15 @@ SP_AIDirector : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_AIDirector_Bandits.et"
  DangerEventRange 100
  m_MaxAgentsToSpawn 4
  m_Radius 50
- m_AgentTemplates + {
-  "{B9C6916F6BB8250E}prefabs/Groups/Campaign/Group_Bandits2.et" "{B024731B4EBA0971}prefabs/Groups/Campaign/Group_Bandits_HQ.et"
- }
  m_Commander "{227ED44DA25DC1E0}prefabs/Groups/Campaign/Group_Bandits_Commander.et"
- m_InstantSpawn 1
  m_pCommanderWaypoint "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
  m_WorldDirections SCR_MapLocationQuadHint "{5D66D13207137589}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
  }
 }
 SP_AIDirector : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AIDirector_USSR.et" {
  coords 5230.286 101.13 7970.124
+ m_WorldDirections SCR_MapLocationQuadHint "{5D86ED2CCB11A6DD}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
+ }
 }
 GenericEntity : "{B68D3829D4442F80}prefabs/Props/Civilian/RadioSmall_01_Base.et" {
  coords 7194.13 33.868 1303.245

@@ -5,6 +5,7 @@ GameEntity {
    Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
     CustomAttributes {
      SP_ClothAttributes "{5D82DAD0CD111356}" {
+      m_TemperatureIsolation 0.2
      }
     }
    }

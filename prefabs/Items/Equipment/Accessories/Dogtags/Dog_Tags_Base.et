@@ -1,20 +1,20 @@
-GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
- ID "5104869D194C6243"
+DogTagEntity {
+ ID "5D887E24FD403BB4"
  components {
-  InventoryItemComponent "{5D30CD6ABE952AC2}" {
-   Attributes SCR_ItemAttributeCollection "{5D30CD6AA0DE169F}" {
-    ItemDisplayName UIInfo "{5D30CD6AA5A328AE}" {
-     Name "US soldier tags"
-     Description "Tags carried by all soldiers, used for identification"
+  InventoryItemComponent "{5D887E279A084149}" {
+   Attributes SCR_DogtagItemAttributeCollection "{5D887E279DE5DA78}" {
+    ItemDisplayName UIInfo "{5D887E279F662EC6}" {
+     Name "US Dogtag"
+     Description "Dogtag carried by each unit of major Military groups. Its used to identify dead bodies found on the field"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{5D30CD6AA8B2774F}" {
-     Weight 0.05
+    ItemPhysAttributes ItemPhysicalAttributes "{5D887E2780DF6A4A}" {
+     Weight 0.01
      SizeSetupStrategy Manual
-     ItemDimensions 2 2 2
-     ItemVolume 8
+     ItemDimensions 0.5 0.5 0.5
+     ItemVolume 5
     }
     CustomAttributes {
-     PreviewRenderAttributes "{5D30CD6A5C0E0BB8}" {
+     PreviewRenderAttributes "{5D887E24D0E6CF50}" {
       CameraOrbitAngles -90 0 0
       CameraDistanceToItem 0.07
       CameraOffset -0.005 -0.018 0
@@ -25,47 +25,43 @@ GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
      }
     }
     CommonItemType "WATCH"
-    m_Size SLOT_1x1
     m_SlotType SLOT_GADGETS_STORAGE
    }
   }
-  RigidBody "{5104869D194C6267}" {
-   Static 1
+  MeshObject "{5D887E27EA3B722D}" {
+   Object "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
   }
-  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
-   Enabled 0
-   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
-    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
-     Name "Soldier tags"
-     Description "Tags carried by all soldiers, used for identification"
+  Hierarchy "{5D887E270B7C617D}" {
+  }
+  RigidBody "{5D887E270C055946}" {
+  }
+  SCR_SoundDataComponent "{5D887E2749497D08}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5D887E274BF0161B}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
     }
-    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
-     Weight 0.05
-     SizeSetupStrategy Manual
-     ItemDimensions 1 1 1
-     ItemVolume 1
+    SCR_AudioSourceConfiguration "{5D887E2760B79CF3}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
     }
-    CustomAttributes {
-     PreviewRenderAttributes "{555292467DA11B7C}" {
-      CameraPreset Top
-      CameraOrbitAngles 0 15 0
-      CameraDistanceToItem 0.5
-      PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
-     }
+    SCR_AudioSourceConfiguration "{5D887E276A7EF833}" {
+     m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+     m_sSoundEventName "SOUND_DROP"
     }
-    CommonItemType "WATCH"
-    m_Size SLOT_1x1
-    m_SlotType SLOT_LOOT_STORAGE
    }
   }
-  SP_UnretrievableComponent "{5D63111D5D7E732A}" {
+  SP_UnretrievableComponent "{5D887E2706D11BDF}" {
   }
-  BaseLoadoutClothComponent "{5104869D194C627A}" {
-   AreaType LoadoutWatchArea "{5C792EB61C73847A}" {
+  BaseLoadoutClothComponent "{5D887E27A0A98877}" {
+   AreaType LoadoutWatchArea "{5D887E27A62FEC5F}" {
    }
    WornModel "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
    ItemModel "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
   }
+  RplComponent "{5D887E27EC871183}" {
+  }
  }
- coords 123.967 1.001 122.743
+ coords 124.031 1.001 249.081
 }

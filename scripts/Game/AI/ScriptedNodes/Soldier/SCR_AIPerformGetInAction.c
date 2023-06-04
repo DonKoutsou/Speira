@@ -14,48 +14,51 @@ class SCR_AIPerformLightAction : AITaskScripted
 	//------------------------------------------------------------------------------------------------
 	override ENodeResult EOnTaskSimulate(AIAgent owner, float dt)
 	{
-		IEntity targetEntity;
-		string userActionString;
-		typename userAction;
-		GetVariableIn("TargetEntity", targetEntity);
-		if(SCR_FireplaceComponent.Cast(targetEntity.FindComponent(SCR_FireplaceComponent)))
+		if(owner)
 		{
-			userActionString = "SCR_LightFireplaceUserAction";
-		}
-		else if(SCR_BaseInteractiveLightComponent.Cast(targetEntity.FindComponent(SCR_BaseInteractiveLightComponent)))
-		{
-			userActionString = "SCR_SwitchLightUserAction";
-		}
-		else if(RadioBroadcastComponent.Cast(targetEntity.FindComponent(RadioBroadcastComponent)))
-		{
-			userActionString = "SCR_TurnOnAction";
-		}
-		else if(ChimeraCharacter.Cast(targetEntity))
-		{
-			userActionString = "SP_AILootBodyAction";
-		}
-
-		IEntity controlledEntity = owner.GetControlledEntity();
-		if (!controlledEntity)
-			return ENodeResult.FAIL;
-
-		if (!targetEntity)
-			return ENodeResult.FAIL;
-
-		userAction = userActionString.ToType();
-		if (!userAction)
-			return ENodeResult.FAIL;
-
-		array<BaseUserAction> outActions = {};
-		ScriptedUserAction action;
-		GetActions(targetEntity, outActions);
-		foreach (BaseUserAction baseAction : outActions)
-		{
-			action = ScriptedUserAction.Cast(baseAction);
-			if (action && userAction == action.Type() && action.CanBePerformedScript(controlledEntity))
+			IEntity targetEntity;
+			string userActionString;
+			typename userAction;
+			GetVariableIn("TargetEntity", targetEntity);
+			if(SCR_FireplaceComponent.Cast(targetEntity.FindComponent(SCR_FireplaceComponent)))
 			{
-				action.PerformAction(targetEntity, controlledEntity);
-				return ENodeResult.SUCCESS;
+				userActionString = "SCR_LightFireplaceUserAction";
+			}
+			else if(SCR_BaseInteractiveLightComponent.Cast(targetEntity.FindComponent(SCR_BaseInteractiveLightComponent)))
+			{
+				userActionString = "SCR_SwitchLightUserAction";
+			}
+			else if(RadioBroadcastComponent.Cast(targetEntity.FindComponent(RadioBroadcastComponent)))
+			{
+				userActionString = "SCR_TurnOnAction";
+			}
+			else if(ChimeraCharacter.Cast(targetEntity))
+			{
+				userActionString = "SP_AILootBodyAction";
+			}
+	
+			IEntity controlledEntity = owner.GetControlledEntity();
+			if (!controlledEntity)
+				return ENodeResult.FAIL;
+	
+			if (!targetEntity)
+				return ENodeResult.FAIL;
+	
+			userAction = userActionString.ToType();
+			if (!userAction)
+				return ENodeResult.FAIL;
+	
+			array<BaseUserAction> outActions = {};
+			ScriptedUserAction action;
+			GetActions(targetEntity, outActions);
+			foreach (BaseUserAction baseAction : outActions)
+			{
+				action = ScriptedUserAction.Cast(baseAction);
+				if (action && userAction == action.Type() && action.CanBePerformedScript(controlledEntity))
+				{
+					action.PerformAction(targetEntity, controlledEntity);
+					return ENodeResult.SUCCESS;
+				}
 			}
 		}
 		return ENodeResult.FAIL;			

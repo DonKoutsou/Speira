@@ -160,7 +160,7 @@ GenericEntity : "{70BC751317551D9B}prefabs/Items/Equipment/Canteens/Canteen_Sovi
  coords 115.926 0.917 135.524
 }
 GameEntity : "{83CBF3BB1EE36382}prefabs/Props/Civilian/Fireplace_tower.et" {
- coords 120.409 0.823 132.977
+ coords 109.366 1.326 131.074
 }
 GenericEntity : "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" {
  coords 115.376 0.929 135.865
@@ -169,7 +169,7 @@ GenericEntity : "{B68D3829D4442F80}prefabs/Props/Civilian/RadioSmall_01_Base.et"
  coords 120.493 0.753 136.91
 }
 GenericEntity : "{BBF415EE68294A4E}Prefabs/Props/Furniture/FridgeSmall_01.et" {
- coords 119.423 0.856 132.435
+ coords 118.206 0.856 130.336
 }
 $grp GenericEntity : "{C22A2F123CD609FC}prefabs/Items/Food/Meat_01_Dry.et" {
  {
@@ -194,6 +194,9 @@ $grp GenericEntity : "{C22A2F123CD609FC}prefabs/Items/Food/Meat_01_Dry.et" {
  }
  {
   coords 120.96 0.88 130.381
+ }
+ {
+  coords 116.36 0.913 134.883
  }
 }
 GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {

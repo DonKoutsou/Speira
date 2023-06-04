@@ -1,14 +1,14 @@
-GameEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et" {
+DogTagEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et" {
  ID "5104869D194C6243"
  components {
-  InventoryItemComponent "{5D30CD6ABE952AC2}" {
-   Attributes SCR_ItemAttributeCollection "{5D30CD6AA0DE169F}" {
-    ItemDisplayName UIInfo "{5D30CD6AA5A328AE}" {
-     Name "FIA soldier tags"
+  InventoryItemComponent "{5D887E279A084149}" {
+   Attributes SCR_DogtagItemAttributeCollection "{5D887E279DE5DA78}" {
+    ItemDisplayName UIInfo "{5D887E279F662EC6}" {
+     Name "FIA Dogtag"
     }
    }
   }
-  BaseLoadoutClothComponent "{5104869D194C627A}" {
+  BaseLoadoutClothComponent "{5D887E27A0A98877}" {
    WornMaterialsOverride {
     "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
    }

@@ -10,7 +10,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "FIA"
   }
   m_MaxAgentsToSpawn 3
-  m_InstantSpawn 1
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FD475B9A}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -21,7 +20,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "US" "USSR"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B29400143B}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -42,7 +40,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "US"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B299B3BC54}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -64,14 +61,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "FIA"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B29D0450DA}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
  SP_AIDirector_DHouse {
   coords 1596.985 41.385 2381.301
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B29F500CE6}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -81,7 +76,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "US" "USSR"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B29EE70693}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -105,7 +99,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "FIA"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2899F45F3}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -131,7 +124,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_aIncludedEditableEntityLabels {
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28A89FD4D}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -140,6 +132,9 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   coords 1360.55 14.473 1907.55
   angleX 10.62
   angleZ -2.638
+  m_FactionsToApear {
+   "USSR"
+  }
   m_CommanderRespawn 1
   m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28E050942}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -147,8 +142,10 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  SP_AIDirector_Mil2 {
   coords 1678.274 39.997 3009.058
+  m_FactionsToApear + {
+   "USSR"
+  }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B1841D74}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -165,14 +162,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_MossHill {
   coords 2303.842 90.158 1257.358
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B2FE2805}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
  SP_AIDirector_Shack {
   coords 2019.047 10.555 1855.412
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2BA499682}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -182,7 +177,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "US" "USSR" "FIA"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_CommanderRespawn 1
   m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2BC3974BE}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -208,9 +202,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 1
   m_Radius 10
-  m_RenegadeRespawn 0
   m_RespawnTimer 120
-  m_Renegade ""
   m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2844C1FB3}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -223,7 +215,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear {
    "USSR"
   }
-  m_InstantSpawn 1
   m_Radius 20
   m_CommanderRespawn 1
   m_RespawnTimer 300
@@ -235,7 +226,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_Lighthouse {
   coords 1462.467 30.804 1143.103
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 100
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28CC71090}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -243,7 +233,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  SP_AIDirector_BaldRidge {
   coords 1887.557 53.489 1126.992
   m_MaxAgentsToSpawn 1
-  m_InstantSpawn 1
   m_Radius 100
   m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FF522C50}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -253,7 +242,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   coords 2113.867 61.826 1044.42
   DangerEventRange 200
   m_MaxAgentsToSpawn 1
-  m_InstantSpawn 1
   m_Radius 100
   m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2E15BCF70}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -265,7 +253,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "FIA"
   }
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 100
   m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B7D7540D}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -278,7 +265,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "FIA"
   }
   m_MaxAgentsToSpawn 1
-  m_InstantSpawn 1
   m_Radius 100
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2F8A1848C}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -287,7 +273,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   coords 2624.195 102.436 2586.685
   DangerEventRange 300
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2A502B6BC}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -296,7 +281,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   coords 2308.398 99.489 2320.595
   DangerEventRange 200
   m_MaxAgentsToSpawn 2
-  m_InstantSpawn 1
   m_Radius 100
   m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2A1852C75}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -304,43 +288,75 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
  }
  SP_AIDirector_BaldRidge3 {
   coords 2035.737 34.444 1476.508
-  m_InstantSpawn 1
   m_Radius 100
   m_pDefaultWaypoint "{9468A0EEBC5A74B9}prefabs/AI/Waypoints/AIWaypoint_Defend_Huge.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FF522C50}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
+ SP_AIDirector_Harbour2 {
+  coords 3180.103 3.547 1174.606
+  m_FactionsToApear {
+   "BANDITS" "FIA" "RENEGADE"
+  }
+  m_MaxAgentsToSpawn 2
+  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B2FE2805}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+  }
+ }
+ SP_AIDirector_Harbour3 {
+  coords 2583.884 45.555 1028.356
+  m_FactionsToApear {
+   "BANDITS" "FIA" "RENEGADE"
+  }
+  m_MaxAgentsToSpawn 2
+  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B2FE2805}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+  }
+ }
 }
 SP_AIDirector : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
- coords 3734.661 2.991 2693.073
+ coords 3757.467 2.991 2672.004
+ m_MaxAgentsToSpawn 4
  m_Radius 50
- m_RenegadeRespawn 1
- m_RenegadeRespawnTimer 900
- m_Renegade "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et"
  m_WorldDirections SCR_MapLocationQuadHint "{5D7AF081DB19A37A}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
  }
 }
-SP_AIDirector SP_AIDirector_FIA : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
- coords 3490.8 4.84 1505.794
- DynamicSim_Lod1_distance 1000
- m_InstantSpawn 1
- m_Radius 60
- m_RenegadeRespawn 1
- m_RespawnTimer 300
- m_RenegadeRespawnTimer 600
- m_Renegade "{5212C60A7348C435}prefabs/Groups/BLUFOR/Group_Renegade2.et"
- m_WorldDirections SCR_MapLocationQuadHint "{5D6671B280C0F1AD}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+$grp SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
+ SP_AIDirector_FIA {
+  coords 3490.8 4.84 1505.794
+  DynamicSim_Lod1_distance 1000
+  m_Radius 60
+  m_RespawnTimer 300
+  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B280C0F1AD}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+  }
+ }
+ {
+  coords 693.637 1.501 2258.245
+  m_aIncludedEditableEntityLabels {
+  }
+  m_MaxAgentsToSpawn 2
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86C8A7F3399414}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+  }
+ }
+ SP_AIDirector_Renegades {
+  coords 2336.277 106.359 2238.846
+  DynamicSim_Lod1_distance 1000
+  m_eEntityCatalogType CHARACTER
+  m_FactionsToApear {
+   "RENEGADE"
+  }
+  m_Radius 2000
+  m_CommanderRespawn 0
+  m_RespawnTimer 300
+  m_pDefaultWaypoint "{C091D56A01F8F062}prefabs/AI/Waypoints/AIWaipoint_Defend_2km.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B280C0F1AD}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
+  }
  }
 }
 SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_AIDirector_Bandits.et" {
  coords 1671.56 3.531 884.771
  m_Radius 50
- m_RenegadeRespawn 1
  m_CommanderRespawn 1
  m_RespawnTimer 180
- m_RenegadeRespawnTimer 900
  m_Commander "{B024731B4EBA0971}prefabs/Groups/Campaign/Group_Bandits_HQ.et"
- m_Renegade "{6F85130D0069849A}prefabs/Groups/BLUFOR/Group_Renegade_Sniper.et"
  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2924E0541}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
  }
 }
@@ -348,7 +364,6 @@ SP_AIDirector SP_AIDirector_USSR : "{8C10F3C317719089}prefabs/AI/Spawners/SP_AID
  coords 1085.439 38.922 2885.061
  DangerEventRange 400
  m_MaxAgentsToSpawn 4
- m_InstantSpawn 1
  m_Radius 20
  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2F5F45F15}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
  }
