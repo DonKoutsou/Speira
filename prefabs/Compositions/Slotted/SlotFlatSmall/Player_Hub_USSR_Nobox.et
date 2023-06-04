@@ -154,33 +154,6 @@ GenericEntity : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted/CompositionBase.
     angleY 93.73
    }
   }
-  $grp StaticModelEntity : "{7B79E1EA73D3F4B0}prefabs/Props/Military/Furniture/ChairMilitary_USSR_02.et" {
-   {
-    ID "5D78E07A6B215949"
-    coords -0.472 0 -1.666
-    angleY 7.89
-   }
-   {
-    ID "5D78E07A6B21B7B1"
-    coords 1.275 0 1.151
-    angleY -123.716
-   }
-   {
-    ID "5D78E07A6B21B7BE"
-    coords 1.039 0 -1.363
-    angleY -28.833
-   }
-   {
-    ID "5D78E07A6B21B7BF"
-    coords -1.483 0 -0.972
-    angleY 50.065
-   }
-   {
-    ID "5D78E07A6B21FB55"
-    coords 0.301 0 1.782
-    angleY -146.626
-   }
-  }
   GenericEntity : "{894A1AFDCB71CD0D}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_02.et" {
    ID "5D78E07A6B23E461"
    coords 1.683 0.1 4.84

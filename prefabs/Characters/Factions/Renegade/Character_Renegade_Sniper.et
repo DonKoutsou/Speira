@@ -4,8 +4,26 @@ SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/C
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    WeaponTemplate "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
   }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{0AE31B3DB4E42B76}Prefabs/Characters/Uniforms/Shirt_Telynashka_nosleeve.et"
+    }
+   }
+  }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3308C10F446455}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_6b51_VKPO.et"
+    }
+    ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Shirt_Telynashka_nosleeve.et"
+     PrefabsToSpawn +{
+     }
+    }
     ItemsInitConfigurationItem "{5D3723D91EF62A89}" {
      PrefabsToSpawn {
       "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et" "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"

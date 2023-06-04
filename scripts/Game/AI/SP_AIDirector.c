@@ -132,9 +132,12 @@ class SP_AIDirector : AIGroup
 	    FactionManager FMan = FactionManager.Cast(GetGame().GetFactionManager());
 	    Faction MajorFaction = null;
 	    int max = 0;
-	
 	    for (int i = m_aGroups.Count() - 1; i >= 0; i--)
 	    {
+			if(m_aGroups[i] == null)
+			{
+				return STRING_EMPTY;
+			}
 	        string faction = m_aGroups[i].GetFaction().GetFactionKey();
 	        int agentsCount = m_aGroups[i].GetAgentsCount();
 	
@@ -189,6 +192,8 @@ class SP_AIDirector : AIGroup
 	    }
 	
 		UnitCount = max;
+		if(!MajorFaction)
+			return STRING_EMPTY;
 	    return MajorFaction.GetFactionKey(); 	
 	}
 	Faction GetMajorityHolder(out string factionReadable)
@@ -205,6 +210,10 @@ class SP_AIDirector : AIGroup
 	
 	    for (int i = m_aGroups.Count() - 1; i >= 0; i--)
 	    {
+			if(m_aGroups[i] == null)
+			{
+				return null;
+			}
 	        string faction = m_aGroups[i].GetFaction().GetFactionKey();
 	        int agentsCount = m_aGroups[i].GetAgentsCount();
 	
@@ -550,7 +559,8 @@ class SP_AIDirector : AIGroup
 		}
 		array<SCR_EntityCatalogEntry> aFactionEntityEntry = {};
 		entityCatalog.GetFullFilteredEntityListWithLabels(aFactionEntityEntry, m_aIncludedEditableEntityLabels, m_aExcludedEditableEntityLabels, m_bIncludeOnlySelectedLabels);
-		ResourceName name = aFactionEntityEntry.GetRandomElement().GetPrefab();
+		int index = Math.RandomInt(0, aFactionEntityEntry.Count() - 1);
+		ResourceName name = aFactionEntityEntry[index].GetPrefab();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
 		spawnMatrix[3] = position;
 		EntitySpawnParams spawnParams = EntitySpawnParams();

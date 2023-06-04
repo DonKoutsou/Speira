@@ -10,22 +10,22 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  }
  coords 116.628 1.001 248.992
  DangerEventRange 300
- m_MaxAgentsToSpawn 4
- m_Radius 150
- m_CompositionRadius 150
- m_Respawn 1
- m_RenegadeRespawn 1
- m_SpawnAI 1
- m_RespawnTimer 300
- m_CommanderRespawnTimer 600
- m_RenegadeRespawnTimer 900
  m_eEntityCatalogType GROUP
  m_aIncludedEditableEntityLabels {
+  70 71
+ }
+ m_aExcludedEditableEntityLabels {
+  72
  }
  m_FactionsToApear {
   "BANDITS" "RENEGADE"
  }
- m_Renegade "{8CC8C89FBB9ABE02}prefabs/Groups/BLUFOR/Group_Renegade.et"
+ m_MaxAgentsToSpawn 4
+ m_Radius 150
+ m_Respawn 1
+ m_SpawnAI 1
+ m_RespawnTimer 300
+ m_CommanderRespawnTimer 600
  m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
  m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
 }

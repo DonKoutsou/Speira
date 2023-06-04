@@ -19,6 +19,9 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
+    LoadoutSlotInfo Head {
+     Prefab ""
+    }
     LoadoutSlotInfo Hat {
      Prefab ""
     }

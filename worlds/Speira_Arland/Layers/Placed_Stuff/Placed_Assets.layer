@@ -561,7 +561,7 @@ GenericEntity : "{25B265F3E7CBDFC8}Prefabs/Props/Wrecks/BMP1_wreck.et" {
  angleY 120.971
  angleZ 2.435
 }
-$grp GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
+$grp GenericEntity : "{261F10BDC068BB35}Prefabs/Props/Furniture/ChairOld_01.et" {
  {
   coords 2291.895 90.213 1251.007
   angleY 101.436
@@ -631,7 +631,7 @@ GenericEntity : "{46B71B9E370BE7C0}Prefabs/Props/Forest/WoodPile/WoodPile_01_End
  coords 1046.762 38.001 2870.706
  angleY -105.762
 }
-StaticModelEntity : "{48A04E0A139BB167}Prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et" {
+StaticModelEntity : "{48A04E0A139BB167}prefabs/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.et" {
  coords 836.936 1.185 1559.35
  angleX -7.422
  angleY 0.122
@@ -820,25 +820,7 @@ GenericEntity : "{7A5A9F26FE702332}Prefabs/Props/Military/AmmoBoxes/EquipmentBox
  coords 1996.4 51.668 3025.123
  angleY 20.621
 }
-$grp StaticModelEntity : "{7B79E1EA73D3F4B0}prefabs/Props/Military/Furniture/ChairMilitary_USSR_02.et" {
- {
-  coords 1182.442 1.126 3292.195
-  angleY -106.873
- }
- {
-  coords 1181.195 1.114 3288.992
-  angleY 11.202
- }
- {
-  coords 1179.801 1.126 3291.568
-  angleY 99.341
- }
- {
-  coords 1179.74 1.126 3290.218
-  angleY 83.574
- }
-}
-$grp GenericEntity : "{8BB5855208F77724}prefabs/Props/Furniture/BenchWooden_01.et" {
+$grp GenericEntity : "{8BB5855208F77724}Prefabs/Props/Furniture/BenchWooden_01.et" {
  {
   coords 2369.555 2.838 3249.226
   angleY 21.416
@@ -953,44 +935,6 @@ StaticModelEntity : "{C0B710154C14FC9B}Prefabs/Structures/Military/Camps/TentSma
  coords 835.572 1.16 1556.87
  angleX -2.746
  angleY 25.226
-}
-$grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
- {
-  coords 1397.343 39.019 2251.904
-  angleX 0
-  angleY -169.504
-  angleZ 0
- }
- {
-  coords 1062 38.045 2861.886
-  angleX 0
-  angleY 82.706
-  angleZ 0
- }
- {
-  coords 2121.58 3.017 3530.806
-  angleX 0
-  angleY 0
-  angleZ 0
- }
- {
-  coords 1660.59 3.392 875.559
-  angleX 1.523
-  angleY 31.668
-  angleZ 0.94
- }
- {
-  coords 1657.19 3.425 879.028
-  angleX 2.068
-  angleY 54.742
-  angleZ 2.923
- }
- {
-  coords 833.817 0.843 1559.93
-  angleX 0
-  angleY 0
-  angleZ 0
- }
 }
 $grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_01.et" {
  {
@@ -1189,20 +1133,6 @@ $grp GenericEntity : "{E639E7FAF33DC166}Prefabs/Props/Furniture/BedDouble_02.et"
   }
   coords 1409.783 36.86 2699.774
   angleY 75.507
- }
-}
-$grp GenericEntity : "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et" {
- {
-  coords 1079.851 37.926 2884.958
-  angleY 75.253
- }
- {
-  coords 1658.031 3.511 884.848
-  angleY -179.747
- }
- {
-  coords 2293.09 90.205 1253.1
-  angleY 152.894
  }
 }
 GameEntity : "{EC645B2E2123131F}prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_blue.et" {

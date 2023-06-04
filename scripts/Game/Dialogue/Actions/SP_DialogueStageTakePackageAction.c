@@ -47,7 +47,13 @@ class DialogueStageTakePackageAction : DialogueStage
 	};
 	override bool CanBePerformed(IEntity Character, IEntity Player)
 	{
-		return true;
+		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
+		AIAgent agent = comp.GetAIAgent();
+		FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
+		string key = FC.GetAffiliatedFaction().GetFactionKey();
+		SP_AIDirector OrDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
+		m_sCantBePerformedReason = "(No available deliveries)";
+		return OrDirector.GetDirectorOccupiedBy(key, MyDirector);
 	}
 	override string GetDialogueText(IEntity Character, IEntity Player)
 	{

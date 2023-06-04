@@ -18,16 +18,6 @@ FrameWidgetClass {
             HorizontalLayoutWidgetClass "{00000000A09F13EE}" {
              Prefab "{00000000A09F13EE}"
              {
-              TextWidgetClass "{5D887E26CFF5D185}" {
-               Name "ItemInfo_CharName"
-               Slot LayoutSlot "{5D887E26CFF5D1E6}" {
-                SizeMode Fill
-               }
-               Color 0.578 0.578 0.578 1
-               Text "CharName"
-               "Font Size" 15
-               "Min Font Size" 15
-              }
               TextWidgetClass "{5D885C3B1CA56424}" {
                Name "ItemInfo_insulationUnit"
                Slot LayoutSlot "{5D885C3B1CA56415}" {

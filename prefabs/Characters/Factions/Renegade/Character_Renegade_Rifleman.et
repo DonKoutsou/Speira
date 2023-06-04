@@ -4,6 +4,29 @@ SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/C
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    WeaponTemplate "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
   }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Head {
+     Prefab "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
+    }
+    LoadoutSlotInfo Hat {
+     Prefab "{BCCB7D5AB38BB3A7}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_base.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{0AE31B3DB4E42B76}Prefabs/Characters/Uniforms/Shirt_Telynashka_nosleeve.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D3308C10F446455}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Shirt_Telynashka_nosleeve.et"
+    }
+    ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Shirt_Telynashka_nosleeve.et"
+    }
+   }
+  }
  }
  coords 120.006 1.001 253.733
  angleY -180

@@ -7,6 +7,9 @@ GenericEntity : "{93690AE7A4BAD926}Prefabs/Characters/Core/Vest_Base.et" {
      PreviewRenderAttributes "{52D4BBD537F217B4}" {
       PreviewWornModel 1
      }
+     SP_ClothAttributes "{5D88DD39BD12C68D}" {
+      m_TemperatureIsolation 0.2
+     }
     }
     CommonItemType "VEST"
    }

@@ -67,11 +67,6 @@ SCR_ChimeraCharacter {
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
-    LoadoutSlotInfo Watch {
-     Prefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
-     AreaType LoadoutWatchArea "{5D310258A29A9707}" {
-     }
-    }
    }
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {

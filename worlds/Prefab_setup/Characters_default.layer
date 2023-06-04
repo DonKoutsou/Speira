@@ -211,6 +211,30 @@ GenericEntity {
      }
     }
    }
+   {
+    coords -2.704 0.353 -7.016
+    angleY -18.173
+   }
+   {
+    coords -5.612 0 8.555
+    angleY -120
+   }
+   {
+    coords -15.928 0.085 7.535
+    angleY -23.219
+   }
+   {
+    coords -14.951 0.022 9.171
+    angleY -142.608
+   }
+   {
+    coords -7.935 0 8.696
+    angleY 143.751
+   }
+   {
+    coords -4.685 0.332 -6.557
+    angleY -90
+   }
   }
   GenericEntity : "{03B44EA7652D0D17}Prefabs/Props/Military/Radios/RadioStation_R123M_01.et" {
    coords 12.602 0.953 6.083
@@ -283,7 +307,7 @@ GenericEntity {
     angleY -176.792
    }
   }
-  GenericEntity : "{261F10BDC068BB35}prefabs/Props/Furniture/ChairOld_01.et" {
+  GenericEntity : "{261F10BDC068BB35}Prefabs/Props/Furniture/ChairOld_01.et" {
    coords -7.876 0.078 -4.28
    angleY -34.858
   }
@@ -609,10 +633,6 @@ GenericEntity {
    coords -4.785 1.238 -5.646
    angleY 49.477
   }
-  GenericEntity : "{98EED0019211B977}prefabs/Props/Furniture/ChairOld_02_2.et" {
-   coords -2.704 0.353 -7.016
-   angleY -18.173
-  }
   $grp GenericEntity : "{9A0A7B399D8AEEA0}Prefabs/Props/Civilian/Freezer_01.et" {
    {
     coords -5.477 0.324 -5.647
@@ -690,32 +710,6 @@ GenericEntity {
   GenericEntity : "{C2C1CEA73A4D8779}Prefabs/Props/Civilian/Notebook_01_Stack.et" {
    coords -5.813 1.225 -7.123
    angleY 142.829
-  }
-  $grp GenericEntity : "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et" {
-   {
-    coords -5.612 0 8.555
-    angleX 0
-    angleY -120
-    angleZ 0
-   }
-   {
-    coords -15.928 0.085 7.535
-    angleX 0
-    angleY -23.219
-    angleZ 0
-   }
-   {
-    coords -14.951 0.022 9.171
-    angleX 0
-    angleY -142.608
-    angleZ 0
-   }
-   {
-    coords -7.935 0 8.696
-    angleX 0
-    angleY 143.751
-    angleZ 0
-   }
   }
   GenericEntity : "{C76C3AF337109066}Prefabs/Props/Crates/CardboardBoxStack_01.et" {
    coords 12.979 1.077 8.931
@@ -949,10 +943,6 @@ GenericEntity {
     coords -15.264 1.003 -4.306
    }
   }
-  GenericEntity : "{F3652FD9E9774E2D}prefabs/Props/Furniture/ChairOffice_01_2.et" {
-   coords -4.685 0.332 -6.557
-   angleY -90
-  }
   $grp GenericEntity : "{F401D58CD490C872}Prefabs/Props/Civilian/BeerBottle_01_slava.et" {
    {
     coords -8.939 0.704 -8.692
@@ -1090,6 +1080,10 @@ SCR_ChimeraCharacter : "{3726077BE60962FF}prefabs/Characters/Factions/BLUFOR/US_
  coords 171.233 1.001 253.393
  angleY -180
 }
+SCR_ChimeraCharacter : "{3A828F3B3976435D}prefabs/Characters/Factions/Renegade/Character_Renegade_Rifleman.et" {
+ coords 119.902 1.001 253.736
+ angleY -180
+}
 $grp GenericEntity : "{3FA38ECE65392FC3}Prefabs/Weapons/Rifles/AKS74UN/Rifle_AKS74UN.et" {
  {
   coords 114.771 1.001 252.693
@@ -1130,550 +1124,11 @@ SCR_ChimeraCharacter : "{58E47E5A4D599432}prefabs/Characters/Factions/INDFOR/FIA
 }
 SCR_ChimeraCharacter : "{5B1996C05B1E51A4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et" {
  coords 164.451 1.001 253.393
- angleY -180
+ angleY 180
 }
-$grp SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et" {
- {
-  coords 119.063 1.001 253.733
-  angleY -180
- }
- {
-  components {
-   ControllersManagerComponent "{520EA1D2F659CE92}" {
-   }
-   EventHandlerManagerComponent "{530284308E2527DD}" {
-    EventHandlers {
-     BaseEventHandler "{5302843088003484}" {
-      EventName "OnWeaponChanged"
-     }
-     BaseEventHandler "{5302CB86A280126D}" {
-      EventName "OnMuzzleChanged"
-     }
-     BaseEventHandler "{5302CB8699CE0C5C}" {
-      EventName "OnMagazineChanged"
-     }
-     BaseEventHandler "{53047B986210A519}" {
-      EventName "OnAmmoCountChanged"
-     }
-     BaseEventHandler "{5304890B382436DF}" {
-      EventName "OnMagazineCountChanged"
-     }
-     BaseEventHandler "{5304890B3113520D}" {
-      EventName "OnFiremodeChanged"
-     }
-     BaseEventHandler "{5304890B22C5A3DC}" {
-      EventName "OnZeroingChanged"
-     }
-     BaseEventHandler "{5304890B1D193A86}" {
-      EventName "OnADSChanged"
-     }
-     BaseEventHandler "{59388895E3B0CD26}" {
-      EventName "OnWeaponAttachementChanged"
-     }
-     BaseEventHandler "{5952C82EDD8E43E4}" {
-      EventName "OnTurretReload"
-     }
-     BaseEventHandler "{5A5A94D957DB58B7}" {
-      EventName "OnConsciousnessChanged"
-     }
-    }
-   }
-   SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
-    m_fActionDelayTime_StanceChange 0.05
-    ChangeWeaponWhenNoGrenades 0
-   }
-   SignalsManagerComponent "{520EA1D2F659C85A}" {
-   }
-   CharacterSoundComponent "{520EA1D2F659CF84}" {
-    Filenames +{
-    }
-   }
-   SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
-    Filenames +{
-    }
-    StaminaThresholdMinimum 0.05
-   }
-   SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
-    components {
-     SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
-      InitialStorageSlots {
-       SCR_EquipmentStorageSlot WristwatchSlot {
-        Prefab "{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et"
-       }
-       SCR_EquipmentStorageSlot BinocularSlot {
-        Prefab "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
-       }
-      }
-     }
-     SCR_TourniquetStorageComponent "{5A68C9C9DF306618}" {
-      StoragePurpose 0
-      InitialStorageSlots {
-       SCR_TourniquetStorageSlot TourniquetSlotLA {
-        AllowedItemTypes +{
-        }
-        m_eHitZoneGroup LEFTARM
-       }
-       SCR_TourniquetStorageSlot TourniquetSlotRA {
-        AllowedItemTypes +{
-        }
-        m_eHitZoneGroup RIGHTARM
-       }
-       SCR_TourniquetStorageSlot TourniquetSlotLL {
-        AllowedItemTypes +{
-        }
-        m_eHitZoneGroup LEFTLEG
-       }
-       SCR_TourniquetStorageSlot TourniquetSlotRL {
-        AllowedItemTypes +{
-        }
-        m_eHitZoneGroup RIGHTLEG
-       }
-      }
-     }
-    }
-   }
-   AIControlComponent "{520EA1D2DB109F34}" {
-    components {
-     AICharacterAimingComponent "{520EA1D2DB109F0C}" {
-      AimingPID 0.3 0 0
-      UsePID 1
-     }
-     AICharacterHeadAimingComponent "{520EA1D2DB109F04}" {
-     }
-     AICharacterMovementComponent "{520EA1D2DB109F01}" {
-     }
-     AIPathfindingComponent "{56349A6F9C02E7A1}" {
-      NavmeshProject "Soldiers"
-     }
-     PerceptionComponent "{54A2CBC75F06064B}" {
-      SensorsList {
-       EyesSensor "{520EA1D2DB109AAD}" {
-        MaxRange 750
-        MinIlluminationFactor 0.04
-        RecognitionDetectDecay 0.2
-        RecognitionIdentifyDecay 0.05
-        AngularSizeFactor_a 0.07
-        AngularSizeFactor_b -0.3
-        AngularSizeFactor_c 0.1
-        AngularVelocityFactor_a 1300
-        AngularVelocityFactor_b 5
-       }
-       EarsSensor "{520EA1D2DB109AA9}" {
-       }
-      }
-     }
-     SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
-      m_eAISkillDefault VETERAN
-     }
-    }
-   }
-   ActionsPerformerComponent "{520EA1D2F659CE3F}" {
-   }
-   BaseFlattenGrassComponent "{520EA1D2F659CE26}" {
-    ParametersCollection {
-     FlattenGrassParametersObject "{520EA1D2F659CE2C}" {
-      SideX 0.6
-      ShapeOfGrassFlattening "Ellipse"
-     }
-     FlattenGrassParametersObject "{520EA1D2F659CE28}" {
-      SideX 0.9
-      SideZ 0.7
-      CenterLerp 0.5
-      TimeDown 0.75
-      MaxHeight 1
-      ShapeOfGrassFlattening "Ellipse"
-     }
-     FlattenGrassParametersObject "{520EA1D2F659CE27}" {
-      SideX 2
-      SideZ 0.8
-      Offset 0
-      CenterLerp 0.5
-      TimeDown 0.75
-      MaxHeight 1
-      ShapeOfGrassFlattening "Ellipse"
-     }
-    }
-   }
-   BaseWeaponManagerComponent "{520EA1D2F659CE5D}" {
-    SlingPosition PointInfo "{548A2344DE7AA0F2}" {
-     PivotID "stomach3"
-     Angles 0 140 -90
-    }
-   }
-   CharacterAimingComponent "{520EA1D2F659CE42}" {
-    SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CE4B}" {
-     signalsSuffix "Weapon"
-    }
-    LimitsHoriz -80 80
-    LimitsVert -80 80
-    AimingMaxSpeed 0.7 4
-    AimingSpeedControls 1.5 0.75
-    ProneLimitsVertical -40 20
-    AimModifiers {
-     OneHandAimModifier "{588EB4BA84534585}" {
-     }
-    }
-    Shoulder PointInfo "{5A3EED5F66F7AF9A}" {
-     PivotID "RightShoulder"
-    }
-   }
-   CharacterHeadAimingComponent "{520EA1D2F659CF99}" {
-    SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CF9E}" {
-     signalsSuffix "Head"
-    }
-    ProvideAimingType Head
-    LimitsHoriz -360 360
-    LimitsVert -360 360
-    AimingMaxSpeed 10 5
-    AimingSpeedControls 1.5 0.75
-    AimPivot PointInfo "{5990A4DF23E27E7E}" {
-     PivotID "Neck1"
-    }
-    PitchReduction +{
-    }
-   }
-   CharacterPerceivableComponent "{566CCE2397E28600}" {
-    "Additional aim points" {
-     AimPoint "{54D0A72DBE3FF822}" {
-      AimPointPosition PointInfo "{520EA1D2F659C809}" {
-       PivotID "Spine5"
-       Offset 0 0.2 0
-      }
-      AimpointChecked 1
-      VsibilityChecked 1
-      Dimension 0.5
-     }
-     AimPoint "{54D0A72DBE3FF84A}" {
-      AimPointPosition PointInfo "{520EA1D2F659C809}" {
-       PivotID "Head"
-      }
-      AimpointChecked 1
-      VsibilityChecked 1
-      Dimension 0.25
-      AimPointType Weak
-     }
-     AimPoint "{5A1EF5F9AB26B70A}" {
-      AimPointPosition PointInfo "{5A1EF5F9A71AA60E}" {
-       PivotID "Hips"
-      }
-      AimpointChecked 1
-      VsibilityChecked 1
-      Dimension 0.4
-      AimPointType Incapacitate
-     }
-    }
-    IlluminationFactorPerLight 0.8
-    UnitType Infantry
-    VisualFactorStance_Prone 0.2
-    VisualFactorStance_Crouch 0.4
-   }
-   ClimbingDataComponent "{5304A49E934A0758}" {
-    CanClimbOver 0
-   }
-   ColliderHistoryComponent "{566C7EDBB7BCC719}" {
-   }
-   EquipedWeaponStorageComponent "{520EA1D2DB118C70}" {
-    StoragePurpose 2
-   }
-   FactionAffiliationComponent "{5D3308C1B3ACFC5E}" {
-    "faction affiliation" "RENEGADE"
-   }
-   MeshObject "{520EA1D2F659C81F}" {
-    Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
-   }
-   Hierarchy "{520EA1D2F659C818}" {
-   }
-   RHS_RpcManager "{5CD806057DAF99C5}" {
-   }
-   SCR_BaseHUDComponent "{520EA1D2DB118134}" {
-    InfoDisplays {
-     SCR_WeaponInfo "{520EA1D2DB11811A}" {
-      m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
-      m_sContentWidget "m_WeaponInfoPanel"
-      m_bAdaptiveOpacity 1
-     }
-     SCR_WeaponSwitchingBaseUI "{55F6C495E5D679A0}" {
-      VisibleAtParent 1
-      m_LayoutPath "{2A1E1E023967C5A8}UI/layouts/HUD/QuickSelectBar.layout"
-      m_eLayer OVERLAY
-     }
-    }
-   }
-   SCR_CallsignCharacterComponent "{55BADB0EB09CC77E}" {
-   }
-   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" : "{73C708A20F8B22E6}Prefabs/Characters/Core/DamageManager_Character_Base.ct" {
-   }
-   SCR_CharacterRankComponent "{528E6D4286AA2D8F}" {
-   }
-   SCR_CharacterRegistrationComponent "{5216D6E4AC68563B}" {
-   }
-   SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
-    StaminaRegainPerS 0.01
-    StaminaDrainRun -0.0002
-    StaminaDrainSprint -0.005
-    EncumbranceMassMax 160
-    EncumbranceDrainMax -0.03
-    BreathExhaustedMagnitude 10
-   }
-   SCR_CharacterVicinityComponent "{529A70D96D401B33}" {
-    DiscoveryRadius 3
-   }
-   SCR_CompartmentAccessComponent "{52249C842F1EF1F4}" {
-    CompartmentLayerPreset "CharNoCollide"
-   }
-   SCR_EditableCharacterComponent "{520EA1D2F659C85C}" : "{C32EE6A3FE0F6333}Prefabs/Editor/Components/Characters_SCR_EditableEntityComponent.ct" {
-    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
-     m_aAutoLabels {
-      35
-     }
-    }
-   }
-   SCR_FuelNozzleHolderComponent "{52368400919641C0}" {
-   }
-   SCR_GadgetManagerComponent "{520EA1D2DB118DF3}" {
-   }
-   SCR_GrenadeChemlightComponent "{59A551001CDE40C1}" {
-   }
-   SCR_MeleeComponent "{520EA1D2F659C85E}" {
-   }
-   SCR_PreviewEntityComponent "{55EE4A2A78856F12}" {
-    m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
-   }
-   SCR_VoNComponent "{520EA1D2F659C856}" {
-    "Speaking Range" 50
-    Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
-   }
-   SP_CharacterAISmartActionComponent "{5D7D0C3C31822935}" {
-    Tags +{
-    }
-   }
-   TagComponent "{5864D980062191CA}" {
-    "Tag categories" 1
-   }
-   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
-    isThrowable 1
-    WeaponType None
-    AttachType InventoryStorageSlot "{416B67397BB4F7EE}" {
-     PivotID "LeftArmVolume"
-     Enabled 0
-    }
-    WeaponSlotType "grenade"
-    WeaponSlotIndex 3
-   }
-   CharacterGrenadeSlotComponent "{5A6CDA0CCF43068E}" {
-    isThrowable 1
-    WeaponType None
-    AttachType InventoryStorageSlot throwable {
-     PivotID "LeftArmVolume"
-     Enabled 0
-    }
-    WeaponSlotType "throwable"
-    WeaponSlotIndex 4
-   }
-   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-    WeaponTemplate "{FA8BE6075AFFBCA8}Prefabs/Weapons/Rifles/AK74M/Rifle_AK74M.et"
-   }
-   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
-    WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
-   }
-   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
-    WeaponTemplate "{202B26ADA1621199}prefabs/Weapons/Melee/Machete.et"
-   }
-   SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
-    Identity Identity "{5584CBC6363C648B}" {
-     VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
-      Head "{2F3375E395C46AB3}Prefabs/Characters/Heads/Head_BaseBody_01.et"
-      Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
-      BodyMeshesConfig MeshConfig "{56E6D9455DF31562}" : "{C7798D607F176107}Configs/Identities/BaseBodyMeshConfig.conf" {
-      }
-     }
-     SoundIdentity SoundIdentity "{56E6D945D8F79290}" {
-      VoiceID 100
-     }
-    }
-   }
-   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
-    Slots {
-     LoadoutSlotInfo Watch {
-      Prefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
-      AreaType LoadoutWatchArea "{5D310258A29A9707}" {
-      }
-     }
-     LoadoutSlotInfo Vest {
-      Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
-     }
-     LoadoutSlotInfo Hat {
-      Prefab "{BCCB7D5AB38BB3A7}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_base.et"
-     }
-     LoadoutSlotInfo Jacket {
-      Prefab "{8E6AC4A8A3092779}Prefabs/Characters/Uniforms/Shirt_Telynashka_long.et"
-     }
-     LoadoutSlotInfo Pants {
-      Prefab "{36EA38D8DF60ED87}Prefabs/Characters/Uniforms/Pants_M69.et"
-     }
-     LoadoutSlotInfo Boots {
-      Prefab "{BCEE4FDAC93C56B7}prefabs/Characters/Uniforms/Boots_Sapogi.et"
-     }
-     LoadoutSlotInfo Back {
-     }
-    }
-   }
-   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
-    InitialInventoryItems {
-     ItemsInitConfigurationItem "{5D3308C10F446455}" {
-      TargetStorage "Prefabs/Characters/Uniforms/Shirt_Telynashka_long.et"
-      PrefabsToSpawn +{
-      }
-     }
-     ItemsInitConfigurationItem "{5D66C81E43D88772}" {
-      TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
-      TargetPurpose 64
-      PrefabsToSpawn +{
-      }
-     }
-     ItemsInitConfigurationItem "{5D3308C1266A3B62}" {
-      TargetStorage "Prefabs/Characters/Uniforms/Pants_M69.et"
-      PrefabsToSpawn +{
-      }
-     }
-     ItemsInitConfigurationItem "{5D3723D91EF62A89}" {
-      TargetStorage "Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
-      PrefabsToSpawn +{
-      }
-     }
-    }
-   }
-   ActionsManagerComponent "{520EA1D2F659CE02}" {
-    additionalActions {
-     SCR_BandageUserAction "{520EA1D2F659CE03}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{520EA1D2F659CE00}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup HEAD
-     }
-     SCR_BandageUserAction "{5A26F8E67741AC1E}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup UPPERTORSO
-     }
-     SCR_BandageUserAction "{5A26F8E460F2D5F7}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup LEFTLEG
-     }
-     SCR_BandageUserAction "{5A26F8E47D6EE240}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup RIGHTLEG
-     }
-     SCR_LootDeadBodyAction "{529A9D939CD27B4C}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{529A9D9399F23C21}" {
-       Name "#AR-UserAction_Loot"
-      }
-      CanAggregate 1
-     }
-     SCR_BandageUserAction "{5A26F8E203EF1E0C}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup LEFTARM
-     }
-     SCR_BandageUserAction "{5A26F8E21E230D0D}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup RIGHTARM
-     }
-     SCR_BandageUserAction "{5A26F8E218841208}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
-       Name "#AR-BandageAction"
-      }
-      m_eHitZoneGroup LOWERTORSO
-     }
-     SCR_TourniquetUserAction "{5C68A05F8836889D}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5C68A05F9AB47F24}" {
-       Name "#AR-TourniquetAction"
-      }
-      m_eHitZoneGroup RIGHTLEG
-     }
-     SCR_TourniquetUserAction "{5C68FB4586880C5E}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5C68FB4597F6E228}" {
-       Name "#AR-TourniquetAction"
-      }
-      m_eHitZoneGroup LEFTLEG
-     }
-     SCR_TourniquetUserAction "{5C68FB458180EF70}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5C68FB45A6769C40}" {
-       Name "#AR-TourniquetAction"
-      }
-      m_eHitZoneGroup RIGHTARM
-     }
-     SCR_TourniquetUserAction "{5C68FB459CB30804}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5C68FB45BC7B6A22}" {
-       Name "#AR-TourniquetAction"
-      }
-      m_eHitZoneGroup LEFTARM
-     }
-     SP_DialogueAction "{5D76C2C8573128D5}" {
-      ParentContextList +{
-      }
-      UIInfo UIInfo "{5D76C2CBCDE9DE03}" {
-       Name "Talk"
-      }
-     }
-     SP_AILootBodyAction "{5D7D0C3C51B9A371}" {
-     }
-    }
-   }
-   CharacterAnimationComponent "{520EA1D2F659C994}" {
-    components {
-     SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
-      MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
-       MovementFilterMaxChange 32
-       LeaningSpeed 10
-       HeadingChangeSpeedMax 2000
-      }
-     }
-    }
-   }
-   SCR_CharacterCameraHandlerComponent "{520EA1D2F659C98D}" {
-    "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
-    "CameraSet name" "CharacterCameraSet"
-   }
-   RplComponent "{5238B6A9F3442EE7}" {
-    "Rpl State Override" Runtime
-   }
-  }
-  coords 120.006 1.001 253.733
-  angleY -180
- }
+SCR_ChimeraCharacter : "{5D3BA902E9163D1F}prefabs/Characters/Factions/Renegade/Character_Renegade_Base.et" {
+ coords 119.063 1.001 253.733
+ angleY -180
 }
 SCR_ChimeraCharacter : "{6058AB54781A0C52}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et" {
  coords 165.627 1.001 253.393
@@ -1846,6 +1301,10 @@ SCR_ChimeraCharacter : "{854C04F0EA2129CC}prefabs/Characters/Factions/INDFOR/FIA
  coords 129.406 1.001 253.066
  angleY -180
 }
+SCR_ChimeraCharacter : "{883AABDA0E33E030}prefabs/Characters/Factions/Renegade/Character_Renegade_Rifleman2.et" {
+ coords 120.778 1.001 253.718
+ angleY -180
+}
 SCR_ChimeraCharacter : "{8BD2C16BCA04A246}prefabs/Characters/Factions/Bandits/Character_Bandit_Sniper.et" {
  coords 112.971 1.001 253.898
  angleY -180
@@ -1949,6 +1408,10 @@ SCR_ChimeraCharacter : "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA
 }
 GameEntity : "{F3F988448707C507}Prefabs/Characters/Uniforms/Jacket_KLMK_test.et" {
  coords 142.541 1.001 247.357
+}
+SCR_ChimeraCharacter : "{F5A483E7F608DA58}prefabs/Characters/Factions/Renegade/Character_Renegade_Sniper.et" {
+ coords 121.852 1.001 253.732
+ angleY -180
 }
 SCR_ChimeraCharacter : "{FE65E8C60C751352}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_PL.et" {
  coords 134.264 1.001 253.84

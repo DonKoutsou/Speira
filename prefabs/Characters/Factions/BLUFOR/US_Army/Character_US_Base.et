@@ -26,11 +26,14 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5A24B6035F9481AF}" {
      PrefabsToSpawn {
-      "{73950FBA2D7DB5C5}Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et" "{283B16BDFBFC2E9E}prefabs/Currency/Wallet_US_2_Watches.et" "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" "{630FB4AD4A735264}Prefabs/Items/Equipment/Canteens/Canteen_US_01.et" "{50A68300B537EDFA}Prefabs/Items/Food/ArmyCrackers_Soviet_01.et"
+      "{73950FBA2D7DB5C5}Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et" "{283B16BDFBFC2E9E}prefabs/Currency/Wallet_US_2_Watches.et" "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et" "{630FB4AD4A735264}prefabs/Items/Equipment/Canteens/Canteen_US_01.et" "{50A68300B537EDFA}prefabs/Items/Food/ArmyCrackers_Soviet_01.et"
      }
     }
     ItemsInitConfigurationItem "{5A24B6035F7619E7}" {
      TargetStorage "prefabs/Characters/Uniforms/Jacket_US_BDU.et"
+     PrefabsToSpawn {
+      "{486723809FB041DE}Prefabs/Weapons/Grenades/Grenade_ChemLight_Blue.et"
+     }
     }
    }
   }

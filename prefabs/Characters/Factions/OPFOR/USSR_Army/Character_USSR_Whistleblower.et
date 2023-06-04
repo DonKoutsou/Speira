@@ -27,13 +27,13 @@ SCR_ChimeraCharacter : "{DCB41B3746FDD1BE}prefabs/Characters/Factions/OPFOR/USSR
    InitialInventoryItems {
     ItemsInitConfigurationItem "{54A68D64D7F9124F}" {
      PrefabsToSpawn {
-      "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et" "{54318E98BC91C39E}prefabs/Items/Food/Canteen_Filled.et"
+      "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{E477A369758A2B06}prefabs/Currency/Wallet_10_Watches.et" "{70BC751317551D9B}prefabs/Items/Equipment/Canteens/Canteen_Soviet_01.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173771408E}" {
      TargetStorage "Prefabs/Characters/Uniforms/Jacket_M70.et"
      PrefabsToSpawn {
-      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
+      "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et" "{7CEF68E2BC68CE71}prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et" "{5C9E43AB033B66B9}prefabs/Currency/Wallet_5_watches.et"
      }
     }
     ItemsInitConfigurationItem "{5A24CC173897B74F}" {

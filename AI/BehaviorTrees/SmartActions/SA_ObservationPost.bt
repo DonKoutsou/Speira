@@ -1066,19 +1066,19 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
   }
   Switch Switch {
    Name "Switch"
-   EditorPos 2342 2364
+   EditorPos 2587 3149
    Nodes {
     DecoIsInVehicle "Is In Vehicle" {
      Name "Is In Vehicle"
-     EditorPos 2304.667 2590
+     EditorPos 2644.667 3355
      Nodes {
       Sequence Sequence {
        Name "Sequence"
-       EditorPos 2385.897 2850.975
+       EditorPos 2725.897 3615.975
        Nodes {
         AITaskFindSmartAction "Find Smart Action" {
          Name "Find Smart Action"
-         EditorPos 1902.083 3075.19
+         EditorPos 2242.083 3840.19
          Radius 20
          OutSmartAction 72
          InPosition 71
@@ -1089,14 +1089,14 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
         }
         AITaskGetSmartActionParams "Get Smart Action Params" {
          Name "Get Smart Action Params"
-         EditorPos 2155.381 3075.024
+         EditorPos 2495.381 3840.024
          InSmartAction 72
          OutPos 73
          OutSmartActionEntity 74
         }
         SP_AIGetEmptyCompartment "SP_AI Get Empty Compartment" {
          Name "SP_AI Get Empty Compartment"
-         EditorPos 2532.727 3086.704
+         EditorPos 2872.727 3851.704
          InPorts {
           SingleInputPortContainer SingleInputPortContainer {
            Port 74
@@ -1116,15 +1116,15 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
         }
         DecoTestVariable "Test Variable" {
          Name "Test Variable"
-         EditorPos 3059.059 3084.666
+         EditorPos 3399.059 3849.666
          Nodes {
           Sequence Sequence {
            Name "Sequence"
-           EditorPos 3029.449 3649.107
+           EditorPos 3369.449 4414.107
            Nodes {
             SCR_AISendOrder_Stance "SCR_AI Send Order_ Stance" {
              Name "SCR_AI Send Order_ Stance"
-             EditorPos 2391.274 3837.988
+             EditorPos 2641.274 4637.988
              InPorts {
               SingleInputPortContainer SingleInputPortContainer {
                Port -1
@@ -1138,21 +1138,21 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
             }
             AITaskMove Move {
              Name "Move"
-             EditorPos 2780.282 3821.579
+             EditorPos 3030.282 4621.579
              InTargetLocation 73
              PrecisionXZ 2
              PrecisionY 2
             }
             AITaskGetInVehicle "Get In Vehicle" {
              Name "Get In Vehicle"
-             EditorPos 3133.81 3834.524
+             EditorPos 3383.81 4634.524
              Position Cargo
              InVehicle 74
              InCompartmentSlot 75
             }
             AITaskIdle Idle {
              Name "Idle"
-             EditorPos 3547.5 3822.535
+             EditorPos 3797.5 4622.535
              Period 5
              PeriodRandom 3
             }
@@ -1164,7 +1164,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
         }
         AITaskIdle Idle {
          Name "Idle"
-         EditorPos 3414.489 3094.846
+         EditorPos 3754.489 3859.846
          Period 2
          PeriodRandom 3
         }
@@ -1572,23 +1572,23 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
   }
   VariableReference targetPos {
    VariableType 4
-   EditorPos 1699.218 3234.492
+   EditorPos 1954.218 4019.492
   }
   VariableReference FoundComponent {
    VariableType 9
-   EditorPos 1896.453 3225.739
+   EditorPos 2236.453 3990.739
   }
   VariableReference SAPos {
    VariableType 8
-   EditorPos 2348.953 3278.881
+   EditorPos 2688.953 4043.881
   }
   VariableReference Vehicle {
    VariableType 12
-   EditorPos 2396.166 3195.429
+   EditorPos 2736.166 3960.429
   }
   VariableReference Compartment {
    VariableType 13
-   EditorPos 2795.714 3272.857
+   EditorPos 3135.714 4037.857
   }
   VariableReference MyAgent {
    VariableType 14
@@ -1604,7 +1604,7 @@ BehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost
   }
   VariableReference MyEntity {
    VariableType 15
-   EditorPos 2150 2763.333
+   EditorPos 2490 3528.333
   }
   VariableReference randpos {
    VariableType 16

@@ -1075,7 +1075,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          components {
           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
            m_sObjectToSpawn "{B877A86B61D8E132}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Navigator.et"
-           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           m_sWPToSpawn "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
           }
          }
          coords 113.099 -38.276 428.248
@@ -1085,7 +1085,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          components {
           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
            m_sObjectToSpawn "{CD4B4479B4AFF054}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Keyholder.et"
-           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           m_sWPToSpawn "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
           }
          }
          coords -6.863 -1.357 -1.697
@@ -1096,7 +1096,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
            m_sObjectToSpawn "{11B0AC4011176F6B}prefabs/Characters/Factions/SPEIRA/Character_Speira_Brother.et"
            m_sOverrideObjectDisplayName "Brother"
-           m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+           m_sWPToSpawn "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
           }
          }
          coords 103.366 -1.003 -356.298
@@ -1118,7 +1118,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       components {
        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
         m_sObjectToSpawn "{5479700A1026D3D2}prefabs/Characters/Factions/Bandits/Character_Bandit_Navigator.et"
-        m_sWPToSpawn "{B049D4C74FBC0C4D}prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+        m_sWPToSpawn "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
        }
       }
       coords 464.484 -1.514 2650.678
@@ -1373,18 +1373,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
          m_sFactionKey "FIA"
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-         m_aIncludedEditableEntityLabels {
-         }
-        }
-       }
-       coords 45.952 -2.335 40.683
-       angleY -6.477
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sFactionKey "FIA"
          m_sObjectToSpawn "{2BC1606244F9F491}prefabs/Compositions/Misc/SubCompositions/SandbagCover_US_05.et"
          m_aIncludedEditableEntityLabels {
          }
@@ -1586,50 +1574,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{66A471E2084B5A98}prefabs/Chair_Test/Chair_US_Sittable.et"
-        }
-       }
-       coords 4.664 -1.06 18.009
-       angleX -1.316
-       angleY 165.473
-       angleZ -1.508
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{66A471E2084B5A98}prefabs/Chair_Test/Chair_US_Sittable.et"
-        }
-       }
-       coords 5.294 -0.658 25.776
-       angleX -1.282
-       angleY 151.512
-       angleZ -2.359
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{66A471E2084B5A98}prefabs/Chair_Test/Chair_US_Sittable.et"
-        }
-       }
-       coords 1.677 -1.04 1.55
-       angleX 0.199
-       angleY -4.241
-       angleZ 2.677
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{66A471E2084B5A98}prefabs/Chair_Test/Chair_US_Sittable.et"
-        }
-       }
-       coords -0.135 -1.014 12.018
-       angleX -2.567
-       angleY 107.046
-       angleZ -0.786
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
          m_sObjectToSpawn "{0E94F28FD722B1D8}prefabs/Props/Military/Generators/GeneratorFloodlight_US_01.et"
         }
        }
@@ -1720,15 +1664,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     coords 0 0 0
     {
      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-        }
-       }
-       coords -619.74 -38.66 -26.089
-       angleY 179.465
-      }
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
@@ -2036,29 +1971,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-        }
-       }
-       coords -388.302 -15.707 27.632
-       angleY 1.884
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
          m_sObjectToSpawn "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et"
         }
        }
        coords -390.15 -15.707 28.151
        angleY -178.116
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et"
-        }
-       }
-       coords -390.841 -15.707 29.596
-       angleY 112.097
       }
       {
        components {
@@ -2108,15 +2025,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-        }
-       }
-       coords -336.279 -49.628 97.506
-       angleY 45.848
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
          m_sObjectToSpawn "{5D91308C543D1376}prefabs/Props/Fire_Barrel.et"
         }
        }
@@ -2154,15 +2062,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        angleX -5.841
        angleY 45.754
        angleZ 4.415
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-        }
-       }
-       coords -563.09 -46.092 9.688
-       angleY 78.836
       }
       {
        components {
@@ -2316,15 +2215,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        coords 19.094 -2.115 -6.234
        angleY 116.402
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-        }
-       }
-       coords 16.398 -2.072 -4.824
-       angleY 23.243
       }
       {
        components {
@@ -2817,17 +2707,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{E7E1B1B2B433F80B}prefabs/Props/Furniture/BenchWooden_02.et"
-        }
-       }
-       coords 27.56 1.925 38.002
-       angleX 0.619
-       angleY -164.287
-       angleZ 1.104
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
          m_sObjectToSpawn "{9F9924B626C5FA2B}prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_USSR_01.et"
         }
        }
@@ -2906,20 +2785,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
          m_sFactionKey "FIA"
-         m_sObjectToSpawn "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et"
-         m_aIncludedEditableEntityLabels {
-         }
-        }
-       }
-       coords -233.703 -7.471 -85.742
-       angleX 2.984
-       angleY -43.457
-       angleZ -1.989
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sFactionKey "FIA"
          m_sObjectToSpawn "{B51CE80A9EEF7E00}prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_01.et"
          m_aIncludedEditableEntityLabels {
          }
@@ -2975,18 +2840,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        coords -629.689 -6.812 401.613
        angleY 13.408
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sFactionKey "FIA"
-         m_sObjectToSpawn "{C606F9422D9C3778}prefabs/Props/Furniture/ChairOld_01_2.et"
-         m_aIncludedEditableEntityLabels {
-         }
-        }
-       }
-       coords -629.22 -6.812 403.301
-       angleY 163.408
       }
       {
        components {

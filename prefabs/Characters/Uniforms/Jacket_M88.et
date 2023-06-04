@@ -4,6 +4,9 @@ GameEntity : "{E44990162EBC47B7}Prefabs/Characters/Uniforms/Jacket_M88_base.et" 
   SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
    Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
     CustomAttributes {
+     SP_ClothAttributes "{5D82DAD0CD111356}" {
+      m_TemperatureIsolation 0.2
+     }
      PreviewRenderAttributes "{555292467DA11B7C}" {
       PreviewWornModel 1
       PreviewModel ""
