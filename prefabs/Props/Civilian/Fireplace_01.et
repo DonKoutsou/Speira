@@ -5,8 +5,8 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
    AttachType EntitySlotInfo fireplace {
    }
   }
-  BaseSlotComponent "{5D8689619FD8223C}" {
-   AttachType EntitySlotInfo CookingPot {
+  PotSlotComponent "{5D8B00B487A6FB96}" {
+   AttachType EntitySlotInfo Pot {
     Offset 0 0.2196 0
    }
   }
@@ -44,6 +44,9 @@ GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
    }
    m_eInitialLightState OFF
    m_fShouldBeAliveFor 20000
+   m_RawMeatPrefab "{128A19AA9F731095}prefabs/Items/Food/MeatLeg_01.et"
+   m_CookedMeatPrefab "{C22A2F123CD609FC}prefabs/Items/Food/Meat_01_Dry.et"
+   m_BurnedMeatPrefab "{5AC9346AB70F4959}prefabs/Items/Food/Burned_Meat.et"
   }
   ActionsManagerComponent "{5876E7F5CCE95371}" {
    additionalActions {

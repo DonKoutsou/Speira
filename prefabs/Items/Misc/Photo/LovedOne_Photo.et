@@ -17,8 +17,8 @@ GenericEntity {
     ItemPhysAttributes ItemPhysicalAttributes "{5C7D11CAD4E6F3DD}" {
      Weight 0.001
      SizeSetupStrategy Manual
-     ItemDimensions 2 2 2
-     ItemVolume 20
+     ItemDimensions 1 1 1
+     ItemVolume 10
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5C7D32C1ADF84B8F}" {
      AnimationInstance ""
@@ -45,9 +45,8 @@ GenericEntity {
       Supress1hShooting 0
      }
     }
-    CommonItemType "CURRENCY"
     m_Size SLOT_1x1
-    m_SlotType SLOT_ANY
+    m_SlotType SLOT_LOOT_CURRENCY
    }
   }
   MeshObject "{5C7D11CAD4E6F39C}" {
@@ -83,14 +82,6 @@ GenericEntity {
      }
      UIInfo UIInfo "{5C7D11CAD4E6F46E}" {
       Name "#AR-Inventory_PickUp"
-     }
-    }
-    SCR_WearClothUserAction "{5C7D11CAD4E6F420}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5C7D11CAD4E6F41E}" {
-      Name "#AR-Inventory_Wear"
      }
     }
    }

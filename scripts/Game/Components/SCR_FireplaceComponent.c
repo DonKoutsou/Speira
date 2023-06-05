@@ -22,18 +22,29 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 	[Attribute()]
 	protected float m_fShouldBeAliveFor;
 	
-	
+	float alivetime;
 	
 	private SCR_ParticleEmitter m_pFireParticle;
 	protected SCR_BaseInteractiveLightComponentClass m_ComponentData;
 	protected IEntity m_DecalEntity;
 	protected float m_fTimer;
 	protected float m_fCompDataLV;
-	
+	bool potatatched = false;
 		
 	protected static const float FLICKER_STEP = 0.05;
 	protected static const float FLICKER_THRESHOLD = 0.35;
 	protected static const float FLICKER_FREQUENCY = 1 / 30;
+	
+	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
+	ResourceName m_RawMeatPrefab;
+	
+	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
+	ResourceName m_CookedMeatPrefab;
+	
+	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
+	ResourceName m_BurnedMeatPrefab;
+	
+	PotSlotComponent potslot;
 		
 	//------------------------------------------------------------------------------------------------
 	override void ToggleLight(bool turnOn, bool skipTransition = false, bool playSound = true)
@@ -53,11 +64,18 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 			TurnOff();
 		}
 	}
-	
+	void OnPotAtatched()
+	{
+		potatatched = true;
+	}
+	void OnPotDetatched()
+	{
+		potatatched = false;
+	}
 	//------------------------------------------------------------------------------------------------
 	void TurnOn()
 	{
-		m_fShouldBeAliveFor = 60;
+		alivetime = m_fShouldBeAliveFor;
 		if (m_pFireParticle)
 			m_pFireParticle.UnPause();
 		else
@@ -105,6 +123,13 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 			m_fCurLV = m_ComponentData.GetLightLV();
 
 		super.OnPostInit(owner);
+		array<Managed> outComponents = {};
+		owner.FindComponents(PotSlotComponent, outComponents);
+		foreach (Managed slot : outComponents)
+		{
+			PotSlotComponent newslot = PotSlotComponent.Cast(slot);
+			potslot = newslot;
+		}
 	}
 	
 	//------------------------------------------------------------------------------------------------
@@ -115,7 +140,7 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 			ClearEventMask(GetOwner(), EntityEvent.FRAME);
 			return;
 		}
-		m_fShouldBeAliveFor -= timeSlice;
+		alivetime -= timeSlice;
 		
 		m_fTimer += timeSlice;
 		
@@ -145,7 +170,44 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 			if (ld)
 				m_aLights[i].SetColor(Color.FromVector(ld.GetLightColor()), m_fCurLV);
 		}
-		if(m_fShouldBeAliveFor <= 0)
+		if(potatatched)
+		{
+			IEntity Cookingpot = potslot.GetAttachedEntity();
+			PrefabResource_Predicate Rawpred = new PrefabResource_Predicate(m_RawMeatPrefab);
+			PrefabResource_Predicate Cookedpred = new PrefabResource_Predicate(m_CookedMeatPrefab);
+			array<IEntity> RawMeat = new array<IEntity>;
+			array<IEntity> CookedMeat = new array<IEntity>;
+			SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(Cookingpot.FindComponent(SCR_InventoryStorageManagerComponent));
+			BaseInventoryStorageComponent pInvComp = BaseInventoryStorageComponent.Cast(Cookingpot.FindComponent(BaseInventoryStorageComponent));
+			inv.FindItems(RawMeat, Rawpred);
+			inv.FindItems(CookedMeat, Cookedpred);
+			if(CookedMeat.Count() > 0 || RawMeat.Count() > 0)
+			{
+				foreach(IEntity MeatPiece : CookedMeat)
+				{
+					FoodEntity food = FoodEntity.Cast(MeatPiece);
+					bool cooked = food.Cook(timeSlice);
+					if (cooked == true)
+					{
+						RplComponent.Cast(MeatPiece.FindComponent(RplComponent)).DeleteRplEntity(MeatPiece, true);
+						inv.TrySpawnPrefabToStorage(m_BurnedMeatPrefab, pInvComp);
+					}
+				}
+				
+				foreach(IEntity MeatPiece : RawMeat)
+				{
+					FoodEntity food = FoodEntity.Cast(MeatPiece);
+					bool cooked = food.Cook(timeSlice);
+					if (cooked == true)
+					{
+						RplComponent.Cast(MeatPiece.FindComponent(RplComponent)).DeleteRplEntity(MeatPiece, true);
+						inv.TrySpawnPrefabToStorage(m_CookedMeatPrefab, pInvComp);
+					}
+				}
+			}
+			
+		}
+		if(alivetime <= 0)
 		{
 			ToggleLight(false);
 		}
@@ -167,4 +229,12 @@ class SCR_FireplaceComponent : SCR_BaseInteractiveLightComponent
 	{
 		RemoveLights();
 	}
+	
 };
+class PotSlotComponentClass: BaseSlotComponentClass
+{
+}
+
+class PotSlotComponent: BaseSlotComponent
+{
+}

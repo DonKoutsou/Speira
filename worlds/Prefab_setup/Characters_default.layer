@@ -1018,9 +1018,18 @@ GenericEntity {
   }
  }
 }
+GenericEntity : "{008D2A32F92F80D6}prefabs/Items/Misc/Photo/LovedOne_Photo.et" {
+ coords 124.669 1.167 246.9
+}
+GenericEntity : "{057AEFF961B81816}prefabs/Items/Package.et" {
+ coords 125.27 1.001 246.307
+}
 SCR_ChimeraCharacter : "{0F6689B491641155}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et" {
  coords 160.635 1.001 253.393
  angleY -180
+}
+FoodEntity : "{128A19AA9F731095}prefabs/Items/Food/MeatLeg_01.et" {
+ coords 132.886 1.001 236.017
 }
 SCR_ChimeraCharacter : "{1623EA3AEFACA0E4}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_MG.et" {
  coords 161.507 1.001 253.393
@@ -1096,9 +1105,20 @@ SCR_ChimeraCharacter : "{3FD839061D17211A}prefabs/Characters/Factions/Bandits/Ch
  coords 115.318 1.001 253.804
  angleY 180
 }
+GenericEntity : "{410A0A507D24BFDF}prefabs/Items/Equipment/Canteens/Water_Bottle.et" {
+ components {
+  RigidBody "{2829E7297110F493}" {
+   ResponseIndex "HugeDestructible"
+  }
+ }
+ coords 124.92 1.001 246.922
+}
 SCR_ChimeraCharacter : "{45A02CA25CBA9443}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et" {
  coords 136.627 1.001 253.84
  angleY -180
+}
+FoodEntity : "{50A68300B537EDFA}prefabs/Items/Food/ArmyCrackers_Soviet_01.et" {
+ coords 125.07 1.001 247.145
 }
 SCR_ChimeraCharacter : "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Commander.et" {
  coords 145.373 1.001 253.002
@@ -1107,6 +1127,9 @@ SCR_ChimeraCharacter : "{51AEB81B9B4C3BD3}prefabs/Characters/Factions/OPFOR/USSR
 SCR_ChimeraCharacter : "{5346CF7E39A65A6B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Base.et" {
  coords 146.2 1.001 252.93
  angleY -180
+}
+Projectile : "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" {
+ coords 123.278 1.001 248.442
 }
 SCR_ChimeraCharacter : "{5436629450D8387A}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_SL.et" {
  coords 150.2 1.001 253.936
@@ -1145,6 +1168,110 @@ SCR_ChimeraCharacter : "{631158F6898738A4}prefabs/Characters/Factions/OPFOR/USSR
 SCR_ChimeraCharacter : "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et" {
  coords 127.025 1.001 253.84
  angleY -180
+}
+$grp GenericEntity : "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et" {
+ {
+  coords 124.055 1.001 246.346
+ }
+ {
+  coords 124.081 1.035 246.391
+ }
+ {
+  coords 124.023 1.035 246.37
+ }
+ {
+  coords 124.019 1.035 246.268
+ }
+ {
+  coords 124.031 1.035 246.306
+ }
+ {
+  coords 124.084 1.035 246.243
+ }
+ {
+  coords 124.103 1.035 246.273
+ }
+ {
+  coords 124.139 1.035 246.218
+ }
+ {
+  coords 124.139 1.035 246.249
+ }
+ {
+  coords 124.128 1.035 246.202
+ }
+ {
+  coords 124.14 1.035 246.231
+ }
+ {
+  coords 124.14 1.035 246.227
+ }
+ {
+  coords 124.003 1.001 246.332
+ }
+ {
+  coords 123.968 1.035 246.254
+ }
+ {
+  coords 123.98 1.035 246.292
+ }
+ {
+  coords 124.052 1.035 246.259
+ }
+ {
+  coords 124.033 1.035 246.229
+ }
+ {
+  coords 124.088 1.035 246.204
+ }
+ {
+  coords 124.088 1.035 246.235
+ }
+ {
+  coords 124.089 1.035 246.217
+ }
+ {
+  coords 124.077 1.035 246.188
+ }
+ {
+  coords 124.089 1.035 246.213
+ }
+ {
+  coords 124.036 1.001 246.418
+ }
+ {
+  coords 124.001 1.035 246.34
+ }
+ {
+  coords 124.013 1.035 246.378
+ }
+ {
+  coords 124.085 1.035 246.345
+ }
+ {
+  coords 124.066 1.035 246.315
+ }
+ {
+  coords 124.121 1.035 246.29
+ }
+ {
+  coords 124.121 1.035 246.321
+ }
+ {
+  coords 124.122 1.035 246.303
+ }
+ {
+  coords 124.11 1.035 246.274
+ }
+ {
+  coords 124.122 1.035 246.299
+ }
+ {
+  coords 124.183 1.001 246.654
+ }
+}
+GenericEntity : "{70BC751317551D9B}prefabs/Items/Equipment/Canteens/Canteen_Soviet_01.et" {
+ coords 124.635 1.001 246.923
 }
 SCR_ChimeraCharacter : "{75FC25863194612A}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AMG.et" {
  coords 125.02 1.001 253.84
@@ -1277,12 +1404,18 @@ SCR_ChimeraCharacter : "{7A9EE19AB67B298B}prefabs/Characters/Factions/INDFOR/FIA
 GenericEntity : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et" {
  coords 115.878 1.001 247.684
 }
+GenericEntity : "{7B6802E9AD265A57}prefabs/Currency/Wallet_Base.et" {
+ coords 124.479 1.001 246.454
+}
 $grp GenericEntity : "{7BDDD54F4025CBAD}prefabs/Currency/Wallet_Player.et" {
  {
   coords 115.987 1.001 248.356
  }
  {
   coords 127.191 1.001 250.219
+ }
+ {
+  coords 124.104 1.001 246.741
  }
 }
 SCR_ChimeraCharacter : "{836E7E39AAC5888B}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
@@ -1352,6 +1485,14 @@ SCR_ChimeraCharacter : "{BF1E43FF39AA526B}prefabs/Characters/Factions/INDFOR/FIA
  coords 129.407 1.001 253.84
  angleY -180
 }
+$grp FoodEntity : "{C22A2F123CD609FC}prefabs/Items/Food/Meat_01_Dry.et" {
+ {
+  coords 125.063 1.001 246.818
+ }
+ {
+  coords 132.557 1.001 235.5
+ }
+}
 SCR_ChimeraCharacter : "{C6DF098AEC5AE52E}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Whistleblower.et" {
  coords 142.616 1.001 253.936
  angleY -180
@@ -1371,6 +1512,9 @@ SCR_ChimeraCharacter : "{D25BC9815A9F9E8D}prefabs/Characters/Factions/INDFOR/FIA
  coords 137.829 1.001 253.84
  angleY -180
 }
+GameEntity : "{D9842C11742C00CF}prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 131.714 1.001 236.258
+}
 SCR_ChimeraCharacter : "{DA72152906FE3B8A}prefabs/Characters/Factions/Bandits/Character_Bandot_Commander.et" {
  coords 114.197 1.001 253.084
  angleY -180
@@ -1387,9 +1531,16 @@ SCR_ChimeraCharacter : "{E45F1E163F5CA080}prefabs/Characters/Factions/BLUFOR/US_
  coords 168.059 1.001 253.393
  angleY -180
 }
+GenericEntity : "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" {
+ coords 124.713 1.058 246.319
+ angleZ 0
+}
 SCR_ChimeraCharacter : "{E9AEEF2D9E41321B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AMG.et" {
  coords 146.2 1.001 253.936
  angleY -180
+}
+FoodEntity : "{EB21D26B8D5A3232}prefabs/Items/Food/MRE.et" {
+ coords 124.853 1.001 246.785
 }
 SCR_ChimeraCharacter : "{F16CCC2CBA1C6D5C}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Commander.et" {
  components {
@@ -1412,6 +1563,9 @@ GameEntity : "{F3F988448707C507}Prefabs/Characters/Uniforms/Jacket_KLMK_test.et"
 SCR_ChimeraCharacter : "{F5A483E7F608DA58}prefabs/Characters/Factions/Renegade/Character_Renegade_Sniper.et" {
  coords 121.852 1.001 253.732
  angleY -180
+}
+GenericEntity : "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et" {
+ coords 132.51 1.001 236.939
 }
 SCR_ChimeraCharacter : "{FE65E8C60C751352}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_PL.et" {
  coords 134.264 1.001 253.84

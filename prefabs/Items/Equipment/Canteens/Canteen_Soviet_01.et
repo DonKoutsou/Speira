@@ -4,8 +4,8 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
-     ItemDimensions 1 1 1
-     ItemVolume 7
+     ItemDimensions 10 10 10
+     ItemVolume 100
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5D38EB800D2CA94B}" {
      AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
@@ -21,11 +21,7 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
      HandAdditiveTranslation 0.06 0.015 0
     }
     CustomAttributes {
-     SCR_ItemOfInterestAttribute "{5D84D824D6F5C082}" {
-      m_InterestType FOOD
-     }
     }
-    CommonItemType "FOOD"
     m_SlotType SLOT_VEST
    }
   }
@@ -37,8 +33,6 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
    m_bIsDrinkable 1
    m_fInitContainerCapacity 30
    m_fUseAmount 10
-  }
-  SP_UnretrievableComponent "{5D7F4BDEB122E8AC}" {
   }
   BaseLoadoutClothComponent "{54E6E41D1C6CC4E8}" {
    Enabled 0

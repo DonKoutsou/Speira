@@ -18,8 +18,8 @@ GenericEntity {
     ItemPhysAttributes ItemPhysicalAttributes "{5AE8A8999D0F3D90}" {
      Weight 0.005
      SizeSetupStrategy Manual
-     ItemDimensions 0.5 0.5 0.5
-     ItemVolume 0.5
+     ItemDimensions 0.05 0.05 0.05
+     ItemVolume 0.05
      RestingAdditiveOffsetLS 0 0 0
     }
     CustomAttributes {
@@ -31,7 +31,7 @@ GenericEntity {
       FOV 45
      }
     }
-    CommonItemType "NONE"
+    CommonItemType "CURRENCY"
     m_Size SLOT_1x1
     m_SlotType SLOT_LOOT_CURRENCY
    }

@@ -1,4 +1,4 @@
-GenericEntity : "{C22A2F123CD609FC}Prefabs/Items/Food/Meat_01_Dry.et" {
+FoodEntity : "{C22A2F123CD609FC}Prefabs/Items/Food/Meat_01_Dry.et" {
  ID "74D3E7415542DA9C"
  components {
   InventoryItemComponent "{5222EB4D0C73006B}" {

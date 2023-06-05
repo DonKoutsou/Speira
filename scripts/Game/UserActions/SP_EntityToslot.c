@@ -19,7 +19,6 @@ class SP_PlaceEntityToSlot : ScriptedUserAction
 			BaseSlotComponent newslot = BaseSlotComponent.Cast(slot);
 			potslot = newslot;
 		}
-		
 		InventoryItemComponent pInvComp = InventoryItemComponent.Cast(CookingPot.FindComponent(InventoryItemComponent));
 		InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
 		bool removed = inv.TryRemoveItemFromStorage(CookingPot,parentSlot.GetStorage());
@@ -27,6 +26,8 @@ class SP_PlaceEntityToSlot : ScriptedUserAction
 			{
 				potslot.GetSlotInfo().AttachEntity(CookingPot);
 			}
+		SCR_FireplaceComponent fire = SCR_FireplaceComponent.Cast(pOwnerEntity.FindComponent(SCR_FireplaceComponent));
+		fire.OnPotAtatched();
 	}
 	
 	event override bool CanBeShownScript(IEntity user) 

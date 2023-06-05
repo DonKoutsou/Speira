@@ -1,8 +1,13 @@
 GameEntity : "{06BC3F18B47799AE}Prefabs/Characters/Uniforms/Pants_M70.et" {
  coords 122.678 1.678 179.731
 }
-GameEntity : "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et" {
- coords 119.807 1.675 178.077
+$grp GameEntity : "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et" {
+ {
+  coords 119.807 1.675 178.077
+ }
+ {
+  coords 122.235 1.685 179.734
+ }
 }
 GenericEntity : "{320FA1CD5B1D5601}Prefabs/Characters/Footwear/Boots_USMC_Combat/Footwear_USMC_Combat.et" {
  coords 121.635 1.694 179.743
@@ -40,6 +45,9 @@ GameEntity : "{B74A4FF0DD8BB116}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helm
 }
 GameEntity : "{BBA08EC4EC40FA94}Prefabs/Characters/Uniforms/Jacket_M70.et" {
  coords 123.997 1.657 178.959
+}
+GameEntity : "{BCCB7D5AB38BB3A7}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_base.et" {
+ coords 121.693 1.671 180.403
 }
 GameEntity : "{C7861F11D5334C0E}prefabs/Characters/Uniforms/Jacket_US_BDU.et" {
  coords 121.854 1.691 178.944

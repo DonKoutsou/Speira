@@ -9,7 +9,8 @@ class SP_AILootBodyAction : ScriptedUserAction
 		foreach (IEntity item : items)
 		{
 			SP_UnretrievableComponent Unretr = SP_UnretrievableComponent.Cast(item.FindComponent(SP_UnretrievableComponent));
-			if (Unretr)
+			SCR_ConsumableItemComponent cons = SCR_ConsumableItemComponent.Cast(item.FindComponent(SCR_ConsumableItemComponent));
+			if (Unretr || cons)
 				{
 					inv.TryMoveItemToStorage(item, stocompKiller.FindStorageForItem(item));
 				}

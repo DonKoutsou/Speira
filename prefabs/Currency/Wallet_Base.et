@@ -31,7 +31,8 @@ GenericEntity {
     ItemPhysAttributes ItemPhysicalAttributes "{5C78C42204C93A14}" {
      Weight 0.1
      SizeSetupStrategy Manual
-     ItemDimensions 5 5 5
+     ItemDimensions 3 3 3
+     ItemVolume 27
     }
     CustomAttributes {
      PreviewRenderAttributes "{5C78C42204C93A02}" {
@@ -45,9 +46,10 @@ GenericEntity {
     m_SlotType SLOT_LOOT_CURRENCY
    }
    Priority 9
-   UseCapacityCoefficient 0
-   MaxItemSize 2 2 2
-   m_fMaxWeight 5
+   StoragePurpose 9
+   MaxCumulativeVolume 1000
+   MaxItemSize 10 10 10
+   m_fMaxWeight 1
   }
   ActionsManagerComponent "{5C78C42204C93AEF}" {
    ActionContexts {

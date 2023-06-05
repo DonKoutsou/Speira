@@ -1,4 +1,4 @@
-GenericEntity : "{80C8C9227D2C7CF5}Prefabs/Characters/Core/Footwear_Base.et" {
+GenericEntity : "{80C8C9227D2C7CF5}prefabs/Characters/Core/Footwear_Base.et" {
  ID "51A4D7EC51788198"
  components {
   InventoryItemComponent "{5244C46AD695742D}" {
@@ -7,6 +7,9 @@ GenericEntity : "{80C8C9227D2C7CF5}Prefabs/Characters/Core/Footwear_Base.et" {
      PreviewRenderAttributes "{56EE962D7EEA431E}" {
       PreviewWornModel 1
       PreviewModel ""
+     }
+     SP_ClothAttributes "{5D8AE184D2212113}" {
+      m_TemperatureIsolation 0.25
      }
     }
    }

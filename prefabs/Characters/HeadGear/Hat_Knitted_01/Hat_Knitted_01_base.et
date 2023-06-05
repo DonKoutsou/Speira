@@ -1,0 +1,14 @@
+GameEntity : "{17F335BF60DD2550}prefabs/Characters/Core/Headgear_Base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{552CCA09F70E8E9A}" {
+    CustomAttributes {
+     SP_ClothAttributes "{5D8AE1841847457F}" {
+      m_TemperatureIsolation 0.25
+     }
+    }
+   }
+  }
+ }
+}

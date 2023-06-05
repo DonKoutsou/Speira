@@ -1,0 +1,18 @@
+GameEntity : "{ABCD327C7E4EEE01}Prefabs/Characters/HeadGear/Helmet_LShZ/Helmet_LShZ_base.et" {
+ ID "50D485E1435D6C72"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D601873E6784}" {
+    CustomAttributes {
+     SP_ClothAttributes "{5D8AE184F75BE126}" {
+      m_TemperatureIsolation 0.2
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   AreaType ZEL_HeadArea "{5A68DCDCC87D9EB5}" {
+   }
+  }
+ }
+}

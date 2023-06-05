@@ -1,4 +1,4 @@
-GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+FoodEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
  ID "2829E729DF7DE6D1"
  components {
   InventoryItemComponent "{5222EB4D0C73006B}" {
@@ -9,8 +9,8 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
      SizeSetupStrategy Manual
-     ItemDimensions 1 1 1
-     ItemVolume 7
+     ItemDimensions 4 4 4
+     ItemVolume 64
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5D34DC898E5D87CF}" {
      AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
@@ -39,8 +39,6 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
    m_bIsEatable 1
    m_fInitContainerCapacity 10
    m_fUseAmount 10
-  }
-  SP_UnretrievableComponent "{5D7F4BDEB5FCE4F7}" {
   }
  }
 }
