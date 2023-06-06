@@ -14,10 +14,16 @@ class DialogueStageTakePackageAction : DialogueStage
 	{
 		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
 		AIAgent agent = comp.GetAIAgent();
+		
+		
 		FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
-		string key = FC.GetAffiliatedFaction().GetFactionKey();
+		SCR_Faction myfact = SCR_Faction.Cast(FC.GetAffiliatedFaction());
+		
 		SP_AIDirector OrDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
-		OrDirector.GetDirectorOccupiedBy(key, MyDirector);
+		OrDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
+		string keyunused;
+		string key = MyDirector.GetMajorityHolder(keyunused).GetFactionKey();
+		
 		vector mat[4];
 		Character.GetWorldTransform(mat);
 		vector spawnPos = m_SpawnOffset.Multiply3(mat) + mat[3];
@@ -50,10 +56,10 @@ class DialogueStageTakePackageAction : DialogueStage
 		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
 		AIAgent agent = comp.GetAIAgent();
 		FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
-		string key = FC.GetAffiliatedFaction().GetFactionKey();
+		SCR_Faction myfact = SCR_Faction.Cast(FC.GetAffiliatedFaction());
 		SP_AIDirector OrDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
 		m_sCantBePerformedReason = "(No available deliveries)";
-		return OrDirector.GetDirectorOccupiedBy(key, MyDirector);
+		return OrDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
 	}
 	override string GetDialogueText(IEntity Character, IEntity Player)
 	{

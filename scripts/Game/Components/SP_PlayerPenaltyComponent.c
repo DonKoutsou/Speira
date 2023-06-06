@@ -24,30 +24,27 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 					if(VictimF.IsFactionFriendly(KillerF) == true)
 					{
 						SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGameMode().FindComponent(SP_DialogueComponent));
-						if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "USSR")
+						if(KillerF != VictimF)
 						{
-							DiagComp.DoAnouncerDialogue("Killed unit of the soviet faction, soviets will atack you from now on");
-							FMan.SetFactionsHostile(KillerF, VictimF);
-						}
-						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "FIA")
-						{
-							DiagComp.DoAnouncerDialogue("Killed unit of the FIA faction, FIA will atack you from now on");
-							FMan.SetFactionsHostile(KillerF, VictimF);
-						}
-						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "US")
-						{
-							DiagComp.DoAnouncerDialogue("Killed unit of the US faction, US will atack you from now on");
-							FMan.SetFactionsHostile(KillerF, VictimF);
-						}
-						else if (KillerF.GetFactionKey() == "SPEIRA" && VictimF.GetFactionKey() == "BANDITS")
-						{
-							DiagComp.DoAnouncerDialogue("Killed unit of the Bandit faction, they will atack you from now on");
-							FMan.SetFactionsHostile(KillerF, VictimF);
+							VictimF.AdjustRelation(KillerF, -5);
+							SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(instigator.FindComponent(SCR_CharacterIdentityComponent));
+							id.AdjustCharRep(-5);
+							string text;
+							text = string.Format("You caused issues between %1 and %2, your reputation has worsened", KillerF.GetFactionKey(), VictimF.GetFactionKey());
+							DiagComp.DoAnouncerDialogue(text);
 						}
 						else if (KillerF == VictimF)
 						{
-							DiagComp.DoAnouncerDialogue("Killed unit of your own faction, you've gone Renegade");
-							FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+							SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(instigator.FindComponent(SCR_CharacterIdentityComponent));
+							if(id.AdjustCharRep(-20))
+							{
+								DiagComp.DoAnouncerDialogue("Your reputation has fallen to much and your faction has expeled you. You'll be treated as renegade from now on");
+								FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+							}
+							else
+							{
+								DiagComp.DoAnouncerDialogue("Killed unit of your own faction, your reputation is worsened by alot");
+							}
 						}
 					}
 				}
@@ -100,33 +97,5 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 		
 		int killerPlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(killerChar);
 		
-		//if (killerPlayerId == 0)
-		//	return;
-		
-		//if (!killerChar.GetFaction().IsFactionFriendly(victimChar.GetFaction()))
-		//	return;
-		
-		//int victimPlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(victimChar);
-		//SCR_PlayerPenaltyData playerPenaltyData = GetPlayerPenaltyData(killerPlayerId);
-		
-		//if (!playerPenaltyData)
-		//	return;
-		
-		//if (victimPlayerId == 0)
-		//	playerPenaltyData.AddPenaltyScore(m_iFriendlyAIKillPenalty);
-		//else
-		//	playerPenaltyData.AddPenaltyScore(m_iFriendlyPlayerKillPenalty);
-		//SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(entity.FindComponent(SCR_InventoryStorageManagerComponent));
-		//array<IEntity> items = new array<IEntity>();
-		//inv.GetItems(items);
-		//InventoryStorageManagerComponent stocompKiller = InventoryStorageManagerComponent.Cast(instigator.FindComponent(InventoryStorageManagerComponent));
-		//foreach (IEntity item : items)
-		//{
-		//SP_UnretrievableComponent Unretr = SP_UnretrievableComponent.Cast(item.FindComponent(SP_UnretrievableComponent));
-		//	if (Unretr)
-		//		{
-		//			inv.TryMoveItemToStorage(item, stocompKiller.FindStorageForItem(item));
-		//		}
-		//}
 	}
 }

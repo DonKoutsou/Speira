@@ -54,17 +54,55 @@ class SCR_Faction : ScriptedFaction
 	
 	protected ref set<Faction> m_FriendlyFactions = new set<Faction>;
 	
+	protected ref map<Faction, int> m_FriendlyMap = new map<Faction, int>;
+	
+	
 	//------------------------------------------------------------------------------------------------
 	/*!
 	\return Order in which the faction appears in the list. Lower values are first.
 	*/
+	void UpdateFactionRelations()
+	{
+		SCR_FactionManager factionManager = SCR_FactionManager.Cast(GetGame().GetFactionManager());
+		foreach (Faction fact, int relation : m_FriendlyMap)
+		{
+			SCR_Faction SCRFact = SCR_Faction.Cast(fact);
+			if(relation > 0)
+			{
+				factionManager.SetFactionsFriendly(this, SCRFact);
+			}
+			else if(relation <= 0)
+			{
+				factionManager.SetFactionsHostile(this, SCRFact);
+			}
+		};
+	}
+	void AdjustRelation(Faction faction, int amount)
+	{
+		int relation;
+		m_FriendlyMap.Find(faction, relation);
+		m_FriendlyMap.Set(faction, relation + amount);
+		UpdateFactionRelations();
+	}
 	int GetOrder()
 	{
 		return m_iOrder;
 	}
+	void GetFactionRep(Faction fact, out int rep)
+	{
+		m_FriendlyMap.Find(fact, rep);
+	}
 	void GetFriendlyFactions(out array<string> friendlyfactions)
 	{
 		friendlyfactions = m_aFriendlyFactionsIds;
+	}
+	void GetFriendlyFactions2(out array<Faction> friendlyfactions)
+	{
+		friendlyfactions = new array<Faction>();
+		foreach (Faction fact : m_FriendlyFactions)
+		{
+			friendlyfactions.Insert(fact);
+		}
 	}
 	//------------------------------------------------------------------------------------------------
 	void GetPredefinedGroups(notnull array<ref SCR_GroupPreset> groupArray)
@@ -437,7 +475,6 @@ class SCR_Faction : ScriptedFaction
 	override void Init(IEntity owner)
 	{
 		super.Init(owner);
-		
 		if (SCR_Global.IsEditMode()) 
 			return;
 		
@@ -480,6 +517,23 @@ class SCR_Faction : ScriptedFaction
 					//~ Assign as friendly
 					factionManager.SetFactionsFriendly(this, faction);
 				}
+			}
+			if(m_FriendlyMap.IsEmpty())
+			{
+				array<Faction> Factions = new array<Faction>();
+				factionManager.GetFactionsList(Factions);
+				foreach(Faction fact : Factions)
+				{
+					if(IsFactionFriendly(fact))
+					{
+						m_FriendlyMap.Insert(fact, 100);
+					}
+					else
+					{
+						m_FriendlyMap.Insert(fact, -100);
+					}
+				}
+			
 			}
 		}
 		

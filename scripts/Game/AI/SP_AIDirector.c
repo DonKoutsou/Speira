@@ -76,7 +76,36 @@ class SP_AIDirector : AIGroup
 	{
 		return m_sLocationName;
 	}
-	
+	bool GetDirectorOccupiedByFriendly(Faction faction, out SP_AIDirector Director)
+	{
+		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;
+		ref array<SP_AIDirector> FrDirectors = new ref array<SP_AIDirector>;
+		int UnitCount;
+		for (int i = 0; i < Directors.Count(); i++)
+		{
+			FactionKey FKey;
+			int Count;
+			Faction Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
+			if(faction.IsFactionFriendly(Key2))
+			{
+				FrDirectors.Insert(Directors[i]);
+				UnitCount = Count;
+			}
+			
+			
+		}
+		if(FrDirectors.Count() <= 0)
+		{
+			return false;
+		}	
+		else
+		{
+			int index = Math.RandomInt(0, FrDirectors.Count());
+			Director = FrDirectors[index];
+			return true;
+		}
+		return false;
+	}
 	bool GetDirectorOccupiedBy(FactionKey Key, out SP_AIDirector Director)
 	{
 		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;
@@ -86,8 +115,8 @@ class SP_AIDirector : AIGroup
 		{
 			FactionKey FKey;
 			int Count;
-			FactionKey Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
-			if (Key2 == Key && Directors[i] != this)
+			Faction Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
+			if (Key2.GetFactionKey() == Key && Directors[i] != this)
 			{
 				FrDirectors.Insert(Directors[i]);
 				UnitCount = Count;
@@ -121,7 +150,7 @@ class SP_AIDirector : AIGroup
 		}
 		return false;
 	}
-	FactionKey GetMajorityHolderNCount(out string factionReadable, out int UnitCount)
+	Faction GetMajorityHolderNCount(out string factionReadable, out int UnitCount)
 	{
 		int USSRcount = 0;
 	    int UScount = 0;
@@ -136,7 +165,7 @@ class SP_AIDirector : AIGroup
 	    {
 			if(m_aGroups[i] == null)
 			{
-				return STRING_EMPTY;
+				return null;
 			}
 	        string faction = m_aGroups[i].GetFaction().GetFactionKey();
 	        int agentsCount = m_aGroups[i].GetAgentsCount();
@@ -193,8 +222,8 @@ class SP_AIDirector : AIGroup
 	
 		UnitCount = max;
 		if(!MajorFaction)
-			return STRING_EMPTY;
-	    return MajorFaction.GetFactionKey(); 	
+			return null;
+	    return MajorFaction; 	
 	}
 	Faction GetMajorityHolder(out string factionReadable)
 	{

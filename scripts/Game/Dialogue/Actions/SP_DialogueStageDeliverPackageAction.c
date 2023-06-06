@@ -14,6 +14,10 @@ class DialogueStageDeliverPackageAction : DialogueStage
 	
 	override void Perform(IEntity Character, IEntity Player)
 	{
+		SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(Player.FindComponent(SCR_CharacterIdentityComponent));
+		id.AdjustCharRep(5);
+		SP_DialogueComponent DiagComp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		DiagComp.DoAnouncerDialogue("Your reputation has improved");
 		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
 		if (!inv)
 			return;		

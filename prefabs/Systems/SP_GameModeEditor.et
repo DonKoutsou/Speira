@@ -4228,7 +4228,7 @@ SCR_GameModeEditor {
      m_FactionFlagMaterial "{610803CC3F3D6649}Assets/Props/Fabric/Flags/Data/Flag_1_2_USA.emat"
      m_FactionLabel FACTION_US
      m_aFriendlyFactionsIds {
-      "SPEIRA"
+      "SPEIRA" "FIA"
      }
      m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CF5B3DF}" {
       m_bIsAssignedRandomly 0
@@ -6992,7 +6992,7 @@ SCR_GameModeEditor {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CD762BD}" {
-           m_sEntityPrefab "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+           m_sEntityPrefab "{7CEF68E2BC68CE71}prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CD7197C}" {
              m_eItemType EQUIPMENT
@@ -7202,7 +7202,7 @@ SCR_GameModeEditor {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CD3575D}" {
-           m_sEntityPrefab "{2B29B7E1C6BD1048}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v1.et"
+           m_sEntityPrefab "{2B29B7E1C6BD1048}prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v1.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CD310B4}" {
              m_eItemType HEADWEAR
@@ -8074,7 +8074,7 @@ SCR_GameModeEditor {
      m_FactionFlagMaterial "{9BE1341F99D33483}Assets/Props/Fabric/Flags/Data/Flag_1_2_EVERON.emat"
      m_FactionLabel FACTION_FIA
      m_aFriendlyFactionsIds {
-      "SPEIRA"
+      "SPEIRA" "BANDITS" "US"
      }
      m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CD1BA97}" {
       m_aCompanyNames {
@@ -8562,7 +8562,7 @@ SCR_GameModeEditor {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CDA3159}" {
-           m_sEntityPrefab "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+           m_sEntityPrefab "{7CEF68E2BC68CE71}prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CDAB8FC}" {
              m_eItemType EQUIPMENT
@@ -8769,7 +8769,7 @@ SCR_GameModeEditor {
       }
      }
     }
-    SCR_Faction "{5D86C0D059CB00E5}" : "{70F12E86D4A5B1C8}Configs/Factions/BANDITS.conf" {
+    SCR_Faction "{5D8CEB0D0C860469}" : "{70F12E86D4A5B1C8}Configs/Factions/BANDITS.conf" {
     }
    }
    m_bCanChangeFactionsPlayable 0
