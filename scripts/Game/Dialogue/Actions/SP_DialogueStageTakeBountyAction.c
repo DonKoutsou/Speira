@@ -57,17 +57,17 @@ class DialogueStageTakeBountyAction : DialogueStage
 		LocName = MyDirector.GetCharacterLocation(CharToDeliverTo);
 		CharacterIdentityComponent CharID2 = CharacterIdentityComponent.Cast(CharToDeliverTo.FindComponent(CharacterIdentityComponent));
 		DName = CharRank.GetCharacterRankName(CharToDeliverTo) + " " + CharID2.GetIdentity().GetName() + " " + CharID2.GetIdentity().GetSurname();
-		Resource res = Resource.Load(m_pDefaultWaypoint);
-		AIWaypoint WP;
-		if (res)
-			{
-				WP = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(res, CharToDeliverTo.GetWorld(), params));
-			}
-		IEntity Antagonist1;
-		IEntity Antagonist2;
-		Find2RandomAllies(myfact, Antagonist1, Antagonist2);
-		AddWPToCh(Antagonist1, WP);
-		AddWPToCh(Antagonist2, WP);
+		//Resource res = Resource.Load(m_pDefaultWaypoint);
+		//AIWaypoint WP;
+		//if (res)
+		//	{
+		//		WP = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(res, CharToDeliverTo.GetWorld(), params));
+		//	}
+		//IEntity Antagonist1;
+		//IEntity Antagonist2;
+		//Find2RandomAllies(myfact, Antagonist1, Antagonist2);
+		//AddWPToCh(Antagonist1, WP);
+		//AddWPToCh(Antagonist2, WP);
 		PComp.SetInfo(OName, CharToDeliverTo, DName, LocName, key);
 		TFact = key;
 	};
@@ -105,16 +105,20 @@ class DialogueStageTakeBountyAction : DialogueStage
 	void AddWPToCh(IEntity char, AIWaypoint Waypoint)
 	{
 		AIControlComponent cont = AIControlComponent.Cast(char.FindComponent(AIControlComponent));
-		AIGroup group;
-		if(cont)
-		{
-			group = cont.GetAIAgent().GetParentGroup();
-		}
-		if (group)
-		{
-			if (Waypoint)
-				group.AddWaypoint(Waypoint);
-		}
+		SCR_AICombatComponent combat = SCR_AICombatComponent.Cast(char.FindComponent(SCR_AICombatComponent));
+		PerceptionComponent per = PerceptionComponent.Cast(char.FindComponent(PerceptionComponent));
+		BaseTarget target = per.GetTargetPerceptionObject(char, ETargetCategory.FRIENDLY);
+		combat.SelectTarget(target);
+		//AIGroup group;
+		//if(cont)
+		//{
+		//	group = cont.GetAIAgent().GetParentGroup();
+		//}
+		//if (group)
+		//{
+		//	if (Waypoint)
+		//		group.AddWaypoint(Waypoint);
+		//}
 	
 	}
 	
