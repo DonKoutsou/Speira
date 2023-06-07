@@ -12,6 +12,7 @@ class SCR_InventoryItemInfoUI : ScriptedWidgetComponent
 	private TextWidget						m_wTextWeight;
 	private TextWidget						m_wTextWeightUnit;
 	private TextWidget						m_wTextInsulation;
+	private TextWidget						m_wTextOptDesc;
 	private TextWidget						m_wTextCharName;
 	private ImageWidget 					m_wItemIcon;
 	protected SCR_SlotUIComponent			m_pFrameSlotUI;
@@ -118,6 +119,21 @@ class SCR_InventoryItemInfoUI : ScriptedWidgetComponent
 			m_wTextInsulation.SetVisible( false );
 		}
 	}
+	void SetOptDesc(string desc)
+	{
+		if( desc != "" )
+		{
+			m_wTextOptDesc.SetEnabled( true );
+			m_wTextOptDesc.SetVisible( true );
+			m_wTextOptDesc.SetText( desc );
+		}
+		else
+		{
+			m_wTextOptDesc.SetEnabled( false );
+			m_wTextOptDesc.SetVisible( false );
+		}
+	}
+	
 	//------------------------------------------------------------------------------------------------
 	void SetCharName( string name )
 	{
@@ -173,6 +189,7 @@ class SCR_InventoryItemInfoUI : ScriptedWidgetComponent
 		m_wTextWeight 		= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_weight" ) );
 		m_wTextWeightUnit	= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_weightUnit" ) );
 		m_wTextInsulation	= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_insulationUnit" ) );
+		m_wTextOptDesc		= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_OptDesc0" ) );
 		m_wTextCharName		= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_CharName" ) );
 		m_wItemIcon 		= ImageWidget.Cast(w.FindAnyWidget("ItemInfo_icon"));
 		Widget wItemInfo	= m_infoWidget.FindAnyWidget( "ItemInfo" );

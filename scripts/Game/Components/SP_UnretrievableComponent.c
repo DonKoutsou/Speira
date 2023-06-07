@@ -31,3 +31,31 @@ class SP_PackageComponent : SP_UnretrievableComponent
 		m_Faction = faction;
 	}
 };
+class SP_BountyComponentClass : SP_UnretrievableComponentClass
+{
+};
+
+class SP_BountyComponent : SP_UnretrievableComponent
+{
+	string OwnerName;
+	IEntity Target;
+	string TargetName;
+	string TargetLocation;
+	FactionKey m_Faction;
+	void GetInfo(out string OName, out IEntity target, out string DName, out string TLoc, out FactionKey faction)
+	{
+		OName = OwnerName;
+		DName = TargetName;
+		target = Target;
+		TLoc = TargetLocation;
+		faction = m_Faction;
+	};
+	void SetInfo(string OName, IEntity target, string DName, string TLoc, FactionKey faction)
+	{
+		OwnerName = OName;
+		TargetName = DName;
+		Target = target;
+		TargetLocation = TLoc;
+		m_Faction = faction;
+	}
+};

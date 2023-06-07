@@ -45,7 +45,6 @@ class SCR_ItemAttributeCollection: ItemAttributeCollection
 		string Insulation = "Insulation = " + at.GetTemperatureIsolation().ToString();
 		return Insulation;
 	};
-
 	//------------------------------------------------------------------------------------------------
 	bool IsDraggable()
 	{

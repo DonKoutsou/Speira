@@ -106,6 +106,36 @@ class SP_AIDirector : AIGroup
 		}
 		return false;
 	}
+	bool GetDirectorOccupiedByEnemy(Faction faction, out SP_AIDirector Director)
+	{
+		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;
+		ref array<SP_AIDirector> EnDirectors = new ref array<SP_AIDirector>;
+		int UnitCount;
+		for (int i = 0; i < Directors.Count(); i++)
+		{
+			FactionKey FKey;
+			int Count;
+			Faction Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
+			if(faction.IsFactionEnemy(Key2))
+			{
+				EnDirectors.Insert(Directors[i]);
+				UnitCount = Count;
+			}
+			
+			
+		}
+		if(EnDirectors.Count() <= 0)
+		{
+			return false;
+		}	
+		else
+		{
+			int index = Math.RandomInt(0, EnDirectors.Count());
+			Director = EnDirectors[index];
+			return true;
+		}
+		return false;
+	}
 	bool GetDirectorOccupiedBy(FactionKey Key, out SP_AIDirector Director)
 	{
 		ref array<SP_AIDirector> Directors = SP_AIDirector.AllDirectors;

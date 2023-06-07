@@ -29,8 +29,11 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
+    LoadoutSlotInfo Back {
+     Prefab "{7479BADE146541A8}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Renegade.et"
+    }
     LoadoutSlotInfo Head {
-     Prefab "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
+     Prefab "{244A6A1121439AAC}prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
     }
     LoadoutSlotInfo Jacket {
     }

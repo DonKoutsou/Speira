@@ -47,14 +47,6 @@ GenericEntity {
       "default"
      }
     }
-    SP_IDPackageAction "{5D650185789AFE01}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5D6501857BD1CF91}" {
-      Name "Check package destination"
-     }
-    }
    }
   }
   RplComponent "{5D650185143A79B6}" {

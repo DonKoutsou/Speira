@@ -1331,7 +1331,7 @@ class SCR_InventoryMenuUI : ChimeraMenuBase
  	}
 
 	//------------------------------------------------------------------------------------------------
-	void ShowItemInfo( string sName = "", string sDescr = "", float sWeight = 0.0, SCR_InventoryUIInfo uiInfo = null, string Insulation = "",  string CName = "", )
+	void ShowItemInfo( string sName = "", string sDescr = "", float sWeight = 0.0, SCR_InventoryUIInfo uiInfo = null, string Insulation = "",  string CName = "", string MyDesc = "")
 	{
 		if ( !m_pItemInfo )
 		{
@@ -1358,6 +1358,7 @@ class SCR_InventoryMenuUI : ChimeraMenuBase
 		m_pItemInfo.SetDescription( sDescr );
 		m_pItemInfo.SetInsulation(Insulation);
 		m_pItemInfo.SetCharName(CName);
+		m_pItemInfo.SetOptDesc(MyDesc);
 		m_pItemInfo.SetWeight( sWeight );
 		if (uiInfo && uiInfo.IsIconVisible())
 			m_pItemInfo.SetIcon(uiInfo.GetIconPath(), uiInfo.GetIconColor());
@@ -1455,16 +1456,40 @@ class SCR_InventoryMenuUI : ChimeraMenuBase
 			return;
 		UIInfo itemInfo = attribs.GetUIInfo();
 		string cname;
+		string tname;
+		string loc;
+		FactionKey fkey;
+		string mydesc;
 		DogTagEntity tag = DogTagEntity.Cast(invItemComp.GetOwner());
 		if(tag)
 		{
 			tag.GetCname(cname);
 			cname = "TagOwner: " + cname
 		}
+		
+		SP_UnretrievableComponent uncomp = SP_UnretrievableComponent.Cast(invItemComp.GetOwner().FindComponent(SP_UnretrievableComponent));
+		if(uncomp)
+		{
+			IEntity target;
+			SP_PackageComponent package =  SP_PackageComponent.Cast(uncomp);
+			if(package)
+			{
+				package.GetInfo(cname, tname, loc, fkey);
+				mydesc = string.Format("Deliver to %1, located on %2", tname, loc);
+			}
+			SP_BountyComponent bounty =  SP_BountyComponent.Cast(uncomp);
+			if(bounty)
+			{
+				bounty.GetInfo(cname, target, tname, loc, fkey);
+				SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(target.FindComponent(SCR_CharacterIdentityComponent));
+				mydesc = string.Format("Target is %1, located on %2", tname, loc);
+			}
+		}
+		
 		if ( !itemInfo )
 			HideItemInfo();
 		else
-			ShowItemInfo( itemInfo.GetName(), itemInfo.GetDescription(), invItemComp.GetTotalWeight(), SCR_InventoryUIInfo.Cast(itemInfo), attribs.GetInsulation(), cname);
+			ShowItemInfo( itemInfo.GetName(), itemInfo.GetDescription(), invItemComp.GetTotalWeight(), SCR_InventoryUIInfo.Cast(itemInfo), attribs.GetInsulation(), cname, mydesc);
 	
 		//show the weight on the progressbar
 		//TODO: overlap or add on the end, depending on if the item is already in the storage or is going to be added
