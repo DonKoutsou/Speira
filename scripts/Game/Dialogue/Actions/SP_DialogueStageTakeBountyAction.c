@@ -2,7 +2,7 @@
 class DialogueStageTakeBountyAction : DialogueStage
 {
 	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
-	ref array <ref ResourceName> m_ItemToGive;
+	ResourceName m_ItemToGive;
 	
 	[Attribute("", UIWidgets.Coords, params: "", desc: "")]
 	vector m_SpawnOffset;
@@ -37,15 +37,23 @@ class DialogueStageTakeBountyAction : DialogueStage
 		params.TransformMode = ETransformMode.WORLD;
 		params.Transform[3] = spawnPos; 
 		IEntity BountyPaper;
-		for (int i = 0; i < m_ItemToGive.Count(); i++)
-		{
-			Resource res = Resource.Load(m_ItemToGive[i]);
-			if (res)
-			{	
-				BountyPaper = GetGame().SpawnEntityPrefab(res, Character.GetWorld(), params);
-			}
-		}
 		
+		Resource res = Resource.Load(m_ItemToGive);
+		if (res)
+		{	
+			BountyPaper = GetGame().SpawnEntityPrefab(res, Character.GetWorld(), params);
+		}
+		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
+		if(inv.TryInsertItem(BountyPaper))
+		{
+			SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			diagcomp.DoAnouncerDialogue("The bounty has been added to your inventory");
+		}
+		else
+		{
+			SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			diagcomp.DoAnouncerDialogue("No space in inventory, bounty left on the floor");
+		}
 		
 		SP_BountyComponent PComp = SP_BountyComponent.Cast(BountyPaper.FindComponent(SP_BountyComponent));
 		

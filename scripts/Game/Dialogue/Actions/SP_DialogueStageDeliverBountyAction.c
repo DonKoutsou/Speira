@@ -105,16 +105,11 @@ class DialogueStageDeliverBountyAction : DialogueStage
 			SP_BountyComponent PComp = SP_BountyComponent.Cast(entitiesToDrop[i].FindComponent(SP_BountyComponent));
 			if (PComp.OwnerName == Name)
 			{
-				if(!PComp.Target)
-				{
-					return true;
-				}
 				SCR_CharacterDamageManagerComponent ch = SCR_CharacterDamageManagerComponent.Cast(PComp.Target.FindComponent(SCR_CharacterDamageManagerComponent));
 				if(ch.GetState() == EDamageState.DESTROYED)
 				{
 					return true;
 				}
-				return true;
 			}
 		}
 		return false;

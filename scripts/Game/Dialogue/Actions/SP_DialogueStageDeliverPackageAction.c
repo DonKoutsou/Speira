@@ -85,7 +85,7 @@ class DialogueStageDeliverPackageAction : DialogueStage
 		{
 			m_sCantBePerformedReason = "not enough";
 			return false;
-		}		
+		}
 		return true;
 	}
 	override bool CanBeShown(IEntity Character, IEntity Player)

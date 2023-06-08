@@ -2,7 +2,7 @@
 class DialogueStageTakePackageAction : DialogueStage
 {
 	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
-	ref array <ref ResourceName> m_ItemToGive;
+	ResourceName m_ItemToGive;
 	[Attribute("", UIWidgets.Coords, params: "", desc: "")]
 	vector m_SpawnOffset;
 	string LocName;
@@ -33,14 +33,24 @@ class DialogueStageTakePackageAction : DialogueStage
 		params.TransformMode = ETransformMode.WORLD;
 		params.Transform[3] = spawnPos; 
 		IEntity Package;
-		for (int i = 0; i < m_ItemToGive.Count(); i++)
-		{
-			Resource res = Resource.Load(m_ItemToGive[i]);
-			if (res)
-			{	
-				Package = GetGame().SpawnEntityPrefab(res, Character.GetWorld(), params);
-			}
+
+		Resource res = Resource.Load(m_ItemToGive);
+		if (res)
+		{	
+			Package = GetGame().SpawnEntityPrefab(res, Character.GetWorld(), params);
 		}
+		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
+		if(inv.TryInsertItem(Package))
+		{
+			SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			diagcomp.DoAnouncerDialogue("The package has been added to your inventory");
+		}
+		else
+		{
+			SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			diagcomp.DoAnouncerDialogue("No space in inventory, package left on the floor");
+		}
+		
 		SP_PackageComponent PComp = SP_PackageComponent.Cast(Package.FindComponent(SP_PackageComponent));
 		
 		CharacterIdentityComponent CharID = CharacterIdentityComponent.Cast(Character.FindComponent(CharacterIdentityComponent));

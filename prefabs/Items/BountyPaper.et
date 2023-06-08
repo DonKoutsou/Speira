@@ -37,9 +37,10 @@ GenericEntity {
      Description "Bounty paper, containing info about your target and its location."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{5D8ED74C6D4BF70F}" {
-     Weight 4
+     Weight 0.05
      SizeSetupStrategy Manual
-     ItemVolume 8
+     ItemDimensions 1 1 1
+     ItemVolume 1
     }
    }
    CapacityCoefficient 0
