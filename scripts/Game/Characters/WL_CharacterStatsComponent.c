@@ -117,14 +117,14 @@ class SP_CharacterStatsComponent : ScriptComponent
 	protected float m_fThirst = 100.0;
 	
 	float MAX_CLOTHES_FACTOR = 1.0;
-	float FIREPLACE_RANGE = 2;
+	float FIREPLACE_RANGE = 3;
 	
 	protected float m_fTemperature;
 	
 		float clothesFactor = 0;
 	// update temperature based on clothes, weather and possibly other factors
 	
-	[Attribute("39.0")]
+	[Attribute("42.0")]
 	float m_fMaxTemperature;	
 	
 	[Attribute("36.6")]
@@ -167,7 +167,7 @@ class SP_CharacterStatsComponent : ScriptComponent
 		{
 			if (m_fTemperature < m_fColdnessTemperature)
 			{
-				SCR_CameraShakeManagerComponent.AddCameraShake(0.1, 0.05, 0.05, 0.2, 0.5);
+				SCR_CameraShakeManagerComponent.AddCameraShake(0.2, 0.05, 0.05, 0.2, 0.5);
 			}
 			if (m_fTemperature < m_fUnconsciousTemperature)
 			{
@@ -175,6 +175,10 @@ class SP_CharacterStatsComponent : ScriptComponent
 			}
 		}
 		else if (m_fTemperature < m_fDeathTemperature)
+		{
+			m_pDamage.Kill();
+		}
+		else if (m_fTemperature > m_fMaxTemperature)
 		{
 			m_pDamage.Kill();
 		}
@@ -462,7 +466,7 @@ class SP_CharacterStatsComponent : ScriptComponent
 			m_pWeather.GetSunsetHour(sunset);
 			
 			const float dayTemp = 15.0;
-			const float nightTemp = 10.0;		
+			const float nightTemp = 5.0;		
 			
 			float outsideTemperature = dayTemp;
 			if (timeOfDay < sunrise || timeOfDay > sunset)
