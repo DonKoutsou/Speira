@@ -52,11 +52,16 @@ FrameWidgetClass {
               TextWidgetClass "{5D8ED74F8515105B}" {
                Prefab "{5D887E26CFF5D185}"
                Slot LayoutSlot "{5D8ED74FEA59CEAE}" {
+                HorizontalAlign 0
                 SizeMode Fill
                }
                Text "OptDesc"
                "Font Size" 15
                "Min Font Size" 15
+               Wrap 1
+               FontProperties FontProperties "{5D968C308159BDEE}" {
+                Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+               }
               }
               TextWidgetClass "{5D8ED7482FF1E6EB}" {
                Prefab "{0000000087778265}"

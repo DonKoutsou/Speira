@@ -30,6 +30,9 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
+    LoadoutSlotInfo Neck {
+     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
+    }
     LoadoutSlotInfo Hat {
     }
     LoadoutSlotInfo Jacket {
@@ -47,7 +50,6 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     LoadoutSlotInfo Vest {
     }
     LoadoutSlotInfo Watch {
-     Prefab "{77A25186CED0E085}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_FIA.et"
     }
    }
   }

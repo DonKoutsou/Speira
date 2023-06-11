@@ -11,7 +11,7 @@ class SCR_CharacterIdentityComponent : CharacterIdentityComponent
 	[Attribute("#AR-Idenity_Name_Format_NoAlias")]
 	protected LocalizedString m_IdentityFormatNoAlias;
 	
-	protected int m_CharacterRep = 100;
+	protected int m_CharacterRep = Math.RandomInt(20, 100);
 	
 	/*!
 	Get full name with formatting. Alias might be empty but it is handeled in formatting

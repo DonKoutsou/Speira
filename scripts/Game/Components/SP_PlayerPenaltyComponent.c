@@ -28,10 +28,14 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 						{
 							VictimF.AdjustRelation(KillerF, -5);
 							SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(instigator.FindComponent(SCR_CharacterIdentityComponent));
-							id.AdjustCharRep(-5);
 							string text;
 							text = string.Format("You caused issues between %1 and %2, your reputation has worsened", KillerF.GetFactionKey(), VictimF.GetFactionKey());
 							DiagComp.DoAnouncerDialogue(text);
+							if(id.AdjustCharRep(-20))
+							{
+								DiagComp.DoAnouncerDialogue("Your reputation has fallen to much and your faction has expeled you. You'll be treated as renegade from now on");
+								FactionComp.SetAffiliatedFactionByKey("RENEGADE");
+							}
 						}
 						else if (KillerF == VictimF)
 						{

@@ -83,6 +83,7 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
   SCR_DestructionManagerComponent "{5D685A535B2AB635}" {
   }
   SCR_EntityCatalogManagerComponent "{5D685A535B2AB652}" {
+   Enabled 0
    m_aEntityCatalogs {
     SCR_EntityCatalogMultiList "{5D685A535B2AB67A}" {
      m_eEntityCatalogType CHARACTER
@@ -96,6 +97,7 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
    }
   }
   SCR_GameModeHealthSettings "{5D685A535B2AB655}" {
+   m_bPermitUnconsciousness 1
   }
   SCR_GameModeSFManager "{5D685A5D8D19884D}" {
   }
@@ -365,6 +367,7 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
    m_iPlayableGroupFrequencyOffset 500
   }
   SCR_HintManagerComponent "{5D685A535B2A927B}" {
+   Enabled 0
    m_aConditionLists {
     SCR_HintConditionList "{5D685A535B2A9264}" {
      m_aConditions {
@@ -423,9 +426,13 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
   SCR_MapConfigComponent "{5D685A535B2A924D}" {
   }
   SCR_NametagConfigComponent "{5D685A535B2A9247}" {
+   Enabled 0
    m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
   }
   SCR_NotificationSenderComponent "{5D685A535B2AE72F}" {
+   Enabled 0
+   m_iKillFeedType FULL
+   m_iReceiveKillFeedType ALL
    m_aKillfeedTypeNames {
     SCR_NotificationKillfeedTypeName "{5D685A535B2A9257}" {
      m_iKillfeedType DISABLED
@@ -3205,6 +3212,7 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
    m_bRandomStartingWeather 1
   }
   SCR_VotingManagerComponent "{5D685A535B285003}" {
+   Enabled 0
    m_aVotingTemplates {
     SCR_VotingKick "{5D685A535B285770}" {
      m_bIsValuePlayerID 1
@@ -3325,6 +3333,7 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
   }
  }
  coords 2124.836 2.699 3528.492
+ m_fAutoReloadTime 0
  {
   SCR_LoadoutManager {
    ID "5D685A54F899AC6E"

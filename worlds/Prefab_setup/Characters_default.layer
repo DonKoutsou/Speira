@@ -1098,7 +1098,10 @@ GenericEntity : "{008D2A32F92F80D6}prefabs/Items/Misc/Photo/LovedOne_Photo.et" {
  coords 124.669 1.167 246.9
 }
 GenericEntity : "{057AEFF961B81816}prefabs/Items/Package.et" {
- coords 126.413 1.001 245.644
+ coords 122.435 1.001 242.077
+}
+GenericEntity : "{0CF54B9A85D8E0D4}Prefabs/Items/Equipment/Binoculars/Binoculars_M22.et" {
+ coords 129.199 1.001 248.229
 }
 SCR_ChimeraCharacter : "{0F6689B491641155}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et" {
  coords 160.635 1.001 253.393
@@ -1142,6 +1145,9 @@ $grp DogTagEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogta
  }
  {
   coords 122.956 1.001 249.788
+ }
+ {
+  coords 129.546 1.001 247.818
  }
 }
 SCR_ChimeraCharacter : "{26A9756790131354}prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et" {
@@ -1614,7 +1620,8 @@ SCR_ChimeraCharacter : "{E45F1E163F5CA080}prefabs/Characters/Factions/BLUFOR/US_
  angleY -180
 }
 GenericEntity : "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" {
- coords 124.704 1.058 246.31
+ coords 124.638 1.058 246.242
+ angleZ 0
 }
 SCR_ChimeraCharacter : "{E9AEEF2D9E41321B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AMG.et" {
  coords 146.2 1.001 253.936
@@ -1645,8 +1652,13 @@ SCR_ChimeraCharacter : "{F5A483E7F608DA58}prefabs/Characters/Factions/Renegade/C
  coords 121.852 1.001 253.732
  angleY -180
 }
-GenericEntity : "{F73F8F714B2662FC}prefabs/Items/BountyPaper.et" {
- coords 125.861 1.001 245.919
+$grp GenericEntity : "{F73F8F714B2662FC}prefabs/Items/BountyPaper.et" {
+ {
+  coords 125.861 1.001 245.919
+ }
+ {
+  coords 123.181 1.001 241.633
+ }
 }
 GenericEntity : "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et" {
  coords 132.51 1.001 236.939

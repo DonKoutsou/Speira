@@ -58,4 +58,12 @@ class SP_BountyComponent : SP_UnretrievableComponent
 		TargetLocation = TLoc;
 		m_Faction = faction;
 	}
+	string GetTargetName()
+	{
+		if(TargetName)
+		{
+			return TargetName;
+		}
+		return STRING_EMPTY;
+	}
 };
