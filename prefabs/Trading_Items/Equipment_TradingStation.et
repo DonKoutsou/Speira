@@ -1,6 +1,12 @@
 GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
  ID "5B11113704C2B0B4"
  components {
+  ADM_ShopComponent "{5D98A8929A8F5858}" {
+   m_ShopConfig "{12D5D36683AD9D97}Configs/Shops/Equipment_Factionless.conf"
+   m_Categories {
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+   }
+  }
   MeshObject "{58C4C15098F109F6}" {
    Object "{62A30D148D0D93B0}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Equipment_01.xob"
    Materials {
@@ -24,202 +30,13 @@ GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
     }
    }
    additionalActions {
-    KLM_ConverseAction "{5B11113A1F2AEF17}" {
+    ADM_ShopAction "{5D98A892901BAFDA}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{5B11113A13115ADD}" {
-      Name "Buy Binoculars for 2 watches"
+     UIInfo UIInfo "{5D98A89292823DA3}" {
+      Name "Trade"
      }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B11113A3DC7FC46}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113A30FE558B}" {
-      Name "Sell binoculars for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B11113A72BCA769}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113A76D0417A}" {
-      Name "Buy compass for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B11113B902036B6}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113B933FB77E}" {
-      Name "Sell compass for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B111124CEECD160}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B111124C112486D}" {
-      Name "Buy Map for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B111124F3DA1F43}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B111124F7F24F37}" {
-      Name "Sell 1 map for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B14B059E7F09076}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B14B059EAE5EBE8}" {
-      Name "Buy Soviet Radio for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B14B0598667E7CF}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B14B0598B4FF5AF}" {
-      Name "Sell Soviet radio for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{E1A5D4B878AA8980}prefabs/Items/Equipment/Radios/Radio_R148.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B16D3C9DCAD4630}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C9C070D7BC}" {
-      Name "Buy Kolobok Backpack for 4 watches"
-     }
-     Duration 0.5
-     "Sort Priority" -1
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 4
-     m_PrefabToSell "{41A9C55B61F375F0}prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B16D3C9FEC0385A}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C9E260D714}" {
-      Name "Buy medical backpack for 2 watches"
-     }
-     Duration 0.5
-     "Sort Priority" -1
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B329C2966D22E61}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B329C29703C2DE3}" {
-      Name "Buy RGD5 grenade for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B329C2967F4B213}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B329C289EFEAB4E}" {
-      Name "Sell RGD5 grenade for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B329C2978A5D091}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B329C28A7DA277A}" {
-      Name "Buy RDG2 smoke grenade for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5B329C2979FB08DF}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B329C28CE17D4C0}" {
-      Name "Sell RGD2 smoke grenade for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.455 0
-    }
-    KLM_ConverseAction "{5C8B4312B70D5068}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5C8B4312CBDFF073}" {
-      Name "Buy flashlight for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" -1
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_PrefabToSell "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
-     m_SpawnOffset 0 0.455 0
     }
    }
   }

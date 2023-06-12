@@ -66,14 +66,6 @@ GenericEntity {
      "faction affiliation" "FIA"
     }
     ActionsManagerComponent "{5B1111371149AC02}" {
-     additionalActions {
-      KLM_ConverseAction "{5B111124CEECD160}" {
-       UIInfo UIInfo "{5B111124C112486D}" {
-        Name "Buy Map for 1 watch"
-       }
-       m_WantedAmount 1
-      }
-     }
     }
    }
    coords -1.018 0 -0.949

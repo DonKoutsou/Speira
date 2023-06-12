@@ -89,14 +89,6 @@ GenericEntity {
    Priority 100
    UseCapacityCoefficient 0
    MaxCumulativeVolume 100000
-   MultiSlots {
-    MultiSlotConfiguration "{5C89144B82A9DA0E}" {
-     SlotTemplate InventoryStorageSlot Knives {
-      Prefab "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et"
-     }
-     NumSlots 15
-    }
-   }
    m_fMaxWeight 1000
    m_aSlotsToShow {
    }

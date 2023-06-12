@@ -1,6 +1,12 @@
 GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
  ID "5B11113704C2B0B4"
  components {
+  ADM_ShopComponent "{5D98A89271CA81ED}" {
+   m_ShopConfig "{028DE399DE663E6C}Configs/Shops/WPN_FIA.conf"
+   m_Categories {
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+   }
+  }
   MeshObject "{58C4C15098F109F6}" {
    Object "{819ED3266EE5113B}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Weapon_01.xob"
    Materials {
@@ -24,232 +30,13 @@ GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
     }
    }
    additionalActions {
-    KLM_ConverseAction "{5B11113CBD609767}" {
+    ADM_ShopAction "{5D98A89248AA8C04}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{5B11113CB4F88BC5}" {
-      Name "Buy VZ58 for 5 watches"
+     UIInfo UIInfo "{5D98A8924D2B7F34}" {
+      Name "Trade"
      }
-     Duration 1
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 5
-     m_PrefabToSell "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B11113CD49515D6}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113CE8FD0D80}" {
-      Name "Sell VZ 58 for 3 watches"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SellingAmount 3
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B11113C2BBDB848}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113C2EC6B075}" {
-      Name "Buy PM Handgun for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B11113C5926719E}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113C5C622A9D}" {
-      Name "Sell PM Handgun for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B11113C7935296B}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113C7CDDD7ED}" {
-      Name "Buy SVD for 10 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 10
-     m_PrefabToSell "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B11113D83C05195}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B11113D86421DA3}" {
-      Name "Sell SVD for 5 watches"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SellingAmount 8
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3CA40F30F38}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3CA4E61F99A}" {
-      Name "Buy RPG for 8 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 8
-     m_PrefabToSell "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3CA632268DB}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3CA6D29850E}" {
-      Name "Sell RPG for 3 watches"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SellingAmount 3
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3C9AA730316}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C9ACBC9DA5}" {
-      Name "Buy PSO scope for 4 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 4
-     m_PrefabToSell "{C850A33226B8F9C1}Prefabs/Weapons/Attachments/Optics/Optic_PSO1.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3C95EA70A83}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C943A6CC52}" {
-      Name "Sell PSO scope for 3 watches"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{C850A33226B8F9C1}Prefabs/Weapons/Attachments/Optics/Optic_PSO1.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SellingAmount 3
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3C91F35D394}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C90044A967}" {
-      Name "Buy 1P29 Optic for 4 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 4
-     m_PrefabToSell "{CB9A89C66B1EBE0A}Prefabs/Weapons/Attachments/Optics/Optic_1P29.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3C92BCEE1CB}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C92C5A91FE}" {
-      Name "Sell 1P29 Optic for 3 watches"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{CB9A89C66B1EBE0A}Prefabs/Weapons/Attachments/Optics/Optic_1P29.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SellingAmount 3
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B16D3C6746DF801}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B16D3C67818AEDF}" {
-      Name "Sell Civilian VZ58 for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{F8208539AD3E19EC}prefabs/Weapons/Rifles/VZ58/Civilian_Rifle_VZ58V.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B22EEC353CA172A}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B22EEC35B139FD5}" {
-      Name "Buy M9 handgun for 2 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{809488C4984AC087}Prefabs/Weapons/Handguns/M9/Handgun_M9_base.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B22EEC37637FEF2}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B22EEC37B08235F}" {
-      Name "Sell M9 handgun for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{809488C4984AC087}Prefabs/Weapons/Handguns/M9/Handgun_M9_base.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B367E1E5AF31C57}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B367E1E7986870E}" {
-      Name "Buy PKM for 10 watches"
-     }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 10
-     m_PrefabToSell "{A89BC9D55FFB4CD8}Prefabs/Weapons/MachineGuns/PKM/MG_PKM.et"
-     m_SpawnOffset 0 0.384 0
-    }
-    KLM_ConverseAction "{5B367E1E763A7697}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B367E1F8A1BCF38}" {
-      Name "Sell PKM for 5 watches"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{A89BC9D55FFB4CD8}Prefabs/Weapons/MachineGuns/PKM/MG_PKM.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}Prefabs/Currency/Watch_Currency.et"
-     m_SellingAmount 5
-     m_SpawnOffset 0 0.384 0
     }
    }
   }

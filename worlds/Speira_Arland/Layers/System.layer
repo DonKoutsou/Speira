@@ -3335,6 +3335,20 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
  coords 2124.836 2.699 3528.492
  m_fAutoReloadTime 0
  {
+  SCR_FactionManager {
+   ID "5D685A54F89945B0"
+   Factions {
+    SCR_Faction "{5D96A23610EC609C}" {
+     "Identity of soldiers" FactionIdentity "{5CA6FD60964A382D}" {
+      VisualIdentityArray {
+       VisualIdentity "{5CA6FD60964A382F}" {
+        Head "{32583C88222142FD}Prefabs/Characters/Heads/Head_White_04.et"
+       }
+      }
+     }
+    }
+   }
+  }
   SCR_LoadoutManager {
    ID "5D685A54F899AC6E"
    m_aPlayerLoadouts {

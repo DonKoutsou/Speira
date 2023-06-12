@@ -1,5 +1,5 @@
 SubScene {
- Parent "{96A8AF57260A7392}Worlds/MP/MpTest.ent"
+ Parent "{A701424D70022078}worlds/MP/MpTest_Basic.ent"
 }
 Layer default {
  Index 0

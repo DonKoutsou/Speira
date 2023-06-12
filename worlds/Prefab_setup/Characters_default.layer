@@ -1174,6 +1174,9 @@ SCR_ChimeraCharacter : "{3726077BE60962FF}prefabs/Characters/Factions/BLUFOR/US_
  coords 171.233 1.001 253.393
  angleY -180
 }
+GenericEntity : "{3805C0B87B9D2AB0}prefabs/Weapons/Melee/Knife.et" {
+ coords 124.203 1.001 244.863
+}
 SCR_ChimeraCharacter : "{3A828F3B3976435D}prefabs/Characters/Factions/Renegade/Character_Renegade_Rifleman.et" {
  coords 119.902 1.001 253.736
  angleY -180
@@ -1569,6 +1572,9 @@ SCR_ChimeraCharacter : "{B877A86B61D8E132}prefabs/Characters/Factions/OPFOR/USSR
  coords 144.09 1.001 252.353
  angleY -180
 }
+GameEntity : "{B89432A8B5F489E5}prefabs/Characters/Core/Uniform_Base.et" {
+ coords 124.931 1.001 245.399
+}
 SCR_ChimeraCharacter : "{BF1E43FF39AA526B}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Scout.et" {
  coords 129.407 1.001 253.84
  angleY -180
@@ -1620,8 +1626,8 @@ SCR_ChimeraCharacter : "{E45F1E163F5CA080}prefabs/Characters/Factions/BLUFOR/US_
  angleY -180
 }
 GenericEntity : "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" {
- coords 124.638 1.058 246.242
- angleZ 0
+ coords 124.626 1.058 246.23
+ angleZ -0
 }
 SCR_ChimeraCharacter : "{E9AEEF2D9E41321B}prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AMG.et" {
  coords 146.2 1.001 253.936

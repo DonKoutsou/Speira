@@ -1,6 +1,12 @@
-GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
  ID "5B11113704C2B0B4"
  components {
+  ADM_ShopComponent "{5D98A89D2A1EECE4}" {
+   m_ShopConfig "{A8D3DD94C4B7D8E4}Configs/Shops/AMMO_USSR.conf"
+   m_Categories {
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+   }
+  }
   MeshObject "{58C4C15098F109F6}" {
    Object "{9E1DFF036BCE913E}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Ammunition_01.xob"
    Materials {
@@ -24,25 +30,13 @@ GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
     }
    }
    additionalActions {
-    KLM_ConverseAction "{5C96A2607ADA1F33}" : "{AD07C8E9B4972307}Prefabs/Trading_Items/Configs/B_AK74_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A2607CB75C04}" : "{8AF5FA4E2A47DECB}Prefabs/Trading_Items/Configs/B_PKM_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A2607C7687D8}" : "{E9CAA03D06BC12AF}Prefabs/Trading_Items/Configs/B_PM_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A2607D65DCCB}" : "{59DC75933608B674}Prefabs/Trading_Items/Configs/B_RPK_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A2607F039BF3}" : "{98B2151904A55A51}Prefabs/Trading_Items/Configs/B_SVD_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A26070292324}" : "{AC7F6296386F399F}Prefabs/Trading_Items/Configs/S_AK74_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A26072B12973}" : "{B0AF64297BB77058}Prefabs/Trading_Items/Configs/S_PKM_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A26073C93C15}" : "{E8B20A428A440837}Prefabs/Trading_Items/Configs/S_PM_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A26074BE8F0E}" : "{6386EBF467F818E7}Prefabs/Trading_Items/Configs/S_RPK_Mag.conf" {
-    }
-    KLM_ConverseAction "{5C96A26074764424}" : "{A2E88B7E5555F4C2}Prefabs/Trading_Items/Configs/S_SVD_Mag.conf" {
+    ADM_ShopAction "{5D98A89D27307D84}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5D98A89D291B31BE}" {
+      Name "Trade"
+     }
     }
    }
   }

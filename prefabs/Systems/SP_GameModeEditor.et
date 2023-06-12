@@ -5345,6 +5345,83 @@ SCR_GameModeEditor {
         }
        }
       }
+      SCR_EntityCatalog "{68E836C3FEDD7D08}Configs/Factions/FacationRequests/RequestTest.conf" {
+       m_eEntityCatalogType REQUEST
+       m_aEntityEntryList {
+        SCR_EntityCatalogInventoryItem "{5D96D6E3D22E926F}" {
+         m_sEntityPrefab "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+         m_aLabels {
+          80 46 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E381F32B04}" {
+         m_sEntityPrefab "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+         m_aLabels {
+          80 46 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E3A188F6B0}" {
+         m_sEntityPrefab "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+         m_aLabels {
+          80 47 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E3525EAC70}" {
+         m_sEntityPrefab "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et"
+         m_aLabels {
+          80 40 41 42 44 43 45 46 48 49
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E36A496B0B}" {
+         m_sEntityPrefab "{06D722FC2666EB83}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_4Ball_1Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E30500CABD}" {
+         m_sEntityPrefab "{4FCBBDF274FD2157}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Ball.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E339977135}" {
+         m_sEntityPrefab "{4EEDDB27C023B8B9}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E326F4F8DF}" {
+         m_sEntityPrefab "{AAF51CFA75A9CF8B}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4AP_1Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E2DB4841A5}" {
+         m_sEntityPrefab "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E2F5B92699}" {
+         m_sEntityPrefab "{75632A0CA07D3817}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_AP.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E2E1DC0B98}" {
+         m_sEntityPrefab "{982F5BA41A3738CF}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Ball.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E291FFB423}" {
+         m_sEntityPrefab "{AD8AB93729348C3E}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+       }
+      }
      }
     }
     SCR_Faction "{5D5705392CD09866}" {
@@ -8727,47 +8804,7 @@ SCR_GameModeEditor {
     }
     SCR_Faction "{5D86C0D05D7A4673}" : "{E8AFEB71D701CCE9}Configs/Factions/RENEGADES.conf" {
     }
-    SCR_Faction "{5D5705392CC6D1CA}" {
-     FactionKey "SPEIRA"
-     FactionColor 0.475 0.259 0.686 1
-     UIInfo SCR_FactionUIInfo "{5D5705392CC6C3E9}" {
-     }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC6D19C}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
-     }
-     m_iOrder 5000
-     m_OutlineFactionColor 0.251 0 0.502 1
-     m_bIsPlayable 1
-     m_sFactionFlag "{CEAC8771342689C5}Assets/Data/Faction_SPEIRA.edds"
-     m_FactionLabel FACTION_SPEIRA
-     m_aFriendlyFactionsIds {
-      "US" "FIA" "USSR"
-     }
-     m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CC6D190}" {
-     }
-     m_sFactionRadioEncryptionKey "Tsakas"
-     m_iFactionRadioFrequency 69
-     m_aRanks {
-      SCR_CharacterRank "{5D66C81AC8BD8873}" {
-      }
-      SCR_CharacterRank "{5D66C81ACBD7F4CF}" {
-      }
-      SCR_CharacterRank "{5D66C81ACA73E46F}" {
-      }
-      SCR_CharacterRank "{5D66C81ACA9115A7}" {
-      }
-      SCR_CharacterRank "{5D66C81ACDC59FD8}" {
-      }
-      SCR_CharacterRank "{5D66C81ACC4FD434}" {
-      }
-      SCR_CharacterRank "{5D66C81ACCF077CB}" {
-      }
-      SCR_CharacterRank "{5D66C81ACF6D1FAA}" {
-      }
-      SCR_CharacterRank "{5D66C81ACE54F734}" {
-      }
-      SCR_CharacterRank "{5D66C81ACEF85AD1}" {
-      }
-     }
+    SCR_Faction "{5D96A23610EC609C}" : "{6D1DC960D66B2EB3}Configs/SpeiraFaction.conf" {
     }
     SCR_Faction "{5D8CEB0D0C860469}" : "{70F12E86D4A5B1C8}Configs/Factions/BANDITS.conf" {
     }

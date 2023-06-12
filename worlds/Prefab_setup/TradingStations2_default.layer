@@ -1,0 +1,16 @@
+GenericEntity : "{55FB3C326FC49329}prefabs/Trading_Items/Factions/Factionless/Factionless_TradingStation.et" {
+ coords 4.116 2.851 0.194
+ angleY 0
+ {
+  GenericEntity {
+   ID "5C9AF12BE5E75DD0"
+   components {
+    ADM_ShopComponent "{5D9875CE61FE8ADE}" {
+     m_Categories + {
+      "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+     }
+    }
+   }
+  }
+ }
+}

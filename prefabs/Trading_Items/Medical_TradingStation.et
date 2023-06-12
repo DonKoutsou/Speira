@@ -1,6 +1,12 @@
 GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
  ID "5B11113704C2B0B4"
  components {
+  ADM_ShopComponent "{5D98A8925588B950}" {
+   m_ShopConfig "{A9335BA4AD961206}Configs/Shops/Medicals_Factionless.conf"
+   m_Categories {
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+   }
+  }
   MeshObject "{58C4C15098F109F6}" {
    Object "{FE31750973EA92C7}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Medical_01.xob"
   }
@@ -18,31 +24,13 @@ GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
     }
    }
    additionalActions {
-    KLM_ConverseAction "{5B11113715A23157}" {
+    ADM_ShopAction "{5D98A892AE3FBABB}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{5B111137260AC220}" {
-      Name "Buy field dressing for 2 watches"
+     UIInfo UIInfo "{5D98A89250B93C32}" {
+      Name "Trade"
      }
-     Duration 0.5
-     m_WantedPay "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-     m_WantedAmount 2
-     m_PrefabToSell "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
-     m_SpawnOffset 0 0.456 0
-    }
-    KLM_ConverseAction "{5B111135A237C319}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5B111135A75E0540}" {
-      Name "Sell field dressing for 1 watch"
-     }
-     Duration 0.5
-     "Sort Priority" 1
-     m_WantedPay "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
-     m_PrefabToSell "{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et"
-     m_SpawnOffset 0 0.456 0
     }
    }
   }

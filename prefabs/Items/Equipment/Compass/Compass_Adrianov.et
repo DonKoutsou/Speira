@@ -1,7 +1,0 @@
-GenericEntity : "{7CEEC3FF35A201A2}Prefabs/Items/Core/Compass_Base.et" {
- ID "508C1AE0B7DD8813"
- components {
-  Hierarchy "{5D8707738855FBCC}" {
-  }
- }
-}

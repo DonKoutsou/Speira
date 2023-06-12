@@ -1,6 +1,12 @@
-GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
+GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
  ID "5B11113704C2B0B4"
  components {
+  ADM_ShopComponent "{5D98880BAA237AF8}" {
+   m_ShopConfig "{7D781A669772321D}Configs/Shops/Explosives_Factionless.conf"
+   m_Categories {
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+   }
+  }
   MeshObject "{58C4C15098F109F6}" {
    Object "{26602B855125635D}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Explosives_01.xob"
    Materials {
@@ -24,17 +30,13 @@ GenericEntity : "{084C06AFFD21AB0C}Prefabs/Trading_Items/Trading_Item_Base.et" {
     }
    }
    additionalActions {
-    KLM_ConverseAction "{5C96D63DCF1DFF05}" : "{ED11EFBD71303C64}Prefabs/Trading_Items/Configs/Tags/B_ANM8HC_Tag.conf" {
-    }
-    KLM_ConverseAction "{5C96D63DDC017664}" : "{43A4BE3218C1FA1F}Prefabs/Trading_Items/Configs/Tags/B_M67_Tag.conf" {
-    }
-    KLM_ConverseAction "{5C96D63D3755B017}" : "{07891D3BB3AB95EA}Prefabs/Trading_Items/Configs/Tags/B_M15AT_Tag.conf" {
-    }
-    KLM_ConverseAction "{5C96D63DC5244A15}" : "{C5C08B71177ACD27}Prefabs/Trading_Items/Configs/Tags/B_RGD2_Tag.conf" {
-    }
-    KLM_ConverseAction "{5C96D63DC60D304B}" : "{8CD3D11534B5720C}Prefabs/Trading_Items/Configs/Tags/B_RGD5_Tag.conf" {
-    }
-    KLM_ConverseAction "{5C96D63D4A8CD992}" : "{3731E18194661553}Prefabs/Trading_Items/Configs/Tags/B_TM62M_Tag.conf" {
+    ADM_ShopAction "{5D98880BA276AC9C}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5D98880BA4AEAD31}" {
+      Name "Trade"
+     }
     }
    }
   }
