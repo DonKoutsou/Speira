@@ -23,6 +23,12 @@ SCR_ChimeraCharacter {
     }
    }
   }
+  ADM_ShopComponent "{5D9875C8CAB0C761}" {
+   m_ShopConfig "{338F686DC39801BC}Configs/Shops/Generic_Trade.conf"
+   m_Categories {
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
+   }
+  }
   AIControlComponent "{520EA1D2DB109F34}" {
    components {
     PerceptionComponent "{54A2CBC75F06064B}" {

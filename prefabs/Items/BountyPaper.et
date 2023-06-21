@@ -42,6 +42,13 @@ GenericEntity {
      ItemDimensions 1 1 1
      ItemVolume 1
     }
+    CustomAttributes {
+     PreviewRenderAttributes "{5D968E00D3456842}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 10 0
+     }
+    }
+    m_Size SLOT_1x1
    }
    CapacityCoefficient 0
   }

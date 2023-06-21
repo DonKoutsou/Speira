@@ -1,0 +1,17 @@
+$grp GenericEntity : "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et" {
+ {
+  coords 7351.031 6.726 1027.978
+ }
+ {
+  coords 7369.229 6.194 1041.047
+ }
+ {
+  coords 7394.19 6.903 1067.368
+ }
+ {
+  coords 7337.649 7.876 1059.437
+ }
+ {
+  coords 7296.879 5.601 1121.427
+ }
+}

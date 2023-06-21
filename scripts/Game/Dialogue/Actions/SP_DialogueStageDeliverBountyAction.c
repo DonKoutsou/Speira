@@ -1,8 +1,8 @@
 [BaseContainerProps(configRoot:true), DialogueStageTitleAttribute()]
 class DialogueStageDeliverBountyAction : DialogueStage
 {
-	[Attribute("Item needed to be delivered", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
-	ResourceName m_WantedItem;
+	[Attribute("Bounty Paper Prefab", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
+	ResourceName m_Bounty;
 	[Attribute("", UIWidgets.ResourcePickerThumbnail, params: "et", desc: "")]
 	ResourceName m_ItemToGive;
 	[Attribute("1", UIWidgets.EditBox, params: "1 1000", desc: "")]
@@ -22,7 +22,7 @@ class DialogueStageDeliverBountyAction : DialogueStage
 		if (!inv)
 			return;		
 		
-		SP_PrefabResource_Predicate pred = new SP_PrefabResource_Predicate(m_WantedItem);
+		SP_PrefabResource_Predicate pred = new SP_PrefabResource_Predicate(m_Bounty);
 		array<IEntity> entitiesToDrop = new array<IEntity>;
 		inv.FindItems(entitiesToDrop, pred);
 		
@@ -78,7 +78,7 @@ class DialogueStageDeliverBountyAction : DialogueStage
 		if (!inv)
 			return false;
 		
-		SP_PrefabResource_Predicate pred = new SP_PrefabResource_Predicate(m_WantedItem);
+		SP_PrefabResource_Predicate pred = new SP_PrefabResource_Predicate(m_Bounty);
 		array<IEntity> entitiesToDrop = new array<IEntity>;
 		inv.FindItems(entitiesToDrop, pred);
 		if (entitiesToDrop.Count() < m_WantedAmount)
@@ -95,23 +95,50 @@ class DialogueStageDeliverBountyAction : DialogueStage
 		string rank = CRank.GetCharacterRankName(Character);
 		string Name = rank + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
 		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
+		array<IEntity> mybounties = new array<IEntity>();
 		if (!inv)
 			return false;
-		SP_PrefabResource_Predicate pred = new SP_PrefabResource_Predicate(m_WantedItem);
-		array<IEntity> entitiesToDrop = new array<IEntity>;
-		inv.FindItems(entitiesToDrop, pred);
-		for (int i = 0; i < entitiesToDrop.Count(); i++)
+		else
 		{
-			SP_BountyComponent PComp = SP_BountyComponent.Cast(entitiesToDrop[i].FindComponent(SP_BountyComponent));
-			if (PComp.OwnerName == Name)
+			SP_PrefabResource_Predicate pred = new SP_PrefabResource_Predicate(m_Bounty);
+			array<IEntity> entitiesToDrop = new array<IEntity>;
+			inv.FindItems(entitiesToDrop, pred);
+			for (int i = 0; i < entitiesToDrop.Count(); i++)
 			{
-				SCR_CharacterDamageManagerComponent ch = SCR_CharacterDamageManagerComponent.Cast(PComp.Target.FindComponent(SCR_CharacterDamageManagerComponent));
-				if(ch.GetState() == EDamageState.DESTROYED)
+				SP_BountyComponent PComp = SP_BountyComponent.Cast(entitiesToDrop[i].FindComponent(SP_BountyComponent));
+				if (PComp.OwnerName == Name)
 				{
-					return true;
+					mybounties.Insert(entitiesToDrop[i]);
 				}
 			}
 		}
+		if(mybounties.Count() > 0)
+		{
+			array<IEntity> dogtags = new array<IEntity>;
+			SP_DogtagPredicate Dogpred = new SP_DogtagPredicate();
+			inv.FindItems(dogtags, Dogpred);
+			if(dogtags.Count() <= 0)
+			{
+				return false;
+			}
+			for (int i = 0; i < mybounties.Count(); i++)
+			{
+				SP_BountyComponent BComp = SP_BountyComponent.Cast(mybounties[i].FindComponent(SP_BountyComponent));
+				for (int d = 0; d < dogtags.Count(); d++)
+				{
+					string ownername;
+					DogTagEntity dogtagent = DogTagEntity.Cast(dogtags[d]);
+					dogtagent.GetCname(ownername);
+					if (BComp.GetTargetName() == ownername)
+					{
+							return true;
+					}
+				}
+			}
+		
+		}
+		//SCR_CharacterDamageManagerComponent ch = SCR_CharacterDamageManagerComponent.Cast(PComp.Target.FindComponent(SCR_CharacterDamageManagerComponent));
+		//if(ch.GetState() == EDamageState.DESTROYED)
 		return false;
 	};
 };

@@ -6,6 +6,7 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
 }
 SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
  coords 4554.979 16.642 10448.736
+ PlayerControllerPrefab "{B1CE5CA5A0628961}prefabs/Characters/Factions/SPEIRA/Character_Speira_Gogland.et"
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 5368.933 12.388 8887.257

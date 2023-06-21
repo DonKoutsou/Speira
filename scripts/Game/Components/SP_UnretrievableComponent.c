@@ -58,4 +58,45 @@ class SP_BountyComponent : SP_UnretrievableComponent
 		TargetLocation = TLoc;
 		m_Faction = faction;
 	}
+	string GetTargetName()
+	{
+		if(TargetName)
+		{
+			return TargetName;
+		}
+		return STRING_EMPTY;
+	}
 };
+class SP_ItemBountyComponentClass : SP_UnretrievableComponentClass
+{
+};
+
+class SP_ItemBountyComponent : SP_UnretrievableComponent
+{
+	string OwnerName;
+	int ItemAmount;
+	string OwnerLocation;
+	SCR_EArsenalItemType	RequestType;
+	SCR_EArsenalItemMode	RequestMode;
+
+	void GetInfo(out string OName, out SCR_EArsenalItemType type, out SCR_EArsenalItemMode mode, out int Amount, out string TLoc)
+	{
+		OName = OwnerName;
+		type = RequestType;
+		mode = RequestMode;
+		Amount = ItemAmount;
+		TLoc = OwnerLocation;
+	};
+	void SetInfo(string OName, SCR_EArsenalItemType type, SCR_EArsenalItemMode mode ,int Amount, string TLoc)
+	{
+		OwnerName = OName;
+		RequestType = type;
+		RequestMode = mode;
+		ItemAmount = Amount;
+		OwnerLocation = TLoc;
+	}
+};
+modded enum EEntityCatalogType
+{
+	REQUEST 						= 1000
+}

@@ -2,20 +2,9 @@ GenericEntity : "{084C06AFFD21AB0C}prefabs/Trading_Items/Trading_Item_Base.et" {
  ID "5B11113704C2B0B4"
  components {
   ADM_ShopComponent "{5D5909CA204D326C}" {
-   m_ShopName "Gadgets"
-   m_ShopConfig "{14B88E139B692596}Configs/Shops/Flashlight.conf"
+   m_ShopConfig "{12D5D36683AD9D97}Configs/Shops/Equipment_Factionless.conf"
    m_Categories {
-    "{315FEBBF51416E5E}Configs/ShopCategories/Gadgets.conf"
-   }
-   m_AdditionalMerchandise {
-    ADM_ShopMerchandise "{5D59382A8CF3FC3E}" : "{06E0D824C820C8B0}Configs/Shops/Binoculars.conf" {
-    }
-    ADM_ShopMerchandise "{5D59382A8F2AF069}" : "{14B88E139B692596}Configs/Shops/Flashlight.conf" {
-    }
-    ADM_ShopMerchandise "{5D59382A8E542674}" : "{040989D578191362}Configs/Shops/Map.conf" {
-    }
-    ADM_ShopMerchandise "{5D59382AB17F8E52}" : "{77576D946B0D82A3}Configs/Shops/Vostok.conf" {
-    }
+    "{C6A3C02F85B92641}Configs/ShopCategories/AMMO.conf" "{EA73C8038D88FDB3}Configs/ShopCategories/Backpacks.conf" "{925A1D99A56A9DFC}Configs/ShopCategories/Equipment.conf" "{97BB2041EFC236DC}Configs/ShopCategories/Explosives.conf" "{BE1166E0199AD41D}Configs/ShopCategories/Food.conf" "{5BC6EC8022075DAF}Configs/ShopCategories/Medicals.conf" "{7FABAFEE72C3295B}Configs/ShopCategories/Weapons.conf"
    }
   }
   MeshObject "{58C4C15098F109F6}" {

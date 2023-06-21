@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{70F74631B8909AFF}Worlds/Prefab_setup/TradingStations.ent"
+ Name "{70F74631B8909B00}worlds/Prefab_setup/TradingStations.ent"
  Configurations {
   ENTResourceClass PC {
   }

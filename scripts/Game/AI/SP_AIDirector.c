@@ -615,7 +615,7 @@ class SP_AIDirector : AIGroup
 			Print("Faction has no entity catalogs set up");
 			return false;
 		}
-		array<SCR_EntityCatalogEntry> aFactionEntityEntry = {};
+		array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
 		entityCatalog.GetFullFilteredEntityListWithLabels(aFactionEntityEntry, m_aIncludedEditableEntityLabels, m_aExcludedEditableEntityLabels, m_bIncludeOnlySelectedLabels);
 		int index = Math.RandomInt(0, aFactionEntityEntry.Count() - 1);
 		ResourceName name = aFactionEntityEntry[index].GetPrefab();
