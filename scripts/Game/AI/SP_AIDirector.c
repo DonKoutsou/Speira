@@ -71,7 +71,6 @@ class SP_AIDirector : AIGroup
 	protected IEntity m_CommanderEnt;
 	protected SP_DialogueComponent DiagComp;
 	
-	
 	string GetLocationName ()
 	{
 		return m_sLocationName;
@@ -496,7 +495,7 @@ class SP_AIDirector : AIGroup
 	override void EOnFrame(IEntity owner, float timeSlice)
 	{
 		super.EOnFrame(owner, timeSlice);
-		
+
 		if (!m_SpawnAI)
 			return;
 
