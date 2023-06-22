@@ -79,7 +79,7 @@ class DialogueStageTakeRequestAction : DialogueStage
 		ItemBComp.SetInfo(OName, type, mode, amount, RequestLocName);
 		TFact = key;
 	};
-	override string GetDialogueText(IEntity Character, IEntity Player)
+	override string GetStageDialogueText(IEntity Character, IEntity Player)
 	{
 			return GetRandomDeliver();
 	}

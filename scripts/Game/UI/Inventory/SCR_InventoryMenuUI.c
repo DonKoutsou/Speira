@@ -1474,13 +1474,13 @@ class SCR_InventoryMenuUI : ChimeraMenuBase
 			SP_PackageComponent package =  SP_PackageComponent.Cast(uncomp);
 			if(package)
 			{
-				package.GetInfo(cname, tname, loc, fkey);
+				package.GetInfo(cname, tname, loc);
 				mydesc = string.Format("Deliver to %1, located on %2", tname, loc);
 			}
 			SP_BountyComponent bounty =  SP_BountyComponent.Cast(uncomp);
 			if(bounty)
 			{
-				bounty.GetInfo(cname, target, tname, loc, fkey);
+				bounty.GetInfo(cname, tname, loc);
 				SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(target.FindComponent(SCR_CharacterIdentityComponent));
 				mydesc = string.Format("Target is %1, located on %2", tname, loc);
 			}

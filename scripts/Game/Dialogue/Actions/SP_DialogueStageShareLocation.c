@@ -18,7 +18,7 @@ class DialogueStageShareLocation : DialogueStage
 	{
 		return 3*y + x;
 	}
-	override string GetDialogueText(IEntity Character, IEntity Player)
+	override string GetStageDialogueText(IEntity Character, IEntity Player)
 	{
 		AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
 		AIAgent agent = comp.GetAIAgent();

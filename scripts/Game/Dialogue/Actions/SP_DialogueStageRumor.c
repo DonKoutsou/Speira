@@ -10,7 +10,7 @@ class DialogueStageRumor : DialogueStage
 	{
 		return true;
 	};
-	override string GetDialogueText(IEntity Character, IEntity Player)
+	override string GetStageDialogueText(IEntity Character, IEntity Player)
 	{
 			FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
 			Faction key = FC.GetAffiliatedFaction();

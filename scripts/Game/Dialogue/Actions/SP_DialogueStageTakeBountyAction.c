@@ -13,7 +13,6 @@ class DialogueStageTakeBountyAction : DialogueStage
 	string LocName;
 	FactionKey TFact;
 	SP_AIDirector MyDirector;
-	
 	string DName;
 	
 	override void Perform(IEntity Character, IEntity Player)
@@ -54,9 +53,7 @@ class DialogueStageTakeBountyAction : DialogueStage
 			SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 			diagcomp.DoAnouncerDialogue("No space in inventory, bounty left on the floor");
 		}
-		
 		SP_BountyComponent PComp = SP_BountyComponent.Cast(BountyPaper.FindComponent(SP_BountyComponent));
-		
 		CharacterIdentityComponent CharID = CharacterIdentityComponent.Cast(Character.FindComponent(CharacterIdentityComponent));
 		SCR_CharacterRankComponent CharRank = SCR_CharacterRankComponent.Cast(Character.FindComponent(SCR_CharacterRankComponent));
 		string OName = CharRank.GetCharacterRankName(Character) + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
@@ -65,18 +62,7 @@ class DialogueStageTakeBountyAction : DialogueStage
 		LocName = MyDirector.GetCharacterLocation(CharToDeliverTo);
 		CharacterIdentityComponent CharID2 = CharacterIdentityComponent.Cast(CharToDeliverTo.FindComponent(CharacterIdentityComponent));
 		DName = CharRank.GetCharacterRankName(CharToDeliverTo) + " " + CharID2.GetIdentity().GetName() + " " + CharID2.GetIdentity().GetSurname();
-		//Resource res = Resource.Load(m_pDefaultWaypoint);
-		//AIWaypoint WP;
-		//if (res)
-		//	{
-		//		WP = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(res, CharToDeliverTo.GetWorld(), params));
-		//	}
-		//IEntity Antagonist1;
-		//IEntity Antagonist2;
-		//Find2RandomAllies(myfact, Antagonist1, Antagonist2);
-		//AddWPToCh(Antagonist1, WP);
-		//AddWPToCh(Antagonist2, WP);
-		PComp.SetInfo(OName, CharToDeliverTo, DName, LocName, key);
+ 		PComp.SetInfo(OName, DName, LocName);
 		TFact = key;
 	};
 	override bool CanBePerformed(IEntity Character, IEntity Player)
@@ -89,7 +75,7 @@ class DialogueStageTakeBountyAction : DialogueStage
 		m_sCantBePerformedReason = "(No available bounties)";
 		return OrDirector.GetDirectorOccupiedByEnemy(myfact, MyDirector);
 	}
-	override string GetDialogueText(IEntity Character, IEntity Player)
+	override string GetStageDialogueText(IEntity Character, IEntity Player)
 	{
 			return GetRandomDeliver();
 	}
@@ -127,9 +113,5 @@ class DialogueStageTakeBountyAction : DialogueStage
 		//	if (Waypoint)
 		//		group.AddWaypoint(Waypoint);
 		//}
-	
 	}
-	
-	
-
 }

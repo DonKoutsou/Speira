@@ -3327,6 +3327,9 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
   }
   SP_PlayerPenaltyComponent "{5D7D20460DC7AD30}" {
   }
+  SP_TaskManagerComponent "{5DAD02ECC615141F}" {
+   m_fTaskGenTime 10
+  }
   RplComponent "{5D685A535B29A270}" {
    "Rpl State Override" None
    Streamable Disabled
@@ -3335,7 +3338,7 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
  coords 2124.836 2.699 3528.492
  m_fAutoReloadTime 0
  {
-  SCR_FactionManager {
+  SCR_FactionManager "5DAD02ECB3A8BD38" {
    ID "5D685A54F89945B0"
    Factions {
     SCR_Faction "{5D96A23610EC609C}" {

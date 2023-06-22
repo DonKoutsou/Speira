@@ -8,7 +8,7 @@ class SP_IDPackageAction : ScriptedUserAction
 		string DName;
 		string LocName;
 		FactionKey faction;
-		Pac.GetInfo(OName, DName, LocName, faction);
+		Pac.GetInfo(OName, DName, LocName);
 		DiagComp.DoAnouncerDialogue("This package is from " + OName + ". " + "Its ment for " + DName + ". " + "I was told he is located at " + LocName);
 	}
 	override bool CanBePerformedScript(IEntity user)

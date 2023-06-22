@@ -61,7 +61,7 @@ class DialogueStageTakePackageAction : DialogueStage
 		LocName = MyDirector.GetCharacterLocation(CharToDeliverTo);
 		CharacterIdentityComponent CharID2 = CharacterIdentityComponent.Cast(CharToDeliverTo.FindComponent(CharacterIdentityComponent));
 		DName = CharRank.GetCharacterRankName(CharToDeliverTo) + " " + CharID2.GetIdentity().GetName() + " " + CharID2.GetIdentity().GetSurname();
-		PComp.SetInfo(OName, DName, LocName, key);
+		PComp.SetInfo(OName, DName, LocName);
 	};
 	override bool CanBePerformed(IEntity Character, IEntity Player)
 	{
@@ -73,7 +73,7 @@ class DialogueStageTakePackageAction : DialogueStage
 		m_sCantBePerformedReason = "(No available deliveries)";
 		return OrDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
 	}
-	override string GetDialogueText(IEntity Character, IEntity Player)
+	override string GetStageDialogueText(IEntity Character, IEntity Player)
 	{
 			FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
 			string key = FC.GetAffiliatedFaction().GetFactionKey();
