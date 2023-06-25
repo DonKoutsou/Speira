@@ -362,8 +362,7 @@ class SP_AIDirector : AIGroup
 		GenericEntity nearestLocation = nearest.GetOwner();
 		SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
 		string closestLocationName;
-		MapItem item = mapDescr.Item();
-		closestLocationName = item.GetDisplayName();
+		closestLocationName = nearest.GetDisplayName();
 
 		vector lastLocationPos = nearestLocation.GetOrigin();
 		float lastDistance = vector.DistanceSqXZ(lastLocationPos, posPlayer);
@@ -446,8 +445,7 @@ class SP_AIDirector : AIGroup
 		GenericEntity nearestLocation = nearest.GetOwner();
 		SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
 		string closestLocationName;
-		MapItem item = mapDescr.Item();
-		closestLocationName = item.GetDisplayName();
+		closestLocationName = nearest.GetDisplayName();
 
 		vector lastLocationPos = nearestLocation.GetOrigin();
 		float lastDistance = vector.DistanceSqXZ(lastLocationPos, posPlayer);

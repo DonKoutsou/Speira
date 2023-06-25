@@ -601,9 +601,6 @@ GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.
  coords 1181.23 2.026 3290.123
  angleY 0
 }
-GenericEntity : "{3A85B25FB0660C27}prefabs/Items/Equipment/Accessories/Dogtags/Rusted_Tag_Item.et" {
- coords 2506.853 177.849 2267.243
-}
 $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
  {
   coords 2029.581 10.54 1852.861

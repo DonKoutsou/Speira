@@ -1,3 +1,11 @@
+$grp SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ {
+  coords 2767.855 81.975 2179.688
+ }
+ {
+  coords 2704.688 97.972 2205.59
+ }
+}
 $grp GenericEntity : "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et" {
  {
   coords 2127.111 62.308 1041.091

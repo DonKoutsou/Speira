@@ -23,6 +23,7 @@ SCR_GameModeEditor {
   SCR_DestructionManagerComponent "{5D685A535B2AB635}" {
   }
   SCR_EntityCatalogManagerComponent "{5D685A535B2AB652}" {
+   Enabled 0
    m_aEntityCatalogs {
     SCR_EntityCatalogMultiList "{5D685A535B2AB67A}" {
      m_eEntityCatalogType CHARACTER
@@ -367,6 +368,8 @@ SCR_GameModeEditor {
    m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
   }
   SCR_NotificationSenderComponent "{5D685A535B2AE72F}" {
+   Enabled 0
+   m_bShowPlayerLeftNotification 0
    m_aKillfeedTypeNames {
     SCR_NotificationKillfeedTypeName "{5D685A535B2A9257}" {
      m_iKillfeedType DISABLED
@@ -1428,6 +1431,7 @@ SCR_GameModeEditor {
   SCR_RespawnSystemComponent "{5D685A535B2AE6FC}" {
   }
   SCR_SaveLoadComponent "{5D685A535B285712}" {
+   Enabled 0
    m_Struct SCR_MissionStruct "{5D685A535B2857E7}" {
     m_Struct0 SCR_EditorStruct "{5D685A535B2857E0}" {
      m_AttributeList SCR_EditorAttributeList "{5D685A535B2857E2}" {
@@ -3143,6 +3147,7 @@ SCR_GameModeEditor {
      }
     }
    }
+   m_SaveOnExit 0
    m_iAutosavePeriod 600
   }
   SCR_TimeAndWeatherHandlerComponent "{5D685A5370A16CE6}" {
@@ -3273,6 +3278,9 @@ SCR_GameModeEditor {
    m_iLives 1
   }
   SP_PlayerPenaltyComponent "{5D7D20460DC7AD30}" {
+  }
+  SP_RequestManagerComponent "{5DB3077B503444F6}" {
+   m_fTaskGenTime 10
   }
   RplComponent "{5D685A535B29A270}" {
    "Rpl State Override" None
@@ -7069,7 +7077,7 @@ SCR_GameModeEditor {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CD762BD}" {
-           m_sEntityPrefab "{7CEF68E2BC68CE71}prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+           m_sEntityPrefab "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CD7197C}" {
              m_eItemType EQUIPMENT
@@ -8639,7 +8647,7 @@ SCR_GameModeEditor {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CDA3159}" {
-           m_sEntityPrefab "{7CEF68E2BC68CE71}prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+           m_sEntityPrefab "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CDAB8FC}" {
              m_eItemType EQUIPMENT

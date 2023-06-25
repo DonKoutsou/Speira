@@ -2,10 +2,11 @@ class SP_Task: ScriptAndConfig
 {
 	IEntity TaskOwner;
 	IEntity TaskTarget;
-	
 	string TaskDesc;
+	string TaskDiag;
+	ref array <IEntity> a_TaskAssigned = new ref array <IEntity>();
 	
-	void Init(){};
+	bool Init(){};
 	
 	void SetInfo(IEntity Owner, IEntity Target)
 	{
@@ -32,4 +33,25 @@ class SP_Task: ScriptAndConfig
 	{
 		return TaskDesc;
 	}
+	string GetTaskDiag()
+	{
+		return TaskDiag;
+	}
+	IEntity GetOwner()
+	{
+		return TaskOwner;
+	}
+	void AddAssignedCharacter(IEntity Character)
+	{
+		a_TaskAssigned.Insert(Character);
+	}
+	bool IsCharacterAssigned(IEntity Character)
+	{
+		if(a_TaskAssigned.Contains(Character))
+		{
+			return true;
+		}
+		return false;
+	}
+
 };

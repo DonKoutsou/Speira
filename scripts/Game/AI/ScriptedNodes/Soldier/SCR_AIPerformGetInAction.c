@@ -20,6 +20,8 @@ class SCR_AIPerformLightAction : AITaskScripted
 			string userActionString;
 			typename userAction;
 			GetVariableIn("TargetEntity", targetEntity);
+			if (!targetEntity)
+				return ENodeResult.FAIL;
 			if(SCR_FireplaceComponent.Cast(targetEntity.FindComponent(SCR_FireplaceComponent)))
 			{
 				userActionString = "SCR_LightFireplaceUserAction";
@@ -41,8 +43,7 @@ class SCR_AIPerformLightAction : AITaskScripted
 			if (!controlledEntity)
 				return ENodeResult.FAIL;
 	
-			if (!targetEntity)
-				return ENodeResult.FAIL;
+			
 	
 			userAction = userActionString.ToType();
 			if (!userAction)
