@@ -13,7 +13,7 @@ class DialogueStageMultiResponse : DialogueStage
 			{
 				foreach (SP_Task task : tasks)
 				{
-					if(task.IsCharacterAssigned(Player) == false)
+					if(task.CharacterAssigned(Player) == false)
 					{
 						return DialogueText;
 					}
@@ -33,7 +33,7 @@ class DialogueStageMultiResponse : DialogueStage
 				{
 					foreach (SP_Task taskcheck : tasks)
 					{
-						if(taskcheck.IsCharacterAssigned(Player) == false)
+						if(taskcheck.CharacterAssigned(Player) == false)
 						{
 								return true;
 						}

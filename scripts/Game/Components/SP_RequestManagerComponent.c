@@ -9,25 +9,48 @@ class SP_RequestManagerComponent : ScriptComponent
 	[Attribute(defvalue: "3", desc: "Max amount of tasks a character can be requesting at the same time")]
 	int m_fTaskPerCharacter;
 	
+	
 	protected float m_fTaskRespawnTimer;
 	//----------------------------------------------------------------------------------------------------------------//
-	protected ref array<ref SP_Task> TaskMap;
+	static ref array<ref SP_Task> TaskMap = null;
 	int tasknum;
 	//----------------------------------------------------------------------------------------------------------------//
 	override void EOnInit(IEntity owner)
 	{
-		TaskMap = new array<ref SP_Task>();
+		if(!TaskMap)
+			TaskMap = new array<ref SP_Task>();
 	}
 	bool CharHasTask(IEntity Char)
 	{
 		foreach (SP_Task task : TaskMap)
 		{
-			if(task.CheckIfCharacterIsOwner(Char) == true)
+			if(task.CharacterIsOwner(Char) == true)
 			{
 				return true;
 			}
 		}
 		return false;
+	}
+	bool CharIsTarget(IEntity Char)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.CharacterIsTarget(Char) == true)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	void UpdateCharacterTasks(IEntity Char)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.CharacterIsOwner(Char) == true)
+			{
+				task.UpdateState();
+			}
+		}
 	}
 	bool CreateTask(typename TaskType)
 	{
@@ -81,9 +104,29 @@ class SP_RequestManagerComponent : ScriptComponent
 	{
 		foreach (SP_Task task : TaskMap)
 		{
-			if(task.CheckIfCharacterIsOwner(Char) == true)
+			if(task.CharacterIsOwner(Char) == true)
 			{
 				tasks.Insert(task);
+			}
+		}
+	}
+	void GetCharTargetTasks(IEntity Char,out array<ref SP_Task> tasks)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.CharacterIsTarget(Char) == true)
+			{
+				tasks.Insert(task);
+			}
+		}
+	}
+	void ClearFailedTasks()
+	{
+		for (int i = TaskMap.Count() - 1; i >= 0; i--)
+	    {
+			if(TaskMap[i].GetState() == ETaskState.FAILED)
+			{
+				TaskMap.Remove(i);
 			}
 		}
 	}

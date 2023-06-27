@@ -25,8 +25,7 @@ class DialogueStageTask : DialogueStage
 				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 				diagcomp.DoAnouncerDialogue("No space in inventory, bounty left on the floor");
 			}
-			t_Bounty.AddAssignedCharacter(Player);
-		
+			t_Bounty.AssignCharacter(Player);
 		}
 		if(t_Deliver)
 		{
@@ -46,10 +45,8 @@ class DialogueStageTask : DialogueStage
 				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 				diagcomp.DoAnouncerDialogue("No space in inventory, package left on the floor");
 			}
-			t_Deliver.AddAssignedCharacter(Player);
+			t_Deliver.AssignCharacter(Player);
 		}
-		
-		
 	};
 	void SetupTask(SP_Task task)
 	{
@@ -57,7 +54,7 @@ class DialogueStageTask : DialogueStage
 	}
 	override bool GetActionText(IEntity Character, IEntity Player, out string acttext)
 	{
-		if(t_Task && t_Task.IsCharacterAssigned(Player) == false)
+		if(t_Task && t_Task.CharacterAssigned(Player) == false)
 		{
 			acttext = t_Task.GetTaskDescription();
 			return true;
@@ -66,7 +63,7 @@ class DialogueStageTask : DialogueStage
 	}
 	override string GetStageDialogueText(IEntity Character, IEntity Player)
 		{
-			return t_Task.GetTaskDiag();
+			return t_Task.GetTaskDescription();
 		 	
 		}
 }

@@ -9,7 +9,6 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 	//------------------------------------------------------------------------------------------------
 	override void OnControllableDestroyed(IEntity entity, IEntity instigator)
 	{
-		
 		if (instigator && EntityUtils.IsPlayer(instigator))
 		{
 			if (entity)
@@ -52,8 +51,13 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 						}
 					}
 				}
-				
 			}
+		}
+		SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+		if(ReqMan)
+		{
+			ReqMan.UpdateCharacterTasks(entity);
+			ReqMan.UpdateCharacterTasks(instigator);
 		}
 		if (IsProxy())
 			return;

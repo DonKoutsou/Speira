@@ -5,7 +5,7 @@ class SP_DeliverTask: SP_Task
 	{
 		return Package;
 	}
-	void GetInfo(out string OName, out string DName, out string DLoc)
+	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
 		if(!TaskOwner || !TaskTarget)
 		{
@@ -18,6 +18,7 @@ class SP_DeliverTask: SP_Task
 		SCR_CharacterRankComponent CharRank = SCR_CharacterRankComponent.Cast(TaskOwner.FindComponent(SCR_CharacterRankComponent));
 		OName = CharRank.GetCharacterRankName(TaskOwner) + " " + Diag.GetCharacterName(TaskOwner);
 		DName = CharRank.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget);
+		OLoc = Director.GetCharacterLocation(TaskOwner);
 		DLoc = Director.GetCharacterLocation(TaskTarget);
 	};
  	override bool Init()
@@ -66,9 +67,10 @@ class SP_DeliverTask: SP_Task
 			SetInfo(Character, CharToDeliverTo);
 			string OName;
 			string DName;
+			string OLoc;
 			string DLoc;
-			GetInfo(OName, DName, DLoc);
-			if(OName == " " || DName == " " || DLoc == " ")
+			GetInfo(OName, DName, OLoc, DLoc);
+			if(OName == " " || DName == " " || DLoc == " " || OLoc == " ")
 			{
 				return false;
 			}
@@ -89,13 +91,15 @@ class SP_DeliverTask: SP_Task
 			SP_PackageComponent PComp = SP_PackageComponent.Cast(Package.FindComponent(SP_PackageComponent));
 			PComp.SetInfo(OName, DName, DLoc);
 			TaskDesc = string.Format("Deliver package received from %1, to %2. %2 is located on %3", OName, DName, DLoc);
-			TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1", DName);
+			TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3", DName, DLoc, OLoc);
+			e_State = ETaskState.UNASSIGNED;
 			return true;
 		}
 		string OName;
 		string DName;
 		string DLoc;
-		GetInfo(OName, DName, DLoc);
+		string OLoc;
+		GetInfo(OName, DName,OLoc, DLoc);
 		if(OName == " " || DName == " " || DLoc == " ")
 		{
 			return false;
@@ -117,9 +121,105 @@ class SP_DeliverTask: SP_Task
 		SP_BountyComponent BComp = SP_BountyComponent.Cast(Package.FindComponent(SP_BountyComponent));
 		BComp.SetInfo(OName, DName, DLoc);
 		TaskDesc = string.Format("Deliver package received from %1, to %2. %2 is located on %3", OName, DName, DLoc);
-		TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1", DName);
+		TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3", DName, DLoc, OLoc);
+		e_State = ETaskState.UNASSIGNED;
 		return true;
 	};
-	
+	override void UpdateState()
+	{
+		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskTarget.FindComponent(InventoryStorageManagerComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterName(TaskTarget));
+		array <IEntity> FoundPackages = new array <IEntity>();
+		inv.FindItems(FoundPackages, PackPred);
+		if(FoundPackages.Count() > 0)
+		{
+			foreach (IEntity MyPackage : FoundPackages)
+			{
+				if(MyPackage == Package)
+				{
+					e_State = ETaskState.COMPLETED;
+					return;
+				}
+			}
+		}
+		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
+		if(DmgComp.IsDestroyed())
+		{
+			e_State = ETaskState.FAILED;
+			return;
+		}
+	}
+	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
+	{
+		if(TalkingChar != TaskTarget)
+		{
+			return false;
+		}
+		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterRankName(TalkingChar) + " " + Diag.GetCharacterName(TalkingChar));
+		array <IEntity> FoundPackages = new array <IEntity>();
+		inv.FindItems(FoundPackages, PackPred);
+		if(FoundPackages.Count() > 0)
+		{
+			for (int i, count = FoundPackages.Count(); i < count; i++)
+			{
+				if(FoundPackages[i] == Package)
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+	};
+	override bool CompleteTask(IEntity Assignee)
+	{
+		InventoryStorageManagerComponent Assigneeinv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
+		InventoryStorageManagerComponent Targetinv = InventoryStorageManagerComponent.Cast(TaskTarget.FindComponent(InventoryStorageManagerComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
+		array <IEntity> FoundPackages = new array <IEntity>();
+		Assigneeinv.FindItems(FoundPackages, PackPred);
+		if(FoundPackages.Count() > 0)
+		{
+			if(GiveReward(Assignee))
+			{
+				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
+				InventoryItemComponent pInvComp = InventoryItemComponent.Cast(FoundPackages[0].FindComponent(InventoryItemComponent));
+				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+				inv.TryRemoveItemFromStorage(FoundPackages[0],parentSlot.GetStorage());
+				Targetinv.TryInsertItem(FoundPackages[0]);
+				return true;
+			}
+		}
+		return false;
+	};
 
 };
+class SP_PackagePredicate : InventorySearchPredicate
+{
+	string m_TargetName;
+	void SP_PackagePredicate(string Name)
+	{
+		m_TargetName = Name;
+	}
+
+	override protected bool IsMatch(BaseInventoryStorageComponent storage, IEntity item, array<GenericComponent> queriedComponents, array<BaseItemAttributeData> queriedAttributes)
+	{
+		SP_PackageComponent PackageComp = SP_PackageComponent.Cast(item.FindComponent(SP_PackageComponent));
+		
+		if(PackageComp)
+		{
+			string oname;
+			string tname;
+			string loc;
+			PackageComp.GetInfo(oname, tname, loc);
+			if(m_TargetName == tname)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+}
