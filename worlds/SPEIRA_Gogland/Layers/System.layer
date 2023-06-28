@@ -15,6 +15,23 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
   }
  }
  coords 6149.612 68.329 6175.505
+ {
+  SCR_FactionManager {
+   ID "5D685A54F89945B0"
+   Factions {
+    SCR_Faction "{5D5705392CE0153F}" {
+     m_aEntityCatalogs {
+      SCR_EntityCatalog "{68E836C3FEDD7D08}Configs/Factions/FacationRequests/RequestTest.conf" {
+       m_aEntityEntryList {
+        SCR_EntityCatalogInventoryItem "{5D96D6E3D22E926F}" {
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 8414.325 5.695 2309.07

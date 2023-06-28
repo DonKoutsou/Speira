@@ -98,6 +98,7 @@ class SP_RequestManagerComponent : ScriptComponent
 			Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
 			return true;
 		}
+		delete Task;
 		return false;
 	}
 	void GetCharTasks(IEntity Char,out array<ref SP_Task> tasks)
@@ -120,14 +121,25 @@ class SP_RequestManagerComponent : ScriptComponent
 			}
 		}
 	}
-	void ClearFailedTasks()
+	void ClearTasks()
 	{
-		for (int i = TaskMap.Count() - 1; i >= 0; i--)
+		//for (int i = TaskMap.Count() - 1; i >= 0; i--)
+		//{
+		//	if (TaskMap[i].GetState() == ETaskState.FAILED || TaskMap[i].GetState() == ETaskState.COMPLETED) 
+		//	{
+		//		TaskMap.Remove(i);
+		//	}
+		//}
+		
+		for (int i = 0, c = TaskMap.Count(); i < c;)
 	    {
-			if(TaskMap[i].GetState() == ETaskState.FAILED)
+			if (TaskMap[i].GetState() == ETaskState.FAILED || TaskMap[i].GetState() == ETaskState.COMPLETED) 
 			{
 				TaskMap.Remove(i);
+				c--;
+				continue;
 			}
+			i++;
 		}
 	}
 	//----------------------------------------------------------------------------------------------------------------//

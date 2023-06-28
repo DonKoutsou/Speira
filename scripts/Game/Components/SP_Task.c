@@ -18,6 +18,11 @@ class SP_Task: ScriptAndConfig
 		TaskTarget = Target;
 	}
 	
+	bool SetupTaskEntity()
+	{
+		return true;
+	};
+	
 	bool CharacterIsTarget(IEntity Character)
 	{
 		if (Character == TaskTarget)

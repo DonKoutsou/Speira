@@ -1,0 +1,16 @@
+$grp SCR_AIGroup : "{70E71EB56B314A98}Prefabs/Groups/Campaign/Group_FIA_Remnants_Fireteam.et" {
+ mydude {
+  coords 1548.958 39.011 2796.429
+  m_aUnitPrefabSlots {
+   "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et"
+  }
+  m_bSpawnImmediately 1
+ }
+ target {
+  coords 1623.877 39.011 2815.771
+  m_aUnitPrefabSlots {
+   "{677B515F119222C2}prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et"
+  }
+  m_bSpawnImmediately 1
+ }
+}

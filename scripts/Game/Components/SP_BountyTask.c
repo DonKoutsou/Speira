@@ -1,10 +1,15 @@
 class SP_BountyTask: SP_Task
 {
+	//---------------------------------------------------------------------------//
+	//Entities tied to task.
 	IEntity Bounty;
+	//---------------------------------------------------------------------------//
 	IEntity GetBountyEnt()
 	{
 		return Bounty;
 	}
+	//---------------------------------------------------------------------------//
+	//Takes owner and target of task and spits out their info
 	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
 		if(!TaskOwner || !TaskTarget)
@@ -22,6 +27,98 @@ class SP_BountyTask: SP_Task
 		DLoc = Director.GetCharacterLocation(TaskTarget);
 	};
 	
+	override void UpdateState()
+	{
+		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
+		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
+		if(OwnerDmgComp.IsDestroyed() && !OwnerDmgComp.IsDestroyed())
+		{
+			e_State = ETaskState.FAILED;
+			return;
+		}
+		if(!OwnerDmgComp.IsDestroyed() && OwnerDmgComp.IsDestroyed())
+		{
+			e_State = ETaskState.COMPLETED;
+			return;
+		}
+		if(OwnerDmgComp.IsDestroyed())
+		{
+			e_State = ETaskState.FAILED;
+			return;
+		}
+	};
+	
+	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
+	{
+		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
+		array <IEntity> FoundTags = new array <IEntity>();
+		inv.FindItems(FoundTags, TagPred);
+		if(FoundTags.Count() > 0)
+		{
+			return true;
+		}
+		return false;			
+	};
+	
+	override bool CompleteTask(IEntity Assignee)
+	{
+		InventoryStorageManagerComponent Assigneeinv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
+		InventoryStorageManagerComponent Ownerinv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
+		array <IEntity> FoundTags = new array <IEntity>();
+		Assigneeinv.FindItems(FoundTags, TagPred);
+		if(FoundTags.Count() > 0)
+		{
+			if(GiveReward(Assignee))
+			{
+				InventoryItemComponent pInvComp = InventoryItemComponent.Cast(FoundTags[0].FindComponent(InventoryItemComponent));
+				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+				Assigneeinv.TryRemoveItemFromStorage(FoundTags[0],parentSlot.GetStorage());
+				Ownerinv.TryInsertItem(FoundTags[0]);
+				return true;
+			}
+		}
+		return false;
+	};
+	override bool SetupTaskEntity()
+	{
+		if(TaskOwner && TaskTarget)
+		{
+			string OName;
+			string DName;
+			string DLoc;
+			string OLoc;
+			GetInfo(OName, DName, DLoc, OLoc);
+			if(OName == " " || DName == " " || DLoc == " " || OLoc == " ")
+			{
+				return false;
+			}
+			EntitySpawnParams params = EntitySpawnParams();
+			params.TransformMode = ETransformMode.WORLD;
+			params.Transform[3] = vector.Zero;
+			Resource res = Resource.Load("{F73F8F714B2662FC}prefabs/Items/BountyPaper.et");
+			if (res)
+			{
+				Bounty = GetGame().SpawnEntityPrefab(res, GetGame().GetWorld(), params);
+				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
+				if(inv.TryInsertItem(Bounty) == false)
+				{
+					delete Bounty;
+					return false;
+				}
+			}
+			SP_BountyComponent BComp = SP_BountyComponent.Cast(Bounty.FindComponent(SP_BountyComponent));
+			BComp.SetInfo(OName, DName, DLoc);
+			TaskDesc = string.Format("%1 has put a bounty on %2's head.", OName, DName);
+			TaskDiag = string.Format("I've put a bounty on %1's head, last i heard he was located on %2, get me his dogtags and i'll make it worth your while. Come back to find me on %3", DName, DLoc, OLoc);
+			e_State = ETaskState.UNASSIGNED;
+			return true;
+		}
+		return false;
+	};
 	override bool Init()
 	{
 		if(!TaskOwner && !TaskTarget)
@@ -43,16 +140,12 @@ class SP_BountyTask: SP_Task
 			MyDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
 			IEntity Character;
 			IEntity CharToDeliverTo;
-			if(MyDirector.GetRandomUnitByFKey(key, Character) == false)
+			if(!MyDirector.GetRandomUnitByFKey(key, Character))
 			{
 				return false;
 			}
-			while(!Character)
-			{
-				MyDirector.GetRandomUnitByFKey(key, Character);
-			}
 			SP_AIDirector NewDir;
-			if(MyDirector.GetDirectorOccupiedByEnemy(myfact, NewDir) == false)
+			if(!MyDirector.GetDirectorOccupiedByEnemy(myfact, NewDir))
 			{
 				return false;
 			}
@@ -62,7 +155,7 @@ class SP_BountyTask: SP_Task
 				return false;
 			}
 			FactionKey Enkey = EnFact.GetFactionKey();
-			if(NewDir.GetRandomUnitByFKey(Enkey, CharToDeliverTo) == false)
+			if(!NewDir.GetRandomUnitByFKey(Enkey, CharToDeliverTo))
 			{
 				return false;
 			}
@@ -71,121 +164,14 @@ class SP_BountyTask: SP_Task
 				NewDir.GetRandomUnitByFKey(Enkey, CharToDeliverTo);
 			}
 			SetInfo(Character, CharToDeliverTo);
-			string OName;
-			string DName;
-			string DLoc;
-			string OLoc;
-			GetInfo(OName, DName, DLoc, OLoc);
-			if(OName == " " || DName == " " || DLoc == " " || OLoc == " ")
-			{
-				return false;
-			}
-			EntitySpawnParams params = EntitySpawnParams();
-			params.TransformMode = ETransformMode.WORLD;
-			params.Transform[3] = vector.Zero;
-			Resource res = Resource.Load("{F73F8F714B2662FC}prefabs/Items/BountyPaper.et");
-			if (res)
-			{
-				Bounty = GetGame().SpawnEntityPrefab(res, GetGame().GetWorld(), params);
-				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Character.FindComponent(InventoryStorageManagerComponent));
-				if(inv.TryInsertItem(Bounty) == false)
-				{
-					delete Bounty;
-					return false;
-				}
-			}
-			SP_BountyComponent BComp = SP_BountyComponent.Cast(Bounty.FindComponent(SP_BountyComponent));
-			BComp.SetInfo(OName, DName, DLoc);
-			TaskDesc = string.Format("%1 has put a bounty on %2's head.", OName, DName);
-			TaskDiag = string.Format("I've put a bounty on %1's head, last i heard he was located on %2, get me his dogtags and i'll make it worth your while. Come back to find me on %3", DName, DLoc, OLoc);
-			e_State = ETaskState.UNASSIGNED;
-			return true;
 		}
-		string OName;
-		string DName;
-		string DLoc;
-		string OLoc;
-		GetInfo(OName, DName, OLoc, DLoc);
-		if(OName == " " || DName == " " || DLoc == " ")
-		{
-			return false;
-		}
-		EntitySpawnParams params = EntitySpawnParams();
-		params.TransformMode = ETransformMode.WORLD;
-		params.Transform[3] = vector.Zero;
-		Resource res = Resource.Load("{F73F8F714B2662FC}prefabs/Items/BountyPaper.et");
-		if (res)
-		{
-			Bounty = GetGame().SpawnEntityPrefab(res, GetGame().GetWorld(), params);
-			InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
-			if(inv.TryInsertItem(Bounty) == false)
-			{
-				delete Bounty;
-				return false;
-			}
-		}
-		SP_BountyComponent BComp = SP_BountyComponent.Cast(Bounty.FindComponent(SP_BountyComponent));
-		BComp.SetInfo(OName, DName, DLoc);
-		TaskDesc = string.Format("%1 has put a bounty on %2's head.", OName, DName);
-		TaskDiag = string.Format("I've put a bounty on %1's head, last i heard he was located on %2, get me his dogtags and i'll make it worth your while. Come back to find me on %3", DName, DLoc, OLoc);
-		e_State = ETaskState.UNASSIGNED;
-		return true;
-	};
-	override void UpdateState()
-	{
-		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
-		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
-		if(OwnerDmgComp.IsDestroyed() && !OwnerDmgComp.IsDestroyed())
-		{
-			e_State = ETaskState.FAILED;
-			return;
-		}
-		if(!OwnerDmgComp.IsDestroyed() && OwnerDmgComp.IsDestroyed())
-		{
-			e_State = ETaskState.COMPLETED;
-			return;
-		}
-		if(OwnerDmgComp.IsDestroyed())
-		{
-			e_State = ETaskState.FAILED;
-			return;
-		}
-	}
-	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
-	{
-		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
-		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
-		array <IEntity> FoundTags = new array <IEntity>();
-		inv.FindItems(FoundTags, TagPred);
-		if(FoundTags.Count() > 0)
+		if(SetupTaskEntity())
 		{
 			return true;
-		}
-		return false;			
-	};
-	override bool CompleteTask(IEntity Assignee)
-	{
-		InventoryStorageManagerComponent Assigneeinv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
-		InventoryStorageManagerComponent Ownerinv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
-		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
-		array <IEntity> FoundTags = new array <IEntity>();
-		Assigneeinv.FindItems(FoundTags, TagPred);
-		if(FoundTags.Count() > 0)
-		{
-			if(GiveReward(Assignee))
-			{
-				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
-				InventoryItemComponent pInvComp = InventoryItemComponent.Cast(FoundTags[0].FindComponent(InventoryItemComponent));
-				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
-				inv.TryRemoveItemFromStorage(FoundTags[0],parentSlot.GetStorage());
-				Ownerinv.TryInsertItem(FoundTags[0]);
-				return true;
-			}
 		}
 		return false;
 	};
+	
 };
 class SP_NamedTagPredicate : InventorySearchPredicate
 {
