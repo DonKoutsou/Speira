@@ -36,7 +36,7 @@ class SCR_AIPerformLightAction : AITaskScripted
 			}
 			else if(ChimeraCharacter.Cast(targetEntity))
 			{
-				userActionString = "SP_AILootBodyAction";
+				userActionString = "SP_AIStab";
 			}
 	
 			IEntity controlledEntity = owner.GetControlledEntity();

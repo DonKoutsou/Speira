@@ -177,3 +177,7 @@ class SP_RequestManagerComponent : ScriptComponent
 		
 	}
 };
+modded enum EWeaponType
+{
+	WT_KNIFE
+}
