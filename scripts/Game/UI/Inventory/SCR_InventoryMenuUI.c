@@ -1481,7 +1481,6 @@ class SCR_InventoryMenuUI : ChimeraMenuBase
 			if(bounty)
 			{
 				bounty.GetInfo(cname, tname, loc);
-				SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(target.FindComponent(SCR_CharacterIdentityComponent));
 				mydesc = string.Format("Target is %1, located on %2", tname, loc);
 			}
 		}

@@ -6,6 +6,9 @@ class SP_RequestManagerComponent : ScriptComponent
 	[Attribute()]
 	float m_fTaskGenTime;
 	
+	[Attribute(defvalue: "20")]
+	int m_iMinTaskAmount;
+	
 	[Attribute(defvalue: "3", desc: "Max amount of tasks a character can be requesting at the same time")]
 	int m_fTaskPerCharacter;
 	
@@ -91,14 +94,18 @@ class SP_RequestManagerComponent : ScriptComponent
 					Channel = Diag.m_ChatChannelUS;
 				break;
 				case "RENEGADE":
+					{
 					return false;
+					}
 				break;
 			}
+			if (TaskMap.Count() > m_iMinTaskAmount)
+			{
+				Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
+			}
 			TaskMap.Insert(Task);
-			Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
 			return true;
 		}
-		delete Task;
 		return false;
 	}
 	void GetCharTasks(IEntity Char,out array<ref SP_Task> tasks)
@@ -135,7 +142,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	    {
 			if (TaskMap[i].GetState() == ETaskState.FAILED || TaskMap[i].GetState() == ETaskState.COMPLETED) 
 			{
-				TaskMap.Remove(i);
+				TaskMap.Remove(TaskMap.Find(TaskMap[i]));
 				c--;
 				continue;
 			}
@@ -152,6 +159,21 @@ class SP_RequestManagerComponent : ScriptComponent
 	}
 	override void EOnFrame(IEntity owner, float timeSlice)
 	{
+		if (TaskMap.Count() < m_iMinTaskAmount)
+		{
+			int index = Math.RandomInt(0, 2);
+			typename Task;
+			if(index == 0)
+			{
+				Task = SP_DeliverTask;
+			}
+			if(index == 1)
+			{
+				Task = SP_BountyTask;
+			}
+			CreateTask(Task);
+			return;
+		}
 		m_fTaskRespawnTimer += timeSlice;
 		if(m_fTaskRespawnTimer > m_fTaskGenTime)
 		{
@@ -174,8 +196,11 @@ class SP_RequestManagerComponent : ScriptComponent
 				m_fTaskRespawnTimer -= 1;
 			}
 		}
-		
 	}
+	void ~SP_RequestManagerComponent()
+	{
+		TaskMap.Clear();
+	};
 };
 modded enum EWeaponType
 {

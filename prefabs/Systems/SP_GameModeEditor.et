@@ -3280,7 +3280,8 @@ SCR_GameModeEditor {
   SP_PlayerPenaltyComponent "{5D7D20460DC7AD30}" {
   }
   SP_RequestManagerComponent "{5DB3077B503444F6}" {
-   m_fTaskGenTime 10
+   m_fTaskGenTime 300
+   m_iMinTaskAmount 200
   }
   RplComponent "{5D685A535B29A270}" {
    "Rpl State Override" None

@@ -7,7 +7,7 @@ class SP_DeliverTask: SP_Task
 	}
 	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
-		if(!TaskOwner || !TaskTarget)
+		if (!TaskOwner || !TaskTarget)
 		{
 			return;
 		}
@@ -21,86 +21,14 @@ class SP_DeliverTask: SP_Task
 		OLoc = Director.GetCharacterLocation(TaskOwner);
 		DLoc = Director.GetCharacterLocation(TaskTarget);
 	};
- 	override bool Init()
+	override bool SetupTaskEntity()
 	{
-		if(!TaskOwner && !TaskTarget)
-		{
-			int dirindex = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
-			SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();
-			FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
-			string keyunused;
-			Faction Fact = MyDirector.GetMajorityHolder(keyunused);
-			if(!Fact)
-			{
-				return false;
-			}
-			FactionKey key = Fact.GetFactionKey();
-			SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-			MyDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
-			IEntity Character;
-			IEntity CharToDeliverTo;
-			if(MyDirector.GetRandomUnitByFKey(key, Character) == false)
-			{
-				return false;
-			}
-			while(!Character)
-			{
-				MyDirector.GetRandomUnitByFKey(key, Character);
-			}
-			SP_AIDirector NewDir;
-			if(MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDir) == false)
-			{
-				return false;
-			}
-			while(MyDirector == NewDir || !NewDir)
-			{
-				MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDir);
-			}
-			if(NewDir.GetRandomUnitByFKey(key, CharToDeliverTo) == false)
-			{
-				return false;
-			}
-			while(!CharToDeliverTo)
-			{
-				NewDir.GetRandomUnitByFKey(key, CharToDeliverTo);
-			}
-			SetInfo(Character, CharToDeliverTo);
-			string OName;
-			string DName;
-			string OLoc;
-			string DLoc;
-			GetInfo(OName, DName, OLoc, DLoc);
-			if(OName == " " || DName == " " || DLoc == " " || OLoc == " ")
-			{
-				return false;
-			}
-			EntitySpawnParams params = EntitySpawnParams();
-			params.TransformMode = ETransformMode.WORLD;
-			params.Transform[3] = vector.Zero;
-			Resource res = Resource.Load("{057AEFF961B81816}prefabs/Items/Package.et");
-			if (res)
-			{
-				Package = GetGame().SpawnEntityPrefab(res, GetGame().GetWorld(), params);
-				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Character.FindComponent(InventoryStorageManagerComponent));
-				if(inv.TryInsertItem(Package) == false)
-				{
-					delete Package;
-					return false;
-				}
-			}
-			SP_PackageComponent PComp = SP_PackageComponent.Cast(Package.FindComponent(SP_PackageComponent));
-			PComp.SetInfo(OName, DName, DLoc);
-			TaskDesc = string.Format("Deliver package received from %1, to %2. %2 is located on %3", OName, DName, DLoc);
-			TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3", DName, DLoc, OLoc);
-			e_State = ETaskState.UNASSIGNED;
-			return true;
-		}
 		string OName;
 		string DName;
 		string DLoc;
 		string OLoc;
 		GetInfo(OName, DName,OLoc, DLoc);
-		if(OName == " " || DName == " " || DLoc == " ")
+		if (OName == " " || DName == " " || DLoc == " ")
 		{
 			return false;
 		}
@@ -112,19 +40,19 @@ class SP_DeliverTask: SP_Task
 		{
 			Package = GetGame().SpawnEntityPrefab(res, GetGame().GetWorld(), params);
 			InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
-			if(inv.TryInsertItem(Package) == false)
+			if (inv.TryInsertItem(Package) == false)
 			{
 				delete Package;
 				return false;
 			}
 		}
-		SP_BountyComponent BComp = SP_BountyComponent.Cast(Package.FindComponent(SP_BountyComponent));
-		BComp.SetInfo(OName, DName, DLoc);
+		SP_PackageComponent PComp = SP_PackageComponent.Cast(Package.FindComponent(SP_PackageComponent));
+		PComp.SetInfo(OName, DName, DLoc);
 		TaskDesc = string.Format("Deliver package received from %1, to %2. %2 is located on %3", OName, DName, DLoc);
-		TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3", DName, DLoc, OLoc);
+		TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3. Reward is %4", DName, DLoc, OLoc, m_iRewardAmount);
 		e_State = ETaskState.UNASSIGNED;
 		return true;
-	};
+	}
 	override void UpdateState()
 	{
 		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskTarget.FindComponent(InventoryStorageManagerComponent));
@@ -132,11 +60,11 @@ class SP_DeliverTask: SP_Task
 		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterName(TaskTarget));
 		array <IEntity> FoundPackages = new array <IEntity>();
 		inv.FindItems(FoundPackages, PackPred);
-		if(FoundPackages.Count() > 0)
+		if (FoundPackages.Count() > 0)
 		{
 			foreach (IEntity MyPackage : FoundPackages)
 			{
-				if(MyPackage == Package)
+				if (MyPackage == Package)
 				{
 					e_State = ETaskState.COMPLETED;
 					return;
@@ -144,7 +72,7 @@ class SP_DeliverTask: SP_Task
 			}
 		}
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
-		if(DmgComp.IsDestroyed())
+		if (DmgComp.IsDestroyed())
 		{
 			e_State = ETaskState.FAILED;
 			return;
@@ -152,7 +80,7 @@ class SP_DeliverTask: SP_Task
 	}
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
-		if(TalkingChar != TaskTarget)
+		if (TalkingChar != TaskTarget)
 		{
 			return false;
 		}
@@ -161,11 +89,11 @@ class SP_DeliverTask: SP_Task
 		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterRankName(TalkingChar) + " " + Diag.GetCharacterName(TalkingChar));
 		array <IEntity> FoundPackages = new array <IEntity>();
 		inv.FindItems(FoundPackages, PackPred);
-		if(FoundPackages.Count() > 0)
+		if (FoundPackages.Count() > 0)
 		{
 			for (int i, count = FoundPackages.Count(); i < count; i++)
 			{
-				if(FoundPackages[i] == Package)
+				if (FoundPackages[i] == Package)
 				{
 					return true;
 				}
@@ -181,9 +109,9 @@ class SP_DeliverTask: SP_Task
 		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
 		array <IEntity> FoundPackages = new array <IEntity>();
 		Assigneeinv.FindItems(FoundPackages, PackPred);
-		if(FoundPackages.Count() > 0)
+		if (FoundPackages.Count() > 0)
 		{
-			if(GiveReward(Assignee))
+			if (GiveReward(Assignee))
 			{
 				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
 				InventoryItemComponent pInvComp = InventoryItemComponent.Cast(FoundPackages[0].FindComponent(InventoryItemComponent));
@@ -195,7 +123,50 @@ class SP_DeliverTask: SP_Task
 		}
 		return false;
 	};
-
+	override bool Init()
+	{
+		m_iRewardAmount = Math.RandomInt(5, 15);
+		if (!TaskOwner && !TaskTarget)
+		{
+			int dirindex = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
+			SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();
+			FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
+			string keyunused;
+			Faction Fact = MyDirector.GetMajorityHolder(keyunused);
+			if (!Fact)
+			{
+				return false;
+			}
+			FactionKey key = Fact.GetFactionKey();
+			SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
+			MyDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
+			IEntity Character;
+			IEntity CharToDeliverTo;
+			if (!MyDirector.GetRandomUnitByFKey(key, Character))
+			{
+				return false;
+			}
+			SP_AIDirector NewDir;
+			if (!MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDir))
+			{
+				return false;
+			}
+			if (!NewDir.GetRandomUnitByFKey(key, CharToDeliverTo))
+			{
+				return false;
+			}
+			if (!Character || !CharToDeliverTo)
+			{
+				return false;
+			}
+			SetInfo(Character, CharToDeliverTo);
+		}
+		if (SetupTaskEntity())
+		{
+			return true;
+		}
+		return false;
+	};
 };
 class SP_PackagePredicate : InventorySearchPredicate
 {
@@ -209,13 +180,13 @@ class SP_PackagePredicate : InventorySearchPredicate
 	{
 		SP_PackageComponent PackageComp = SP_PackageComponent.Cast(item.FindComponent(SP_PackageComponent));
 		
-		if(PackageComp)
+		if (PackageComp)
 		{
 			string oname;
 			string tname;
 			string loc;
 			PackageComp.GetInfo(oname, tname, loc);
-			if(m_TargetName == tname)
+			if (m_TargetName == tname)
 			{
 				return true;
 			}

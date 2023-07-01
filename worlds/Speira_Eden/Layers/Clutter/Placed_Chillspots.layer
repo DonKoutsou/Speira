@@ -1,0 +1,88 @@
+$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ {
+  coords 5503.66 94.813 6042.548
+  angleY 0
+ }
+ {
+  coords 5677.198 91.676 5879.247
+  angleY 0
+ }
+ {
+  coords 6620.776 109.657 5883.886
+  angleY 0
+ }
+ {
+  coords 7080.843 119.115 6033.815
+  angleY 0
+ }
+ {
+  coords 7493.764 137.177 4740.193
+  angleX -1.51
+  angleY -25.634
+  angleZ -0.697
+ }
+ {
+  coords 6925.528 59.6 4488.491
+  angleX -0.021
+  angleY -25.652
+  angleZ -1.352
+ }
+ {
+  coords 6602.089 151.282 7113.786
+  angleX -0.021
+  angleY -25.652
+  angleZ -1.352
+ }
+ {
+  coords 7038.414 98.143 8379.967
+  angleX 2.826
+  angleY -25.682
+  angleZ 0.604
+ }
+ {
+  coords 7098.498 57.071 8144.461
+  angleX -3.78
+  angleY -25.778
+  angleZ 1.709
+ }
+ {
+  coords 4911.899 36.023 9097.107
+  angleX -3.78
+  angleY -25.778
+  angleZ 1.709
+ }
+ {
+  coords 4501.431 13.952 9476.9
+  angleX 1.478
+  angleY -25.621
+  angleZ -0.435
+ }
+ {
+  coords 4552.215 15.938 10480.512
+  angleY -25.767
+ }
+ {
+  coords 4435.731 5.802 11175.243
+  angleY -25.767
+ }
+ {
+  coords 7209.119 136.913 2292.307
+  angleY -25.767
+ }
+ {
+  coords 8241.6 223.126 2163.447
+  angleY -25.767
+ }
+ {
+  coords 9963.177 2.532 1555.174
+  angleY -25.767
+ }
+ {
+  coords 9729.119 10.452 1535.495
+  angleY -25.767
+ }
+ {
+  coords 9357.713 204.366 1163.086
+  angleY -25.767
+ }
+}

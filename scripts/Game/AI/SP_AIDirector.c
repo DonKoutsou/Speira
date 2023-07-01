@@ -70,7 +70,7 @@ class SP_AIDirector : AIGroup
 	private AIWaypoint ComWaypoint;
 	protected IEntity m_CommanderEnt;
 	protected SP_DialogueComponent DiagComp;
-	
+	protected float m_fCombatCheckTimer;
 	string GetLocationName ()
 	{
 		return m_sLocationName;
@@ -414,8 +414,9 @@ class SP_AIDirector : AIGroup
 			AllDirectors = new ref array<SP_AIDirector>();
 		
 		AllDirectors.Insert(this);
+		m_fCombatCheckTimer = 100;
 		m_SpawnedCounter = 0;
-		m_RespawnPeriod = 0;
+		m_RespawnPeriod = Math.RandomInt(0.1, 10);
 		m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
 		// get first children, it should be WP
 		vector position = GetOrigin();
@@ -434,14 +435,14 @@ class SP_AIDirector : AIGroup
 			return;
 		}
 		GetGame().GetWorldEntity().GetWorldBounds(mins, maxs);
-			
+		
 		m_iGridSizeX = maxs[0]/3;
 		m_iGridSizeY = maxs[2]/3;
 	 
 		SCR_EditableEntityCore core = SCR_EditableEntityCore.Cast(SCR_EditableEntityCore.GetInstance(SCR_EditableEntityCore));
 		vector posPlayer = this.GetOrigin();
 			
-		SCR_EditableEntityComponent nearest = core.FindNearestEntity(posPlayer, EEditableEntityType.COMMENT, EEditableEntityFlag.LOCAL);
+		SCR_EditableEntityComponent nearest = core.FindNearestEntity(posPlayer, EEditableEntityType.COMMENT);
 		GenericEntity nearestLocation = nearest.GetOwner();
 		SCR_MapDescriptorComponent mapDescr = SCR_MapDescriptorComponent.Cast(nearestLocation.FindComponent(SCR_MapDescriptorComponent));
 		string closestLocationName;
@@ -489,15 +490,34 @@ class SP_AIDirector : AIGroup
 		int playerGridID = GetGridIndex(playerGridPositionX,playerGridPositionY);
 	 	m_sLocationName = m_WorldDirections.GetQuadHint(playerGridID) + ", " + closestLocationName;
 	}
-	
+	bool CheckForCombat()
+	{
+		array<AIAgent> agents = new array<AIAgent>();
+		m_aGroups.GetRandomElement().GetAgents(agents);
+		for (int i = agents.Count() - 1; i >= 0; i--)
+		{
+			int count = agents[i].GetDangerEventsCount();
+			if(count > 0)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 	override void EOnFrame(IEntity owner, float timeSlice)
 	{
 		super.EOnFrame(owner, timeSlice);
 
 		if (!m_SpawnAI)
 			return;
-
-
+		/*
+		if(m_fCombatCheckTimer <= 0.0)
+		{
+			CheckForCombat();
+			m_fCombatCheckTimer = 100 + Math.RandomInt(0.1, 20);
+		}
+		m_fCombatCheckTimer -= timeSlice;
+		*/
 		if (m_Respawn)
 		{
 			if (GetAgentsCount() < m_MaxAgentsToSpawn)
@@ -506,8 +526,9 @@ class SP_AIDirector : AIGroup
 				{
 					if (Spawn())
 					{
-						m_RespawnPeriod = m_RespawnTimer;
+						m_RespawnPeriod = m_RespawnTimer + Math.RandomInt(0.1, m_RespawnTimer);
 					}
+					
 				}
 				else
 				{
@@ -524,64 +545,13 @@ class SP_AIDirector : AIGroup
 					commanderspawned = false;
 					if (Spawn())
 					{
-						m_CommanderRespawnPeriod = m_CommanderRespawnTimer;
+						m_CommanderRespawnPeriod = m_CommanderRespawnTimer + Math.RandomInt(0.1, m_RespawnTimer);
 					}
 				}
 				else
 					m_CommanderRespawnPeriod -= timeSlice;
 			}
 		}
-	}
-	bool SpawnDelivery(ResourceName Name)
-	{
-		RandomGenerator rand = new RandomGenerator();
-		
-		vector position = GetOrigin();
-		float yOcean = GetWorld().GetOceanBaseHeight();
-		
-		position[1] = yOcean - 1; // force at least one iteration
-		while (position[1] < yOcean)
-		{
-			position[0] = position[0] + rand.RandFloatXY(-m_Radius, m_Radius);
-			position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
-			position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
-		}
-
-		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
-		spawnMatrix[3] = position;
-		EntitySpawnParams spawnParams = EntitySpawnParams();
-		spawnParams.TransformMode = ETransformMode.WORLD;
-		spawnParams.Transform = spawnMatrix;
-
-		Resource res = Resource.Load(Name);
-		IEntity newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
-		if (!newEnt)
-			return false;
-		
-		FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(newEnt.FindComponent(FactionAffiliationComponent));
-		string faction = factcomp.GetAffiliatedFaction().GetFactionName();
-		if (newEnt.GetPhysics())
-			newEnt.GetPhysics().SetActive(ActiveState.ACTIVE);
-			
-		OnDelSpawn(newEnt);
-		if (newEnt)
-		{
-			AIAgent agent = AIAgent.Cast(newEnt);
-			if (agent)
-			{
-				AddAgent(agent);
-				//SetNewLeader(agent);
-			}
-			else
-			{
-				AIControlComponent comp = AIControlComponent.Cast(newEnt.FindComponent(AIControlComponent));
-				if (comp && comp.GetControlAIAgent())
-				{
-					AddAgent(comp.GetControlAIAgent());
-				}
-			}
-		}
-		return true;
 	}
 	bool Spawn()
 	{
@@ -721,18 +691,4 @@ class SP_AIDirector : AIGroup
 				group.AddWaypoint(ComWaypoint);
 		}
 	}
-	event void OnDelSpawn(IEntity spawned)
-	{
-		FactionAffiliationComponent FactAf = FactionAffiliationComponent.Cast(spawned.FindComponent(FactionAffiliationComponent));
-		SP_AIDirector Dir = SP_AIDirector.AllDirectors.GetRandomElement();
-		Dir.GetDirectorOccupiedBy(FactAf.GetAffiliatedFaction().GetFactionKey(), Dir);
-		SCR_AIGroup group = SCR_AIGroup.Cast(spawned);
-		if (group)
-		{
-			Dir.m_aGroups.Insert(group);
-			if (Dir.DefWaypoint)
-				group.AddWaypoint(DefWaypoint);
-		}
-	}
-
 };

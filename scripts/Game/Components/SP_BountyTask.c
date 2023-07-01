@@ -12,7 +12,7 @@ class SP_BountyTask: SP_Task
 	//Takes owner and target of task and spits out their info
 	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
-		if(!TaskOwner || !TaskTarget)
+		if (!TaskOwner || !TaskTarget)
 		{
 			return;
 		}
@@ -31,17 +31,17 @@ class SP_BountyTask: SP_Task
 	{
 		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
 		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
-		if(OwnerDmgComp.IsDestroyed() && !OwnerDmgComp.IsDestroyed())
+		if (OwnerDmgComp.IsDestroyed() && !OwnerDmgComp.IsDestroyed())
 		{
 			e_State = ETaskState.FAILED;
 			return;
 		}
-		if(!OwnerDmgComp.IsDestroyed() && OwnerDmgComp.IsDestroyed())
+		if (!OwnerDmgComp.IsDestroyed() && OwnerDmgComp.IsDestroyed())
 		{
 			e_State = ETaskState.COMPLETED;
 			return;
 		}
-		if(OwnerDmgComp.IsDestroyed())
+		if (OwnerDmgComp.IsDestroyed())
 		{
 			e_State = ETaskState.FAILED;
 			return;
@@ -55,7 +55,7 @@ class SP_BountyTask: SP_Task
 		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
 		array <IEntity> FoundTags = new array <IEntity>();
 		inv.FindItems(FoundTags, TagPred);
-		if(FoundTags.Count() > 0)
+		if (FoundTags.Count() > 0)
 		{
 			return true;
 		}
@@ -70,9 +70,9 @@ class SP_BountyTask: SP_Task
 		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
 		array <IEntity> FoundTags = new array <IEntity>();
 		Assigneeinv.FindItems(FoundTags, TagPred);
-		if(FoundTags.Count() > 0)
+		if (FoundTags.Count() > 0)
 		{
-			if(GiveReward(Assignee))
+			if (GiveReward(Assignee))
 			{
 				InventoryItemComponent pInvComp = InventoryItemComponent.Cast(FoundTags[0].FindComponent(InventoryItemComponent));
 				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
@@ -85,14 +85,14 @@ class SP_BountyTask: SP_Task
 	};
 	override bool SetupTaskEntity()
 	{
-		if(TaskOwner && TaskTarget)
+		if (TaskOwner && TaskTarget)
 		{
 			string OName;
 			string DName;
 			string DLoc;
 			string OLoc;
 			GetInfo(OName, DName, DLoc, OLoc);
-			if(OName == " " || DName == " " || DLoc == " " || OLoc == " ")
+			if (OName == " " || DName == " " || DLoc == " " || OLoc == " ")
 			{
 				return false;
 			}
@@ -104,7 +104,7 @@ class SP_BountyTask: SP_Task
 			{
 				Bounty = GetGame().SpawnEntityPrefab(res, GetGame().GetWorld(), params);
 				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
-				if(inv.TryInsertItem(Bounty) == false)
+				if (inv.TryInsertItem(Bounty) == false)
 				{
 					delete Bounty;
 					return false;
@@ -113,7 +113,7 @@ class SP_BountyTask: SP_Task
 			SP_BountyComponent BComp = SP_BountyComponent.Cast(Bounty.FindComponent(SP_BountyComponent));
 			BComp.SetInfo(OName, DName, DLoc);
 			TaskDesc = string.Format("%1 has put a bounty on %2's head.", OName, DName);
-			TaskDiag = string.Format("I've put a bounty on %1's head, last i heard he was located on %2, get me his dogtags and i'll make it worth your while. Come back to find me on %3", DName, DLoc, OLoc);
+			TaskDiag = string.Format("I've put a bounty on %1's head, last i heard he was located on %2, get me his dogtags and i'll make it worth your while. Come back to find me on %3. Reward is %4 watches", DName, DLoc, OLoc, m_iRewardAmount);
 			e_State = ETaskState.UNASSIGNED;
 			return true;
 		}
@@ -121,17 +121,18 @@ class SP_BountyTask: SP_Task
 	};
 	override bool Init()
 	{
-		if(!TaskOwner && !TaskTarget)
+		m_iRewardAmount = Math.RandomInt(10, 20);
+		if (!TaskOwner && !TaskTarget)
 		{
 			SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();
-			if(!MyDirector)
+			if (!MyDirector)
 			{
 				return false;
 			}
 			FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
 			string keyunused;
 			Faction Fact = MyDirector.GetMajorityHolder(keyunused);
-			if(!Fact)
+			if (!Fact)
 			{
 				return false;
 			}
@@ -140,32 +141,32 @@ class SP_BountyTask: SP_Task
 			MyDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
 			IEntity Character;
 			IEntity CharToDeliverTo;
-			if(!MyDirector.GetRandomUnitByFKey(key, Character))
+			if (!MyDirector.GetRandomUnitByFKey(key, Character))
 			{
 				return false;
 			}
 			SP_AIDirector NewDir;
-			if(!MyDirector.GetDirectorOccupiedByEnemy(myfact, NewDir))
+			if (!MyDirector.GetDirectorOccupiedByEnemy(myfact, NewDir))
 			{
 				return false;
 			}
 			Faction EnFact = NewDir.GetMajorityHolder(keyunused);
-			if(!EnFact)
+			if (!EnFact)
 			{
 				return false;
 			}
 			FactionKey Enkey = EnFact.GetFactionKey();
-			if(!NewDir.GetRandomUnitByFKey(Enkey, CharToDeliverTo))
+			if (!NewDir.GetRandomUnitByFKey(Enkey, CharToDeliverTo))
 			{
 				return false;
 			}
-			while(!CharToDeliverTo)
+			if (!Character || !CharToDeliverTo)
 			{
-				NewDir.GetRandomUnitByFKey(Enkey, CharToDeliverTo);
+				return false;
 			}
 			SetInfo(Character, CharToDeliverTo);
 		}
-		if(SetupTaskEntity())
+		if (SetupTaskEntity())
 		{
 			return true;
 		}
@@ -184,11 +185,11 @@ class SP_NamedTagPredicate : InventorySearchPredicate
 	override protected bool IsMatch(BaseInventoryStorageComponent storage, IEntity item, array<GenericComponent> queriedComponents, array<BaseItemAttributeData> queriedAttributes)
 	{
 		DogTagEntity tag = DogTagEntity.Cast(item);
-		if(tag)
+		if (tag)
 		{
 			string TagOwnerName;
 			tag.GetCname(TagOwnerName);
-			if(TagOwnerName == m_OwnerName)
+			if (TagOwnerName == m_OwnerName)
 			{
 				return true;
 			}

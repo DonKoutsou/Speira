@@ -1,0 +1,174 @@
+$grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_HostileArea.et" {
+ {
+  components {
+   MeshObject "{5D42AA2A86C391EF}" {
+   }
+  }
+  coords 6533.872 226.98 7861.605
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  components {
+   MeshObject "{5D42AA2A86C391EF}" {
+   }
+  }
+  coords 10159.042 54.595 1710.266
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  coords 8285.609 232.894 4734.544
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  coords 7184.314 137.197 2366.104
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  coords 5627.584 14.771 4803.069
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  components {
+   MeshObject "{5D42AA2A86C391EF}" {
+   }
+  }
+  coords 4737.988 226.98 10303.063
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  components {
+   MeshObject "{5D42AA2A86C391EF}" {
+   }
+  }
+  coords 3465.32 226.98 7236.287
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+ {
+  components {
+   MeshObject "{5D42AA2A86C391EF}" {
+   }
+  }
+  coords 2682.829 226.98 4634.395
+  scale 77.021
+  m_aIncludedEditableEntityLabels {
+   70
+  }
+  m_aExcludedEditableEntityLabels + {
+   71
+  }
+  m_FactionsToApear + {
+   "US" "USSR" "FIA"
+  }
+  m_MaxAgentsToSpawn 8
+  m_Radius 1500
+  m_RespawnTimer 10
+  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
+  m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
+  }
+ }
+}

@@ -4,9 +4,10 @@ class SP_Task: ScriptAndConfig
 	IEntity TaskTarget;
 	string TaskDesc;
 	string TaskDiag;
+	int m_iRewardAmount = 20;
 	protected ETaskState e_State = ETaskState.EMPTY;
 	ref array <IEntity> a_TaskAssigned = new ref array <IEntity>();
-	
+
 	bool Init(){};
 	ETaskState GetState()
 	{
@@ -93,7 +94,8 @@ class SP_Task: ScriptAndConfig
 		if (res)
 		{
 				array<IEntity> Reward = new array<IEntity>();
-				for (int j = 0; j < 10; j++)
+				int Movedamount;
+				for (int j = 0; j < m_iRewardAmount; j++)
 					Reward.Insert(GetGame().SpawnEntityPrefab(res, Target.GetWorld(), params));
 				for (int i, count = Reward.Count(); i < count; i++)
 				{
@@ -101,7 +103,10 @@ class SP_Task: ScriptAndConfig
 					{
 						return false;
 					}
+					Movedamount += 1;
 				}
+				SP_DialogueComponent dialogue = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+				dialogue.DoAnouncerDialogue(Movedamount.ToString() + " " + "watches added to your wallet");
 				return true;
 		}
 		return false;

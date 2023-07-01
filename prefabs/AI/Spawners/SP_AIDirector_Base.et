@@ -13,6 +13,12 @@ SP_AIDirector {
      AssignedMaterial "{E2BEBD274C90E383}Assets/Editor/CompositionSlot/Data/Director_Slot_FlatLarge_01.emat"
     }
    }
+   CastShadow 0
+   CastFarShadow 0
+   PixelSizeFilter 0
+   RainOccluder 0
+   WetnessOccluder 0
+   ReceiveLight 0
   }
   RplComponent "{5D42AA2A86C39139}" {
   }
@@ -20,6 +26,5 @@ SP_AIDirector {
  coords 117.143 1.001 247.895
  DangerEventRange 1000
  m_Respawn 0
- m_RenegadeRespawn 0
  m_SpawnAI 0
 }

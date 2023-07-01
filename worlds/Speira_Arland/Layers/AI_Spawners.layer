@@ -12,7 +12,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "FIA"
   }
-  m_MaxAgentsToSpawn 3
+  m_MaxAgentsToSpawn 2
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FD475B9A}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -38,7 +38,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "FIA"
   }
-  m_MaxAgentsToSpawn 3
+  m_MaxAgentsToSpawn 2
   m_Radius 200
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B296509D3A}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -171,6 +171,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear {
    "USSR"
   }
+  m_MaxAgentsToSpawn 3
   m_CommanderRespawn 1
   m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28E050942}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -275,6 +276,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear {
    "USSR"
   }
+  m_MaxAgentsToSpawn 3
   m_Radius 20
   m_CommanderRespawn 1
   m_RespawnTimer 300
@@ -372,6 +374,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_aIncludedEditableEntityLabels {
    70
   }
+  m_MaxAgentsToSpawn 2
   m_Radius 100
   m_pDefaultWaypoint "{9468A0EEBC5A74B9}prefabs/AI/Waypoints/AIWaypoint_Defend_Huge.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FF522C50}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
@@ -404,7 +407,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
 }
 SP_AIDirector : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
  coords 3757.467 2.991 2672.004
- m_MaxAgentsToSpawn 4
  m_Radius 50
  m_WorldDirections SCR_MapLocationQuadHint "{5D7AF081DB19A37A}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
  }
@@ -437,6 +439,7 @@ $grp SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et
   m_FactionsToApear {
    "RENEGADE"
   }
+  m_MaxAgentsToSpawn 4
   m_Radius 2000
   m_CommanderRespawn 0
   m_RespawnTimer 300
