@@ -26,6 +26,8 @@ SCR_GameModeEditor {
    m_aEntityCatalogs {
     SCR_EntityCatalog "{5DC497356E4D2318}" : "{C8568AE52B2C8E1F}Configs/Requests/Requests.conf" {
     }
+    SCR_EntityCatalog "{5DC51B5DAC4573CC}" : "{251BB14ECEF73562}Configs/Requests/Rewards.conf" {
+    }
    }
   }
   SCR_GameModeHealthSettings "{5D685A535B2AB655}" {
@@ -3262,11 +3264,6 @@ SCR_GameModeEditor {
    m_iForcedLoadout 0
    m_bOverrideGameOverType 1
    m_eOverriddenGameOverType DEATH
-   m_BanditStorageWorldPosition 6453.756 9.653 7031.644
-   m_RespawnWorldPositionBandit 6457.077 9.653 7030.698
-   m_StoragePreset "{102E176F082035F8}prefabs/Props/Furniture/Chest_Storage_Respawn.et"
-   m_SpawnpointSPEIRA "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et"
-   m_SpawnpointBandit "{AA99FB47F0760415}prefabs/MP/Spawning/SpawnPoint_Bandits.et"
    m_iLives 1
   }
   SP_PlayerPenaltyComponent "{5D7D20460DC7AD30}" {

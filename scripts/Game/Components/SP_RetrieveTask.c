@@ -114,7 +114,7 @@ class SP_RetrieveTask: SP_Task
 //-----------------------------------------------------------------------------//
 	override bool Init()
 	{
-		m_iRewardAmount = Math.RandomInt(2, 4);
+		super.Init();
 		m_iRequestedAmount = Math.RandomInt(1, 10);
 		if (!TaskOwner)
 		{
@@ -214,28 +214,14 @@ class SP_RetrieveTask: SP_Task
 				EquipedLoadoutStorageComponent loadoutStorage = EquipedLoadoutStorageComponent.Cast(TaskOwner.FindComponent(EquipedLoadoutStorageComponent));
 				if (!loadoutStorage)
 					return false;
-				
+
 				IEntity Helmet = loadoutStorage.GetClothFromArea(LoadoutHeadCoverArea);
-				if (!Helmet)
+				if (Helmet)
 				{
-					return false;
+					SCR_InventoryStorageManagerComponent storeman = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
+					storeman.TryRemoveItemFromInventory(Helmet);
+					delete Helmet;
 				}
-				EntityPrefabData prefabData = Helmet.GetPrefabData();
-				ResourceName prefabName = prefabData.GetPrefabName();
-				SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
-				SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REQUEST);
-				SCR_EntityCatalogEntry entry = RequestCatalog.GetEntryWithPrefab(prefabName);
-				if(!entry)
-				{
-					return false;
-				}
-				SCR_InventoryStorageManagerComponent storeman = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
-				if (!storeman)
-				{
-					return false;
-				}
-				storeman.TryRemoveItemFromInventory(Helmet);
-				delete Helmet;
 				m_requestitemtype = SCR_EArsenalItemType.HEADWEAR;
 				m_requestitemmode = SCR_EArsenalItemMode.ATTACHMENT;
 				m_iRequestedAmount = 1;
@@ -342,4 +328,8 @@ class SP_RequestPredicate : InventorySearchPredicate
 		return false;
 	}
 	//-----------------------------------------------------------------------------//
+};
+modded enum EEditableEntityLabel
+{
+	ITEMTYPE_CURRENCY = 85,
 }

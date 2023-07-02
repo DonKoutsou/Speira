@@ -94,5 +94,6 @@ class SP_ItemBountyComponent : SP_UnretrievableComponent
 };
 modded enum EEntityCatalogType
 {
-	REQUEST 						= 1000
+	REQUEST 						= 1000,
+	REWARD							= 1200
 }

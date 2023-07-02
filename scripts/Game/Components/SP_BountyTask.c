@@ -127,7 +127,7 @@ class SP_BountyTask: SP_Task
 	};
 	override bool Init()
 	{
-		m_iRewardAmount = Math.RandomInt(10, 20);
+		super.Init();
 		if (!TaskOwner && !TaskTarget)
 		{
 			SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();

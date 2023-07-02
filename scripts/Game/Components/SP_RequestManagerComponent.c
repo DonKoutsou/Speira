@@ -221,7 +221,8 @@ modded enum SCR_EArsenalItemType
 	RADIO = 262800,
 	COMPASS = 263000,
 	FLASHLIGHT = 263500,
-	MAP = 270000
+	MAP = 270000,
+	CURRENCY = 280000,
 };
 modded enum SCR_EArsenalItemMode
 {

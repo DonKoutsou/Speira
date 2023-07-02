@@ -1,18 +1,37 @@
 class SP_Task: ScriptAndConfig
 {
+	//-------------------------------------------------//
+	//Character wich created the task
 	IEntity TaskOwner;
+	//-------------------------------------------------//
+	//Target of the task (kill task, deliver task etc... not necesarry on retrieve task)
 	IEntity TaskTarget;
+	//-------------------------------------------------//
 	string TaskDesc;
+	//-------------------------------------------------//
 	string TaskDiag;
-	int m_iRewardAmount = 20;
+	//-------------------------------------------------//
+	Resource reward;
+	//-------------------------------------------------//
+	int m_iRewardAmount;
+	//-------------------------------------------------//
 	protected ETaskState e_State = ETaskState.EMPTY;
+	//-------------------------------------------------//
+	//Characters assigned to this task
 	ref array <IEntity> a_TaskAssigned = new ref array <IEntity>();
+	//-------------------------------------------------//
 
-	bool Init(){};
+	bool Init()
+	{
+		CalculateReward();
+		return true;
+	};
+	
 	ETaskState GetState()
 	{
 		return e_State;
 	}
+	
 	void SetInfo(IEntity Owner, IEntity Target)
 	{
 		TaskOwner = Owner;
@@ -84,31 +103,39 @@ class SP_Task: ScriptAndConfig
 	bool CompleteTask(IEntity Assignee)
 	{
 	};
+	void CalculateReward()
+	{
+		m_iRewardAmount = Math.RandomInt(2, 4);
+		SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
+		SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REWARD);
+		array<SCR_EntityCatalogEntry> Mylist = new array<SCR_EntityCatalogEntry>();
+		RequestCatalog.GetEntityListWithLabel(EEditableEntityLabel.ITEMTYPE_CURRENCY, Mylist);
+		reward = Resource.Load(Mylist.GetRandomElement().GetPrefab());
+	};
 	bool GiveReward(IEntity Target)
 	{
-		InventoryStorageManagerComponent TargetInv = InventoryStorageManagerComponent.Cast(Target.FindComponent(InventoryStorageManagerComponent));
-		EntitySpawnParams params = EntitySpawnParams();
-		params.TransformMode = ETransformMode.WORLD;
-		params.Transform[3] = vector.Zero;
-		Resource res = Resource.Load("{6E932B6B724F4AE7}prefabs/Currency/Watch_Currency.et");
-		if (res)
+		if (reward)
 		{
-				array<IEntity> Reward = new array<IEntity>();
-				int Movedamount;
-				for (int j = 0; j < m_iRewardAmount; j++)
-					Reward.Insert(GetGame().SpawnEntityPrefab(res, Target.GetWorld(), params));
-				for (int i, count = Reward.Count(); i < count; i++)
+			EntitySpawnParams params = EntitySpawnParams();
+			params.TransformMode = ETransformMode.WORLD;
+			params.Transform[3] = vector.Zero;
+			InventoryStorageManagerComponent TargetInv = InventoryStorageManagerComponent.Cast(Target.FindComponent(InventoryStorageManagerComponent));
+			array<IEntity> Rewardlist = new array<IEntity>();
+			int Movedamount;
+			for (int j = 0; j < m_iRewardAmount; j++)
+				Rewardlist.Insert(GetGame().SpawnEntityPrefab(reward, Target.GetWorld(), params));
+			for (int i, count = Rewardlist.Count(); i < count; i++)
+			{
+				if(TargetInv.TryInsertItem(Rewardlist[i]) == false)
 				{
-					if(TargetInv.TryInsertItem(Reward[i]) == false)
-					{
-						return false;
-					}
-					Movedamount += 1;
+					return false;
 				}
-				SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(Target.FindComponent(SCR_CharacterIdentityComponent));
-				id.AdjustCharRep(5);
-				SCR_HintManagerComponent.GetInstance().ShowCustom(Movedamount.ToString() + " " + "watches added to your wallet, and your reputation has improved");
-				return true;
+				Movedamount += 1;
+			}
+			SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(Target.FindComponent(SCR_CharacterIdentityComponent));
+			id.AdjustCharRep(5);
+			SCR_HintManagerComponent.GetInstance().ShowCustom(Movedamount.ToString() + " " + "watches added to your wallet, and your reputation has improved");
+			return true;
 		}
 		return false;
 	};

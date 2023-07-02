@@ -134,7 +134,7 @@ class SP_DeliverTask: SP_Task
 	};
 	override bool Init()
 	{
-		m_iRewardAmount = Math.RandomInt(5, 15);
+		super.Init();
 		if (!TaskOwner && !TaskTarget)
 		{
 			int dirindex = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
