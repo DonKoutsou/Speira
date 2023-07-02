@@ -60,6 +60,3498 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
  coords 2504.668 139.045 2344.997
 }
 SCR_GameModeEditor SP_GameModeEditor2 : "{9E3A1190FCBE4060}prefabs/Systems/SP_GameModeEditor.et" {
+ components {
+  SignalsManagerComponent "{5D685A535B2AB6ED}" {
+  }
+  SCR_CallsignManagerComponent "{5D685A535B2AB6FA}" {
+  }
+  SCR_CompositionSlotManagerComponent "{5D685A535B2AB6FD}" {
+  }
+  SCR_DataCollectorComponent "{5D685A535B2AB631}" {
+   Enabled 0
+   m_aModules {
+    SCR_DataCollectorBasicActionsModule "{5D685A535B2AB626}" {
+    }
+    SCR_DataCollectorDriverModule "{5D685A535B2AB62A}" {
+    }
+    SCR_DataCollectorHealingItemsModule "{5D685A535B2AB62E}" {
+    }
+    SCR_DataCollectorShootingModule "{5D685A535B2AB632}" {
+    }
+   }
+  }
+  SCR_DestructionManagerComponent "{5D685A535B2AB635}" {
+  }
+  SCR_EntityCatalogManagerComponent "{5D685A535B2AB652}" {
+   m_aEntityCatalogs {
+    SCR_EntityCatalog "{5DC477F54641FF8C}" {
+     m_aEntityEntryList {
+      SCR_EntityCatalogInventoryItem "{5DC497362EBBA823}" {
+       m_sEntityPrefab "{3D74845B9D0867B0}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_cover.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC49737D43B9D15}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC49737CF996E63}" {
+       m_sEntityPrefab "{22963D69CA50EB9E}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_net.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC49737F5B86103}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC49736080B21FF}" {
+       m_sEntityPrefab "{66196D85AB93D2BE}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_camo.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC497360EB11ACA}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC497363CDCDACD}" {
+       m_sEntityPrefab "{D4028ED16DEE99EE}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_camonet.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC4973625C13873}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC49736AF29E6F9}" {
+       m_sEntityPrefab "{03C1F3DB6BB9796A}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_w_scrim.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC4973655BCB3A4}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC497365E2E24BA}" {
+       m_sEntityPrefab "{A7E6D7ECD5F684D7}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC4973648EA9C30}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC49731299CAEB4}" {
+       m_sEntityPrefab "{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC49736D835694D}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC49736CAD6E6FE}" {
+       m_sEntityPrefab "{E685A8D337D36204}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_w_goggles.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC49736F1FCC572}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC4973116968321}" {
+       m_sEntityPrefab "{B74A4FF0DD8BB116}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC497313C6D7240}" {
+         m_eItemType HEADWEAR
+         m_eItemMode ATTACHMENT
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F5440664B1}" {
+       m_sEntityPrefab "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F5440664B4}" {
+         m_eItemType HEAL
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 3
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F5440664B9}" {
+       m_sEntityPrefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F5440664B8}" {
+         m_eItemType HEAL
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 3
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F5440664BE}" {
+       m_sEntityPrefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F5440664BD}" {
+         m_eItemType HEAL
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 3
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F544066483}" {
+       m_sEntityPrefab "{128A19AA9F731095}prefabs/Items/Food/MeatLeg_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F544066482}" {
+         m_eItemType FOOD
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 2
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F544066480}" {
+       m_sEntityPrefab "{630FB4AD4A735264}prefabs/Items/Equipment/Canteens/Canteen_US_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F544066487}" {
+         m_eItemType DRINK
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 2
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F544066486}" {
+       m_sEntityPrefab "{630FB4AD4A735264}prefabs/Items/Equipment/Canteens/Canteen_US_01.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F544066485}" {
+         m_eItemType DRINK
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 2
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F54406648B}" {
+       m_sEntityPrefab "{410A0A507D24BFDF}prefabs/Items/Equipment/Canteens/Water_Bottle.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F54406648A}" {
+         m_eItemType DRINK
+         m_eItemMode CONSUMABLE
+         m_iSupplyCost 2
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC477F544066488}" {
+       m_sEntityPrefab "{FA0CAB3B10ECED12}prefabs/Items/Food/CookingPot.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC477F54406648F}" {
+         m_eItemType EQUIPMENT
+         m_iSupplyCost 3
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC49733FFB4D65D}" {
+       m_sEntityPrefab "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC49733EB5CE9D5}" {
+         m_eItemType EXPLOSIVES
+         m_eItemMode WEAPON
+         m_iSupplyCost 4
+        }
+       }
+       m_aLabels +{
+       }
+      }
+      SCR_EntityCatalogInventoryItem "{5DC497338D198AC7}" {
+       m_sEntityPrefab "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
+       m_aEntityDataList {
+        SCR_ArsenalItem "{5DC49733B2EDC9E4}" {
+         m_eItemType EXPLOSIVES
+         m_eItemMode WEAPON
+         m_iSupplyCost 4
+        }
+       }
+       m_aLabels +{
+       }
+      }
+     }
+    }
+   }
+  }
+  SCR_GameModeHealthSettings "{5D685A535B2AB655}" {
+  }
+  SCR_GameModeSFManager "{5D685A5D8D19884D}" {
+  }
+  SCR_GameOverScreenManagerComponent "{5D685A535B2AB1E1}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{5D685A535B2AB18D}" {
+    m_aGameOverScreens {
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB79E}" {
+      m_GameOverScreenId NEUTRAL
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB798}" {
+       m_sTitle "#AR-MatchResult_Default-UC"
+       m_sImageTexture "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_FactionGameOverScreenInfo "{5D685A535B2AB7F4}" {
+      m_GameOverScreenId FACTION_NEUTRAL
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB7F6}" {
+       m_sTitle "#AR-MatchResult_Default-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-MatchResult_FactionNeutral_Subtitle"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_FactionVictoryGameOverScreenInfo "{5D685A535B2AB7CF}" {
+      m_GameOverScreenId FACTION_VICTORY_SCORE
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB7C8}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-Campaign_MatchResult_VictoryDetail_Score"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_FactionGameOverScreenInfo "{5D685A535B2AB7DD}" {
+      m_GameOverScreenId FACTION_DEFEAT_SCORE
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB7DE}" {
+       m_sTitle "#AR-MatchResult_Defeat-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-Campaign_MatchResult_DefeatDetail_Score"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_FactionVictoryGameOverScreenInfo "{5D685A535B2AB72D}" {
+      m_GameOverScreenId FACTION_VICTORY_TIME
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB72F}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-Campaign_MatchResult_VictoryDetail_Time"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_FactionGameOverScreenInfo "{5D685A535B2AB73E}" {
+      m_GameOverScreenId FACTION_DEFEAT_TIME
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB73F}" {
+       m_sTitle "#AR-MatchResult_Defeat-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-Campaign_MatchResult_DefeatDetail_Time"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB70F}" {
+      m_GameOverScreenId FACTION_DRAW
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB708}" {
+       m_sTitle "#AR-MatchResult_Draw-UC"
+       m_sSubtitle "#AR-MatchResult_Draw"
+       m_sDebriefing "#AR-Campaign_MatchResult_DrawDetail"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_DeathMatchGameOverScreenInfo "{5D685A535B2AB71D}" {
+      m_GameOverScreenId DEATHMATCH_VICTORY_SCORE
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB71F}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sImageTexture "{0B03F611D52043AE}UI/Textures/placeholder.edds"
+       m_sDebriefing "#AR-MatchResult_DM_Score_Debrief"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_DeathMatchGameOverScreenInfo "{5D685A535B2AB76C}" {
+      m_GameOverScreenId DEATHMATCH_DEFEAT_SCORE
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB76D}" {
+       m_sTitle "#AR-MatchResult_Defeat-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sImageTexture "{3E294459ED6AAF48}UI/Textures/EditorPreviews/Auto/Editor/PlaceholderObjects/E_Placeholder_BasicDoubleSign_01.edds"
+       m_sDebriefing "#AR-MatchResult_DM_Score_Debrief"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_DeathMatchGameOverScreenInfo "{5D685A535B2AB77E}" {
+      m_GameOverScreenId DEATHMATCH_VICTORY_TIME
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB77F}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sImageTexture "{3E294459ED6AAF48}UI/Textures/EditorPreviews/Auto/Editor/PlaceholderObjects/E_Placeholder_BasicDoubleSign_01.edds"
+       m_sDebriefing "#AR-MatchResult_DM_Time_Debrief"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_DeathMatchGameOverScreenInfo "{5D685A535B2AB74E}" {
+      m_GameOverScreenId DEATHMATCH_DEFEAT_TIME
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB74F}" {
+       m_sTitle "#AR-MatchResult_Defeat-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sImageTexture "{3E294459ED6AAF48}UI/Textures/EditorPreviews/Auto/Editor/PlaceholderObjects/E_Placeholder_BasicDoubleSign_01.edds"
+       m_sDebriefing "loc DM debrief"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB0AF}" {
+      m_GameOverScreenId EDITOR_NEUTRAL
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB0A3}" {
+       m_sTitle "#AR-MatchResult_EditorSessionEnd-UC"
+       m_sSubtitle "#AR-MatchResult_EditorNeutral_Subtitle"
+       m_sImageTexture "{45BF8792AAF74C6E}UI/Textures/Editor/Logos/Logo_Editor_GameOver.edds"
+       m_sDebriefing "#AR-MatchResult_EditorNeutral_Debrief"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5D685A535B2AB0A8}" {
+       m_sDisplayName "#AR-Editor_GameOverAttribute_Neutral_Name"
+       m_sDescription "#AR-Editor_GameOverAttribute_Neutral_Description"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB081}" {
+      m_GameOverScreenId SERVER_RESTART
+      m_GameOverContentLayout "{C4507D07F3C54831}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_NoImage.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB0BA}" {
+       m_sTitle "#AR-ServerRestart_Title-UC"
+       m_sSubtitle "#AR-ServerRestart_Description"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5D685A535B2AB082}" {
+       m_sDisplayName "#AR-Editor_GameOverAttribute_RestartServer_Name"
+       m_sDescription "#AR-Editor_GameOverAttribute_RestartServer_Description"
+      }
+     }
+     SCR_FactionGameOverScreenInfo "{5D685A535B2AB0E3}" {
+      m_GameOverScreenId EDITOR_FACTION_NEUTRAL
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB094}" {
+       m_sTitle "#AR-MatchResult_EditorSessionEnd-UC"
+       m_sSubtitle "#AR-MatchResult_FactionNeutral_Subtitle"
+       m_sDebriefing "#AR-MatchResult_EditorNeutral_Debrief"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5D685A535B2AB09C}" {
+       m_bCanBeSetByGameMaster 0
+      }
+     }
+     SCR_FactionVictoryGameOverScreenInfo "{5D685A535B2AB0FB}" {
+      m_GameOverScreenId EDITOR_FACTION_VICTORY
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB0ED}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-MatchResult_EditorNeutral_Debrief"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5D685A535B2AB0F4}" {
+       m_bNeedsPlayableFactions 1
+       m_sDisplayName "#AR-Editor_GameOverAttribute_FactionVictory_Name"
+       m_sDescription "#AR-Editor_GameOverAttribute_FactionVictory_Description"
+       m_MirroredState EDITOR_FACTION_DEFEAT
+      }
+     }
+     SCR_EditorFactionGameOverScreenInfo "{5D685A535B2AB0CC}" {
+      m_GameOverScreenId EDITOR_FACTION_DEFEAT
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB0C9}" {
+       m_sTitle "#AR-MatchResult_Defeat-UC"
+       m_sSubtitle "#AR-Campaign_MatchResult"
+       m_sDebriefing "#AR-MatchResult_EditorNeutral_Debrief"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5D685A535B2AB0CD}" {
+       m_bCanBeSetByGameMaster 0
+       m_MirroredState EDITOR_FACTION_VICTORY
+      }
+      m_sMultiFactionsSubtiteText "#AR-MatchResult_MultiFactions"
+     }
+     SCR_FactionGameOverScreenInfo "{5D685A535B2AB024}" {
+      m_GameOverScreenId EDITOR_FACTION_DRAW
+      m_GameOverContentLayout "{E04021BC742BE432}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Default.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB0DD}" {
+       m_sTitle "#AR-MatchResult_Draw-UC"
+       m_sSubtitle "#AR-MatchResult_Draw"
+       m_sDebriefing "#AR-MatchResult_EditorNeutral_Debrief"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+      m_OptionalEditorParams SCR_BaseGameOverScreenInfoEditor "{5D685A535B2AB025}" {
+       m_bNeedsPlayableFactions 1
+       m_sDisplayName "#AR-Editor_GameOverAttribute_FactionDraw_Name"
+       m_sDescription "#AR-Editor_GameOverAttribute_FactionDraw_Description"
+      }
+      m_bGetWinningFactionImage 0
+      m_bGetWinningSubtitleParam 0
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB037}" {
+      m_GameOverScreenId COMBATPATROL_VICTORY
+      m_GameOverContentLayout "{77DC985790BEDC1C}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_CombatPatrol.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB030}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-CombatScenario_Debriefing_Good"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB000}" {
+      m_GameOverScreenId COMBATPATROL_PARTIAL_SUCCESS
+      m_GameOverContentLayout "{77DC985790BEDC1C}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_CombatPatrol.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB001}" {
+       m_sTitle "#AR-MatchResult_Victory-UC"
+       m_sSubtitle "#AR-CombatScenario_Debriefing_Normal"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB012}" {
+      m_GameOverScreenId COMBATPATROL_DRAW
+      m_GameOverContentLayout "{77DC985790BEDC1C}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_CombatPatrol.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB013}" {
+       m_sTitle "#AR-MatchResult_Draw-UC"
+       m_sSubtitle "#AR-CombatScenario_Debriefing_Bad"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB01C}" {
+      m_GameOverScreenId COMBATPATROL_DEFEAT
+      m_GameOverContentLayout "{77DC985790BEDC1C}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_CombatPatrol.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB01E}" {
+       m_sTitle "#AR-MatchResult_Defeat-UC"
+       m_sSubtitle "#AR-CombatScenario_Debriefing_Good_Timeout"
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB1A9}" {
+      m_GameOverScreenId BROTHERFOUND
+      m_GameOverContentLayout "{4E98EBC5622B2BFB}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Permadeath.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB071}" {
+       m_sTitle "You found you brother."
+       m_sSubtitle "Thanks for playing"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D685A535B2AB18F}" {
+      m_GameOverScreenId DEATH
+      m_GameOverContentLayout "{4E98EBC5622B2BFB}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Permadeath.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D685A535B2AB1BF}" {
+       m_sTitle "YOU DIED"
+       m_sSubtitle "Your life was lost on the field."
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
+    }
+   }
+  }
+  SCR_GroupsManagerComponent "{5D685A535B2AB1E9}" {
+   m_sDefaultGroupPrefab "{8B4D49A9F324E7D5}Prefabs/Groups/PlayableGroup.et"
+   m_iPlayableGroupFrequencyOffset 500
+  }
+  SCR_HintManagerComponent "{5D685A535B2A927B}" {
+   m_aConditionLists {
+    SCR_HintConditionList "{5D685A535B2A9264}" {
+     m_aConditions {
+      SCR_VoteGameMasterCondition "{5D685A535B2A920D}" {
+       m_Info SCR_HintUIInfo "{5D685A535B2A9233}" {
+        Name "#AR-Hint_GAME_MODE_EDITOR_NO_GM_Name"
+        m_aDescriptionBlocks {
+         SCR_SubBlockUIName "{5D685A535B2AB122}" {
+          Name "#AR-Hint_GAME_MODE_EDITOR_NO_GM_Block_0"
+         }
+         SCR_ActionBlockUIName "{5D685A535B2AB129}" {
+          Name "#AR-Hint_GAME_MODE_EDITOR_NO_GM_Block_1"
+          m_sActionName "ShowScoreboard"
+         }
+         SCR_SubBlockUIName "{5D685A535B2AB13B}" {
+          Name "<br/>"
+          m_bInline 1
+         }
+         SCR_SubBlockUIName "{5D685A535B2AB13C}" {
+          Name "#AR-Hint_GAME_MODE_EDITOR_NO_GM_Block_3"
+         }
+        }
+        m_Type GAME_MODE_EDITOR_NO_GM
+        m_iShowLimit 4
+       }
+       m_Type EDITOR_IN
+      }
+      SCR_VoteGameMasterCondition "{5D685A535B2A926B}" {
+       m_Info SCR_HintUIInfo "{5D685A535B2A926A}" {
+        Name "#AR-Hint_GAME_MODE_EDITOR_PLAYER_LIST_Name"
+        m_aDescriptionBlocks {
+         SCR_SubBlockUIName "{5D685A535B2A9210}" {
+          Name "#AR-Hint_GAME_MODE_EDITOR_PLAYER_LIST_Block_0"
+         }
+         SCR_SubBlockUIName "{5D685A535B2A9269}" {
+          Name "#AR-Hint_GAME_MODE_EDITOR_PLAYER_LIST_Block_1"
+         }
+        }
+        m_Type GAME_MODE_EDITOR_PLAYER_LIST
+        m_iShowLimit 4
+        m_fDuration -1
+        m_aHighlightWidgetsNames +{
+        }
+       }
+       m_Type KICK
+       m_bShowInPlayerList 1
+      }
+     }
+    }
+   }
+  }
+  SCR_InitWeatherComponent "{5D685A535B2A9272}" {
+   m_sInitialStartingWeatherId "Cloudy"
+   m_iSetWeatherConstant 1
+  }
+  SCR_MapConfigComponent "{5D685A535B2A924D}" {
+  }
+  SCR_NametagConfigComponent "{5D685A535B2A9247}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{5D685A535B2AE72F}" {
+   Enabled 0
+   m_bShowPlayerLeftNotification 0
+   m_aKillfeedTypeNames {
+    SCR_NotificationKillfeedTypeName "{5D685A535B2A9257}" {
+     m_iKillfeedType DISABLED
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_DISABLED"
+    }
+    SCR_NotificationKillfeedTypeName "{5D685A535B2A91AC}" {
+     m_iKillfeedType UNKNOWN_KILLER
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_UNKNOWN_KILLER"
+    }
+    SCR_NotificationKillfeedTypeName "{5D685A535B2A91A9}" {
+     m_iKillfeedType FULL
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_FULL"
+    }
+   }
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{5D685A535B2A91A2}" {
+     m_iKillfeedreceiveType ALL
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ALL"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5D685A535B2A91B8}" {
+     m_iKillfeedreceiveType ALLIES_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ALLIES_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5D685A535B2A91B5}" {
+     m_iKillfeedreceiveType SAME_FACTION_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_SAME_FACTION_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5D685A535B2A91B2}" {
+     m_iKillfeedreceiveType GROUP_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_GROUP_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5D685A535B2A918A}" {
+     m_iKillfeedreceiveType ENEMIES_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ENEMIES_ONLY"
+    }
+   }
+   m_PlayerKickReasonsConfig SCR_ConfigurableDialogUiPresets "{5D685A535B2AE7DD}" {
+    m_aPresets {
+     SCR_KickDialogUiPreset "{5D685A535B2A917F}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "DEFAULT_ERROR"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A91C9}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2A9117}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A91D3}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A9124}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2A9094}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A915D}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2A908F}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A90AB}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A90A2}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2A900F}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_SYSTEM_FAILURE"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A90FB}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2A902B}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A90C7}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A90DD}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2A9052}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_DISCONNECTION"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Replication_Disconect"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A9011}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2A9041}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A907D}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2A9074}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEFCC}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_CONNECTION_FAILURE"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Replication_ConnectionFail"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEFB4}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEFE5}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF82}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF98}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEF68}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_TIMEOUT"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Replication_Timeout"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEFD7}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEF02}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF3D}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF35}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEE8D}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_FLOODED"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF70}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEEA6}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF43}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEF59}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEE2C}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_STALLED"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEE96}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEEC6}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEEE2}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEEF9}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEE70}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_JIP_ERROR"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEE34}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEE6A}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEE07}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEE1E}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AED92}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "REPLICATION_CREATION_FAILURE"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEE5B}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AED8B}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEDA6}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEDBD}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AED39}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "BATTLEYE_INIT"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEDFA}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AED2E}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEDC4}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEDC2}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AED54}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "BATTLEYE_INIT_LOAD_ERROR"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_BattlEye_NotInstalled"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AED18}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AED49}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AED65}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AED7C}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AECF4}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "BATTLEYE_INIT_UNSUPPORTED_VERSION"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_BattlEye_Unsupported"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AECBF}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AECE8}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC84}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC83}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEC18}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "DATA"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AECDC}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEC33}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC2F}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC26}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEBA2}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "DATA_VERSION_MISMATCH"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Data_VersionMismatch"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC62}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEC57}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC4C}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEC4B}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEBC7}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "DATA_RDB_MISMATCH"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Data_RDBMismatch"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB8A}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEBFB}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB91}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEBEF}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEB63}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "DATA_SCRIPT_MISMATCH"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Data_ScriptMismatch"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB2B}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEB14}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB37}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB0E}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEA80}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "DATA_WORLD_LOAD_ERROR"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Data_WorldLoad"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB4A}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEAB9}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB55}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEB53}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEA25}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLATFORM"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEAE8}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEAD9}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEAFB}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEACC}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AEA44}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLATFORM_NO_MP_PRIVILEGE"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Platform_NoPrivilege"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEA0B}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AEA79}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEA16}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEA6D}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE9EE}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Default"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AEA53}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE982}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE9BF}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE9B5}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE932}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER_MANAGER_KICK_REQUESTED"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_PM_Kicked"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE9F0}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE927}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE9C3}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE9DA}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE957}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER_MANAGER_KICK_VOTED"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_PM_Kicked"
+      m_sTitle "#AR-ServerBrowser_SessionError"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE91A}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE94A}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE966}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE97D}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE8F9}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER_MANAGER_FRIENDLY_FIRE"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Behavior_FriendlyFire"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE8BE}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE8ED}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE889}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE880}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE81E}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER_MANAGER_DISRUPTIVE_BEHAVIOUR"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Behavior_Trolling"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE8C1}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE832}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE82E}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE825}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE7A3}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER_MANAGER_KICKED_BY_GM"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Editor_KickedByGM"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE867}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE850}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE84C}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE84A}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+     SCR_KickDialogUiPreset "{5D685A535B2AE7C3}" {
+      m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+      m_sTag "PLAYER_MANAGER_BANNED_BY_GM"
+      m_eVisualStyle WARNING
+      m_sTitleIconImageName "warning"
+      m_sMessage "#AR-KickDialog_Editor_BannedByGM"
+      m_aButtons {
+       SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE784}" {
+        m_sTag "confirm"
+        m_sActionName "DialogConfirm"
+        m_sLabel "#AR-Menu_OK"
+        m_eAlign RIGHT
+       }
+      }
+      m_bCanBeReconnected 0
+      m_ReconnectPreset SCR_ConfigurableDialogUiPreset "{5D685A535B2AE7F7}" {
+       m_sLayout "{4F030ED1C359A43F}UI/layouts/Menus/Dialogs/JoinDialogs/KickDialog.layout"
+       m_eVisualStyle WARNING
+       m_sTitleIconImageName "warning"
+       m_aButtons {
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE792}" {
+         m_sTag "cancel"
+         m_sActionName "MenuBack"
+         m_sLabel "#AR-Workshop_ButtonCancel"
+         m_eAlign LEFT
+        }
+        SCR_ConfigurableDialogUiButtonPreset "{5D685A535B2AE7E9}" {
+         m_sTag "confirm"
+         m_sActionName "DialogConfirm"
+         m_sLabel "#AR-Workshop_ButtonJoin"
+         m_eAlign RIGHT
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SCR_PlayerSpawnPointManagerComponent "{5D685A535B2AE735}" {
+   m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
+   m_bEnablePlayerSpawnPoints 0
+  }
+  SCR_PlayersRestrictionZoneManagerComponent "{5D685A535B2AE730}" {
+  }
+  SCR_PossessingManagerComponent "{5D685A535B2AE732}" {
+  }
+  SCR_RadialMenuComponent "{5D685A535B2AE775}" {
+   m_pRadialMenu RHS_RadialMenuHandler "{5D685A535B2AE71B}" {
+   }
+   m_RadialMenuVisuals SCR_RadialMenuVisuals "{5D685A535B2AE774}" {
+    m_LayoutPath "{C967377E3D96107D}UI/layouts/Common/RadialMenu/RadialMenuVisuals.layout"
+    m_eLayer HIGH
+    m_rElementLayoutPath "{95123068DC2C2ECF}UI/layouts/Common/RadialMenu/radialElementIcon.layout"
+    m_rBorderLinePath "{639717DA6610F1C1}UI/layouts/Common/RadialMenu/RadialMenuBorderLine.layout"
+    m_sPageIndicationLayout "{595FE46A06BE9DB3}UI/layouts/Common/RadialMenu/MenuPageIndication.layout"
+    m_sPageIconsSet "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+    m_sTxtAction "TxtAction"
+    m_sTxtItemName "TxtItemName"
+    m_sImageSelector "ImgSelector"
+    m_sSelectLast "SelectLast"
+    m_fSizeMenu 660
+    m_fSizeEntries 660
+    m_fRadiusEntries 250
+    m_fSelectorDistance 185
+   }
+   m_sInput_Toggle "RHS_CharacterOpenRadial"
+   m_bHoldToggleToOpen 1
+   m_iEntryPerformType OnCloseOrPress
+   m_bEvenlyPlacedEntries 1
+   m_iSelectionBehavior FreeMove
+  }
+  SCR_RadialMenuGameModeComponent "{5D685A535B2AE683}" {
+   m_Menu SCR_RadialMenu "{5D685A535B2AE682}" {
+    m_Inputs SCR_RadialMenuInputs "{5D685A535B2AE684}" {
+     m_sContext "RadialMenuContext"
+     m_sBackAction "RadialMenuBack"
+     m_sPerformAction "RadialTrigger"
+     m_fGamepadSelectionTreshhold 0.2
+     m_iGamepadDeselectionDelay 250
+    }
+    m_sSelectionSound "SOUND_FE_BUTTON_HOVER"
+    m_sPerformSound "SOUND_FE_BUTTON_CONFIRM"
+   }
+  }
+  SCR_RadialMenuItemsComponent "{5D685A535B2AE6EA}" {
+   m_MenuController SCR_RadialMenuController "{5D685A535B2AE6EF}" {
+    m_RMControls SCR_RadialMenuControllerInputs "{5D685A535B2AE6EE}" {
+     m_sControllerContext "WeaponSelectionContext"
+     m_sOpenAction "Inventory_WeaponSwitchingRadial"
+    }
+   }
+  }
+  SCR_ReconnectComponent "{5D685A535B2AE6E0}" {
+   Enabled 0
+   m_bEnableReconnect 0
+  }
+  SCR_RespawnSystemComponent "{5D685A535B2AE6FC}" {
+  }
+  SCR_SaveLoadComponent "{5D685A535B285712}" {
+   Enabled 0
+   m_Struct SCR_MissionStruct "{5D685A535B2857E7}" {
+    m_Struct0 SCR_EditorStruct "{5D685A535B2857E0}" {
+     m_AttributeList SCR_EditorAttributeList "{5D685A535B2857E2}" {
+      m_aAttributes {
+       SCR_TimePresetsEditorAttribute "{5D685A535B2AE63A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE639}" {
+         Name "#AR-Editor_Attribute_Daytime_Name"
+         Description "#AR-Editor_Attribute_TimePresets_Description"
+        }
+        m_CategoryConfig "{567C05CBFB699426}Configs/Editor/AttributeCategories/Time.conf"
+        m_Layout "{57BFC610D9EA3D32}UI/layouts/Editor/Attributes/Time/AttributePrefab_ButtonBox_TimePresets.layout"
+        m_iButtonsOnRow 6
+        m_sRandomizeButtonIcon "{76AB4900C1EB2B47}UI/Textures/Editor/Attributes/Time/Attribute_Time_Random.edds"
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_sButtonDescription "#AR-Editor_Attribute_TimePresets_ButtonDescription"
+        m_fButtonHeight 77
+       }
+       SCR_DaytimeEditorAttribute "{5D685A535B2AE61D}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE609}" {
+         Name "#AR-Editor_Attribute_TimeSlider_Name"
+         Description "#AR-Editor_Attribute_Daytime_Description"
+        }
+        m_CategoryConfig "{567C05CBFB699426}Configs/Editor/AttributeCategories/Time.conf"
+        m_Layout "{4D6D5D979FED7D33}UI/layouts/Editor/Attributes/Time/Daytime.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2AE603}" {
+         m_fMax 85500
+         m_fStep 900
+         m_iDecimals 0
+        }
+       }
+       SCR_DateEditorAttribute "{5D685A535B2AE668}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE66F}" {
+         Name "#AR-Editor_Attribute_Date_Name"
+         Description "#AR-Editor_Attribute_Date_Description"
+        }
+        m_CategoryConfig "{567C05CBFB699426}Configs/Editor/AttributeCategories/Time.conf"
+        m_Layout "{707D00D8C274026A}UI/layouts/Editor/Attributes/Date/Date.layout"
+        m_aMonthList +{
+        }
+       }
+       SCR_TimeAdvancementEditorAttribute "{5D685A535B2AE652}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE650}" {
+         Name "#AR-Editor_Attribute_AdvanceTime_Name"
+         Description "#AR-Editor_Attribute_TimeAdvancement_Description"
+        }
+        m_CategoryConfig "{567C05CBFB699426}Configs/Editor/AttributeCategories/Time.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_DayDurationEditorAttribute "{5D685A535B2AE5B8}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE5A1}" {
+         Name "#AR-Editor_Attribute_DayDuration_Name"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{567C05CBFB699426}Configs/Editor/AttributeCategories/Time.conf"
+        m_Layout "{D64E18EAC6E38727}UI/layouts/Editor/Attributes/Time/AttributePrefab_DayDuration.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2AE5BF}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_Multiplier"
+         m_fMin 0.1
+         m_fMax 12
+         m_fStep 0.1
+         m_iDecimals 1
+        }
+       }
+       SCR_AutomatedWeatherEditorAttribute "{5D685A535B2AE58E}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE58D}" {
+         Name "#AR-Editor_Attribute_WeatherOverride_Name"
+         Description "#AR-Editor_Attribute_WeatherOverride_Description"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{AE52AA15B72911AC}UI/layouts/Editor/Attributes/Weather/AttributePrefab_WeatherAutomated.layout"
+       }
+       SCR_WeatherInstantEditorAttribute "{5D685A535B2AE598}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE59F}" {
+         Name "#AR-Editor_Attribute_WeatherInstant_Name"
+         Description "#AR-Editor_Attribute_WeatherInstant_Description"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+        m_iButtonsOnRow 5
+        m_sRandomizeButtonIcon "{945995A91C59DC97}UI/Textures/Editor/Attributes/Weather/Attribute_Weather_Random.edds"
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_sButtonDescription "#AR-Editor_Attribute_WeatherInstant_ButtonDescription"
+        m_fButtonHeight 90
+       }
+       SCR_WeatherInstantTransitionTimeEditorAttribute "{5D685A535B2AE5E8}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE593}" {
+         Name "!Transition Time (disabled)"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{60751F84C0EC9182}UI/layouts/Editor/Attributes/Weather/InstantTransitionTime.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2AE5EF}" {
+         m_fMax 600
+         m_iDecimals 0
+        }
+       }
+       SCR_WeatherUseAdvancedEditorAttribute "{5D685A535B2AE5FD}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE5FC}" {
+         Name "!Advanced weather (Disabled)"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_WindAutomaticEditorAttribute "{5D685A535B2AE5CC}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE5F3}" {
+         Name "#AR-Editor_Attribute_WindOverride_Name"
+         Description "#AR-Editor_Attribute_WindOverride_Description"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_WindSpeedEditorAttribute "{5D685A535B2AE5DF}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE5C0}" {
+         Name "#AR-Editor_Attribute_WindSpeed_Name"
+         Description "#AR-Editor_Attribute_WindSpeed_Description"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2AE5DE}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_MetersPerSeconds"
+         m_fMax 15
+         m_fStep 0.1
+         m_iDecimals 1
+        }
+       }
+       SCR_WindDirectionEditorAttribute "{5D685A535B2AE52C}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE5D3}" {
+         Name "#AR-Editor_Attribute_WindDirection_Name"
+         Description "#AR-Editor_Attribute_WindDirection_Description"
+        }
+        m_CategoryConfig "{2FE621FCAFE0E116}Configs/Editor/AttributeCategories/Weather.conf"
+        m_Layout "{C3A25A51777A99BD}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Spinbox.layout"
+       }
+       SCR_AIGroupFactionEditorAttribute "{5D685A535B2AE53C}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE522}" {
+         Name "#AR-Editor_Attribute_SetEntityFaction_Name"
+         Description "#AR-Editor_Attribute_SetGroupFaction_Description"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{C952695559974DF0}Configs/Editor/AttributeCategories/Group.conf"
+        m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+        m_iButtonsOnRow 5
+        m_fButtonHeight 90
+       }
+       SCR_EntityFactionEditorAttribute "{5D685A535B2AE504}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE50A}" {
+         Name "#AR-Editor_Attribute_SetEntityFaction_Name"
+         Description "#AR-Editor_Attribute_EntityFaction_Description"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{416C6E9ECC3D231D}Configs/Editor/AttributeCategories/Entity.conf"
+        m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+        m_iButtonsOnRow 5
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_sButtonDescription "#AR-Editor_Attribute_EntityFaction_ButtonDescription"
+        m_fButtonHeight 90
+       }
+       SCR_PlayableFactionEditorAttribute "{5D685A535B2AE51A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE518}" {
+         Name "#AR-Editor_Attribute_PlayableFaction_Name"
+         Description "#AR-Editor_Attribute_PlayableFaction_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{08BC69FF3651C963}Configs/Editor/AttributeCategories/Faction.conf"
+        m_Layout "{1AB18CEB4215F7D0}UI/layouts/Editor/Attributes/PlayableFactions/PlayableFaction_Checkbox.layout"
+       }
+       SCR_PlayableFactionsEditorAttribute "{5D685A535B2AE564}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE56A}" {
+         Name "#AR-Editor_Attribute_PlayableFactions_Name"
+         Description "#AR-Editor_Attribute_PlayableFactions_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{14222F7D8C1C2592}Configs/Editor/AttributeCategories/PlayableFactions.conf"
+        m_Layout "{2DCE20B49ADBDE3B}UI/layouts/Editor/Attributes/PlayableFactions/PlayableFaction_AttributeUI.layout"
+        m_iButtonsOnRow 5
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_sButtonDescription "#AR-Editor_Attribute_PlayableFactions_ButtonDescription"
+        m_fButtonHeight 90
+       }
+       SCR_RespawnEnabledEditorAttribute "{5D685A535B2AE578}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE57F}" {
+         Name "#AR-Editor_Attribute_EnableRespawn_Name"
+         Description "#AR-Editor_Attribute_RespawnEnabled_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{EDD16BBBE3767070}Configs/Editor/AttributeCategories/GameSettings.conf"
+        m_Layout "{F5B12A21C54C9B1D}UI/layouts/Editor/Attributes/PlayableFactions/EnableSpawning_WarningCheckbox.layout"
+       }
+       SCR_SpawnAtPlayersEditorAttribute "{5D685A535B2AE573}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE572}" {
+         Name "#AR-Editor_Attribute_EnableRespawnOnPlayer_Name"
+         Description "#AR-Editor_Attribute_SpawnAtPlayers_Description"
+        }
+        m_CategoryConfig "{EDD16BBBE3767070}Configs/Editor/AttributeCategories/GameSettings.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_RespawnTimeEditorAttribute "{5D685A535B2AE559}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE542}" {
+         Name "#AR-Editor_Attribute_RespawnTime_Name"
+         Description "#AR-Editor_Attribute_RespawnTime_Description"
+        }
+        m_CategoryConfig "{EDD16BBBE3767070}Configs/Editor/AttributeCategories/GameSettings.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2AE558}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_Seconds"
+         m_fMax 120
+         m_iDecimals 0
+        }
+       }
+       SCR_ArsenalFactionEditorAttribute "{5D685A535B2AE4AA}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE4A9}" {
+         Name "#AR-Editor_Attribute_SetEntityFaction_Name"
+         Description "#AR-Editor_Attribute_ArsenalFaction_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+        m_iButtonsOnRow 5
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 90
+       }
+       SCR_ArsenalWeaponsEditorAttribute "{5D685A535B2AB564}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AE4B7}" {
+         Name "#AR-Editor_Attribute_ArsenalWeapons_Name"
+         Description "#AR-Editor_Attribute_ArsenalWeapons_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B2AB563}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE49C}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2AE483}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE496}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B2AE495}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4EF}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2AE4EE}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4E0}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B2AE4E7}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4FA}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B2AE4F9}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4CC}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B2AE4F3}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4C4}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2AE4CB}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4DE}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2AE4DD}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE4D0}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2AE4D7}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AE426}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2AE425}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB512}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2AE43E}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB51B}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2AB51A}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB526}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2AB525}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB536}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2AB535}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB542}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2AB541}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB54D}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B2AB54C}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB558}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B2AB557}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB561}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B2AB560}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 131382
+        m_iArsenalType BOX_ONLY
+       }
+       SCR_ArsenalAmmunitionModeAttribute "{5D685A535B2AB285}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AB572}" {
+         Name "#AR-Editor_Attribute_ArsenalAmmoMode_Name"
+         Description "#AR-Editor_Attribute_ArsenalAmmoMode_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{C3A25A51777A99BD}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Spinbox.layout"
+        m_aValues {
+         SCR_EditorAttributeFloatStringValueHolder "{5D685A535B2AB579}" {
+          m_sEntryName "#AR-Editor_Attribute_ArsenalAmmoMode_WeaponAndAmmo_Name"
+         }
+         SCR_EditorAttributeFloatStringValueHolder "{5D685A535B2AB57F}" {
+          m_sEntryName "#AR-Editor_Attribute_ArsenalAmmoMode_Weapon_Name"
+          m_fEntryFloatValue 1
+         }
+         SCR_EditorAttributeFloatStringValueHolder "{5D685A535B2AB284}" {
+          m_sEntryName "#AR-Editor_Attribute_ArsenalAmmoMode_Ammo_Name"
+          m_fEntryFloatValue 2
+         }
+        }
+       }
+       SCR_ArsenalEquipmentEditorAttribute "{5D685A535B2AB23A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AB296}" {
+         Name "#AR-Editor_Attribute_ArsenalEquipment_Name"
+         Description "#AR-Editor_Attribute_ArsenalEquipment_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B2AB239}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2A4}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2AB2A3}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2AC}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B2AB2AB}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2B5}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2AB2B4}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2BE}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B2AB2BD}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2C7}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B2AB2C6}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2D0}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B2AB2CF}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2DA}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2AB2D9}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2E2}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2AB2E1}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2EB}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2AB2EA}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2F5}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2AB2F4}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB2FD}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2AB2FC}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB205}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2AB204}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB20D}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2AB20C}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB216}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2AB215}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB21E}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2AB21D}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB226}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B2AB225}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB22E}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B2AB22D}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB238}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B2AB235}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 361032
+        m_eEditableAttributeGroups EQUIPMENT
+        m_iArsenalType BOX_ONLY
+       }
+       SCR_ArsenalOutfitEditorAttribute "{5D685A535B2A616A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2AB24C}" {
+         Name "#AR-Editor_Attribute_ArsenalOutfits_Name"
+         Description "#AR-Editor_Attribute_ArsenalOutfit_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B2A616B}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB258}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2AB257}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB260}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B2AB25F}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB268}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2AB267}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB271}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B2AB270}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB27A}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B2AB279}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB382}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B2AB381}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2AB38B}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2AB38A}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A611F}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2AB392}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6116}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2A6117}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6129}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2A612E}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6121}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2A6126}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6139}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2A613E}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6131}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2A6136}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6148}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2A6149}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6140}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2A6141}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6158}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B2A6159}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6150}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B2A6151}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6168}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B2A6169}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 31872
+        m_eEditableAttributeGroups OUTFIT
+       }
+       SCR_FactionLoadoutWeaponsEditorAttribute "{5D685A535B2B30A3}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2A618C}" {
+         Name "#AR-Editor_Attribute_ArsenalWeapons_Name"
+         Description "#AR-Editor_Attribute_FactionLoadoutWeapons_Description"
+        }
+        m_CategoryConfig "{08BC69FF3651C963}Configs/Editor/AttributeCategories/Faction.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B2B30A1}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6180}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2A6181}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A6198}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B2A6199}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A61AC}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2A61AD}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A61A7}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B2A61A4}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A61BE}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B2A61BF}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A61B0}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B2A61B1}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A7BC8}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2A61CA}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A7BDD}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2A7BDE}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2A7BD4}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2A7BD5}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2BE9E2}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2A7BE8}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2BE9F2}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2BE9F3}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2BEA04}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2BEA05}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2BEA0E}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2BEA0F}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2BEA10}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2BEA11}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B5E86}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2BEA1B}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30B4}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B2B5EB1}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30AF}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B2B30AC}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30A6}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B2B30A7}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 310
+       }
+       SCR_FactionLoadoutEquipmentEditorAttribute "{5D685A535B2B3062}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2B30CE}" {
+         Name "#AR-Editor_Attribute_ArsenalEquipment_Name"
+         Description "#AR-Editor_Attribute_FactionLoadoutEquipment_Description"
+        }
+        m_CategoryConfig "{08BC69FF3651C963}Configs/Editor/AttributeCategories/Faction.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B2B3063}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30FD}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2B30C2}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30F4}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B2B30F5}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30EF}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2B30EC}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B30E1}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B2B30E6}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B301B}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B2B3018}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B300D}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B2B3012}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3005}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2B300A}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B303C}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2B303D}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3036}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2B3037}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3028}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2B3029}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3020}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2B3021}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B305B}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2B3058}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3052}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2B3053}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B304A}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2B304B}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B307E}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2B307F}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3076}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B2B3077}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3069}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B2B306E}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3060}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B2B3061}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 98888
+       }
+       SCR_FactionLoadoutOutfitEditorAttribute "{5D685A535B28F5B1}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2B3193}" {
+         Name "#AR-Editor_Attribute_ArsenalOutfits_Name"
+         Description "#AR-Editor_Attribute_FactionLoadoutOutfit_Description"
+        }
+        m_CategoryConfig "{08BC69FF3651C963}Configs/Editor/AttributeCategories/Faction.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_bUseIcon 1
+        m_bHasButtonDescription 1
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B28F5B0}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3187}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2B3184}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31BF}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B2B31BC}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31B0}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2B31B4}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31A8}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B2B31A9}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31A3}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B2B31A0}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31D5}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B2B31DA}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31CC}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2B31CD}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31C4}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B2B31C5}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31FC}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B2B31FD}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31F0}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2B31F1}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B31E7}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2B31E4}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3119}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2B311E}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3123}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2B3120}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2B3155}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2B315A}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28F58C}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2B314D}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28F585}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B28F584}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28F5BD}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B28F5BC}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28F5B7}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B28F5B6}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 31872
+       }
+       SCR_ArsenalWeaponRackWeaponsEditorAttribute "{5D685A535B28A84A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28EA59}" {
+         Name "#AR-Editor_Attribute_ArsenalRackWeapons_Name"
+         Description "#AR-Editor_Attribute_ArsenalRackWeapons_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B28A84B}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA4D}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B28EA4C}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA40}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B28EA47}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA78}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B28EA7F}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA71}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B28EA70}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA6B}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B28EA6A}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA1C}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B28EA63}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA14}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B28EA1B}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA0C}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B28EA13}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28EA04}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B28EA0B}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A887}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B28EA3E}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A88A}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B28A88B}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A89D}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B28A892}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A865}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B28A89A}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A86F}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B28A86C}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A877}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B28A874}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A87E}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B28A87F}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A841}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B28A846}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28A848}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B28A849}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 310
+        m_iArsenalType DISPLAY_ONLY
+       }
+       SCR_ArsenalWeaponRackEquipmentEditorAttribute "{5D685A535B2855E8}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28A827}" {
+         Name "#AR-Editor_Attribute_ArsenalRackEquipment_Name"
+         Description "#AR-Editor_Attribute_ArsenalRackEquipment_Description"
+        }
+        m_CategoryConfig "{B4BDD06072600257}Configs/Editor/AttributeCategories/Arsenal.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 6
+        m_fButtonHeight 77
+        m_bCustomFlags 1
+        m_ArsenalItemTypeConfig SCR_ArsenalItemTypeUIConfig "{5D685A535B2855EB}" {
+         m_ArsenalItemUITypes {
+          SCR_ArsenalItemTypeUI "{5D685A535B285455}" {
+           m_eItemType RIFLE
+           m_Info SCR_UIInfo "{5D685A535B28A82A}" {
+            Name "#AR-ArsenalItemType_Rifle_Name"
+            Icon "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B285440}" {
+           m_eItemType PISTOL
+           m_Info SCR_UIInfo "{5D685A535B285443}" {
+            Name "#AR-ArsenalItemType_Pistol_Name"
+            Icon "{2EEBBBCA36DD775F}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Pistols.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B285478}" {
+           m_eItemType LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B28547B}" {
+            Name "#AR-ArsenalItemType_LethalThrowable_Name"
+            Icon "{233A8BC0520B1B8B}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Grenades.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B285476}" {
+           m_eItemType ROCKET_LAUNCHER
+           m_Info SCR_UIInfo "{5D685A535B285471}" {
+            Name "#AR-ArsenalItemType_RocketLauncher_Name"
+            Icon "{10840233D666C940}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Launcher.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28546D}" {
+           m_eItemType MACHINE_GUN
+           m_Info SCR_UIInfo "{5D685A535B28546C}" {
+            Name "#AR-ArsenalItemType_MachineGun_Name"
+            Icon "{A02EB3B80E276400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_MachineGuns.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B28559A}" {
+           m_eItemType HEAL
+           m_Info SCR_UIInfo "{5D685A535B285465}" {
+            Name "#AR-ArsenalItemType_Heal_Name"
+            Icon "{CDF868B16669B7EA}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Medical.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B285590}" {
+           m_eItemType BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B285593}" {
+            Name "#AR-ArsenalItemType_Backpack_Name"
+            Icon "{769B709DF200BF84}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Backpacks.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B285589}" {
+           m_eItemType SNIPER_RIFLE
+           m_Info SCR_UIInfo "{5D685A535B285588}" {
+            Name "#AR-ArsenalItemType_SniperRifle_Name"
+            Icon "{A2B4C0BFBECE6400}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_SniperRifles.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B285586}" {
+           m_eItemType NON_LETHAL_THROWABLE
+           m_Info SCR_UIInfo "{5D685A535B285581}" {
+            Name "#AR-ArsenalItemType_NonLethalThrowable_Name"
+            Icon "{B64137F802B7F992}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_NonLethal.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855BC}" {
+           m_eItemType HEADWEAR
+           m_Info SCR_UIInfo "{5D685A535B2855BF}" {
+            Name "#AR-ArsenalItemType_Headwear_Name"
+            Icon "{F349167C49E996FB}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Headwear.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855B5}" {
+           m_eItemType TORSO
+           m_Info SCR_UIInfo "{5D685A535B2855B4}" {
+            Name "#AR-ArsenalItemType_Torso_Name"
+            Icon "{92245C15E122EDB2}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Jackets.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855A3}" {
+           m_eItemType VEST_AND_WAIST
+           m_Info SCR_UIInfo "{5D685A535B2855A2}" {
+            Name "#AR-ArsenalItemType_VestAndWaist_Name"
+            Icon "{2DCA69EEB8628C06}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Vests.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855DB}" {
+           m_eItemType LEGS
+           m_Info SCR_UIInfo "{5D685A535B2855DA}" {
+            Name "#AR-ArsenalItemType_Legs_Name"
+            Icon "{2CD4D1D2199CE475}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Trousers.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855D1}" {
+           m_eItemType FOOTWEAR
+           m_Info SCR_UIInfo "{5D685A535B2855D0}" {
+            Name "#AR-ArsenalItemType_Footwear_Name"
+            Icon "{AC6095E11A1E4144}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Footware.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855CC}" {
+           m_eItemType RADIO_BACKPACK
+           m_Info SCR_UIInfo "{5D685A535B2855CE}" {
+            Name "#AR-ArsenalItemType_RadioBackpack_Name"
+            Icon "{4B4A98921A5C3583}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Radio.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855C5}" {
+           m_eItemType EQUIPMENT
+           m_Info SCR_UIInfo "{5D685A535B2855C4}" {
+            Name "#AR-ArsenalItemType_GeneralEquipment_Name"
+            Icon "{CDF94F179A33CFB9}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Accessories.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855FD}" {
+           m_eItemType WEAPON_ATTACHMENT
+           m_Info SCR_UIInfo "{5D685A535B2855FC}" {
+            Name "#AR-ArsenalItemType_WeaponAttachment_Name"
+            Icon "{CB055708E982C0A5}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Optics.edds"
+           }
+          }
+          SCR_ArsenalItemTypeUI "{5D685A535B2855EA}" {
+           m_eItemType EXPLOSIVES
+           m_Info SCR_UIInfo "{5D685A535B2855F5}" {
+            Name "#AR-ArsenalItemType_Explosives_Name"
+            Icon "{91C4A9B5AD80D443}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_Explosive.edds"
+           }
+          }
+         }
+        }
+        m_eInventoryItemTypes 520
+        m_eEditableAttributeGroups EQUIPMENT
+        m_iArsenalType DISPLAY_ONLY
+       }
+       SCR_TaskTextMoveEditorAttribute "{5D685A535B28551A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2855E5}" {
+         Name "#AR-Editor_Attribute_MoveTaskName_Name"
+         Description "#AR-Editor_Attribute_TaskTextMove_Description"
+        }
+        m_CategoryConfig "{5C953F249F73FE1F}Configs/Editor/AttributeCategories/Tasks.conf"
+        m_Layout "{416915DE72708B2E}UI/layouts/Editor/Attributes/Task/AttributePrefab_DropdownTask.layout"
+        m_TextType MOVE
+       }
+       SCR_TaskTextAttackEditorAttribute "{5D685A535B285514}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285517}" {
+         Name "#AR-Editor_Attribute_AttackTaskName_Name"
+         Description "#AR-Editor_Attribute_TaskTextAttack_Description"
+        }
+        m_CategoryConfig "{5C953F249F73FE1F}Configs/Editor/AttributeCategories/Tasks.conf"
+        m_Layout "{416915DE72708B2E}UI/layouts/Editor/Attributes/Task/AttributePrefab_DropdownTask.layout"
+        m_TextType ATTACK
+       }
+       SCR_TaskTextDefendEditorAttribute "{5D685A535B285507}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285506}" {
+         Name "#AR-Editor_Attribute_DefendTaskName_Name"
+         Description "#AR-Editor_Attribute_TaskTextDefend_Description"
+        }
+        m_CategoryConfig "{5C953F249F73FE1F}Configs/Editor/AttributeCategories/Tasks.conf"
+        m_Layout "{416915DE72708B2E}UI/layouts/Editor/Attributes/Task/AttributePrefab_DropdownTask.layout"
+        m_TextType DEFEND
+       }
+       SCR_TaskTextCustomEditorAttribute "{5D685A535B285536}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285530}" {
+         Name "#AR-Editor_Attribute_CustomTaskName_Name"
+         Description "#AR-Editor_Attribute_TaskTextCustom_Description"
+        }
+        m_CategoryConfig "{5C953F249F73FE1F}Configs/Editor/AttributeCategories/Tasks.conf"
+        m_Layout "{416915DE72708B2E}UI/layouts/Editor/Attributes/Task/AttributePrefab_DropdownTask.layout"
+        m_TextType CUSTOM
+       }
+       SCR_SetTaskCompletionAutomaticEditorAttribute "{5D685A535B285521}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285523}" {
+         Name "#AR-Editor_Attribute_TaskCompletionAutomatic_Name"
+         Description "#AR-Editor_Attribute_TaskCompletionAutomatic_Description"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{5C953F249F73FE1F}Configs/Editor/AttributeCategories/Tasks.conf"
+        m_Layout "{0FF9E60C41853FDC}UI/layouts/Editor/Attributes/Task/AttributePrefab_TaskAutomatic.layout"
+       }
+       SCR_GameOverTypeEditorAttribute "{5D685A535B28555D}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28555C}" {
+         Name "#AR-Editor_Attribute_GameOverType_Name"
+         Icon "{3AAAD30FBA23D808}UI/Textures/Editor/Attributes/Attribute_Notification.edds"
+        }
+        m_CategoryConfig "{53E9B660BD2C8E75}Configs/Editor/AttributeCategories/EndGame.conf"
+        m_Layout "{396F1EC9A42A692D}UI/layouts/Editor/Attributes/EndGame/AttributePrefab_GameOverDropdown.layout"
+       }
+       SCR_GameOverFactionsEditorAttribute "{5D685A535B28554D}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28554C}" {
+         Name "#AR-Editor_Attribute_GameOverFactions_Name"
+         Description "#AR-Editor_Attribute_GameOverFactions_Description"
+        }
+        m_CategoryConfig "{53E9B660BD2C8E75}Configs/Editor/AttributeCategories/EndGame.conf"
+        m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+        m_iButtonsOnRow 5
+        m_bUseIcon 1
+        m_fButtonHeight 90
+       }
+       SCR_KillfeedTypeEditorAttribute "{5D685A535B28557E}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285578}" {
+         Name "#AR-Editor_Attribute_KillfeedType_Name"
+         Description "#AR-Editor_Attribute_KillfeedType_Description"
+        }
+        m_CategoryConfig "{EDD16BBBE3767070}Configs/Editor/AttributeCategories/GameSettings.conf"
+        m_Layout "{C3A25A51777A99BD}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Spinbox.layout"
+       }
+       SCR_KillfeedReceiveTypeEditorAttribute "{5D685A535B285560}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285563}" {
+         Name "#AR-Editor_Attribute_KillfeedReceiveType_Name"
+         Description "#AR-Editor_Attribute_KillfeedReceiveType_Description"
+        }
+        m_CategoryConfig "{EDD16BBBE3767070}Configs/Editor/AttributeCategories/GameSettings.conf"
+        m_Layout "{C3A25A51777A99BD}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Spinbox.layout"
+       }
+       SCR_AmbientSoundToggleEditorAttribute "{5D685A535B285694}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285696}" {
+         Name "#AR-Editor_Attribute_AmbientSoundToggle_Name"
+         Description "#AR-Editor_Attribute_AmbientSoundToggle_Description"
+        }
+        m_CategoryConfig "{EDD16BBBE3767070}Configs/Editor/AttributeCategories/GameSettings.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_SetSuppliesBaseEditorAttribute "{5D685A535B2856B5}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2856B3}" {
+         Name "#AR-Editor_TooltipDetail_Supplies_Name"
+         Description "#AR-Editor_Attribute_SetSupplies_Description"
+        }
+        m_CategoryConfig "{416C6E9ECC3D231D}Configs/Editor/AttributeCategories/Entity.conf"
+        m_Layout "{81DD8BD20079101B}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_SliderVector.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2856B4}" {
+         m_fMax 1
+         m_iDecimals 0
+        }
+       }
+       SCR_SetSuppliesVehicleEditorAttribute "{5D685A535B2856DF}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2856DA}" {
+         Name "#AR-Editor_TooltipDetail_Supplies_Name"
+         Description "#AR-Editor_Attribute_SetSupplies_Description"
+        }
+        m_CategoryConfig "{7FA3F309CBFCDACF}Configs/Editor/AttributeCategories/Vehicle.conf"
+        m_Layout "{81DD8BD20079101B}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_SliderVector.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2856DE}" {
+         m_fMax 1
+         m_iDecimals 0
+        }
+       }
+       SCR_GlobalUnconsciousnessEditorAttribute "{5D685A535B2856CF}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2856CE}" {
+         Name "#AR-Editor_Attribute_GlobalEnableUnconsciousness_Name"
+         Description "#AR-Editor_Attribute_GlobalEnableUnconsciousness_Description"
+        }
+        m_CategoryConfig "{374A652965B75A79}Configs/Editor/AttributeCategories/MedicalSettings.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_GlobalCharBleedingEditorAttribute "{5D685A535B2856EE}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2856FD}" {
+         Name "#AR-Editor_Attribute_GlobalBleedingSpeed_Name"
+         Description "#AR-Editor_Attribute_GlobalBleedingSpeed_Description"
+        }
+        m_CategoryConfig "{374A652965B75A79}Configs/Editor/AttributeCategories/MedicalSettings.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2856E9}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_Multiplier"
+         m_fMax 5
+         m_fStep 0.01
+        }
+       }
+       SCR_GlobalCharRegenEditorAttribute "{5D685A535B285613}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28561A}" {
+         Name "#AR-Editor_Attribute_GlobalRegenerationSpeed_Name"
+         Description "#AR-Editor_Attribute_GlobalRegenerationSpeed_Description"
+        }
+        m_CategoryConfig "{374A652965B75A79}Configs/Editor/AttributeCategories/MedicalSettings.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B285612}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_Multiplier"
+         m_fMax 5
+         m_fStep 0.01
+        }
+       }
+       SCR_SetEnableDamageCharacterEditorAttribute "{5D685A535B28563B}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28563A}" {
+         Name "#AR-Editor_Attribute_SetEnableDamage_Name"
+         Description "#AR-Editor_Attribute_SetEnableDamage_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+        m_aWhiteListEntityTypes +{
+        }
+       }
+       SCR_SetEnableDamageVehicleEditorAttribute "{5D685A535B28562A}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285635}" {
+         Name "#AR-Editor_Attribute_SetEnableDamage_Name"
+         Description "#AR-Editor_Attribute_SetEnableDamage_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{7FA3F309CBFCDACF}Configs/Editor/AttributeCategories/Vehicle.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+        m_aWhiteListEntityTypes +{
+        }
+       }
+       SCR_SetEnableDamageOtherEditorAttribute "{5D685A535B285658}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28565B}" {
+         Name "#AR-Editor_Attribute_SetEnableDamage_Name"
+         Description "#AR-Editor_Attribute_SetEnableDamage_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{416C6E9ECC3D231D}Configs/Editor/AttributeCategories/Entity.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+        m_aBlackListEntityTypes +{
+        }
+       }
+       SCR_HealthCharacterEditorAttribute "{5D685A535B285640}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285649}" {
+         Name "#AR-Editor_Attribute_Health_Name"
+         Description "#AR-Editor_Attribute_Health_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{5AA8B62B2B33CD49}UI/layouts/Editor/Attributes/Entity/AttributePrefab_HealthWithWarning.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B285642}" {
+         m_sSliderValueFormating ""
+         m_iDecimals 0
+        }
+        m_aWhiteListEntityTypes +{
+        }
+       }
+       SCR_HealthVehicleEditorAttribute "{5D685A535B285668}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285671}" {
+         Name "#AR-Editor_Attribute_Health_Name"
+         Description "#AR-Editor_Attribute_Health_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{7FA3F309CBFCDACF}Configs/Editor/AttributeCategories/Vehicle.conf"
+        m_Layout "{5AA8B62B2B33CD49}UI/layouts/Editor/Attributes/Entity/AttributePrefab_HealthWithWarning.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B28566A}" {
+         m_sSliderValueFormating ""
+         m_iDecimals 0
+        }
+        m_aWhiteListEntityTypes +{
+        }
+       }
+       SCR_HealthOtherEditorAttribute "{5D685A535B285793}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B28579B}" {
+         Name "#AR-Editor_Attribute_Health_Name"
+         Description "#AR-Editor_Attribute_Health_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{416C6E9ECC3D231D}Configs/Editor/AttributeCategories/Entity.conf"
+        m_Layout "{5AA8B62B2B33CD49}UI/layouts/Editor/Attributes/Entity/AttributePrefab_HealthWithWarning.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B285792}" {
+         m_sSliderValueFormating ""
+         m_iDecimals 0
+        }
+        m_aBlackListEntityTypes +{
+        }
+       }
+       SCR_BloodEditorAttribute "{5D685A535B285784}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B285783}" {
+         Name "#AR-Editor_Attribute_Blood_Name"
+         Description "#AR-Editor_Attribute_Blood_Description"
+         Icon "{9C5EEC72FF985CE3}UI/Textures/DeployMenu/warning-icon-200px.edds"
+         m_cDescriptionIconColor 0.947 0.056 0.056 1
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{B8ED2D3D198CCDDF}UI/layouts/Editor/Attributes/Entity/AttributePrefab_Blood.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B285787}" {
+         m_sSliderValueFormating ""
+         m_fStep 1
+         m_iDecimals 0
+        }
+       }
+       SCR_OverrideCharacterMedicalEditorAttribute "{5D685A535B2857B4}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2857B7}" {
+         Name "#AR-Editor_Attribute_HealthOverwrite_Name"
+         Description "#AR-Editor_Attribute_HealthOverwrite_Description"
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_CharUnconsciousnessEditorAttribute "{5D685A535B2857A0}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2857A3}" {
+         Name "#AR-Editor_Attribute_EnableUnconsciousness_Name"
+         Description "#AR-Editor_Attribute_EnableUnconsciousness_Description"
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+       }
+       SCR_CharBleedingEditorAttribute "{5D685A535B2857D4}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2857DC}" {
+         Name "#AR-Editor_Attribute_BleedingSpeed_Name"
+         Description "#AR-Editor_Attribute_BleedingSpeed_Description"
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2857D6}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_Multiplier"
+         m_fMax 5
+         m_fStep 0.01
+        }
+       }
+       SCR_CharRegenEditorAttribute "{5D685A535B2857FA}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2857C3}" {
+         Name "#AR-Editor_Attribute_RegenerationSpeed_Name"
+         Description "#AR-Editor_Attribute_RegenerationSpeed_Description"
+        }
+        m_CategoryConfig "{8A757725BEAC5B36}Configs/Editor/AttributeCategories/Character.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2857C5}" {
+         m_sSliderValueFormating "#AR-ValueUnit_Short_Multiplier"
+         m_fMax 5
+         m_fStep 0.01
+        }
+       }
+       SCR_FuelEditorAttribute "{5D685A535B2857EC}" {
+        m_UIInfo SCR_EditorAttributeUIInfo "{5D685A535B2857EB}" {
+         Name "#AR-Editor_Attribute_Fuel_Name"
+         Description "#AR-Editor_Attribute_Fuel_Description"
+        }
+        m_CategoryConfig "{7FA3F309CBFCDACF}Configs/Editor/AttributeCategories/Vehicle.conf"
+        m_Layout "{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout"
+        m_baseValues SCR_EditorAttributeBaseValues "{5D685A535B2857EF}" {
+         m_sSliderValueFormating ""
+         m_iDecimals 0
+        }
+       }
+      }
+     }
+    }
+   }
+   m_SaveOnExit 0
+   m_iAutosavePeriod 600
+  }
+  SCR_TimeAndWeatherHandlerComponent "{5D685A5370A16CE6}" {
+   m_iStartingHours 5
+   m_iStartingMinutes 30
+   m_fDayTimeAcceleration 6
+   m_fNightTimeAcceleration 6
+   m_bRandomStartingWeather 1
+  }
+  SCR_VotingManagerComponent "{5D685A535B285003}" {
+   m_aVotingTemplates {
+    SCR_VotingKick "{5D685A535B285770}" {
+     m_bIsValuePlayerID 1
+     m_fThreshold 0.3
+     m_iMinParticipation 0.3
+     m_Info SCR_VotingUIInfo "{5D685A535B285730}" {
+      Name "#AR-Voting_KICK_AddVoteName"
+      m_sStartVotingName "#AR-Voting_KICK_StartVotingName"
+      m_sCancelVotingName "#AR-Voting_KICK_CancelVotingName"
+      m_sStickyNotificationText "#AR-Notification_Sticky_VoteKickPlayer"
+      m_iStartNotificationId VOTING_KICK_START
+      m_iSucceededNotificationId VOTING_KICK_SUCCEED
+      m_iFailedNotificationId VOTING_KICK_FAIL
+     }
+     m_KickReason KICK_VOTED
+     m_bFactionSpecific 1
+    }
+    SCR_VotingEditorIn "{5D685A535B2850BD}" {
+     m_Type EDITOR_IN
+     m_bIsValuePlayerID 1
+     m_Info SCR_VotingUIInfo "{5D685A535B28509A}" {
+      Name "#AR-Voting_EDITOR_IN_AddVoteName"
+      m_sStartVotingName "#AR-Voting_EDITOR_IN_StartVotingName"
+      m_sCancelVotingName "#AR-Voting_EDITOR_IN_CancelVotingName"
+      m_sStickyNotificationText "#AR-Notification_Sticky_VoteGM"
+      m_iStartNotificationId VOTING_EDITOR_IN_START
+      m_iSucceededNotificationId VOTING_EDITOR_IN_SUCCEED
+      m_iFailedNotificationId VOTING_EDITOR_IN_FAIL
+     }
+    }
+    SCR_VotingEditorOut "{5D685A535B2850FB}" {
+     m_Type EDITOR_OUT
+     m_bIsValuePlayerID 1
+     m_fThreshold 0.333
+     m_iMinParticipation 0.333
+     m_Info SCR_VotingUIInfo "{5D685A535B2850A1}" {
+      Name "#AR-Voting_EDITOR_OUT_AddVoteName"
+      m_sStartVotingName "#AR-Voting_EDITOR_OUT_StartVotingName"
+      m_sCancelVotingName "#AR-Voting_EDITOR_OUT_CancelVotingName"
+      m_sStickyNotificationText "#AR-Notification_Sticky_VoteRemoveGM"
+      m_iStartNotificationId VOTING_EDITOR_OUT_START
+      m_iSucceededNotificationId VOTING_EDITOR_OUT_SUCCEED
+      m_iFailedNotificationId VOTING_EDITOR_OUT_FAIL
+     }
+    }
+    SCR_VotingEditorWithdraw "{5D685A535B28500A}" {
+     m_Type EDITOR_WITHDRAW
+     m_bIsValuePlayerID 1
+     m_fThreshold 0
+     m_iMinParticipation 0
+     m_iMinVotes 1
+     m_Info SCR_VotingUIInfo "{5D685A535B2850F7}" {
+      Name "#AR-Voting_EDITOR_WIDRAW_Name"
+     }
+    }
+   }
+  }
+  SP_DialogueComponent "{5D685A535B29A212}" {
+   m_CharacterArchetypeList {
+    SP_DialogueArchetype "{5D751D2947B6938D}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D685A5DD5DC418E}" : "{81B9C2CC73B3921A}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Medic.conf" {
+    }
+    SP_DialogueArchetype "{5D685A5B3D75C81B}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D685A5DD72AEEAA}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Commander.conf" {
+    }
+    SP_DialogueArchetype "{5D687B28A35A9086}" : "{EBDA2467806C6197}Configs/Dilaogue_Configs/US_Units/DialogueConf_US_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D687B28A2A1B119}" : "{308425433B957AB2}Configs/Dilaogue_Configs/US_Units/DialogueConf_US_Medic.conf" {
+    }
+    SP_DialogueArchetype "{5D687B2824154DA8}" : "{5598C834512501C4}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Private.conf" {
+    }
+    SP_DialogueArchetype "{5D687B2825594970}" : "{034F9F5363B2F5DA}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Medic.conf" {
+    }
+   }
+   m_ChatChannelFIA FIAChatChannel "{5D685A535B29BDDA}" {
+    "Channel name" "FIA"
+    Style BaseChatChannelStyle "{5D685A535B29BDD9}" {
+    }
+   }
+   m_ChatChannelUSSR USSRChatChannel "{5D685A535B29BDC8}" {
+    "Channel name" "USSR"
+    Style BaseChatChannelStyle "{5D685A535B29BDD7}" {
+    }
+   }
+   m_ChatChannelUS USChatChannel "{5D72F115C7F0476D}" {
+    "Channel name" "US"
+    Style BaseChatChannelStyle "{5D72F115D9030191}" {
+    }
+   }
+   m_ChatChannelBANDITS BANDITSChatChannel "{5D685A535B29BDC3}" {
+    "Channel name" "BANDITS"
+    Style BaseChatChannelStyle "{5D685A535B29BDC2}" {
+    }
+   }
+   m_ChatChannelSPEIRA SPEIRAChatChannel "{5D685A535B29A20D}" {
+    "Channel name" "SPEIRA"
+    Style BaseChatChannelStyle "{5D685A535B29BDF0}" {
+    }
+   }
+   m_ChatChannelANOUNCER LocalChatChannel "{5D685A535B29A210}" {
+    "Channel name" "Local"
+    Style BaseChatChannelStyle "{5D685A535B29A211}" {
+    }
+   }
+  }
+  SP_PermadeathRespawnHandlerComponent "{5D685A535B29A268}" {
+   m_iForcedFaction 2
+   m_iForcedLoadout 0
+   m_bOverrideGameOverType 1
+   m_eOverriddenGameOverType DEATH
+   m_BanditStorageWorldPosition 6453.756 9.653 7031.644
+   m_RespawnWorldPositionBandit 6457.077 9.653 7030.698
+   m_StoragePreset "{102E176F082035F8}prefabs/Props/Furniture/Chest_Storage_Respawn.et"
+   m_SpawnpointSPEIRA "{A9884578B7A460D3}prefabs/MP/Spawning/SpawnPoint_SPEIRA.et"
+   m_SpawnpointBandit "{AA99FB47F0760415}prefabs/MP/Spawning/SpawnPoint_Bandits.et"
+   m_iLives 1
+  }
+  SP_PlayerPenaltyComponent "{5D7D20460DC7AD30}" {
+  }
+  SP_RequestManagerComponent "{5DB3077B503444F6}" {
+   m_fTaskGenTime 300
+   m_iMinTaskAmount 200
+  }
+  RplComponent "{5D685A535B29A270}" {
+   "Rpl State Override" None
+   Streamable Disabled
+  }
+ }
  coords 2971.425 51.883 2171.256
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {

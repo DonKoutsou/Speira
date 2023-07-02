@@ -64,6 +64,7 @@ class DialogueStageDeliverTaskAction : DialogueStage
 		SP_RequestManagerComponent requestman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
 		int delivertaskam;
 		int bountytaskam;
+		int Requesttaskam;
 		if(requestman.CharHasTask(Character))
 		{
 			array<ref SP_Task> MyTasks = new array<ref SP_Task>();
@@ -76,6 +77,11 @@ class DialogueStageDeliverTaskAction : DialogueStage
 					if(BountyT)
 					{
 						bountytaskam += 1;
+					}
+					SP_RetrieveTask RetrieveT = SP_RetrieveTask.Cast(Task);
+					if(RetrieveT)
+					{
+						Requesttaskam += 1;
 					}
 				}
 			}
@@ -96,21 +102,45 @@ class DialogueStageDeliverTaskAction : DialogueStage
 				}
 			}
 		}
-		if(delivertaskam > 0 && bountytaskam == 0)
+		if (delivertaskam > 0)
 		{
-			acttext = "I have a delivery for you.";
-			return true;
+	    if (bountytaskam == 0 && Requesttaskam == 0)
+				{
+	        acttext = "I have a delivery for you.";
+	        return true;
+	    	}
+	    else if (bountytaskam > 0 && Requesttaskam == 0)
+				{
+	        acttext = "I have some tasks to deliver.";
+	        return true;
+	    	}
 		}
-		else if(bountytaskam > 0 && delivertaskam == 0)
-		{
-			acttext = "I've completed the bounty.";
-			return true;
-		}
-		else if(bountytaskam > 0 && delivertaskam > 0)
-		{
-			acttext = "I have some tasks to deliver.";
-			return true;
-		}
+		if (bountytaskam > 0) 
+			{
+				if (delivertaskam == 0 && Requesttaskam == 0) 
+					{
+				  	acttext = "I've completed the bounty.";
+				    return true;
+				  }
+				else if (delivertaskam > 0 && Requesttaskam > 0)
+					{
+			    	acttext = "I have some tasks to deliver.";
+			      return true;
+			    }
+			}
+		if (Requesttaskam > 0)
+			{
+		    if (delivertaskam == 0 && bountytaskam == 0)
+				{
+		    	acttext = "I've brought the items you asked.";
+		    	return true;
+		    }
+		    else if (delivertaskam > 0 && bountytaskam > 0)
+				{
+		    	acttext = "I have some tasks to deliver.";
+		    	return true;
+		    }
+			}
 		return false;
 	}
 

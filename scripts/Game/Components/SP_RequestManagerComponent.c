@@ -161,7 +161,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	{
 		if (TaskMap.Count() < m_iMinTaskAmount)
 		{
-			int index = Math.RandomInt(0, 2);
+			int index = Math.RandomInt(0, 3);
 			typename Task;
 			if(index == 0)
 			{
@@ -170,6 +170,10 @@ class SP_RequestManagerComponent : ScriptComponent
 			if(index == 1)
 			{
 				Task = SP_BountyTask;
+			}
+			if(index == 2)
+			{
+				Task = SP_RetrieveTask;
 			}
 			CreateTask(Task);
 			return;
@@ -177,7 +181,7 @@ class SP_RequestManagerComponent : ScriptComponent
 		m_fTaskRespawnTimer += timeSlice;
 		if(m_fTaskRespawnTimer > m_fTaskGenTime)
 		{
-			int index = Math.RandomInt(0, 2);
+			int index = Math.RandomInt(0, 3);
 			typename Task;
 			if(index == 0)
 			{
@@ -186,6 +190,10 @@ class SP_RequestManagerComponent : ScriptComponent
 			if(index == 1)
 			{
 				Task = SP_BountyTask;
+			}
+			if(index == 2)
+			{
+				Task = SP_RetrieveTask;
 			}
 			if(CreateTask(Task))
 			{

@@ -2,8 +2,8 @@ class SP_RetrieveTask: SP_Task
 {
 	IEntity ItemBounty;
 	int m_iRequestedAmount;
-	SCR_EArsenalItemType	m_requestitemtype = SCR_EArsenalItemType.HEAL;
-	SCR_EArsenalItemMode	m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+	SCR_EArsenalItemType	m_requestitemtype;
+	SCR_EArsenalItemMode	m_requestitemmode;
 	IEntity GetItemBountyEnt()
 	{
 		return ItemBounty;
@@ -49,8 +49,8 @@ class SP_RetrieveTask: SP_Task
 	};
 	override bool CompleteTask(IEntity Assignee)
 	{
-		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
-		InventoryStorageManagerComponent Ownerinv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
+		SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(Assignee.FindComponent(SCR_InventoryStorageManagerComponent));
+		SCR_InventoryStorageManagerComponent Ownerinv = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
 		SP_RequestPredicate RequestPred = new SP_RequestPredicate(m_requestitemtype, m_requestitemmode);
 		array <IEntity> FoundItems = new array <IEntity>();
 		inv.FindItems(FoundItems, RequestPred);
@@ -63,7 +63,14 @@ class SP_RetrieveTask: SP_Task
 					InventoryItemComponent pInvComp = InventoryItemComponent.Cast(item.FindComponent(InventoryItemComponent));
 					InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
 					inv.TryRemoveItemFromStorage(item,parentSlot.GetStorage());
-					Ownerinv.TryInsertItem(item);
+					if(m_requestitemtype == SCR_EArsenalItemType.HEADWEAR)
+					{
+						Ownerinv.EquipCloth(item);
+					}
+					else
+					{
+						Ownerinv.TryInsertItem(item);
+					}
 					e_State = ETaskState.COMPLETED;
 					return true;
 				}
@@ -75,6 +82,7 @@ class SP_RetrieveTask: SP_Task
 	override bool Init()
 	{
 		m_iRewardAmount = Math.RandomInt(2, 4);
+		m_iRequestedAmount = Math.RandomInt(1, 10);
 		if (!TaskOwner)
 		{
 			SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();
@@ -101,7 +109,7 @@ class SP_RetrieveTask: SP_Task
 	};
 	override bool SetupTaskEntity()
 	{
-		if (TaskOwner && TaskTarget)
+		if (TaskOwner)
 		{
 			string OName;
 			string OLoc;
@@ -126,8 +134,58 @@ class SP_RetrieveTask: SP_Task
 			}
 			SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
 			SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REQUEST);
+			int index = Math.RandomInt(0, 5);
+			if(index == 0)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.HEAL;
+				m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+			}
+			if(index == 1)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.FOOD;
+				m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+			}
+			if(index == 2)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.DRINK;
+				m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+			}
+			if(index == 3)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.EXPLOSIVES;
+				m_requestitemmode = SCR_EArsenalItemMode.WEAPON;
+			}
+			if(index == 4)
+			{
+				EquipedLoadoutStorageComponent loadoutStorage = EquipedLoadoutStorageComponent.Cast(TaskOwner.FindComponent(EquipedLoadoutStorageComponent));
+				if (!loadoutStorage)
+					return false;
+				
+				IEntity Helmet = loadoutStorage.GetClothFromArea(LoadoutHeadCoverArea);
+				if (!Helmet)
+				{
+					return false;
+				}
+				EntityPrefabData prefabData = Helmet.GetPrefabData();
+				ResourceName prefabName = prefabData.GetPrefabName();
+				SCR_EntityCatalogEntry entry = RequestCatalog.GetEntryWithPrefab(prefabName);
+				if(!entry)
+				{
+					return false;
+				}
+				SCR_InventoryStorageManagerComponent storeman = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
+				if (!storeman)
+				{
+					return false;
+				}
+				storeman.TryRemoveItemFromInventory(Helmet);
+				delete Helmet;
+				m_requestitemtype = SCR_EArsenalItemType.HEADWEAR;
+				m_requestitemmode = SCR_EArsenalItemMode.ATTACHMENT;
+				m_iRequestedAmount = 1;
+				m_iRewardAmount = 10;
+			}
 			SP_ItemBountyComponent IBComp = 	SP_ItemBountyComponent.Cast(ItemBounty.FindComponent(	SP_ItemBountyComponent));
-			m_iRequestedAmount = Math.RandomInt(1, 10);
 			m_iRewardAmount = m_iRewardAmount * m_iRequestedAmount;
 			IBComp.SetInfo(OName, m_requestitemtype, m_requestitemmode, EEditableEntityLabel.ITEMTYPE_ITEM, m_iRequestedAmount, OLoc);
 			string itemdesc = typename.EnumToString(SCR_EArsenalItemType, m_requestitemtype) + " " + typename.EnumToString(SCR_EArsenalItemMode, m_requestitemmode);

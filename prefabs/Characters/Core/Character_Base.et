@@ -84,14 +84,6 @@ SCR_ChimeraCharacter {
    additionalActions {
     SP_AILootBodyAction "{5D7D0C3C51B9A371}" {
     }
-    TestAction "{5DB90C17C40D5A21}" {
-     ParentContextList {
-      "default"
-     }
-     UIInfo UIInfo "{5DB90C17D8425C9F}" {
-      Name "test me"
-     }
-    }
    }
   }
   CharacterAnimationComponent "{520EA1D2F659C994}" {

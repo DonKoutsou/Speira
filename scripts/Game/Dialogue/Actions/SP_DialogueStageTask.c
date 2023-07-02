@@ -7,6 +7,7 @@ class DialogueStageTask : DialogueStage
 		SP_RequestManagerComponent TaskMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
 		SP_BountyTask t_Bounty = SP_BountyTask.Cast(t_Task);
 		SP_DeliverTask t_Deliver = SP_DeliverTask.Cast(t_Task);
+		SP_RetrieveTask t_Retrieve = SP_RetrieveTask.Cast(t_Task);
 		if(t_Bounty)
 		{
 			IEntity BountyPaper = t_Bounty.GetBountyEnt();
@@ -27,7 +28,7 @@ class DialogueStageTask : DialogueStage
 			}
 			t_Bounty.AssignCharacter(Player);
 		}
-		if(t_Deliver)
+		if (t_Deliver)
 		{
 			IEntity Package = t_Deliver.GetPackage();
 			InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
@@ -46,6 +47,26 @@ class DialogueStageTask : DialogueStage
 				diagcomp.DoAnouncerDialogue("No space in inventory, package left on the floor");
 			}
 			t_Deliver.AssignCharacter(Player);
+		}
+		if (t_Retrieve)
+		{
+			IEntity ItemBountyPaper = t_Retrieve.GetItemBountyEnt();
+			InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Player.FindComponent(InventoryStorageManagerComponent));
+			InventoryStorageManagerComponent invChar = InventoryStorageManagerComponent.Cast(Character.FindComponent(InventoryStorageManagerComponent));
+			InventoryItemComponent pInvComp = InventoryItemComponent.Cast(ItemBountyPaper.FindComponent(InventoryItemComponent));
+			InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+			invChar.TryRemoveItemFromStorage(ItemBountyPaper, parentSlot.GetStorage());
+			if(inv.TryInsertItem(ItemBountyPaper))
+			{
+				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+				diagcomp.DoAnouncerDialogue("The item bounty has been added to your inventory");
+			}
+			else
+			{
+				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+				diagcomp.DoAnouncerDialogue("No space in inventory, item bounty left on the floor");
+			}
+			t_Retrieve.AssignCharacter(Player);
 		}
 	};
 	void SetupTask(SP_Task task)

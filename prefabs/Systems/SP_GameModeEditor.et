@@ -24,7 +24,7 @@ SCR_GameModeEditor {
   }
   SCR_EntityCatalogManagerComponent "{5D685A535B2AB652}" {
    m_aEntityCatalogs {
-    SCR_EntityCatalog "{5DC477F54641FF8C}" : "{C8568AE52B2C8E1F}Configs/Requests/Requests.conf" {
+    SCR_EntityCatalog "{5DC497356E4D2318}" : "{C8568AE52B2C8E1F}Configs/Requests/Requests.conf" {
     }
    }
   }

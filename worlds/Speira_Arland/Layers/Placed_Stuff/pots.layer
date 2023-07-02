@@ -6,9 +6,6 @@ $grp SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character
   coords 2704.688 97.972 2205.59
  }
 }
-GenericEntity : "{A99880B995D4588F}prefabs/Items/ItemBountyPaper.et" {
- coords 2258.166 83.07 1278.009
-}
 $grp GenericEntity : "{F0BDB1800BC7B4AA}Prefabs/World/Locations/Arland/Aquatic/Arland_Pond_01.et" {
  Bandits_Rest {
   components {
