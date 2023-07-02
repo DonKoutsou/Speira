@@ -31,12 +31,12 @@ class SP_BountyTask: SP_Task
 	{
 		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
 		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
-		if (OwnerDmgComp.IsDestroyed() && !OwnerDmgComp.IsDestroyed())
+		if (OwnerDmgComp.IsDestroyed() && !TargetDmgComp.IsDestroyed())
 		{
 			e_State = ETaskState.FAILED;
 			return;
 		}
-		if (!OwnerDmgComp.IsDestroyed() && OwnerDmgComp.IsDestroyed())
+		if (!OwnerDmgComp.IsDestroyed() && TargetDmgComp.IsDestroyed())
 		{
 			e_State = ETaskState.COMPLETED;
 			return;

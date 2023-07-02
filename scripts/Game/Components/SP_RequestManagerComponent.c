@@ -206,3 +206,8 @@ modded enum EWeaponType
 {
 	WT_KNIFE
 }
+modded enum SCR_EArsenalItemType
+{
+	FOOD = 262200,
+	DRINK = 262600
+};

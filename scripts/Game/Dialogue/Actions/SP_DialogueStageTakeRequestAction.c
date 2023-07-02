@@ -76,7 +76,7 @@ class DialogueStageTakeRequestAction : DialogueStage
 		string OName = CharRank.GetCharacterRankName(Character) + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
 		int amount = Math.RandomInt(0, m_MaxAmount);
 		string RequestLocName = MyDirector.GetCharacterLocation(Character);
-		ItemBComp.SetInfo(OName, type, mode, amount, RequestLocName);
+		//ItemBComp.SetInfo(OName, type, mode, amount, RequestLocName);
 		TFact = key;
 	};
 	override string GetStageDialogueText(IEntity Character, IEntity Player)

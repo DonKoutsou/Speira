@@ -23,16 +23,8 @@ SCR_GameModeEditor {
   SCR_DestructionManagerComponent "{5D685A535B2AB635}" {
   }
   SCR_EntityCatalogManagerComponent "{5D685A535B2AB652}" {
-   Enabled 0
    m_aEntityCatalogs {
-    SCR_EntityCatalogMultiList "{5D685A535B2AB67A}" {
-     m_eEntityCatalogType CHARACTER
-    }
-    SCR_EntityCatalogMultiList "{5D685A535B2AB645}" {
-     m_eEntityCatalogType VEHICLE
-    }
-    SCR_EntityCatalogMultiList "{5D685A535B2AB64C}" {
-     m_eEntityCatalogType ITEM
+    SCR_EntityCatalog "{5DC477F54641FF8C}" : "{C8568AE52B2C8E1F}Configs/Requests/Requests.conf" {
     }
    }
   }

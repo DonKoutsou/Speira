@@ -179,6 +179,21 @@ class SP_AIDirector : AIGroup
 		}
 		return false;
 	}
+	bool GetRandomUnit(out IEntity Char)
+	{
+		if (m_aGroups.Count() == 0)
+		{
+			return false;
+		}
+		array<AIAgent> outAgents = new array<AIAgent>();
+		m_aGroups.GetRandomElement().GetAgents(outAgents);
+		Char = outAgents.GetRandomElement().GetControlledEntity();
+		if(Char)
+		{
+			return true;
+		}
+		return false;
+	}
 	Faction GetMajorityHolderNCount(out string factionReadable, out int UnitCount)
 	{
 		int USSRcount = 0;

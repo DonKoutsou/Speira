@@ -71,20 +71,23 @@ class SP_ItemBountyComponent : SP_UnretrievableComponent
 	string OwnerLocation;
 	SCR_EArsenalItemType	RequestType;
 	SCR_EArsenalItemMode	RequestMode;
+	EEditableEntityLabel	RequestLabel;
 
-	void GetInfo(out string OName, out SCR_EArsenalItemType type, out SCR_EArsenalItemMode mode, out int Amount, out string TLoc)
+	void GetInfo(out string OName, out SCR_EArsenalItemType type, out SCR_EArsenalItemMode mode, out EEditableEntityLabel label, out int Amount, out string TLoc)
 	{
 		OName = OwnerName;
 		type = RequestType;
 		mode = RequestMode;
+		label = RequestLabel;
 		Amount = ItemAmount;
 		TLoc = OwnerLocation;
 	};
-	void SetInfo(string OName, SCR_EArsenalItemType type, SCR_EArsenalItemMode mode ,int Amount, string TLoc)
+	void SetInfo(string OName, SCR_EArsenalItemType type, SCR_EArsenalItemMode mode , EEditableEntityLabel label, int Amount, string TLoc)
 	{
 		OwnerName = OName;
 		RequestType = type;
 		RequestMode = mode;
+		RequestLabel = label;
 		ItemAmount = Amount;
 		OwnerLocation = TLoc;
 	}
