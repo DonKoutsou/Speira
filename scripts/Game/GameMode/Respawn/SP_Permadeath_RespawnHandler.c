@@ -15,28 +15,8 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	[Attribute("1", UIWidgets.ComboBox, "Game Over Type", "", ParamEnumArray.FromEnum(EGameOverTypes))];
 	protected EGameOverTypes			m_eOverriddenGameOverType;
 	
-	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
-	vector m_BanditStorageWorldPosition;
-	
-	[Attribute("", UIWidgets.Coords, params: "inf inf inf purpose=coords space=world", desc: "")]
-	vector m_RespawnWorldPositionBandit;
-	
-	[Attribute("")]
-	ResourceName m_StoragePreset;
-	
-	[Attribute("")]
-	ResourceName m_SpawnpointSPEIRA;
-	
-	[Attribute("")]
-	ResourceName m_SpawnpointBandit;
-	
 	[Attribute()]
 	int m_iLives;
-	
-	IEntity DeathStorageBandit;
-	
-	bool m_bDonewithspanpoints = false;
-
 	override void OnPlayerKilled(int playerId, IEntity player, IEntity killer)
 	{
 		//FactionAffiliationComponent factcompKiller = FactionAffiliationComponent.Cast(killer.FindComponent(FactionAffiliationComponent));
@@ -118,22 +98,5 @@ class SP_PermadeathRespawnHandlerComponent : SCR_AutomaticRespawnHandlerComponen
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
-		if (m_SpawnpointBandit)
-		{
-			EntitySpawnParams spawnParams = EntitySpawnParams();
-			spawnParams.TransformMode = ETransformMode.WORLD;
-			spawnParams.Transform[3] = m_RespawnWorldPositionBandit;
-			Resource spawnBANDIT = Resource.Load(m_SpawnpointBandit);
-			GetGame().SpawnEntityPrefab(spawnBANDIT, GetGame().GetWorld(), spawnParams);
-		}
-		if (m_StoragePreset)
-		{
-			Resource storage = Resource.Load(m_StoragePreset);
-			EntitySpawnParams spawnParamsBand = EntitySpawnParams();
-			spawnParamsBand.TransformMode = ETransformMode.WORLD;
-			spawnParamsBand.Transform[3] = m_BanditStorageWorldPosition;
-			DeathStorageBandit = GetGame().SpawnEntityPrefab(storage, GetGame().GetWorld(), spawnParamsBand);
-			
-		}
 	}
 }

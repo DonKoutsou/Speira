@@ -11,7 +11,7 @@ class SCR_CharacterIdentityComponent : CharacterIdentityComponent
 	[Attribute("#AR-Idenity_Name_Format_NoAlias")]
 	protected LocalizedString m_IdentityFormatNoAlias;
 	
-	protected int m_CharacterRep = Math.RandomInt(20, 100);
+	protected int m_iCharacterRep = Math.RandomInt(20, 100);
 	
 	/*!
 	Get full name with formatting. Alias might be empty but it is handeled in formatting
@@ -20,14 +20,18 @@ class SCR_CharacterIdentityComponent : CharacterIdentityComponent
 	\param[out] alias Alias of character (%2 in formatting) might be empty
 	\param[out] surname Surname of Character (%3 in formatting)
 	*/
+	void SetCharacterRep(int newrep)
+	{
+		m_iCharacterRep = newrep;
+	}
 	int GetRep()
 	{
-		return m_CharacterRep;
+		return m_iCharacterRep;
 	}
 	bool AdjustCharRep(int amount)
 	{
-		m_CharacterRep = m_CharacterRep + amount;
-		if(m_CharacterRep <= 0)
+		m_iCharacterRep = m_iCharacterRep + amount;
+		if(m_iCharacterRep <= 0)
 		{
 			return true;
 		}

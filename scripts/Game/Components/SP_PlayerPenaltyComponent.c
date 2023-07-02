@@ -106,4 +106,10 @@ class SP_PlayerPenaltyComponent: SCR_PlayerPenaltyComponent
 		int killerPlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(killerChar);
 		
 	}
+	override void OnPlayerSpawned(int playerId, IEntity controlledEntity)
+	{
+		super.OnPlayerSpawned(playerId, controlledEntity);
+		SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(controlledEntity.FindComponent(SCR_CharacterIdentityComponent));
+		id.SetCharacterRep(10);
+	}
 }

@@ -50,6 +50,10 @@ class SP_BountyTask: SP_Task
 	
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
+		if(!CharacterAssigned(Assignee))
+		{
+			return false;
+		}
 		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
@@ -78,6 +82,8 @@ class SP_BountyTask: SP_Task
 				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
 				Assigneeinv.TryRemoveItemFromStorage(FoundTags[0],parentSlot.GetStorage());
 				Ownerinv.TryInsertItem(FoundTags[0]);
+				e_State = ETaskState.COMPLETED;
+				delete Bounty;
 				return true;
 			}
 		}

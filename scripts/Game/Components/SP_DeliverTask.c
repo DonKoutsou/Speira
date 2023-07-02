@@ -84,6 +84,14 @@ class SP_DeliverTask: SP_Task
 		{
 			return false;
 		}
+		if (!CharacterAssigned(Assignee))
+		{
+			return false;
+		}
+		if (e_State == ETaskState.COMPLETED)
+		{
+			return false;
+		}
 		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterRankName(TalkingChar) + " " + Diag.GetCharacterName(TalkingChar));
@@ -118,6 +126,7 @@ class SP_DeliverTask: SP_Task
 				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
 				inv.TryRemoveItemFromStorage(FoundPackages[0],parentSlot.GetStorage());
 				Targetinv.TryInsertItem(FoundPackages[0]);
+				e_State = ETaskState.COMPLETED;
 				return true;
 			}
 		}

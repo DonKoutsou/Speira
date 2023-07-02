@@ -217,5 +217,14 @@ modded enum EWeaponType
 modded enum SCR_EArsenalItemType
 {
 	FOOD = 262200,
-	DRINK = 262600
+	DRINK = 262600,
+	RADIO = 262800,
+	COMPASS = 263000,
+	FLASHLIGHT = 263500,
+	MAP = 270000
+};
+modded enum SCR_EArsenalItemMode
+{
+	GADGET = 128
+	
 };

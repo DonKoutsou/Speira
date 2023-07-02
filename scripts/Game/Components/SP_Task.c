@@ -105,8 +105,9 @@ class SP_Task: ScriptAndConfig
 					}
 					Movedamount += 1;
 				}
-				SP_DialogueComponent dialogue = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				dialogue.DoAnouncerDialogue(Movedamount.ToString() + " " + "watches added to your wallet");
+				SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(Target.FindComponent(SCR_CharacterIdentityComponent));
+				id.AdjustCharRep(5);
+				SCR_HintManagerComponent.GetInstance().ShowCustom(Movedamount.ToString() + " " + "watches added to your wallet, and your reputation has improved");
 				return true;
 		}
 		return false;

@@ -1,13 +1,19 @@
+//-----------------------------------------------------------------------------//
 class SP_RetrieveTask: SP_Task
 {
-	IEntity ItemBounty;
-	int m_iRequestedAmount;
+	//----------------------------------------//
+	IEntity	ItemBounty;
+	//----------------------------------------//
+	int	m_iRequestedAmount;
+	//----------------------------------------//
 	SCR_EArsenalItemType	m_requestitemtype;
 	SCR_EArsenalItemMode	m_requestitemmode;
+//-----------------------------------------------------------------------------//
 	IEntity GetItemBountyEnt()
 	{
 		return ItemBounty;
-	}
+	};
+//-----------------------------------------------------------------------------//
 	void GetInfo(out string OName, out string OLoc)
 	{
 		if (!TaskOwner)
@@ -22,6 +28,7 @@ class SP_RetrieveTask: SP_Task
 		OName = CharRank.GetCharacterRankName(TaskOwner) + " " + Diag.GetCharacterName(TaskOwner);
 		OLoc = Director.GetCharacterLocation(TaskOwner);
 	};
+//-----------------------------------------------------------------------------//
 	override void UpdateState()
 	{
 		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
@@ -31,9 +38,14 @@ class SP_RetrieveTask: SP_Task
 			return;
 		}
 	};
+//-----------------------------------------------------------------------------//
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
 		if (TalkingChar != TaskOwner)
+		{
+			return false;
+		}
+		if(!CharacterAssigned(Assignee))
 		{
 			return false;
 		}
@@ -43,10 +55,20 @@ class SP_RetrieveTask: SP_Task
 		inv.FindItems(FoundItems, RequestPred);
 		if (FoundItems.Count() >= m_iRequestedAmount)
 		{
-			return true;
+			foreach (IEntity item : FoundItems)
+				{
+					InventoryItemComponent pInvComp = InventoryItemComponent.Cast(item.FindComponent(InventoryItemComponent));
+					InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+					LoadoutSlotInfo eqslot = LoadoutSlotInfo.Cast(parentSlot);
+					if(!eqslot)
+						{
+							return true;
+						}
+				}
 		}
 		return false;			
 	};
+//-----------------------------------------------------------------------------//
 	override bool CompleteTask(IEntity Assignee)
 	{
 		SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(Assignee.FindComponent(SCR_InventoryStorageManagerComponent));
@@ -62,23 +84,34 @@ class SP_RetrieveTask: SP_Task
 				{
 					InventoryItemComponent pInvComp = InventoryItemComponent.Cast(item.FindComponent(InventoryItemComponent));
 					InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
-					inv.TryRemoveItemFromStorage(item,parentSlot.GetStorage());
-					if(m_requestitemtype == SCR_EArsenalItemType.HEADWEAR)
+					LoadoutSlotInfo eqslot = LoadoutSlotInfo.Cast(parentSlot);
+					if(!eqslot)
 					{
-						Ownerinv.EquipCloth(item);
+						inv.TryRemoveItemFromStorage(item,parentSlot.GetStorage());
+						if(m_requestitemtype == SCR_EArsenalItemType.HEADWEAR)
+						{
+							Ownerinv.EquipCloth(item);
+						}
+						else if(m_requestitemtype == SCR_EArsenalItemType.BACKPACK)
+						{
+							Ownerinv.EquipCloth(item);
+						}
+						else
+						{
+							Ownerinv.TryInsertItem(item);
+						}
+						e_State = ETaskState.COMPLETED;
+						delete ItemBounty;
+						return true;
 					}
-					else
-					{
-						Ownerinv.TryInsertItem(item);
-					}
-					e_State = ETaskState.COMPLETED;
-					return true;
+					
 				}
 				
 			}
 		}
 		return false;
 	};
+//-----------------------------------------------------------------------------//
 	override bool Init()
 	{
 		m_iRewardAmount = Math.RandomInt(2, 4);
@@ -107,6 +140,7 @@ class SP_RetrieveTask: SP_Task
 		}
 		return false;
 	};
+//-----------------------------------------------------------------------------//
 	override bool SetupTaskEntity()
 	{
 		if (TaskOwner)
@@ -132,30 +166,50 @@ class SP_RetrieveTask: SP_Task
 					return false;
 				}
 			}
-			SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
-			SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REQUEST);
-			int index = Math.RandomInt(0, 5);
-			if(index == 0)
+			if(!SetupRequestTypenMode())
+			{
+				return false;
+			}
+			SP_ItemBountyComponent IBComp = 	SP_ItemBountyComponent.Cast(ItemBounty.FindComponent(	SP_ItemBountyComponent));
+			m_iRewardAmount = m_iRewardAmount * m_iRequestedAmount;
+			IBComp.SetInfo(OName, m_requestitemtype, m_requestitemmode, EEditableEntityLabel.ITEMTYPE_ITEM, m_iRequestedAmount, OLoc);
+			string itemdesc = typename.EnumToString(SCR_EArsenalItemType, m_requestitemtype) + " " + typename.EnumToString(SCR_EArsenalItemMode, m_requestitemmode);
+			TaskDesc = string.Format("%1 is looking for %2 %3.", OName, m_iRequestedAmount.ToString(), itemdesc);
+			TaskDiag = string.Format("I'm looking for %1 %2. Come back to find me on %3. Reward is %4 watches", m_iRequestedAmount.ToString(), itemdesc, OLoc, m_iRewardAmount);
+			e_State = ETaskState.UNASSIGNED;
+			return true;
+		}
+		return false;
+	};
+//-----------------------------------------------------------------------------//
+	bool SetupRequestTypenMode()
+	{
+		int index = Math.RandomInt(0, 10);
+		if (index == 0)
 			{
 				m_requestitemtype = SCR_EArsenalItemType.HEAL;
 				m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+				return true;
 			}
-			if(index == 1)
+		if (index == 1)
 			{
 				m_requestitemtype = SCR_EArsenalItemType.FOOD;
 				m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+				return true;
 			}
-			if(index == 2)
+		if (index == 2)
 			{
 				m_requestitemtype = SCR_EArsenalItemType.DRINK;
 				m_requestitemmode = SCR_EArsenalItemMode.CONSUMABLE;
+				return true;
 			}
-			if(index == 3)
+		if (index == 3)
 			{
 				m_requestitemtype = SCR_EArsenalItemType.EXPLOSIVES;
 				m_requestitemmode = SCR_EArsenalItemMode.WEAPON;
+				return true;
 			}
-			if(index == 4)
+		if (index == 4)
 			{
 				EquipedLoadoutStorageComponent loadoutStorage = EquipedLoadoutStorageComponent.Cast(TaskOwner.FindComponent(EquipedLoadoutStorageComponent));
 				if (!loadoutStorage)
@@ -168,6 +222,8 @@ class SP_RetrieveTask: SP_Task
 				}
 				EntityPrefabData prefabData = Helmet.GetPrefabData();
 				ResourceName prefabName = prefabData.GetPrefabName();
+				SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
+				SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REQUEST);
 				SCR_EntityCatalogEntry entry = RequestCatalog.GetEntryWithPrefab(prefabName);
 				if(!entry)
 				{
@@ -184,28 +240,72 @@ class SP_RetrieveTask: SP_Task
 				m_requestitemmode = SCR_EArsenalItemMode.ATTACHMENT;
 				m_iRequestedAmount = 1;
 				m_iRewardAmount = 10;
+				return true;
 			}
-			SP_ItemBountyComponent IBComp = 	SP_ItemBountyComponent.Cast(ItemBounty.FindComponent(	SP_ItemBountyComponent));
-			m_iRewardAmount = m_iRewardAmount * m_iRequestedAmount;
-			IBComp.SetInfo(OName, m_requestitemtype, m_requestitemmode, EEditableEntityLabel.ITEMTYPE_ITEM, m_iRequestedAmount, OLoc);
-			string itemdesc = typename.EnumToString(SCR_EArsenalItemType, m_requestitemtype) + " " + typename.EnumToString(SCR_EArsenalItemMode, m_requestitemmode);
-			TaskDesc = string.Format("%1 is looking for %2 %3.", OName, m_iRequestedAmount.ToString(), itemdesc);
-			TaskDiag = string.Format("I'm looking for %1 %2. Come back to find me on %3. Reward is %4 watches", m_iRequestedAmount.ToString(), itemdesc, OLoc, m_iRewardAmount);
-			e_State = ETaskState.UNASSIGNED;
-			return true;
-		}
+		if (index == 5)
+			{
+				EquipedLoadoutStorageComponent loadoutStorage = EquipedLoadoutStorageComponent.Cast(TaskOwner.FindComponent(EquipedLoadoutStorageComponent));
+				if (!loadoutStorage)
+					return false;
+				
+				IEntity Backpack = loadoutStorage.GetClothFromArea(LoadoutBackpackArea);
+				if (Backpack)
+				{
+					return false;
+				}
+				m_requestitemtype = SCR_EArsenalItemType.BACKPACK;
+				m_requestitemmode = SCR_EArsenalItemMode.ATTACHMENT;
+				m_iRequestedAmount = 1;
+				m_iRewardAmount = 10;
+				return true;
+			}
+		if (index == 6)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.FLASHLIGHT;
+				m_requestitemmode = SCR_EArsenalItemMode.GADGET;
+				m_iRequestedAmount = 1;
+				m_iRewardAmount = 10;
+				return true;
+			}
+		if (index == 7)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.MAP;
+				m_requestitemmode = SCR_EArsenalItemMode.GADGET;
+				m_iRewardAmount = 2;
+				return true;
+			}
+		if (index == 8)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.COMPASS;
+				m_requestitemmode = SCR_EArsenalItemMode.GADGET;
+				m_iRequestedAmount = 1;
+				m_iRewardAmount = 5;
+				return true;
+			}
+		if (index == 9)
+			{
+				m_requestitemtype = SCR_EArsenalItemType.RADIO;
+				m_requestitemmode = SCR_EArsenalItemMode.GADGET;
+				m_iRequestedAmount = 1;
+				m_iRewardAmount = 10;
+				return true;
+			}
 		return false;
-	};
+	}
+//-----------------------------------------------------------------------------//
 };
+//-----------------------------------------------------------------------------//
 class SP_RequestPredicate : InventorySearchPredicate
 {
 	SCR_EArsenalItemType	m_requestitemtype;
 	SCR_EArsenalItemMode	m_requestitemmode;
+	//-----------------------------------------------------------------------------//
 	void SP_RequestPredicate(SCR_EArsenalItemType type, SCR_EArsenalItemMode mode)
 	{
 		m_requestitemtype = type;
 		m_requestitemmode = mode;
-	}
+	};
+	//-----------------------------------------------------------------------------//
 	override protected bool IsMatch(BaseInventoryStorageComponent storage, IEntity item, array<GenericComponent> queriedComponents, array<BaseItemAttributeData> queriedAttributes)
 	{
 		EntityPrefabData prefabData = item.GetPrefabData();
@@ -218,10 +318,28 @@ class SP_RequestPredicate : InventorySearchPredicate
 			return false;
 		}
 		SCR_ArsenalItem arsenaldata = SCR_ArsenalItem.Cast(entry.GetEntityDataOfType(SCR_ArsenalItem));
-		if (arsenaldata.GetItemType() == m_requestitemtype && arsenaldata.GetItemMode() == m_requestitemmode)
+		if(m_requestitemtype && m_requestitemmode)
 		{
-			return true;
+			if (arsenaldata.GetItemType() == m_requestitemtype && arsenaldata.GetItemMode() == m_requestitemmode)
+			{
+				return true;
+			}
+		}
+		else if(m_requestitemtype && !m_requestitemmode)
+		{
+			if (arsenaldata.GetItemType() == m_requestitemtype)
+			{
+				return true;
+			}
+		}
+		else if(!m_requestitemtype && m_requestitemmode)
+		{
+			if (arsenaldata.GetItemMode() == m_requestitemmode)
+			{
+				return true;
+			}
 		}
 		return false;
 	}
+	//-----------------------------------------------------------------------------//
 }

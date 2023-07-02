@@ -14,8 +14,7 @@ class SP_Cook : ScriptedUserAction
 		SCR_FireplaceComponent fireplace = SCR_FireplaceComponent.Cast(pOwnerEntity.GetParent() 	.FindComponent(SCR_FireplaceComponent));
 		if(!fireplace)
 		{
-			SP_DialogueComponent Diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-			Diagcomp.DoAnouncerDialogue("Cooking pot needs to placed on a fireplace to be able to cook");
+			SCR_HintManagerComponent.GetInstance().ShowCustom("Cooking pot needs to placed on a fireplace to be able to cook");
 			return;
 		}
 		PrefabResource_Predicate Rawpred = new PrefabResource_Predicate(m_RawMeatPrefab);

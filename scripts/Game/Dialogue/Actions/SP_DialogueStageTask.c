@@ -18,13 +18,11 @@ class DialogueStageTask : DialogueStage
 			invChar.TryRemoveItemFromStorage(BountyPaper, parentSlot.GetStorage());
 			if(inv.TryInsertItem(BountyPaper))
 			{
-				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				diagcomp.DoAnouncerDialogue("The bounty has been added to your inventory");
+				SCR_HintManagerComponent.GetInstance().ShowCustom("The bounty has been added to your inventory");
 			}
 			else
 			{
-				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				diagcomp.DoAnouncerDialogue("No space in inventory, bounty left on the floor");
+				SCR_HintManagerComponent.GetInstance().ShowCustom("No space in inventory, bounty left on the floor");
 			}
 			t_Bounty.AssignCharacter(Player);
 		}
@@ -38,13 +36,11 @@ class DialogueStageTask : DialogueStage
 			invChar.TryRemoveItemFromStorage(Package, parentSlot.GetStorage());
 			if(inv.TryInsertItem(Package))
 			{
-				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				diagcomp.DoAnouncerDialogue("The package has been added to your inventory");
+				SCR_HintManagerComponent.GetInstance().ShowCustom("The package has been added to your inventory");
 			}
 			else
 			{
-				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				diagcomp.DoAnouncerDialogue("No space in inventory, package left on the floor");
+				SCR_HintManagerComponent.GetInstance().ShowCustom("No space in inventory, package left on the floor");
 			}
 			t_Deliver.AssignCharacter(Player);
 		}
@@ -58,13 +54,11 @@ class DialogueStageTask : DialogueStage
 			invChar.TryRemoveItemFromStorage(ItemBountyPaper, parentSlot.GetStorage());
 			if(inv.TryInsertItem(ItemBountyPaper))
 			{
-				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				diagcomp.DoAnouncerDialogue("The item bounty has been added to your inventory");
+				SCR_HintManagerComponent.GetInstance().ShowCustom("The item bounty has been added to your inventory");
 			}
 			else
 			{
-				SP_DialogueComponent diagcomp = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-				diagcomp.DoAnouncerDialogue("No space in inventory, item bounty left on the floor");
+				SCR_HintManagerComponent.GetInstance().ShowCustom("No space in inventory, item bounty left on the floor");
 			}
 			t_Retrieve.AssignCharacter(Player);
 		}
