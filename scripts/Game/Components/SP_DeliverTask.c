@@ -1,6 +1,31 @@
 class SP_DeliverTask: SP_Task
 {
 	IEntity Package;
+	override typename GetClassName()
+	{
+		return SP_DeliverTask;
+	}
+	override void DeleteLeftovers()
+	{
+		if(Package)
+		{
+			InventoryItemComponent pInvComp = InventoryItemComponent.Cast(Package.FindComponent(InventoryItemComponent));
+			InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+			if(parentSlot)
+			{
+				SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
+				if(inv)
+				{
+					inv.TryRemoveItemFromStorage(Package,parentSlot.GetStorage());
+					delete Package;
+				}
+			}
+		}
+		if(Package)
+		{
+			delete Package;
+		}
+	};
 	IEntity GetPackage()
 	{
 		return Package;
@@ -31,7 +56,7 @@ class SP_DeliverTask: SP_Task
 		if (OName == " " || DName == " " || DLoc == " ")
 		{
 			return false;
-		}
+		}     
 		EntitySpawnParams params = EntitySpawnParams();
 		params.TransformMode = ETransformMode.WORLD;
 		params.Transform[3] = vector.Zero;
@@ -148,7 +173,12 @@ class SP_DeliverTask: SP_Task
 			}
 			FactionKey key = Fact.GetFactionKey();
 			SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-			MyDirector.GetDirectorOccupiedByFriendly(myfact, MyDirector);
+			SP_AIDirector NewDirector;
+			MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDirector);
+			if(NewDirector == MyDirector)
+			{
+				return false;
+			}
 			IEntity Character;
 			IEntity CharToDeliverTo;
 			if (!MyDirector.GetRandomUnitByFKey(key, Character))
@@ -164,7 +194,15 @@ class SP_DeliverTask: SP_Task
 			{
 				return false;
 			}
+			if (!CheckCharacter(Character))
+			{
+				return false;
+			}
 			if (!Character || !CharToDeliverTo)
+			{
+				return false;
+			}
+			if (Character == CharToDeliverTo)
 			{
 				return false;
 			}

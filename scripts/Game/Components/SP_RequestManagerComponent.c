@@ -12,7 +12,11 @@ class SP_RequestManagerComponent : ScriptComponent
 	[Attribute(defvalue: "3", desc: "Max amount of tasks a character can be requesting at the same time")]
 	int m_fTaskPerCharacter;
 	
+	[Attribute(defvalue: "2", desc: "Max amount of tasks of sametype a character can be requesting at the same time")]
+	int m_fTaskOfSameTypePerCharacter;
 	
+	[Attribute()]
+	ref array <ref SP_Task> m_TasksToSpawn;
 	protected float m_fTaskRespawnTimer;
 	//----------------------------------------------------------------------------------------------------------------//
 	static ref array<ref SP_Task> TaskMap = null;
@@ -57,23 +61,16 @@ class SP_RequestManagerComponent : ScriptComponent
 	}
 	bool CreateTask(typename TaskType)
 	{
+		if(!TaskType)
+		{
+			return false;
+		}
+		
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 		SP_Task Task = SP_Task.Cast(TaskType.Spawn());
 		if(Task.Init())
 		{
 			IEntity Owner = Task.GetOwner();
-			array<ref SP_Task> tasks = new array<ref SP_Task>();
-			GetCharTasks(Owner, tasks);
-			if(tasks.Count() >= m_fTaskPerCharacter)
-			{
-				return false;
-			}
-			string charname = Diag.GetCharacterName(Owner);
-			string charrank = Diag.GetCharacterRankName(Owner);
-			if(charname == " " || charrank == " ")
-			{
-				return false;
-			}
 			FactionKey senderFaction = Diag.GetCharacterFaction(Owner).GetFactionKey();
 			BaseChatChannel Channel;
 			switch (senderFaction)
@@ -93,12 +90,9 @@ class SP_RequestManagerComponent : ScriptComponent
 				case "US":
 					Channel = Diag.m_ChatChannelUS;
 				break;
-				case "RENEGADE":
-					{
-					return false;
-					}
-				break;
-			}
+			};
+			string charname = Diag.GetCharacterName(Owner);
+			string charrank = Diag.GetCharacterRankName(Owner);
 			if (TaskMap.Count() > m_iMinTaskAmount)
 			{
 				Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
@@ -114,7 +108,24 @@ class SP_RequestManagerComponent : ScriptComponent
 		{
 			if(task.CharacterIsOwner(Char) == true)
 			{
-				tasks.Insert(task);
+				if(task.GetState() == ETaskState.UNASSIGNED || task.GetState() == ETaskState.ASSIGNED)
+				{
+					tasks.Insert(task);
+				}
+			}
+		}
+	}
+	void GetCharTasksOfSameType(IEntity Char,out array<ref SP_Task> tasks, typename tasktype)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.CharacterIsOwner(Char) == true)
+			{
+				if(task.GetClassName() == tasktype)
+				{
+					tasks.Insert(task);
+				}
+				
 			}
 		}
 	}
@@ -161,39 +172,17 @@ class SP_RequestManagerComponent : ScriptComponent
 	{
 		if (TaskMap.Count() < m_iMinTaskAmount)
 		{
-			int index = Math.RandomInt(0, 3);
-			typename Task;
-			if(index == 0)
-			{
-				Task = SP_DeliverTask;
-			}
-			if(index == 1)
-			{
-				Task = SP_BountyTask;
-			}
-			if(index == 2)
-			{
-				Task = SP_RetrieveTask;
-			}
+			typename Task = m_TasksToSpawn.GetRandomElement().GetClassName();
 			CreateTask(Task);
 			return;
 		}
 		m_fTaskRespawnTimer += timeSlice;
 		if(m_fTaskRespawnTimer > m_fTaskGenTime)
 		{
-			int index = Math.RandomInt(0, 3);
 			typename Task;
-			if(index == 0)
+			if(m_TasksToSpawn)
 			{
-				Task = SP_DeliverTask;
-			}
-			if(index == 1)
-			{
-				Task = SP_BountyTask;
-			}
-			if(index == 2)
-			{
-				Task = SP_RetrieveTask;
+				Task = m_TasksToSpawn.GetRandomElement().GetClassName();
 			}
 			if(CreateTask(Task))
 			{

@@ -40,7 +40,10 @@ class DialogueStageDeliverTaskAction : DialogueStage
 			{
 				if(Task.ReadyToDeliver(Character, Player))
 				{
-					return true;
+					if(Task.GetState() != ETaskState.COMPLETED)
+					{
+						return true;
+					}
 				}
 			}
 		}
@@ -52,7 +55,10 @@ class DialogueStageDeliverTaskAction : DialogueStage
 			{
 				if(Task.ReadyToDeliver(Character, Player))
 				{
-					return true;
+					if(Task.GetState() != ETaskState.COMPLETED)
+					{
+						return true;
+					}
 				}
 			}
 		}

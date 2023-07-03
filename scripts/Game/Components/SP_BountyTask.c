@@ -4,6 +4,31 @@ class SP_BountyTask: SP_Task
 	//Entities tied to task.
 	IEntity Bounty;
 	//---------------------------------------------------------------------------//
+	override typename GetClassName()
+	{
+		return SP_BountyTask;
+	}
+	override void DeleteLeftovers()
+	{
+		if(Bounty)
+		{
+			InventoryItemComponent pInvComp = InventoryItemComponent.Cast(Bounty.FindComponent(InventoryItemComponent));
+			InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+			if(parentSlot)
+			{
+				SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
+				if(inv)
+				{
+					inv.TryRemoveItemFromStorage(Bounty,parentSlot.GetStorage());
+					delete Bounty;
+				}
+			}
+		}
+		if(Bounty)
+		{
+			delete Bounty;
+		}
+	};
 	IEntity GetBountyEnt()
 	{
 		return Bounty;
@@ -166,7 +191,15 @@ class SP_BountyTask: SP_Task
 			{
 				return false;
 			}
+			if (!CheckCharacter(Character))
+			{
+				return false;
+			}
 			if (!Character || !CharToDeliverTo)
+			{
+				return false;
+			}
+			if (Character == CharToDeliverTo)
 			{
 				return false;
 			}

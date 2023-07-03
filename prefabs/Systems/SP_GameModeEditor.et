@@ -3271,6 +3271,14 @@ SCR_GameModeEditor {
   SP_RequestManagerComponent "{5DB3077B503444F6}" {
    m_fTaskGenTime 300
    m_iMinTaskAmount 200
+   m_TasksToSpawn {
+    SP_BountyTask "{5DC705B701DF6ABF}" {
+    }
+    SP_DeliverTask "{5DC705B702D3DFC1}" {
+    }
+    SP_RetrieveTask "{5DC705B703069EB3}" {
+    }
+   }
   }
   RplComponent "{5D685A535B29A270}" {
    "Rpl State Override" None

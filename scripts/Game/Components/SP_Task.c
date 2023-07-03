@@ -11,7 +11,7 @@ class SP_Task: ScriptAndConfig
 	//-------------------------------------------------//
 	string TaskDiag;
 	//-------------------------------------------------//
-	Resource reward;
+	ResourceName reward;
 	//-------------------------------------------------//
 	int m_iRewardAmount;
 	//-------------------------------------------------//
@@ -20,13 +20,48 @@ class SP_Task: ScriptAndConfig
 	//Characters assigned to this task
 	ref array <IEntity> a_TaskAssigned = new ref array <IEntity>();
 	//-------------------------------------------------//
-
+	typename GetClassName()
+	{
+		return SP_Task;
+	}
+	void DeleteLeftovers()
+	{
+	};
 	bool Init()
 	{
 		CalculateReward();
 		return true;
 	};
-	
+	bool CheckCharacter(IEntity Owner)
+	{
+		SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		array<ref SP_Task> tasks = new array<ref SP_Task>();
+		ReqMan.GetCharTasks(Owner, tasks);
+		if(tasks.Count() >= ReqMan.m_fTaskPerCharacter)
+		{
+			return false;
+		}
+		array<ref SP_Task> sametasks = new array<ref SP_Task>();
+		ReqMan.GetCharTasksOfSameType(Owner, sametasks, GetClassName());
+		if(sametasks.Count() >= ReqMan.m_fTaskOfSameTypePerCharacter)
+		{
+			return false;
+		}
+		string charname = Diag.GetCharacterName(Owner);
+		string charrank = Diag.GetCharacterRankName(Owner);
+		if(charname == " " || charrank == " ")
+		{
+			return false;
+		}
+		FactionKey senderFaction = Diag.GetCharacterFaction(Owner).GetFactionKey();
+		BaseChatChannel Channel;
+		if (senderFaction == "RENEGADE")
+		{
+			return false;
+		};
+		return true;
+	};
 	ETaskState GetState()
 	{
 		return e_State;
@@ -110,7 +145,7 @@ class SP_Task: ScriptAndConfig
 		SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REWARD);
 		array<SCR_EntityCatalogEntry> Mylist = new array<SCR_EntityCatalogEntry>();
 		RequestCatalog.GetEntityListWithLabel(EEditableEntityLabel.ITEMTYPE_CURRENCY, Mylist);
-		reward = Resource.Load(Mylist.GetRandomElement().GetPrefab());
+		reward = Mylist.GetRandomElement().GetPrefab();
 	};
 	bool GiveReward(IEntity Target)
 	{
@@ -121,9 +156,10 @@ class SP_Task: ScriptAndConfig
 			params.Transform[3] = vector.Zero;
 			InventoryStorageManagerComponent TargetInv = InventoryStorageManagerComponent.Cast(Target.FindComponent(InventoryStorageManagerComponent));
 			array<IEntity> Rewardlist = new array<IEntity>();
+			Resource RewardRes = Resource.Load(reward);
 			int Movedamount;
 			for (int j = 0; j < m_iRewardAmount; j++)
-				Rewardlist.Insert(GetGame().SpawnEntityPrefab(reward, Target.GetWorld(), params));
+				Rewardlist.Insert(GetGame().SpawnEntityPrefab(RewardRes, Target.GetWorld(), params));
 			for (int i, count = Rewardlist.Count(); i < count; i++)
 			{
 				if(TargetInv.TryInsertItem(Rewardlist[i]) == false)

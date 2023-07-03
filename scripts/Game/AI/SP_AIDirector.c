@@ -186,7 +186,16 @@ class SP_AIDirector : AIGroup
 			return false;
 		}
 		array<AIAgent> outAgents = new array<AIAgent>();
-		m_aGroups.GetRandomElement().GetAgents(outAgents);
+		SCR_AIGroup luckygroup = m_aGroups.GetRandomElement();
+		if(!luckygroup)
+		{
+			return false;
+		}
+		luckygroup.GetAgents(outAgents);
+		if(outAgents.Count() <= 0)
+		{
+			return false;
+		}
 		Char = outAgents.GetRandomElement().GetControlledEntity();
 		if(Char)
 		{

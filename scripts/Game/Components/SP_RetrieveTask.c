@@ -8,6 +8,32 @@ class SP_RetrieveTask: SP_Task
 	//----------------------------------------//
 	SCR_EArsenalItemType	m_requestitemtype;
 	SCR_EArsenalItemMode	m_requestitemmode;
+	override typename GetClassName()
+	{
+		return SP_RetrieveTask;
+	}
+	
+	override void DeleteLeftovers()
+	{
+		if(ItemBounty)
+		{
+			InventoryItemComponent pInvComp = InventoryItemComponent.Cast(ItemBounty.FindComponent(InventoryItemComponent));
+			InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
+			if(parentSlot)
+			{
+				SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
+				if(inv)
+				{
+					inv.TryRemoveItemFromStorage(ItemBounty,parentSlot.GetStorage());
+					delete ItemBounty;
+				}
+			}
+		}
+		if(ItemBounty)
+		{
+			delete ItemBounty;
+		}
+	};
 //-----------------------------------------------------------------------------//
 	IEntity GetItemBountyEnt()
 	{
@@ -55,6 +81,7 @@ class SP_RetrieveTask: SP_Task
 		inv.FindItems(FoundItems, RequestPred);
 		if (FoundItems.Count() >= m_iRequestedAmount)
 		{
+			int m_ifoundamount;
 			foreach (IEntity item : FoundItems)
 				{
 					InventoryItemComponent pInvComp = InventoryItemComponent.Cast(item.FindComponent(InventoryItemComponent));
@@ -62,9 +89,13 @@ class SP_RetrieveTask: SP_Task
 					LoadoutSlotInfo eqslot = LoadoutSlotInfo.Cast(parentSlot);
 					if(!eqslot)
 						{
-							return true;
+							m_ifoundamount += 1;
 						}
 				}
+			if(m_ifoundamount == m_iRequestedAmount)
+			{
+				return true;
+			}
 		}
 		return false;			
 	};
@@ -90,6 +121,7 @@ class SP_RetrieveTask: SP_Task
 						inv.TryRemoveItemFromStorage(item,parentSlot.GetStorage());
 						if(m_requestitemtype == SCR_EArsenalItemType.HEADWEAR)
 						{
+							Ownerinv.TryInsertItem(item);
 							Ownerinv.EquipCloth(item);
 						}
 						else if(m_requestitemtype == SCR_EArsenalItemType.BACKPACK)
@@ -102,10 +134,10 @@ class SP_RetrieveTask: SP_Task
 						}
 						e_State = ETaskState.COMPLETED;
 						delete ItemBounty;
-						return true;
 					}
 					
 				}
+				return true;
 				
 			}
 		}
@@ -125,6 +157,10 @@ class SP_RetrieveTask: SP_Task
 			}
 			IEntity Character;
 			if (!MyDirector.GetRandomUnit(Character))
+			{
+				return false;
+			}
+			if (!CheckCharacter(Character))
 			{
 				return false;
 			}
@@ -162,15 +198,16 @@ class SP_RetrieveTask: SP_Task
 				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
 				if (inv.TryInsertItem(ItemBounty) == false)
 				{
-					delete ItemBounty;
+					DeleteLeftovers();
 					return false;
 				}
 			}
 			if(!SetupRequestTypenMode())
 			{
+				DeleteLeftovers();
 				return false;
 			}
-			SP_ItemBountyComponent IBComp = 	SP_ItemBountyComponent.Cast(ItemBounty.FindComponent(	SP_ItemBountyComponent));
+			SP_ItemBountyComponent IBComp = SP_ItemBountyComponent.Cast(ItemBounty.FindComponent(	SP_ItemBountyComponent));
 			m_iRewardAmount = m_iRewardAmount * m_iRequestedAmount;
 			IBComp.SetInfo(OName, m_requestitemtype, m_requestitemmode, EEditableEntityLabel.ITEMTYPE_ITEM, m_iRequestedAmount, OLoc);
 			string itemdesc = typename.EnumToString(SCR_EArsenalItemType, m_requestitemtype) + " " + typename.EnumToString(SCR_EArsenalItemMode, m_requestitemmode);
@@ -218,9 +255,15 @@ class SP_RetrieveTask: SP_Task
 				IEntity Helmet = loadoutStorage.GetClothFromArea(LoadoutHeadCoverArea);
 				if (Helmet)
 				{
-					SCR_InventoryStorageManagerComponent storeman = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
-					storeman.TryRemoveItemFromInventory(Helmet);
-					delete Helmet;
+					EntityPrefabData prefabData = Helmet.GetPrefabData();
+					ResourceName prefabName = prefabData.GetPrefabName();
+					SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
+					SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REQUEST);
+					SCR_EntityCatalogEntry entry = RequestCatalog.GetEntryWithPrefab(prefabName);
+					if(entry)
+					{
+						return false;
+					}
 				}
 				m_requestitemtype = SCR_EArsenalItemType.HEADWEAR;
 				m_requestitemmode = SCR_EArsenalItemMode.ATTACHMENT;
