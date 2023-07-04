@@ -130,7 +130,7 @@ class SP_BountyTask: SP_Task
 		return false;			
 	};
 	//------------------------------------------------------------------------------------------------------------//
-	override void AssignReward()
+	override bool AssignReward()
 	{
 		EEditableEntityLabel RewardLabel;
 		int index = Math.RandomInt(0,2);
@@ -138,6 +138,10 @@ class SP_BountyTask: SP_Task
 		{
 			RewardLabel = EEditableEntityLabel.ITEMTYPE_CURRENCY;
 			SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+			if(!ReqMan)
+			{
+				return false;
+			}
 			SP_BountyTask tasksample =SP_BountyTask.Cast(ReqMan.GetTaskSample(SP_BountyTask));
 			m_iRewardAverageAmount = tasksample.GetRewardAverage();
 			if(m_iRewardAverageAmount)
@@ -160,6 +164,7 @@ class SP_BountyTask: SP_Task
 		RequestCatalog.GetEntityListWithLabel(RewardLabel, Mylist);
 		SCR_EntityCatalogEntry entry = Mylist.GetRandomElement();
 		reward = entry.GetPrefab();
+		return true;
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	override bool CompleteTask(IEntity Assignee)

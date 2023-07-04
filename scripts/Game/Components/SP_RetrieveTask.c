@@ -22,9 +22,14 @@ class SP_RetrieveTask: SP_Task
 		}
 		if (!SetupTaskEntity())
 		{
+			DeleteLeftovers();
 			return false;
 		}
-		AssignReward();
+		if (!AssignReward())
+		{
+			DeleteLeftovers();
+			return false;
+		}
 		CreateDescritions();
 		return true;
 	};
@@ -68,13 +73,11 @@ class SP_RetrieveTask: SP_Task
 				InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(InventoryStorageManagerComponent));
 				if (inv.TryInsertItem(ItemBounty) == false)
 				{
-					DeleteLeftovers();
 					return false;
 				}
 			}
 			if(!SetupRequestTypenMode())
 			{
-				DeleteLeftovers();
 				return false;
 			}
 			SP_ItemBountyComponent IBComp = SP_ItemBountyComponent.Cast(ItemBounty.FindComponent(	SP_ItemBountyComponent));
@@ -206,7 +209,7 @@ class SP_RetrieveTask: SP_Task
 		return false;
 	}
 	//------------------------------------------------------------------------------------------------------------//
-	override void AssignReward()
+	override bool AssignReward()
 	{
 		EEditableEntityLabel RewardLabel;
 		int index = Math.RandomInt(0,2);
@@ -226,6 +229,7 @@ class SP_RetrieveTask: SP_Task
 		RequestCatalog.GetEntityListWithLabel(RewardLabel, Mylist);
 		SCR_EntityCatalogEntry entry = Mylist.GetRandomElement();
 		reward = entry.GetPrefab();
+		return true;
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)

@@ -1,3 +1,6 @@
+SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_GameModeEditor.et" {
+ coords 2340.332 96.928 2146.214
+}
 GenericEntity : "{057AEFF961B81816}prefabs/Items/Package.et" {
  coords 1458.968 36.056 2266.874
 }

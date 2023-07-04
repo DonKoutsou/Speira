@@ -143,7 +143,7 @@ class SP_DeliverTask: SP_Task
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
-	override void AssignReward()
+	override bool AssignReward()
 	{
 		EEditableEntityLabel RewardLabel;
 		int index = Math.RandomInt(0,2);
@@ -151,7 +151,15 @@ class SP_DeliverTask: SP_Task
 		{
 			RewardLabel = EEditableEntityLabel.ITEMTYPE_CURRENCY;
 			SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
-			SP_DeliverTask tasksample =SP_DeliverTask.Cast(ReqMan.GetTaskSample(SP_DeliverTask));
+			if(!ReqMan)
+			{
+				return false;
+			}
+			SP_DeliverTask tasksample = SP_DeliverTask.Cast(ReqMan.GetTaskSample(SP_DeliverTask));
+			if(!tasksample)
+			{
+				return false;
+			}
 			m_iRewardAverageAmount = tasksample.GetRewardAverage();
 			if(m_iRewardAverageAmount)
 			{
@@ -168,11 +176,26 @@ class SP_DeliverTask: SP_Task
 			m_iRewardAmount = 1;
 		}
 		SCR_EntityCatalogManagerComponent Catalog = SCR_EntityCatalogManagerComponent.GetInstance();
-		SCR_EntityCatalog RequestCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REWARD);
+		if(!Catalog)
+			{
+				Print("Cant find catalog, task creation failed in Assign reward");
+				return false;
+			}
+		SCR_EntityCatalog RewardsCatalog = Catalog.GetEntityCatalogOfType(EEntityCatalogType.REWARD);
+		if(!RewardsCatalog)
+			{
+				Print("Rewards missing from entity catalog");
+				return false;
+			}
 		array<SCR_EntityCatalogEntry> Mylist = new array<SCR_EntityCatalogEntry>();
-		RequestCatalog.GetEntityListWithLabel(RewardLabel, Mylist);
+		RewardsCatalog.GetEntityListWithLabel(RewardLabel, Mylist);
 		SCR_EntityCatalogEntry entry = Mylist.GetRandomElement();
 		reward = entry.GetPrefab();
+		if(!reward)
+			{
+				return false;
+			}
+		return true;
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	override bool CompleteTask(IEntity Assignee)

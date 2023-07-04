@@ -87,11 +87,12 @@ class SP_AIDirector : AIGroup
 			Faction Key2 = Directors[i].GetMajorityHolderNCount(FKey, Count);
 			if(faction.IsFactionFriendly(Key2))
 			{
-				FrDirectors.Insert(Directors[i]);
-				UnitCount = Count;
+				if(Directors[i] != this)
+				{
+					FrDirectors.Insert(Directors[i]);
+					UnitCount = Count;
+				}
 			}
-			
-			
 		}
 		if(FrDirectors.Count() <= 0)
 		{

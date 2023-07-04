@@ -1,65 +1,120 @@
-SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
- ID "56B2B479C6B96951"
+SCR_BaseGameMode {
+ ID "5DC8E7DF1BAF44A7"
  components {
-  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
-   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
-    m_aGameOverScreens {
-     SCR_BaseGameOverScreenInfo "{5D54DC75CFCBDB98}" {
-      m_GameOverScreenId BROTHERFOUND
-      m_GameOverContentLayout "{4E98EBC5622B2BFB}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_Permadeath.layout"
-      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D54DC75D6A35FAA}" {
-       m_sTitle "You found you brother."
-       m_sSubtitle "Thanks for playing"
-       m_sAudioOneShot "SOUND_ONVICTORY"
-      }
-     }
+  SignalsManagerComponent "{5DC8E7D926128AA3}" {
+  }
+  SCR_CallsignManagerComponent "{5DC8E7D93C51DF7F}" {
+  }
+  SCR_CompositionSlotManagerComponent "{5DC8E7D930E053A9}" {
+  }
+  SCR_DestructionManagerComponent "{5DC8E7D934590542}" {
+  }
+  SCR_EntityCatalogManagerComponent "{5DC8E7D94849D925}" {
+   m_aEntityCatalogs {
+    SCR_EntityCatalog "{5DC8E7D94F822388}" : "{C8568AE52B2C8E1F}Configs/Requests/Requests.conf" {
+    }
+    SCR_EntityCatalog "{5DC8E7D94F7C2B82}" : "{251BB14ECEF73562}Configs/Requests/Rewards.conf" {
     }
    }
   }
-  SCR_TimeAndWeatherHandlerComponent "{5D50D3AD276098D5}" {
+  SCR_GameModeHealthSettings "{5DC8E7D95C0C2D67}" {
+   m_bPermitUnconsciousness 1
+  }
+  SCR_GameModeSFManager "{5DC8E7D953E0EEA5}" {
+   m_iMaxNumberOfTasks 1
+  }
+  SCR_GameOverScreenManagerComponent "{5DC8E7D96AC61234}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{5DC8E7DE92B37D05}" : "{651583FFFB7FC765}Configs/GameOverScreen/GameOverScreensConfig.conf" {
+   }
+  }
+  SCR_GroupsManagerComponent "{5DC8E7DE972D4980}" {
+   m_sDefaultGroupPrefab "{8B4D49A9F324E7D5}Prefabs/Groups/PlayableGroup.et"
+   m_iPlayableGroupFrequencyOffset 500
+  }
+  SCR_HintManagerComponent "{5DC8E7DEA50D6698}" {
+  }
+  SCR_InitWeatherComponent "{5DC8E7DED1B7B435}" {
+   m_sInitialStartingWeatherId "Cloudy"
+  }
+  SCR_MapConfigComponent "{5DC8E7DEE1884961}" {
+  }
+  SCR_NametagConfigComponent "{5DC8E7DEE754AF48}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_PlayerSpawnPointManagerComponent "{5DC8E7DEF26A6088}" {
+   m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
+   m_bEnablePlayerSpawnPoints 0
+  }
+  SCR_PlayersRestrictionZoneManagerComponent "{5DC8E7DE01ACC98C}" {
+  }
+  SCR_PossessingManagerComponent "{5DC8E7DE046CF19F}" {
+  }
+  SCR_RadialMenuComponent "{5DC8E7DE1730FF16}" {
+   m_pRadialMenu RHS_RadialMenuHandler "{5DC8E7DE4CF89087}" {
+   }
+   m_RadialMenuVisuals SCR_RadialMenuVisuals "{5DC8E7DE4B0787B4}" {
+    m_LayoutPath "{C967377E3D96107D}UI/layouts/Common/RadialMenu/RadialMenuVisuals.layout"
+    m_eLayer HIGH
+   }
+  }
+  SCR_RadialMenuGameModeComponent "{5DC8E7DE57A4F5D5}" {
+   m_Menu SCR_RadialMenu "{5DC8E7DE60BB4E7B}" : "{D9448EF097CB0ACB}Configs/HUD/RadialMenu/GlobalRadialMenu.conf" {
+   }
+  }
+  SCR_RadialMenuItemsComponent "{5DC8E7DE63782FCD}" {
+   m_MenuController SCR_RadialMenuController "{5DC8E7DE7D1EF9AA}" {
+    m_RMControls SCR_RadialMenuControllerInputs "{5DC8E7DE7459FA62}" {
+     m_sControllerContext "WeaponSelectionContext"
+     m_sOpenAction "Inventory_WeaponSwitchingRadial"
+    }
+   }
+  }
+  SCR_RespawnSystemComponent "{5DC8E7DC1AEF9B87}" {
+  }
+  SCR_TimeAndWeatherHandlerComponent "{5DC8E7DF962CC37D}" {
    m_iStartingHours 5
    m_iStartingMinutes 30
+   m_bRandomStartingDaytime 1
+   m_bRandomStartingWeather 1
   }
-  SP_DialogueComponent "{5D1547897BFE725A}" {
-   m_CharacterArchetypeList {
-    SP_DialogueArchetype "{5D6692FB49692BC3}" : "{DAEA2B70D60C84CE}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_COMMANDER.conf" {
+  SP_DialogueComponent "{5DC8E7DFCC439B26}" : "{52ABE9A0F38181F2}Configs/Dilaogue_Configs/DialogueComp.ct" {
+  }
+  SP_PermadeathRespawnHandlerComponent "{5DC8E7DFC4B04D9B}" {
+   m_iForcedFaction 2
+   m_iForcedLoadout 0
+   m_bOverrideGameOverType 1
+   m_eOverriddenGameOverType DEATH
+   m_iLives 1
+  }
+  SP_PlayerPenaltyComponent "{5DC8E7DFD581FB3A}" {
+  }
+  SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
+   m_fTaskGenTime 300
+   m_TasksToSpawn {
+    SP_BountyTask "{5DC8E7DFEC4F7D1A}" {
     }
-    SP_DialogueArchetype "{5D6692FB49805721}" : "{81B9C2CC73B3921A}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Medic.conf" {
+    SP_DeliverTask "{5DC8E7DFED331D8C}" {
     }
-    SP_DialogueArchetype "{5D6692FB480D5389}" : "{E9B2A1ACFDAE24DF}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Navigator.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB48BE4215}" : "{CE024CD48C0EADA6}Configs/Dilaogue_Configs/FIA_Units/DialogueConf_FIA_Private.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB4D220A87}" : "{E681EC3A2837A310}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Commander.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB4C60B8FC}" : "{276D1D563309A3EE}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Navigator.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB4C8ECA25}" : "{82C09756E1DA6B26}Configs/Dilaogue_Configs/BANDIT_Units/DialogueConf_BANDIT_Private.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB71DB6A3B}" : "{5345CEB8F0A8E82E}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Commander.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB707219D1}" : "{E46D08B6A1F94291}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_General.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB708EA6B5}" : "{601D4464DB0A483F}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Navigator.conf" {
-    }
-    SP_DialogueArchetype "{5D6692FB725D3754}" : "{5598C834512501C4}Configs/Dilaogue_Configs/USSR_Units/DialogueConf_USSR_Private.conf" {
+    SP_RetrieveTask "{5DC8E7DFEEF31AC3}" {
     }
    }
   }
-  SP_PermadeathRespawnHandlerComponent "{5D4E7039C5A87861}" {
-   m_StoragePreset "{102E176F082035F8}prefabs/Props/Furniture/Chest_Storage_Respawn.et"
+  RplComponent "{5DC8E7DFE3D28994}" {
+   Streamable Disabled
   }
  }
- coords 1464.062 1.182 1805.659
+ coords 2346.557 100.462 2161.017
+ PlayerControllerPrefab "{A1AE127F16DD352E}Prefabs/Characters/Core/DefaultPlayerControllerMP_Factions.et"
+ m_fAutoReloadTime 30
  {
-  SCR_FactionManager FactionManager_Editor1 {
-   ID "5D6666A41D4E5319"
+  SCR_FactionManager FactionManager_Editor3 {
+   ID "5DC8E7DF1BAF44A6"
    components {
     SCR_DelegateFactionManagerComponent "{5D5705392CA1FA82}" {
      m_FactionDelegatePrefab "{94D481BAEC3B8573}PrefabsEditable/System/E_FactionDelegate.et"
     }
    }
-   coords 1053.601 146.252 470.057
+   coords -41.458 -9.728 24.066
    Flags 0
    Factions {
     SCR_Faction "{5D5705392CE0153F}" {
@@ -991,12 +1046,12 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
       }
      }
      m_OutlineFactionColor 0.005 0.044 0.114 1
-     m_bIsPlayable 1
+     m_bIsPlayable 0
      m_sFactionFlag "{46FB2FB2C2125A3C}UI/Textures/Flags/US-flag-base-3it.edds"
      m_FactionFlagMaterial "{610803CC3F3D6649}Assets/Props/Fabric/Flags/Data/Flag_1_2_USA.emat"
      m_FactionLabel FACTION_US
      m_aFriendlyFactionsIds {
-      "SPEIRA"
+      "SPEIRA" "FIA"
      }
      m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CF5B3DF}" {
       m_bIsAssignedRandomly 0
@@ -2113,6 +2168,83 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
         }
        }
       }
+      SCR_EntityCatalog "{68E836C3FEDD7D08}Configs/Factions/FacationRequests/RequestTest.conf" {
+       m_eEntityCatalogType REQUEST
+       m_aEntityEntryList {
+        SCR_EntityCatalogInventoryItem "{5D96D6E3D22E926F}" {
+         m_sEntityPrefab "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+         m_aLabels {
+          80 46 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E381F32B04}" {
+         m_sEntityPrefab "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+         m_aLabels {
+          80 46 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E3A188F6B0}" {
+         m_sEntityPrefab "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+         m_aLabels {
+          80 47 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E3525EAC70}" {
+         m_sEntityPrefab "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et"
+         m_aLabels {
+          80 40 41 42 44 43 45 46 48 49
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E36A496B0B}" {
+         m_sEntityPrefab "{06D722FC2666EB83}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_4Ball_1Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E30500CABD}" {
+         m_sEntityPrefab "{4FCBBDF274FD2157}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Ball.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E339977135}" {
+         m_sEntityPrefab "{4EEDDB27C023B8B9}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E326F4F8DF}" {
+         m_sEntityPrefab "{AAF51CFA75A9CF8B}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4AP_1Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E2DB4841A5}" {
+         m_sEntityPrefab "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E2F5B92699}" {
+         m_sEntityPrefab "{75632A0CA07D3817}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_AP.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E2E1DC0B98}" {
+         m_sEntityPrefab "{982F5BA41A3738CF}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Ball.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+        SCR_EntityCatalogInventoryItem "{5D96D6E291FFB423}" {
+         m_sEntityPrefab "{AD8AB93729348C3E}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Tracer.et"
+         m_aLabels {
+          80 43 48
+         }
+        }
+       }
+      }
      }
     }
     SCR_Faction "{5D5705392CD09866}" {
@@ -3045,7 +3177,7 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
      }
      m_iOrder 1000
      m_OutlineFactionColor 0.168 0.006 0.007 1
-     m_bIsPlayable 1
+     m_bIsPlayable 0
      m_sFactionFlag "{50824EB9F2C215AB}UI/Textures/Flags/USSR-flag-base-3it.edds"
      m_FactionFlagMaterial "{B47B52D9DA68905D}Assets/Props/Fabric/Flags/Data/Flag_1_2_SovietArmy.emat"
      m_FactionLabel FACTION_USSR
@@ -3970,7 +4102,7 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CD3575D}" {
-           m_sEntityPrefab "{2B29B7E1C6BD1048}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v1.et"
+           m_sEntityPrefab "{2B29B7E1C6BD1048}prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v1.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CD310B4}" {
              m_eItemType HEADWEAR
@@ -4837,12 +4969,12 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
      }
      m_iOrder 2000
      m_OutlineFactionColor 0.001 0.082 0.023 1
-     m_bIsPlayable 1
+     m_bIsPlayable 0
      m_sFactionFlag "{B784E694BA4A7D40}UI/Textures/Flags/Everon-flag-base-3it.edds"
      m_FactionFlagMaterial "{9BE1341F99D33483}Assets/Props/Fabric/Flags/Data/Flag_1_2_EVERON.emat"
      m_FactionLabel FACTION_FIA
      m_aFriendlyFactionsIds {
-      "SPEIRA"
+      "SPEIRA" "BANDITS" "US"
      }
      m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CD1BA97}" {
       m_aCompanyNames {
@@ -5493,167 +5625,46 @@ SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
       }
      }
     }
-    SCR_Faction "{5D5705392CC6C3FF}" {
-     FactionKey "RENEGADE"
-     FactionColor 0.259 0.686 0.669 1
-     UIInfo SCR_FactionUIInfo "{5D5705392CC6B2A2}" {
-     }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC6C3B3}" : "{FBBCD73926989580}Configs/Identities/FactionIdentity_USSR.conf" {
-     }
-     m_iOrder 4000
-     m_OutlineFactionColor 0 0.367 0.502 1
-     m_bIsPlayable 1
-     m_sFactionFlag "{EA856582D475C1A8}Assets/Editor/CompositionSlot/Data/whiteTexture_01.edds"
-     m_FactionLabel FACTION_RENEGADE
-     m_bFriendlyToSelf 0
-     m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CC6C3BF}" {
-     }
-     m_sFactionRadioEncryptionKey "Tsakas"
-     m_iFactionRadioFrequency 69
-     m_aRanks {
-      SCR_CharacterRank "{5D66C81AFB3DD67E}" : "{F208F8C7BF28E013}Configs/Ranks/CAPTAIN.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFA18F0F3}" : "{6087F49BE9313FE8}Configs/Ranks/COMMANDER.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFAB9E11C}" : "{B0E6C40B1B095B02}Configs/Ranks/CORPORAL.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFDD77C56}" : "{91A8ED004C62C8F1}Configs/Ranks/LIEUTENANT.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFC6DAB09}" : "{52CC402BF733EB03}Configs/Ranks/MAJOR.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFC80F5C8}" : "{6ABFED8C49341963}Configs/Ranks/MEDIC.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFF2CFAE7}" : "{53DF7E47C2939FF9}Configs/Ranks/Navigator.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFFBE96C7}" : "{E9A150D6977ECC9F}Configs/Ranks/Private.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AFE927917}" : "{CCFCA890D28A049D}Configs/Ranks/RENEGADE.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE12F2507}" : "{649E8173ED557BFB}Configs/Ranks/SERGEANT.conf" {
-      }
-     }
-     m_aEntityCatalogs {
-      SCR_EntityCatalog "{5D86DD38CA92FC1D}" : "{0B7738DFBF0C99EA}Configs/Factions/Ent_Catalogues/Renegadce_Characters.conf" {
-      }
-      SCR_EntityCatalog "{5D86DD38CDD3B4FE}" : "{5FEB8786F97C2A40}Configs/Factions/Ent_Catalogues/Renegade_Groups.conf" {
-      }
-     }
+    SCR_Faction "{5D86C0D05D7A4673}" : "{E8AFEB71D701CCE9}Configs/Factions/RENEGADES.conf" {
+     m_bIsPlayable 0
     }
-    SCR_Faction "{5D5705392CC6D1CA}" {
-     FactionKey "SPEIRA"
-     FactionColor 0.475 0.259 0.686 1
-     UIInfo SCR_FactionUIInfo "{5D5705392CC6C3E9}" {
-     }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC6D19C}" : "{46413880217C8196}Configs/Identities/FactionIdentity_FIA.conf" {
-     }
-     m_iOrder 5000
-     m_OutlineFactionColor 0.251 0 0.502 1
-     m_bIsPlayable 1
-     m_sFactionFlag "{CEAC8771342689C5}Assets/Data/Faction_SPEIRA.edds"
-     m_FactionLabel FACTION_SPEIRA
-     m_aFriendlyFactionsIds {
-      "US" "FIA" "USSR"
-     }
-     m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CC6D190}" {
-     }
-     m_sFactionRadioEncryptionKey "Tsakas"
-     m_iFactionRadioFrequency 69
-     m_aRanks {
-      SCR_CharacterRank "{5D66C81AC8BD8873}" {
-      }
-      SCR_CharacterRank "{5D66C81ACBD7F4CF}" {
-      }
-      SCR_CharacterRank "{5D66C81ACA73E46F}" {
-      }
-      SCR_CharacterRank "{5D66C81ACA9115A7}" {
-      }
-      SCR_CharacterRank "{5D66C81ACDC59FD8}" {
-      }
-      SCR_CharacterRank "{5D66C81ACC4FD434}" {
-      }
-      SCR_CharacterRank "{5D66C81ACCF077CB}" {
-      }
-      SCR_CharacterRank "{5D66C81ACF6D1FAA}" {
-      }
-      SCR_CharacterRank "{5D66C81ACE54F734}" {
-      }
-      SCR_CharacterRank "{5D66C81ACEF85AD1}" {
-      }
-     }
+    SCR_Faction "{5D96A23610EC609C}" : "{6D1DC960D66B2EB3}Configs/SpeiraFaction.conf" {
     }
-    SCR_Faction "{5D5705392CC748DC}" {
-     FactionKey "BANDITS"
-     FactionColor 1 0.983 0.078 1
-     UIInfo SCR_FactionUIInfo "{5D5705392CC6D1DC}" {
-     }
-     "Identity of soldiers" FactionIdentity "{5D5705392CC748AF}" : "{034A84F706D102EC}Configs/Identities/FactionIdentity_BANDITS.conf" {
-     }
-     m_iOrder 5000
-     m_OutlineFactionColor 0 0 0 1
-     m_bIsPlayable 1
-     m_sFactionFlag "{855625FE8D6A87A8}UI/Textures/DamageState/damageState-dead.edds"
-     m_FactionLabel FACTION_BANDITS
-     m_bFriendlyToSelf 1
-     m_CallsignInfo SCR_FactionCallsignInfo "{5D5705392CC748A0}" {
-     }
-     m_sFactionRadioEncryptionKey "Tsakas"
-     m_iFactionRadioFrequency 69
-     m_aRanks {
-      SCR_CharacterRank "{5D66C81AE4813BE6}" : "{F208F8C7BF28E013}Configs/Ranks/CAPTAIN.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE725E2C8}" : "{6087F49BE9313FE8}Configs/Ranks/COMMANDER.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE644B9FD}" : "{B0E6C40B1B095B02}Configs/Ranks/CORPORAL.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE6D23A0B}" : "{91A8ED004C62C8F1}Configs/Ranks/LIEUTENANT.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE96DC710}" : "{52CC402BF733EB03}Configs/Ranks/MAJOR.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE9FCAD3D}" : "{6ABFED8C49341963}Configs/Ranks/MEDIC.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE879CB0E}" : "{53DF7E47C2939FF9}Configs/Ranks/Navigator.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AE8F992D1}" : "{E9A150D6977ECC9F}Configs/Ranks/Private.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AEA9B66F3}" : "{CCFCA890D28A049D}Configs/Ranks/RENEGADE.conf" {
-      }
-      SCR_CharacterRank "{5D66C81AEDEDDE92}" : "{649E8173ED557BFB}Configs/Ranks/SERGEANT.conf" {
-      }
-     }
-     m_aEntityCatalogs {
-      SCR_EntityCatalog "{5D86DD38F3494090}" : "{856633ABEFD033BB}Configs/Factions/Ent_Catalogues/Bandit_Groups.conf" {
-      }
-      SCR_EntityCatalog "{5D86DD38F3B10E4A}" : "{3F17C1C167F76475}Configs/Factions/Ent_Catalogues/Bandit_Characters.conf" {
-      }
-     }
+    SCR_Faction "{5D8CEB0D0C860469}" : "{70F12E86D4A5B1C8}Configs/Factions/BANDITS.conf" {
+     m_bIsPlayable 0
     }
    }
    m_bCanChangeFactionsPlayable 0
   }
   TagManager {
-   ID "5D6666A41D4E531F"
-   coords 1089.025 145.206 538.913
+   ID "5DC8E7DF1BAF4559"
+   coords -6.034 -10.774 92.922
+  }
+  SCR_EditorSettingsEntity {
+   ID "5DC8E7DF1BAF4558"
+   coords 494.886 -100.712 -531.978
+   m_bIsUnlimitedEditorLegal 1
   }
   SCR_GarbageManager {
-   ID "5D6666A41D4E7082"
-   coords 1588.089 54.908 -86.057
+   ID "5DC8E7DF1BAF39E0"
+   coords 493.03 -101.072 -532.048
    CharacterLifetime 985.071
    VehicleLifetime 1040.252
    ItemLifetime 599.863
    m_bOnlyDestroyed 1
   }
   SCR_LoadoutManager {
-   ID "5D6666A41D4E7083"
-   coords 1050.753 146.603 463.705
+   ID "5DC8E7DF1BA0C1B0"
+   coords -44.306 -9.377 17.714
    m_aPlayerLoadouts {
     SCR_FactionPlayerLoadout "{5CA7060267058AD7}" {
      m_sLoadoutName "Default"
-     m_sLoadoutResource "{30D095AA225AC69E}prefabs/Characters/Factions/SPEIRA/Character_Speira_Base.et"
+     m_sLoadoutResource "{B1CE5CA5A0628961}prefabs/Characters/Factions/SPEIRA/Character_Speira_Gogland.et"
      m_sAffiliatedFaction "SPEIRA"
     }
     SCR_FactionPlayerLoadout "{5D4EC11BB20DC322}" {
      m_sLoadoutName "Respawn"
-     m_sLoadoutResource "{2BD309D29507304F}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_Respawn.et"
+     m_sLoadoutResource "{D68719F6FED9853A}prefabs/Characters/Factions/SPEIRA/Character_SPEIRA_RespawnGogland.et"
      m_sAffiliatedFaction "SPEIRA"
     }
    }

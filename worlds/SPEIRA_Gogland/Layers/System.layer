@@ -4,13 +4,8 @@ SCR_AIWorld : "{AE290936DB86A08A}prefabs/Systems/AIWorld_Gogland.et" {
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 8421.013 3.408 2380.722
 }
-SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_GameModeEditor.et" {
- components {
-  SP_RequestManagerComponent "{5DB3077B503444F6}" {
-   m_iMinTaskAmount 100
-  }
- }
- coords 7334.664 1.607 997.461
+SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
+ coords 8387.015 6.98 2376.346
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 8414.325 5.695 2309.07

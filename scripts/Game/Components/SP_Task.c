@@ -39,9 +39,14 @@ class SP_Task: ScriptAndConfig
 		}
 		if (!SetupTaskEntity())
 		{
+			DeleteLeftovers();
 			return false;
 		}
-		AssignReward();
+		if (!AssignReward())
+		{
+			DeleteLeftovers();
+			return false;
+		}
 		CreateDescritions();
 		return true;
 	};
@@ -105,7 +110,7 @@ class SP_Task: ScriptAndConfig
 	//------------------------------------------------------------------------------------------------------------//
 	bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee){return false;};
 	//------------------------------------------------------------------------------------------------------------//
-	void AssignReward()
+	bool AssignReward()
 	{
 		EEditableEntityLabel RewardLabel;
 		int index = Math.RandomInt(0,2);
@@ -125,6 +130,7 @@ class SP_Task: ScriptAndConfig
 		RequestCatalog.GetEntityListWithLabel(RewardLabel, Mylist);
 		SCR_EntityCatalogEntry entry = Mylist.GetRandomElement();
 		reward = entry.GetPrefab();
+		return true;
 	};
 	void CreateDescritions(){};
 	//------------------------------------------------------------------------------------------------------------//

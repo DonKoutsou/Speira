@@ -4,21 +4,12 @@ SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 5376.566 13.314 8889.934
 }
-SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_GameModeEditor.et" {
+SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
  components {
-  SCR_GameModeSFManager "{5D685A5D8D19884D}" {
-   m_iMaxNumberOfTasks 1
-  }
-  SP_RequestManagerComponent "{5DB3077B503444F6}" {
-   m_TasksToSpawn {
-    SP_BountyTask "{5DC705B701DF6ABF}" {
-    }
-    SP_DeliverTask "{5DC705B702D3DFC1}" {
-    }
-   }
+  SP_PermadeathRespawnHandlerComponent "{5DC8E7DFC4B04D9B}" {
   }
  }
- coords 6457.272 161.013 6427.743
+ coords 1648.763 67.601 5631.245
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 5368.933 12.388 8887.257
@@ -40,24 +31,4 @@ SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnP
 }
 SCR_MapLocator : "{BE308D6461C1BEC3}prefabs/Systems/MapLocator.et" {
  coords 5360.344 24.524 8879.948
-}
-GenericEntity Area_1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
- coords 6870.273 123.199 6600.676
- {
-  GenericEntity LayerTaskMove_1 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
-   components {
-    SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
-     m_sFactionKey "SPEIRA"
-     m_sTaskTitle "Move here"
-     m_sTaskDescription "here is where you should move to"
-    }
-   }
-   coords 0 0 0
-   {
-    GenericEntity SlotMoveTo_1 : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
-     coords 0 0 0
-    }
-   }
-  }
- }
 }

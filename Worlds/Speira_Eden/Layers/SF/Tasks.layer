@@ -1,0 +1,20 @@
+GenericEntity Area_1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 6870.273 123.199 6600.676
+ {
+  GenericEntity LayerTaskMove_1 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+   components {
+    SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+     m_sFactionKey "SPEIRA"
+     m_sTaskTitle "Move here"
+     m_sTaskDescription "here is where you should move to"
+    }
+   }
+   coords 0 0 0
+   {
+    GenericEntity SlotMoveTo_1 : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+     coords 0 0 0
+    }
+   }
+  }
+ }
+}
