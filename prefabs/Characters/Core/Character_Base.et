@@ -58,13 +58,6 @@ SCR_ChimeraCharacter {
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
-   WeaponType Handgun
-   AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
-    PivotID "Spine3"
-    Offset 0.1914 -0.022 0.0126
-    Angles -82.72499 70.8924 -93.7374
-   }
-   WeaponSlotType "secondary"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
    AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {

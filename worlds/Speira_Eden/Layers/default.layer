@@ -9,6 +9,14 @@ SCR_GameModeEditor SP_GameModeEditor1 : "{9E3A1190FCBE4060}prefabs/Systems/SP_Ga
   SCR_GameModeSFManager "{5D685A5D8D19884D}" {
    m_iMaxNumberOfTasks 1
   }
+  SP_RequestManagerComponent "{5DB3077B503444F6}" {
+   m_TasksToSpawn {
+    SP_BountyTask "{5DC705B701DF6ABF}" {
+    }
+    SP_DeliverTask "{5DC705B702D3DFC1}" {
+    }
+   }
+  }
  }
  coords 6457.272 161.013 6427.743
 }

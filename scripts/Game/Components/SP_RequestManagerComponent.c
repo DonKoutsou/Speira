@@ -6,7 +6,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	[Attribute()]
 	float m_fTaskGenTime;
 	
-	[Attribute(defvalue: "20")]
+	[Attribute(defvalue: "20", desc:"Tasks will be continiusly created until this number is met, after that askRespawnTimer will have to pass for a task to be created")]
 	int m_iMinTaskAmount;
 	
 	[Attribute(defvalue: "3", desc: "Max amount of tasks a character can be requesting at the same time")]
@@ -15,18 +15,39 @@ class SP_RequestManagerComponent : ScriptComponent
 	[Attribute(defvalue: "2", desc: "Max amount of tasks of sametype a character can be requesting at the same time")]
 	int m_fTaskOfSameTypePerCharacter;
 	
-	[Attribute()]
+	[Attribute(desc: "Type of tasks to spawn")]
 	ref array <ref SP_Task> m_TasksToSpawn;
+	
+	[Attribute(defvalue: "60", desc: "Task garbage mamager kinda. Completed task are added to their own list, failed tasks are deleted")]
+	float m_fTaskClearTime;
+	
 	protected float m_fTaskRespawnTimer;
-	//----------------------------------------------------------------------------------------------------------------//
+	protected float m_fTaskClearTimer;
+	//------------------------------------------------------------------------------------------------------------//
 	static ref array<ref SP_Task> TaskMap = null;
-	int tasknum;
-	//----------------------------------------------------------------------------------------------------------------//
+	static ref array<ref SP_Task> CompletedTaskMap = null;
+	//------------------------------------------------------------------------------------------------------------//
+	void ~SP_RequestManagerComponent(){TaskMap.Clear();};
+	//------------------------------------------------------------------------------------------------------------//
 	override void EOnInit(IEntity owner)
 	{
 		if(!TaskMap)
 			TaskMap = new array<ref SP_Task>();
+		if(!CompletedTaskMap)
+			CompletedTaskMap = new array<ref SP_Task>();
 	}
+	SP_Task GetTaskSample(typename tasktype)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.GetClassName() == tasktype)
+				{
+					return task;
+				}
+		}
+		return null;
+	}
+	//------------------------------------------------------------------------------------------------------------//
 	bool CharHasTask(IEntity Char)
 	{
 		foreach (SP_Task task : TaskMap)
@@ -38,6 +59,7 @@ class SP_RequestManagerComponent : ScriptComponent
 		}
 		return false;
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	bool CharIsTarget(IEntity Char)
 	{
 		foreach (SP_Task task : TaskMap)
@@ -49,6 +71,7 @@ class SP_RequestManagerComponent : ScriptComponent
 		}
 		return false;
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	void UpdateCharacterTasks(IEntity Char)
 	{
 		foreach (SP_Task task : TaskMap)
@@ -59,13 +82,13 @@ class SP_RequestManagerComponent : ScriptComponent
 			}
 		}
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	bool CreateTask(typename TaskType)
 	{
 		if(!TaskType)
 		{
 			return false;
 		}
-		
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 		SP_Task Task = SP_Task.Cast(TaskType.Spawn());
 		if(Task.Init())
@@ -102,19 +125,30 @@ class SP_RequestManagerComponent : ScriptComponent
 		}
 		return false;
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	void GetCharTasks(IEntity Char,out array<ref SP_Task> tasks)
 	{
 		foreach (SP_Task task : TaskMap)
 		{
 			if(task.CharacterIsOwner(Char) == true)
 			{
-				if(task.GetState() == ETaskState.UNASSIGNED || task.GetState() == ETaskState.ASSIGNED)
-				{
-					tasks.Insert(task);
-				}
+				tasks.Insert(task);
 			}
 		}
 	}
+	int GetInProgressTaskCount()
+	{
+		array<ref SP_Task> tasks = new array<ref SP_Task>();
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.GetState() == ETaskState.UNASSIGNED || task.GetState() == ETaskState.ASSIGNED)
+			{
+				tasks.Insert(task);
+			}
+		}
+		return tasks.Count();
+	}
+	//------------------------------------------------------------------------------------------------------------//
 	void GetCharTasksOfSameType(IEntity Char,out array<ref SP_Task> tasks, typename tasktype)
 	{
 		foreach (SP_Task task : TaskMap)
@@ -129,6 +163,7 @@ class SP_RequestManagerComponent : ScriptComponent
 			}
 		}
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	void GetCharTargetTasks(IEntity Char,out array<ref SP_Task> tasks)
 	{
 		foreach (SP_Task task : TaskMap)
@@ -139,28 +174,25 @@ class SP_RequestManagerComponent : ScriptComponent
 			}
 		}
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	void ClearTasks()
 	{
-		//for (int i = TaskMap.Count() - 1; i >= 0; i--)
-		//{
-		//	if (TaskMap[i].GetState() == ETaskState.FAILED || TaskMap[i].GetState() == ETaskState.COMPLETED) 
-		//	{
-		//		TaskMap.Remove(i);
-		//	}
-		//}
-		
 		for (int i = 0, c = TaskMap.Count(); i < c;)
 	    {
-			if (TaskMap[i].GetState() == ETaskState.FAILED || TaskMap[i].GetState() == ETaskState.COMPLETED) 
+			if (TaskMap[i].GetState() == ETaskState.FAILED) 
 			{
 				TaskMap.Remove(TaskMap.Find(TaskMap[i]));
 				c--;
 				continue;
 			}
+			if (TaskMap[i].GetState() == ETaskState.COMPLETED) 
+			{
+				OnTaskCompleted(TaskMap[i]);
+			}
 			i++;
 		}
 	}
-	//----------------------------------------------------------------------------------------------------------------//
+	//------------------------------------------------------------------------------------------------------------//
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
@@ -168,41 +200,54 @@ class SP_RequestManagerComponent : ScriptComponent
 		SetEventMask(owner, EntityEvent.FRAME);
 		owner.SetFlags(EntityFlags.ACTIVE, true);
 	}
+	//------------------------------------------------------------------------------------------------------------//
 	override void EOnFrame(IEntity owner, float timeSlice)
 	{
-		if (TaskMap.Count() < m_iMinTaskAmount)
+		if (GetInProgressTaskCount() < m_iMinTaskAmount)
 		{
 			typename Task = m_TasksToSpawn.GetRandomElement().GetClassName();
 			CreateTask(Task);
-			return;
 		}
-		m_fTaskRespawnTimer += timeSlice;
-		if(m_fTaskRespawnTimer > m_fTaskGenTime)
+		else
 		{
-			typename Task;
-			if(m_TasksToSpawn)
+			m_fTaskRespawnTimer += timeSlice;
+			if(m_fTaskRespawnTimer > m_fTaskGenTime)
 			{
-				Task = m_TasksToSpawn.GetRandomElement().GetClassName();
-			}
-			if(CreateTask(Task))
-			{
-				m_fTaskRespawnTimer = 0;
-			}
-			else
-			{
-				m_fTaskRespawnTimer -= 1;
+				typename Task;
+				if(m_TasksToSpawn)
+				{
+					Task = m_TasksToSpawn.GetRandomElement().GetClassName();
+				}
+				if(CreateTask(Task))
+				{
+					m_fTaskRespawnTimer = 0;
+				}
+				else
+				{
+					m_fTaskRespawnTimer -= 1;
+				}
 			}
 		}
-	}
-	void ~SP_RequestManagerComponent()
+		m_fTaskClearTimer += timeSlice;
+		if(m_fTaskClearTimer > m_fTaskClearTime)
+		{
+			m_fTaskClearTimer = 0;
+			ClearTasks();
+		}
+	};
+	//------------------------------------------------------------------------------------------------------------//
+	void OnTaskCompleted(SP_Task Task)
 	{
-		TaskMap.Clear();
+		TaskMap.Remove(TaskMap.Find(Task));
+		CompletedTaskMap.Insert(Task);
 	};
 };
+//------------------------------------------------------------------------------------------------------------//
 modded enum EWeaponType
 {
 	WT_KNIFE
 }
+//------------------------------------------------------------------------------------------------------------//
 modded enum SCR_EArsenalItemType
 {
 	FOOD = 262200,
@@ -213,6 +258,7 @@ modded enum SCR_EArsenalItemType
 	MAP = 270000,
 	CURRENCY = 280000,
 };
+//------------------------------------------------------------------------------------------------------------//
 modded enum SCR_EArsenalItemMode
 {
 	GADGET = 128
