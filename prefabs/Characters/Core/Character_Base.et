@@ -75,6 +75,15 @@ SCR_ChimeraCharacter {
   }
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
+    SP_RescueAction "{5DCABC8839D23E7F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5DCABC883DF19962}" {
+      Name "Rescue"
+     }
+     Duration 2
+    }
     SP_AILootBodyAction "{5D7D0C3C51B9A371}" {
     }
    }

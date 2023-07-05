@@ -90,12 +90,16 @@ SCR_BaseGameMode {
   }
   SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
    m_fTaskGenTime 300
+   m_iMinTaskAmount 200
    m_TasksToSpawn {
     SP_BountyTask "{5DC8E7DFEC4F7D1A}" {
     }
     SP_DeliverTask "{5DC8E7DFED331D8C}" {
     }
     SP_RetrieveTask "{5DC8E7DFEEF31AC3}" {
+    }
+    SP_RescueTask "{5DCA918B9F7C65C2}" {
+     m_iRewardAverageAmount 40
     }
    }
   }

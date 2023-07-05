@@ -17,12 +17,6 @@ class SP_DeliverTask: SP_Task
 		}
 		FactionKey key = Fact.GetFactionKey();
 		SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-		SP_AIDirector NewDirector;
-		MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDirector);
-		if(NewDirector == MyDirector)
-		{
-			return false;
-		}
 		if (!MyDirector.GetRandomUnitByFKey(key, Owner))
 		{
 			return false;
@@ -163,7 +157,7 @@ class SP_DeliverTask: SP_Task
 			m_iRewardAverageAmount = tasksample.GetRewardAverage();
 			if(m_iRewardAverageAmount)
 			{
-				m_iRewardAmount = Math.Floor(Math.RandomFloat(m_iRewardAverageAmount/2, m_iRewardAverageAmount*2));
+				m_iRewardAmount = Math.Floor(Math.RandomFloat(m_iRewardAverageAmount/2, m_iRewardAverageAmount + m_iRewardAverageAmount/2));
 			}
 			else
 			{

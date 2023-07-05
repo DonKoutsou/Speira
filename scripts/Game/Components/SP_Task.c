@@ -93,7 +93,8 @@ class SP_Task: ScriptAndConfig
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
-	IEntity GetOwner(){return TaskOwner;}
+	IEntity GetOwner(){return TaskOwner;};
+	IEntity GetTarget(){return TaskTarget;};
 	//------------------------------------------------------------------------------------------------------------//
 	bool FindTarget(out IEntity Target){return true;};
 	//------------------------------------------------------------------------------------------------------------//
@@ -108,7 +109,7 @@ class SP_Task: ScriptAndConfig
 	//------------------------------------------------------------------------------------------------------------//
 	bool SetupTaskEntity(){return true;};
 	//------------------------------------------------------------------------------------------------------------//
-	bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee){return false;};
+	bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee){return true;};
 	//------------------------------------------------------------------------------------------------------------//
 	bool AssignReward()
 	{

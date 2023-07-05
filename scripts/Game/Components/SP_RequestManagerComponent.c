@@ -38,7 +38,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	}
 	SP_Task GetTaskSample(typename tasktype)
 	{
-		foreach (SP_Task task : TaskMap)
+		foreach (SP_Task task : m_TasksToSpawn)
 		{
 			if(task.GetClassName() == tasktype)
 				{
@@ -94,31 +94,34 @@ class SP_RequestManagerComponent : ScriptComponent
 		if(Task.Init())
 		{
 			IEntity Owner = Task.GetOwner();
-			FactionKey senderFaction = Diag.GetCharacterFaction(Owner).GetFactionKey();
-			BaseChatChannel Channel;
-			switch (senderFaction)
+			if(Owner)
 			{
-				case "FIA":
-					Channel = Diag.m_ChatChannelFIA;
-				break;
-				case "USSR":
-					Channel = Diag.m_ChatChannelUSSR;
-				break;
-				case "BANDITS":
-					Channel = Diag.m_ChatChannelBANDITS;
-				break;
-				case "SPEIRA":
-					Channel = Diag.m_ChatChannelSPEIRA;
-				break;
-				case "US":
-					Channel = Diag.m_ChatChannelUS;
-				break;
-			};
-			string charname = Diag.GetCharacterName(Owner);
-			string charrank = Diag.GetCharacterRankName(Owner);
-			if (TaskMap.Count() > m_iMinTaskAmount)
-			{
-				Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
+				FactionKey senderFaction = Diag.GetCharacterFaction(Owner).GetFactionKey();
+				BaseChatChannel Channel;
+				switch (senderFaction)
+				{
+					case "FIA":
+						Channel = Diag.m_ChatChannelFIA;
+					break;
+					case "USSR":
+						Channel = Diag.m_ChatChannelUSSR;
+					break;
+					case "BANDITS":
+						Channel = Diag.m_ChatChannelBANDITS;
+					break;
+					case "SPEIRA":
+						Channel = Diag.m_ChatChannelSPEIRA;
+					break;
+					case "US":
+						Channel = Diag.m_ChatChannelUS;
+					break;
+				};
+				string charname = Diag.GetCharacterName(Owner);
+				string charrank = Diag.GetCharacterRankName(Owner);
+				if (TaskMap.Count() > m_iMinTaskAmount)
+				{
+					Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
+				}
 			}
 			TaskMap.Insert(Task);
 			return true;
@@ -161,10 +164,41 @@ class SP_RequestManagerComponent : ScriptComponent
 				}
 				
 			}
+			if(task.CharacterIsTarget(Char) == true)
+			{
+				if(task.GetClassName() == tasktype)
+				{
+					tasks.Insert(task);
+				}
+				
+			}
+		}
+	}
+	void GetRescueTask(IEntity Char,out array<ref SP_Task> tasks)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.GetClassName() == SP_RescueTask)
+			{
+				SP_RescueTask resctask = SP_RescueTask.Cast(task);
+				if(resctask.GetCharsToResc().Contains(Char))
+					tasks.Insert(task);
+			}
 		}
 	}
 	//------------------------------------------------------------------------------------------------------------//
-	void GetCharTargetTasks(IEntity Char,out array<ref SP_Task> tasks)
+	void GetTasksOfSameType(out array<ref SP_Task> tasks, typename tasktype)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.GetClassName() == tasktype)
+			{
+				tasks.Insert(task);
+			}
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------//
+	void GetCharTargetTasks(IEntity Char, out array<ref SP_Task> tasks)
 	{
 		foreach (SP_Task task : TaskMap)
 		{
@@ -177,20 +211,32 @@ class SP_RequestManagerComponent : ScriptComponent
 	//------------------------------------------------------------------------------------------------------------//
 	void ClearTasks()
 	{
-		for (int i = 0, c = TaskMap.Count(); i < c;)
-	    {
+		for (int i = TaskMap.Count() - 1; i >= 0; i--)
+		{
 			if (TaskMap[i].GetState() == ETaskState.FAILED) 
 			{
-				TaskMap.Remove(TaskMap.Find(TaskMap[i]));
-				c--;
-				continue;
+				TaskMap.Remove(i);
 			}
 			if (TaskMap[i].GetState() == ETaskState.COMPLETED) 
 			{
 				OnTaskCompleted(TaskMap[i]);
 			}
-			i++;
 		}
+		/*foreach (SP_Task task : TaskMap)
+	    {
+				if (task.GetState() == ETaskState.FAILED) 
+				{
+					TaskMap.Remove(TaskMap.Find(task));
+					c--;
+					continue;
+				}
+				if (task.GetState() == ETaskState.COMPLETED) 
+				{
+					OnTaskCompleted(task);
+				}
+				i++;
+			}
+		*/
 	}
 	//------------------------------------------------------------------------------------------------------------//
 	override void OnPostInit(IEntity owner)

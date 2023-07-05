@@ -142,11 +142,15 @@ class SP_BountyTask: SP_Task
 			{
 				return false;
 			}
-			SP_BountyTask tasksample =SP_BountyTask.Cast(ReqMan.GetTaskSample(SP_BountyTask));
+			SP_BountyTask tasksample = SP_BountyTask.Cast(ReqMan.GetTaskSample(SP_BountyTask));
+			if(!tasksample)
+			{
+				return false;
+			}
 			m_iRewardAverageAmount = tasksample.GetRewardAverage();
 			if(m_iRewardAverageAmount)
 			{
-				m_iRewardAmount = Math.Floor(Math.RandomFloat(m_iRewardAverageAmount/2, m_iRewardAverageAmount*2));
+				m_iRewardAmount = Math.Floor(Math.RandomFloat(m_iRewardAverageAmount/2, m_iRewardAverageAmount + m_iRewardAverageAmount/2));
 			}
 			else
 			{

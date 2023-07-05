@@ -49,7 +49,7 @@ class SP_AIDirector : AIGroup
 	
 	[Attribute("", category: "Spawning settings")]
 	private ResourceName m_pCommanderWaypoint;
-
+	
 	[Attribute()]
     protected ref SCR_MapLocationQuadHint m_WorldDirections;
 	bool commanderspawned = false;
@@ -610,8 +610,7 @@ class SP_AIDirector : AIGroup
 		}
 		array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
 		entityCatalog.GetFullFilteredEntityListWithLabels(aFactionEntityEntry, m_aIncludedEditableEntityLabels, m_aExcludedEditableEntityLabels, m_bIncludeOnlySelectedLabels);
-		int index = Math.RandomInt(0, aFactionEntityEntry.Count() - 1);
-		ResourceName name = aFactionEntityEntry[index].GetPrefab();
+		ResourceName name = aFactionEntityEntry.GetRandomElement().GetPrefab();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
 		spawnMatrix[3] = position;
 		EntitySpawnParams spawnParams = EntitySpawnParams();
@@ -696,6 +695,47 @@ class SP_AIDirector : AIGroup
 		}
 		return true;
 	}
+	bool CreateVictim(out IEntity Victim)
+	{
+		if (m_aGroups.Count() == 0)
+		{
+			return false;
+		}
+		array<AIAgent> outAgents = new array<AIAgent>();
+		SCR_AIGroup luckygroup = m_aGroups.GetRandomElement();
+		
+		if(!luckygroup)
+		{
+			return false;
+		}
+		luckygroup.GetAgents(outAgents);
+		if(outAgents.Count() <= 0)
+		{
+			return false;
+		}
+		
+		Victim = luckygroup.GetLeaderEntity();
+		if(!Victim)
+		{
+			return false;
+		}
+		foreach(AIAgent agent : outAgents)
+		{
+			IEntity Char = agent.GetControlledEntity();
+			if(Char)
+			{
+				SCR_CharacterDamageManagerComponent dmg = SCR_CharacterDamageManagerComponent.Cast(Char.FindComponent(SCR_CharacterDamageManagerComponent));
+				if(dmg.GetIsUnconscious())
+				{
+					return false;
+				}
+				dmg.ForceUnconsciousness();
+				dmg.SetPermitUnconsciousness(false, true);
+				dmg.AddParticularBleeding();
+			}
+		}
+		return true;
+	};
 	event void OnSpawn(IEntity spawned)
 	{
 		SCR_AIGroup group = SCR_AIGroup.Cast(spawned);

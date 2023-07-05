@@ -11,7 +11,6 @@ class SP_RetrieveTask: SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	override bool Init()
 	{
-		
 		if (!FindOwner(TaskOwner))
 		{
 			return false;

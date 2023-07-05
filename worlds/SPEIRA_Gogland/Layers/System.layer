@@ -5,6 +5,19 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
  coords 8421.013 3.408 2380.722
 }
 SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
+ components {
+  SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
+   m_iMinTaskAmount 120
+   m_fTaskPerCharacter 2
+   m_fTaskOfSameTypePerCharacter 1
+   m_TasksToSpawn {
+    SP_RescueTask "{5DCA918B9F7C65C2}" {
+     m_iRewardAverageAmount 25
+     m_iMaxamount 6
+    }
+   }
+  }
+ }
  coords 8387.015 6.98 2376.346
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
