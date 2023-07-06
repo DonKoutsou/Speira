@@ -26,28 +26,37 @@ class SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	bool Init()
 	{
+		//-------------------------------------------------//
+		//first look for owner cause targer is usually derived from owner faction/location etc...
 		if (!FindOwner(TaskOwner))
 		{
 			return false;
 		}
+		//-------------------------------------------------//
+		//function to fill to check ckaracter
 		if(!CheckCharacter(TaskOwner))
 		{
 			return false;
 		}
+		//-------------------------------------------------//
 		if (!FindTarget(TaskTarget))
 		{
 			return false;
 		}
+		//-------------------------------------------------//
+		//function to fill if task needs an entity, eg package for delivery
 		if (!SetupTaskEntity())
 		{
 			DeleteLeftovers();
 			return false;
 		}
+		//-------------------------------------------------//
 		if (!AssignReward())
 		{
 			DeleteLeftovers();
 			return false;
 		}
+		//-------------------------------------------------//
 		CreateDescritions();
 		e_State = ETaskState.UNASSIGNED;
 		return true;

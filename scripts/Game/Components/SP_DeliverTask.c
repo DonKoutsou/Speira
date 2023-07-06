@@ -2,23 +2,18 @@
 [BaseContainerProps(configRoot:true)]
 class SP_DeliverTask: SP_Task
 {
-	[Attribute(defvalue: "10")]
+	//----------------------------------------------------------------------------------//
+	[Attribute(defvalue: "10", desc: "Reward amount if reward end up being currency")]
 	int m_iRewardAverageAmount;
+	//----------------------------------------------------------------------------------//
+	//Package that needs to be delivered
 	IEntity Package;
 	//------------------------------------------------------------------------------------------------------------//
+	//Delivery mission is looking for a random owner.
 	override bool FindOwner(out IEntity Owner)
 	{
 		SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();
-		FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
-		string keyunused;
-		Faction Fact = MyDirector.GetMajorityHolder(keyunused);
-		if (!Fact)
-		{
-			return false;
-		}
-		FactionKey key = Fact.GetFactionKey();
-		SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-		if (!MyDirector.GetRandomUnitByFKey(key, Owner))
+		if (!MyDirector.GetRandomUnit(Owner))
 		{
 			return false;
 		}
@@ -29,27 +24,30 @@ class SP_DeliverTask: SP_Task
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//then look for a target with same faction
 	override bool FindTarget(out IEntity Target)
 	{
 		AIControlComponent comp = AIControlComponent.Cast(GetOwner().FindComponent(AIControlComponent));
 		AIAgent agent = comp.GetAIAgent();
 		SP_AIDirector MyDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
-		SP_AIDirector NewDir;
+		SP_AIDirector NewDirector;
 		//-----------------------------------------------------------------//
-		FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
+		FactionManager factionManager = FactionManager.Cast(GetGame().GetFactionManager());
 		string keyunused;
-		Faction Fact = MyDirector.GetMajorityHolder(keyunused);
-		if (!Fact)
+		Faction directorFaction = MyDirector.GetMajorityHolder(keyunused);
+		if (!directorFaction)
+			return false;
+		FactionKey key = directorFaction.GetFactionKey();
+		SCR_Faction myFaction = SCR_Faction.Cast(factionManager.GetFactionByKey(key));
+		if (!MyDirector.GetDirectorOccupiedByFriendly(myFaction, NewDirector))
 		{
 			return false;
 		}
-		FactionKey key = Fact.GetFactionKey();
-		SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-		if (!MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDir))
+		if(MyDirector == NewDirector)
 		{
 			return false;
 		}
-		if (!NewDir.GetRandomUnitByFKey(key, Target))
+		if (!NewDirector.GetRandomUnitByFKey(key, Target))
 		{
 			return false;
 		}
@@ -64,6 +62,7 @@ class SP_DeliverTask: SP_Task
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//Setup delivery package
 	override bool SetupTaskEntity()
 	{
 		string OName;
@@ -106,6 +105,7 @@ class SP_DeliverTask: SP_Task
 		TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3. Reward is %4 %5", DName, DLoc, OLoc, m_iRewardAmount, FilePath.StripPath(reward));
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//Ready to deliver means package is in assignee's inventory, we are talking to the target and that we are assigned to task
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
 		if (TalkingChar != TaskTarget)
@@ -138,6 +138,7 @@ class SP_DeliverTask: SP_Task
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//overriding AssignReward to apply the average attribute from SP_RequestManagerComponent
 	override bool AssignReward()
 	{
 		EEditableEntityLabel RewardLabel;
@@ -193,6 +194,7 @@ class SP_DeliverTask: SP_Task
 		return true;
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//Complete tasks means package is on target's inventory and reward is givven to assigne
 	override bool CompleteTask(IEntity Assignee)
 	{
 		InventoryStorageManagerComponent Assigneeinv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
@@ -218,6 +220,7 @@ class SP_DeliverTask: SP_Task
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//Info needed for delivery mission is Names of O/T and location names of O/T
 	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
 		if (!TaskOwner || !TaskTarget)
@@ -235,24 +238,9 @@ class SP_DeliverTask: SP_Task
 		DLoc = Director.GetCharacterLocation(TaskTarget);
 	};
 	//------------------------------------------------------------------------------------------------------------//
+	//delivery fails if targer is killed
 	override void UpdateState()
 	{
-		InventoryStorageManagerComponent inv = InventoryStorageManagerComponent.Cast(TaskTarget.FindComponent(InventoryStorageManagerComponent));
-		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
-		SP_PackagePredicate PackPred = new SP_PackagePredicate(Diag.GetCharacterName(TaskTarget));
-		array <IEntity> FoundPackages = new array <IEntity>();
-		inv.FindItems(FoundPackages, PackPred);
-		if (FoundPackages.Count() > 0)
-		{
-			foreach (IEntity MyPackage : FoundPackages)
-			{
-				if (MyPackage == Package)
-				{
-					e_State = ETaskState.COMPLETED;
-					return;
-				}
-			}
-		}
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (DmgComp.IsDestroyed())
 		{
@@ -265,6 +253,7 @@ class SP_DeliverTask: SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	IEntity GetPackage(){return Package;};
 	//------------------------------------------------------------------------------------------------------------//
+	//delete task entity. pakcage
 	override void DeleteLeftovers()
 	{
 		if(Package)

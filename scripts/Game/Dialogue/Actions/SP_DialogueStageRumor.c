@@ -17,7 +17,7 @@ class DialogueStageRumor : DialogueStage
 			return GetRandomLocationPopulation(key);
 	};
 	string GetRandomLocationPopulation(Faction key)
-	{	
+	{
 		int index;
 		SP_AIDirector RandomDirector;
 		index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());

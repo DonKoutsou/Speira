@@ -1,25 +1,19 @@
+//------------------------------------------------------------------------------------------------------------//
 [BaseContainerProps(configRoot:true)]
 class SP_NavigateTask: SP_Task
 {
+	//----------------------------------------------------------------------------------//
 	[Attribute(defvalue: "20")]
 	int m_iRewardAverageAmount;
-	
-	[Attribute(defvalue: "20")]
-	int SuccessDistance;
-	
+	//----------------------------------------------------------------------------------//
+	[Attribute(defvalue: "20", desc: "Distance from target at wich task can be considered ready to deliver")]
+	int m_iSuccessDistance;
+	//------------------------------------------------------------------------------------------------------------//
+	//In navigate task we look for random owner
 	override bool FindOwner(out IEntity Owner)
 	{
 		SP_AIDirector MyDirector = SP_AIDirector.AllDirectors.GetRandomElement();
-		FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
-		string keyunused;
-		Faction Fact = MyDirector.GetMajorityHolder(keyunused);
-		if (!Fact)
-		{
-			return false;
-		}
-		FactionKey key = Fact.GetFactionKey();
-		SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-		if (!MyDirector.GetRandomUnitByFKey(key, Owner))
+		if (!MyDirector.GetRandomUnit(Owner))
 		{
 			return false;
 		}
@@ -29,27 +23,32 @@ class SP_NavigateTask: SP_Task
 		}
 		return false;
 	};
+	//------------------------------------------------------------------------------------------------------------//
+	//Target needs to be from same faction
 	override bool FindTarget(out IEntity Target)
 	{
 		AIControlComponent comp = AIControlComponent.Cast(GetOwner().FindComponent(AIControlComponent));
 		AIAgent agent = comp.GetAIAgent();
 		SP_AIDirector MyDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
-		SP_AIDirector NewDir;
-		//-----------------------------------------------------------------//
-		FactionManager factionsMan = FactionManager.Cast(GetGame().GetFactionManager());
+		SP_AIDirector NewDirector;
+		FactionManager factionManager = FactionManager.Cast(GetGame().GetFactionManager());
 		string keyunused;
-		Faction Fact = MyDirector.GetMajorityHolder(keyunused);
-		if (!Fact)
+		Faction DirectorFaction = MyDirector.GetMajorityHolder(keyunused);
+		if (!DirectorFaction)
 		{
 			return false;
 		}
-		FactionKey key = Fact.GetFactionKey();
-		SCR_Faction myfact = SCR_Faction.Cast(factionsMan.GetFactionByKey(key));
-		if (!MyDirector.GetDirectorOccupiedByFriendly(myfact, NewDir))
+		FactionKey key = DirectorFaction.GetFactionKey();
+		SCR_Faction myFaction = SCR_Faction.Cast(factionManager.GetFactionByKey(key));
+		if (!MyDirector.GetDirectorOccupiedByFriendly(myFaction, NewDirector))
 		{
 			return false;
 		}
-		if (!NewDir.GetRandomUnitByFKey(key, Target))
+		if (MyDirector == NewDirector)
+		{
+			return false;
+		}
+		if (!NewDirector.GetRandomUnitByFKey(key, Target))
 		{
 			return false;
 		}
@@ -63,21 +62,25 @@ class SP_NavigateTask: SP_Task
 		}
 		return false;
 	};
+	//------------------------------------------------------------------------------------------------------------//
+	//Its ready to deliver when targer and owner are closer than m_iSuccessDistance
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
 		float dis = vector.Distance(TaskTarget.GetOrigin(), TalkingChar.GetOrigin());
-		if(!SuccessDistance)
+		if(!m_iSuccessDistance)
 		{
 			SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
 			SP_NavigateTask tasksample = SP_NavigateTask.Cast(ReqMan.GetTaskSample(SP_NavigateTask));
-			SuccessDistance = tasksample.GetSuccessDistance();
+			m_iSuccessDistance = tasksample.GetSuccessDistance();
 		}
-		if(dis <= SuccessDistance)
+		if(dis <= m_iSuccessDistance)
 		{
 			return true;
 		}
 		return false;
 	};
+	//------------------------------------------------------------------------------------------------------------//
+	//overriding AssignReward to apply the average attribute from SP_RequestManagerComponent
 	override bool AssignReward()
 	{
 		EEditableEntityLabel RewardLabel;
@@ -133,6 +136,7 @@ class SP_NavigateTask: SP_Task
 			}
 		return true;
 	};
+	//------------------------------------------------------------------------------------------------------------//
 	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
 		if (!TaskOwner || !TaskTarget)
@@ -149,6 +153,7 @@ class SP_NavigateTask: SP_Task
 		OLoc = Director.GetCharacterLocation(TaskOwner);
 		DLoc = Director.GetCharacterLocation(TaskTarget);
 	};
+	//------------------------------------------------------------------------------------------------------------//
 	override void CreateDescritions()
 	{
 		string OName;
@@ -159,6 +164,7 @@ class SP_NavigateTask: SP_Task
 		TaskDesc = string.Format("Navigate %1, to %2's location. %2 is located on %3. Reward is %4 %5", OName, DName, DLoc, m_iRewardAmount, FilePath.StripPath(reward));
 		TaskDiag = string.Format("I am looking for someone to help me navigate to %1 on %2. Come find me on %3. Reward is %4 %5", DName, DLoc, OLoc, m_iRewardAmount, FilePath.StripPath(reward));
 	};
+	//------------------------------------------------------------------------------------------------------------//
 	override void UpdateState()
 	{
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
@@ -168,6 +174,8 @@ class SP_NavigateTask: SP_Task
 			return;
 		}
 	}
+	//------------------------------------------------------------------------------------------------------------//
+	//to complete task need to assign owner to new group and get rid of WP
 	override bool CompleteTask(IEntity Assignee)
 	{
 		if (GiveReward(Assignee))
@@ -201,7 +209,9 @@ class SP_NavigateTask: SP_Task
 		}
 		return false;
 	};
+	//------------------------------------------------------------------------------------------------------------//
 	override typename GetClassName(){return SP_NavigateTask;};
+	//------------------------------------------------------------------------------------------------------------//
 	int GetRewardAverage()
 	{
 		if (m_iRewardAverageAmount)
@@ -210,13 +220,14 @@ class SP_NavigateTask: SP_Task
 		}
 		return null;
 	};
+	//------------------------------------------------------------------------------------------------------------//
 	int GetSuccessDistance()
 	{
-		if (SuccessDistance)
+		if (m_iSuccessDistance)
 		{
-			return SuccessDistance;
+			return m_iSuccessDistance;
 		}
 		return null;
-	
 	};
+	//------------------------------------------------------------------------------------------------------------//
 };
