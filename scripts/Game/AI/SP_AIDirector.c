@@ -50,8 +50,12 @@ class SP_AIDirector : AIGroup
 	[Attribute("", category: "Spawning settings")]
 	private ResourceName m_pCommanderWaypoint;
 	
+	[Attribute("1", category: "Tasks")]
+	bool AllowRescue;
+	
 	[Attribute()]
     protected ref SCR_MapLocationQuadHint m_WorldDirections;
+	
 	bool commanderspawned = false;
 	string m_sLocationName;
 	protected int m_iGridSizeX;
@@ -697,6 +701,10 @@ class SP_AIDirector : AIGroup
 	}
 	bool CreateVictim(out IEntity Victim)
 	{
+		if (!AllowRescue)
+		{
+			return false;
+		}
 		if (m_aGroups.Count() == 0)
 		{
 			return false;

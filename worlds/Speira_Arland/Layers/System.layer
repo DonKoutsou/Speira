@@ -60,7 +60,29 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
  coords 2504.668 139.045 2344.997
 }
 SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
+ components {
+  SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
+   m_TasksToSpawn {
+    SP_RescueTask "{5DCA918B9F7C65C2}" {
+     m_iRewardAverageAmount 20
+    }
+   }
+  }
+ }
  coords 2339.976 96.232 2142.711
+ {
+  SCR_LoadoutManager {
+   ID "5DC8E7DF1BA0C1B0"
+   m_aPlayerLoadouts {
+    SCR_FactionPlayerLoadout "{5CA7060267058AD7}" {
+     m_sLoadoutResource "{AE7D7B60A064135E}prefabs/Groups/INDFOR/Group_Speira_Player.et"
+    }
+    SCR_FactionPlayerLoadout "{5D4EC11BB20DC322}" {
+     m_sLoadoutResource "{AE7D7B60A064135E}prefabs/Groups/INDFOR/Group_Speira_Player.et"
+    }
+   }
+  }
+ }
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 2263.008 6.712 3232.114

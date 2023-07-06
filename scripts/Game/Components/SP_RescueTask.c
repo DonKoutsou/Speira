@@ -51,6 +51,7 @@ class SP_RescueTask: SP_Task
 			return false;
 		}
 		CreateDescritions();
+		e_State = ETaskState.UNASSIGNED;
 		return true;
 	};
 	override void CreateDescritions()
@@ -166,6 +167,18 @@ class SP_RescueTask: SP_Task
 			return m_iRewardAverageAmount;
 		}
 		return null;
+	};
+	override void UpdateState()
+	{
+		foreach(IEntity char : CharsToRescue)
+		{
+			SCR_CharacterDamageManagerComponent dmg = SCR_CharacterDamageManagerComponent.Cast(char.FindComponent(SCR_CharacterDamageManagerComponent));
+			if(!dmg.IsDestroyed())
+			{
+				return;
+			}
+		}
+		e_State = ETaskState.FAILED;
 	};
 	override bool CompleteTask(IEntity Assignee)
 	{

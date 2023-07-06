@@ -48,6 +48,7 @@ class SP_Task: ScriptAndConfig
 			return false;
 		}
 		CreateDescritions();
+		e_State = ETaskState.UNASSIGNED;
 		return true;
 	};
 	//------------------------------------------------------------------------------------------------------------//
@@ -164,7 +165,16 @@ class SP_Task: ScriptAndConfig
 		return false;
 	};
 	//------------------------------------------------------------------------------------------------------------//
-	bool CompleteTask(IEntity Assignee){m_Copletionist = Assignee; return true;};
+	bool CompleteTask(IEntity Assignee)
+	{
+		if (GiveReward(Assignee))
+		{
+			e_State = ETaskState.COMPLETED;
+			m_Copletionist = Assignee;
+			return true;
+		}
+		return false;
+	};
 	//------------------------------------------------------------------------------------------------------------//
 	ETaskState GetState(){return e_State;};
 	//------------------------------------------------------------------------------------------------------------//
@@ -175,7 +185,7 @@ class SP_Task: ScriptAndConfig
 	void AssignCharacter(IEntity Character)
 	{
 		a_TaskAssigned.Insert(Character);
-		if(a_TaskAssigned.Count() > 0 && e_State == ETaskState.EMPTY)
+		if(a_TaskAssigned.Count() > 0 && e_State == ETaskState.UNASSIGNED)
 		{
 			e_State = ETaskState.ASSIGNED;
 		}

@@ -30,6 +30,7 @@ class SP_RetrieveTask: SP_Task
 			return false;
 		}
 		CreateDescritions();
+		e_State = ETaskState.UNASSIGNED;
 		return true;
 	};
 	//------------------------------------------------------------------------------------------------------------//

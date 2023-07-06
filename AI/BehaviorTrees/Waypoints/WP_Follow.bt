@@ -1,0 +1,146 @@
+BehaviorTree {
+ Name "AI/BehaviorTrees/Waypoints/WP_Follow.bt"
+ Nodes {
+  RootNode Root {
+   Name "Root"
+   EditorPos 346.095 -356.571
+   Nodes {
+    Parallel Parallel {
+     Name "Parallel"
+     EditorPos 323.667 -202
+     Nodes {
+      Sequence Sequence {
+       Name "Sequence"
+       EditorPos 131.429 144.143
+       Nodes {
+        SCR_AIGetPriorityFromWaypoint "SCR_AI Get Priority From Waypoint" {
+         Name "SCR_AI Get Priority From Waypoint"
+         EditorPos -1173 422.75
+         OutPorts {
+          SingleOutputPortContainer SingleOutputPortContainer {
+           Port 3
+           PortName "PriorityLevel"
+          }
+         }
+        }
+        AITaskGetWaypoint "Get Waypoint" {
+         Name "Get Waypoint"
+         EditorPos -807.727 419.091
+         CompletionRadius 5
+        }
+        SCR_AIGetEntityFromWaypoint "SCR_AI Get Entity From Waypoint" {
+         Name "SCR_AI Get Entity From Waypoint"
+         EditorPos -550 428
+         OutPorts {
+          SingleOutputPortContainer SingleOutputPortContainer {
+           Port 1
+           PortName "Entity"
+          }
+         }
+        }
+        AITaskGroupSetMovementSpeed "Group Set Movement Speed" {
+         Name "Group Set Movement Speed"
+         EditorPos -214.5 428.5
+         "Movement speed" RUN
+        }
+        SCR_AISendGoalMessage_Follow "SCR_AI Send Goal Message_ Follow" {
+         Name "SCR_AI Send Goal Message_ Follow"
+         EditorPos 293.25 456
+         InPorts {
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "Receiver"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port 0
+           PortName "PriorityLevel"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "IsWaypointRelated"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port 2
+           PortName "FollowEntity"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "MovePosition"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "UseVehicles"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port 4
+           PortName "Distance"
+          }
+         }
+         m_sText "WP_Follow"
+         m_bIsWaypointRelated 1
+        }
+        AITaskReturnState "Return State" {
+         Name "Return State"
+         EditorPos 665.178 424.786
+         Result RUNNING
+        }
+       }
+      }
+      SCR_AIAbortWaypoint "SCR_AI Abort Waypoint" {
+       Name "SCR_AI Abort Waypoint"
+       EditorPos 479.667 -2
+       m_bLeaveTurret 0
+      }
+     }
+     UseChildResult 0
+    }
+   }
+  }
+ }
+ Variables {
+  Variable waypointEntity {
+   VariableName "waypointEntity"
+   VariableTypeName "IEntity"
+   VariableExposedInput 0
+   VariableExposedOutput 0
+  }
+  Variable priorityLevel {
+   VariableName "priorityLevel"
+   VariableTypeName "float"
+   VariableExposedInput 0
+   VariableExposedOutput 0
+  }
+  Variable completionDistance {
+   VariableName "completionDistance"
+   VariableTypeName "float"
+   VariableExposedInput 0
+   VariableExposedOutput 0
+  }
+ }
+ VariablesRefs {
+  VariableReference priorityLevel {
+   VariableType 1
+   EditorPos 47.143 497.714
+  }
+  VariableReference waypointEntity {
+   VariableType 0
+   EditorPos -245.321 663.607
+  }
+  VariableReference waypointEntity {
+   VariableType 0
+   EditorPos 13.393 586.964
+  }
+  VariableReference priorityLevel {
+   VariableType 1
+   EditorPos -741.5 680
+  }
+  VariableReference completionDistance {
+   VariableType 2
+   EditorPos 29 682
+  }
+  VariableReference completionDistance {
+   VariableType 2
+   EditorPos -526 667
+  }
+ }
+}

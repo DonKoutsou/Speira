@@ -8,6 +8,8 @@ SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.e
  components {
   SP_PermadeathRespawnHandlerComponent "{5DC8E7DFC4B04D9B}" {
   }
+  SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
+  }
  }
  coords 1648.763 67.601 5631.245
 }

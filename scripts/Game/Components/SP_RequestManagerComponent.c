@@ -74,9 +74,17 @@ class SP_RequestManagerComponent : ScriptComponent
 	//------------------------------------------------------------------------------------------------------------//
 	void UpdateCharacterTasks(IEntity Char)
 	{
+		if(!Char)
+		{
+			return;
+		}
 		foreach (SP_Task task : TaskMap)
 		{
 			if(task.CharacterIsOwner(Char) == true)
+			{
+				task.UpdateState();
+			}
+			if(task.CharacterIsTarget(Char) == true)
 			{
 				task.UpdateState();
 			}
@@ -211,17 +219,21 @@ class SP_RequestManagerComponent : ScriptComponent
 	//------------------------------------------------------------------------------------------------------------//
 	void ClearTasks()
 	{
+		int removed;
 		for (int i = TaskMap.Count() - 1; i >= 0; i--)
 		{
 			if (TaskMap[i].GetState() == ETaskState.FAILED) 
 			{
 				TaskMap.Remove(i);
+				removed += 1;
 			}
 			if (TaskMap[i].GetState() == ETaskState.COMPLETED) 
 			{
 				OnTaskCompleted(TaskMap[i]);
+				removed += 1;
 			}
 		}
+		Print(string.Format("Cleanup finished, %1 tasks got cleared", removed))
 		/*foreach (SP_Task task : TaskMap)
 	    {
 				if (task.GetState() == ETaskState.FAILED) 

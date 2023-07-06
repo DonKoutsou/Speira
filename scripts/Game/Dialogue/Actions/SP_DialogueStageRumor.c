@@ -29,7 +29,6 @@ class DialogueStageRumor : DialogueStage
 			index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
 			RandomDirector = SP_AIDirector.AllDirectors[index];
 		}
-		
 		string FactioReadble = "";
 		SCR_Faction faction = SCR_Faction.Cast(RandomDirector.GetMajorityHolder(FactioReadble));
 		
