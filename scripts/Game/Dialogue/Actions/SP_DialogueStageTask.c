@@ -66,6 +66,8 @@ class DialogueStageTask : DialogueStage
 		}
 		if(t_Navigate)
 		{
+			SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			Diag.Escape(Character, Player);
 			AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
 			AIAgent agent = comp.GetAIAgent();
 			SCR_AIGroup group = SCR_AIGroup.Cast(agent.GetParentGroup());
@@ -76,14 +78,18 @@ class DialogueStageTask : DialogueStage
 			myparams.Transform[3] = Character.GetOrigin();
 			SCR_AIGroup newgroup = SCR_AIGroup.Cast(GetGame().SpawnEntityPrefab(groupbase, GetGame().GetWorld(), myparams));
 			newgroup.AddAgent(agent);
+			SCR_EntityWaypoint m_Waypoint;
 			Resource wpRes = Resource.Load("{A0509D3C4DD4475E}prefabs/AI/Waypoints/AIWaypoint_Follow.et");
 			EntitySpawnParams params = EntitySpawnParams();
 			params.TransformMode = ETransformMode.WORLD;
 			params.Transform[3] = Player.GetOrigin();
-			SCR_EntityWaypoint m_Waypoint = SCR_EntityWaypoint.Cast(GetGame().SpawnEntityPrefab(wpRes, GetGame().GetWorld(), params));
+			m_Waypoint = SCR_EntityWaypoint.Cast(GetGame().SpawnEntityPrefab(wpRes, GetGame().GetWorld(), params));
 			m_Waypoint.SetEntity(SCR_ChimeraCharacter.Cast(Player));
+			Player.AddChild(m_Waypoint, -1);
 			newgroup.AddWaypointAt(m_Waypoint, 0);
+			//utility.AddAction(action);
 			t_Navigate.AssignCharacter(Player);
+			SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("%1 started to follow you", Diag.GetCharacterName(Character)));
 		}
 	};
 	void SetupTask(SP_Task task)
@@ -92,7 +98,7 @@ class DialogueStageTask : DialogueStage
 	}
 	override bool GetActionText(IEntity Character, IEntity Player, out string acttext)
 	{
-		if(t_Task && t_Task.CharacterAssigned(Player) == false)
+		if(t_Task && t_Task.CharacterAssigned(Player) == false && t_Task.GetState() != ETaskState.COMPLETED)
 		{
 			acttext = t_Task.GetTaskDescription();
 			return true;

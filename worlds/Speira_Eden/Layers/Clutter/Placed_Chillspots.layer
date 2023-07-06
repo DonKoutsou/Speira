@@ -2,6 +2,9 @@ GenericEntity : "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et" {
  coords 5159.073 49.971 5616.151
  angleY 118.158
 }
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
+ coords 7799.617 309.915 4563.401
+}
 $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
  {
   coords 5503.66 94.813 6042.548

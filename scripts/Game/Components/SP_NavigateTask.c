@@ -172,20 +172,31 @@ class SP_NavigateTask: SP_Task
 	{
 		if (GiveReward(Assignee))
 		{
+			SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			//get task owner group and dissband it.
 			AIControlComponent comp = AIControlComponent.Cast(TaskOwner.FindComponent(AIControlComponent));
 			AIAgent agent = comp.GetAIAgent();
 			SCR_AIGroup group = SCR_AIGroup.Cast(agent.GetParentGroup());
+			AIWaypoint originalwp = group.GetCurrentWaypoint();
+			group.CompleteWaypoint(originalwp);
+			delete originalwp;
 			group.RemoveAgent(agent);
-			AIControlComponent Tcomp = AIControlComponent.Cast(TaskTarget.FindComponent(AIControlComponent));
-			AIAgent Tagent = Tcomp.GetAIAgent();
-			SCR_AIGroup Tgroup = SCR_AIGroup.Cast(Tagent.GetParentGroup());
-			Tgroup.AddAgent(Tagent);
 			if(group)
 			{
 				delete group;
 			}
+			
+			//get group of target
+			AIControlComponent Tcomp = AIControlComponent.Cast(TaskTarget.FindComponent(AIControlComponent));
+			AIAgent Tagent = Tcomp.GetAIAgent();
+			SCR_AIGroup Tgroup = SCR_AIGroup.Cast(Tagent.GetParentGroup());
+			
+			//add owner
+			Tgroup.AddAgent(agent);
+
 			e_State = ETaskState.COMPLETED;
 			m_Copletionist = Assignee;
+			SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("%1 stopped following you", Diag.GetCharacterName(TaskOwner)));
 			return true;
 		}
 		return false;
