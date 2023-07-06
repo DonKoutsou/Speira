@@ -1,4 +1,5 @@
 //------------------------------------------------------------------------------------------------------------//
+[BaseContainerProps(configRoot:true)]
 class SP_DeliverTask: SP_Task
 {
 	[Attribute(defvalue: "10")]

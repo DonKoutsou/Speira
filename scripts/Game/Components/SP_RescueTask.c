@@ -1,4 +1,5 @@
 //------------------------------------------------------------------------------------------------------------//
+[BaseContainerProps(configRoot:true)]
 class SP_RescueTask: SP_Task
 {
 	[Attribute(defvalue: "20")]

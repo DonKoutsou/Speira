@@ -1,5 +1,6 @@
 //------------------------------------------------------------------------------------------------------------//
-class SP_Task: ScriptAndConfig
+[BaseContainerProps(configRoot:true)]
+class SP_Task
 {
 	//-------------------------------------------------//
 	//Character wich created the task
@@ -56,6 +57,11 @@ class SP_Task: ScriptAndConfig
 	//------------------------------------------------------------------------------------------------------------//
 	bool CheckCharacter(IEntity Owner)
 	{
+		SCR_CharacterDamageManagerComponent dmg = SCR_CharacterDamageManagerComponent.Cast(Owner.FindComponent(SCR_CharacterDamageManagerComponent));
+		if(dmg.GetIsUnconscious())
+		{
+			return false;
+		}
 		SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
 		array<ref SP_Task> tasks = new array<ref SP_Task>();

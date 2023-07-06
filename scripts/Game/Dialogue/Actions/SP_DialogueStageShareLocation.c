@@ -25,7 +25,6 @@ class DialogueStageShareLocation : DialogueStage
 		SP_AIDirector OrDirector = SP_AIDirector.Cast(agent.GetParentGroup().GetParentGroup());
 	 	return DialogueText + " " + OrDirector.GetCharacterLocation(Player);
 	};
-
 };
 [BaseContainerProps(configRoot: true)]
 class SP_DialogueDirectionHint

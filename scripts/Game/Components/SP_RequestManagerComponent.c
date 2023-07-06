@@ -15,8 +15,10 @@ class SP_RequestManagerComponent : ScriptComponent
 	[Attribute(defvalue: "2", desc: "Max amount of tasks of sametype a character can be requesting at the same time")]
 	int m_fTaskOfSameTypePerCharacter;
 	
-	[Attribute(desc: "Type of tasks to spawn")]
-	ref array <ref SP_Task> m_TasksToSpawn;
+	[Attribute()]
+	ref array<ref SP_Task> TasksToSawn;
+	
+	static ref array<ref SP_Task> TaskSamples = null;
 	
 	[Attribute(defvalue: "60", desc: "Task garbage mamager kinda. Completed task are added to their own list, failed tasks are deleted")]
 	float m_fTaskClearTime;
@@ -27,7 +29,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	static ref array<ref SP_Task> TaskMap = null;
 	static ref array<ref SP_Task> CompletedTaskMap = null;
 	//------------------------------------------------------------------------------------------------------------//
-	void ~SP_RequestManagerComponent(){TaskMap.Clear();};
+	void ~SP_RequestManagerComponent(){TaskMap.Clear();TaskMap.Clear();TaskSamples.Clear();};
 	//------------------------------------------------------------------------------------------------------------//
 	override void EOnInit(IEntity owner)
 	{
@@ -35,15 +37,26 @@ class SP_RequestManagerComponent : ScriptComponent
 			TaskMap = new array<ref SP_Task>();
 		if(!CompletedTaskMap)
 			CompletedTaskMap = new array<ref SP_Task>();
+		if(!TaskSamples)
+		{
+			TaskSamples = new array<ref SP_Task>();
+		}
+		if(TaskSamples.Count() == 0)
+		{
+			foreach(SP_Task Task : TasksToSawn)
+			{
+				TaskSamples.Insert(Task);
+			}
+		}
 	}
 	SP_Task GetTaskSample(typename tasktype)
 	{
-		foreach (SP_Task task : m_TasksToSpawn)
+		foreach(SP_Task Task : TaskSamples)
 		{
-			if(task.GetClassName() == tasktype)
-				{
-					return task;
-				}
+			if(Task.GetClassName() == tasktype)
+			{
+				return Task;
+			}
 		}
 		return null;
 	}
@@ -263,7 +276,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	{
 		if (GetInProgressTaskCount() < m_iMinTaskAmount)
 		{
-			typename Task = m_TasksToSpawn.GetRandomElement().GetClassName();
+			typename Task = TaskSamples.GetRandomElement().GetClassName();
 			CreateTask(Task);
 		}
 		else
@@ -272,10 +285,7 @@ class SP_RequestManagerComponent : ScriptComponent
 			if(m_fTaskRespawnTimer > m_fTaskGenTime)
 			{
 				typename Task;
-				if(m_TasksToSpawn)
-				{
-					Task = m_TasksToSpawn.GetRandomElement().GetClassName();
-				}
+				Task = TaskSamples.GetRandomElement().GetClassName();
 				if(CreateTask(Task))
 				{
 					m_fTaskRespawnTimer = 0;

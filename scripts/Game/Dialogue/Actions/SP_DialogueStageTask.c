@@ -8,6 +8,8 @@ class DialogueStageTask : DialogueStage
 		SP_BountyTask t_Bounty = SP_BountyTask.Cast(t_Task);
 		SP_DeliverTask t_Deliver = SP_DeliverTask.Cast(t_Task);
 		SP_RetrieveTask t_Retrieve = SP_RetrieveTask.Cast(t_Task);
+		SP_RescueTask t_Rescue = SP_RescueTask.Cast(t_Task);
+		SP_NavigateTask t_Navigate = SP_NavigateTask.Cast(t_Task);
 		if(t_Bounty)
 		{
 			IEntity BountyPaper = t_Bounty.GetBountyEnt();
@@ -61,6 +63,27 @@ class DialogueStageTask : DialogueStage
 				SCR_HintManagerComponent.GetInstance().ShowCustom("No space in inventory, item bounty left on the floor");
 			}
 			t_Retrieve.AssignCharacter(Player);
+		}
+		if(t_Navigate)
+		{
+			AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
+			AIAgent agent = comp.GetAIAgent();
+			SCR_AIGroup group = SCR_AIGroup.Cast(agent.GetParentGroup());
+			group.RemoveAgent(agent);
+			Resource groupbase = Resource.Load("{000CD338713F2B5A}Prefabs/AI/Groups/Group_Base.et");
+			EntitySpawnParams myparams = EntitySpawnParams();
+			myparams.TransformMode = ETransformMode.WORLD;
+			myparams.Transform[3] = Character.GetOrigin();
+			SCR_AIGroup newgroup = SCR_AIGroup.Cast(GetGame().SpawnEntityPrefab(groupbase, GetGame().GetWorld(), myparams));
+			newgroup.AddAgent(agent);
+			Resource wpRes = Resource.Load("{A0509D3C4DD4475E}prefabs/AI/Waypoints/AIWaypoint_Follow.et");
+			EntitySpawnParams params = EntitySpawnParams();
+			params.TransformMode = ETransformMode.WORLD;
+			params.Transform[3] = Player.GetOrigin();
+			SCR_EntityWaypoint m_Waypoint = SCR_EntityWaypoint.Cast(GetGame().SpawnEntityPrefab(wpRes, GetGame().GetWorld(), params));
+			m_Waypoint.SetEntity(SCR_ChimeraCharacter.Cast(Player));
+			newgroup.AddWaypointAt(m_Waypoint, 0);
+			t_Navigate.AssignCharacter(Player);
 		}
 	};
 	void SetupTask(SP_Task task)

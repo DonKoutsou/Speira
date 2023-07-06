@@ -91,15 +91,17 @@ SCR_BaseGameMode {
   SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
    m_fTaskGenTime 300
    m_iMinTaskAmount 200
-   m_TasksToSpawn {
-    SP_BountyTask "{5DC8E7DFEC4F7D1A}" {
+   m_fTaskOfSameTypePerCharacter 1
+   TasksToSawn {
+    SP_BountyTask "{5DCC99CF04345A9C}" {
     }
-    SP_DeliverTask "{5DC8E7DFED331D8C}" {
+    SP_DeliverTask "{5DCC99CF0758E224}" {
     }
-    SP_RetrieveTask "{5DC8E7DFEEF31AC3}" {
+    SP_NavigateTask "{5DCC99CF07807699}" {
     }
-    SP_RescueTask "{5DCA918B9F7C65C2}" {
-     m_iRewardAverageAmount 40
+    SP_RescueTask "{5DCC99CF06362CF3}" {
+    }
+    SP_RetrieveTask "{5DCC99CF097FEE75}" {
     }
    }
   }
@@ -3912,7 +3914,7 @@ SCR_BaseGameMode {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CD4D813}" {
-           m_sEntityPrefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+           m_sEntityPrefab "{6FD6C96121905202}prefabs/Items/Equipment/Watches/Watch_Vostok.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CD4D812}" {
              m_eItemType EQUIPMENT
@@ -5482,7 +5484,7 @@ SCR_BaseGameMode {
            }
           }
           SCR_EntityCatalogInventoryItem "{5D5705392CDA7CF0}" {
-           m_sEntityPrefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+           m_sEntityPrefab "{6FD6C96121905202}prefabs/Items/Equipment/Watches/Watch_Vostok.et"
            m_aEntityDataList {
             SCR_ArsenalItem "{5D5705392CDA7CF1}" {
              m_eItemType EQUIPMENT

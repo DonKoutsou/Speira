@@ -1,3 +1,4 @@
+[BaseContainerProps(configRoot:true)]
 class SP_BountyTask: SP_Task
 {
 	//---------------------------------------------------------------------------//
