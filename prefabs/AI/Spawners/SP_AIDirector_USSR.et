@@ -11,11 +11,6 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  }
  m_Radius 60
  m_Respawn 1
- m_CommanderRespawn 1
  m_SpawnAI 1
  m_RespawnTimer 60
- m_CommanderRespawnTimer 600
- m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
- m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
- m_pCommanderWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
 }

@@ -46,7 +46,7 @@ class DialogueStageRumor : DialogueStage
 		{
 			usedindex.Clear();
 		}		
-		string TextToSend = string.Format(DialogueText, FactioReadble, RandomDirector.GetLocationName());
+		string TextToSend = string.Format(DialogueText, FactioReadble, RandomDirector.GetCharacterLocation(RandomDirector));
 		return TextToSend;
 	}
 

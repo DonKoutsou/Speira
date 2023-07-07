@@ -5,26 +5,13 @@ SP_AIDirector {
    NavmeshProject "LowRes"
    IgnoreFlags 1
   }
-  MeshObject "{5D42AA2A86C391EF}" {
-   Object "{BC98C50CD847BEB8}Assets/Editor/CompositionSlot/SlotFlatLarge_01.xob"
-   Materials {
-    MaterialAssignClass "{5D42AA2A86C391E6}" {
-     SourceMaterial "Flat_Large"
-     AssignedMaterial "{E2BEBD274C90E383}Assets/Editor/CompositionSlot/Data/Director_Slot_FlatLarge_01.emat"
-    }
-   }
-   CastShadow 0
-   CastFarShadow 0
-   PixelSizeFilter 0
-   RainOccluder 0
-   WetnessOccluder 0
-   ReceiveLight 0
-  }
   RplComponent "{5D42AA2A86C39139}" {
   }
  }
  coords 117.143 1.001 247.895
  DangerEventRange 1000
+ m_Radius 100
  m_Respawn 0
  m_SpawnAI 0
+ m_pDefaultWaypoint "{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et"
 }
