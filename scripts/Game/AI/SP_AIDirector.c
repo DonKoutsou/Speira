@@ -594,7 +594,6 @@ class SP_AIDirector : AIGroup
 			if (positiontospawn[1] < groundHeight)
 				positiontospawn[1] = groundHeight;
 		}
-		
 	}
 	bool CreateVictim(out IEntity Victim)
 	{
@@ -692,7 +691,8 @@ class SP_AIDirector : AIGroup
 	}
 	
 	override void _WB_SetExtraVisualiser(EntityVisualizerType type, IEntitySource src)
-	{				
+	{	
+		m_bVisualize = true;			
 		_CaptureSentinels();
 		super._WB_SetExtraVisualiser(type, src);
 	}
@@ -708,8 +708,8 @@ class SP_AIDirector : AIGroup
 			string infoText2 = string.Format("Max Agents to Spawn: %1 ", m_MaxAgentsToSpawn.ToString());
 			auto origin = GetOrigin();
 			auto radiusShape = Shape.CreateSphere(COLOR_BLUE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, origin, m_Radius);	
-			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + 50, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
-			DebugTextWorldSpace.Create(GetGame().GetWorld(), infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + 55, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
+			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_Radius +10, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
+			DebugTextWorldSpace.Create(GetGame().GetWorld(), infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_Radius, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
 			if(m_aQueriedSentinels)
 			{
 				foreach (IEntity entity : m_aQueriedSentinels)
@@ -718,8 +718,24 @@ class SP_AIDirector : AIGroup
 					Shape.CreateSphere(Color.PINK, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, entorigin, 5);
 					array<Managed> outComponents = new array<Managed>();
 					entity.FindComponents(SCR_AISmartActionSentinelComponent, outComponents);
+					foreach(Managed smart : outComponents)
+					{
+						string tags;
+						SCR_AISmartActionSentinelComponent sent = SCR_AISmartActionSentinelComponent.Cast(smart);
+						array<string> outTagstemp = new array<string>();
+						sent.GetTags(outTagstemp);
+						foreach(string tag : outTagstemp)
+						{
+							tags = tags +  "|" + tag + "| ";
+						}
+						vector Smartloc = entorigin + sent.GetActionOffset();
+						Shape.CreateSphere(Color.PINK, ShapeFlags.DEFAULT | ShapeFlags.ONCE, Smartloc, 1);
+						DebugTextWorldSpace.Create(GetGame().GetWorld(), tags, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, Smartloc[0], Smartloc[1] + 1, Smartloc[2], 10, 0xFFFFFFFF, Color.BLACK);
+						tags = STRING_EMPTY;
+					}
 					string SmartText = string.Format("%1: seats", outComponents.Count().ToString());
 					DebugTextWorldSpace.Create(GetGame().GetWorld(), SmartText, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, entorigin[0], entorigin[1] + 5, entorigin[2], 10, 0xFFFFFFFF, Color.BLACK);
+					
 				}
 			}	
 		}

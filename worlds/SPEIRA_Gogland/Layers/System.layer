@@ -20,6 +20,16 @@ RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
 ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 8405.761 5.795 2286.157
 }
+SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_HostileArea.et" {
+ coords 5218.74 -14.788 8408.667
+ m_FactionsToApear + {
+  "FIA"
+ }
+ m_MaxAgentsToSpawn 2
+ m_Radius 350
+ m_WorldDirections SCR_MapLocationQuadHint "{5D66D1320083A337}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
+ }
+}
 SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
  coords 7334.612 0.325 983.043
 }

@@ -79,7 +79,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
  }
  {
-  coords 6330.231 31.098 7403.729
+  coords 6330.667 -30.369 7418.026
   m_FactionsToApear + {
    "FIA"
   }
@@ -90,12 +90,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
  }
  {
-  coords 5008.817 26.661 6519.936
+  coords 5048.084 26.661 6523.452
   m_FactionsToApear + {
    "FIA"
   }
   m_MaxAgentsToSpawn 2
-  m_Radius 200
+  m_Radius 300
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D132189EAC65}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
@@ -160,11 +160,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
  }
  {
-  coords 4533.381 73.243 8820.374
+  coords 4554.518 -14.788 8637.299
   m_FactionsToApear + {
    "FIA"
   }
   m_MaxAgentsToSpawn 2
+  m_Radius 350
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1320083A337}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
@@ -308,7 +309,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
  }
  {
-  coords 5820.204 66.713 7008.909
+  coords 6113.655 66.713 6891.695
   DangerEventRange 300
   m_FactionsToApear + {
    "FIA"
@@ -319,13 +320,13 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
  }
  {
-  coords 5756.051 40.326 7577.931
+  coords 5842.92 40.326 7438.077
   DangerEventRange 300
   m_FactionsToApear + {
    "FIA"
   }
   m_MaxAgentsToSpawn 1
-  m_Radius 300
+  m_Radius 250
   m_WorldDirections SCR_MapLocationQuadHint "{5D66D1326C840400}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
   }
  }
