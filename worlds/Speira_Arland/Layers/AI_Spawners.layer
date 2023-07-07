@@ -80,7 +80,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 2
   m_Radius 250
-  m_pDefaultWaypoint "{9468A0EEBC5A74B9}prefabs/AI/Waypoints/AIWaypoint_Defend_Huge.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B29B816812}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -293,7 +292,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 1
   m_Radius 10
   m_RespawnTimer 120
-  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2844C1FB3}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -337,7 +335,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 1
   m_Radius 100
-  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FF522C50}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -352,7 +349,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 1
   m_Radius 100
-  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2E15BCF70}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -366,7 +362,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 2
   m_Radius 100
-  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B7D7540D}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -406,7 +401,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 2
   m_Radius 100
-  m_pDefaultWaypoint "{73FFE351E7A88777}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_COMMANDER.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2A1852C75}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -420,7 +414,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 2
   m_Radius 100
-  m_pDefaultWaypoint "{9468A0EEBC5A74B9}prefabs/AI/Waypoints/AIWaypoint_Defend_Huge.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2FF522C50}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -498,7 +491,6 @@ $grp SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et
   m_MaxAgentsToSpawn 4
   m_Radius 2000
   m_RespawnTimer 300
-  m_pDefaultWaypoint "{C091D56A01F8F062}prefabs/AI/Waypoints/AIWaipoint_Defend_2km.et"
   AllowRescue 0
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B280C0F1AD}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }

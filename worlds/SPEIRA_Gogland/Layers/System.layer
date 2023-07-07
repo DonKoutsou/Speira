@@ -4,7 +4,7 @@ SCR_AIWorld : "{AE290936DB86A08A}prefabs/Systems/AIWorld_Gogland.et" {
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 8421.013 3.408 2380.722
 }
-SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
+SP_GameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
  components {
   SP_RequestManagerComponent "{5DC8E7DFE86F4615}" {
    m_iMinTaskAmount 120
@@ -13,6 +13,7 @@ SCR_BaseGameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.e
   }
  }
  coords 8387.015 6.98 2376.346
+ m_eOverriddenGameOverType DEATH
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 8414.325 5.695 2309.07

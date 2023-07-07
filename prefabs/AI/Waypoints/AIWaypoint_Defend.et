@@ -6,13 +6,10 @@ SCR_DefendWaypoint {
  m_DefendPresets {
   SCR_DefendWaypointPreset "{58D6884489389713}" {
    m_aTagsForSearch {
-    "ChillPost" "ObservationPost" "GatePost"
+    "ObservationPost" "ChillPost" "GatePost"
    }
   }
   SCR_DefendWaypointPreset "{58D688448899BCA0}" {
-   m_aTagsForSearch + {
-    "ChillPost"
-   }
   }
  }
 }

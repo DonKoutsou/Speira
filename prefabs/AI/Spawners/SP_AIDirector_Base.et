@@ -13,5 +13,4 @@ SP_AIDirector {
  m_Radius 100
  m_Respawn 0
  m_SpawnAI 0
- m_pDefaultWaypoint "{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et"
 }

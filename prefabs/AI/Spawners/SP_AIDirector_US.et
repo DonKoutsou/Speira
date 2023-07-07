@@ -14,6 +14,5 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  m_Respawn 1
  m_SpawnAI 1
  m_RespawnTimer 60
- m_pDefaultWaypoint "{A33AF7FC5004F294}prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et"
  AllowRescue 0
 }

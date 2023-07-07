@@ -455,18 +455,18 @@ SP_AIDirector : "{506D4A7631A2884F}prefabs/AI/Spawners/SP_AIDirector_US.et" {
  }
 }
 SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et" {
- coords 7582.65 18.345 4038.626
+ coords 7583.963 18.345 4008.071
  DangerEventRange 100
  m_MaxAgentsToSpawn 2
- m_Radius 100
+ m_Radius 80
  m_WorldDirections SCR_MapLocationQuadHint "{5D66D54F6ECC8D02}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
  }
 }
 SP_AIDirector : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_AIDirector_Bandits.et" {
- coords 6454.663 9.563 7033.932
+ coords 6491.053 9.563 7007.786
  DangerEventRange 100
  m_MaxAgentsToSpawn 4
- m_Radius 50
+ m_Radius 100
  m_WorldDirections SCR_MapLocationQuadHint "{5D66D13207137589}" : "{1A46B132B519FD7B}Configs/Map/MapLocatorHints/LocationHintsGogland.conf" {
  }
 }

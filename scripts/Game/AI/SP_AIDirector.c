@@ -35,7 +35,7 @@ class SP_AIDirector : AIGroup
 	[Attribute("0", category: "Spawning settings")]
 	float m_RespawnTimer;
 	
-	[Attribute("", category: "Spawning settings")]
+	[Attribute("{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et", category: "Spawning settings")]
 	private ResourceName m_pDefaultWaypoint;
 	
 	[Attribute("1", category: "Tasks")]
@@ -47,10 +47,16 @@ class SP_AIDirector : AIGroup
 	[Attribute("1")]
     protected bool m_bVisualize;
 	
+	[Attribute("10")]
+	int m_DirectorUpdatePeriod;
+	
+	float m_updatetimer;
+	
 	vector positiontospawn;
 	ResourceName CharToSpawn;
 	
 	private ref array<IEntity> m_aQueriedSentinels;
+	private ref array<IEntity> m_aQueriedPrefabSpawnP;
 	
 	protected int m_iGridSizeX;
 	protected int m_iGridSizeY;
@@ -377,7 +383,13 @@ class SP_AIDirector : AIGroup
 	void ~SP_AIDirector()
 	{
 		if(AllDirectors)
-			AllDirectors.Remove(AllDirectors.Find(this));
+			AllDirectors.RemoveItem(this);
+		if(m_aQueriedSentinels)
+			m_aQueriedSentinels.Clear();
+		if(m_aQueriedPrefabSpawnP)
+			m_aQueriedPrefabSpawnP.Clear();
+		if(m_aGroups)
+			m_aGroups.Clear();
 	}	
 	protected int GetGridIndex(int x, int y)
 	{
@@ -446,6 +458,7 @@ class SP_AIDirector : AIGroup
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
+		SpawnPrefab();
 		if(!GetGame().GetWorldEntity())
 		{
 			return;
@@ -487,6 +500,14 @@ class SP_AIDirector : AIGroup
 	override void EOnFrame(IEntity owner, float timeSlice)
 	{
 		super.EOnFrame(owner, timeSlice);
+		if (m_updatetimer > 0)
+		{
+			m_updatetimer = m_updatetimer -timeSlice;
+			return;
+		}
+			
+		m_updatetimer = Math.RandomFloat(m_DirectorUpdatePeriod*0.5, m_DirectorUpdatePeriod + m_DirectorUpdatePeriod*0.5);
+		
 		if (!m_SpawnAI)
 			return;
 		if(!CharToSpawn)
@@ -505,13 +526,13 @@ class SP_AIDirector : AIGroup
 				{
 					if (Spawn())
 					{
-						m_RespawnPeriod = m_RespawnTimer + Math.RandomInt(m_RespawnTimer/2, m_RespawnTimer + m_RespawnTimer/2);
+						m_RespawnPeriod = m_RespawnTimer + Math.RandomInt(m_RespawnTimer*0.5, m_RespawnTimer + m_RespawnTimer*0.5);
 					}
 					
 				}
 				else
 				{
-					m_RespawnPeriod -= timeSlice;
+					m_RespawnPeriod -= m_DirectorUpdatePeriod;
 				}	
 			}
 		}
@@ -666,7 +687,7 @@ class SP_AIDirector : AIGroup
 		super._WB_SetExtraVisualiser(type, src);
 	}
 	*/
-	private bool QueryEntities(IEntity e)
+	private bool QueryEntitiesForSentinels(IEntity e)
 	{
 		SCR_AISmartActionSentinelComponent sentinel = SCR_AISmartActionSentinelComponent.Cast(e.FindComponent(SCR_AISmartActionSentinelComponent));
 		if (sentinel)
@@ -674,26 +695,73 @@ class SP_AIDirector : AIGroup
 		
 		return true;
 	}
+	private bool QueryEntitiesForPrefabSpawner(IEntity e)
+	{
+		SCR_PrefabSpawnPoint PSpawnP = SCR_PrefabSpawnPoint.Cast(e);
+		if (PSpawnP && PSpawnP.GetType() == EPrefabSpawnType.MilitaryVehicles)
+			m_aQueriedPrefabSpawnP.Insert(e);
+		
+		return true;
+	}
 	private void GetSentinels(float radius)
 	{
 		BaseWorld world = GetWorld();
-		world.QueryEntitiesBySphere(GetOrigin(), radius, QueryEntities);
+		world.QueryEntitiesBySphere(GetOrigin(), radius, QueryEntitiesForSentinels);
+	}
+	private void GetPrefabSpawns(float radius)
+	{
+		BaseWorld world = GetWorld();
+		world.QueryEntitiesBySphere(GetOrigin(), radius, QueryEntitiesForPrefabSpawner);
 	}
 	private void _CaptureSentinels()
 	{
 		m_aQueriedSentinels = {};
 		GetSentinels(m_Radius);
 	}
+	private void _CapturePrefabSpawns()
+	{
+		m_aQueriedPrefabSpawnP = {};
+		GetPrefabSpawns(m_Radius);
+	}
+	private void SpawnPrefab()
+	{
+		_CapturePrefabSpawns();
+		if(m_aQueriedPrefabSpawnP.Count() == 0)
+		{
+			return;
+		}
+		FactionManager factionManager = GetGame().GetFactionManager();
+		if(!factionManager)
+		{
+			return;
+		}
+		foreach(IEntity prefabspawner : m_aQueriedPrefabSpawnP)
+		{
+			SCR_Faction randfaction = SCR_Faction.Cast(factionManager.GetFactionByKey(m_FactionsToApear.GetRandomElement()));
+			SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(EEntityCatalogType.VEHICLE);
+			array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
+			entityCatalog.GetEntityList(aFactionEntityEntry);
+			ResourceName prefab = aFactionEntityEntry.GetRandomElement().GetPrefab();
+			SCR_PrefabSpawnPoint Pspawn = SCR_PrefabSpawnPoint.Cast(prefabspawner);
+			EntitySpawnParams CarspawnParams = EntitySpawnParams();
+			Pspawn.GetWorldTransform(CarspawnParams.Transform);
+			Resource Car = Resource.Load(prefab);
+			GetGame().SpawnEntityPrefab(Car, null, CarspawnParams);
+			delete prefabspawner;
+		}
+		m_aQueriedPrefabSpawnP.Clear();
+	}
 	override bool _WB_OnKeyChanged(BaseContainer src, string key, BaseContainerList ownerContainers, IEntity parent) 
 	{
 		_CaptureSentinels();
+		_CapturePrefabSpawns();
 		return super._WB_OnKeyChanged(src, key, ownerContainers, parent);
 	}
 	
 	override void _WB_SetExtraVisualiser(EntityVisualizerType type, IEntitySource src)
-	{	
-		m_bVisualize = true;			
+	{		
 		_CaptureSentinels();
+		_CapturePrefabSpawns();
 		super._WB_SetExtraVisualiser(type, src);
 	}
 	override void _WB_AfterWorldUpdate(float timeSlice)
@@ -737,7 +805,19 @@ class SP_AIDirector : AIGroup
 					DebugTextWorldSpace.Create(GetGame().GetWorld(), SmartText, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, entorigin[0], entorigin[1] + 5, entorigin[2], 10, 0xFFFFFFFF, Color.BLACK);
 					
 				}
-			}	
+			}
+			if(m_aQueriedPrefabSpawnP)
+			{
+				foreach (IEntity entity : m_aQueriedPrefabSpawnP)
+				{
+					SCR_PrefabSpawnPoint PSpawnP = SCR_PrefabSpawnPoint.Cast(entity);
+					vector entorigin = PSpawnP.GetOrigin();
+					Shape.CreateSphere(Color.ORANGE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, entorigin, 5);
+					string SmartText = "Spawner:" + typename.EnumToString(EPrefabSpawnType, PSpawnP.GetType());
+					DebugTextWorldSpace.Create(GetGame().GetWorld(), SmartText, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, entorigin[0], entorigin[1] + 5, entorigin[2], 10, 0xFFFFFFFF, Color.BLACK);
+					
+				}
+			}
 		}
 		
 		super._WB_AfterWorldUpdate(timeSlice);

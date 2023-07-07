@@ -18,7 +18,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -41,7 +40,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -60,7 +58,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -79,7 +76,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -98,7 +94,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -121,7 +116,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 8
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -144,7 +138,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
@@ -167,7 +160,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_MaxAgentsToSpawn 10
   m_Radius 1500
   m_RespawnTimer 10
-  m_pDefaultWaypoint "{D54B1B3AF1F9D763}prefabs/AI/Waypoints/AI_Waypoint_Defend_extrabig.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
  }
