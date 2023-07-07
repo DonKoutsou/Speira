@@ -136,10 +136,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 3
   m_Radius 50
-  m_CommanderRespawn 1
   m_RespawnTimer 60
-  m_CommanderRespawnTimer 600
-  m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28661807F}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -208,8 +205,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "USSR"
   }
   m_MaxAgentsToSpawn 3
-  m_CommanderRespawn 1
-  m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   AllowRescue 0
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28E050942}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -235,7 +230,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "USSR"
   }
   m_MaxAgentsToSpawn 2
-  m_CommanderRespawnTimer 3000
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B3729E6C}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -266,8 +260,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "US" "USSR" "FIA"
   }
   m_MaxAgentsToSpawn 2
-  m_CommanderRespawn 1
-  m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   AllowRescue 0
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2BC3974BE}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
@@ -281,7 +273,6 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "USSR"
   }
   m_MaxAgentsToSpawn 2
-  m_CommanderRespawnTimer 1800
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2A3E9D829}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -319,10 +310,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   }
   m_MaxAgentsToSpawn 3
   m_Radius 20
-  m_CommanderRespawn 1
   m_RespawnTimer 300
-  m_CommanderRespawnTimer 300
-  m_Commander "{4E9DF531302EDB02}prefabs/Groups/Campaign/Group_USSR_CommandGroup.et"
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B93D2EB5}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
  }
@@ -509,7 +497,6 @@ $grp SP_AIDirector : "{73FAFC92CCA8F296}prefabs/AI/Spawners/SP_AIDirector_FIA.et
   }
   m_MaxAgentsToSpawn 4
   m_Radius 2000
-  m_CommanderRespawn 0
   m_RespawnTimer 300
   m_pDefaultWaypoint "{C091D56A01F8F062}prefabs/AI/Waypoints/AIWaipoint_Defend_2km.et"
   AllowRescue 0
@@ -525,9 +512,7 @@ SP_AIDirector SP_AIDirector_Bandits : "{84AB28CB09B4C89B}prefabs/AI/Spawners/SP_
  m_aExcludedEditableEntityLabels {
  }
  m_Radius 50
- m_CommanderRespawn 1
  m_RespawnTimer 180
- m_Commander "{B024731B4EBA0971}prefabs/Groups/Campaign/Group_Bandits_HQ.et"
  AllowRescue 0
  m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2924E0541}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
  }

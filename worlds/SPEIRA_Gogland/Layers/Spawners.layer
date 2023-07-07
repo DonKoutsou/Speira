@@ -437,8 +437,8 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
 }
 $grp SP_AIDirector : "{248F75698912DFA0}prefabs/AI/Spawners/SP_AIDirector_Trader_Bandit.et" {
  {
-  coords 7191.356 33.099 1303.392
-  m_Radius 15
+  coords 7193.885 33.099 1309.273
+  m_Radius 20
  }
  {
   coords 8073.848 26.057 2739.354

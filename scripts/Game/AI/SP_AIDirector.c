@@ -50,6 +50,8 @@ class SP_AIDirector : AIGroup
 	vector positiontospawn;
 	ResourceName CharToSpawn;
 	
+	private ref array<IEntity> m_aQueriedSentinels;
+	
 	protected int m_iGridSizeX;
 	protected int m_iGridSizeY;
 	protected const float angleA = 0.775;
@@ -448,6 +450,8 @@ class SP_AIDirector : AIGroup
 		{
 			return;
 		}
+		if(!m_aQueriedSentinels)
+			m_aQueriedSentinels = new ref array<IEntity>();
 		if(!AllDirectors)
 			AllDirectors = new ref array<SP_AIDirector>();
 		
@@ -663,6 +667,35 @@ class SP_AIDirector : AIGroup
 		super._WB_SetExtraVisualiser(type, src);
 	}
 	*/
+	private bool QueryEntities(IEntity e)
+	{
+		SCR_AISmartActionSentinelComponent sentinel = SCR_AISmartActionSentinelComponent.Cast(e.FindComponent(SCR_AISmartActionSentinelComponent));
+		if (sentinel)
+			m_aQueriedSentinels.Insert(e);
+		
+		return true;
+	}
+	private void GetSentinels(float radius)
+	{
+		BaseWorld world = GetWorld();
+		world.QueryEntitiesBySphere(GetOrigin(), radius, QueryEntities);
+	}
+	private void _CaptureSentinels()
+	{
+		m_aQueriedSentinels = {};
+		GetSentinels(m_Radius);
+	}
+	override bool _WB_OnKeyChanged(BaseContainer src, string key, BaseContainerList ownerContainers, IEntity parent) 
+	{
+		_CaptureSentinels();
+		return super._WB_OnKeyChanged(src, key, ownerContainers, parent);
+	}
+	
+	override void _WB_SetExtraVisualiser(EntityVisualizerType type, IEntitySource src)
+	{				
+		_CaptureSentinels();
+		super._WB_SetExtraVisualiser(type, src);
+	}
 	override void _WB_AfterWorldUpdate(float timeSlice)
 	{
 		if (m_bVisualize)
@@ -674,9 +707,21 @@ class SP_AIDirector : AIGroup
 			}
 			string infoText2 = string.Format("Max Agents to Spawn: %1 ", m_MaxAgentsToSpawn.ToString());
 			auto origin = GetOrigin();
-			auto radiusShape = Shape.CreateCylinder(COLOR_BLUE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, origin, m_Radius, 100);	
+			auto radiusShape = Shape.CreateSphere(COLOR_BLUE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, origin, m_Radius);	
 			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + 50, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
 			DebugTextWorldSpace.Create(GetGame().GetWorld(), infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + 55, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
+			if(m_aQueriedSentinels)
+			{
+				foreach (IEntity entity : m_aQueriedSentinels)
+				{
+					vector entorigin = entity.GetOrigin();
+					Shape.CreateSphere(Color.PINK, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, entorigin, 5);
+					array<Managed> outComponents = new array<Managed>();
+					entity.FindComponents(SCR_AISmartActionSentinelComponent, outComponents);
+					string SmartText = string.Format("%1: seats", outComponents.Count().ToString());
+					DebugTextWorldSpace.Create(GetGame().GetWorld(), SmartText, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, entorigin[0], entorigin[1] + 5, entorigin[2], 10, 0xFFFFFFFF, Color.BLACK);
+				}
+			}	
 		}
 		
 		super._WB_AfterWorldUpdate(timeSlice);

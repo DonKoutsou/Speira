@@ -75,6 +75,10 @@ SP_MapLocator MapLocator {
  m_WorldDirections SCR_MapLocationQuadHint "{5D50913FB2B992BB}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
  }
 }
+GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ coords 3144.599 37.017 2035.681
+ angleY 0
+}
 SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
  coords 1256.532 0.844 1124.115
  angleY 83.963
