@@ -29,6 +29,14 @@ SP_GameMode {
   }
   SCR_GameOverScreenManagerComponent "{5DC8E7D96AC61234}" {
    m_GameOverScreenConfig SCR_GameOverScreenConfig "{5DC8E7DE92B37D05}" : "{651583FFFB7FC765}Configs/GameOverScreen/GameOverScreensConfig.conf" {
+    m_aGameOverScreens {
+     SCR_BaseGameOverScreenInfo "{5DC8E7DE9A21BB69}" {
+      m_GameOverScreenId BROTHERFOUND
+     }
+     SCR_BaseGameOverScreenInfo "{5DC8E7DE9CEB2F9B}" {
+      m_GameOverScreenId DEATH
+     }
+    }
    }
   }
   SCR_GroupsManagerComponent "{5DC8E7DE972D4980}" {
@@ -44,10 +52,6 @@ SP_GameMode {
   }
   SCR_NametagConfigComponent "{5DC8E7DEE754AF48}" {
    m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
-  }
-  SCR_PlayerSpawnPointManagerComponent "{5DC8E7DEF26A6088}" {
-   m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
-   m_bEnablePlayerSpawnPoints 0
   }
   SCR_PlayersRestrictionZoneManagerComponent "{5DC8E7DE01ACC98C}" {
   }
@@ -108,9 +112,9 @@ SP_GameMode {
  PlayerControllerPrefab "{A1AE127F16DD352E}Prefabs/Characters/Core/DefaultPlayerControllerMP_Factions.et"
  m_fAutoReloadTime 30
  m_bOverrideGameOverType 1
- m_eOverriddenGameOverType UNKNOWN
+ m_eOverriddenGameOverType DEATH
  {
-  SCR_FactionManager FactionManager_Editor3 {
+  SP_FactionManager {
    ID "5DC8E7DF1BAF44A6"
    components {
     SCR_DelegateFactionManagerComponent "{5D5705392CA1FA82}" {

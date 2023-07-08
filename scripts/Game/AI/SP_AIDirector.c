@@ -3,7 +3,10 @@ class SP_AIDirectorClass: AIGroupClass
 };
 class SP_AIDirector : AIGroup
 {
-	[Attribute("0", UIWidgets.ComboBox, "Select Entity Catalog type for random spawn", "", ParamEnumArray.FromEnum(EEntityCatalogType), category: "Randomization")]
+	static ref array<SP_AIDirector> AllDirectors = null;
+	//--------------------------------------------------------------------------//
+	/////////////////////////AI spawn settings///////////////////////////////////
+	[Attribute("40", UIWidgets.ComboBox, "Select Entity Catalog type for random spawn", "", ParamEnumArray.FromEnum(EEntityCatalogType), category: "Randomization")]
 	protected EEntityCatalogType	m_eEntityCatalogType;
 	
 	[Attribute("0", UIWidgets.ComboBox, "Select Entity Labels which you want to optionally include to random spawn. If you want to spawn everything, you can leave it out empty and also leave Include Only Selected Labels attribute to false.", "", ParamEnumArray.FromEnum(EEditableEntityLabel), category: "Randomization")]
@@ -17,43 +20,47 @@ class SP_AIDirector : AIGroup
 	
 	[Attribute("", category: "Randomization")]
 	ref array<FactionKey> m_FactionsToApear;
-	
-	static ref array<SP_AIDirector> AllDirectors = null; // new ref array<SP_AIDirector>();
+	//--------------------------------------------------------------------------//
 	// parameters
+	[Attribute("true", category: "Spawning settings")]
+	bool m_bSpawnAI;
+	
+	[Attribute("true", category: "Spawning settings")]
+	bool m_bRespawn;
+	
 	[Attribute("3", category: "Spawning settings")]
-	int m_MaxAgentsToSpawn;
+	int m_iMaxAgentsToSpawn;
+	
+	[Attribute("10", category: "Spawning settings")]
+	int m_iMaxVehiclesToSpawn;
 	
 	[Attribute("100", category: "Spawning settings")]
-	float m_Radius;
-	
-	[Attribute("true", category: "Spawning settings")]
-	bool m_Respawn;
-	
-	[Attribute("true", category: "Spawning settings")]
-	bool m_SpawnAI;
+	float m_fRadius;
 	
 	[Attribute("0", category: "Spawning settings")]
-	float m_RespawnTimer;
+	float m_fRespawnTimer;
+	
+	private float m_fRespawnPeriod;
+	
+	[Attribute("6", category: "Spawning settings")]
+	int m_iDirectorUpdatePeriod;
 	
 	[Attribute("{93291E72AC23930F}prefabs/AI/Waypoints/AIWaypoint_Defend.et", category: "Spawning settings")]
 	private ResourceName m_pDefaultWaypoint;
 	
 	[Attribute("1", category: "Tasks")]
-	bool AllowRescue;
+	bool m_bAllowRescue;
 	
 	[Attribute()]
-    protected ref SCR_MapLocationQuadHint m_WorldDirections;
+	protected ref SCR_MapLocationQuadHint m_WorldDirections;
 	
-	[Attribute("1")]
-    protected bool m_bVisualize;
+	[Attribute("1", category: "Debug")]
+	protected bool m_bVisualize;
 	
-	[Attribute("10")]
-	int m_DirectorUpdatePeriod;
+	private float m_fUpdateTimer;
 	
-	float m_updatetimer;
-	
-	vector positiontospawn;
-	ResourceName CharToSpawn;
+	private vector m_vPositiontoSpawn;
+	private ResourceName m_pCharToSpawn;
 	
 	private ref array<IEntity> m_aQueriedSentinels;
 	private ref array<IEntity> m_aQueriedPrefabSpawnP;
@@ -63,8 +70,7 @@ class SP_AIDirector : AIGroup
 	protected const float angleA = 0.775;
 	protected const float angleB = 0.325;
 	
-	// private
-	private float m_RespawnPeriod;
+	
 	private ref array<SCR_AIGroup> m_aGroups = new array<SCR_AIGroup>();
 	private AIWaypoint DefWaypoint;
 
@@ -470,7 +476,7 @@ class SP_AIDirector : AIGroup
 		
 		AllDirectors.Insert(this);
 		
-		m_RespawnPeriod = Math.RandomInt(1, 20);
+		m_fRespawnPeriod = Math.RandomFloat(1, 20);
 		// get first children, it should be WP
 		vector position = GetOrigin();
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
@@ -481,7 +487,7 @@ class SP_AIDirector : AIGroup
 		Resource WP = Resource.Load(m_pDefaultWaypoint);
 		DefWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(WP, null, WPspawnParams));
 		
-		DefWaypoint.SetCompletionRadius(m_Radius);
+		DefWaypoint.SetCompletionRadius(m_fRadius);
 	}
 	bool CheckForCombat()
 	{
@@ -500,59 +506,59 @@ class SP_AIDirector : AIGroup
 	override void EOnFrame(IEntity owner, float timeSlice)
 	{
 		super.EOnFrame(owner, timeSlice);
-		if (m_updatetimer > 0)
+		if (m_fUpdateTimer > 0)
 		{
-			m_updatetimer = m_updatetimer -timeSlice;
+			m_fUpdateTimer = m_fUpdateTimer -timeSlice;
 			return;
 		}
 			
-		m_updatetimer = Math.RandomFloat(m_DirectorUpdatePeriod*0.5, m_DirectorUpdatePeriod + m_DirectorUpdatePeriod*0.5);
+		m_fUpdateTimer = Math.RandomFloat(m_iDirectorUpdatePeriod*0.5, m_iDirectorUpdatePeriod + m_iDirectorUpdatePeriod*0.5);
 		
-		if (!m_SpawnAI)
+		if (!m_bSpawnAI)
 			return;
-		if(!CharToSpawn)
+		if(!m_pCharToSpawn)
 		{
 			SetCharToSpawn();
 		}
-		if(positiontospawn == vector.Zero)
+		if(m_vPositiontoSpawn == vector.Zero)
 		{
 			SetSpawnPos();
 		}
-		if (m_Respawn)
+		if (m_bRespawn)
 		{
-			if (GetAgentsCount() < m_MaxAgentsToSpawn)
+			if (GetAgentsCount() < m_iMaxAgentsToSpawn)
 			{
-				if (m_RespawnPeriod <= 0.0)
+				if (m_fRespawnPeriod <= 0.0)
 				{
 					if (Spawn())
 					{
-						m_RespawnPeriod = m_RespawnTimer + Math.RandomInt(m_RespawnTimer*0.5, m_RespawnTimer + m_RespawnTimer*0.5);
+						m_fRespawnPeriod = m_fRespawnTimer + Math.RandomInt(m_fRespawnTimer*0.5, m_fRespawnTimer + m_fRespawnTimer*0.5);
 					}
 					
 				}
 				else
 				{
-					m_RespawnPeriod -= m_DirectorUpdatePeriod;
+					m_fRespawnPeriod -= m_iDirectorUpdatePeriod;
 				}	
 			}
 		}
 	}
 	bool Spawn()
 	{	
-		if(!CharToSpawn)
+		if(!m_pCharToSpawn)
 		{
 			SetCharToSpawn();
 		}
-		if(positiontospawn == vector.Zero)
+		if(m_vPositiontoSpawn == vector.Zero)
 		{
 			SetSpawnPos();
 		}
 		EntitySpawnParams spawnParams = EntitySpawnParams();
 		spawnParams.TransformMode = ETransformMode.WORLD;
-		spawnParams.Transform[3] = positiontospawn;	
+		spawnParams.Transform[3] = m_vPositiontoSpawn;	
 		Resource res;
 		IEntity newEnt;
-		res = Resource.Load(CharToSpawn);
+		res = Resource.Load(m_pCharToSpawn);
 		newEnt = GetGame().SpawnEntityPrefab(res, GetWorld(), spawnParams);
 		if (!newEnt)
 			return false;
@@ -572,8 +578,8 @@ class SP_AIDirector : AIGroup
 				AddAgent(comp.GetControlAIAgent());
 			}
 		}
-		positiontospawn = vector.Zero;
-		CharToSpawn = STRING_EMPTY;
+		m_vPositiontoSpawn = vector.Zero;
+		m_pCharToSpawn = STRING_EMPTY;
 		return true;
 	}
 	void SetCharToSpawn()
@@ -584,7 +590,7 @@ class SP_AIDirector : AIGroup
 		SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(m_eEntityCatalogType);
 		array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
 		entityCatalog.GetFullFilteredEntityListWithLabels(aFactionEntityEntry, m_aIncludedEditableEntityLabels, m_aExcludedEditableEntityLabels, m_bIncludeOnlySelectedLabels);
-		CharToSpawn = aFactionEntityEntry.GetRandomElement().GetPrefab();
+		m_pCharToSpawn = aFactionEntityEntry.GetRandomElement().GetPrefab();
 	}
 	void SetSpawnPos()
 	{
@@ -593,32 +599,32 @@ class SP_AIDirector : AIGroup
 		float yOcean = GetWorld().GetOceanBaseHeight();
 		RandomGenerator rand = new RandomGenerator();
 		position[1] = yOcean - 1; // force at least one iteration
-		position[0] = position[0] + rand.RandFloatXY(-m_Radius, m_Radius);
-		position[2] = position[2] + rand.RandFloatXY(-m_Radius, m_Radius);
+		position[0] = position[0] + rand.RandFloatXY(-m_fRadius, m_fRadius);
+		position[2] = position[2] + rand.RandFloatXY(-m_fRadius, m_fRadius);
 		position[1] = GetWorld().GetSurfaceY(position[0], position[2]);
 		vector spawnMatrix[4] = { "1 0 0 0", "0 1 0 0", "0 0 1 0", "0 0 0 0" };
 		spawnMatrix[3] = position;
 		EntitySpawnParams spawnParams = EntitySpawnParams();
 		spawnParams.TransformMode = ETransformMode.WORLD;
 		spawnParams.Transform = spawnMatrix;
-		positiontospawn = spawnParams.Transform[3];
-		float surfaceY = GetGame().GetWorld().GetSurfaceY(positiontospawn[0], positiontospawn[2]);
-		if (positiontospawn[1] < surfaceY)
+		m_vPositiontoSpawn = spawnParams.Transform[3];
+		float surfaceY = GetGame().GetWorld().GetSurfaceY(m_vPositiontoSpawn[0], m_vPositiontoSpawn[2]);
+		if (m_vPositiontoSpawn[1] < surfaceY)
 		{
-			positiontospawn[1] = surfaceY;
+			m_vPositiontoSpawn[1] = surfaceY;
 		}
 		//Snap to the nearest navmesh point
 		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
-		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(positiontospawn, "50 50 50", positiontospawn))
+		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(m_vPositiontoSpawn, "50 50 50", m_vPositiontoSpawn))
 		{
-			float groundHeight = GetGame().GetWorld().GetSurfaceY(positiontospawn[0], positiontospawn[2]);
-			if (positiontospawn[1] < groundHeight)
-				positiontospawn[1] = groundHeight;
+			float groundHeight = GetGame().GetWorld().GetSurfaceY(m_vPositiontoSpawn[0], m_vPositiontoSpawn[2]);
+			if (m_vPositiontoSpawn[1] < groundHeight)
+				m_vPositiontoSpawn[1] = groundHeight;
 		}
 	}
 	bool CreateVictim(out IEntity Victim)
 	{
-		if (!AllowRescue)
+		if (!m_bAllowRescue)
 		{
 			return false;
 		}
@@ -716,12 +722,12 @@ class SP_AIDirector : AIGroup
 	private void _CaptureSentinels()
 	{
 		m_aQueriedSentinels = {};
-		GetSentinels(m_Radius);
+		GetSentinels(m_fRadius);
 	}
 	private void _CapturePrefabSpawns()
 	{
 		m_aQueriedPrefabSpawnP = {};
-		GetPrefabSpawns(m_Radius);
+		GetPrefabSpawns(m_fRadius);
 	}
 	private void SpawnPrefab()
 	{
@@ -735,18 +741,27 @@ class SP_AIDirector : AIGroup
 		{
 			return;
 		}
+		array <int> randomindexes = new array <int>();
+		for (int i = 0; i < m_iMaxVehiclesToSpawn; i++)
+		{
+			randomindexes.Insert(m_aQueriedPrefabSpawnP.GetRandomIndex());
+		}
 		foreach(IEntity prefabspawner : m_aQueriedPrefabSpawnP)
 		{
-			SCR_Faction randfaction = SCR_Faction.Cast(factionManager.GetFactionByKey(m_FactionsToApear.GetRandomElement()));
-			SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(EEntityCatalogType.VEHICLE);
-			array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
-			entityCatalog.GetEntityList(aFactionEntityEntry);
-			ResourceName prefab = aFactionEntityEntry.GetRandomElement().GetPrefab();
-			SCR_PrefabSpawnPoint Pspawn = SCR_PrefabSpawnPoint.Cast(prefabspawner);
-			EntitySpawnParams CarspawnParams = EntitySpawnParams();
-			Pspawn.GetWorldTransform(CarspawnParams.Transform);
-			Resource Car = Resource.Load(prefab);
-			GetGame().SpawnEntityPrefab(Car, null, CarspawnParams);
+			int index = randomindexes.Find(m_aQueriedPrefabSpawnP.Find(prefabspawner));
+			if (index != -1)
+			{
+				SCR_Faction randfaction = SCR_Faction.Cast(factionManager.GetFactionByKey(m_FactionsToApear.GetRandomElement()));
+				SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(EEntityCatalogType.VEHICLE);
+				array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
+				entityCatalog.GetEntityList(aFactionEntityEntry);
+				ResourceName prefab = aFactionEntityEntry.GetRandomElement().GetPrefab();
+				SCR_PrefabSpawnPoint Pspawn = SCR_PrefabSpawnPoint.Cast(prefabspawner);
+				EntitySpawnParams CarspawnParams = EntitySpawnParams();
+				Pspawn.GetWorldTransform(CarspawnParams.Transform);
+				Resource Car = Resource.Load(prefab);
+				GetGame().SpawnEntityPrefab(Car, null, CarspawnParams);
+			}
 			delete prefabspawner;
 		}
 		m_aQueriedPrefabSpawnP.Clear();
@@ -759,7 +774,18 @@ class SP_AIDirector : AIGroup
 	}
 	
 	override void _WB_SetExtraVisualiser(EntityVisualizerType type, IEntitySource src)
-	{		
+	{	
+		/*m_bVisualize = false;
+		switch (type)
+		{
+			case EntityVisualizerType.EVT_NONE:
+				return;
+			
+			case EntityVisualizerType.EVT_NORMAL:
+				return;
+		}
+		
+		m_bVisualize = true;*/
 		_CaptureSentinels();
 		_CapturePrefabSpawns();
 		super._WB_SetExtraVisualiser(type, src);
@@ -773,11 +799,11 @@ class SP_AIDirector : AIGroup
 			{
 				factionstospawn = factionstospawn +  "|" + disfact + "| ";
 			}
-			string infoText2 = string.Format("Max Agents to Spawn: %1 ", m_MaxAgentsToSpawn.ToString());
+			string infoText2 = string.Format("Max Agents to Spawn: %1 ", m_iMaxAgentsToSpawn.ToString());
 			auto origin = GetOrigin();
-			auto radiusShape = Shape.CreateSphere(COLOR_BLUE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, origin, m_Radius);	
-			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_Radius +10, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
-			DebugTextWorldSpace.Create(GetGame().GetWorld(), infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_Radius, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
+			auto radiusShape = Shape.CreateSphere(COLOR_BLUE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, origin, m_fRadius);	
+			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_fRadius +10, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
+			DebugTextWorldSpace.Create(GetGame().GetWorld(), infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_fRadius, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
 			if(m_aQueriedSentinels)
 			{
 				foreach (IEntity entity : m_aQueriedSentinels)

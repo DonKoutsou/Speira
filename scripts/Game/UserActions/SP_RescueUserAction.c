@@ -2,7 +2,7 @@ class SP_RescueAction : ScriptedUserAction
 {
 	override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
 	{
-		SP_DialogueComponent diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_DialogueComponent diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
 		FactionKey senderFaction = diag.GetCharacterFaction(pOwnerEntity).GetFactionKey();
 		BaseChatChannel Channel;
 		switch (senderFaction)

@@ -72,7 +72,7 @@ class SP_Task
 			return false;
 		}
 		SP_RequestManagerComponent ReqMan = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
-		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
 		array<ref SP_Task> tasks = new array<ref SP_Task>();
 		ReqMan.GetCharTasks(Owner, tasks);
 		if(tasks.Count() >= ReqMan.m_fTaskPerCharacter)
@@ -172,8 +172,8 @@ class SP_Task
 				}
 				Movedamount += 1;
 			}
-			SCR_CharacterIdentityComponent id = SCR_CharacterIdentityComponent.Cast(Target.FindComponent(SCR_CharacterIdentityComponent));
-			id.AdjustCharRep(5);
+			SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+			factman.OnTaskCompleted(GetOwner(), Target);
 			SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("%1 %2 added to your inventory, and your reputation has improved", Movedamount.ToString(), FilePath.StripPath(reward)));
 			return true;
 		}

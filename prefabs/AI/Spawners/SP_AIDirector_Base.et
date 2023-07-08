@@ -10,7 +10,4 @@ SP_AIDirector {
  }
  coords 117.143 1.001 247.895
  DangerEventRange 1000
- m_Radius 100
- m_Respawn 0
- m_SpawnAI 0
 }

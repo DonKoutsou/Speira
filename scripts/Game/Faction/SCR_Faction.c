@@ -61,28 +61,12 @@ class SCR_Faction : ScriptedFaction
 	/*!
 	\return Order in which the faction appears in the list. Lower values are first.
 	*/
-	void UpdateFactionRelations()
-	{
-		SCR_FactionManager factionManager = SCR_FactionManager.Cast(GetGame().GetFactionManager());
-		foreach (Faction fact, int relation : m_FriendlyMap)
-		{
-			SCR_Faction SCRFact = SCR_Faction.Cast(fact);
-			if(relation > 0)
-			{
-				factionManager.SetFactionsFriendly(this, SCRFact);
-			}
-			else if(relation <= 0)
-			{
-				factionManager.SetFactionsHostile(this, SCRFact);
-			}
-		};
-	}
+	
 	void AdjustRelation(Faction faction, int amount)
 	{
 		int relation;
 		m_FriendlyMap.Find(faction, relation);
 		m_FriendlyMap.Set(faction, relation + amount);
-		UpdateFactionRelations();
 	}
 	int GetOrder()
 	{

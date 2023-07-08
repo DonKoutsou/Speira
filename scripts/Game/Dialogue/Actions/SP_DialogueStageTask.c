@@ -66,7 +66,7 @@ class DialogueStageTask : DialogueStage
 		}
 		if(t_Navigate)
 		{
-			SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+			SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
 			Diag.Escape(Character, Player);
 			AIControlComponent comp = AIControlComponent.Cast(Character.FindComponent(AIControlComponent));
 			AIAgent agent = comp.GetAIAgent();

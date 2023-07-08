@@ -25,6 +25,8 @@ class SP_RequestManagerComponent : ScriptComponent
 	
 	protected float m_fTaskRespawnTimer;
 	protected float m_fTaskClearTimer;
+	
+	SP_GameMode m_GameMode;
 	//------------------------------------------------------------------------------------------------------------//
 	static ref array<ref SP_Task> TaskMap = null;
 	static ref array<ref SP_Task> CompletedTaskMap = null;
@@ -47,6 +49,10 @@ class SP_RequestManagerComponent : ScriptComponent
 			{
 				TaskSamples.Insert(Task);
 			}
+		}
+		if (!m_GameMode)
+		{
+			m_GameMode = SP_GameMode.Cast(GetGame().GetGameMode());
 		}
 	}
 	SP_Task GetTaskSample(typename tasktype)
@@ -110,7 +116,7 @@ class SP_RequestManagerComponent : ScriptComponent
 		{
 			return false;
 		}
-		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(GetGame().GetGameMode().FindComponent(SP_DialogueComponent));
+		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(m_GameMode.GetDialogueComponent());
 		SP_Task Task = SP_Task.Cast(TaskType.Spawn());
 		if(Task.Init())
 		{
@@ -306,7 +312,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	//------------------------------------------------------------------------------------------------------------//
 	void OnTaskCompleted(SP_Task Task)
 	{
-		TaskMap.Remove(TaskMap.Find(Task));
+		TaskMap.RemoveItem(Task);
 		CompletedTaskMap.Insert(Task);
 	};
 };
