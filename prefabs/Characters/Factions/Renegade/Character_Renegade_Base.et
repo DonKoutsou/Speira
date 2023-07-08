@@ -29,7 +29,6 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
    WeaponTemplate "{C2E516E1F46CFD92}Prefabs/Weapons/Rifles/AN94/Rifle_AN94_base.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
-   WeaponTemplate "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
    WeaponTemplate "{202B26ADA1621199}prefabs/Weapons/Melee/Machete.et"
@@ -63,7 +62,7 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base
     ItemsInitConfigurationItem "{5D3308C10F446455}" {
      TargetStorage "Prefabs/Characters/Uniforms/Shirt_Telynashka_long.et"
      PrefabsToSpawn {
-      "{7CEF68E2BC68CE71}prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et" "{A4E0D6FCECA5DEBA}prefabs/Items/Medicine/Bandage.et"
      }
     }
     ItemsInitConfigurationItem "{5D66C81E43D88772}" {

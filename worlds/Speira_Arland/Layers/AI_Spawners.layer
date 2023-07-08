@@ -23,8 +23,10 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
    "USSR"
   }
   m_fRadius 80
+  m_bAllowRescue 0
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B28661807F}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
+  m_bAllowCloseSpawning 1
  }
  SP_AIDirector_Mil {
   coords 1380.702 -64.188 2275.945
@@ -105,8 +107,10 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_fRadius 50
   m_fRespawnTimer 300
   m_iDirectorUpdatePeriod 60
+  m_bAllowRescue 0
   m_WorldDirections SCR_MapLocationQuadHint "{5D6671B2B93D2EB5}" : "{C1534F222D0F74D2}Configs/Map/MapLocatorHints/LocationHintsArland.conf" {
   }
+  m_bAllowCloseSpawning 1
  }
  SP_AIDirector_Lighthouse {
   coords 1478.179 -12.573 1098.298

@@ -57,12 +57,15 @@ class SP_AIDirector : AIGroup
 	[Attribute("1", category: "Debug")]
 	protected bool m_bVisualize;
 	
+	[Attribute("1")]
+	bool m_bAllowCloseSpawning
+	
 	private float m_fUpdateTimer;
 	
 	private vector m_vPositiontoSpawn;
 	private ResourceName m_pCharToSpawn;
 	
-	private ref array<IEntity> m_aQueriedSentinels;
+	ref array<IEntity> m_aQueriedSentinels;
 	private ref array<IEntity> m_aQueriedPrefabSpawnP;
 	
 	protected int m_iGridSizeX;
@@ -471,6 +474,7 @@ class SP_AIDirector : AIGroup
 		}
 		if(!m_aQueriedSentinels)
 			m_aQueriedSentinels = new ref array<IEntity>();
+		_CaptureSentinels();
 		if(!AllDirectors)
 			AllDirectors = new ref array<SP_AIDirector>();
 		
@@ -594,6 +598,35 @@ class SP_AIDirector : AIGroup
 	}
 	void SetSpawnPos()
 	{
+		if(m_aQueriedSentinels.Count() > 0)
+		{
+			IEntity ent = m_aQueriedSentinels.GetRandomElement();
+			if(ent)
+			{
+				if (m_bAllowCloseSpawning)
+				{
+					m_vPositiontoSpawn = ent.GetOrigin();
+				}
+				else
+				{
+					while(CheckForCharacters(100, ent.GetOrigin()))
+					{
+						m_aQueriedSentinels.RemoveItem(ent);
+						if(m_aQueriedSentinels.Count() == 0)
+						{
+							_CaptureSentinels();
+						}
+						ent = m_aQueriedSentinels.GetRandomElement();
+					}
+					m_vPositiontoSpawn = ent.GetOrigin();
+				}
+				
+				if (m_vPositiontoSpawn != vector.Zero)
+				{
+					return;
+				}
+			}
+		}
 		// randomize position in radius
 		vector position = GetOrigin();
 		float yOcean = GetWorld().GetOceanBaseHeight();
@@ -701,6 +734,14 @@ class SP_AIDirector : AIGroup
 		
 		return true;
 	}
+	private bool QueryEntitiesForCharacter(IEntity e)
+	{
+		SCR_ChimeraCharacter char = SCR_ChimeraCharacter.Cast(e);
+		if (char)
+			return true;
+		
+		return false;
+	}
 	private bool QueryEntitiesForPrefabSpawner(IEntity e)
 	{
 		SCR_PrefabSpawnPoint PSpawnP = SCR_PrefabSpawnPoint.Cast(e);
@@ -708,6 +749,11 @@ class SP_AIDirector : AIGroup
 			m_aQueriedPrefabSpawnP.Insert(e);
 		
 		return true;
+	}
+	private bool CheckForCharacters(float radius, vector origin)
+	{
+		BaseWorld world = GetWorld();
+		return world.QueryEntitiesBySphere(origin, radius, QueryEntitiesForCharacter);
 	}
 	private void GetSentinels(float radius)
 	{
@@ -721,7 +767,7 @@ class SP_AIDirector : AIGroup
 	}
 	private void _CaptureSentinels()
 	{
-		m_aQueriedSentinels = {};
+		m_aQueriedSentinels = new array <IEntity>();
 		GetSentinels(m_fRadius);
 	}
 	private void _CapturePrefabSpawns()

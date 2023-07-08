@@ -20,9 +20,5 @@ SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
  m_FactionsToApear {
   "BANDITS" "RENEGADE"
  }
- m_MaxAgentsToSpawn 4
- m_Radius 150
- m_Respawn 1
- m_SpawnAI 1
- m_RespawnTimer 300
+ m_bAllowCloseSpawning 0
 }

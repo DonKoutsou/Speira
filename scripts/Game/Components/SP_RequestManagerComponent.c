@@ -121,35 +121,6 @@ class SP_RequestManagerComponent : ScriptComponent
 		if(Task.Init())
 		{
 			IEntity Owner = Task.GetOwner();
-			if(Owner)
-			{
-				FactionKey senderFaction = Diag.GetCharacterFaction(Owner).GetFactionKey();
-				BaseChatChannel Channel;
-				switch (senderFaction)
-				{
-					case "FIA":
-						Channel = Diag.m_ChatChannelFIA;
-					break;
-					case "USSR":
-						Channel = Diag.m_ChatChannelUSSR;
-					break;
-					case "BANDITS":
-						Channel = Diag.m_ChatChannelBANDITS;
-					break;
-					case "SPEIRA":
-						Channel = Diag.m_ChatChannelSPEIRA;
-					break;
-					case "US":
-						Channel = Diag.m_ChatChannelUS;
-					break;
-				};
-				string charname = Diag.GetCharacterName(Owner);
-				string charrank = Diag.GetCharacterRankName(Owner);
-				if (TaskMap.Count() > m_iMinTaskAmount)
-				{
-					Diag.SendText(Task.GetTaskDiag(), Channel, 0, charname, charrank);
-				}
-			}
 			TaskMap.Insert(Task);
 			return true;
 		}
