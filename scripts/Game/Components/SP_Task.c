@@ -176,8 +176,6 @@ class SP_Task
 				}
 				Movedamount += 1;
 			}
-			SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
-			factman.OnTaskCompleted(GetOwner(), Target);
 			SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("%1 %2 added to your inventory, and your reputation has improved", Movedamount.ToString(), FilePath.StripPath(reward)));
 			return true;
 		}
@@ -186,6 +184,8 @@ class SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	bool CompleteTask(IEntity Assignee)
 	{
+		SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+		factman.OnTaskCompleted(this, Assignee);
 		m_TaskMarker.Finish(true);
 		delete m_TaskMarker;
 		if (GiveReward(Assignee))

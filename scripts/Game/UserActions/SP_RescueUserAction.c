@@ -3,9 +3,12 @@ class SP_RescueAction : ScriptedUserAction
 	override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
 	{
 		SP_DialogueComponent diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
-		FactionKey senderFaction = diag.GetCharacterFaction(pOwnerEntity).GetFactionKey();
+		SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+		SCR_Faction senderFaction =  SCR_Faction.Cast(diag.GetCharacterFaction(pOwnerEntity));
+		FactionKey senderFactionkey = senderFaction.GetFactionKey();
+		SCR_Faction uerFaction = SCR_Faction.Cast(diag.GetCharacterFaction(pUserEntity));
 		BaseChatChannel Channel;
-		switch (senderFaction)
+		switch (senderFactionkey)
 			{
 				case "FIA":
 					Channel = diag.m_ChatChannelFIA;
@@ -33,9 +36,20 @@ class SP_RescueAction : ScriptedUserAction
 		{
 			SP_RescueTask resctask = SP_RescueTask.Cast(MyTasks[i]);
 			resctask.OnCharacterRescued(pOwnerEntity);
-			if(MyTasks[i].ReadyToDeliver(pOwnerEntity, pUserEntity))
+			if (senderFactionkey == "BANDITS" && senderFaction.IsFactionEnemy(uerFaction))
 			{
-				if(MyTasks[i].CompleteTask(pUserEntity))
+				senderFaction.AdjustRelation(uerFaction, 0);
+				
+				factman.UpdateFactionRelations();
+			}
+			if (senderFactionkey == "RENEGADE")
+			{
+				FactionAffiliationComponent factcomp = FactionAffiliationComponent.Cast(pOwnerEntity.FindComponent(FactionAffiliationComponent));
+				factcomp.SetAffiliatedFaction(diag.GetCharacterFaction(pUserEntity));
+			}
+			if (MyTasks[i].ReadyToDeliver(pOwnerEntity, pUserEntity))
+			{
+				if (MyTasks[i].CompleteTask(pUserEntity))
 				{
 					diag.SendText("Thanks for helping us, here is your reward", Channel, 0, diag.GetCharacterName(pOwnerEntity), diag.GetCharacterRankName(pOwnerEntity));
 					return;
@@ -48,6 +62,10 @@ class SP_RescueAction : ScriptedUserAction
 	{
 		IEntity owner = IEntity.Cast(GetOwner());
 		SCR_CharacterDamageManagerComponent dmg = SCR_CharacterDamageManagerComponent.Cast(owner.FindComponent(SCR_CharacterDamageManagerComponent));
+		if(dmg.GetState() == EDamageState.DESTROYED)
+		{
+			return false;
+		}
 		if(dmg.GetIsUnconscious() == false)
 		{
 			return false;

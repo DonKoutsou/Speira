@@ -284,8 +284,7 @@ class SP_RetrieveTask: SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	override bool CompleteTask(IEntity Assignee)
 	{
-		m_TaskMarker.Finish(true);
-		delete m_TaskMarker;
+		
 		SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(Assignee.FindComponent(SCR_InventoryStorageManagerComponent));
 		SCR_InventoryStorageManagerComponent Ownerinv = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
 		SP_RequestPredicate RequestPred = new SP_RequestPredicate(m_requestitemtype, m_requestitemmode);
@@ -320,6 +319,13 @@ class SP_RetrieveTask: SP_Task
 						delete ItemBounty;
 					}
 				}
+				if (m_TaskMarker)
+				{
+					m_TaskMarker.Finish(true);
+					delete m_TaskMarker;
+				}
+				SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+				factman.OnTaskCompleted(this, Assignee);
 				e_State = ETaskState.COMPLETED;
 				m_Copletionist = Assignee;
 				return true;
@@ -334,8 +340,11 @@ class SP_RetrieveTask: SP_Task
 		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (OwnerDmgComp.IsDestroyed())
 		{
-			m_TaskMarker.Fail(true);
-			delete m_TaskMarker;
+			if (m_TaskMarker)
+			{
+				m_TaskMarker.Fail(true);
+				delete m_TaskMarker;
+			}
 			e_State = ETaskState.FAILED;
 			return;
 		}

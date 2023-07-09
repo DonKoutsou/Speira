@@ -198,8 +198,7 @@ class SP_DeliverTask: SP_Task
 	//Complete tasks means package is on target's inventory and reward is givven to assigne
 	override bool CompleteTask(IEntity Assignee)
 	{
-		m_TaskMarker.Finish(true);
-		delete m_TaskMarker;
+		
 		InventoryStorageManagerComponent Assigneeinv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
 		InventoryStorageManagerComponent Targetinv = InventoryStorageManagerComponent.Cast(TaskTarget.FindComponent(InventoryStorageManagerComponent));
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
@@ -215,6 +214,13 @@ class SP_DeliverTask: SP_Task
 				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
 				inv.TryRemoveItemFromStorage(FoundPackages[0],parentSlot.GetStorage());
 				Targetinv.TryInsertItem(FoundPackages[0]);
+				if (m_TaskMarker)
+				{
+					m_TaskMarker.Finish(true);
+					delete m_TaskMarker;
+				}
+				SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+				factman.OnTaskCompleted(this, Assignee);
 				e_State = ETaskState.COMPLETED;
 				m_Copletionist = Assignee;
 				return true;
@@ -247,8 +253,11 @@ class SP_DeliverTask: SP_Task
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (DmgComp.IsDestroyed())
 		{
-			m_TaskMarker.Fail(true);
-			delete m_TaskMarker;
+			if(m_TaskMarker)
+			{
+				m_TaskMarker.Fail(true);
+				delete m_TaskMarker;
+			}
 			e_State = ETaskState.FAILED;
 			return;
 		}

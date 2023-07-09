@@ -54,7 +54,7 @@ class SCR_Faction : ScriptedFaction
 	
 	protected ref set<Faction> m_FriendlyFactions = new set<Faction>;
 	
-	protected ref map<Faction, int> m_FriendlyMap = new map<Faction, int>;
+	protected ref map<Faction, int> m_FriendlyMap;
 	
 	
 	//------------------------------------------------------------------------------------------------
@@ -68,13 +68,24 @@ class SCR_Faction : ScriptedFaction
 		m_FriendlyMap.Find(faction, relation);
 		m_FriendlyMap.Set(faction, relation + amount);
 	}
+	void AdjustRelationAbs(Faction faction, int amount)
+	{
+		if(!m_FriendlyMap.Contains(faction))
+		{
+			m_FriendlyMap.Insert(faction, amount);
+			return;
+		}
+		m_FriendlyMap.Set(faction, amount);
+	}
 	int GetOrder()
 	{
 		return m_iOrder;
 	}
-	void GetFactionRep(Faction fact, out int rep)
+	int GetFactionRep(Faction fact)
 	{
+		int rep;
 		m_FriendlyMap.Find(fact, rep);
+		return rep;
 	}
 	void GetFriendlyFactions(out array<string> friendlyfactions)
 	{
@@ -474,6 +485,10 @@ class SCR_Faction : ScriptedFaction
 		}
 		else 
 		{
+			if(!m_FriendlyMap)
+			{
+				m_FriendlyMap = new ref map<Faction, int>();
+			}
 			//~ Make sure faction is friendly towards itself
 			if (m_bFriendlyToSelf)
 				factionManager.SetFactionsFriendly(this, this);
@@ -502,12 +517,14 @@ class SCR_Faction : ScriptedFaction
 					factionManager.SetFactionsFriendly(this, faction);
 				}
 			}
-			if(m_FriendlyMap.IsEmpty())
+			if(m_FriendlyMap)
 			{
 				array<Faction> Factions = new array<Faction>();
 				factionManager.GetFactionsList(Factions);
 				foreach(Faction fact : Factions)
 				{
+					if (m_FriendlyMap.Contains(fact))
+						break;
 					if(IsFactionFriendly(fact))
 					{
 						m_FriendlyMap.Insert(fact, 100);

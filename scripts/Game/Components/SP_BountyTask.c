@@ -191,6 +191,13 @@ class SP_BountyTask: SP_Task
 				InventoryStorageSlot parentSlot = pInvComp.GetParentSlot();
 				Assigneeinv.TryRemoveItemFromStorage(FoundTags[0],parentSlot.GetStorage());
 				Ownerinv.TryInsertItem(FoundTags[0]);
+				if (m_TaskMarker)
+				{
+					m_TaskMarker.Finish(true);
+					delete m_TaskMarker;
+				}
+				SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+				factman.OnTaskCompleted(this, Assignee);
 				e_State = ETaskState.COMPLETED;
 				delete Bounty;
 				m_Copletionist = Assignee;
@@ -223,8 +230,11 @@ class SP_BountyTask: SP_Task
 		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (OwnerDmgComp.IsDestroyed() && !TargetDmgComp.IsDestroyed())
 		{
-			m_TaskMarker.Fail(true);
-			delete m_TaskMarker;
+			if(m_TaskMarker)
+			{
+				m_TaskMarker.Fail(true);
+				delete m_TaskMarker;
+			}
 			e_State = ETaskState.FAILED;
 			return;
 		}
@@ -235,8 +245,11 @@ class SP_BountyTask: SP_Task
 		}
 		if (OwnerDmgComp.IsDestroyed())
 		{
-			m_TaskMarker.Fail(true);
-			delete m_TaskMarker;
+			if(m_TaskMarker)
+			{
+				m_TaskMarker.Fail(true);
+				delete m_TaskMarker;
+			}
 			e_State = ETaskState.FAILED;
 			return;
 		}

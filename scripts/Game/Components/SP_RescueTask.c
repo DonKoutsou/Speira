@@ -180,21 +180,28 @@ class SP_RescueTask: SP_Task
 				return;
 			}
 		}
-		m_TaskMarker.Fail(true);
-		delete m_TaskMarker;
+		if (m_TaskMarker)
+		{
+			m_TaskMarker.Fail(true);
+			delete m_TaskMarker;
+		}
 		e_State = ETaskState.FAILED;
 	};
 	override bool CompleteTask(IEntity Assignee)
 	{
-		delete m_TaskMarker;
 		if(CharsToRescue.Count() != 0)
 		{
 			return false;
 		}
 		if (GiveReward(Assignee))
 		{
-				m_TaskMarker.Finish(true);
-				delete m_TaskMarker;
+				if (m_TaskMarker)
+				{
+					m_TaskMarker.Finish(true);
+					delete m_TaskMarker;
+				}
+				SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+				factman.OnTaskCompleted(this, Assignee);
 				e_State = ETaskState.COMPLETED;
 				m_Copletionist = Assignee;
 				return true;

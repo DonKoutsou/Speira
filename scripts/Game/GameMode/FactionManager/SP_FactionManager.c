@@ -29,10 +29,8 @@ class SP_FactionManager : SCR_FactionManager
 	
 	EFactionRelationState GetFactionRelationState(SCR_Faction Faction1, SCR_Faction Faction2)
 	{
-		int relation1;
-		Faction1.GetFactionRep(Faction2, relation1);
-		int relation2;
-		Faction2.GetFactionRep(Faction1, relation2);
+		int relation1 = Faction1.GetFactionRep(Faction2);
+		int relation2 = Faction2.GetFactionRep(Faction1);
 		if (relation1 > -50 && relation2 > -50)
 		{
 			if (relation1 > 50 && relation2 > 50)
@@ -87,9 +85,12 @@ class SP_FactionManager : SCR_FactionManager
 			}
 		}
 	}
-	void OnTaskCompleted(IEntity TaskOwner, IEntity Assignee)
+	void OnTaskCompleted(SP_Task task, IEntity Assignee)
 	{
-		if(TaskOwner == Assignee)
+		IEntity TaskOwner = task.GetOwner();
+		if (!TaskOwner)
+			TaskOwner = task.GetTarget();
+		if(task.GetOwner() == Assignee)
 		{
 			return;
 		}
@@ -106,19 +107,34 @@ class SP_FactionManager : SCR_FactionManager
 	{
 		foreach (Faction fact : m_Factions)
 		{
+			if (fact.GetFactionKey() == "RENEGADE")
+			{
+				break;
+			}
 			SCR_Faction SCRFact = SCR_Faction.Cast(fact);
 			foreach (Faction checkfact : m_Factions)
 			{
+				if (checkfact.GetFactionKey() == "RENEGADE")
+				{
+					break;
+				}
 				SCR_Faction SCRCheckFact = SCR_Faction.Cast(checkfact);
-				int relation;
-				SCRFact.GetFactionRep(SCRCheckFact, relation);
+				int relation = SCRFact.GetFactionRep(SCRCheckFact);
 				if(relation > -50)
 				{
-					SetFactionsFriendly(SCRFact, SCRCheckFact);
+					if (!SCRFact.DoCheckIfFactionFriendly(SCRCheckFact))
+					{
+						SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("Factions %1 and %2 have called a ceasefire", SCRFact.GetFactionKey(), SCRCheckFact.GetFactionKey()));
+						SetFactionsFriendly(SCRFact, SCRCheckFact);
+					}
 				}
 				else if(relation <= -50)
 				{
-					SetFactionsHostile(SCRFact, SCRCheckFact);
+					if (SCRFact.DoCheckIfFactionFriendly(SCRCheckFact))
+					{
+						SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("Factions %1 and %2 declared war on each other", SCRFact.GetFactionKey(), SCRCheckFact.GetFactionKey()));
+						SetFactionsHostile(SCRFact, SCRCheckFact);
+					}
 				}
 			}
 		};
@@ -134,6 +150,61 @@ class SP_FactionManager : SCR_FactionManager
 		}
 			
 	};
+	override void SetFactionsFriendly(notnull SCR_Faction factionA, notnull SCR_Faction factionB, int playerChanged = -1)
+	{
+		//~ Already friendly
+		if (factionA.DoCheckIfFactionFriendly(factionB))
+			return;
+		
+		//~ Only call once if setting self as friendly
+		if (factionA == factionB)
+		{
+			factionA.SetFactionFriendly(factionA);
+			
+			if (playerChanged > 0)
+				SCR_NotificationsComponent.SendToEveryone(ENotification.EDITOR_FACTION_SET_FRIENDLY_TO_SELF, playerChanged, GetFactionIndex(factionA));
+			
+			RequestUpdateAllTargetsFactions();
+			return;
+		}
+		
+		factionA.SetFactionFriendly(factionB);
+		factionB.SetFactionFriendly(factionA);
+		factionA.AdjustRelationAbs(factionB, 0);
+		factionB.AdjustRelationAbs(factionA, 0);
+		RequestUpdateAllTargetsFactions();
+		
+		if (playerChanged > 0)
+			SCR_NotificationsComponent.SendToEveryone(ENotification.EDITOR_FACTION_SET_FRIENDLY_TO, playerChanged, GetFactionIndex(factionA), GetFactionIndex(factionB));
+	}
+	override void SetFactionsHostile(notnull SCR_Faction factionA, notnull SCR_Faction factionB, int playerChanged = -1)
+	{
+		//~ Already Hostile
+		if (!factionA.DoCheckIfFactionFriendly(factionB))
+			return;
+		
+		//~ Only call once if setting self as hostile
+		if (factionA == factionB)
+		{
+			factionA.SetFactionHostile(factionA);
+			
+			if (playerChanged > 0)
+				SCR_NotificationsComponent.SendToEveryone(ENotification.EDITOR_FACTION_SET_HOSTILE_TO_SELF, playerChanged, GetFactionIndex(factionA));
+			
+			RequestUpdateAllTargetsFactions();
+			return;
+		}
+		
+		factionA.SetFactionHostile(factionB);
+		factionB.SetFactionHostile(factionA);
+		factionA.AdjustRelationAbs(factionB, -100);
+		factionB.AdjustRelationAbs(factionA, -100);
+		
+		RequestUpdateAllTargetsFactions();
+		
+		if (playerChanged > 0)
+			SCR_NotificationsComponent.SendToEveryone(ENotification.EDITOR_FACTION_SET_HOSTILE_TO, playerChanged, GetFactionIndex(factionA), GetFactionIndex(factionB));
+	}
 };
 //------------------------------------------------------------------------------------------------------------//
 enum EFactionRelationState

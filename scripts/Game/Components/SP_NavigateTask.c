@@ -171,8 +171,11 @@ class SP_NavigateTask: SP_Task
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (DmgComp.IsDestroyed())
 		{
-			m_TaskMarker.Fail(true);
-			delete m_TaskMarker;
+			if(m_TaskMarker)
+			{
+				m_TaskMarker.Fail(true);
+				delete m_TaskMarker;
+			}
 			e_State = ETaskState.FAILED;
 			return;
 		}
@@ -206,7 +209,13 @@ class SP_NavigateTask: SP_Task
 			
 			//add owner
 			Tgroup.AddAgent(agent);
-
+			if (m_TaskMarker)
+			{
+				m_TaskMarker.Finish(true);
+				delete m_TaskMarker;
+			}
+			SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
+			factman.OnTaskCompleted(this, Assignee);
 			e_State = ETaskState.COMPLETED;
 			m_Copletionist = Assignee;
 			SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("%1 stopped following you", Diag.GetCharacterName(TaskOwner)));

@@ -22,7 +22,7 @@ ScriptedChatEntity : "{F69BC912AC8236F9}prefabs/MP/ScriptedChatEntity.et" {
  coords 8405.761 5.795 2286.157
 }
 SCR_BaseTaskManager : "{37FCEC4479C2CB5A}prefabs/Tasks/TaskMan.et" {
- coords 6532.28 0 843.374
+ coords 6753.173 -0 1006.865
 }
 SP_SingleUseSpawnPoint : "{9AA9828A2EE06A7F}prefabs/MP/Spawning/SingleUse_SpawnPoint_SPEIRA.et" {
  coords 7334.612 0.325 983.043
