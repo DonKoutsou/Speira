@@ -60,9 +60,7 @@ PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
  coords 2504.668 139.045 2344.997
 }
 SP_GameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
- components {
- }
- coords 2699.47 25.149 3102.242
+ coords 2786.687 74.752 1583.354
 }
 RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
  coords 2263.008 6.712 3232.114

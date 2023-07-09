@@ -15,9 +15,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   components {
@@ -35,9 +38,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   coords 8285.609 232.894 4734.544
@@ -51,9 +57,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   coords 7184.314 137.197 2366.104
@@ -67,9 +76,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   coords 5627.584 175.644 4803.069
@@ -83,9 +95,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   components {
@@ -103,9 +118,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   components {
@@ -123,9 +141,12 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
  {
   components {
@@ -143,8 +164,11 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_FactionsToApear + {
    "US" "USSR" "FIA"
   }
+  m_iMaxAgentsToSpawn 8
   m_fRadius 1500
+  m_fRespawnTimer 10
   m_WorldDirections SCR_MapLocationQuadHint "{5D86DD383404E520}" : "{ABA21F381437DFE8}Configs/Map/MapLocatorHints/LocationHintsEveron.conf" {
   }
+  m_bVisualize 0
  }
 }

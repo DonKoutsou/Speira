@@ -1396,6 +1396,24 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords 29.966 -0.628 33.589
        angleY -94.43
       }
+      Slot_308 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 195.527 -4.595 49.903
+       angleY -92.181
+      }
+      Slot_307 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{F6AA92F7B23D8A71}Prefabs/Structures/Infrastructure/Naval/Piers/Pier_01.et"
+        }
+       }
+       coords 195.393 -10.659 49.814
+       angleY -2.181
+      }
      }
     }
    }
@@ -1482,6 +1500,24 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords 15.77 0.535 17.727
        angleY 3.531
       }
+      Slot_310 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et"
+        }
+       }
+       coords 2.815 -2.597 -110.74
+       angleY 6.83
+      }
+      Slot_311 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{F6AA92F7B23D8A71}Prefabs/Structures/Infrastructure/Naval/Piers/Pier_01.et"
+        }
+       }
+       coords 2.748 -8.661 -110.594
+       angleY 96.83
+      }
      }
     }
    }
@@ -1529,50 +1565,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        coords 6.488 -0.792 23.818
        angleY -0.603
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{4EBFA13266EA738C}prefabs/Vehicles/Wheeled/M998/M1025_Fuelless.et"
-        }
-       }
-       coords -4.378 -0.828 19.011
-       angleX -4.429
-       angleY 89.186
-       angleZ 2.739
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{4EBFA13266EA738C}prefabs/Vehicles/Wheeled/M998/M1025_Fuelless.et"
-        }
-       }
-       coords -4.418 -0.734 22.541
-       angleX -2.683
-       angleY 89.958
-       angleZ 0.896
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{4EBFA13266EA738C}prefabs/Vehicles/Wheeled/M998/M1025_Fuelless.et"
-        }
-       }
-       coords -4.418 -0.717 26.161
-       angleX -1.965
-       angleY 105.611
-       angleZ 0.38
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{4EBFA13266EA738C}prefabs/Vehicles/Wheeled/M998/M1025_Fuelless.et"
-        }
-       }
-       coords -3.328 -0.74 30.061
-       angleX -3.616
-       angleY 92.807
-       angleZ 0.717
       }
       {
        components {
@@ -2459,17 +2451,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        angleX 4.921
        angleY 91.475
        angleZ -0.711
-      }
-      {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{81041DCD151F5A1D}Prefabs/Compositions/Slotted/SlotRoadLarge/CheckpointUnderConstruction_L_US_01.et"
-        }
-       }
-       coords 688.075 -152.513 421.694
-       angleX 1.49
-       angleY 172.314
-       angleZ 4.744
       }
       {
        components {

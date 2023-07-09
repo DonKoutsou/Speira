@@ -15,9 +15,11 @@ SP_GameMode {
   }
   SCR_EntityCatalogManagerComponent "{5DC8E7D94849D925}" {
    m_aEntityCatalogs {
-    SCR_EntityCatalog "{5DC8E7D94F822388}" : "{C8568AE52B2C8E1F}Configs/Requests/Requests.conf" {
+    SCR_EntityCatalog "{5DC8E7D94F822388}" : "{C8568AE52B2C8E1F}Configs/Dilaogue_Configs/Requests/Requests.conf" {
     }
-    SCR_EntityCatalog "{5DC8E7D94F7C2B82}" : "{251BB14ECEF73562}Configs/Requests/Rewards.conf" {
+    SCR_EntityCatalog "{5DC8E7D94F7C2B82}" : "{251BB14ECEF73562}Configs/Dilaogue_Configs/Requests/Rewards.conf" {
+    }
+    SCR_EntityCatalog "{5DD0FCA5935CA2DD}" : "{B219EC028EC342D8}Configs/Dilaogue_Configs/Requests/Stashes.conf" {
     }
    }
   }
@@ -114,7 +116,7 @@ SP_GameMode {
  m_bOverrideGameOverType 1
  m_eOverriddenGameOverType DEATH
  {
-  SP_FactionManager {
+  SP_FactionManager "5DD0FCA5EFCD0A3F" {
    ID "5DC8E7DF1BAF44A6"
    components {
     SCR_DelegateFactionManagerComponent "{5D5705392CA1FA82}" {
@@ -136,7 +138,7 @@ SP_GameMode {
     SCR_Faction "{5DCF2DEC2C4D6C7D}" : "{E8AFEB71D701CCE9}Configs/Factions/RENEGADES.conf" {
      m_bIsPlayable 0
     }
-    SCR_Faction "{5DCF2DEC39821AD1}" : "{6D1DC960D66B2EB3}Configs/SpeiraFaction.conf" {
+    SCR_Faction "{5DCF2DEC39821AD1}" : "{6D1DC960D66B2EB3}Configs/Factions/SpeiraFaction.conf" {
     }
     SCR_Faction "{5DCF2DEC3E178A01}" : "{70F12E86D4A5B1C8}Configs/Factions/BANDITS.conf" {
      m_bIsPlayable 0

@@ -64,6 +64,7 @@ class SP_RescueTask: SP_Task
 		GetInfo(OName, DName, DLoc, OLoc);
 		TaskDesc = string.Format("%1's squad was ambussed, they need someone to rescuer them, they are somethwere areound %2", DName, DLoc);
 		TaskDiag = string.Format("We havent been able to establish connections with %1's squad for a while, please go to %2 and look for them", DName, DLoc);
+		TaskTitle = string.Format("Rescue: locate %1's squad and provide help", DName);
 	};
 	void GetInfo(out string OName, out string DName, out string OLoc, out string DLoc)
 	{
@@ -179,17 +180,21 @@ class SP_RescueTask: SP_Task
 				return;
 			}
 		}
+		m_TaskMarker.Fail(true);
+		delete m_TaskMarker;
 		e_State = ETaskState.FAILED;
 	};
 	override bool CompleteTask(IEntity Assignee)
 	{
+		delete m_TaskMarker;
 		if(CharsToRescue.Count() != 0)
 		{
 			return false;
 		}
-		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
 		if (GiveReward(Assignee))
 		{
+				m_TaskMarker.Finish(true);
+				delete m_TaskMarker;
 				e_State = ETaskState.COMPLETED;
 				m_Copletionist = Assignee;
 				return true;

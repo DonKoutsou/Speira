@@ -1,3 +1,11 @@
+SP_BaseTask {
+ components {
+  SCR_MapDescriptorComponent "{5DD2817F8F699C97}" {
+  }
+ }
+ coords 6867.496 122.962 6588.486
+ m_faction "SPEIRA"
+}
 GenericEntity : "{32AC51F992D5BB85}prefabs/Compositions/Misc/ChillPost.et" {
  coords 5159.073 49.971 5616.151
  angleY 118.158
@@ -131,4 +139,7 @@ $grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/
   angleY -25.344
   angleZ -1.686
  }
+}
+SCR_ScenarioFrameworkTaskArea : "{54ED4B8EDCFB2DBB}Prefabs/ScenarioFramework/Tasks/TaskMove.et" {
+ coords 6886.033 123.158 6583.019
 }

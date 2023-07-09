@@ -467,7 +467,6 @@ class SP_AIDirector : AIGroup
 	override void EOnInit(IEntity owner)
 	{
 		super.EOnInit(owner);
-		SpawnPrefab();
 		if(!GetGame().GetWorldEntity())
 		{
 			return;
@@ -492,6 +491,7 @@ class SP_AIDirector : AIGroup
 		DefWaypoint = AIWaypoint.Cast(GetGame().SpawnEntityPrefab(WP, null, WPspawnParams));
 		
 		DefWaypoint.SetCompletionRadius(m_fRadius);
+		GetGame().GetCallqueue().CallLater(SpawnPrefab, 2, false);
 	}
 	bool CheckForCombat()
 	{
@@ -551,11 +551,11 @@ class SP_AIDirector : AIGroup
 	{	
 		if(!m_pCharToSpawn)
 		{
-			SetCharToSpawn();
+			return false;
 		}
 		if(m_vPositiontoSpawn == vector.Zero)
 		{
-			SetSpawnPos();
+			return false;
 		}
 		EntitySpawnParams spawnParams = EntitySpawnParams();
 		spawnParams.TransformMode = ETransformMode.WORLD;
@@ -598,6 +598,7 @@ class SP_AIDirector : AIGroup
 	}
 	void SetSpawnPos()
 	{
+		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
 		if(m_aQueriedSentinels.Count() > 0)
 		{
 			IEntity ent = m_aQueriedSentinels.GetRandomElement();
@@ -609,20 +610,24 @@ class SP_AIDirector : AIGroup
 				}
 				else
 				{
-					while(CheckForCharacters(100, ent.GetOrigin()))
+					while(!CheckForCharacters(50, ent.GetOrigin()) && m_aQueriedSentinels.Count() > 0)
 					{
 						m_aQueriedSentinels.RemoveItem(ent);
+						
 						if(m_aQueriedSentinels.Count() == 0)
 						{
 							_CaptureSentinels();
+							return;
 						}
 						ent = m_aQueriedSentinels.GetRandomElement();
+						
 					}
 					m_vPositiontoSpawn = ent.GetOrigin();
 				}
 				
 				if (m_vPositiontoSpawn != vector.Zero)
 				{
+					pathFindindingComponent.GetClosestPositionOnNavmesh(m_vPositiontoSpawn, "5 5 5", m_vPositiontoSpawn);
 					return;
 				}
 			}
@@ -647,7 +652,6 @@ class SP_AIDirector : AIGroup
 			m_vPositiontoSpawn[1] = surfaceY;
 		}
 		//Snap to the nearest navmesh point
-		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
 		if (pathFindindingComponent && pathFindindingComponent.GetClosestPositionOnNavmesh(m_vPositiontoSpawn, "50 50 50", m_vPositiontoSpawn))
 		{
 			float groundHeight = GetGame().GetWorld().GetSurfaceY(m_vPositiontoSpawn[0], m_vPositiontoSpawn[2]);
@@ -730,7 +734,13 @@ class SP_AIDirector : AIGroup
 	{
 		SCR_AISmartActionSentinelComponent sentinel = SCR_AISmartActionSentinelComponent.Cast(e.FindComponent(SCR_AISmartActionSentinelComponent));
 		if (sentinel)
-			m_aQueriedSentinels.Insert(e);
+			{
+				array<string> outTags = new array<string>();
+				sentinel.GetTags(outTags);
+				if (!outTags.Contains("GatePost"))
+					m_aQueriedSentinels.Insert(e);
+			}
+			
 		
 		return true;
 	}
@@ -738,14 +748,16 @@ class SP_AIDirector : AIGroup
 	{
 		SCR_ChimeraCharacter char = SCR_ChimeraCharacter.Cast(e);
 		if (char)
-			return true;
+			return false;
 		
-		return false;
+		return true;
 	}
 	private bool QueryEntitiesForPrefabSpawner(IEntity e)
 	{
 		SCR_PrefabSpawnPoint PSpawnP = SCR_PrefabSpawnPoint.Cast(e);
-		if (PSpawnP && PSpawnP.GetType() == EPrefabSpawnType.MilitaryVehicles)
+		//if (PSpawnP && PSpawnP.GetType() == EPrefabSpawnType.MilitaryVehicles)
+		//	m_aQueriedPrefabSpawnP.Insert(e);
+		if (PSpawnP)
 			m_aQueriedPrefabSpawnP.Insert(e);
 		
 		return true;
@@ -788,7 +800,7 @@ class SP_AIDirector : AIGroup
 			return;
 		}
 		array <int> randomindexes = new array <int>();
-		for (int i = 0; i < m_iMaxVehiclesToSpawn; i++)
+		for (int i = 0; i < m_aQueriedPrefabSpawnP.Count()/10; i++)
 		{
 			randomindexes.Insert(m_aQueriedPrefabSpawnP.GetRandomIndex());
 		}
@@ -797,16 +809,28 @@ class SP_AIDirector : AIGroup
 			int index = randomindexes.Find(m_aQueriedPrefabSpawnP.Find(prefabspawner));
 			if (index != -1)
 			{
-				SCR_Faction randfaction = SCR_Faction.Cast(factionManager.GetFactionByKey(m_FactionsToApear.GetRandomElement()));
-				SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(EEntityCatalogType.VEHICLE);
-				array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
-				entityCatalog.GetEntityList(aFactionEntityEntry);
-				ResourceName prefab = aFactionEntityEntry.GetRandomElement().GetPrefab();
 				SCR_PrefabSpawnPoint Pspawn = SCR_PrefabSpawnPoint.Cast(prefabspawner);
-				EntitySpawnParams CarspawnParams = EntitySpawnParams();
-				Pspawn.GetWorldTransform(CarspawnParams.Transform);
-				Resource Car = Resource.Load(prefab);
-				GetGame().SpawnEntityPrefab(Car, null, CarspawnParams);
+				ResourceName prefab;
+				if(Pspawn.GetType() == EPrefabSpawnType.MilitaryVehicles)
+				{
+					SCR_Faction randfaction = SCR_Faction.Cast(factionManager.GetFactionByKey(m_FactionsToApear.GetRandomElement()));
+					SCR_EntityCatalog entityCatalog = randfaction.GetFactionEntityCatalogOfType(EEntityCatalogType.VEHICLE);
+					array<SCR_EntityCatalogEntry> aFactionEntityEntry = new array<SCR_EntityCatalogEntry>();
+					entityCatalog.GetEntityList(aFactionEntityEntry);
+					prefab = aFactionEntityEntry.GetRandomElement().GetPrefab();
+				}
+				if(Pspawn.GetType() == EPrefabSpawnType.Generic)
+				{
+					SCR_EntityCatalogManagerComponent CatalogM = SCR_EntityCatalogManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SCR_EntityCatalogManagerComponent));
+					SCR_EntityCatalog entityCatalog = CatalogM.GetEntityCatalogOfType(EEntityCatalogType.STASH);
+					array<SCR_EntityCatalogEntry> aEntityEntry = new array<SCR_EntityCatalogEntry>();
+					entityCatalog.GetEntityList(aEntityEntry);
+					prefab = aEntityEntry.GetRandomElement().GetPrefab();
+				}
+				EntitySpawnParams PrefabspawnParams = EntitySpawnParams();
+				Pspawn.GetWorldTransform(PrefabspawnParams.Transform);
+				Resource prefabtospawn = Resource.Load(prefab);
+				GetGame().SpawnEntityPrefab(prefabtospawn, null, PrefabspawnParams);
 			}
 			delete prefabspawner;
 		}
@@ -838,19 +862,18 @@ class SP_AIDirector : AIGroup
 	}
 	override void _WB_AfterWorldUpdate(float timeSlice)
 	{
-		if (m_bVisualize)
-		{
+		//if (m_bVisualize)
+		//{
 			string factionstospawn;
 			foreach(FactionKey disfact: m_FactionsToApear)
 			{
 				factionstospawn = factionstospawn +  "|" + disfact + "| ";
 			}
-			string infoText2 = string.Format("Max Agents to Spawn: %1 ", m_iMaxAgentsToSpawn.ToString());
+			string infoText2 = string.Format("\nMax Agents to Spawn: %1 ", m_iMaxAgentsToSpawn.ToString());
 			auto origin = GetOrigin();
 			auto radiusShape = Shape.CreateSphere(COLOR_BLUE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, origin, m_fRadius);	
-			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_fRadius +10, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
-			DebugTextWorldSpace.Create(GetGame().GetWorld(), infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_fRadius, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
-			if(m_aQueriedSentinels)
+			DebugTextWorldSpace.Create(GetGame().GetWorld(), factionstospawn + infoText2, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, origin[0], origin[1] + m_fRadius +10, origin[2], 10, 0xFFFFFFFF, Color.BLACK);
+			if(m_aQueriedSentinels && m_bVisualize)
 			{
 				foreach (IEntity entity : m_aQueriedSentinels)
 				{
@@ -860,17 +883,17 @@ class SP_AIDirector : AIGroup
 					entity.FindComponents(SCR_AISmartActionSentinelComponent, outComponents);
 					foreach(Managed smart : outComponents)
 					{
-						string tags;
 						SCR_AISmartActionSentinelComponent sent = SCR_AISmartActionSentinelComponent.Cast(smart);
 						array<string> outTagstemp = new array<string>();
 						sent.GetTags(outTagstemp);
+						string tags;
 						foreach(string tag : outTagstemp)
 						{
-							tags = tags +  "|" + tag + "| ";
+							tags = tags +  "|" + tag + "|\n";
 						}
 						vector Smartloc = entorigin + sent.GetActionOffset();
 						Shape.CreateSphere(Color.PINK, ShapeFlags.DEFAULT | ShapeFlags.ONCE, Smartloc, 1);
-						DebugTextWorldSpace.Create(GetGame().GetWorld(), tags, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, Smartloc[0], Smartloc[1] + 1, Smartloc[2], 10, 0xFFFFFFFF, Color.BLACK);
+						DebugTextWorldSpace.Create(GetGame().GetWorld(), tags, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, Smartloc[0], Smartloc[1] + 1, Smartloc[2], 5, 0xFFFFFFFF, Color.BLACK);
 						tags = STRING_EMPTY;
 					}
 					string SmartText = string.Format("%1: seats", outComponents.Count().ToString());
@@ -878,19 +901,26 @@ class SP_AIDirector : AIGroup
 					
 				}
 			}
-			if(m_aQueriedPrefabSpawnP)
+			if(m_aQueriedPrefabSpawnP && m_bVisualize)
 			{
 				foreach (IEntity entity : m_aQueriedPrefabSpawnP)
 				{
 					SCR_PrefabSpawnPoint PSpawnP = SCR_PrefabSpawnPoint.Cast(entity);
+					int color;
+					if(PSpawnP.GetType() == EPrefabSpawnType.MilitaryVehicles)
+						color = Color.GREEN;
+					else
+						color = Color.ORANGE;
 					vector entorigin = PSpawnP.GetOrigin();
-					Shape.CreateSphere(Color.ORANGE, ShapeFlags.WIREFRAME | ShapeFlags.ONCE, entorigin, 5);
-					string SmartText = "Spawner:" + typename.EnumToString(EPrefabSpawnType, PSpawnP.GetType());
-					DebugTextWorldSpace.Create(GetGame().GetWorld(), SmartText, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, entorigin[0], entorigin[1] + 5, entorigin[2], 10, 0xFFFFFFFF, Color.BLACK);
+					vector dir = entorigin;
+					dir[1] = dir[1] + 5;
+					Shape.CreateArrow(dir, entorigin, 2.0, color, ShapeFlags.ONCE|ShapeFlags.NOZBUFFER);
+					//string SmartText = "Spawner:" + typename.EnumToString(EPrefabSpawnType, PSpawnP.GetType());
+					//DebugTextWorldSpace.Create(GetGame().GetWorld(), SmartText, DebugTextFlags.CENTER | DebugTextFlags.FACE_CAMERA | DebugTextFlags.ONCE, entorigin[0], entorigin[1] + 5, entorigin[2], 10, 0xFFFFFFFF, Color.BLACK);
 					
 				}
 			}
-		}
+		//}
 		
 		super._WB_AfterWorldUpdate(timeSlice);
 	}

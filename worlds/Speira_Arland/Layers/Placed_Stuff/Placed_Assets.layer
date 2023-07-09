@@ -579,6 +579,10 @@ $grp GenericEntity : "{261F10BDC068BB35}Prefabs/Props/Furniture/ChairOld_01.et" 
   angleY 73.242
  }
 }
+GenericEntity : "{29063844DEEAC10B}prefabs/Props/Garbage/Generic/Junk_01/Junk_01_pile_large.et" {
+ coords 2522.012 72.376 1194.977
+ angleX 3.825
+}
 GenericEntity : "{2BE613DDC7EA3851}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/EquipmentBoxStack_01_V4_base.et" {
  coords 1995.215 51.658 3025.902
  angleY 23.18
@@ -875,6 +879,12 @@ $grp GenericEntity : "{9B7F08BF4C938AD2}Prefabs/Structures/Military/Camps/Canvas
 SCR_DestructibleBuildingEntity : "{A2AA324A95883FB2}Prefabs/Structures/Military/Bunkers/ReinforcedFueltank_E_01/ReinforcedFueltank_E_01_camo.et" {
  coords 960.323 0.33 2894.032
  angleY -24.014
+}
+GenericEntity : "{A446CB3C732A360D}Prefabs/Props/Garbage/Generic/Junk_01/Junk_01_pile_long.et" {
+ coords 2775.92 20.211 1251.33
+ angleX -2.247
+ angleY 41.457
+ angleZ 7.232
 }
 Projectile : "{A8FFCD3F3697D77F}Prefabs/Editor/Lightning/LightningStrike.et" {
  coords 3244.301 2.001 2938.219

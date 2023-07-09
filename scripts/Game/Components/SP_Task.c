@@ -13,6 +13,8 @@ class SP_Task
 	//-------------------------------------------------//
 	string TaskDiag;
 	//-------------------------------------------------//
+	string TaskTitle;
+	//-------------------------------------------------//
 	ResourceName reward;
 	//-------------------------------------------------//
 	int m_iRewardAmount;
@@ -23,6 +25,8 @@ class SP_Task
 	ref array <IEntity> a_TaskAssigned = new ref array <IEntity>();
 	//-------------------------------------------------//
 	IEntity m_Copletionist;
+	//-------------------------------------------------//
+	SP_BaseTask m_TaskMarker;
 	//------------------------------------------------------------------------------------------------------------//
 	bool Init()
 	{
@@ -182,6 +186,8 @@ class SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	bool CompleteTask(IEntity Assignee)
 	{
+		m_TaskMarker.Finish(true);
+		delete m_TaskMarker;
 		if (GiveReward(Assignee))
 		{
 			e_State = ETaskState.COMPLETED;
@@ -204,6 +210,21 @@ class SP_Task
 		{
 			e_State = ETaskState.ASSIGNED;
 		}
+		SpawnTaskMarker();
+	}
+	//------------------------------------------------------------------------------------------------------------//
+	void SpawnTaskMarker()
+	{
+		Resource Marker = Resource.Load("{304847F9EDB0EA1B}prefabs/Tasks/SP_BaseTask.et");
+		EntitySpawnParams PrefabspawnParams = EntitySpawnParams();
+		TaskTarget.GetWorldTransform(PrefabspawnParams.Transform);
+		m_TaskMarker = SP_BaseTask.Cast(GetGame().SpawnEntityPrefab(Marker, GetGame().GetWorld(), PrefabspawnParams));
+		m_TaskMarker.SetTitle(TaskTitle);
+		m_TaskMarker.SetDescription(TaskDesc);
+		m_TaskMarker.SetTarget(TaskTarget);
+		int playerID = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(a_TaskAssigned[0]);
+		SCR_BaseTaskExecutor assignee = SCR_BaseTaskExecutor.GetTaskExecutorByID(playerID);
+		m_TaskMarker.AddAssignee(assignee, 0);
 	}
 	//------------------------------------------------------------------------------------------------------------//
 	bool CharacterAssigned(IEntity Character)

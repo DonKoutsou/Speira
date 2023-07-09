@@ -12,6 +12,11 @@ GenericEntity Area_1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
    coords 0 0 0
    {
     GenericEntity SlotMoveTo_1 : "{A44004A770A5D8BE}prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+     components {
+      SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+       m_bShowDebugShapesDuringRuntime 1
+      }
+     }
      coords 0 0 0
     }
    }

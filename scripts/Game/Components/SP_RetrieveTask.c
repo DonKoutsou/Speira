@@ -96,6 +96,7 @@ class SP_RetrieveTask: SP_Task
 		string itemdesc = typename.EnumToString(SCR_EArsenalItemType, m_requestitemtype) + " " + typename.EnumToString(SCR_EArsenalItemMode, m_requestitemmode);
 		TaskDesc = string.Format("%1 is looking for %2 %3. Reward is %4 %5", OName, m_iRequestedAmount.ToString(), itemdesc, m_iRewardAmount, FilePath.StripPath(reward));
 		TaskDiag = string.Format("I'm looking for %1 %2. Come back to find me on %3. Reward is %4 %5", m_iRequestedAmount.ToString(), itemdesc, OLoc, m_iRewardAmount, FilePath.StripPath(reward));
+		TaskTitle = string.Format("Retrieve: bring %1 %2 to %3 ",m_iRequestedAmount.ToString(), itemdesc, OName);
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	bool SetupRequestTypenMode()
@@ -232,6 +233,19 @@ class SP_RetrieveTask: SP_Task
 		reward = entry.GetPrefab();
 		return true;
 	};
+	override void SpawnTaskMarker()
+	{
+		Resource Marker = Resource.Load("{304847F9EDB0EA1B}prefabs/Tasks/SP_BaseTask.et");
+		EntitySpawnParams PrefabspawnParams = EntitySpawnParams();
+		TaskOwner.GetWorldTransform(PrefabspawnParams.Transform);
+		m_TaskMarker = SP_BaseTask.Cast(GetGame().SpawnEntityPrefab(Marker, GetGame().GetWorld(), PrefabspawnParams));
+		m_TaskMarker.SetTitle(TaskTitle);
+		m_TaskMarker.SetDescription(TaskDesc);
+		m_TaskMarker.SetTarget(TaskOwner);
+		int playerID = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(a_TaskAssigned[0]);
+		SCR_BaseTaskExecutor assignee = SCR_BaseTaskExecutor.GetTaskExecutorByID(playerID);
+		m_TaskMarker.AddAssignee(assignee, 0);
+	}
 	//------------------------------------------------------------------------------------------------------------//
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
@@ -270,6 +284,8 @@ class SP_RetrieveTask: SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	override bool CompleteTask(IEntity Assignee)
 	{
+		m_TaskMarker.Finish(true);
+		delete m_TaskMarker;
 		SCR_InventoryStorageManagerComponent inv = SCR_InventoryStorageManagerComponent.Cast(Assignee.FindComponent(SCR_InventoryStorageManagerComponent));
 		SCR_InventoryStorageManagerComponent Ownerinv = SCR_InventoryStorageManagerComponent.Cast(TaskOwner.FindComponent(SCR_InventoryStorageManagerComponent));
 		SP_RequestPredicate RequestPred = new SP_RequestPredicate(m_requestitemtype, m_requestitemmode);
@@ -318,6 +334,8 @@ class SP_RetrieveTask: SP_Task
 		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (OwnerDmgComp.IsDestroyed())
 		{
+			m_TaskMarker.Fail(true);
+			delete m_TaskMarker;
 			e_State = ETaskState.FAILED;
 			return;
 		}
@@ -412,4 +430,5 @@ class SP_RequestPredicate : InventorySearchPredicate
 modded enum EEditableEntityLabel
 {
 	ITEMTYPE_CURRENCY = 85,
+	ITEMTYPE_STASH = 86
 }

@@ -1,0 +1,36 @@
+SCR_AIWorld : "{E0A05C76552E7F58}prefabs/AI/SCR_AIWorld.et" {
+ coords 120.533 1.001 89.498
+}
+SP_GameMode SP_GameMode1 : "{88229DCF1A3ED798}prefabs/Systems/SP_GameMode.et" {
+ coords 128.735 0.64 134.37
+}
+$grp GameEntity : "{4604B1E65929F633}prefabs/Compositions/Slotted/SlotRoadSmall/Chill_Zone_S.et" {
+ {
+  coords 67.428 1.001 169.066
+  angleY 0
+ }
+ {
+  coords 164.312 1.763 167.514
+  angleY 0
+ }
+ {
+  coords 179.813 1 98.647
+  angleY 0
+ }
+ {
+  coords 100.007 1.001 80.087
+  angleY 0
+ }
+}
+SP_AIDirector : "{B14AC474A6E7BB8A}prefabs/AI/Spawners/SP_AIDirector_Base.et" {
+ coords 125.644 0.861 127.16
+ m_aIncludedEditableEntityLabels {
+  70
+ }
+ m_aExcludedEditableEntityLabels {
+  71 72
+ }
+ m_FactionsToApear {
+  "US"
+ }
+}

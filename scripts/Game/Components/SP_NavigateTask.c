@@ -163,6 +163,7 @@ class SP_NavigateTask: SP_Task
 		GetInfo(OName, DName, OLoc, DLoc);
 		TaskDesc = string.Format("Navigate %1, to %2's location. %2 is located on %3. Reward is %4 %5", OName, DName, DLoc, m_iRewardAmount, FilePath.StripPath(reward));
 		TaskDiag = string.Format("I am looking for someone to help me navigate to %1 on %2. Come find me on %3. Reward is %4 %5", DName, DLoc, OLoc, m_iRewardAmount, FilePath.StripPath(reward));
+		TaskTitle = string.Format("Navigate: escort %1 to %2's location", OName, DName);
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	override void UpdateState()
@@ -170,6 +171,8 @@ class SP_NavigateTask: SP_Task
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (DmgComp.IsDestroyed())
 		{
+			m_TaskMarker.Fail(true);
+			delete m_TaskMarker;
 			e_State = ETaskState.FAILED;
 			return;
 		}
@@ -180,6 +183,8 @@ class SP_NavigateTask: SP_Task
 	{
 		if (GiveReward(Assignee))
 		{
+			m_TaskMarker.Finish(true);
+			delete m_TaskMarker;
 			SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
 			//get task owner group and dissband it.
 			AIControlComponent comp = AIControlComponent.Cast(TaskOwner.FindComponent(AIControlComponent));

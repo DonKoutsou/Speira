@@ -12,7 +12,7 @@ $grp SP_AIDirector : "{14C79BD8B083D642}prefabs/AI/Spawners/SP_AIDirector_Hostil
   m_bAllowCloseSpawning 0
  }
  {
-  coords 7021.913 -81.122 2423.111
+  coords 7021.913 168.708 2423.111
   m_FactionsToApear + {
    "FIA"
   }
@@ -57,6 +57,7 @@ $grp SP_AIDirector : "{248F75698912DFA0}prefabs/AI/Spawners/SP_AIDirector_Trader
   m_aExcludedEditableEntityLabels {
    71 72
   }
+  m_iMaxAgentsToSpawn 1
   m_fRadius 60
   m_fRespawnTimer 60
  }

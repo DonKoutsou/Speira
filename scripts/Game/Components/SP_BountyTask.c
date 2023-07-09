@@ -108,9 +108,10 @@ class SP_BountyTask: SP_Task
 		string DName;
 		string DLoc;
 		string OLoc;
-		GetInfo(OName, DName, DLoc, OLoc);
+		GetInfo(OName, DName, OLoc, DLoc);
 		TaskDesc = string.Format("%1 has put a bounty of %3 %4 on %2's head.", OName, DName, m_iRewardAmount, FilePath.StripPath(reward));
 		TaskDiag = string.Format("I've put a bounty on %1's head, last i heard he was located on %2, get me his dogtags and i'll make it worth your while. Come back to find me on %3. Reward is %4 %5", DName, DLoc, OLoc, m_iRewardAmount, FilePath.StripPath(reward));
+		TaskTitle = string.Format("Bounty: retrieve %1's dogtags", DName);
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
@@ -180,6 +181,8 @@ class SP_BountyTask: SP_Task
 		SP_NamedTagPredicate TagPred = new SP_NamedTagPredicate(Diag.GetCharacterRankName(TaskTarget) + " " + Diag.GetCharacterName(TaskTarget));
 		array <IEntity> FoundTags = new array <IEntity>();
 		Assigneeinv.FindItems(FoundTags, TagPred);
+		m_TaskMarker.Finish(true);
+		delete m_TaskMarker;
 		if (FoundTags.Count() > 0)
 		{
 			if (GiveReward(Assignee))
@@ -220,6 +223,8 @@ class SP_BountyTask: SP_Task
 		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (OwnerDmgComp.IsDestroyed() && !TargetDmgComp.IsDestroyed())
 		{
+			m_TaskMarker.Fail(true);
+			delete m_TaskMarker;
 			e_State = ETaskState.FAILED;
 			return;
 		}
@@ -230,6 +235,8 @@ class SP_BountyTask: SP_Task
 		}
 		if (OwnerDmgComp.IsDestroyed())
 		{
+			m_TaskMarker.Fail(true);
+			delete m_TaskMarker;
 			e_State = ETaskState.FAILED;
 			return;
 		}

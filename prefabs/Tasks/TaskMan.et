@@ -1,0 +1,10 @@
+SCR_BaseTaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/Tasks/TaskManager.et" {
+ ID "56DEB09946BD23E3"
+ coords 6889.873 123.431 6590.549
+ {
+  SCR_ScenarioFrameworkTaskKillSupportEntity {
+   ID "5DD2817B8F069B3A"
+   coords -8.54 -0.343 -8.339
+  }
+ }
+}

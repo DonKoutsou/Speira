@@ -103,6 +103,7 @@ class SP_DeliverTask: SP_Task
 		GetInfo(OName, DName,OLoc, DLoc);
 		TaskDesc = string.Format("Deliver package received from %1, to %2. %2 is located on %3. Reward is %4 %5", OName, DName, DLoc, m_iRewardAmount, FilePath.StripPath(reward));
 		TaskDiag = string.Format("I am looking for someone to deliver a package for me to %1 on %2. Come find me on %3. Reward is %4 %5", DName, DLoc, OLoc, m_iRewardAmount, FilePath.StripPath(reward));
+		TaskTitle = string.Format("Deliver: deliver package to %1", DName);
 	};
 	//------------------------------------------------------------------------------------------------------------//
 	//Ready to deliver means package is in assignee's inventory, we are talking to the target and that we are assigned to task
@@ -197,6 +198,8 @@ class SP_DeliverTask: SP_Task
 	//Complete tasks means package is on target's inventory and reward is givven to assigne
 	override bool CompleteTask(IEntity Assignee)
 	{
+		m_TaskMarker.Finish(true);
+		delete m_TaskMarker;
 		InventoryStorageManagerComponent Assigneeinv = InventoryStorageManagerComponent.Cast(Assignee.FindComponent(InventoryStorageManagerComponent));
 		InventoryStorageManagerComponent Targetinv = InventoryStorageManagerComponent.Cast(TaskTarget.FindComponent(InventoryStorageManagerComponent));
 		SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
@@ -244,6 +247,8 @@ class SP_DeliverTask: SP_Task
 		SCR_CharacterDamageManagerComponent DmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
 		if (DmgComp.IsDestroyed())
 		{
+			m_TaskMarker.Fail(true);
+			delete m_TaskMarker;
 			e_State = ETaskState.FAILED;
 			return;
 		}
