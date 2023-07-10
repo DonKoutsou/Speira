@@ -14,10 +14,35 @@ class DialogueStageRumor : DialogueStage
 	{
 			FactionAffiliationComponent FC = FactionAffiliationComponent.Cast(Character.FindComponent(FactionAffiliationComponent));
 			Faction key = FC.GetAffiliatedFaction();
-			return GetRandomLocationPopulation(key);
+			return GetRandomLocationPopulation(key, Player);
 	};
-	string GetRandomLocationPopulation(Faction key)
+	string GetRandomLocationPopulation(Faction key, IEntity Player)
 	{
+		int random;
+		random = Math.RandomInt(0, 10);
+		if (random == 0)
+		{
+			array<ref SP_Task> rescuetasks = new array<ref SP_Task>();
+			SP_RequestManagerComponent req = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+			req.GetRescueTasks(rescuetasks);
+			foreach (SP_Task Task : rescuetasks)
+			{
+				SP_RescueTask resctask = SP_RescueTask.Cast(Task);
+				IEntity target = Task.GetTarget();
+				FactionAffiliationComponent afcomp = FactionAffiliationComponent.Cast(target.FindComponent(FactionAffiliationComponent));
+				if (afcomp.GetAffiliatedFaction() == key)
+					{
+						string Oname;
+						string Dname;
+						string OLoc;
+						string DLoc;
+						resctask.GetInfo(Oname, Dname, OLoc, DLoc);
+						string TextToSend = string.Format("I heard about %1's squad lossing contact with HQ around %2. If you are around the area keep an eye out", Dname, DLoc);
+						resctask.AssignCharacter(Player);
+						return TextToSend;
+					}
+			}
+		}
 		int index;
 		SP_AIDirector RandomDirector;
 		index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
@@ -32,7 +57,7 @@ class DialogueStageRumor : DialogueStage
 		string FactioReadble = "";
 		SCR_Faction faction = SCR_Faction.Cast(RandomDirector.GetMajorityHolder(FactioReadble));
 		
-		while (faction.DoCheckIfFactionFriendly(key) == true)
+		while (faction.IsFactionFriendly(key) == true)
 		{
 			index = Math.RandomInt(0, SP_AIDirector.AllDirectors.Count());
 			if(usedindex.Contains(index) == false)

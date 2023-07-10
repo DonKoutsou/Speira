@@ -31,8 +31,19 @@ class SP_RequestManagerComponent : ScriptComponent
 	static ref array<ref SP_Task> TaskMap = null;
 	static ref array<ref SP_Task> CompletedTaskMap = null;
 	//------------------------------------------------------------------------------------------------------------//
+	protected ref ScriptInvoker s_OnTaskComplete = new ref ScriptInvoker();
+	protected ref ScriptInvoker s_OnTaskCreated = new ref ScriptInvoker();
+	//------------------------------------------------------------------------------------------------------------//
 	void ~SP_RequestManagerComponent(){TaskMap.Clear();TaskMap.Clear();TaskSamples.Clear();};
 	//------------------------------------------------------------------------------------------------------------//
+	ScriptInvoker OnTaskComplete()
+	{
+		return s_OnTaskComplete;
+	}
+	ScriptInvoker OnTaskCreated()
+	{
+		return s_OnTaskCreated;
+	}
 	override void EOnInit(IEntity owner)
 	{
 		if(!TaskMap)
@@ -53,6 +64,8 @@ class SP_RequestManagerComponent : ScriptComponent
 		if (!m_GameMode)
 		{
 			m_GameMode = SP_GameMode.Cast(GetGame().GetGameMode());
+			if (m_GameMode)
+				m_GameMode.GetOnControllableDestroyed().Insert(UpdateCharacterTasks);
 		}
 	}
 	SP_Task GetTaskSample(typename tasktype)
@@ -91,23 +104,37 @@ class SP_RequestManagerComponent : ScriptComponent
 		return false;
 	}
 	//------------------------------------------------------------------------------------------------------------//
-	void UpdateCharacterTasks(IEntity Char)
+	void UpdateCharacterTasks(IEntity Char, IEntity Instigator)
 	{
-		if(!Char)
+		if(Char)
 		{
-			return;
+			foreach (SP_Task task : TaskMap)
+			{
+				if(task.CharacterIsOwner(Char) == true)
+				{
+					task.UpdateState();
+				}
+				if(task.CharacterIsTarget(Char) == true)
+				{
+					task.UpdateState();
+				}
+			}
 		}
-		foreach (SP_Task task : TaskMap)
+		if(Instigator)
 		{
-			if(task.CharacterIsOwner(Char) == true)
+			foreach (SP_Task task : TaskMap)
 			{
-				task.UpdateState();
-			}
-			if(task.CharacterIsTarget(Char) == true)
-			{
-				task.UpdateState();
+				if(task.CharacterIsOwner(Instigator) == true)
+				{
+					task.UpdateState();
+				}
+				if(task.CharacterIsTarget(Instigator) == true)
+				{
+					task.UpdateState();
+				}
 			}
 		}
+		
 	}
 	//------------------------------------------------------------------------------------------------------------//
 	bool CreateTask(typename TaskType)
@@ -172,7 +199,7 @@ class SP_RequestManagerComponent : ScriptComponent
 			}
 		}
 	}
-	void GetRescueTask(IEntity Char,out array<ref SP_Task> tasks)
+	void GetCharRescueTasks(IEntity Char,out array<ref SP_Task> tasks)
 	{
 		foreach (SP_Task task : TaskMap)
 		{
@@ -181,6 +208,16 @@ class SP_RequestManagerComponent : ScriptComponent
 				SP_RescueTask resctask = SP_RescueTask.Cast(task);
 				if(resctask.GetCharsToResc().Contains(Char))
 					tasks.Insert(task);
+			}
+		}
+	}
+	void GetRescueTasks(out array<ref SP_Task> tasks)
+	{
+		foreach (SP_Task task : TaskMap)
+		{
+			if(task.GetClassName() == SP_RescueTask)
+			{
+				tasks.Insert(task);
 			}
 		}
 	}
@@ -285,6 +322,7 @@ class SP_RequestManagerComponent : ScriptComponent
 	{
 		TaskMap.RemoveItem(Task);
 		CompletedTaskMap.Insert(Task);
+		s_OnTaskComplete.Invoke(Task, Task.GetCompletionist());
 	};
 };
 //------------------------------------------------------------------------------------------------------------//

@@ -599,7 +599,7 @@ class SP_AIDirector : AIGroup
 	void SetSpawnPos()
 	{
 		AIPathfindingComponent pathFindindingComponent = AIPathfindingComponent.Cast(this.FindComponent(AIPathfindingComponent));
-		if(m_aQueriedSentinels.Count() > 0)
+		if(!m_aQueriedSentinels.IsEmpty())
 		{
 			IEntity ent = m_aQueriedSentinels.GetRandomElement();
 			if(ent)

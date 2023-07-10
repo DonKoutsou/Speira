@@ -28,7 +28,6 @@ class DialogueStageDeliverTaskAction : DialogueStage
 				{
 					Diag.Escape(Character, Player);
 					MyTasks[i].CompleteTask(Player);
-					
 				}
 			}
 		}

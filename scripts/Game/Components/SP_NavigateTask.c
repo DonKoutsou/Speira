@@ -66,6 +66,8 @@ class SP_NavigateTask: SP_Task
 	//Its ready to deliver when targer and owner are closer than m_iSuccessDistance
 	override bool ReadyToDeliver(IEntity TalkingChar, IEntity Assignee)
 	{
+		if (TalkingChar == TaskTarget)
+			return false;
 		float dis = vector.Distance(TaskTarget.GetOrigin(), TalkingChar.GetOrigin());
 		if(!m_iSuccessDistance)
 		{
@@ -174,7 +176,6 @@ class SP_NavigateTask: SP_Task
 			if(m_TaskMarker)
 			{
 				m_TaskMarker.Fail(true);
-				delete m_TaskMarker;
 			}
 			e_State = ETaskState.FAILED;
 			return;
@@ -187,7 +188,6 @@ class SP_NavigateTask: SP_Task
 		if (GiveReward(Assignee))
 		{
 			m_TaskMarker.Finish(true);
-			delete m_TaskMarker;
 			SP_DialogueComponent Diag = SP_DialogueComponent.Cast(SP_GameMode.Cast(GetGame().GetGameMode()).GetDialogueComponent());
 			//get task owner group and dissband it.
 			AIControlComponent comp = AIControlComponent.Cast(TaskOwner.FindComponent(AIControlComponent));
@@ -212,12 +212,11 @@ class SP_NavigateTask: SP_Task
 			if (m_TaskMarker)
 			{
 				m_TaskMarker.Finish(true);
-				delete m_TaskMarker;
 			}
-			SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
-			factman.OnTaskCompleted(this, Assignee);
 			e_State = ETaskState.COMPLETED;
 			m_Copletionist = Assignee;
+			SP_RequestManagerComponent reqman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+			reqman.OnTaskCompleted(this);
 			SCR_HintManagerComponent.GetInstance().ShowCustom(string.Format("%1 stopped following you", Diag.GetCharacterName(TaskOwner)));
 			return true;
 		}

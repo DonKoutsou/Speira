@@ -31,16 +31,14 @@ class SP_RescueAction : ScriptedUserAction
 		dmg.UpdateConsciousness();
 		SP_RequestManagerComponent requestman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
 		array<ref SP_Task> MyTasks = new array<ref SP_Task>();
-		requestman.GetRescueTask(pOwnerEntity, MyTasks);
+		requestman.GetCharRescueTasks(pOwnerEntity, MyTasks);
 		for (int i, count = MyTasks.Count(); i < count; i++)
 		{
 			SP_RescueTask resctask = SP_RescueTask.Cast(MyTasks[i]);
 			resctask.OnCharacterRescued(pOwnerEntity);
 			if (senderFactionkey == "BANDITS" && senderFaction.IsFactionEnemy(uerFaction))
 			{
-				senderFaction.AdjustRelation(uerFaction, 0);
-				
-				factman.UpdateFactionRelations();
+				senderFaction.AdjustRelationAbs(uerFaction, 0);
 			}
 			if (senderFactionkey == "RENEGADE")
 			{
@@ -72,7 +70,7 @@ class SP_RescueAction : ScriptedUserAction
 		}
 		SP_RequestManagerComponent requestman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
 		array<ref SP_Task> MyTasks = new array<ref SP_Task>();
-		requestman.GetRescueTask(owner, MyTasks);
+		requestman.GetCharRescueTasks(owner, MyTasks);
 		if(MyTasks.Count() > 0)
 		{
 			return true;

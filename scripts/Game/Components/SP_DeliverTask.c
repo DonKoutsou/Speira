@@ -217,12 +217,11 @@ class SP_DeliverTask: SP_Task
 				if (m_TaskMarker)
 				{
 					m_TaskMarker.Finish(true);
-					delete m_TaskMarker;
 				}
-				SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
-				factman.OnTaskCompleted(this, Assignee);
 				e_State = ETaskState.COMPLETED;
 				m_Copletionist = Assignee;
+				SP_RequestManagerComponent reqman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+				reqman.OnTaskCompleted(this);
 				return true;
 			}
 		}
@@ -256,7 +255,6 @@ class SP_DeliverTask: SP_Task
 			if(m_TaskMarker)
 			{
 				m_TaskMarker.Fail(true);
-				delete m_TaskMarker;
 			}
 			e_State = ETaskState.FAILED;
 			return;

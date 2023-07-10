@@ -56,7 +56,10 @@ class SCR_Faction : ScriptedFaction
 	
 	protected ref map<Faction, int> m_FriendlyMap;
 	
-	
+	protected ref ScriptInvoker s_OnRelationLow = new ref ScriptInvoker();
+	protected ref ScriptInvoker s_OnRelationHigh = new ref ScriptInvoker();
+
+
 	//------------------------------------------------------------------------------------------------
 	/*!
 	\return Order in which the faction appears in the list. Lower values are first.
@@ -64,18 +67,42 @@ class SCR_Faction : ScriptedFaction
 	
 	void AdjustRelation(Faction faction, int amount)
 	{
-		int relation;
-		m_FriendlyMap.Find(faction, relation);
-		m_FriendlyMap.Set(faction, relation + amount);
+		if(faction == this)
+			return;
+		if(m_FriendlyMap)
+		{
+			int relation;
+			m_FriendlyMap.Find(faction, relation);
+			m_FriendlyMap.Set(faction, relation + amount);
+			if (GetFactionRep(faction) <= -50 && faction.IsFactionFriendly(this))
+				s_OnRelationLow.Invoke(faction, this);
+			if (GetFactionRep(faction) > -50 && faction.IsFactionEnemy(this))
+				s_OnRelationHigh.Invoke(faction, this);
+		}
 	}
 	void AdjustRelationAbs(Faction faction, int amount)
 	{
-		if(!m_FriendlyMap.Contains(faction))
-		{
-			m_FriendlyMap.Insert(faction, amount);
+		if(faction == this)
 			return;
+		if(m_FriendlyMap)
+		{
+			int relation;
+			m_FriendlyMap.Find(faction, relation);
+			m_FriendlyMap.Set(faction, amount);
+			if (GetFactionRep(faction) <= -50 && faction.IsFactionFriendly(this))
+				s_OnRelationLow.Invoke(faction, this);
+			if (GetFactionRep(faction) > -50 && faction.IsFactionEnemy(this))
+				s_OnRelationHigh.Invoke(faction, this);
 		}
-		m_FriendlyMap.Set(faction, amount);
+		
+	}
+	ScriptInvoker OnRelationDropped()
+	{
+		return s_OnRelationLow;
+	}
+	ScriptInvoker OnRelationRaised()
+	{
+		return s_OnRelationHigh;
 	}
 	int GetOrder()
 	{
@@ -84,7 +111,16 @@ class SCR_Faction : ScriptedFaction
 	int GetFactionRep(Faction fact)
 	{
 		int rep;
-		m_FriendlyMap.Find(fact, rep);
+		if (!m_FriendlyMap.Find(fact, rep))
+		{
+			SCR_Faction scrfact = SCR_Faction.Cast(fact);
+			if (scrfact.GetFactionRep(this) != -1)
+			{
+				m_FriendlyMap.Insert(fact, scrfact.GetFactionRep(this));
+			}
+			else
+				return -1;
+		}
 		return rep;
 	}
 	void GetFriendlyFactions(out array<string> friendlyfactions)
@@ -289,7 +325,6 @@ class SCR_Faction : ScriptedFaction
 	void SetFactionHostile(notnull Faction faction)
 	{
 		int index = m_FriendlyFactions.Find(faction);
-		
 		if (index >= 0)
 			m_FriendlyFactions.Remove(index);
 	}
@@ -517,24 +552,22 @@ class SCR_Faction : ScriptedFaction
 					factionManager.SetFactionsFriendly(this, faction);
 				}
 			}
-			if(m_FriendlyMap)
+			array<Faction> Factions = new array<Faction>();
+			factionManager.GetFactionsList(Factions);
+			foreach(Faction fact : Factions)
 			{
-				array<Faction> Factions = new array<Faction>();
-				factionManager.GetFactionsList(Factions);
-				foreach(Faction fact : Factions)
+				if(fact == this)
+					break;
+				if (m_FriendlyMap.Contains(fact))
+					break;
+				if(IsFactionFriendly(fact))
 				{
-					if (m_FriendlyMap.Contains(fact))
-						break;
-					if(IsFactionFriendly(fact))
-					{
-						m_FriendlyMap.Insert(fact, 100);
-					}
-					else
-					{
-						m_FriendlyMap.Insert(fact, -100);
-					}
+					m_FriendlyMap.Insert(fact, 50);
 				}
-			
+				else
+				{
+					m_FriendlyMap.Insert(fact, -100);
+				}
 			}
 		}
 		

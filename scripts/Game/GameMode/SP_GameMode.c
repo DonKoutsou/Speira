@@ -45,42 +45,6 @@ class SP_GameMode : SCR_BaseGameMode
 	protected override void OnControllableDestroyed(IEntity entity, IEntity instigator)
 	{
 		super.OnControllableDestroyed(entity, instigator);
-		//compare factions
-		//apply penalties and adjust faction affiliation
-		if(entity && instigator)
-		{
-			//----------------------------------------------//
-			//affiliation components
-			FactionAffiliationComponent FactionComp = FactionAffiliationComponent.Cast(instigator.FindComponent(FactionAffiliationComponent));
-			FactionAffiliationComponent FactionCompVictim = FactionAffiliationComponent.Cast(entity.FindComponent(FactionAffiliationComponent));
-			if (FactionComp && FactionCompVictim)
-			{
-				//----------------------------------------------//
-				//actual faction
-				SCR_Faction KillerF = SCR_Faction.Cast(FactionComp.GetAffiliatedFaction());
-				SCR_Faction VictimF = SCR_Faction.Cast(FactionCompVictim.GetAffiliatedFaction());
-				//----------------------------------------------//
-				//compare factions and apply penalties
-				if (VictimF.IsFactionFriendly(KillerF) == true)
-				{
-					if (KillerF != VictimF)
-					{
-						m_factionManager.OnFriendlyKill(entity, instigator);
-					}
-					else if (KillerF == VictimF)
-					{
-						m_factionManager.OnSameFactionKill(entity, instigator);
-					}
-				}
-			}
-		}
-		//------------------------------------------------------------------//
-		//update tasks
-		if(m_RequestManagerComponent)
-		{
-			m_RequestManagerComponent.UpdateCharacterTasks(entity);
-			m_RequestManagerComponent.UpdateCharacterTasks(instigator);
-		}
 		//------------------------------------------------------------------//
 		//mark them lootable
 		if (entity)

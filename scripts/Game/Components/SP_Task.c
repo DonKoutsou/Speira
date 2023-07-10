@@ -184,14 +184,14 @@ class SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	bool CompleteTask(IEntity Assignee)
 	{
-		SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
-		factman.OnTaskCompleted(this, Assignee);
+		
 		m_TaskMarker.Finish(true);
-		delete m_TaskMarker;
 		if (GiveReward(Assignee))
 		{
 			e_State = ETaskState.COMPLETED;
 			m_Copletionist = Assignee;
+			SP_RequestManagerComponent reqman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+			reqman.OnTaskCompleted(this);
 			return true;
 		}
 		return false;
@@ -242,6 +242,7 @@ class SP_Task
 	//------------------------------------------------------------------------------------------------------------//
 	void DeleteLeftovers(){};
 	//------------------------------------------------------------------------------------------------------------//
+	IEntity GetCompletionist(){return m_Copletionist;};
 };
 //------------------------------------------------------------------------------------------------------------//
 enum ETaskState

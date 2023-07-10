@@ -182,7 +182,6 @@ class SP_BountyTask: SP_Task
 		array <IEntity> FoundTags = new array <IEntity>();
 		Assigneeinv.FindItems(FoundTags, TagPred);
 		m_TaskMarker.Finish(true);
-		delete m_TaskMarker;
 		if (FoundTags.Count() > 0)
 		{
 			if (GiveReward(Assignee))
@@ -194,10 +193,9 @@ class SP_BountyTask: SP_Task
 				if (m_TaskMarker)
 				{
 					m_TaskMarker.Finish(true);
-					delete m_TaskMarker;
 				}
-				SP_FactionManager factman = SP_FactionManager.Cast(GetGame().GetFactionManager());
-				factman.OnTaskCompleted(this, Assignee);
+				SP_RequestManagerComponent reqman = SP_RequestManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SP_RequestManagerComponent));
+				reqman.OnTaskCompleted(this);
 				e_State = ETaskState.COMPLETED;
 				delete Bounty;
 				m_Copletionist = Assignee;
@@ -227,28 +225,11 @@ class SP_BountyTask: SP_Task
 	override void UpdateState()
 	{
 		SCR_CharacterDamageManagerComponent OwnerDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskOwner.FindComponent(SCR_CharacterDamageManagerComponent));
-		SCR_CharacterDamageManagerComponent TargetDmgComp = SCR_CharacterDamageManagerComponent.Cast(TaskTarget.FindComponent(SCR_CharacterDamageManagerComponent));
-		if (OwnerDmgComp.IsDestroyed() && !TargetDmgComp.IsDestroyed())
-		{
-			if(m_TaskMarker)
-			{
-				m_TaskMarker.Fail(true);
-				delete m_TaskMarker;
-			}
-			e_State = ETaskState.FAILED;
-			return;
-		}
-		if (!OwnerDmgComp.IsDestroyed() && TargetDmgComp.IsDestroyed())
-		{
-			e_State = ETaskState.COMPLETED;
-			return;
-		}
 		if (OwnerDmgComp.IsDestroyed())
 		{
 			if(m_TaskMarker)
 			{
 				m_TaskMarker.Fail(true);
-				delete m_TaskMarker;
 			}
 			e_State = ETaskState.FAILED;
 			return;
